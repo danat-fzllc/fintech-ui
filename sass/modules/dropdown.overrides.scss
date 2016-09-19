@@ -2,6 +2,10 @@
 @import "compass/css3";
 
 .fintech {
+    .ui.selection.dropdown {
+        border-color: transparent;
+    }
+
     .question[class*="page"] {
         .question > .dropdown {
             min-width: 0;

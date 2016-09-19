@@ -3,6 +3,9 @@
 /* Breakpoints */
 /*element values*/
 /*fonts*/
+.fintech .ui.selection.dropdown {
+  border-color: transparent;
+}
 .fintech .question[class*="page"] .question > .dropdown {
   min-width: 0;
   min-height: 0;

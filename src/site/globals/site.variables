@@ -1,6 +1,25 @@
 /*******************************
      User Global Variables
 *******************************/
+@fontPathCustom  : "../src/site/assets/fonts";
+@fontNameRegular          : 'SF-Compact-Text-Regular';
+@fontNameBold          : 'SF-Compact-Text-Bold';
+@fallbackSRCRegular: url("@{fontPathCustom}/@{fontNameRegular}.eot");
+@fallbackSRCBold: url("@{fontPathCustom}/@{fontNameBold}.eot");
+@srcRegular:
+  url("@{fontPathCustom}/@{fontNameRegular}.eot?#iefix") format('embedded-opentype'),
+  url("@{fontPathCustom}/@{fontNameRegular}.woff") format('woff'),
+  url("@{fontPathCustom}/@{fontNameRegular}.ttf") format('truetype'),
+  url("@{fontPathCustom}/@{fontNameRegular}.svg#fontNameRegular") format('svg')
+;
+@srcBold:
+  url("@{fontPathCustom}/@{fontNameBold}.eot?#iefix") format('embedded-opentype'),
+  url("@{fontPathCustom}/@{fontNameBold}.woff") format('woff'),
+  url("@{fontPathCustom}/@{fontNameBold}.ttf") format('truetype'),
+  url("@{fontPathCustom}/@{fontNameBold}.svg#fontNameBold") format('svg')
+;
+@headerFont        : @fontNameRegular, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : @fontNameRegular, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @pageBackground: #f6f6f6;
 @emSize: 13px;
 @fontSize : 13px;

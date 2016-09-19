@@ -111,74 +111,6 @@ body {
 }
 
 /*site theme*/
-/*fonts*/
-@font-face {
-  font-family: "FontAwesome";
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SFUIDisplay-Bold';
-  src: url("../fonts/SFUIDisplay-Bold.eot");
-  src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff"), url("../fonts/SFUIDisplay-Bold.ttf") format("truetype"), url("../fonts/SFUIDisplay-Bold.svg#SFUIDisplay-Bold") format("svg"), url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SFUIDisplay-Light';
-  src: url("../fonts/SFUIDisplay-Light.eot");
-  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay-Light.ttf") format("truetype"), url("../fonts/SFUIDisplay-Light.svg#SFUIDisplay-Light") format("svg"), url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SFUIDisplay-Regular';
-  src: url("../fonts/SFUIDisplay-Regular.eot");
-  src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay-Regular.ttf") format("truetype"), url("../fonts/SFUIDisplay-Regular.svg#SFUIDisplay-Regular") format("svg"), url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SFUIDisplay-Semibold';
-  src: url("../fonts/SFUIDisplay-Semibold.eot");
-  src: url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff"), url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype"), url("../fonts/SFUIDisplay-Semibold.svg#SFUIDisplay-Semibold") format("svg"), url("../fonts/SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF-Compact-Text-Regular';
-  src: url("../fonts/SF-Compact-Text-Regular.eot");
-  src: url("../fonts/SF-Compact-Text-Regular.woff2") format("woff2"), url("../fonts/SF-Compact-Text-Regular.woff") format("woff"), url("../fonts/SF-Compact-Text-Regular.ttf") format("truetype"), url("../fonts/SF-Compact-Text-Regular.svg#SF-Compact-Text-Regular") format("svg"), url("../fonts/SF-Compact-Text-Regular.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF-Compact-Text-Bold';
-  src: url("../fonts/SF-Compact-Text-Bold.eot");
-  src: url("../fonts/SF-Compact-Text-Bold.woff2") format("woff2"), url("../fonts/SF-Compact-Text-Bold.woff") format("woff"), url("../fonts/SF-Compact-Text-Bold.ttf") format("truetype"), url("../fonts/SF-Compact-Text-Bold.svg#SF-Compact-Text-Bold") format("svg"), url("../fonts/SF-Compact-Text-Bold.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF-UI-Text-Bold';
-  src: url("../fonts/SF-UI-Text-Bold.eot");
-  src: url("../fonts/SF-UI-Text-Bold.woff2") format("woff2"), url("../fonts/SF-UI-Text-Bold.woff") format("woff"), url("../fonts/SF-UI-Text-Bold.ttf") format("truetype"), url("../fonts/SF-UI-Text-Bold.svg#SF-UI-Text-Bold") format("svg"), url("../fonts/SF-UI-Text-Bold.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF-UI-Text-Regular';
-  src: url("../fonts/SF-UI-Text-Regular.eot");
-  src: url("../fonts/SF-UI-Text-Regular.woff2") format("woff2"), url("../fonts/SF-UI-Text-Regular.woff") format("woff"), url("../fonts/SF-UI-Text-Regular.ttf") format("truetype"), url("../fonts/SF-UI-Text-Regular.svg#SF-UI-Text-Regular") format("svg"), url("../fonts/SF-UI-Text-Regular.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-.ui.selection.dropdown {
-  border-color: transparent;
-}
-
 .fintech > .ui.content.container {
   padding: 15px;
 }
@@ -239,7 +171,7 @@ body {
 }
 .fintech > .top .menu-nav:after {
   content: '\f177';
-  font-family: "FontAwesome";
+  font-family: "Icons";
   font-size: 17px;
   display: inline-block;
   color: #fff;
@@ -266,7 +198,7 @@ body {
   transition: all 0.2s ease-out;
 }
 .fintech > .top .logo {
-  background-image: url('../images/icons-s859c66aae4.png');
+  background-image: url('../src/site/assets/images/icons-s859c66aae4.png');
   background-position: 0 -21px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -278,7 +210,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .logo {
-    background-image: url('../images/icons-2x-sb2027196c8.png');
+    background-image: url('../src/site/assets/images/icons-2x-sb2027196c8.png');
     background-size: 169.5px 44px;
     background-position: 0 -21px;
     height: 23px;
@@ -286,7 +218,7 @@ body {
   }
 }
 .fintech > .top .theme-changer {
-  background-image: url('../images/icons-s859c66aae4.png');
+  background-image: url('../src/site/assets/images/icons-s859c66aae4.png');
   background-position: -14px 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -297,7 +229,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .theme-changer {
-    background-image: url('../images/icons-2x-sb2027196c8.png');
+    background-image: url('../src/site/assets/images/icons-2x-sb2027196c8.png');
     background-size: 169.5px 44px;
     background-position: -14px 0;
     height: 21px;
@@ -366,7 +298,7 @@ body {
 .fintech .question[class*="page"] .share:before {
   display: inline-block;
   content: '\f1e0';
-  font-family: "FontAwesome";
+  font-family: "Icons";
   margin: 0 4px;
 }
 .fintech .page.filters {
@@ -397,14 +329,14 @@ body {
   background-color: #999999;
   color: #fff;
   height: 35px;
-  font-family: "SFUIDisplay-SemiBold";
+  font-family: "SF-Compact-Text-Bold";
   font-size: 12px;
   position: relative;
   text-transform: uppercase;
 }
 .fintech .page.filters .header:before {
   content: '\f0b0';
-  font-family: "FontAwesome";
+  font-family: "Icons";
   display: inline-block;
   margin: 9px 10px 0 14px;
 }
@@ -428,7 +360,7 @@ body {
 }
 .fintech .page.filters .filter .text:after {
   content: '\f0d7';
-  font-family: "FontAwesome";
+  font-family: "Icons";
   position: absolute;
   top: 0;
   right: 0;
@@ -467,7 +399,7 @@ body {
   content: '\f080';
   font-size: 15px;
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "Icons";
   margin-right: 6px;
   color: #999999;
 }
@@ -484,7 +416,7 @@ body {
   padding: 0 8px 0 12px;
 }
 .fintech .toolbar {
-  font-family: "FontAwesome";
+  font-family: "Icons";
   font-size: 15px;
   margin: 1px 0 0 0;
 }
@@ -503,7 +435,7 @@ body {
 }
 .fintech .toolbar .rotate:before {
   display: inline-block;
-  background-image: url('../images/icons-s859c66aae4.png');
+  background-image: url('../src/site/assets/images/icons-s859c66aae4.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -514,7 +446,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .toolbar .rotate:before {
-    background-image: url('../images/icons-2x-sb2027196c8.png');
+    background-image: url('../src/site/assets/images/icons-2x-sb2027196c8.png');
     background-size: 169.5px 44px;
     background-position: 0 0;
     height: 17px;
