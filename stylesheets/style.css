@@ -1,0 +1,551 @@
+/* Colors */
+/* Link Color */
+/* Breakpoints */
+/*element values*/
+/*fonts*/
+/* mixins */
+/*reset*/
+body {
+  font-family: "SF-Compact-Text-Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*[class*="left aligned"] {
+  text-align: left;
+}
+
+*[class*="center aligned"] {
+  text-align: center;
+}
+
+*[class*="right aligned"] {
+  text-align: right;
+}
+
+*[class*="fluid"] {
+  width: 100%;
+}
+
+/* default reset*/
+.clearfix {
+  clear: both;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+*[class*="left floated"] {
+  float: left;
+}
+
+*[class*="right floated"] {
+  float: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/*media query*/
+.mobile-only {
+  display: none;
+}
+@media (max-width: 320px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+.tablet-only {
+  display: none;
+}
+@media (max-width: 768px) {
+  .tablet-only {
+    display: block;
+  }
+}
+
+.computer-only {
+  display: none;
+}
+@media (max-width: 992px) {
+  .computer-only {
+    display: block;
+  }
+}
+
+.largeMonitor-only {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .largeMonitor-only {
+    display: block;
+  }
+}
+
+.widescreenMonitor-only {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .widescreenMonitor-only {
+    display: block;
+  }
+}
+
+/*site theme*/
+/*fonts*/
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFUIDisplay-Bold';
+  src: url("../fonts/SFUIDisplay-Bold.eot");
+  src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff"), url("../fonts/SFUIDisplay-Bold.ttf") format("truetype"), url("../fonts/SFUIDisplay-Bold.svg#SFUIDisplay-Bold") format("svg"), url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFUIDisplay-Light';
+  src: url("../fonts/SFUIDisplay-Light.eot");
+  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay-Light.ttf") format("truetype"), url("../fonts/SFUIDisplay-Light.svg#SFUIDisplay-Light") format("svg"), url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFUIDisplay-Regular';
+  src: url("../fonts/SFUIDisplay-Regular.eot");
+  src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay-Regular.ttf") format("truetype"), url("../fonts/SFUIDisplay-Regular.svg#SFUIDisplay-Regular") format("svg"), url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFUIDisplay-Semibold';
+  src: url("../fonts/SFUIDisplay-Semibold.eot");
+  src: url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff"), url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype"), url("../fonts/SFUIDisplay-Semibold.svg#SFUIDisplay-Semibold") format("svg"), url("../fonts/SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF-Compact-Text-Regular';
+  src: url("../fonts/SF-Compact-Text-Regular.eot");
+  src: url("../fonts/SF-Compact-Text-Regular.woff2") format("woff2"), url("../fonts/SF-Compact-Text-Regular.woff") format("woff"), url("../fonts/SF-Compact-Text-Regular.ttf") format("truetype"), url("../fonts/SF-Compact-Text-Regular.svg#SF-Compact-Text-Regular") format("svg"), url("../fonts/SF-Compact-Text-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF-Compact-Text-Bold';
+  src: url("../fonts/SF-Compact-Text-Bold.eot");
+  src: url("../fonts/SF-Compact-Text-Bold.woff2") format("woff2"), url("../fonts/SF-Compact-Text-Bold.woff") format("woff"), url("../fonts/SF-Compact-Text-Bold.ttf") format("truetype"), url("../fonts/SF-Compact-Text-Bold.svg#SF-Compact-Text-Bold") format("svg"), url("../fonts/SF-Compact-Text-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF-UI-Text-Bold';
+  src: url("../fonts/SF-UI-Text-Bold.eot");
+  src: url("../fonts/SF-UI-Text-Bold.woff2") format("woff2"), url("../fonts/SF-UI-Text-Bold.woff") format("woff"), url("../fonts/SF-UI-Text-Bold.ttf") format("truetype"), url("../fonts/SF-UI-Text-Bold.svg#SF-UI-Text-Bold") format("svg"), url("../fonts/SF-UI-Text-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF-UI-Text-Regular';
+  src: url("../fonts/SF-UI-Text-Regular.eot");
+  src: url("../fonts/SF-UI-Text-Regular.woff2") format("woff2"), url("../fonts/SF-UI-Text-Regular.woff") format("woff"), url("../fonts/SF-UI-Text-Regular.ttf") format("truetype"), url("../fonts/SF-UI-Text-Regular.svg#SF-UI-Text-Regular") format("svg"), url("../fonts/SF-UI-Text-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.ui.selection.dropdown {
+  border-color: transparent;
+}
+
+.fintech > .ui.content.container {
+  padding: 15px;
+}
+.fintech .column > .content {
+  background-color: #fff;
+  padding: 12px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.fintech > .top {
+  background-color: #227a4f;
+  height: 55px;
+  position: relative;
+  z-index: 2;
+}
+.fintech > .top .menu-nav {
+  padding: 0 20px;
+  height: 55px;
+  line-height: 55px;
+  position: relative;
+}
+.fintech > .top .menu-nav:before {
+  content: '';
+  background-color: #1c6642;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.fintech > .top .menu-nav:hover:before {
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.fintech > .top .menu-nav:after {
+  content: '\f177';
+  font-family: "FontAwesome";
+  font-size: 17px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.fintech > .top .menu-nav.expand:after {
+  content: '\f0b0';
+  font-size: 20px;
+  -moz-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.fintech > .top .logo {
+  background-image: url('../images/icons-s859c66aae4.png');
+  background-position: 0 -21px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 23px;
+  width: 170px;
+  display: inline-block;
+  margin: 15px 0 0 26px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .fintech > .top .logo {
+    background-image: url('../images/icons-2x-sb2027196c8.png');
+    background-size: 169.5px 44px;
+    background-position: 0 -21px;
+    height: 23px;
+    width: 169.5px;
+  }
+}
+.fintech > .top .theme-changer {
+  background-image: url('../images/icons-s859c66aae4.png');
+  background-position: -14px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 21px;
+  width: 17px;
+  margin: 17px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .fintech > .top .theme-changer {
+    background-image: url('../images/icons-2x-sb2027196c8.png');
+    background-size: 169.5px 44px;
+    background-position: -14px 0;
+    height: 21px;
+    width: 17px;
+  }
+}
+.fintech > .top .sign-in {
+  padding: 18px;
+  display: inline-block;
+}
+.fintech > .top a {
+  color: #fff;
+}
+.fintech .question[class*="page"] {
+  padding: 25px 0;
+  background-color: #fff;
+  -moz-box-shadow: 0 0 20px -10px #000;
+  -webkit-box-shadow: 0 0 20px -10px #000;
+  box-shadow: 0 0 20px -10px #000;
+}
+.fintech .question[class*="page"] h1 {
+  font-size: 27px;
+  line-height: 27px;
+  padding-right: 110px;
+  font-family: "SF-Compact-Text-Regular";
+  font-weight: normal;
+}
+.fintech .question[class*="page"] .field {
+  max-height: 20px;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #f1f1f1;
+  border-color: transparent;
+}
+.fintech .question[class*="page"] .field:hover {
+  border-color: rgba(34, 36, 38, 0.35);
+}
+.fintech .question[class*="page"] .menu {
+  font-size: 12px;
+}
+.fintech .question[class*="page"] .ui.button {
+  font-size: 22px;
+  line-height: 0;
+  display: inline-block;
+  margin: 0 0 0 2px;
+  height: 39px;
+  position: relative;
+  top: -2px;
+  color: #000;
+}
+.fintech .question[class*="page"] .share {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  padding: 5px 10px 5px 6px;
+  background-color: #f8f8f8;
+  color: #666666;
+  cursor: pointer;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.fintech .question[class*="page"] .share:hover {
+  background-color: #e6e6e6;
+}
+.fintech .question[class*="page"] .share:before {
+  display: inline-block;
+  content: '\f1e0';
+  font-family: "FontAwesome";
+  margin: 0 4px;
+}
+.fintech .page.filters {
+  width: 217px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.fintech .page.filters .scroll {
+  height: 100%;
+  background-color: #fff;
+  -moz-box-shadow: 0 12px 18px -10px #000;
+  -webkit-box-shadow: 0 12px 18px -10px #000;
+  box-shadow: 0 12px 18px -10px #000;
+}
+.fintech .page.filters .scroll:hover {
+  overflow-y: auto;
+}
+.fintech .page.filters * {
+  border-color: #e6e6e6;
+}
+.fintech .page.filters .header {
+  background-color: #999999;
+  color: #fff;
+  height: 35px;
+  font-family: "SFUIDisplay-SemiBold";
+  font-size: 12px;
+  position: relative;
+  text-transform: uppercase;
+}
+.fintech .page.filters .header:before {
+  content: '\f0b0';
+  font-family: "FontAwesome";
+  display: inline-block;
+  margin: 9px 10px 0 14px;
+}
+.fintech .page.filters .field {
+  padding: 6px 0;
+}
+.fintech .page.filters .filter {
+  border-bottom-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  position: relative;
+}
+.fintech .page.filters .filter .filters {
+  display: none;
+  padding-top: 6px;
+}
+.fintech .page.filters .filter .text {
+  position: relative;
+  font-family: "SF-Compact-Text-Bold";
+  cursor: pointer;
+}
+.fintech .page.filters .filter .text:after {
+  content: '\f0d7';
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fintech .page.filters .filter .text:hover {
+  color: #e9af03;
+}
+.fintech .page.filters .filter .text:hover:after {
+  color: #e9af03;
+}
+.fintech .page.filters .filter.opened .filters {
+  display: block;
+}
+.fintech .page.filters .filter.opened .text:after {
+  content: '\f0d8';
+}
+.fintech .ui[class*="content container"] .content-holder {
+  padding-left: 230px;
+  height: 100%;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.fintech .ui[class*="content container"].expand-content .filters {
+  -moz-transform: translateX(-237px);
+  -ms-transform: translateX(-237px);
+  -webkit-transform: translateX(-237px);
+  transform: translateX(-237px);
+  position: absolute;
+}
+.fintech .ui[class*="content container"].expand-content .content-holder {
+  padding-left: 0;
+}
+.fintech .title[class*="chart page"] h2:before {
+  content: '\f080';
+  font-size: 15px;
+  display: inline-block;
+  font-family: "FontAwesome";
+  margin-right: 6px;
+  color: #999999;
+}
+.fintech .title[class*="page"] {
+  padding: 6px 6px 0;
+  position: relative;
+}
+.fintech .title[class*="page"] h2 {
+  font-size: 18px;
+  display: inline;
+}
+.fintech .title[class*="page"] .vs {
+  color: #999999;
+  padding: 0 8px 0 12px;
+}
+.fintech .toolbar {
+  font-family: "FontAwesome";
+  font-size: 15px;
+  margin: 1px 0 0 0;
+}
+.fintech .toolbar a {
+  margin-left: 15px;
+  color: gray;
+  margin-top: 8px;
+}
+.fintech .toolbar a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.fintech .toolbar > * {
+  display: inline-block;
+  float: right;
+}
+.fintech .toolbar .rotate:before {
+  display: inline-block;
+  background-image: url('../images/icons-s859c66aae4.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 17px;
+  width: 14px;
+  content: '';
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .fintech .toolbar .rotate:before {
+    background-image: url('../images/icons-2x-sb2027196c8.png');
+    background-size: 169.5px 44px;
+    background-position: 0 0;
+    height: 17px;
+    width: 14px;
+  }
+}
+.fintech .toolbar .a-z:before {
+  display: inline-block;
+  content: '\f15d';
+}
+.fintech .toolbar .z-a:before {
+  display: inline-block;
+  content: '\f15e';
+}
+.fintech .toolbar .sorting {
+  font-family: "SF-Compact-Text-Regular";
+  font-size: 12px;
+}
+.fintech .toolbar .sorting label {
+  line-height: 31px;
+  padding-right: 12px;
+}
+.fintech .toolbar .sorting .ui.dropdown {
+  min-width: 90px;
+  padding: 9px;
+  min-height: 32px;
+}
+.fintech .toolbar .sorting .ui.dropdown .menu > .item {
+  font: inherit;
+}
+.fintech footer {
+  color: #999999;
+  padding-top: 8px;
+}

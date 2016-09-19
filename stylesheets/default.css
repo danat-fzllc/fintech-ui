@@ -1,0 +1,111 @@
+/*reset*/
+/* Colors */
+/* Link Color */
+/* Breakpoints */
+/*element values*/
+/*fonts*/
+/* mixins */
+body {
+  font-family: "SF-Compact-Text-Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*[class*="left aligned"] {
+  text-align: left;
+}
+
+*[class*="center aligned"] {
+  text-align: center;
+}
+
+*[class*="right aligned"] {
+  text-align: right;
+}
+
+*[class*="fluid"] {
+  width: 100%;
+}
+
+/* default reset*/
+.clearfix {
+  clear: both;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+*[class*="left floated"] {
+  float: left;
+}
+
+*[class*="right floated"] {
+  float: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/*media query*/
+.mobile-only {
+  display: none;
+}
+@media (max-width: 320px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+.tablet-only {
+  display: none;
+}
+@media (max-width: 768px) {
+  .tablet-only {
+    display: block;
+  }
+}
+
+.computer-only {
+  display: none;
+}
+@media (max-width: 992px) {
+  .computer-only {
+    display: block;
+  }
+}
+
+.largeMonitor-only {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .largeMonitor-only {
+    display: block;
+  }
+}
+
+.widescreenMonitor-only {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .widescreenMonitor-only {
+    display: block;
+  }
+}

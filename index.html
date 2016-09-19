@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fintech</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+        <link href="stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <!--[if IE]>
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    </head>
+    <body>
+        <div class="ui container fluid fintech">
+            <div class="top fluid">
+                <div class="menu-nav left floated"></div>
+                
+                <a class="logo"></a>
+                
+                <div class="right floated">
+                    <div class="theme-changer right floated"></div>
+                    <div class="user-nav right floated">
+                        <a href="" class="sign-in">Sign In</a>
+                    </div>
+                    <form class="right floated country-selection">
+                        <div class="field">
+                            <div class="ui fluid search selection dropdown">
+                                <input type="hidden" name="country">
+                                <i class="dropdown icon"></i>
+                                <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
+                                <div class="menu">
+                                    <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
+                                    <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
+                                    <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="fluid clearfix question page center aligned relative">
+                <form class="ui form">
+                    <h1 class="question ui center">
+                    How many times was <select id="" class="ui selection dropdown">
+                        <option value="1">Companies</option>
+                        <option value="3">Markets</option>
+                        <option value="2">Commodities</option>
+                    </select>
+                    by <select id="" class="ui search selection dropdown">
+                        <option value="1">Companies</option>
+                        <option value="3">Markets</option>
+                        <option value="2">Commodities</option>
+                    </select>
+                    <input type="text" placeholder="" class="field center aligned" value="5" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
+                    % from <select id="" class="ui compact selection dropdown">
+                        <option value="1">2016</option>
+                        <option value="3">2007</option>
+                        <option value="2">2008</option>
+                    </select> to <select id="" class="ui compact selection dropdown">
+                    <option value="1">2016</option>
+                    <option value="3">2007</option>
+                    <option value="2">2008</option>
+                </select>
+                <a class="ui button yellow">?</a>
+                </h1>
+            </form>
+            <div class="button gray share right floated">
+                Share
+            </div>
+        </div>
+        <div class="fluid ui content container clearfix">
+            <section class="page filters left floated">
+                
+                <div class="header">Filters</div>
+                <div class="ui container">
+
+                <div class="ui styled accordion">
+                <div class="item">
+                    <div class="title active">
+                        <i class="dropdown icon"></i>
+                        Events
+                    </div>
+                    <div class="content active">
+                        <div class="ui list">
+                            <a class="item">Seasons</a>
+                            <a class="item">International</a>
+                        </div>
+                        <div class="title active">
+                        <i class="dropdown icon"></i>
+                        Company
+                    </div>
+                    <div class="content active">
+                        <div class="ui list">
+                            <a class="item">Seasons</a>
+                            <a class="item">International</a>
+                        </div>
+                        
+                      </div>
+                      </div>  
+                      
+                       
+                    </div>
+                    
+                </div>
+                <div class="ui styled accordion">
+                <div class="item">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Sectors
+                    </div>
+                    <div class="content">
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden">
+                                <label>Insurance</label>
+                            </div></div>
+                            <div class="inline field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" tabindex="0" class="hidden">
+                                    <label>Insurance</label>
+                                </div></div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    <section class="fluid content-holder">
+                        <div class="fluid left floated">
+                            <div class="title chart page clearfix">
+                                
+                                <div class="left floated ui">
+                                    <h2>Riyad Bank</h2>
+                                    <span class="vs">v/s</span>
+                                    <select name="companies" multiple="" class="ui multiple search dropdown compare-company">
+                                        <option value="">Compare to</option>
+                                        <option value="ribl">RIBL</option>
+                                        <option value="bjaz">BJAZ</option>
+                                        <option value="saudi-investment">Saudi Investment</option>
+                                        <option value="saudi-holland">Saudi Holland</option>
+                                        <option value="bsfr">BSFR</option>
+                                        <option value="saab">SAAB</option>
+                                        <option value="arab-national">Arab National</option>
+                                    </select>
+                                </div>
+                                <div class="right floated toolbar">
+                                    <a href="" class="rotate"></a>
+                                    <a href="" class="a-z"></a>
+                                    <div class="sorting">
+                                        <label class="left floated">Show top </label>
+                                        <select class="ui dropdown">
+                                            <option>10</option>
+                                            <option>20</option>
+                                            <option>40</option>
+                                            <option>60</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="ui one column grid">
+                                    
+                                    <div class="column">
+                                        <table class="ui celled padded table">
+  <thead>
+    <tr><th class="single line">Evidence Rating</th>
+    <th>Effect</th>
+    <th>Efficacy</th>
+    <th>Consensus</th>
+    <th>Comments</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <h2 class="ui center aligned header">A</h2>
+      </td>
+      <td class="single line">
+        Power Output
+      </td>
+      <td>
+        <div class="ui star rating" data-rating="3" data-max-rating="3"></div>
+      </td>
+      <td class="right aligned">
+        80% <br>
+        <a href="#">18 studies</a>
+      </td>
+      <td>Creatine supplementation is the reference compound for increasing muscular creatine levels; there is variability in this increase, however, with some nonresponders.</td>
+    </tr>
+    <tr>
+      <td>
+        <h2 class="ui center aligned header">A</h2>
+      </td>
+      <td class="single line">
+        Weight
+      </td>
+      <td>
+        <div class="ui star rating" data-rating="3" data-max-rating="3"></div>
+      </td>
+      <td class="right aligned">
+        100% <br>
+        <a href="#">65 studies</a>
+      </td>
+      <td>Creatine is the reference compound for power improvement, with numbers from one meta-analysis to assess potency</td>
+    </tr>
+  </tbody>
+</table>
+                                        <div class="content">
+                                            <img src="images/chart.gif" style="width:100%; display:block;">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <footer>
+                                &copy; 2016 Argaam Fintech FZ.LLC
+                            </footer>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+            <script src="dist/semantic.min.js"></script>
+            <script src="javascripts/fintech.js"></script>
+        </body>
+    </html>

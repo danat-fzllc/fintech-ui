@@ -1,0 +1,50 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+/* Colors */
+/* Link Color */
+/* Breakpoints */
+/*element values*/
+/*fonts*/
+.fintech .filters {
+  border-top: 1px solid #666;
+}
+.fintech .filters .ui.container {
+  /*padding: 6px 0 8px;*/
+  background-color: #fff;
+}
+.fintech .filters .ui.styled.accordion > .item > .title .dropdown {
+  float: right;
+  margin: 3px 0;
+  width: 4px;
+}
+.fintech .filters .ui.styled.accordion .accordion .content, .fintech .filters .ui.styled.accordion .content {
+  padding: 0 0 0 20px;
+}
+.fintech .filters .ui.styled.accordion, .fintech .filters .ui.styled.accordion .accordion {
+  box-shadow: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-top: 1px solid #e8e8e8;
+  padding: 6px 0 7px;
+}
+.fintech .filters .ui.styled.accordion .accordion .title, .fintech .filters .ui.styled.accordion .title {
+  border: 0;
+  padding: 6px 1em;
+}
+.fintech .filters .ui.styled.accordion .content .title {
+  padding: 6px 0;
+}
+.fintech .filters .ui.accordion .accordion {
+  margin: 0;
+}
+.fintech .filters .ui.list .list > a.item, .fintech .filters .ui.list > a.item {
+  padding: 6px 0;
+}
+.fintech .filters .ui.list, .fintech .filters ol.ui.list, .fintech .filters ul.ui.list {
+  margin: 0;
+}
+.fintech .filters .ui.accordion .accordion .title .dropdown.icon, .fintech .filters .ui.accordion .title .dropdown.icon {
+  width: 1em;
+}

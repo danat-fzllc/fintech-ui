@@ -1,0 +1,457 @@
+@import "compass/css3";
+@import "variables.scss";
+@import "mixins.scss";
+@import "default.scss";
+
+/*site theme*/
+/*fonts*/
+@font-face {
+    font-family: $fontAwesome;
+    src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+    src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay-Bold';
+    src: url("../fonts/SFUIDisplay-Bold.eot");
+    src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff"), url("../fonts/SFUIDisplay-Bold.ttf") format("truetype"), url("../fonts/SFUIDisplay-Bold.svg#SFUIDisplay-Bold") format("svg"), url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay-Light';
+    src: url("../fonts/SFUIDisplay-Light.eot");
+    src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay-Light.ttf") format("truetype"), url("../fonts/SFUIDisplay-Light.svg#SFUIDisplay-Light") format("svg"), url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay-Regular';
+    src: url("../fonts/SFUIDisplay-Regular.eot");
+    src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay-Regular.ttf") format("truetype"), url("../fonts/SFUIDisplay-Regular.svg#SFUIDisplay-Regular") format("svg"), url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay-Semibold';
+    src: url("../fonts/SFUIDisplay-Semibold.eot");
+    src: url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff"), url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype"), url("../fonts/SFUIDisplay-Semibold.svg#SFUIDisplay-Semibold") format("svg"), url("../fonts/SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-Compact-Text-Regular';
+    src: url("../fonts/SF-Compact-Text-Regular.eot");
+    src: url("../fonts/SF-Compact-Text-Regular.woff2") format("woff2"), url("../fonts/SF-Compact-Text-Regular.woff") format("woff"), url("../fonts/SF-Compact-Text-Regular.ttf") format("truetype"), url("../fonts/SF-Compact-Text-Regular.svg#SF-Compact-Text-Regular") format("svg"), url("../fonts/SF-Compact-Text-Regular.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-Compact-Text-Bold';
+    src: url("../fonts/SF-Compact-Text-Bold.eot");
+    src: url("../fonts/SF-Compact-Text-Bold.woff2") format("woff2"), url("../fonts/SF-Compact-Text-Bold.woff") format("woff"), url("../fonts/SF-Compact-Text-Bold.ttf") format("truetype"), url("../fonts/SF-Compact-Text-Bold.svg#SF-Compact-Text-Bold") format("svg"), url("../fonts/SF-Compact-Text-Bold.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-UI-Text-Bold';
+    src: url("../fonts/SF-UI-Text-Bold.eot");
+    src: url("../fonts/SF-UI-Text-Bold.woff2") format("woff2"), url("../fonts/SF-UI-Text-Bold.woff") format("woff"), url("../fonts/SF-UI-Text-Bold.ttf") format("truetype"), url("../fonts/SF-UI-Text-Bold.svg#SF-UI-Text-Bold") format("svg"), url("../fonts/SF-UI-Text-Bold.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF-UI-Text-Regular';
+    src: url("../fonts/SF-UI-Text-Regular.eot");
+    src: url("../fonts/SF-UI-Text-Regular.woff2") format("woff2"), url("../fonts/SF-UI-Text-Regular.woff") format("woff"), url("../fonts/SF-UI-Text-Regular.ttf") format("truetype"), url("../fonts/SF-UI-Text-Regular.svg#SF-UI-Text-Regular") format("svg"), url("../fonts/SF-UI-Text-Regular.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ui.selection.dropdown {
+    border-color: transparent;
+}
+
+.fintech {
+    > .ui.content.container {
+        padding: 15px;
+    }
+
+    .column > .content {
+        background-color: #fff;
+        padding: 12px;
+
+        @include border-radius(6px);
+    }
+
+    > .top {
+        background-color: $primaryColor;
+        height: 55px;
+        position: relative;
+        z-index: 2;
+
+        .menu-nav {
+            padding: 0 20px;
+            height: 55px;
+            line-height: 55px;
+            position: relative;
+
+            &:before {
+                content: '';
+                background-color: darken($primaryColor, 5%);
+
+                @include transition-property(transform);
+
+                @include transition-timing-function(ease-out);
+
+                @include transition-duration(0.2s);
+
+                @include transform-origin(0, 50%);
+
+                @include transform(scaleX(0));
+
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            &:hover {
+                &:before {
+                    @include transform(scaleX(1));
+                }
+            }
+
+            &:after {
+                content: '\f177';
+                font-family: $fontAwesome;
+                font-size: 17px;
+                display: inline-block;
+                color: $white;
+                cursor: pointer;
+
+                @include transform(rotate(0deg));
+
+                @include transition(all ease-out 0.2s);
+            }
+
+            &.expand {
+                &:after {
+                    content: '\f0b0';
+                    font-size: 20px;
+
+                    @include transform(rotate(-360deg));
+
+                    @include transition(all ease-out 0.2s);
+                }
+            }
+        }
+
+        .logo {
+            @include use-sprite(logo);
+
+            display: inline-block;
+            margin: 15px 0 0 26px;
+        }
+
+        .theme-changer {
+            @include use-sprite(theme);
+
+            margin: 17px;
+        }
+
+        .sign-in {
+            padding: 18px;
+            display: inline-block;
+        }
+
+        a {
+            color: $white;
+        }
+    }
+
+    .question[class*="page"] {
+        padding: 25px 0;
+        background-color: $white;
+
+        @include box-shadow(0 0 20px -10px #000);
+
+        h1 {
+            font-size: 27px;
+            line-height: 27px;
+            padding-right: 110px;
+            font-family: $primaryFontRegular;
+            font-weight: normal;
+        }
+
+        .field {
+            max-height: 20px;
+            padding-right: 0;
+            padding-left: 0;
+            background-color: #f1f1f1;
+            border-color: transparent;
+
+            &:hover {
+                border-color: rgba(34, 36, 38, 0.35);
+            }
+        }
+
+        .menu {
+            font-size: 12px;
+        }
+
+        .ui.button {
+            font-size: 22px;
+            line-height: 0;
+            display: inline-block;
+            margin: 0 0 0 2px;
+            height: 39px;
+            position: relative;
+            top: -2px;
+            color: $black;
+        }
+
+        .share {
+            position: absolute;
+            top: 30px;
+            right: 25px;
+            padding: 5px 10px 5px 6px;
+            background-color: #f8f8f8;
+            color: #666666;
+            cursor: pointer;
+
+            @include border-radius(6px);
+
+            &:hover {
+                background-color: lighten($black, 90%);
+            }
+
+            &:before {
+                display: inline-block;
+                content: '\f1e0';
+                font-family: $fontAwesome;
+                margin: 0 4px;
+            }
+        }
+    }
+
+    .page.filters {
+        width: 217px;
+
+        @include border-radius(6px);
+
+        overflow: hidden;
+
+        @include transition(all ease 0.2s);
+
+        .scroll {
+            height: 100%;
+            background-color: $white;
+
+            @include box-shadow(0 12px 18px -10px #000);
+
+            &:hover {
+                overflow-y: auto;
+            }
+        }
+
+        * {
+            border-color: lighten($black, 90%);
+        }
+
+        .header {
+            background-color: lighten($black, 60%);
+            color: $white;
+            height: 35px;
+            font-family: $primaryFontSemiBold;
+            font-size: 12px;
+            position: relative;
+            text-transform: uppercase;
+
+            &:before {
+                content: '\f0b0';
+                font-family: $fontAwesome;
+                display: inline-block;
+                margin: 9px 10px 0 14px;
+            }
+        }
+
+        .field {
+            padding: 6px 0;
+        }
+
+        .filter {
+            border-bottom-width: 1px;
+            border-style: solid;
+            padding: 10px;
+            position: relative;
+
+            .filters {
+                display: none;
+                padding-top: 6px;
+            }
+
+            .text {
+                position: relative;
+                font-family: $primaryFontBold;
+                cursor: pointer;
+
+                &:after {
+                    content: '\f0d7';
+                    font-family: $fontAwesome;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+                &:hover {
+                    color: $secondaryColor;
+
+                    &:after {
+                        color: $secondaryColor;
+                    }
+                }
+            }
+
+            &.opened {
+                .filters {
+                    display: block;
+                }
+
+                .text {
+                    &:after {
+                        content: '\f0d8';
+                    }
+                }
+            }
+        }
+    }
+
+    .ui[class*="content container"] {
+        .content-holder {
+            padding-left: 230px;
+            height: 100%;
+
+            @include transition(all ease 0.1s);
+        }
+
+        &.expand-content {
+            .filters {
+                @include translateX(-237px);
+
+                position: absolute;
+            }
+
+            .content-holder {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .title[class*="chart page"] {
+        h2:before {
+            content: '\f080';
+            font-size: 15px;
+            display: inline-block;
+            font-family: $fontAwesome;
+            margin-right: 6px;
+            color: lighten($black, 60%);
+        }
+    }
+
+    .title[class*="page"] {
+        padding: 6px 6px 0;
+        position: relative;
+
+        h2 {
+            font-size: 18px;
+            display: inline;
+        }
+
+        .vs {
+            color: lighten($black, 60%);
+            padding: 0 8px 0 12px;
+        }
+    }
+
+    .toolbar {
+        font-family: $fontAwesome;
+        font-size: 15px;
+        margin: 1px 0 0 0;
+
+        a {
+            margin-left: 15px;
+            color: lighten($black, 50%);
+            margin-top: 8px;
+
+            &:hover {
+                @include opacity(0.7);
+            }
+        }
+
+        > * {
+            display: inline-block;
+            float: $right;
+        }
+
+        .rotate {
+            &:before {
+                display: inline-block;
+
+                @include use-sprite(rotate);
+
+                content: '';
+            }
+        }
+
+        .a-z {
+            &:before {
+                display: inline-block;
+                content: '\f15d';
+            }
+        }
+
+        .z-a {
+            &:before {
+                display: inline-block;
+                content: '\f15e';
+            }
+        }
+
+        .sorting {
+            font-family: $primaryFontRegular;
+            font-size: 12px;
+
+            label {
+                line-height: 31px;
+                padding-right: 12px;
+            }
+
+            .ui.dropdown {
+                min-width: 90px;
+                padding: 9px;
+                min-height: 32px;
+
+                .menu > .item {
+                    font: inherit;
+                }
+            }
+        }
+    }
+
+    footer {
+        color: lighten($black, 60%);
+        padding-top: 8px;
+    }
+}

@@ -1,0 +1,14 @@
+/*******************************
+         Site Overrides
+*******************************/
+/* Colors */
+/* Link Color */
+/* Breakpoints */
+/*element values*/
+/*fonts*/
+.fintech .ui.checkbox {
+  font-size: 1em;
+}
+.fintech .ui.checkbox label:before {
+  color: #e9af03;
+}
