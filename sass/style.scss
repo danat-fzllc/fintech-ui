@@ -121,10 +121,9 @@
 
         .field {
             max-height: 20px;
-            padding-right: 0;
-            padding-left: 0;
             background-color: #f1f1f1;
             border-color: transparent;
+            padding: 18px 0;
 
             &:hover {
                 border-color: rgba(34, 36, 38, 0.35);
@@ -140,7 +139,6 @@
             line-height: 0;
             display: inline-block;
             margin: 0 0 0 2px;
-            height: 39px;
             position: relative;
             top: -2px;
             color: $black;
