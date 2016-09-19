@@ -1,3 +1,4 @@
 /*******************************
          Site Overrides
 *******************************/
+@import '/dist/collections/table.overrides.css';

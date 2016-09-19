@@ -169,7 +169,7 @@
     }
 
     .page.filters {
-        width: 217px;
+        width: 230px;
 
         @include border-radius(6px);
 
@@ -262,7 +262,7 @@
 
     .ui[class*="content container"] {
         .content-holder {
-            padding-left: 230px;
+            padding-left: 245px;
             height: 100%;
 
             @include transition(all ease 0.1s);
@@ -270,7 +270,7 @@
 
         &.expand-content {
             .filters {
-                @include translateX(-237px);
+                @include translateX(-245px);
 
                 position: absolute;
             }

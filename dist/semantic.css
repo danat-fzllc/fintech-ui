@@ -13535,8 +13535,6 @@ a.ui.basic.label:hover {
 
 /* Colors */
 
-/* Link Color */
-
 /* Breakpoints */
 
 /*element values*/
@@ -23432,6 +23430,30 @@ Floated Menu / Item
 
 /* Prototype */
 
+/*******************************
+         Site Overrides
+*******************************/
+
+.fintech .ui.table {
+  border: 0;
+}
+
+.fintech .ui.table .value-arrow {
+  font-size: 18px;
+}
+
+.fintech .ui.table .value-arrow.red {
+  color: #DB2828;
+}
+
+.fintech .ui.table .value-arrow.green {
+  color: #21BA45;
+}
+
+.fintech .ui.table .value-arrow .icon {
+  font-size: 24px;
+}
+
 .ui.table {
   width: 100%;
   background: #FFFFFF;
@@ -28069,8 +28091,6 @@ a.ui.card:hover,
 
 /* Colors */
 
-/* Link Color */
-
 /* Breakpoints */
 
 /*element values*/
@@ -28955,8 +28975,6 @@ body.dimmable > .dimmer {
 *******************************/
 
 /* Colors */
-
-/* Link Color */
 
 /* Breakpoints */
 

@@ -258,10 +258,9 @@ body {
 }
 .fintech .question[class*="page"] .field {
   max-height: 20px;
-  padding-right: 0;
-  padding-left: 0;
   background-color: #f1f1f1;
   border-color: transparent;
+  padding: 18px 0;
 }
 .fintech .question[class*="page"] .field:hover {
   border-color: rgba(34, 36, 38, 0.35);
@@ -274,7 +273,6 @@ body {
   line-height: 0;
   display: inline-block;
   margin: 0 0 0 2px;
-  height: 39px;
   position: relative;
   top: -2px;
   color: #000;
@@ -301,7 +299,7 @@ body {
   margin: 0 4px;
 }
 .fintech .page.filters {
-  width: 217px;
+  width: 230px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
@@ -377,7 +375,7 @@ body {
   content: '\f0d8';
 }
 .fintech .ui[class*="content container"] .content-holder {
-  padding-left: 230px;
+  padding-left: 245px;
   height: 100%;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
@@ -385,10 +383,10 @@ body {
   transition: all 0.1s ease;
 }
 .fintech .ui[class*="content container"].expand-content .filters {
-  -moz-transform: translateX(-237px);
-  -ms-transform: translateX(-237px);
-  -webkit-transform: translateX(-237px);
-  transform: translateX(-237px);
+  -moz-transform: translateX(-245px);
+  -ms-transform: translateX(-245px);
+  -webkit-transform: translateX(-245px);
+  transform: translateX(-245px);
   position: absolute;
 }
 .fintech .ui[class*="content container"].expand-content .content-holder {
