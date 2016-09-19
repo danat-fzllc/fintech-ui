@@ -1,4 +1,4 @@
 /*******************************
          Site Overrides
 *******************************/
-@import '/stylesheets/modules/checkbox.overrides.css';
+@import '/dist/modules/checkbox.overrides.css';

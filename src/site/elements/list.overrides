@@ -1,4 +1,4 @@
 /*******************************
     User Variable Overrides
 *******************************/
-@import '/stylesheets/elements/list.overrides.css';
+@import '/dist/elements/list.overrides.css';

@@ -2,5 +2,5 @@
         User Overrides
 *******************************/
 
-@import '/stylesheets/modules/dropdown.overrides.css';
+@import '/dist/modules/dropdown.overrides.css';
 
