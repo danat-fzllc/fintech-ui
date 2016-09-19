@@ -1,2 +1,14 @@
+dist/collections/
+dist/components/
+dist/elements/
+dist/globals/
+dist/modules/
+dist/themes/basic/
+dist/themes/github/
+dist/themes/material/
+dist/views/
+dist/default.css
+dist/mixins.css
+dist/variables.css
 tasks/
 gulpfile.js
