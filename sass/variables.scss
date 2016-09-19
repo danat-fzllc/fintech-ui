@@ -1,22 +1,8 @@
 /* Colors */
 $primaryColor: #227a4f;
 $secondaryColor: #e9af03;
-$orange: #ff6600;
 $black: #000;
 $white: #fff;
-$pageBackground: #f6f6f6;
-$highlightBackground: #CCE2FF;
-$highlightColor: lighten($black, 10%);
-$inputHighlightBackground: #646464;
-$inputHighlightColor: $black;
-
-$info: #276F86;
-$error: #9F3A38;
-$success: #2C662D;
-$warning: #573A08;
-
-/* Link Color */
-$linkColor: $black;
 
 /* Breakpoints */
 $mobileBreakpoint: 320px;
@@ -35,4 +21,3 @@ $primaryFontRegular: "SF-Compact-Text-Regular";
 $primaryFontBold: "SF-Compact-Text-Bold";
 $pageFont: $primaryFontRegular, "Helvetica Neue", Arial, Helvetica, sans-serif;
 $fontSize: 13px;
-$lineHeight: 1.4285em;
