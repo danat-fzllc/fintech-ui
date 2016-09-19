@@ -300,14 +300,15 @@ body {
 }
 .fintech .page.filters {
   width: 230px;
+  position: absolute;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   overflow: hidden;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .fintech .page.filters .scroll {
   height: 100%;
@@ -377,10 +378,10 @@ body {
 .fintech .ui[class*="content container"] .content-holder {
   padding-left: 245px;
   height: 100%;
-  -moz-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .fintech .ui[class*="content container"].expand-content .filters {
   -moz-transform: translateX(-245px);

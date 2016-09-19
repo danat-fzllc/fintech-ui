@@ -170,12 +170,13 @@
 
     .page.filters {
         width: 230px;
+        position: absolute;
 
         @include border-radius(6px);
 
         overflow: hidden;
 
-        @include transition(all ease 0.2s);
+        @include transition(all ease 0.5s);
 
         .scroll {
             height: 100%;
@@ -265,7 +266,7 @@
             padding-left: 245px;
             height: 100%;
 
-            @include transition(all ease 0.1s);
+            @include transition(all ease 0.5s);
         }
 
         &.expand-content {
