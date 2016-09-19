@@ -1,3 +1,4 @@
-dist/
+dist/components/
+dist/themes/
 tasks/
 gulpfile.js
