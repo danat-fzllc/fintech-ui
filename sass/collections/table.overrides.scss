@@ -5,6 +5,10 @@
     .ui.table {
         border: 0;
 
+        thead th {
+            background-color: #e4e4e4;
+        }
+
         .value-arrow {
             font-size: 18px;
 

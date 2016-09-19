@@ -23438,6 +23438,10 @@ Floated Menu / Item
   border: 0;
 }
 
+.fintech .ui.table thead th {
+  background-color: #e4e4e4;
+}
+
 .fintech .ui.table .value-arrow {
   font-size: 18px;
 }
