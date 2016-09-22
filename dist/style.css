@@ -4,13 +4,6 @@
 /*fonts*/
 /* mixins */
 /*reset*/
-body {
-  font-family: "SF-Compact-Text-Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 *[class*="left aligned"] {
   text-align: left;
 }
@@ -253,7 +246,6 @@ body {
   font-size: 27px;
   line-height: 27px;
   padding-right: 110px;
-  font-family: "SF-Compact-Text-Regular";
   font-weight: normal;
 }
 .fintech .question[class*="page"] .field {
@@ -261,9 +253,6 @@ body {
   background-color: #f1f1f1;
   border-color: transparent;
   padding: 18px 0;
-}
-.fintech .question[class*="page"] .field:hover {
-  border-color: rgba(34, 36, 38, 0.35);
 }
 .fintech .question[class*="page"] .menu {
   font-size: 12px;

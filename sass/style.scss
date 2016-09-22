@@ -115,7 +115,6 @@
             font-size: 27px;
             line-height: 27px;
             padding-right: 110px;
-            font-family: $primaryFontRegular;
             font-weight: normal;
         }
 
@@ -124,10 +123,6 @@
             background-color: #f1f1f1;
             border-color: transparent;
             padding: 18px 0;
-
-            &:hover {
-                border-color: rgba(34, 36, 38, 0.35);
-            }
         }
 
         .menu {

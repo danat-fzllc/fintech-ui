@@ -2,63 +2,17 @@
 @import "compass/css3";
 
 .fintech {
-    .ui.selection.dropdown {
-        border-color: transparent;
-    }
-
     .question[class*="page"] {
-        .question > .dropdown {
-            min-width: 0;
-            min-height: 0;
-            padding: 5px 26px 5px 8px;
-            background-color: #f1f1f1;
-        }
-
         .ui.search.selection.dropdown > input.search {
-            background: none !important;
-            border: none !important;
-            box-shadow: none !important;
-            cursor: text;
-            top: 0;
-            left: 1px;
-            width: 100%;
-            outline: 0;
-            position: absolute;
-            z-index: 2;
             font-family: $primaryFontBold;
-            font-size: inherit;
-            padding: 5px 26px 5px 8px;
         }
-    }
-
-    .ui.dropdown .menu > .item {
-        font-size: inherit;
-    }
-
-    .ui.form .selection.dropdown > .dropdown.icon {
-        float: right;
-        line-height: 1rem;
-        right: 8px;
-        font-size: 1rem;
-    }
-
-    .ui.multiple.dropdown > .label {
-        box-shadow: none;
-        background-color: #e4e4e4;
     }
 
     > .top .country-selection {
-        margin: 8px 0 0 0;
-
         .ui.selection.dropdown {
-            background-color: #299b63;
             color: $white;
 
             @include transition(width, ease 0.5s);
-
-            &.active {
-                min-width: 185px;
-            }
         }
 
         .ui.default.dropdown:not(.button) > .text, .ui.dropdown:not(.button) > .default.text {

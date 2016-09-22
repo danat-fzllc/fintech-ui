@@ -1,4 +1,28 @@
 /*******************************
          Site Overrides
 *******************************/
-@import '/dist/collections/table.overrides.css';
+.fintech {
+    .ui.table {
+        border: 0;
+
+        thead th {
+            background-color: #e4e4e4;
+        }
+
+        .value-arrow {
+            font-size: 18px;
+
+            &.red {
+                color: #DB2828;
+            }
+
+            &.green {
+                color: #21BA45;
+            }
+
+            .icon {
+                font-size: 24px;
+            }
+        }
+    }
+}

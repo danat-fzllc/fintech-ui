@@ -1,4 +1,12 @@
 /*******************************
          Site Overrides
 *******************************/
-@import '/dist/modules/checkbox.overrides.css';
+.fintech {
+    .ui.checkbox {
+        font-size: 1em;
+    }
+
+    .ui.checkbox label:before {
+        color: #e9af03;
+    }
+}

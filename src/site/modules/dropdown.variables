@@ -1,6 +1,9 @@
 /*******************************
     User Variable Overrides
 *******************************/
-@selectionVisibleBorderColor: #e9af03;
-@selectionActiveHoverBorderColor: #e9af03;
-@selectionFocusBorderColor: #e9af03;
+@secondaryColor: #e9af03;
+@selectionVisibleBorderColor: @secondaryColor;
+@selectionActiveHoverBorderColor: @secondaryColor;
+@selectionFocusBorderColor: @secondaryColor;
+@selectionHoverBorderColor: @secondaryColor;
+@selectionBorder: 1px solid transparent;

@@ -509,10 +509,6 @@ th {
              Page
 *******************************/
 
-/*******************************
-         Site Overrides
-*******************************/
-
 html,
 body {
   height: 100%;
@@ -13541,64 +13537,11 @@ a.ui.basic.label:hover {
 
 /*fonts*/
 
-.fintech .filters {
-  border-top: 1px solid #666;
-}
-
-.fintech .filters .ui.container {
-  /*padding: 6px 0 8px;*/
-  background-color: #fff;
-}
-
-.fintech .filters .ui.styled.accordion > .item > .title .dropdown {
-  float: right;
-  margin: 3px 0;
-  width: 4px;
-}
-
-.fintech .filters .ui.styled.accordion .accordion .content,
-.fintech .filters .ui.styled.accordion .content {
-  padding: 0 0 0 20px;
-}
-
 .fintech .filters .ui.styled.accordion,
 .fintech .filters .ui.styled.accordion .accordion {
-  box-shadow: none;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  border-top: 1px solid #e8e8e8;
-  padding: 6px 0 7px;
-}
-
-.fintech .filters .ui.styled.accordion .accordion .title,
-.fintech .filters .ui.styled.accordion .title {
-  border: 0;
-  padding: 6px 1em;
-}
-
-.fintech .filters .ui.styled.accordion .content .title {
-  padding: 6px 0;
-}
-
-.fintech .filters .ui.accordion .accordion {
-  margin: 0;
-}
-
-.fintech .filters .ui.list .list > a.item,
-.fintech .filters .ui.list > a.item {
-  padding: 6px 0;
-}
-
-.fintech .filters .ui.list,
-.fintech .filters ol.ui.list,
-.fintech .filters ul.ui.list {
-  margin: 0;
-}
-
-.fintech .filters .ui.accordion .accordion .title .dropdown.icon,
-.fintech .filters .ui.accordion .title .dropdown.icon {
-  width: 1em;
 }
 
 ul.ui.list,
@@ -14664,6 +14607,63 @@ ol.ui.horizontal.list li:before,
 /*******************************
     User Variable Overrides
 *******************************/
+
+.fintech .filters {
+  border-top: 1px solid #666;
+}
+
+.fintech .filters .ui.container {
+  /*padding: 6px 0 8px;*/
+  background-color: #fff;
+}
+
+.fintech .filters .ui.styled.accordion > .item > .title .dropdown {
+  float: right;
+  margin: 3px 0;
+  width: 4px;
+}
+
+.fintech .filters .ui.styled.accordion .accordion .content,
+.fintech .filters .ui.styled.accordion .content {
+  padding: 0 0 0 20px;
+}
+
+.fintech .filters .ui.styled.accordion,
+.fintech .filters .ui.styled.accordion .accordion {
+  box-shadow: none;
+  border-top: 1px solid #e8e8e8;
+  padding: 6px 0 7px;
+}
+
+.fintech .filters .ui.styled.accordion .accordion .title,
+.fintech .filters .ui.styled.accordion .title {
+  border: 0;
+  padding: 6px 1em;
+}
+
+.fintech .filters .ui.styled.accordion .content .title {
+  padding: 6px 0;
+}
+
+.fintech .filters .ui.accordion .accordion {
+  margin: 0;
+}
+
+.fintech .filters .ui.list .list > a.item,
+.fintech .filters .ui.list > a.item {
+  padding: 6px 0;
+}
+
+.fintech .filters .ui.list,
+.fintech .filters ol.ui.list,
+.fintech .filters ul.ui.list {
+  margin: 0;
+}
+
+.fintech .filters .ui.accordion .accordion .title .dropdown.icon,
+.fintech .filters .ui.accordion .title .dropdown.icon {
+  width: 1em;
+}
 /*!
  * # Semantic UI 2.2.4 - Loader
  * http://github.com/semantic-org/semantic-ui/
@@ -18364,6 +18364,22 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.form textarea:hover,
+.ui.form input:not([type]):hover,
+.ui.form input[type="date"]:hover,
+.ui.form input[type="datetime-local"]:hover,
+.ui.form input[type="email"]:hover,
+.ui.form input[type="number"]:hover,
+.ui.form input[type="password"]:hover,
+.ui.form input[type="search"]:hover,
+.ui.form input[type="tel"]:hover,
+.ui.form input[type="time"]:hover,
+.ui.form input[type="text"]:hover,
+.ui.form input[type="file"]:hover,
+.ui.form input[type="url"]:hover {
+  border-color: #e9af03;
+}
 /*!
  * # Semantic UI 2.2.4 - Grid
  * http://github.com/semantic-org/semantic-ui/
@@ -23430,34 +23446,6 @@ Floated Menu / Item
 
 /* Prototype */
 
-/*******************************
-         Site Overrides
-*******************************/
-
-.fintech .ui.table {
-  border: 0;
-}
-
-.fintech .ui.table thead th {
-  background-color: #e4e4e4;
-}
-
-.fintech .ui.table .value-arrow {
-  font-size: 18px;
-}
-
-.fintech .ui.table .value-arrow.red {
-  color: #DB2828;
-}
-
-.fintech .ui.table .value-arrow.green {
-  color: #21BA45;
-}
-
-.fintech .ui.table .value-arrow .icon {
-  font-size: 24px;
-}
-
 .ui.table {
   width: 100%;
   background: #FFFFFF;
@@ -24706,6 +24694,30 @@ Floated Menu / Item
 /*******************************
          Site Overrides
 *******************************/
+
+.fintech .ui.table {
+  border: 0;
+}
+
+.fintech .ui.table thead th {
+  background-color: #e4e4e4;
+}
+
+.fintech .ui.table .value-arrow {
+  font-size: 18px;
+}
+
+.fintech .ui.table .value-arrow.red {
+  color: #DB2828;
+}
+
+.fintech .ui.table .value-arrow.green {
+  color: #21BA45;
+}
+
+.fintech .ui.table .value-arrow .icon {
+  font-size: 24px;
+}
 /*!
  * # Semantic UI 2.2.4 - Ad
  * http://github.com/semantic-org/semantic-ui/
@@ -28089,26 +28101,6 @@ a.ui.card:hover,
     Content
 ---------------*/
 
-/*******************************
-         Site Overrides
-*******************************/
-
-/* Colors */
-
-/* Breakpoints */
-
-/*element values*/
-
-/*fonts*/
-
-.fintech .ui.checkbox {
-  font-size: 1em;
-}
-
-.fintech .ui.checkbox label:before {
-  color: #e9af03;
-}
-
 .ui.checkbox {
   position: relative;
   display: inline-block;
@@ -28756,6 +28748,14 @@ a.ui.card:hover,
 /*******************************
          Site Overrides
 *******************************/
+
+.fintech .ui.checkbox {
+  font-size: 1em;
+}
+
+.fintech .ui.checkbox label:before {
+  color: #e9af03;
+}
 /*!
  * # Semantic UI 2.2.4 - Dimmer
  * http://github.com/semantic-org/semantic-ui/
@@ -28977,79 +28977,6 @@ body.dimmable > .dimmer {
 /*******************************
             Dropdown
 *******************************/
-
-/* Colors */
-
-/* Breakpoints */
-
-/*element values*/
-
-/*fonts*/
-
-.fintech .ui.selection.dropdown {
-  border-color: transparent;
-}
-
-.fintech .question[class*="page"] .question > .dropdown {
-  min-width: 0;
-  min-height: 0;
-  padding: 5px 26px 5px 8px;
-  background-color: #f1f1f1;
-}
-
-.fintech .question[class*="page"] .ui.search.selection.dropdown > input.search {
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  cursor: text;
-  top: 0;
-  left: 1px;
-  width: 100%;
-  outline: 0;
-  position: absolute;
-  z-index: 2;
-  font-family: "SF-Compact-Text-Bold";
-  font-size: inherit;
-  padding: 5px 26px 5px 8px;
-}
-
-.fintech .ui.dropdown .menu > .item {
-  font-size: inherit;
-}
-
-.fintech .ui.form .selection.dropdown > .dropdown.icon {
-  float: right;
-  line-height: 1rem;
-  right: 8px;
-  font-size: 1rem;
-}
-
-.fintech .ui.multiple.dropdown > .label {
-  box-shadow: none;
-  background-color: #e4e4e4;
-}
-
-.fintech > .top .country-selection {
-  margin: 8px 0 0 0;
-}
-
-.fintech > .top .country-selection .ui.selection.dropdown {
-  background-color: #299b63;
-  color: #fff;
-  -moz-transition: width, ease 0.5s;
-  -o-transition: width, ease 0.5s;
-  -webkit-transition: width, ease 0.5s;
-  transition: width, ease 0.5s;
-}
-
-.fintech > .top .country-selection .ui.selection.dropdown.active {
-  min-width: 185px;
-}
-
-.fintech > .top .country-selection .ui.default.dropdown:not(.button) > .text,
-.fintech > .top .country-selection .ui.dropdown:not(.button) > .default.text {
-  color: #fff;
-}
 
 .ui.dropdown {
   cursor: pointer;
@@ -29405,7 +29332,7 @@ body.dimmable > .dimmer {
   padding: 0.84615385em 2.17692308em 0.84615385em 1.07692308em;
   color: rgba(0, 0, 0, 0.87);
   box-shadow: none;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: 1px solid transparent;
   border-radius: 0.30769231rem;
   -webkit-transition: box-shadow 0.1s ease, width 0.1s ease;
   transition: box-shadow 0.1s ease, width 0.1s ease;
@@ -29522,7 +29449,7 @@ select.ui.dropdown {
 /* Hover */
 
 .ui.selection.dropdown:hover {
-  border-color: rgba(34, 36, 38, 0.35);
+  border-color: #e9af03;
   box-shadow: none;
 }
 
@@ -30584,6 +30511,56 @@ select.ui.dropdown {
 /*******************************
         User Overrides
 *******************************/
+
+.fintech .question[class*="page"] .question > .dropdown {
+  min-width: 0;
+  min-height: 0;
+  padding: 5px 26px 5px 8px;
+  background-color: #f1f1f1;
+}
+
+.fintech .question[class*="page"] .ui.search.selection.dropdown > input.search {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: text;
+  top: 0;
+  left: 1px;
+  width: 100%;
+  outline: 0;
+  position: absolute;
+  z-index: 2;
+  font-size: inherit;
+  padding: 5px 26px 5px 8px;
+}
+
+.fintech .ui.dropdown .menu > .item {
+  font-size: inherit;
+}
+
+.fintech .ui.form .selection.dropdown > .dropdown.icon {
+  float: right;
+  line-height: 1rem;
+  right: 8px;
+  font-size: 1rem;
+}
+
+.fintech .ui.multiple.dropdown > .label {
+  box-shadow: none;
+  background-color: #e4e4e4;
+}
+
+.fintech > .top .country-selection {
+  margin: 8px 0 0 0;
+}
+
+.fintech > .top .country-selection .ui.selection.dropdown {
+  background-color: #299b63;
+}
+
+.fintech > .top .country-selection .ui.selection.dropdown.active {
+  min-width: 185px;
+}
 /*!
  * # Semantic UI 2.2.4 - Video
  * http://github.com/semantic-org/semantic-ui/

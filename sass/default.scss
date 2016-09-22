@@ -3,13 +3,6 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-body {
-    font-family: $pageFont;
-    font-size: $fontSize;
-
-    @include font-smoothing(on);
-}
-
 *[class*="left aligned"] {
     text-align: left;
 }

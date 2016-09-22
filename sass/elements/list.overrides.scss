@@ -6,59 +6,8 @@
 
 .fintech {
     .filters {
-        .ui.container {
-            /*padding: 6px 0 8px;*/
-            background-color: #fff;
-        }
-
-        .ui.styled.accordion {
-            > .item {
-                > .title .dropdown {
-                    float: right;
-                    margin: 3px 0;
-                    width: 4px;
-                }
-            }
-        }
-
-        .ui.styled.accordion .accordion .content, .ui.styled.accordion .content {
-            padding: 0 0 0 20px;
-        }
-
         .ui.styled.accordion, .ui.styled.accordion .accordion {
-            box-shadow: none;
-
             @include border-radius(0);
-
-            border-top: 1px solid #e8e8e8;
-            padding: 6px 0 7px;
-        }
-
-        border-top: 1px solid #666;
-
-        .ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
-            border: 0;
-            padding: 6px 1em;
-        }
-
-        .ui.styled.accordion .content .title {
-            padding: 6px 0;
-        }
-
-        .ui.accordion .accordion {
-            margin: 0;
-        }
-
-        .ui.list .list > a.item, .ui.list > a.item {
-            padding: 6px 0;
-        }
-
-        .ui.list, ol.ui.list, ul.ui.list {
-            margin: 0;
-        }
-
-        .ui.accordion .accordion .title .dropdown.icon, .ui.accordion .title .dropdown.icon {
-            width: 1em;
         }
     }
 }
