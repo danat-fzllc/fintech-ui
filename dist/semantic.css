@@ -8,7 +8,6 @@
  * http://opensource.org/licenses/MIT
  *
  */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
 /*!
  * # Semantic UI 2.2.4 - Reset
  * http://github.com/semantic-org/semantic-ui/
@@ -667,7 +666,7 @@ input::selection {
 @font-face {
   font-family: 'SF-Compact-Text-Regular';
   src: url("../src/site/assets/fonts/SF-Compact-Text-Regular.eot");
-  src: url("../src/site/assets/fonts/SF-Compact-Text-Regular.eot?#iefix") format('embedded-opentype'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.woff") format('woff'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.ttf") format('truetype'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.svg#fontNameRegular") format('svg');
+  src: url("../src/site/assets/fonts/SF-Compact-Text-Regular.eot?#iefix") format('embedded-opentype'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.woff2") format('woff2'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.woff") format('woff'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.ttf") format('truetype'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.svg#SF-Compact-Text-Regular") format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -678,7 +677,7 @@ input::selection {
 @font-face {
   font-family: 'SF-Compact-Text-Bold';
   src: url("../src/site/assets/fonts/SF-Compact-Text-Bold.eot");
-  src: url("../src/site/assets/fonts/SF-Compact-Text-Bold.eot?#iefix") format('embedded-opentype'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.woff") format('woff'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.ttf") format('truetype'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.svg#fontNameBold") format('svg');
+  src: url("../src/site/assets/fonts/SF-Compact-Text-Bold.eot?#iefix") format('embedded-opentype'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.woff2") format('woff2'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.woff") format('woff'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.ttf") format('truetype'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.svg#SF-Compact-Text-Bold") format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
