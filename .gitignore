@@ -1,7 +1,6 @@
-dist/collections/
+
 dist/components/
 dist/elements/
-dist/globals/
 dist/modules/
 dist/themes/basic/
 dist/themes/github/
@@ -12,7 +11,6 @@ dist/mixins.css
 dist/variables.css
 tasks/
 gulpfile.js
-
 dist/amazon/
 dist/basic/
 dist/bookish/
