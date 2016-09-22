@@ -28108,10 +28108,10 @@ a.ui.card:hover,
   outline: none;
   vertical-align: baseline;
   font-style: normal;
-  min-height: 15px;
+  min-height: 17px;
   font-size: 1rem;
-  line-height: 15px;
-  min-width: 15px;
+  line-height: 17px;
+  min-width: 17px;
 }
 
 /* HTML Checkbox */
@@ -28125,8 +28125,8 @@ a.ui.card:hover,
   opacity: 0 !important;
   outline: none;
   z-index: 3;
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
 }
 
 /*--------------
@@ -28148,8 +28148,8 @@ a.ui.card:hover,
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   content: '';
   background: #FFFFFF;
   border-radius: 0.23076923rem;
@@ -28167,14 +28167,14 @@ a.ui.card:hover,
 .ui.checkbox .box:after,
 .ui.checkbox label:after {
   position: absolute;
-  font-size: 12px;
+  font-size: 14px;
   top: 0px;
   left: 0px;
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   text-align: center;
   opacity: 0;
-  color: #e9af03;
+  color: rgba(0, 0, 0, 0.87);
   -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
@@ -28211,7 +28211,7 @@ a.ui.card:hover,
 .ui.checkbox .box:hover::before,
 .ui.checkbox label:hover::before {
   background: #FFFFFF;
-  border-color: #e9af03;
+  border-color: #FBBD08;
 }
 
 .ui.checkbox label:hover,
@@ -28226,7 +28226,7 @@ a.ui.card:hover,
 .ui.checkbox .box:active::before,
 .ui.checkbox label:active::before {
   background: #F9FAFB;
-  border-color: #e9af03;
+  border-color: #FBBD08;
 }
 
 .ui.checkbox .box:active::after,
@@ -28245,12 +28245,12 @@ a.ui.card:hover,
 .ui.checkbox input:focus ~ .box:before,
 .ui.checkbox input:focus ~ label:before {
   background: #FFFFFF;
-  border-color: #e9af03;
+  border-color: #FBBD08;
 }
 
 .ui.checkbox input:focus ~ .box:after,
 .ui.checkbox input:focus ~ label:after {
-  color: #e9af03;
+  color: #FBBD08;
 }
 
 .ui.checkbox input:focus ~ label {
@@ -28264,13 +28264,13 @@ a.ui.card:hover,
 .ui.checkbox input:checked ~ .box:before,
 .ui.checkbox input:checked ~ label:before {
   background: #FFFFFF;
-  border-color: #e9af03;
+  border-color: #FBBD08;
 }
 
 .ui.checkbox input:checked ~ .box:after,
 .ui.checkbox input:checked ~ label:after {
   opacity: 1;
-  color: #e9af03;
+  color: #FBBD08;
 }
 
 /*--------------
@@ -28280,13 +28280,13 @@ a.ui.card:hover,
 .ui.checkbox input:not([type=radio]):indeterminate ~ .box:before,
 .ui.checkbox input:not([type=radio]):indeterminate ~ label:before {
   background: #FFFFFF;
-  border-color: #e9af03;
+  border-color: #FBBD08;
 }
 
 .ui.checkbox input:not([type=radio]):indeterminate ~ .box:after,
 .ui.checkbox input:not([type=radio]):indeterminate ~ label:after {
   opacity: 1;
-  color: #e9af03;
+  color: #FBBD08;
 }
 
 /*--------------
@@ -28298,7 +28298,7 @@ a.ui.card:hover,
 .ui.checkbox input:checked:focus ~ .box:before,
 .ui.checkbox input:checked:focus ~ label:before {
   background: #FFFFFF;
-  border-color: #e9af03;
+  border-color: #FBBD08;
 }
 
 .ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:after,
@@ -28416,7 +28416,7 @@ a.ui.card:hover,
 
 .ui.radio.checkbox input:focus ~ .box:after,
 .ui.radio.checkbox input:focus ~ label:after {
-  background-color: #e9af03;
+  background-color: #FBBD08;
 }
 
 /* Indeterminate */
@@ -28435,7 +28435,7 @@ a.ui.card:hover,
 
 .ui.radio.checkbox input:checked ~ .box:after,
 .ui.radio.checkbox input:checked ~ label:after {
-  background-color: #e9af03;
+  background-color: #FBBD08;
 }
 
 /* Active Focus */
@@ -28588,7 +28588,7 @@ a.ui.card:hover,
 .ui.toggle.checkbox label {
   min-height: 1.5rem;
   padding-left: 4.5rem;
-  color: #e9af03;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .ui.toggle.checkbox label {
@@ -28748,12 +28748,9 @@ a.ui.card:hover,
          Site Overrides
 *******************************/
 
-.fintech .ui.checkbox {
-  font-size: 1em;
-}
-
-.fintech .ui.checkbox label:before {
-  color: #e9af03;
+.fintech .filters .ui.checkbox .box:after,
+.fintech .filters .ui.checkbox label:after {
+  font-size: 12px;
 }
 /*!
  * # Semantic UI 2.2.4 - Dimmer
