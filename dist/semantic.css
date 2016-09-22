@@ -30555,10 +30555,23 @@ select.ui.dropdown {
 
 .fintech > .top .country-selection .ui.selection.dropdown {
   background-color: #299b63;
+  color: #fff;
 }
 
 .fintech > .top .country-selection .ui.selection.dropdown.active {
   min-width: 185px;
+}
+
+.fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .text {
+  color: #fff;
+}
+
+.fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .default.text {
+  color: #fff;
+}
+
+.fintech > .top .country-selection .ui.active.search.dropdown input.search:focus + .text {
+  color: rgba(255, 255, 255, 0.57) !important;
 }
 /*!
  * # Semantic UI 2.2.4 - Video

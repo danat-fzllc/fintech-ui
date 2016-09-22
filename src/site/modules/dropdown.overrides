@@ -47,10 +47,19 @@
 
         .ui.selection.dropdown {
             background-color: #299b63;
-
+            color: #fff;
             &.active {
                 min-width: 185px;
             }
+            &:not(.button)>.text{
+                color: #fff;
+            }
+            &:not(.button)>.default.text{
+                color: #fff;
+            }
         }
+        .ui.active.search.dropdown input.search:focus+.text {
+    color: rgba(255, 255, 255, 0.57)!important;
+}
     }
 }
