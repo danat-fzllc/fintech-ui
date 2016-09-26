@@ -28974,6 +28974,31 @@ body.dimmable > .dimmer {
             Dropdown
 *******************************/
 
+/* Colors */
+
+/* Breakpoints */
+
+/*element values*/
+
+/*fonts*/
+
+.fintech .question[class*="page"] .ui.search.selection.dropdown > input.search {
+  font-family: "SF-Compact-Text-Bold";
+}
+
+.fintech > .top .country-selection .ui.selection.dropdown {
+  color: #fff;
+  -moz-transition: width, ease 0.5s;
+  -o-transition: width, ease 0.5s;
+  -webkit-transition: width, ease 0.5s;
+  transition: width, ease 0.5s;
+}
+
+.fintech > .top .country-selection .ui.default.dropdown:not(.button) > .text,
+.fintech > .top .country-selection .ui.dropdown:not(.button) > .default.text {
+  color: #fff;
+}
+
 .ui.dropdown {
   cursor: pointer;
   position: relative;

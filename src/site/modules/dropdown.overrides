@@ -1,6 +1,7 @@
 /*******************************
         User Overrides
 *******************************/
+@import '/dist/modules/dropdown.overrides.css';
 .fintech {
     .question[class*="page"] {
         .question > .dropdown {
