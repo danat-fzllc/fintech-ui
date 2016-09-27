@@ -17,7 +17,6 @@ $right: right;
 
 /*fonts*/
 $fontAwesome: "Icons";
-$primaryFontRegular: "SF-Compact-Text-Regular";
-$primaryFontBold: "SF-Compact-Text-Bold";
-$pageFont: $primaryFontRegular, "Helvetica Neue", Arial, Helvetica, sans-serif;
+$primaryFontRegular: "Roboto", sans-serif;
+$pageFont: $primaryFontRegular, sans-serif;
 $fontSize: 13px;

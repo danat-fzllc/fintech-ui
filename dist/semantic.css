@@ -8,6 +8,7 @@
  * http://opensource.org/licenses/MIT
  *
  */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400, 400i, 500, 500i, 700, 700i, 900&subset=latin');
 /*!
  * # Semantic UI 2.2.4 - Reset
  * http://github.com/semantic-org/semantic-ui/
@@ -523,7 +524,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #f6f6f6;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
@@ -539,7 +540,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   font-weight: bold;
@@ -662,28 +663,6 @@ input::selection {
 /*******************************
          Site Overrides
 *******************************/
-
-@font-face {
-  font-family: 'SF-Compact-Text-Regular';
-  src: url("../src/site/assets/fonts/SF-Compact-Text-Regular.eot");
-  src: url("../src/site/assets/fonts/SF-Compact-Text-Regular.eot?#iefix") format('embedded-opentype'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.woff2") format('woff2'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.woff") format('woff'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.ttf") format('truetype'), url("../src/site/assets/fonts/SF-Compact-Text-Regular.svg#SF-Compact-Text-Regular") format('svg');
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
-}
-
-@font-face {
-  font-family: 'SF-Compact-Text-Bold';
-  src: url("../src/site/assets/fonts/SF-Compact-Text-Bold.eot");
-  src: url("../src/site/assets/fonts/SF-Compact-Text-Bold.eot?#iefix") format('embedded-opentype'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.woff2") format('woff2'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.woff") format('woff'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.ttf") format('truetype'), url("../src/site/assets/fonts/SF-Compact-Text-Bold.svg#SF-Compact-Text-Bold") format('svg');
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
-}
 /*!
  * # Semantic UI 2.2.4 - Button
  * http://github.com/semantic-org/semantic-ui/
@@ -707,7 +686,7 @@ input::selection {
   vertical-align: baseline;
   background: #E0E1E2 none;
   color: rgba(0, 0, 0, 0.6);
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0em 0.25em 0em 0em;
   padding: 0.84615385em 1.5em 0.84615385em;
   text-transform: none;
@@ -4193,7 +4172,7 @@ input::selection {
 
 .ui.primary.buttons .button,
 .ui.primary.button {
-  background-color: #2185D0;
+  background-color: #227a4f;
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
@@ -4205,21 +4184,21 @@ input::selection {
 
 .ui.primary.buttons .button:hover,
 .ui.primary.button:hover {
-  background-color: #1678c2;
+  background-color: #196a42;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.primary.buttons .button:focus,
 .ui.primary.button:focus {
-  background-color: #0d71bb;
+  background-color: #13613a;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.primary.buttons .button:active,
 .ui.primary.button:active {
-  background-color: #1a69a4;
+  background-color: #175235;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4228,7 +4207,7 @@ input::selection {
 .ui.primary.buttons .active.button:active,
 .ui.primary.active.button,
 .ui.primary.button .active.button:active {
-  background-color: #1279c6;
+  background-color: #176c42;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4237,35 +4216,35 @@ input::selection {
 
 .ui.basic.primary.buttons .button,
 .ui.basic.primary.button {
-  box-shadow: 0px 0px 0px 1px #2185D0 inset !important;
-  color: #2185D0 !important;
+  box-shadow: 0px 0px 0px 1px #227a4f inset !important;
+  color: #227a4f !important;
 }
 
 .ui.basic.primary.buttons .button:hover,
 .ui.basic.primary.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #1678c2 inset !important;
-  color: #1678c2 !important;
+  box-shadow: 0px 0px 0px 1px #196a42 inset !important;
+  color: #196a42 !important;
 }
 
 .ui.basic.primary.buttons .button:focus,
 .ui.basic.primary.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #0d71bb inset !important;
-  color: #1678c2 !important;
+  box-shadow: 0px 0px 0px 1px #13613a inset !important;
+  color: #196a42 !important;
 }
 
 .ui.basic.primary.buttons .active.button,
 .ui.basic.primary.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #1279c6 inset !important;
-  color: #1a69a4 !important;
+  box-shadow: 0px 0px 0px 1px #176c42 inset !important;
+  color: #175235 !important;
 }
 
 .ui.basic.primary.buttons .button:active,
 .ui.basic.primary.button:active {
-  box-shadow: 0px 0px 0px 1px #1a69a4 inset !important;
-  color: #1a69a4 !important;
+  box-shadow: 0px 0px 0px 1px #175235 inset !important;
+  color: #175235 !important;
 }
 
 .ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
@@ -4280,7 +4259,7 @@ input::selection {
 
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: #1B1C1D;
+  background-color: #eaae00;
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
@@ -4292,21 +4271,21 @@ input::selection {
 
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: #27292a;
+  background-color: #ffbf04;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: #2e3032;
+  background-color: #ffc314;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: #343637;
+  background-color: #ffc51e;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4315,7 +4294,7 @@ input::selection {
 .ui.secondary.buttons .active.button:active,
 .ui.secondary.active.button,
 .ui.secondary.button .active.button:active {
-  background-color: #27292a;
+  background-color: #ffbf04;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4324,35 +4303,35 @@ input::selection {
 
 .ui.basic.secondary.buttons .button,
 .ui.basic.secondary.button {
-  box-shadow: 0px 0px 0px 1px #1B1C1D inset !important;
-  color: #1B1C1D !important;
+  box-shadow: 0px 0px 0px 1px #eaae00 inset !important;
+  color: #eaae00 !important;
 }
 
 .ui.basic.secondary.buttons .button:hover,
 .ui.basic.secondary.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #27292a inset !important;
-  color: #27292a !important;
+  box-shadow: 0px 0px 0px 1px #ffbf04 inset !important;
+  color: #ffbf04 !important;
 }
 
 .ui.basic.secondary.buttons .button:focus,
 .ui.basic.secondary.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #2e3032 inset !important;
-  color: #27292a !important;
+  box-shadow: 0px 0px 0px 1px #ffc314 inset !important;
+  color: #ffbf04 !important;
 }
 
 .ui.basic.secondary.buttons .active.button,
 .ui.basic.secondary.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #27292a inset !important;
-  color: #343637 !important;
+  box-shadow: 0px 0px 0px 1px #ffbf04 inset !important;
+  color: #ffc51e !important;
 }
 
 .ui.basic.secondary.buttons .button:active,
 .ui.basic.secondary.button:active {
-  box-shadow: 0px 0px 0px 1px #343637 inset !important;
-  color: #343637 !important;
+  box-shadow: 0px 0px 0px 1px #ffc51e inset !important;
+  color: #ffc51e !important;
 }
 
 .ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
@@ -4751,7 +4730,7 @@ input::selection {
 /* Text Container */
 
 .ui.text.container {
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   max-width: 700px !important;
   line-height: 1.5;
 }
@@ -6354,7 +6333,7 @@ i.flag.zimbabwe:before {
   border: none;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   line-height: 1.2857em;
   text-transform: none;
@@ -11560,7 +11539,7 @@ img.ui.bordered.image {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   text-align: left;
   line-height: 1.2142em;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 0.73905385em 1.07692308em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -13706,7 +13685,7 @@ ol.ui.list ol li,
 .ui.list > .item .header {
   display: block;
   margin: 0em;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -13736,7 +13715,7 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #1e70bf;
+  color: #227a4f;
 }
 
 /* Linked Item Icons */
@@ -13756,7 +13735,7 @@ ol.ui.list ol li,
 
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #1e70bf !important;
+  color: #227a4f !important;
 }
 
 /* Floated Content */
@@ -14607,12 +14586,7 @@ ol.ui.horizontal.list li:before,
     User Variable Overrides
 *******************************/
 
-.fintech .filters {
-  border-top: 1px solid #666;
-}
-
 .fintech .filters .ui.container {
-  /*padding: 6px 0 8px;*/
   background-color: #fff;
 }
 
@@ -16516,7 +16490,7 @@ ol.ui.horizontal.list li:before,
 /* Title */
 
 .ui.steps .step .title {
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.15384615em;
   font-weight: bold;
 }
@@ -17299,7 +17273,7 @@ ol.ui.horizontal.list li:before,
 .ui.form input[type="text"],
 .ui.form input[type="file"],
 .ui.form input[type="url"] {
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
@@ -20671,7 +20645,7 @@ ol.ui.horizontal.list li:before,
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0em;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #FFFFFF;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -22932,7 +22906,7 @@ Floated Menu / Item
 
 .ui.message .header {
   display: block;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   margin: -0.14285em 0em 0rem 0em;
 }
@@ -25186,7 +25160,7 @@ Floated Menu / Item
 .ui.card > .content > .header {
   display: block;
   margin: '';
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: rgba(0, 0, 0, 0.85);
 }
 
@@ -26823,7 +26797,7 @@ a.ui.card:hover,
 .ui.items > .item > .content > .header {
   display: inline-block;
   margin: -0.21425em 0em 0em;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);
 }
@@ -27290,7 +27264,7 @@ a.ui.card:hover,
 
 .ui.statistics .statistic > .value,
 .ui.statistic > .value {
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 4rem;
   font-weight: normal;
   line-height: 1em;
@@ -27305,7 +27279,7 @@ a.ui.card:hover,
 
 .ui.statistics .statistic > .label,
 .ui.statistic > .label {
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
@@ -27855,7 +27829,7 @@ a.ui.card:hover,
 
 .ui.accordion .title:not(.ui) {
   padding: 0.5em 0em;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -27963,7 +27937,7 @@ a.ui.card:hover,
 .ui.styled.accordion .accordion .title {
   margin: 0em;
   padding: 0.75em 1em;
-  color: rgba(0, 0, 0, 0.4);
+  color: #000;
   font-weight: bold;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   -webkit-transition: background 0.1s ease, color 0.1s ease;
@@ -27995,13 +27969,13 @@ a.ui.card:hover,
 .ui.styled.accordion .accordion .title:hover,
 .ui.styled.accordion .accordion .active.title {
   background: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: #848485;
 }
 
 .ui.styled.accordion .accordion .title:hover,
 .ui.styled.accordion .accordion .active.title {
   background: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: #848485;
 }
 
 /* Active */
@@ -28174,7 +28148,7 @@ a.ui.card:hover,
   height: 17px;
   text-align: center;
   opacity: 0;
-  color: rgba(0, 0, 0, 0.87);
+  color: #FBBD08;
   -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
@@ -28216,7 +28190,7 @@ a.ui.card:hover,
 
 .ui.checkbox label:hover,
 .ui.checkbox + label:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: #FBBD08;
 }
 
 /*--------------
@@ -28254,7 +28228,7 @@ a.ui.card:hover,
 }
 
 .ui.checkbox input:focus ~ label {
-  color: rgba(0, 0, 0, 0.95);
+  color: #FBBD08;
 }
 
 /*--------------
@@ -28588,7 +28562,7 @@ a.ui.card:hover,
 .ui.toggle.checkbox label {
   min-height: 1.5rem;
   padding-left: 4.5rem;
-  color: rgba(0, 0, 0, 0.87);
+  color: #FBBD08;
 }
 
 .ui.toggle.checkbox label {
@@ -28664,7 +28638,7 @@ a.ui.card:hover,
 
 .ui.toggle.checkbox input:checked ~ .box:before,
 .ui.toggle.checkbox input:checked ~ label:before {
-  background-color: #2185D0 !important;
+  background-color: #227a4f !important;
 }
 
 .ui.toggle.checkbox input:checked ~ .box:after,
@@ -28681,7 +28655,7 @@ a.ui.card:hover,
 
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
 .ui.toggle.checkbox input:focus:checked ~ label:before {
-  background-color: #0d71bb !important;
+  background-color: #13613a !important;
 }
 
 /*******************************
@@ -28981,10 +28955,6 @@ body.dimmable > .dimmer {
 /*element values*/
 
 /*fonts*/
-
-.fintech .question[class*="page"] .ui.search.selection.dropdown > input.search {
-  font-family: "SF-Compact-Text-Bold";
-}
 
 .fintech > .top .country-selection .ui.selection.dropdown {
   color: #fff;
@@ -30837,7 +30807,7 @@ select.ui.dropdown {
 
 .ui.modal > .header {
   display: block;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #FFFFFF;
   margin: 0em;
   padding: 1.25rem 1.5rem;
@@ -31489,7 +31459,7 @@ a.ui.nag {
 
 .ui.popup > .header {
   padding: 0em;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.15384615em;
   line-height: 1.2;
   font-weight: bold;
@@ -33244,7 +33214,7 @@ a.ui.nag {
 
 .ui.search > .results .result .title {
   margin: -0.14285em 0em 0em;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.85);
@@ -33270,7 +33240,7 @@ a.ui.nag {
 }
 
 .ui.search > .results > .message .header {
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
@@ -33480,7 +33450,7 @@ a.ui.nag {
 .ui.category.search > .results .category > .name {
   width: 100px;
   background: transparent;
-  font-family: 'SF-Compact-Text-Regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   float: 1em;
   float: left;

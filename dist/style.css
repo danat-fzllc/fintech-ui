@@ -298,6 +298,51 @@
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+        /*.filter {
+            border-bottom-width: 1px;
+            border-style: solid;
+            padding: 10px;
+            position: relative;
+
+            .filters {
+                display: none;
+                padding-top: 6px;
+            }
+
+            .text {
+                position: relative;
+                font-family: $primaryFontBold;
+                cursor: pointer;
+
+                &:after {
+                    content: '\f0d7';
+                    font-family: $fontAwesome;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+                &:hover {
+                    color: $secondaryColor;
+
+                    &:after {
+                        color: $secondaryColor;
+                    }
+                }
+            }
+
+            &.opened {
+                .filters {
+                    display: block;
+                }
+
+                .text {
+                    &:after {
+                        content: '\f0d8';
+                    }
+                }
+            }
+        }*/
 }
 .fintech .page.filters .scroll {
   height: 100%;
@@ -313,11 +358,13 @@
   border-color: #e6e6e6;
 }
 .fintech .page.filters .header {
-  background-color: #999999;
+  background-color: #5f5f5f;
   color: #fff;
   height: 35px;
-  font-family: "SF-Compact-Text-Bold";
+  font-weight: 700;
+  letter-spacing: 0.5px;
   font-size: 12px;
+  line-height: 35px;
   position: relative;
   text-transform: uppercase;
 }
@@ -325,44 +372,10 @@
   content: '\f0b0';
   font-family: "Icons";
   display: inline-block;
-  margin: 9px 10px 0 14px;
+  margin: 0 10px 0 14px;
 }
 .fintech .page.filters .field {
   padding: 6px 0;
-}
-.fintech .page.filters .filter {
-  border-bottom-width: 1px;
-  border-style: solid;
-  padding: 10px;
-  position: relative;
-}
-.fintech .page.filters .filter .filters {
-  display: none;
-  padding-top: 6px;
-}
-.fintech .page.filters .filter .text {
-  position: relative;
-  font-family: "SF-Compact-Text-Bold";
-  cursor: pointer;
-}
-.fintech .page.filters .filter .text:after {
-  content: '\f0d7';
-  font-family: "Icons";
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.fintech .page.filters .filter .text:hover {
-  color: #e9af03;
-}
-.fintech .page.filters .filter .text:hover:after {
-  color: #e9af03;
-}
-.fintech .page.filters .filter.opened .filters {
-  display: block;
-}
-.fintech .page.filters .filter.opened .text:after {
-  content: '\f0d8';
 }
 .fintech .ui[class*="content container"] .content-holder {
   padding-left: 245px;
@@ -403,7 +416,6 @@
   padding: 0 8px 0 12px;
 }
 .fintech .toolbar {
-  font-family: "Icons";
   font-size: 15px;
   margin: 1px 0 0 0;
 }
@@ -411,6 +423,7 @@
   margin-left: 15px;
   color: gray;
   margin-top: 8px;
+  font-family: "Icons";
 }
 .fintech .toolbar a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -449,7 +462,6 @@
   content: '\f15e';
 }
 .fintech .toolbar .sorting {
-  font-family: "SF-Compact-Text-Regular";
   font-size: 12px;
 }
 .fintech .toolbar .sorting label {
@@ -462,7 +474,7 @@
   min-height: 32px;
 }
 .fintech .toolbar .sorting .ui.dropdown .menu > .item {
-  font: inherit;
+  font-size: inherit;
 }
 .fintech footer {
   color: #999999;

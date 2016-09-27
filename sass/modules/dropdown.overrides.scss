@@ -2,12 +2,6 @@
 @import "compass/css3";
 
 .fintech {
-    .question[class*="page"] {
-        .ui.search.selection.dropdown > input.search {
-            font-family: $primaryFontBold;
-        }
-    }
-
     > .top .country-selection {
         .ui.selection.dropdown {
             color: $white;

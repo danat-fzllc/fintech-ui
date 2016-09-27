@@ -10,4 +10,7 @@
 @checkboxFocusBorderColor:@yellow;
 @checkboxIndeterminateBorderColor: @yellow;
 @checkboxActiveFocusBorderColor: @yellow;
+@checkboxColor: @yellow;
+@labelFocusColor: @yellow;
+@labelHoverColor: @yellow;
 

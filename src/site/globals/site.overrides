@@ -1,24 +1,3 @@
 /*******************************
          Site Overrides
 *******************************/
-@font-face {
-    font-family: @fontNameRegular;
-    src:@fallbackSRCRegular;
-    src: @srcRegular;
-    font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
-}
-
-@font-face {
-    font-family: @fontNameBold;
-    src:@fallbackSRCBold;
-    src: @srcBold;
-    font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
-}
