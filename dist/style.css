@@ -469,12 +469,25 @@
   padding-right: 12px;
 }
 .fintech .toolbar .sorting .ui.dropdown {
-  min-width: 90px;
+  min-width: 60px;
   padding: 9px;
   min-height: 32px;
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 0 0 3px;
 }
 .fintech .toolbar .sorting .ui.dropdown .menu > .item {
   font-size: inherit;
+}
+.fintech .toolbar .sorting .count {
+  color: #666;
+  padding: 7px 8px 7px 9px;
+  display: inline-block;
+  background: #e4e4e4;
+  text-align: center;
+  height: 32px;
+  border-radius: 3px;
+  margin-left: -6px;
 }
 .fintech footer {
   color: #999999;

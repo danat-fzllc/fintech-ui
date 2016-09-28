@@ -358,13 +358,26 @@
             }
 
             .ui.dropdown {
-                min-width: 90px;
+                min-width: 60px;
                 padding: 9px;
                 min-height: 32px;
+
+                @include border-radius(3px 0 0 3px);
 
                 .menu > .item {
                     font-size: inherit;
                 }
+            }
+
+            .count {
+                color: #666;
+                padding: 7px 8px 7px 9px;
+                display: inline-block;
+                background: #e4e4e4;
+                text-align: center;
+                height: 32px;
+                border-radius: 3px;
+                margin-left: -6px;
             }
         }
     }
