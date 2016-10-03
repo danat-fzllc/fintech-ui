@@ -6,6 +6,11 @@ $('.ui.dropdown')
     allowCategorySelection: true
   })
 ;
+$('.ui.dropdown.search')
+  .dropdown({
+    forceSelection         : false
+  })
+;
 $('.ui.checkbox')
   .checkbox()
 ;
