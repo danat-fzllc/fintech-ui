@@ -288,6 +288,30 @@
             color: $black;
         }
 
+        .ui.dropdown.multi-level {
+            @include border-radius(0.30769rem);
+
+            border: 1px solid transparent;
+
+            &:hover {
+                border-color: #e9af03;
+                box-shadow: none;
+            }
+
+            i {
+                margin: 0;
+                font-size: 1rem;
+                top: -1px;
+                position: absolute;
+                right: 8px;
+                top: 14px;
+            }
+
+            .menu {
+                min-width: 100%;
+            }
+        }
+
         .share {
             position: absolute;
             top: 30px;

@@ -388,6 +388,27 @@
   top: -2px;
   color: #000;
 }
+.fintech .question[class*="page"] .ui.dropdown.multi-level {
+  -moz-border-radius: 0.30769rem;
+  -webkit-border-radius: 0.30769rem;
+  border-radius: 0.30769rem;
+  border: 1px solid transparent;
+}
+.fintech .question[class*="page"] .ui.dropdown.multi-level:hover {
+  border-color: #e9af03;
+  box-shadow: none;
+}
+.fintech .question[class*="page"] .ui.dropdown.multi-level i {
+  margin: 0;
+  font-size: 1rem;
+  top: -1px;
+  position: absolute;
+  right: 8px;
+  top: 14px;
+}
+.fintech .question[class*="page"] .ui.dropdown.multi-level .menu {
+  min-width: 100%;
+}
 .fintech .question[class*="page"] .share {
   position: absolute;
   top: 30px;
