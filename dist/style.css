@@ -212,7 +212,11 @@
   float: right;
 }
 .fintech .column > .content.event-aggregate-chart .aggregate-chart .column.up .arrow .value {
-  right: 30px;
+  right: 24px;
+}
+.fintech .column > .content.event-aggregate-chart .aggregate-chart .column.up .arrow.small-value .value {
+  right: -92px;
+  color: #00a651;
 }
 .fintech .column > .content.event-aggregate-chart .aggregate-chart .column.down {
   border-right: 1px solid rgba(34, 36, 38, 0.15);
@@ -233,7 +237,11 @@
   float: left;
 }
 .fintech .column > .content.event-aggregate-chart .aggregate-chart .column.down .arrow .value {
-  left: 30px;
+  left: 24px;
+}
+.fintech .column > .content.event-aggregate-chart .aggregate-chart .column.down .arrow.small-value .value {
+  left: -92px;
+  color: #c00;
 }
 .fintech > .top {
   background-color: #227a4f;

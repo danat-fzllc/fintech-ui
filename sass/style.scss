@@ -132,7 +132,14 @@
                             }
 
                             .value {
-                                right: 30px;
+                                right: 24px;
+                            }
+
+                            &.small-value {
+                                .value {
+                                    right: -92px;
+                                    color: #00a651;
+                                }
                             }
                         }
                     }
@@ -157,7 +164,14 @@
                             }
 
                             .value {
-                                left: 30px;
+                                left: 24px;
+                            }
+
+                            &.small-value {
+                                .value {
+                                    left: -92px;
+                                    color: #c00;
+                                }
                             }
                         }
                     }
