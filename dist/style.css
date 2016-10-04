@@ -215,7 +215,7 @@
   right: 24px;
 }
 .fintech .column > .content.event-aggregate-chart .aggregate-chart .column.up .arrow.small-value .value {
-  right: -92px;
+  right: -110px;
   color: #00a651;
 }
 .fintech .column > .content.event-aggregate-chart .aggregate-chart .column.down {
@@ -240,7 +240,7 @@
   left: 24px;
 }
 .fintech .column > .content.event-aggregate-chart .aggregate-chart .column.down .arrow.small-value .value {
-  left: -92px;
+  left: -110px;
   color: #c00;
 }
 .fintech > .top {
