@@ -573,4 +573,111 @@
         color: lighten($black, 60%);
         padding-top: 8px;
     }
+
+    .ui.table {
+        &.heat {
+            tr {
+                td {
+                    border-top: none;
+                    padding: 0.6em;
+
+                    &.block-holder {
+                        .block {
+                            background-color: #eee;
+                            display: block;
+                            white-space: nowrap;
+                            padding: .5em;
+                            font-size: 14px;
+                            line-height: 14px;
+                            text-align: center;
+
+                            @include border-radius(3px);
+                        }
+
+                        .red-vl {
+                            background-color: lighten($heatRed, 50%);
+                        }
+
+                        .red-l {
+                            background-color: lighten($heatRed, 40%);
+                        }
+
+                        .red-m {
+                            background-color: lighten($heatRed, 30%);
+                        }
+
+                        .red-h {
+                            background-color: lighten($heatRed, 20%);
+                        }
+
+                        .red-vh {
+                            background-color: $heatRed;
+                        }
+
+                        .green-vl {
+                            background-color: lighten($heatGreen, 50%);
+                        }
+
+                        .green-l {
+                            background-color: lighten($heatGreen, 40%);
+                        }
+
+                        .green-m {
+                            background-color: lighten($heatGreen, 30%);
+                        }
+
+                        .green-h {
+                            background-color: lighten($heatGreen, 20%);
+                        }
+
+                        .green-vh {
+                            background-color: $heatGreen;
+                        }
+                    }
+
+                    &.donut-holder {
+                        .donut {
+                            width: 48px;
+                            height: 48px;
+                            border: 1px solid #eee;
+                            margin: 10px auto 10px auto;
+                        }
+
+                        span {
+                            font-size: 16px;
+                            margin: 0px 0 5px 0;
+                            display: block;
+                            white-space: nowrap;
+                        }
+                    }
+
+                    &.value-arrow {
+                        font-weight: 900;
+                        font-size: 16px;
+                    }
+
+                    .prob-title {
+                        -webkit-transform: rotate(-90deg);
+                        -moz-transform: rotate(-90deg);
+                        -ms-transform: rotate(-90deg);
+                        -o-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                        position: absolute;
+                        top: 48px;
+                        left: 9px;
+                        right: 0;
+                        bottom: 0;
+                        width: 62px;
+                        height: 19px;
+                    }
+                }
+
+                &:first-child {
+                    td {
+                        padding-top: .9em !important;
+                    }
+                }
+            }
+        }
+    }
 }
