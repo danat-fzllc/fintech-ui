@@ -660,6 +660,9 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
+.fintech .ui.table.heat tr td.block-holder .down {
+  background-color: #ee0101;
+}
 .fintech .ui.table.heat tr td.block-holder .down.very-low {
   background-color: #ffefef;
 }
@@ -674,6 +677,9 @@
 }
 .fintech .ui.table.heat tr td.block-holder .down.very-high {
   background-color: #ee0101;
+}
+.fintech .ui.table.heat tr td.block-holder .up {
+  background-color: #26a046;
 }
 .fintech .ui.table.heat tr td.block-holder .up.very-low {
   background-color: #d1f4da;
@@ -690,6 +696,11 @@
 .fintech .ui.table.heat tr td.block-holder .up.very-high {
   background-color: #26a046;
 }
+.fintech .ui.table.heat tr td .perfrom-title {
+  max-width: 60px;
+  display: block;
+  margin: 0 auto;
+}
 .fintech .ui.table.heat tr td.donut-holder .donut {
   width: 48px;
   height: 48px;
@@ -701,6 +712,7 @@
   margin: 0px 0 5px 0;
   display: block;
   white-space: nowrap;
+  text-align: center;
 }
 .fintech .ui.table.heat tr td.value-arrow {
   font-weight: 900;
