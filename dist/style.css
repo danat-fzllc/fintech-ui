@@ -660,34 +660,34 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-.fintech .ui.table.heat tr td.block-holder .red-vl {
+.fintech .ui.table.heat tr td.block-holder .down.very-low {
   background-color: #ffefef;
 }
-.fintech .ui.table.heat tr td.block-holder .red-l {
+.fintech .ui.table.heat tr td.block-holder .down.low {
   background-color: #ffbcbc;
 }
-.fintech .ui.table.heat tr td.block-holder .red-m {
+.fintech .ui.table.heat tr td.block-holder .down.medium {
   background-color: #ff8989;
 }
-.fintech .ui.table.heat tr td.block-holder .red-h {
+.fintech .ui.table.heat tr td.block-holder .down.high {
   background-color: #fe5757;
 }
-.fintech .ui.table.heat tr td.block-holder .red-vh {
+.fintech .ui.table.heat tr td.block-holder .down.very-high {
   background-color: #ee0101;
 }
-.fintech .ui.table.heat tr td.block-holder .green-vl {
+.fintech .ui.table.heat tr td.block-holder .up.very-low {
   background-color: #d1f4da;
 }
-.fintech .ui.table.heat tr td.block-holder .green-l {
+.fintech .ui.table.heat tr td.block-holder .up.low {
   background-color: #a8eab9;
 }
-.fintech .ui.table.heat tr td.block-holder .green-m {
+.fintech .ui.table.heat tr td.block-holder .up.medium {
   background-color: #7fe098;
 }
-.fintech .ui.table.heat tr td.block-holder .green-h {
+.fintech .ui.table.heat tr td.block-holder .up.high {
   background-color: #55d777;
 }
-.fintech .ui.table.heat tr td.block-holder .green-vh {
+.fintech .ui.table.heat tr td.block-holder .up.very-high {
   background-color: #26a046;
 }
 .fintech .ui.table.heat tr td.donut-holder .donut {

@@ -594,44 +594,48 @@
                             @include border-radius(3px);
                         }
 
-                        .red-vl {
-                            background-color: lighten($heatRed, 50%);
+                        .down {
+                            &.very-low {
+                                background-color: lighten($heatRed, 50%);
+                            }
+
+                            &.low {
+                                background-color: lighten($heatRed, 40%);
+                            }
+
+                            &.medium {
+                                background-color: lighten($heatRed, 30%);
+                            }
+
+                            &.high {
+                                background-color: lighten($heatRed, 20%);
+                            }
+
+                            &.very-high {
+                                background-color: $heatRed;
+                            }
                         }
 
-                        .red-l {
-                            background-color: lighten($heatRed, 40%);
-                        }
+                        .up {
+                            &.very-low {
+                                background-color: lighten($heatGreen, 50%);
+                            }
 
-                        .red-m {
-                            background-color: lighten($heatRed, 30%);
-                        }
+                            &.low {
+                                background-color: lighten($heatGreen, 40%);
+                            }
 
-                        .red-h {
-                            background-color: lighten($heatRed, 20%);
-                        }
+                            &.medium {
+                                background-color: lighten($heatGreen, 30%);
+                            }
 
-                        .red-vh {
-                            background-color: $heatRed;
-                        }
+                            &.high {
+                                background-color: lighten($heatGreen, 20%);
+                            }
 
-                        .green-vl {
-                            background-color: lighten($heatGreen, 50%);
-                        }
-
-                        .green-l {
-                            background-color: lighten($heatGreen, 40%);
-                        }
-
-                        .green-m {
-                            background-color: lighten($heatGreen, 30%);
-                        }
-
-                        .green-h {
-                            background-color: lighten($heatGreen, 20%);
-                        }
-
-                        .green-vh {
-                            background-color: $heatGreen;
+                            &.very-high {
+                                background-color: $heatGreen;
+                            }
                         }
                     }
 
