@@ -398,6 +398,20 @@
             padding: 6px 0;
         }
 
+        .group-action {
+            margin: 0 0 5px 0;
+
+            button {
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+                &.active {
+                    background-color: $secondaryColor !important;
+                    border-color: 1px solid $secondaryColor !important;
+                }
+            }
+        }
+
         /*.filter {
             border-bottom-width: 1px;
             border-style: solid;
@@ -579,14 +593,13 @@
             tr {
                 td {
                     border-top: none;
-                    padding: 0.6em;
+                    padding: 0.6%;
 
                     &.block-holder {
                         .block {
                             background-color: #eee;
                             display: block;
-                            white-space: nowrap;
-                            padding: .5em;
+                            padding: 12%;
                             font-size: 14px;
                             line-height: 14px;
                             text-align: center;

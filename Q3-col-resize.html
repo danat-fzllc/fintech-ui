@@ -12,6 +12,80 @@
     <!--[if IE]>
         <link href="/dist/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
+        <style type="text/css">
+    body,html{width:100%;height:100%;padding:0;margin:0;}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#main{
+
+   float: right;
+
+    width: 80%;
+}
+#sidebar{
+
+   width:20%;
+   float: left;
+height: 100%;
+   overflow-y: hidden;
+   padding-right: 30px ;
+   box-sizing: border-box;
+   z-index: 3;
+}
+
+#dragbar{
+       background-color: #f6f6f6;
+
+    height: 80%;
+    float: right;
+    width: 10px;
+    cursor: col-resize;
+    position: absolute;
+    right: 10px;
+
+}
+#dragbar:after{
+    content:'';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+      background-image: url(../fintech-ui/src/site/assets/images/col-resize.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    left: -7px;
+}
+#dragbar:hover{}
+#dragbar:hover:after{
+    display: none;
+}
+#ghostbar{
+    width:3px;
+    background-color:#000;
+    opacity:0.5;
+    position:absolute;
+    cursor: col-resize;
+    z-index:999}
+    .fintech .ui[class*="content container"] .content-holder{
+        padding-left: 0;
+    }
+    .fintech .page.filters .header{-webkit-border-top-right-radius: 6px;
+-moz-border-radius-topright: 6px;
+border-top-right-radius: 6px;}
+.fintech .ui[class*="content container"].expand-content .content-holder {
+    width: 100% !important;
+}
+.fintech .ui[class*="content container"].expand-content  #sidebar{width: 0% !important;}
+.fintech .filters .ui.styled.accordion .content{
+    padding-right: 10px;
+}
+  </style>
+}
+
+
 </head>
 
 <body>
@@ -71,7 +145,8 @@
             </div>
         </div>
         <div class="fluid ui content container clearfix">
-            <section class="page filters left floated">
+            <section class="page filters left floated" id="sidebar">
+            <div id="dragbar"></div>
                 <div class="header">Filters</div>
                 <div class="ui container">
                     <div class="ui styled accordion">
@@ -81,8 +156,12 @@
                             </div>
                             <div class="content active">
                                 <div class="ui list">
-                                    <a class="item">Seasons</a>
-                                    <a class="item">International</a>
+                                    <a class="item">This is a test for long event name and year 2016</a>
+                                    <a class="item">This is a test for long event name and year 2016</a>
+                                    <a class="item">This is a test for long event name and year 2016</a>
+                                    <a class="item">This is a test for long event name and year 2016</a>
+                                    <a class="item">This is a test for long event name and year 2016</a>
+                                    <a class="item">This is a test for long event name and year 2016</a>
                                 </div>
                                 <div class="title active">
                                     <i class="dropdown icon"></i> Company
@@ -102,10 +181,6 @@
                                 <i class="dropdown icon"></i> Sectors
                             </div>
                             <div class="content">
-                             <div class="group-action">
-                               <button class="ui button basic">All</button>
-                               <button class="ui button basic">None</button>
-                            </div>
                                 <div class="inline field">
                                     <div class="ui checkbox">
                                         <input type="checkbox" tabindex="0" class="hidden">
@@ -123,7 +198,7 @@
                     </div>
                 </div>
             </section>
-            <section class="fluid content-holder">
+            <section class="fluid content-holder" id="main">
                 <div class="fluid left floated">
                     <div class="ui grid">
                         <div class="title chart page clearfix column">
@@ -158,6 +233,8 @@
                         </div>
                     </div>
                     <div class="ui one column grid">
+                       
+                        
                         <div class="column">
                             <table class="ui table heat">
                                 <thead>
@@ -211,14 +288,14 @@
                                         <td class="center aligned">2016</td>
                                         <td class="block-holder"><span class="block down very-high">-48.8 %</span></td>
                                         <td class="block-holder"><span class="block down high">-36.8 %</span></td>
-                                        <td class="block-holder"><span class="block down medium">-24.8%</span></td>
+                                        <td class="block-holder"><span class="block down medium">-24.8 %</span></td>
                                         <td class="block-holder"><span class="block down low">-12.8 %</span></td>
                                         <td class="block-holder"><span class="block down very-low">-6.8 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block up very-low">6.8 %</span></td>
                                         <td class="block-holder"><span class="block up low">12.8 %</span></td>
-                                        <td class="block-holder"><span class="block up medium">24.8%</span></td>
+                                        <td class="block-holder"><span class="block up medium">24.8 %</span></td>
                                         <td class="block-holder"><span class="block up high">36.8 %</span></td>
                                         <td class="block-holder"><span class="block up very-high">48.8 %</span></td>
                                         <td class="value-arrow green"><i class="caret green up icon"></i>0.6 %</td>
@@ -227,14 +304,14 @@
                                         <td class="center aligned">2015</td>
                                         <td class="block-holder"><span class="block down very-high">-48.8 %</span></td>
                                         <td class="block-holder"><span class="block down high">-36.8 %</span></td>
-                                        <td class="block-holder"><span class="block down medium">-24.8%</span></td>
+                                        <td class="block-holder"><span class="block down medium">-24.8 %</span></td>
                                         <td class="block-holder"><span class="block down low">-12.8 %</span></td>
                                         <td class="block-holder"><span class="block down very-low">-6.8 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block up very-low">6.8 %</span></td>
                                         <td class="block-holder"><span class="block up low">12.8 %</span></td>
-                                        <td class="block-holder"><span class="block up medium">24.8%</span></td>
+                                        <td class="block-holder"><span class="block up medium">24.8 %</span></td>
                                         <td class="block-holder"><span class="block up high">36.8 %</span></td>
                                         <td class="block-holder"><span class="block up very-high">48.8 %</span></td>
                                         <td class="value-arrow red"><i class="caret red down icon"></i>0.6 %</td>
@@ -243,14 +320,14 @@
                                         <td class="center aligned">2014</td>
                                         <td class="block-holder"><span class="block down very-high">-48.8 %</span></td>
                                         <td class="block-holder"><span class="block down high">-36.8 %</span></td>
-                                        <td class="block-holder"><span class="block down medium">-24.8%</span></td>
+                                        <td class="block-holder"><span class="block down medium">-24.8 %</span></td>
                                         <td class="block-holder"><span class="block down low">-12.8 %</span></td>
                                         <td class="block-holder"><span class="block down very-low">-6.8 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block up very-low">6.8 %</span></td>
                                         <td class="block-holder"><span class="block up low">12.8 %</span></td>
-                                        <td class="block-holder"><span class="block up medium">24.8%</span></td>
+                                        <td class="block-holder"><span class="block up medium">24.8 %</span></td>
                                         <td class="block-holder"><span class="block up high">36.8 %</span></td>
                                         <td class="block-holder"><span class="block up very-high">48.8 %</span></td>
                                         <td class="value-arrow green"><i class="caret green up icon"></i>0.6 %</td>
@@ -259,14 +336,14 @@
                                         <td class="center aligned">2013</td>
                                        <td class="block-holder"><span class="block down very-high">-48.8 %</span></td>
                                         <td class="block-holder"><span class="block down high">-36.8 %</span></td>
-                                        <td class="block-holder"><span class="block down medium">-24.8%</span></td>
+                                        <td class="block-holder"><span class="block down medium">-24.8 %</span></td>
                                         <td class="block-holder"><span class="block down low">-12.8 %</span></td>
                                         <td class="block-holder"><span class="block down very-low">-6.8 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block up very-low">6.8 %</span></td>
                                         <td class="block-holder"><span class="block up low">12.8 %</span></td>
-                                        <td class="block-holder"><span class="block up medium">24.8%</span></td>
+                                        <td class="block-holder"><span class="block up medium">24.8 %</span></td>
                                         <td class="block-holder"><span class="block up high">36.8 %</span></td>
                                         <td class="block-holder"><span class="block up very-high">48.8 %</span></td>
                                         <td class="value-arrow green"><i class="caret green up icon"></i>0.6 %</td>
@@ -275,14 +352,14 @@
                                         <td class="center aligned">2012</td>
                                          <td class="block-holder"><span class="block down very-high">-48.8 %</span></td>
                                         <td class="block-holder"><span class="block down high">-36.8 %</span></td>
-                                        <td class="block-holder"><span class="block down medium">-24.8%</span></td>
+                                        <td class="block-holder"><span class="block down medium">-24.8 %</span></td>
                                         <td class="block-holder"><span class="block down low">-12.8 %</span></td>
                                         <td class="block-holder"><span class="block down very-low">-6.8 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block up very-low">6.8 %</span></td>
                                         <td class="block-holder"><span class="block up low">12.8 %</span></td>
-                                        <td class="block-holder"><span class="block up medium">24.8%</span></td>
+                                        <td class="block-holder"><span class="block up medium">24.8 %</span></td>
                                         <td class="block-holder"><span class="block up high">36.8 %</span></td>
                                         <td class="block-holder"><span class="block up very-high">48.8 %</span></td>
                                         <td class="value-arrow green"><i class="caret green up icon"></i>0.6 %</td>
@@ -291,14 +368,14 @@
                                         <td class="center aligned">2011</td>
                                         <td class="block-holder"><span class="block down very-high">-48.8 %</span></td>
                                         <td class="block-holder"><span class="block down high">-36.8 %</span></td>
-                                        <td class="block-holder"><span class="block down medium">-24.8%</span></td>
+                                        <td class="block-holder"><span class="block down medium">-24.8 %</span></td>
                                         <td class="block-holder"><span class="block down low">-12.8 %</span></td>
                                         <td class="block-holder"><span class="block down very-low">-6.8 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block up very-low">6.8 %</span></td>
                                         <td class="block-holder"><span class="block up low">12.8 %</span></td>
-                                        <td class="block-holder"><span class="block up medium">24.8%</span></td>
+                                        <td class="block-holder"><span class="block up medium">24.8 %</span></td>
                                         <td class="block-holder"><span class="block up high">36.8 %</span></td>
                                         <td class="block-holder"><span class="block up very-high">48.8 %</span></td>
                                         <td class="value-arrow red"><i class="caret red down icon"></i>0.6 %</td>
@@ -307,14 +384,14 @@
                                         <td class="center aligned">2010</td>
                                         <td class="block-holder"><span class="block down very-high">-48.8 %</span></td>
                                         <td class="block-holder"><span class="block down high">-36.8 %</span></td>
-                                        <td class="block-holder"><span class="block down medium">-24.8%</span></td>
+                                        <td class="block-holder"><span class="block down medium">-24.8 %</span></td>
                                         <td class="block-holder"><span class="block down low">-12.8 %</span></td>
                                         <td class="block-holder"><span class="block down very-low">-6.8 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block">0.00 %</span></td>
                                         <td class="block-holder"><span class="block up very-low">6.8 %</span></td>
                                         <td class="block-holder"><span class="block up low">12.8 %</span></td>
-                                        <td class="block-holder"><span class="block up medium">24.8%</span></td>
+                                        <td class="block-holder"><span class="block up medium">24.8 %</span></td>
                                         <td class="block-holder"><span class="block up high">36.8 %</span></td>
                                         <td class="block-holder"><span class="block up very-high">48.8 %</span></td>
                                         <td class="value-arrow green"><i class="caret green up icon"></i>0.6 %</td>
@@ -351,6 +428,49 @@
     </div>
     <script src="dist/semantic.min.js"></script>
     <script src="javascripts/fintech.js"></script>
+    <script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+var i = 0;
+var dragging = false;
+   $('#dragbar').mousedown(function(e){
+       e.preventDefault();
+       
+       dragging = true;
+       var main = $('#main');
+       var ghostbar = $('<div>',
+                        {id:'ghostbar',
+                         css: {
+                                height: main.outerHeight(),
+                                top: main.offset().top,
+                                left: main.offset().left
+                               }
+                        }).appendTo('body');
+       
+        $(document).mousemove(function(e){
+          ghostbar.css("left",e.pageX+2);
+       });
+       
+    });
+
+   $(document).mouseup(function(e){
+       if (dragging) 
+       {
+           var percentage = (e.pageX / window.innerWidth) * 100;
+           var mainPercentage = 100-percentage;
+           
+           $('#console').text("side:" + percentage + " main:" + mainPercentage);
+           
+           $('#sidebar').css("width",percentage + "%");
+           $('#main').css("width",mainPercentage + "%");
+           $('#ghostbar').remove();
+           $(document).unbind('mousemove');
+           dragging = false;
+       }
+    });
+
+});//]]> 
+
+</script>
 </body>
 
 </html>
