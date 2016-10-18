@@ -282,6 +282,7 @@
                         font-size: 0;
                         width: 100%;
                         display: block;
+                        border: none;
 
                         @include transition(all ease-out 0.2s);
                     }
@@ -296,7 +297,7 @@
                             color: $white;
                             height: auto;
                             font-size: 14px;
-                            padding: 8px;
+                            padding: 10px 0;
                             line-height: 14px;
                             font-size: 14px;
                             width: 100%;
