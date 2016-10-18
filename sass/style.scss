@@ -277,25 +277,35 @@
                         cursor: pointer;
                         height: 0;
                         overflow: hidden;
+                        padding: 0;
+                        line-height: 0;
+                        font-size: 0;
+                        width: 100%;
+                        display: block;
 
                         @include transition(all ease-out 0.2s);
                     }
                 }
 
-                &:hover {
-                    border: 1px solid $secondaryColor;
+                &.clickable {
+                    &:hover {
+                        border: 1px solid $secondaryColor;
 
-                    .view-more {
-                        background-color: $secondaryColor;
-                        color: $white;
-                        height: auto;
-                        font-size: 14px;
-                        padding: 8px;
+                        .view-more {
+                            background-color: $secondaryColor;
+                            color: $white;
+                            height: auto;
+                            font-size: 14px;
+                            padding: 8px;
+                            line-height: 14px;
+                            font-size: 14px;
+                            width: 100%;
 
-                        @include border-radius(0px 0px 3px 3px);
+                            @include border-radius(0px 0px 3px 3px);
 
-                        &:hover {
-                            background-color: lighten($secondaryColor, 5%);
+                            &:hover {
+                                background-color: lighten($secondaryColor, 5%);
+                            }
                         }
                     }
                 }

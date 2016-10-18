@@ -311,25 +311,33 @@
   cursor: pointer;
   height: 0;
   overflow: hidden;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  width: 100%;
+  display: block;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.fintech .column > .content.event-aggregate-chart.chart-list:hover {
+.fintech .column > .content.event-aggregate-chart.chart-list.clickable:hover {
   border: 1px solid #e9af03;
 }
-.fintech .column > .content.event-aggregate-chart.chart-list:hover .view-more {
+.fintech .column > .content.event-aggregate-chart.chart-list.clickable:hover .view-more {
   background-color: #e9af03;
   color: #fff;
   height: auto;
   font-size: 14px;
   padding: 8px;
+  line-height: 14px;
+  font-size: 14px;
+  width: 100%;
   -moz-border-radius: 0px 0px 3px 3px;
   -webkit-border-radius: 0px;
   border-radius: 0px 0px 3px 3px;
 }
-.fintech .column > .content.event-aggregate-chart.chart-list:hover .view-more:hover {
+.fintech .column > .content.event-aggregate-chart.chart-list.clickable:hover .view-more:hover {
   background-color: #fcbf0a;
 }
 .fintech > .top {
