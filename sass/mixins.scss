@@ -63,6 +63,14 @@
     }
 }
 
+@-webkit-keyframes w70 {
+    from {
+        width: 0%;
+    }
+
+    to {}
+}
+
 $icons: sprite-map("icons/*.png", $layout: smart);
 $icons-2x: sprite-map("icons-2x/*.png", $layout: smart);
 
