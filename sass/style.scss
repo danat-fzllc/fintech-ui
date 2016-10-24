@@ -411,7 +411,7 @@
 
         h1 {
             font-size: 24px;
-            line-height: 24px;
+            line-height: 48px;
             padding-right: 110px;
             font-weight: normal;
 
@@ -425,6 +425,7 @@
             background-color: #f1f1f1;
             border-color: transparent;
             padding: 17px 0;
+            margin: 5px 0 0 0;
         }
 
         .menu {
@@ -728,6 +729,20 @@
     }
 
     .ui.table {
+        .consecutive-set-holder {
+            max-width: 700px;
+
+            .consecutive-set {
+                @include border-radius(3px);
+
+                padding: 8px 15px;
+                background: lighten($black, 96%);
+                margin: 5px;
+                display: inline-block;
+                max-width: 700px;
+            }
+        }
+
         &.heat {
             tr {
                 td {
