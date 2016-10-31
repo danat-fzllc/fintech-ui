@@ -378,6 +378,14 @@
             .bold {
                 font-weight: 900;
             }
+
+            .green {
+                color: $primaryColor;
+
+                .field {
+                    background-color: #e1f3ea;
+                }
+            }
         }
 
         .field {
@@ -400,6 +408,8 @@
             position: relative;
             top: -2px;
             color: $black;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .share {

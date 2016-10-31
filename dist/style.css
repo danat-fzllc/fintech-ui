@@ -470,6 +470,12 @@
 .fintech .question[class*="page"] h1 .bold {
   font-weight: 900;
 }
+.fintech .question[class*="page"] h1 .green {
+  color: #227a4f;
+}
+.fintech .question[class*="page"] h1 .green .field {
+  background-color: #e1f3ea;
+}
 .fintech .question[class*="page"] .field {
   max-height: 20px;
   background-color: #f1f1f1;
@@ -488,6 +494,8 @@
   position: relative;
   top: -2px;
   color: #000;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .fintech .question[class*="page"] .share {
   position: absolute;
