@@ -118,27 +118,33 @@
 }
 .fintech .ui-resizable-e {
   cursor: e-resize;
-  width: 1px;
+  width: 10px;
   right: 0;
   top: calc(50% + 7px);
-  height: 22px;
-  background: #ccc;
+  height: 30px;
+  border: 1px solid #cfcfcf !important;
+  background-color: #ececec;
 }
 .fintech .ui-resizable-e:before {
   position: absolute;
   content: '';
-  height: 22px;
-  width: 1px;
-  background-color: #ccc;
+  height: 70%;
   right: 2px;
+  background-color: #c3bfbf;
+  width: 1px;
+  margin-top: 4px;
 }
 .fintech .ui-resizable-e:after {
   position: absolute;
   content: '';
-  height: 22px;
+  height: 70%;
+  right: 5px;
   width: 1px;
-  background-color: #ccc;
-  right: 4px;
+  background: #c3bfbf;
+  margin-top: 4px;
+}
+.fintech .ui-resizable-e:hover {
+  background-color: #f7f7f7;
 }
 .fintech > .ui.content.container {
   padding: 15px;
