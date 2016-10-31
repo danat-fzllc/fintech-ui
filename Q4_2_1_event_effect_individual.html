@@ -17,7 +17,7 @@
 <body>
     <div class="ui container fluid fintech">
         <div class="top fluid">
-            <div class="menu-nav left floated"></div>
+            
             <a class="logo"></a>
             <div class="right floated">
                 <div class="theme-changer right floated"></div>
@@ -65,9 +65,9 @@
                 Share
             </div>
         </div>
-        <div class="fluid ui content container clearfix">
-            <section class="page filters left floated">
-                <div class="header">Filters</div>
+        <div class="fluid ui content container clearfix" id="container">
+            <section class="page filters left floated resize-left-column">
+                <div class="header">Filters <i class="hide icon right floated"></i></div>
                 <div class="ui container">
                     <div class="ui styled accordion">
                         <div class="item">
@@ -114,7 +114,10 @@
                     </div>
                 </div>
             </section>
-            <section class="fluid content-holder">
+            <section class="fluid content-holder resize-right-column">
+            <div class="show filter-button">
+                Filters
+            </div>
                 <div class="fluid left floated">
                     <div class="ui grid">
                         <div class="title chart page clearfix column">
@@ -242,6 +245,8 @@
             </section>
         </div>
     </div>
+    <script type="text/javascript" src="javascripts/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
     <script src="dist/semantic.min.js"></script>
     <script src="javascripts/fintech.js"></script>
 </body>
