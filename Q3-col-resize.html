@@ -12,86 +12,13 @@
     <!--[if IE]>
         <link href="/dist/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
-        <style type="text/css">
-    body,html{width:100%;height:100%;padding:0;margin:0;}
-.clearfix:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-#main{
-
-   float: right;
-
-    width: 81%;
-}
-#sidebar{
-
-   width:19%;
-   float: left;
-/*height: 100%;*/
-   overflow-y: hidden;
-   padding-right: 30px ;
-   box-sizing: border-box;
-   z-index: 3;
-}
-
-#dragbar{
-       background-color: #f6f6f6;
-
-    height: 80%;
-    float: right;
-    width: 10px;
-    cursor: col-resize;
-    position: absolute;
-    right: 10px;
-
-}
-#dragbar:after{
-    content:'';
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 100px;
-      background-image: url(../fintech-ui/src/site/assets/images/col-resize.png);
-    background-repeat: no-repeat;
-    background-size: 16px;
-    left: -7px;
-}
-#dragbar:hover{}
-#dragbar:hover:after{
-    display: none;
-}
-#ghostbar{
-    width:3px;
-    background-color:#000;
-    opacity:0.5;
-    position:absolute;
-    cursor: col-resize;
-    z-index:999}
-    .fintech .ui[class*="content container"] .content-holder{
-        padding-left: 0;
-    }
-    .fintech .page.filters .header{-webkit-border-top-right-radius: 6px;
--moz-border-radius-topright: 6px;
-border-top-right-radius: 6px;}
-.fintech .ui[class*="content container"].expand-content .content-holder {
-    width: 100% !important;
-}
-.fintech .ui[class*="content container"].expand-content  #sidebar{width: 0% !important;}
-.fintech .filters .ui.styled.accordion .content{
-    padding-right: 10px;
-}
-  </style>
-
 
 
 </head>
-
 <body>
     <div class="ui container fluid fintech">
         <div class="top fluid">
-            <div class="menu-nav left floated"></div>
+            <!-- <div class="menu-nav left floated"></div> -->
             <a class="logo"></a>
             <div class="right floated">
                 <div class="theme-changer right floated"></div>
@@ -144,11 +71,12 @@ border-top-right-radius: 6px;}
                 Share
             </div>
         </div>
-        <div class="fluid ui content container clearfix">
-            <section class="page filters left floated" id="sidebar">
-            <div id="dragbar"></div>
-                <div class="header">Filters</div>
+        <div class="fluid ui content container clearfix" id="container">
+            <section class="page filters left floated resize-left-column">
+            
+                <div class="header">Filters <i class="hide icon right floated"></i></div>
                 <div class="ui container">
+
                     <div class="ui styled accordion">
                         <div class="item">
                             <div class="title active">
@@ -198,7 +126,10 @@ border-top-right-radius: 6px;}
                     </div>
                 </div>
             </section>
-            <section class="fluid content-holder" id="main">
+            <section class="fluid content-holder resize-right-column">
+            <div class="show filter-button">
+                
+            </div>
                 <div class="fluid left floated">
                     <div class="ui grid">
                         <div class="title chart page clearfix column">
@@ -426,51 +357,12 @@ border-top-right-radius: 6px;}
             </section>
         </div>
     </div>
+    <script type="text/javascript" src="javascripts/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
     <script src="dist/semantic.min.js"></script>
     <script src="javascripts/fintech.js"></script>
-    <script type='text/javascript'>//<![CDATA[
-$(window).load(function(){
-var i = 0;
-var dragging = false;
-   $('#dragbar').mousedown(function(e){
-       e.preventDefault();
-       
-       dragging = true;
-       var main = $('#main');
-       var ghostbar = $('<div>',
-                        {id:'ghostbar',
-                         css: {
-                                height: main.outerHeight(),
-                                top: main.offset().top,
-                                left: main.offset().left
-                               }
-                        }).appendTo('body');
-       
-        $(document).mousemove(function(e){
-          ghostbar.css("left",e.pageX+2);
-       });
-       
-    });
-
-   $(document).mouseup(function(e){
-       if (dragging) 
-       {
-           var percentage = (e.pageX / window.innerWidth) * 100;
-           var mainPercentage = 100-percentage;
-           
-           $('#console').text("side:" + percentage + " main:" + mainPercentage);
-           
-           $('#sidebar').css("width",percentage + "%");
-           $('#main').css("width",mainPercentage + "%");
-           $('#ghostbar').remove();
-           $(document).unbind('mousemove');
-           dragging = false;
-       }
-    });
-
-});//]]> 
-
-</script>
+    
+    
 </body>
 
 </html>

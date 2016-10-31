@@ -9,5 +9,9 @@
         .ui.styled.accordion, .ui.styled.accordion .accordion {
             @include border-radius(0);
         }
+
+        .ui.container {
+            @include border-radius(0 0 6px 6px);
+        }
     }
 }

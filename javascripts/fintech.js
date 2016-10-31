@@ -26,8 +26,47 @@ $(".collapse-btn").click(function() {
     $(".ui.content.container").toggleClass("expand-content");
     $(".top .menu").toggleClass("expand");
 });
-$(".top .menu-nav").click(function() {
+$(".show.filter-button").click(function() {
+    $(".ui.content.container").toggleClass("expand-content");
+    $(".top .menu-nav").toggleClass("expand");
+});
+$(".filters .hide.icon").click(function() {
     $(".ui.content.container").toggleClass("expand-content");
     $(".top .menu-nav").toggleClass("expand");
 });
 
+
+
+//resizing pannel script
+//<![CDATA[
+$(window).load(function(){
+$(document).ready(function() {
+
+// init
+var leftPanel = $("#left_slide_panel");
+var resize= $(".resize-left-column");
+var containerWidth = $("#container").width();
+   
+$(resize).resizable({
+     handles: 'e',
+     maxWidth: 350,
+     minWidth: 230,
+     resize: function(event, ui){
+         var currentWidth = ui.size.width;
+         
+         // this accounts for padding in the panels + 
+         // borders, you could calculate this using jQuery
+         var padding = 12; 
+         
+         // this accounts for some lag in the ui.size value, if you take this away 
+         // you'll get some instable behaviour
+         $(this).width(currentWidth);
+         
+         // set the content panel width
+         $(".resize-right-column").width(containerWidth - currentWidth - padding);            
+     }
+});
+
+
+});
+});//]]> 

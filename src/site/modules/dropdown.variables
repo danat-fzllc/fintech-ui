@@ -7,3 +7,4 @@
 @selectionFocusBorderColor: @secondaryColor;
 @selectionHoverBorderColor: @secondaryColor;
 @selectionBorder: 1px solid transparent;
+@menuBorderColor: @secondaryColor;

@@ -6,9 +6,11 @@
     .filters {
         .ui.container {
             background-color: #fff;
+            position: relative;
         }
 
         .ui.styled.accordion {
+            background:transparent;
             > .item {
                 > .title .dropdown {
                     float: right;
@@ -19,7 +21,7 @@
         }
 
         .ui.styled.accordion .accordion .content, .ui.styled.accordion .content {
-            padding: 0 0 0 20px;
+            padding: 0 10px 0 20px;
         }
 
         .ui.styled.accordion, .ui.styled.accordion .accordion {
