@@ -415,7 +415,7 @@
   transition: all 0.2s ease-out;
 }
 .fintech > .top .logo {
-  background-image: url('../src/themes/default/assets/images/icons-s859c66aae4.png');
+  background-image: url('themes/default/assets/images/icons-s859c66aae4.png');
   background-position: 0 -21px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -427,7 +427,7 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .logo {
-    background-image: url('../src/themes/default/assets/images/icons-2x-sb2027196c8.png');
+    background-image: url('themes/default/assets/images/icons-2x-sb2027196c8.png');
     background-size: 169.5px 44px;
     background-position: 0 -21px;
     height: 23px;
@@ -435,7 +435,7 @@
   }
 }
 .fintech > .top .theme-changer {
-  background-image: url('../src/themes/default/assets/images/icons-s859c66aae4.png');
+  background-image: url('themes/default/assets/images/icons-s859c66aae4.png');
   background-position: -14px 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -446,7 +446,7 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .theme-changer {
-    background-image: url('../src/themes/default/assets/images/icons-2x-sb2027196c8.png');
+    background-image: url('themes/default/assets/images/icons-2x-sb2027196c8.png');
     background-size: 169.5px 44px;
     background-position: -14px 0;
     height: 21px;
@@ -697,7 +697,7 @@
 }
 .fintech .toolbar .rotate:before {
   display: inline-block;
-  background-image: url('../src/themes/default/assets/images/icons-s859c66aae4.png');
+  background-image: url('themes/default/assets/images/icons-s859c66aae4.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -708,7 +708,7 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .toolbar .rotate:before {
-    background-image: url('../src/themes/default/assets/images/icons-2x-sb2027196c8.png');
+    background-image: url('themes/default/assets/images/icons-2x-sb2027196c8.png');
     background-size: 169.5px 44px;
     background-position: 0 0;
     height: 17px;
