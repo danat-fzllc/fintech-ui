@@ -1,16 +1,10 @@
 //semantic modules
 //dropdown
-// $('.ui.dropdown').dropdown();
 $('.ui.dropdown')
   .dropdown({
     allowCategorySelection: true
   })
 ;
-// $('.sorting .ui.dropdown.search')
-//   .dropdown({
-//     forceSelection         : false
-//   })
-// ;
 $('.ui.checkbox')
   .checkbox()
 ;

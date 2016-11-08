@@ -4006,8 +4006,8 @@ input::selection {
 
 .ui.yellow.buttons .button,
 .ui.yellow.button {
-  background-color: #FBBD08;
-  color: #FFFFFF;
+  background-color: #f0ac09;
+  color: #fff;
   text-shadow: none;
   background-image: none;
 }
@@ -4018,22 +4018,22 @@ input::selection {
 
 .ui.yellow.buttons .button:hover,
 .ui.yellow.button:hover {
-  background-color: #eaae00;
-  color: #FFFFFF;
+  background-color: #fbba20;
+  color: #fff;
   text-shadow: none;
 }
 
 .ui.yellow.buttons .button:focus,
 .ui.yellow.button:focus {
-  background-color: #daa300;
-  color: #FFFFFF;
+  background-color: #d09300;
+  color: #fff;
   text-shadow: none;
 }
 
 .ui.yellow.buttons .button:active,
 .ui.yellow.button:active {
-  background-color: #cd9903;
-  color: #FFFFFF;
+  background-color: #bf8907;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -4041,8 +4041,8 @@ input::selection {
 .ui.yellow.buttons .active.button:active,
 .ui.yellow.active.button,
 .ui.yellow.button .active.button:active {
-  background-color: #eaae00;
-  color: #FFFFFF;
+  background-color: #e09e00;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -4050,35 +4050,35 @@ input::selection {
 
 .ui.basic.yellow.buttons .button,
 .ui.basic.yellow.button {
-  box-shadow: 0px 0px 0px 1px #FBBD08 inset !important;
-  color: #FBBD08 !important;
+  box-shadow: 0px 0px 0px 1px #f0ac09 inset !important;
+  color: #f0ac09 !important;
 }
 
 .ui.basic.yellow.buttons .button:hover,
 .ui.basic.yellow.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #eaae00 inset !important;
-  color: #eaae00 !important;
+  box-shadow: 0px 0px 0px 1px #fbba20 inset !important;
+  color: #fbba20 !important;
 }
 
 .ui.basic.yellow.buttons .button:focus,
 .ui.basic.yellow.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #daa300 inset !important;
-  color: #eaae00 !important;
+  box-shadow: 0px 0px 0px 1px #d09300 inset !important;
+  color: #fbba20 !important;
 }
 
 .ui.basic.yellow.buttons .active.button,
 .ui.basic.yellow.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #eaae00 inset !important;
-  color: #cd9903 !important;
+  box-shadow: 0px 0px 0px 1px #e09e00 inset !important;
+  color: #bf8907 !important;
 }
 
 .ui.basic.yellow.buttons .button:active,
 .ui.basic.yellow.button:active {
-  box-shadow: 0px 0px 0px 1px #cd9903 inset !important;
-  color: #cd9903 !important;
+  box-shadow: 0px 0px 0px 1px #bf8907 inset !important;
+  color: #bf8907 !important;
 }
 
 .ui.buttons:not(.vertical) > .basic.yellow.button:not(:first-child) {
@@ -29020,7 +29020,7 @@ body.dimmable > .dimmer {
 }
 
 .fintech .ui.dropdown:hover {
-  border-color: #e9af03;
+  border-color: #f0ac09;
 }
 
 .ui.dropdown {
@@ -30560,9 +30560,14 @@ select.ui.dropdown {
 .fintech .question[class*="page"] .question > .dropdown {
   min-width: 0;
   min-height: 0;
-  padding: 5px 26px 5px 8px;
-  background-color: #f1f1f1;
+  padding: 2px 26px 2px 8px;
+  background-color: rgba(255, 255, 255, 0.1);
   line-height: normal;
+  color: #fff;
+}
+
+.fintech .question[class*="page"] .question > .dropdown > .text:not(.default) {
+  color: #fff;
 }
 
 .fintech .question[class*="page"] .ui.search.selection.dropdown > input.search {
@@ -30601,8 +30606,8 @@ select.ui.dropdown {
 }
 
 .fintech > .top .country-selection .ui.selection.dropdown {
-  background-color: #299b63;
-  color: #fff;
+  background-color: #dfdfdf;
+  color: #000;
 }
 
 .fintech > .top .country-selection .ui.selection.dropdown.active {
@@ -30610,15 +30615,11 @@ select.ui.dropdown {
 }
 
 .fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .text {
-  color: #fff;
+  color: #000;
 }
 
 .fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .default.text {
-  color: #fff;
-}
-
-.fintech > .top .country-selection .ui.active.search.dropdown input.search:focus + .text {
-  color: rgba(255, 255, 255, 0.57) !important;
+  color: #000;
 }
 /*!
  * # Semantic UI 2.2.6 - Video
