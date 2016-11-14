@@ -745,6 +745,102 @@
             }
         }
 
+        .ui.label.date-period {
+            background-color: #fff;
+            border: 1px solid #e4e4e4;
+            cursor: default;
+
+            @include box-shadow(0px 1px 5px -3px #000);
+
+            position: relative;
+
+            > .arrow {
+                @include use-sprite(toarrow);
+
+                display: inline-block;
+                margin: -2px 5px;
+            }
+
+            &:hover {
+                background-color: $secondaryColor;
+
+                .performance.popup {
+                    @include opacity(1);
+
+                    color: #000;
+                    visibility: visible;
+
+                    @include transform(translateX(0px));
+                }
+            }
+
+            .performance.popup {
+                position: absolute;
+                background-color: #fff;
+                border: 1px solid #e4e4e4;
+                width: 210px;
+                z-index: 100;
+                top: -68px;
+                left: -1px;
+
+                @include box-shadow(0px 4px 13px -8px #000);
+
+                @include border-radius(3px);
+
+                text-align: center;
+
+                @include opacity(0);
+
+                visibility: hidden;
+
+                @include transform(translateX(55px));
+
+                @include transition(all ease 0.5s);
+
+                > .col {
+                    width: 50%;
+                    float: left;
+                    padding: 12px;
+
+                    .name {
+                        padding-bottom: 8px;
+                    }
+
+                    &.performance {
+                        border-right: 1px solid #e4e4e4;
+                    }
+
+                    .arrow {
+                        display: inline-block;
+                        width: 100%;
+                        font-size: 20px;
+
+                        &:before {
+                            content: '';
+                            display: inline-block;
+                            margin-right: 5px;
+                        }
+
+                        &.up {
+                            color: green;
+
+                            &:before {
+                                @include triangle(10px, up, green);
+                            }
+                        }
+
+                        &.down {
+                            color: red;
+
+                            &:before {
+                                @include triangle(10px, down, red);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         &.heat {
             tr {
                 td {

@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Fintech</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
-    <link href="dist/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="dist/print.css" media="print" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <!--[if IE]>
+    <head>
+        <title>Fintech</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+        <link href="dist/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="dist/print.css" media="print" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <!--[if IE]>
         <link href="/dist/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
-</head>
-
-<body>
-    <div class="ui container fluid fintech">
-        <div class="top fluid">
-            
-            <a class="logo"></a>
-            <div class="right floated">
-                <div class="theme-changer right floated"></div>
+    </head>
+    <body>
+        <div class="ui container fluid fintech">
+            <div class="top fluid">
                 
-                <form class="right floated country-selection">
-                    <div class="field">
-                        <div class="ui fluid search selection dropdown">
-                            <input type="hidden" name="country">
-                            <i class="dropdown icon"></i>
-                            <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
-                            <div class="menu">
-                                <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
-                                <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
-                                <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                <a class="logo"></a>
+                <div class="right floated">
+                    <div class="theme-changer right floated"></div>
+                    
+                    <form class="right floated country-selection">
+                        <div class="field">
+                            <div class="ui fluid search selection dropdown">
+                                <input type="hidden" name="country">
+                                <i class="dropdown icon"></i>
+                                <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
+                                <div class="menu">
+                                    <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
+                                    <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
+                                    <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                                </div>
                             </div>
                         </div>
+                    </form>
+                    <div class="user-nav right floated">
+                        <a href="" class="active">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contact Us</a>
+                        <a href="" class="sign-in">Sign In</a>
                     </div>
-                </form>
-                <div class="user-nav right floated">
-                    <a href="" class="active">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">FAQ</a>
-                    <a href="">Contact Us</a>
-                    <a href="" class="sign-in">Sign In</a>
                 </div>
             </div>
-        </div>
-        <div class="fluid clearfix question page center aligned relative">
-            <form class="ui form">
-                <h1 class="question ui center">
+            <div class="fluid clearfix question page center aligned relative">
+                <form class="ui form">
+                    <h1 class="question ui center">
                     How many times <select id="" class="ui selection dropdown">
                         <option value="1">Sabic</option>
                         <option value="3">Markets</option>
@@ -56,265 +54,389 @@
                     <select id="" class="ui selection dropdown">
                         <option value="1">Rally</option>
                         <option value="3">decline</option>
-                      
+                        
                     </select>
                     for
                     <input type="text" placeholder="" class="field center aligned" value="6" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
-                   days
+                    days
                     consecutive since <select id="" class="ui selection dropdown">
                         <option value="1">2005</option>
                         <option value="3">2006</option>
-                      
+                        
                     </select> ,
                     
-                     <span class="highlight">What happened in next
-                    <input type="text" placeholder="" class="field center aligned" value="3" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
-                   days</span>
+                    <span class="highlight">What happened in next
+                        <input type="text" placeholder="" class="field center aligned" value="3" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
+                    days</span>
                     
                     
                     <a class="ui button yellow">Discover</a>
                     </h1>
-            </form>
-            <div class="button gray share right floated">
-                
+                </form>
+                <div class="button gray share right floated">
+                    
+                </div>
             </div>
-        </div>
-        <div class="fluid ui content container clearfix" id="container">
-            <section class="page filters left floated resize-left-column">
-                <div class="header">Filters <i class="hide icon right floated"></i></div>
-                <div class="ui container">
-                    <div class="ui styled accordion">
-                        <div class="item">
-                            <div class="title active">
-                                <i class="dropdown icon"></i> Events
-                            </div>
-                            <div class="content active">
-                                <div class="ui list">
-                                    <a class="item">Seasons</a>
-                                    <a class="item">International</a>
-                                </div>
+            <div class="fluid ui content container clearfix" id="container">
+                <section class="page filters left floated resize-left-column">
+                    <div class="header">Filters <i class="hide icon right floated"></i></div>
+                    <div class="ui container">
+                        <div class="ui styled accordion">
+                            <div class="item">
                                 <div class="title active">
-                                    <i class="dropdown icon"></i> Company
+                                    <i class="dropdown icon"></i> Events
                                 </div>
                                 <div class="content active">
                                     <div class="ui list">
                                         <a class="item">Seasons</a>
                                         <a class="item">International</a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui styled accordion">
-                        <div class="item">
-                            <div class="title">
-                                <i class="dropdown icon"></i> Sectors
-                            </div>
-                            <div class="content">
-                                <div class="inline field">
-                                    <div class="ui checkbox">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label>Insurance</label>
+                                    <div class="title active">
+                                        <i class="dropdown icon"></i> Company
                                     </div>
-                                </div>
-                                <div class="inline field">
-                                    <div class="ui checkbox">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label>Insurance</label>
+                                    <div class="content active">
+                                        <div class="ui list">
+                                            <a class="item">Seasons</a>
+                                            <a class="item">International</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="fluid content-holder resize-right-column">
-            <div class="show filter-button">
-                Filters
-            </div>
-                <div class="fluid left floated">
-                    <div class="ui grid">
-                        <div class="title chart page clearfix column">
-                            <div class="left floated ui">
-                                <h2>Sabic</h2>
-                                <span class="vs">v/s</span>
-                                <select name="companies" multiple="" class="ui multiple search dropdown compare-company">
-                                    <option value="">Compare to</option>
-                                    <option value="ribl">RIBL</option>
-                                    <option value="bjaz">BJAZ</option>
-                                    <option value="saudi-investment">Saudi Investment</option>
-                                    <option value="saudi-holland">Saudi Holland</option>
-                                    <option value="bsfr">BSFR</option>
-                                    <option value="saab">SAAB</option>
-                                    <option value="arab-national">Arab National</option>
-                                </select>
+                        <div class="ui styled accordion">
+                            <div class="item">
+                                <div class="title">
+                                    <i class="dropdown icon"></i> Sectors
+                                </div>
+                                <div class="content">
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label>Insurance</label>
+                                        </div>
+                                    </div>
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label>Insurance</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="right floated toolbar">
-                                <a href="" class="rotate"></a>
-                                <a href="" class="a-z"></a>
-                                <div class="sorting">
-                                    <label class="left floated">Show top </label>
-                                    <select class="ui search dropdown left floated">
-                                        <option>10</option>
-                                        <option>20</option>
-                                        <option>40</option>
-                                        <option>100</option>
+                        </div>
+                    </div>
+                </section>
+                <section class="fluid content-holder resize-right-column">
+                    <div class="show filter-button">
+                        Filters
+                    </div>
+                    <div class="fluid left floated">
+                        <div class="ui grid">
+                            <div class="title chart page clearfix column">
+                                <div class="left floated ui">
+                                    <h2>Sabic</h2>
+                                    <span class="vs">v/s</span>
+                                    <select name="companies" multiple="" class="ui multiple search dropdown compare-company">
+                                        <option value="">Compare to</option>
+                                        <option value="ribl">RIBL</option>
+                                        <option value="bjaz">BJAZ</option>
+                                        <option value="saudi-investment">Saudi Investment</option>
+                                        <option value="saudi-holland">Saudi Holland</option>
+                                        <option value="bsfr">BSFR</option>
+                                        <option value="saab">SAAB</option>
+                                        <option value="arab-national">Arab National</option>
                                     </select>
-                                    <div class="count">/10</div>
+                                </div>
+                                <div class="right floated toolbar">
+                                    <a href="" class="rotate"></a>
+                                    <a href="" class="a-z"></a>
+                                    <div class="sorting">
+                                        <label class="left floated">Show top </label>
+                                        <select class="ui search dropdown left floated">
+                                            <option>10</option>
+                                            <option>20</option>
+                                            <option>40</option>
+                                            <option>100</option>
+                                        </select>
+                                        <div class="count">/10</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ui one column grid">
-                        <div class="column">
-                            <table class="ui table">
-                                <thead>
-                                    <tr>
-                                        <th>Year</th>
-                                        <th class="center aligned">Ocrurrance</th>
-                                        <th class="left aligned">When </th>
-                                        <th class="center aligned">Performance</th>
-                                        <th class="center aligned">Next 3 Days</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2016</td>
-                                        <td class="center aligned">1</td>
-                                        <td class="left aligned">
+                        <div class="ui one column grid">
+                            <div class="column">
+                                <table class="ui table">
+                                    <thead>
+                                        <tr>
+                                            <th>Year</th>
+                                            <th class="center aligned">Ocrurrance</th>
+                                            <th class="left aligned">When </th>
                                             
-
-                                            
-  <span class="ui label">
-    1st June - 6th Jun
-  </span>
-
-                                        </td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>21 %</td>
-                                        <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-2 %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2015</td>
-                                        <td class="center aligned">2</td>
-                                        <td class="left aligned">
-                                           
-                                            
-  <span class="ui label">
-    11st April - 16th April
-  </span>
-  <span class="ui label">
-    1st June - 6th Jun
-  </span>
-
-                                        </td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>11 %</td>
-                                        <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-4 %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2014</td>
-                                        <td class="center aligned">3</td>
-                                        <td class="left aligned">
-                                            
-                                            
-  <span class="ui label">
-    11st April - 16th April
-  </span>
-  <span class="ui label">
-    1st June - 6th Jun
-  </span>
-  <span class="ui label">
-    8st Augest - 13th Augest
-  </span>
-
-                                        </td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>6 %</td>
-                                        <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-6%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2013</td>
-                                        <td class="center aligned">3</td>
-                                        <td class="left aligned">
-                                            
-  <span class="ui label">
-    11st April - 16th April
-  </span>
-  <span class="ui label">
-    1st June - 6th Jun
-  </span>
-  <span class="ui label">
-    8st Augest - 13th Augest
-  </span>
-
-                                        </td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>8 %</td>
-                                        <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-2 %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2012</td>
-                                        <td class="center aligned">2</td>
-                                        <td class="left aligned">
-                                            
-  <span class="ui label">
-    11st April - 16th April
-  </span>
-  <span class="ui label">
-    1st June - 6th Jun
-  </span>
-
-
-                                        </td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>12 %</td>
-                                        <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-4 %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2014</td>
-                                        <td class="center aligned">1</td>
-                                        <td class="left aligned">
-                                           
-  <span class="ui label">
-    11st April - 16th April
-  </span>
-
-
-                                        </td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>10 %</td>
-                                        <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-6 %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2013</td>
-                                        <td class="center aligned">2</td>
-                                        <td class="left aligned">
-                                            
-  <span class="ui label">
-    11st April - 16th April
-  </span>
-  <span class="ui label">
-    1st June - 6th Jun
-  </span>
-
-
-                                        </td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>10 %</td>
-                                        <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-6 %</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <!-- <div class="content">
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2016</td>
+                                            <td class="center aligned">1</td>
+                                            <td class="left aligned">
                                                 
-                                            </div> -->
+                                                
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    1<sup>st</sup> June <i class="arrow"></i> 6<sup>th</sup> Jun
+                                                </span>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>2015</td>
+                                            <td class="center aligned">2</td>
+                                            <td class="left aligned">
+                                                
+                                                
+                                                
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    11<sup>th</sup> April <i class="arrow"></i> 16<sup>th</sup> April
+                                                </span>
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    1<sup>st</sup> Jun <i class="arrow"></i> 6<sup>th</sup> Jun
+                                                </span>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>2014</td>
+                                            <td class="center aligned">3</td>
+                                            <td class="left aligned">
+                                                
+                                                
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    11<sup>th</sup> April <i class="arrow"></i> 16<sup>th</sup> April
+                                                </span>
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    1<sup>st</sup> Jun <i class="arrow"></i> 6<sup>th</sup> Jun
+                                                </span>
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    1<sup>st</sup> Jun <i class="arrow"></i> 6<sup>th</sup> Jun
+                                                </span>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>2013</td>
+                                            <td class="center aligned">3</td>
+                                            <td class="left aligned">
+                                                
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    11<sup>th</sup> April <i class="arrow"></i> 16<sup>th</sup> April
+                                                </span>
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    1<sup>st</sup> Jun <i class="arrow"></i> 6<sup>th</sup> Jun
+                                                </span>
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    1<sup>st</sup> Jun <i class="arrow"></i> 6<sup>th</sup> Jun
+                                                </span>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>2012</td>
+                                            <td class="center aligned">2</td>
+                                            <td class="left aligned">
+                                                
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    11<sup>th</sup> April <i class="arrow"></i> 16<sup>th</sup> April
+                                                </span>
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    1<sup>st</sup> Jun <i class="arrow"></i> 6<sup>th</sup> Jun
+                                                </span>
+                                                
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>2014</td>
+                                            <td class="center aligned">1</td>
+                                            <td class="left aligned">
+                                                
+                                               <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    11<sup>th</sup> April <i class="arrow"></i> 16<sup>th</sup> April
+                                                </span>
+                                                
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>2013</td>
+                                            <td class="center aligned">2</td>
+                                            <td class="left aligned">
+                                                
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    11<sup>th</sup> April <i class="arrow"></i> 16<sup>th</sup> April
+                                                </span>
+                                                <span class="ui label date-period">
+                                                <div class="performance popup">
+                                                    <div class="col performance">
+                                                        <div class="name">Performance</div>
+                                                        <div class="up arrow">21 %</div>
+                                                    </div>
+                                                    <div class="col next-days">
+                                                    <div class="name">Next 3 days</div>
+                                                        <div class="down arrow">-2 %</div>
+                                                    </div>
+                                                </div>
+                                                    1<sup>st</sup> Jun <i class="arrow"></i> 6<sup>th</sup> Jun
+                                                </span>
+                                                
+                                            </td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- <div class="content">
+                                    
+                                </div> -->
+                            </div>
                         </div>
+                        <footer>
+                            &copy; 2016 Argaam Fintech FZ.LLC
+                        </footer>
                     </div>
-                    <footer>
-                        &copy; 2016 Argaam Fintech FZ.LLC
-                    </footer>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
-    </div>
-    <script type="text/javascript" src="javascripts/jquery-1.8.3.js"></script>
-    <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
-    <script src="dist/semantic.min.js"></script>
-    <script src="javascripts/fintech.js"></script>
-</body>
-
+        <script type="text/javascript" src="javascripts/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+        <script src="dist/semantic.min.js"></script>
+        <script src="javascripts/fintech.js"></script>
+    </body>
 </html>
