@@ -752,8 +752,6 @@
 
             @include box-shadow(0px 1px 5px -3px #000);
 
-            position: relative;
-
             > .arrow {
                 @include use-sprite(toarrow);
 
@@ -763,51 +761,24 @@
 
             &:hover {
                 background-color: $secondaryColor;
-
-                .performance.popup {
-                    @include opacity(1);
-
-                    color: #000;
-                    visibility: visible;
-
-                    @include transform(translateX(0px));
-                }
             }
+        }
 
-            .performance.popup {
-                position: absolute;
-                background-color: #fff;
-                border: 1px solid #e4e4e4;
-                width: 210px;
-                z-index: 100;
-                top: -68px;
-                left: -1px;
+        .performance.popup {
+            background-color: #fff;
 
-                @include box-shadow(0px 4px 13px -8px #000);
+            .grid {
+                > .column {
+                    padding: 10px 12px;
 
-                @include border-radius(3px);
-
-                text-align: center;
-
-                @include opacity(0);
-
-                visibility: hidden;
-
-                @include transform(translateX(55px));
-
-                @include transition(all ease 0.5s);
-
-                > .col {
-                    width: 50%;
-                    float: left;
-                    padding: 12px;
-
-                    .name {
-                        padding-bottom: 8px;
+                    .header {
+                        margin-bottom: 8px;
+                        padding: 0;
+                        font-size: 12px;
                     }
 
                     .none {
-                        font-size: 20px;
+                        font-size: 18px;
                         color: #000 !important;
 
                         &:before {
@@ -822,7 +793,8 @@
                     .arrow {
                         display: inline-block;
                         width: 100%;
-                        font-size: 20px;
+                        font-size: 18px;
+                        white-space: nowrap;
 
                         &:before {
                             content: '';
@@ -834,7 +806,7 @@
                             color: green;
 
                             &:before {
-                                @include triangle(10px, up, green);
+                                @include triangle(8px, up, green);
                             }
                         }
 
@@ -842,7 +814,7 @@
                             color: red;
 
                             &:before {
-                                @include triangle(10px, down, red);
+                                @include triangle(8px, down, red);
                             }
                         }
                     }

@@ -802,7 +802,6 @@
   -moz-box-shadow: 0px 1px 5px -3px #000;
   -webkit-box-shadow: 0px 1px 5px -3px #000;
   box-shadow: 0px 1px 5px -3px #000;
-  position: relative;
 }
 .fintech .ui.table .ui.label.date-period > .arrow {
   background-image: url('themes/default/assets/images/icons-sc47be7fc9f.png');
@@ -827,88 +826,55 @@
 .fintech .ui.table .ui.label.date-period:hover {
   background-color: #f0ac09;
 }
-.fintech .ui.table .ui.label.date-period:hover .performance.popup {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-  color: #000;
-  visibility: visible;
-  -moz-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  transform: translateX(0px);
-}
-.fintech .ui.table .ui.label.date-period .performance.popup {
-  position: absolute;
+.fintech .ui.table .performance.popup {
   background-color: #fff;
-  border: 1px solid #e4e4e4;
-  width: 210px;
-  z-index: 100;
-  top: -68px;
-  left: -1px;
-  -moz-box-shadow: 0px 4px 13px -8px #000;
-  -webkit-box-shadow: 0px 4px 13px -8px #000;
-  box-shadow: 0px 4px 13px -8px #000;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  text-align: center;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  visibility: hidden;
-  -moz-transform: translateX(55px);
-  -ms-transform: translateX(55px);
-  -webkit-transform: translateX(55px);
-  transform: translateX(55px);
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col {
-  width: 50%;
-  float: left;
-  padding: 12px;
+.fintech .ui.table .performance.popup .grid > .column {
+  padding: 10px 12px;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col .name {
-  padding-bottom: 8px;
+.fintech .ui.table .performance.popup .grid > .column .header {
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 12px;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col .none {
-  font-size: 20px;
+.fintech .ui.table .performance.popup .grid > .column .none {
+  font-size: 18px;
   color: #000 !important;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col .none:before {
+.fintech .ui.table .performance.popup .grid > .column .none:before {
   display: none !important;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col.performance {
+.fintech .ui.table .performance.popup .grid > .column.performance {
   border-right: 1px solid #e4e4e4;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col .arrow {
+.fintech .ui.table .performance.popup .grid > .column .arrow {
   display: inline-block;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
+  white-space: nowrap;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col .arrow:before {
+.fintech .ui.table .performance.popup .grid > .column .arrow:before {
   content: '';
   display: inline-block;
   margin-right: 5px;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col .arrow.up {
+.fintech .ui.table .performance.popup .grid > .column .arrow.up {
   color: green;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col .arrow.up:before {
+.fintech .ui.table .performance.popup .grid > .column .arrow.up:before {
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid green;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid green;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col .arrow.down {
+.fintech .ui.table .performance.popup .grid > .column .arrow.down {
   color: red;
 }
-.fintech .ui.table .ui.label.date-period .performance.popup > .col .arrow.down:before {
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid red;
+.fintech .ui.table .performance.popup .grid > .column .arrow.down:before {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid red;
 }
 .fintech .ui.table.heat tr td {
   border-top: none;

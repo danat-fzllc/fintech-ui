@@ -12,6 +12,12 @@ $('.ui.accordion')
   .accordion()
 ;
 
+$('.button.date-period')
+  .popup({
+    inline: true,
+    position   : 'bottom left'
+  })
+;
 //fintech modules
 $(".filter .text").click(function() {
     $(this).parent().toggleClass("opened");
