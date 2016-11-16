@@ -806,8 +806,13 @@
                         padding-bottom: 8px;
                     }
 
-                    .value {
+                    .none {
                         font-size: 20px;
+                        color: #000 !important;
+
+                        &:before {
+                            display: none !important;
+                        }
                     }
 
                     &.performance {
