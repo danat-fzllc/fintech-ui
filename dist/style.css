@@ -872,6 +872,9 @@
 .fintech .ui.table .ui.label.date-period .performance.popup > .col .name {
   padding-bottom: 8px;
 }
+.fintech .ui.table .ui.label.date-period .performance.popup > .col .value {
+  font-size: 20px;
+}
 .fintech .ui.table .ui.label.date-period .performance.popup > .col.performance {
   border-right: 1px solid #e4e4e4;
 }
