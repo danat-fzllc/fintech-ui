@@ -829,6 +829,10 @@
 .fintech .ui.table .performance.popup {
   background-color: #fff;
 }
+.fintech .ui.table .performance.popup:before {
+  box-shadow: -1px -1px 0 0 #bababc !important;
+  top: -5px !important;
+}
 .fintech .ui.table .performance.popup .grid > .column {
   padding: 10px 12px;
 }

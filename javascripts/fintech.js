@@ -14,8 +14,9 @@ $('.ui.accordion')
 
 $('.button.date-period')
   .popup({
-    inline: true,
-    position   : 'bottom left'
+    on : 'hover',
+        position : 'top left',
+        inline : true
   })
 ;
 //fintech modules
