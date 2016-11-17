@@ -767,11 +767,6 @@
         .performance.popup {
             background-color: #fff;
 
-            &:before {
-                box-shadow: -1px -1px 0 0 #bababc !important;
-                top: -5px !important;
-            }
-
             .grid {
                 > .column {
                     padding: 10px 12px;
