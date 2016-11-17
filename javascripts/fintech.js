@@ -14,8 +14,6 @@ $('.ui.accordion')
 
 $('.button.date-period')
   .popup({
-    on : 'hover',
-        position : 'top left',
         inline : true
   })
 ;
