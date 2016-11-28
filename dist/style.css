@@ -119,8 +119,8 @@
 .fintech .ui-resizable-e {
   cursor: e-resize;
   width: 10px;
-  right: 0;
-  top: 90px;
+  right: -7px;
+  top: 62px;
   height: 35px;
   width: 14px;
   border: 1px solid #d4d4d4 !important;
@@ -556,11 +556,11 @@
 }
 .fintech .page.filters {
   width: 230px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .fintech .page.filters.resize-left-column {
   float: left;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
   box-sizing: border-box;
   z-index: 3;
   height: auto !important;
