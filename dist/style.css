@@ -504,10 +504,9 @@
   background-color: rgba(30, 102, 119, 0.26);
 }
 .fintech .question[class*="page"] .field {
-  max-height: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   border-color: transparent;
-  padding: 17px 0;
+  padding: 3px;
   margin: 5px 0 0 0;
   color: #fff;
 }
