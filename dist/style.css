@@ -799,31 +799,50 @@
 }
 .fintech .ui.table .ui.label.date-period {
   background-color: #fff;
-  border: 1px solid #e4e4e4;
   cursor: default;
-  -moz-box-shadow: 0px 1px 5px -3px #000;
-  -webkit-box-shadow: 0px 1px 5px -3px #000;
-  box-shadow: 0px 1px 5px -3px #000;
+  position: relative;
+  /*border: 1px solid #e4e4e4;*/
+  /*@include box-shadow(0px 1px 5px -3px #000);*/
 }
-.fintech .ui.table .ui.label.date-period > .arrow {
-  background-image: url('themes/default/assets/images/icons-sc47be7fc9f.png');
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  height: 10px;
-  width: 23px;
-  display: inline-block;
-  margin: -2px 5px;
+.fintech .ui.table .ui.label.date-period > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .fintech .ui.table .ui.label.date-period > .arrow {
-    background-image: url('themes/default/assets/images/icons-2x-sbd40cd36e3.png');
-    background-size: 146px 44px;
-    background-position: 0 0;
-    height: 10px;
-    width: 23px;
-  }
+.fintech .ui.table .ui.label.date-period span {
+  position: relative;
+  z-index: 1;
+}
+.fintech .ui.table .ui.label.date-period .first {
+  left: 0;
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 0 0 3px;
+}
+.fintech .ui.table .ui.label.date-period .second {
+  right: 0;
+  left: auto;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 3px 3px 0;
+}
+.fintech .ui.table .ui.label.date-period svg {
+  width: 15px;
+  margin: 0 5px;
+  position: relative;
+  z-index: 1;
+  top: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 3px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+}
+.fintech .ui.table .ui.label.date-period svg .cls-1 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
 }
 .fintech .ui.table .ui.label.date-period:hover {
   background-color: #f0ac09;
@@ -893,42 +912,6 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-.fintech .ui.table.heat tr td.block-holder .down {
-  background-color: #ee0101;
-}
-.fintech .ui.table.heat tr td.block-holder .down.very-low {
-  background-color: #ffefef;
-}
-.fintech .ui.table.heat tr td.block-holder .down.low {
-  background-color: #ffbcbc;
-}
-.fintech .ui.table.heat tr td.block-holder .down.medium {
-  background-color: #ff8989;
-}
-.fintech .ui.table.heat tr td.block-holder .down.high {
-  background-color: #fe5757;
-}
-.fintech .ui.table.heat tr td.block-holder .down.very-high {
-  background-color: #ee0101;
-}
-.fintech .ui.table.heat tr td.block-holder .up {
-  background-color: #26a046;
-}
-.fintech .ui.table.heat tr td.block-holder .up.very-low {
-  background-color: #d1f4da;
-}
-.fintech .ui.table.heat tr td.block-holder .up.low {
-  background-color: #a8eab9;
-}
-.fintech .ui.table.heat tr td.block-holder .up.medium {
-  background-color: #7fe098;
-}
-.fintech .ui.table.heat tr td.block-holder .up.high {
-  background-color: #55d777;
-}
-.fintech .ui.table.heat tr td.block-holder .up.very-high {
-  background-color: #26a046;
-}
 .fintech .ui.table.heat tr td .perfrom-title {
   max-width: 60px;
   display: block;
@@ -966,4 +949,74 @@
 }
 .fintech .ui.table.heat tr:first-child td {
   padding-top: .9em !important;
+}
+
+.bg.red-10 {
+  background-color: #ffd6d6 !important;
+}
+.bg.red-20 {
+  background-color: #ffbcbc !important;
+}
+.bg.red-30 {
+  background-color: #ffa3a3 !important;
+}
+.bg.red-40 {
+  background-color: #ff8989 !important;
+}
+.bg.red-50 {
+  background-color: #fe7070 !important;
+}
+.bg.red-60 {
+  background-color: #fe5757 !important;
+}
+.bg.red-70 {
+  background-color: #fe3d3d !important;
+}
+.bg.red-80 {
+  background-color: #fe2424 !important;
+}
+.bg.red-90 {
+  background-color: #fd0101 !important;
+}
+.bg.red-100 {
+  background-color: #ee0101 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.bg.green-10 {
+  background-color: #bcefca !important;
+}
+.bg.green-20 {
+  background-color: #a8eab9 !important;
+}
+.bg.green-30 {
+  background-color: #93e5a9 !important;
+}
+.bg.green-40 {
+  background-color: #7fe098 !important;
+}
+.bg.green-50 {
+  background-color: #6adc88 !important;
+}
+.bg.green-60 {
+  background-color: #55d777 !important;
+}
+.bg.green-70 {
+  background-color: #41d267 !important;
+}
+.bg.green-80 {
+  background-color: #30c958 !important;
+}
+.bg.green-90 {
+  background-color: #29ac4b !important;
+}
+.bg.green-100 {
+  background-color: #26a046 !important;
 }

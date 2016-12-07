@@ -752,16 +752,52 @@
 
         .ui.label.date-period {
             background-color: #fff;
-            border: 1px solid #e4e4e4;
             cursor: default;
+            position: relative;
 
-            @include box-shadow(0px 1px 5px -3px #000);
+            /*border: 1px solid #e4e4e4;*/
+            /*@include box-shadow(0px 1px 5px -3px #000);*/
+            > div {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 50%;
+            }
 
-            > .arrow {
-                @include use-sprite(toarrow);
+            span {
+                position: relative;
+                z-index: 1;
+            }
 
-                display: inline-block;
-                margin: -2px 5px;
+            .first {
+                left: 0;
+
+                @include border-radius(3px 0 0 3px);
+            }
+
+            .second {
+                right: 0;
+                left: auto;
+
+                @include border-radius(0 3px 3px 0);
+            }
+
+            svg {
+                width: 15px;
+                margin: 0 5px;
+                position: relative;
+                z-index: 1;
+                top: 1px;
+                background: rgba(0, 0, 0, 0.2);
+                padding: 3px;
+
+                @include border-radius(12px);
+
+                .cls-1 {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-miterlimit: 10;
+                }
             }
 
             &:hover {
@@ -844,54 +880,6 @@
 
                             @include border-radius(3px);
                         }
-
-                        .down {
-                            background-color: $heatRed;
-
-                            &.very-low {
-                                background-color: lighten($heatRed, 50%);
-                            }
-
-                            &.low {
-                                background-color: lighten($heatRed, 40%);
-                            }
-
-                            &.medium {
-                                background-color: lighten($heatRed, 30%);
-                            }
-
-                            &.high {
-                                background-color: lighten($heatRed, 20%);
-                            }
-
-                            &.very-high {
-                                background-color: $heatRed;
-                            }
-                        }
-
-                        .up {
-                            background-color: $heatGreen;
-
-                            &.very-low {
-                                background-color: lighten($heatGreen, 50%);
-                            }
-
-                            &.low {
-                                background-color: lighten($heatGreen, 40%);
-                            }
-
-                            &.medium {
-                                background-color: lighten($heatGreen, 30%);
-                            }
-
-                            &.high {
-                                background-color: lighten($heatGreen, 20%);
-                            }
-
-                            &.very-high {
-                                background-color: $heatGreen;
-                            }
-                        }
                     }
 
                     .perfrom-title {
@@ -944,5 +932,97 @@
                 }
             }
         }
+    }
+}
+
+.bg {
+    &.red-10 {
+        background-color: lighten($heatRed, 45%) !important;
+    }
+
+    &.red-20 {
+        background-color: lighten($heatRed, 40%) !important;
+    }
+
+    &.red-30 {
+        background-color: lighten($heatRed, 35%) !important;
+    }
+
+    &.red-40 {
+        background-color: lighten($heatRed, 30%) !important;
+    }
+
+    &.red-50 {
+        background-color: lighten($heatRed, 25%) !important;
+    }
+
+    &.red-60 {
+        background-color: lighten($heatRed, 20%) !important;
+    }
+
+    &.red-70 {
+        background-color: lighten($heatRed, 15%) !important;
+    }
+
+    &.red-80 {
+        background-color: lighten($heatRed, 10%) !important;
+    }
+
+    &.red-90 {
+        background-color: lighten($heatRed, 3%) !important;
+    }
+
+    &.red-100 {
+        background-color: $heatRed !important;
+    }
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.bg {
+    &.green-10 {
+        background-color: lighten($heatGreen, 45%) !important;
+    }
+
+    &.green-20 {
+        background-color: lighten($heatGreen, 40%) !important;
+    }
+
+    &.green-30 {
+        background-color: lighten($heatGreen, 35%) !important;
+    }
+
+    &.green-40 {
+        background-color: lighten($heatGreen, 30%) !important;
+    }
+
+    &.green-50 {
+        background-color: lighten($heatGreen, 25%) !important;
+    }
+
+    &.green-60 {
+        background-color: lighten($heatGreen, 20%) !important;
+    }
+
+    &.green-70 {
+        background-color: lighten($heatGreen, 15%) !important;
+    }
+
+    &.green-80 {
+        background-color: lighten($heatGreen, 10%) !important;
+    }
+
+    &.green-90 {
+        background-color: lighten($heatGreen, 3%) !important;
+    }
+
+    &.green-100 {
+        background-color: $heatGreen !important;
     }
 }
