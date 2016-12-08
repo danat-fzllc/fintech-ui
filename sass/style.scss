@@ -754,40 +754,37 @@
             background-color: #fff;
             cursor: default;
             position: relative;
+            padding: 0;
 
-            /*border: 1px solid #e4e4e4;*/
-            /*@include box-shadow(0px 1px 5px -3px #000);*/
             > div {
-                position: absolute;
-                top: 0;
-                bottom: 0;
                 width: 50%;
-            }
-
-            span {
-                position: relative;
-                z-index: 1;
+                float: left;
+                padding: 8px 10px;
+                white-space: nowrap;
             }
 
             .first {
-                left: 0;
-
                 @include border-radius(3px 0 0 3px);
+
+                padding-right: 20px;
             }
 
             .second {
-                right: 0;
-                left: auto;
-
                 @include border-radius(0 3px 3px 0);
+
+                padding-left: 15px;
             }
 
             svg {
                 width: 15px;
                 margin: 0 5px;
-                position: relative;
+                position: absolute;
                 z-index: 1;
-                top: 1px;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
                 background: rgba(0, 0, 0, 0.2);
                 padding: 3px;
 
@@ -798,10 +795,6 @@
                     stroke: #fff;
                     stroke-miterlimit: 10;
                 }
-            }
-
-            &:hover {
-                background-color: $secondaryColor;
             }
         }
 
@@ -954,26 +947,32 @@
 
     &.red-50 {
         background-color: lighten($heatRed, 25%) !important;
+        color: #fff;
     }
 
     &.red-60 {
         background-color: lighten($heatRed, 20%) !important;
+        color: #fff;
     }
 
     &.red-70 {
         background-color: lighten($heatRed, 15%) !important;
+        color: #fff;
     }
 
     &.red-80 {
         background-color: lighten($heatRed, 10%) !important;
+        color: #fff;
     }
 
     &.red-90 {
         background-color: lighten($heatRed, 3%) !important;
+        color: #fff;
     }
 
     &.red-100 {
         background-color: $heatRed !important;
+        color: #fff;
     }
 }
 
@@ -1016,13 +1015,16 @@
 
     &.green-80 {
         background-color: lighten($heatGreen, 10%) !important;
+        color: #fff;
     }
 
     &.green-90 {
         background-color: lighten($heatGreen, 3%) !important;
+        color: #fff;
     }
 
     &.green-100 {
         background-color: $heatGreen !important;
+        color: #fff;
     }
 }

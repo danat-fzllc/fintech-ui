@@ -801,38 +801,36 @@
   background-color: #fff;
   cursor: default;
   position: relative;
-  /*border: 1px solid #e4e4e4;*/
-  /*@include box-shadow(0px 1px 5px -3px #000);*/
+  padding: 0;
 }
 .fintech .ui.table .ui.label.date-period > div {
-  position: absolute;
-  top: 0;
-  bottom: 0;
   width: 50%;
-}
-.fintech .ui.table .ui.label.date-period span {
-  position: relative;
-  z-index: 1;
+  float: left;
+  padding: 8px 10px;
+  white-space: nowrap;
 }
 .fintech .ui.table .ui.label.date-period .first {
-  left: 0;
   -moz-border-radius: 3px 0 0 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px 0 0 3px;
+  padding-right: 20px;
 }
 .fintech .ui.table .ui.label.date-period .second {
-  right: 0;
-  left: auto;
   -moz-border-radius: 0 3px 3px 0;
   -webkit-border-radius: 0;
   border-radius: 0 3px 3px 0;
+  padding-left: 15px;
 }
 .fintech .ui.table .ui.label.date-period svg {
   width: 15px;
   margin: 0 5px;
-  position: relative;
+  position: absolute;
   z-index: 1;
-  top: 1px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   background: rgba(0, 0, 0, 0.2);
   padding: 3px;
   -moz-border-radius: 12px;
@@ -843,9 +841,6 @@
   fill: none;
   stroke: #fff;
   stroke-miterlimit: 10;
-}
-.fintech .ui.table .ui.label.date-period:hover {
-  background-color: #f0ac09;
 }
 .fintech .ui.table .performance.popup {
   background-color: #fff;
@@ -965,21 +960,27 @@
 }
 .bg.red-50 {
   background-color: #fe7070 !important;
+  color: #fff;
 }
 .bg.red-60 {
   background-color: #fe5757 !important;
+  color: #fff;
 }
 .bg.red-70 {
   background-color: #fe3d3d !important;
+  color: #fff;
 }
 .bg.red-80 {
   background-color: #fe2424 !important;
+  color: #fff;
 }
 .bg.red-90 {
   background-color: #fd0101 !important;
+  color: #fff;
 }
 .bg.red-100 {
   background-color: #ee0101 !important;
+  color: #fff;
 }
 
 .text-white {
@@ -1013,10 +1014,13 @@
 }
 .bg.green-80 {
   background-color: #30c958 !important;
+  color: #fff;
 }
 .bg.green-90 {
   background-color: #29ac4b !important;
+  color: #fff;
 }
 .bg.green-100 {
   background-color: #26a046 !important;
+  color: #fff;
 }
