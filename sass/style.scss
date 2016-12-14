@@ -930,49 +930,96 @@
 }
 
 .bg {
+    &.red-5 {
+        background-color: lighten($heatRed, 50%) !important;
+    }
+
     &.red-10 {
-        background-color: lighten($heatRed, 45%) !important;
+        background-color: lighten($heatRed, 47%) !important;
+    }
+
+    &.red-15 {
+        background-color: lighten($heatRed, 44%) !important;
     }
 
     &.red-20 {
-        background-color: lighten($heatRed, 40%) !important;
+        background-color: lighten($heatRed, 41%) !important;
+    }
+
+    &.red-25 {
+        background-color: lighten($heatRed, 38%) !important;
     }
 
     &.red-30 {
         background-color: lighten($heatRed, 35%) !important;
     }
 
-    &.red-40 {
-        background-color: lighten($heatRed, 30%) !important;
+    &.red-35 {
+        background-color: lighten($heatRed, 32%) !important;
     }
 
-    &.red-50 {
-        background-color: lighten($heatRed, 25%) !important;
+    &.red-40 {
+        background-color: lighten($heatRed, 29%) !important;
         color: #fff;
     }
 
-    &.red-60 {
+    &.red-45 {
+        background-color: lighten($heatRed, 26%) !important;
+        color: #fff;
+    }
+
+    &.red-50 {
+        background-color: lighten($heatRed, 23%) !important;
+        color: #fff;
+    }
+
+    &.red-55 {
         background-color: lighten($heatRed, 20%) !important;
         color: #fff;
     }
 
+    &.red-60 {
+        background-color: lighten($heatRed, 17%) !important;
+        color: #fff;
+    }
+
+    &.red-65 {
+        background-color: lighten($heatRed, 14%) !important;
+        color: #fff;
+    }
+
     &.red-70 {
-        background-color: lighten($heatRed, 15%) !important;
+        background-color: lighten($heatRed, 11%) !important;
+        color: #fff;
+    }
+
+    &.red-75 {
+        background-color: lighten($heatRed, 8%) !important;
         color: #fff;
     }
 
     &.red-80 {
-        background-color: lighten($heatRed, 10%) !important;
+        background-color: lighten($heatRed, 5%) !important;
+        color: #fff;
+    }
+
+    &.red-85 {
+        background-color: darken($heatRed, 2%) !important;
         color: #fff;
     }
 
     &.red-90 {
-        background-color: lighten($heatRed, 3%) !important;
+        background-color: darken($heatRed, 5%) !important;
+        color: #fff;
+    }
+
+    &.red-95 {
+        background-color: darken($heatRed, 8%) !important;
         color: #fff;
     }
 
     &.red-100 {
-        background-color: $heatRed !important;
+        background-color: darken($heatRed, 11%) !important;
         color: #fff;
     }
 }
@@ -986,46 +1033,91 @@
 }
 
 .bg {
+    &.green-5 {
+        background-color: lighten($heatGreen, 50%) !important;
+    }
+
     &.green-10 {
-        background-color: lighten($heatGreen, 45%) !important;
+        background-color: lighten($heatGreen, 47%) !important;
+    }
+
+    &.green-15 {
+        background-color: lighten($heatGreen, 44%) !important;
     }
 
     &.green-20 {
-        background-color: lighten($heatGreen, 40%) !important;
+        background-color: lighten($heatGreen, 41%) !important;
+    }
+
+    &.green-25 {
+        background-color: lighten($heatGreen, 38%) !important;
     }
 
     &.green-30 {
         background-color: lighten($heatGreen, 35%) !important;
     }
 
+    &.green-35 {
+        background-color: lighten($heatGreen, 32%) !important;
+    }
+
     &.green-40 {
-        background-color: lighten($heatGreen, 30%) !important;
+        background-color: lighten($heatGreen, 29%) !important;
+    }
+
+    &.green-45 {
+        background-color: lighten($heatGreen, 26%) !important;
     }
 
     &.green-50 {
-        background-color: lighten($heatGreen, 25%) !important;
+        background-color: lighten($heatGreen, 23%) !important;
     }
 
-    &.green-60 {
+    &.green-55 {
         background-color: lighten($heatGreen, 20%) !important;
     }
 
+    &.green-60 {
+        background-color: lighten($heatGreen, 17%) !important;
+    }
+
+    &.green-65 {
+        background-color: lighten($heatGreen, 14%) !important;
+        color: #fff;
+    }
+
     &.green-70 {
-        background-color: lighten($heatGreen, 15%) !important;
+        background-color: lighten($heatGreen, 11%) !important;
+        color: #fff;
+    }
+
+    &.red-75 {
+        background-color: lighten($heatGreen, 8%) !important;
+        color: #fff;
     }
 
     &.green-80 {
-        background-color: lighten($heatGreen, 10%) !important;
+        background-color: lighten($heatGreen, 5%) !important;
+        color: #fff;
+    }
+
+    &.green-85 {
+        background-color: darken($heatGreen, 2%) !important;
         color: #fff;
     }
 
     &.green-90 {
-        background-color: lighten($heatGreen, 3%) !important;
+        background-color: darken($heatGreen, 5%) !important;
+        color: #fff;
+    }
+
+    &.green-95 {
+        background-color: darken($heatGreen, 8%) !important;
         color: #fff;
     }
 
     &.green-100 {
-        background-color: $heatGreen !important;
+        background-color: darken($heatGreen, 11%) !important;
         color: #fff;
     }
 }
