@@ -42,6 +42,15 @@ $(".filters .hide.icon").click(function() {
 $(window).load(function(){
 $(document).ready(function() {
 
+
+// var width = $('.aggregate-chart .arrow').width();
+// // var width = document.getElementsByClassName(".aggregate-chart .arrow").width();
+
+// if (width == 0){
+//     $('.aggregate-chart .arrow').addClass('no-change');
+// }
+
+
 // init
 var leftPanel = $("#left_slide_panel");
 var resize= $(".resize-left-column");

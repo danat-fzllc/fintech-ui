@@ -10,6 +10,20 @@
         position: relative;
     }
 
+    .q7 {
+        .row > {
+            .column {
+                &:last-child {
+                    padding: 0 200px 0 0 !important;
+
+                    .title {
+                        margin-left: -200px !important;
+                    }
+                }
+            }
+        }
+    }
+
     .ui-resizable-handle {
         position: absolute;
         font-size: 0.1px;
@@ -69,22 +83,29 @@
 
         &.event-aggregate-chart {
             padding: 0;
-            border: 1px solid lighten($black, 90%);
+            border: 1px solid $white;
 
             > .row {
+                &.head {
+                    height: 55px;
+
+                    > .column {
+                        height: inherit;
+                    }
+                }
+
                 > .column {
                     text-align: center;
-                    height: 80px;
+                    height: 70px;
                     width: 200px;
 
                     &:first-child {
                         border-right: 1px solid $borderColor;
-                        padding: 25px 0 0 0;
+                        padding: 26px 0 0 0;
                     }
 
                     &:nth-child(2) {
                         border-left: 1px solid $borderColor;
-                        padding: 7px 0 0 0;
                     }
 
                     &:last-child {
@@ -102,19 +123,17 @@
                         font-size: 16px;
 
                         + span {
-                            margin: 5px 0 0 0;
                             font-size: 18px;
                             font-weight: 700;
                         }
                     }
 
                     .donut-holder {
-                        width: 65px;
-                        height: 65px;
+                        width: 40px;
+                        height: 40px;
                         margin: 0 auto;
-                        border: 1px solid #f8f8f8;
                         float: left;
-                        margin-left: 10px;
+                        margin: 16px 0 0 15px;
                     }
 
                     .donut-value {
@@ -122,23 +141,26 @@
                         font-weight: 700;
                         display: inline-block;
                         float: left;
-                        margin: 20px 0 0 20px;
+                        margin: 27px 0 0 20px;
                     }
 
                     .title {
                         display: inline-block;
-                        margin: 30px 0 0 -160px;
-                        font-size: 20px;
+                        margin: 20px 0 0 0;
+                        font-size: 18px;
                         font-weight: normal;
-
-                        .company-name {
-                            font-size: 24px;
-                            font-weight: 900;
-                        }
                     }
 
-                    &.prob-title {
-                        padding-top: 30px;
+                    &.company {
+                        &.name {
+                            padding: 0 15px;
+                            font-size: 24px;
+
+                            h2 {
+                                line-height: 55px;
+                                white-space: nowrap;
+                            }
+                        }
                     }
                 }
 
@@ -164,10 +186,10 @@
 
             &.clickable {
                 &:hover {
-                    border: 1px solid lighten($black, 80%);
+                    border: 1px solid $secondaryColor;
 
                     .view-more {
-                        background-color: lighten($black, 90%);
+                        background-color: lighten($secondaryColor, 42%);
 
                         @include border-radius(0 0 6px 6px);
 
@@ -175,113 +197,12 @@
                         height: auto;
                         font-size: 14px;
                         padding: 10px 0;
-                        line-height: 14px;
+                        line-height: 18px;
                         font-size: 14px;
                         width: 100%;
 
                         &:hover {
                             background-color: lighten($secondaryColor, 46%);
-                        }
-                    }
-                }
-            }
-
-            .aggregate-chart {
-                width: 100%;
-
-                .column {
-                    width: 50%;
-                    float: left;
-                    height: 80px;
-                    overflow: hidden;
-
-                    .arrow {
-                        height: 40px;
-                        margin: 20px 0;
-                        position: relative;
-                        max-width: 100% !important;
-                        -webkit-animation: w70 1s ease forwards;
-
-                        &:after {
-                            border-left-width: 15px;
-                            border-top-width: 20px;
-                            border-bottom-width: 20px;
-                            border-right-width: 15px;
-                            border-style: solid;
-                            border-top-color: #fff;
-                            border-bottom-color: #fff;
-                        }
-
-                        .value {
-                            position: absolute;
-                            color: #fff;
-                            bottom: 0;
-                            top: 0;
-                            margin: auto;
-                            display: inline-block;
-                            height: 19px;
-                            font-weight: 900;
-                            font-size: 20px;
-                        }
-                    }
-
-                    &.up {
-                        float: right;
-                        border-left: 1px solid rgba(34, 36, 38, 0.15);
-
-                        .arrow {
-                            background: #00a651;
-
-                            &:after {
-                                content: "";
-                                width: 0;
-                                height: 0px;
-                                border-left-color: #00a651;
-                                border-right: 0;
-                                float: right;
-                            }
-
-                            .value {
-                                right: 24px;
-                            }
-
-                            &.small-value {
-                                .value {
-                                    right: -75px;
-                                    color: #00a651;
-                                }
-                            }
-                        }
-                    }
-
-                    &.down {
-                        border-right: 1px solid $borderColor;
-                        position: relative;
-                        right: -1px;
-
-                        .arrow {
-                            background: #cc0000;
-                            float: right;
-
-                            &:after {
-                                content: "";
-                                width: 0;
-                                height: 0px;
-                                border-right-color: #cc0000;
-                                border-left: 0;
-                                float: left;
-                            }
-
-                            .value {
-                                left: 24px;
-                            }
-
-                            &.small-value {
-                                .value {
-                                    left: -75px;
-                                    color: #c00;
-                                }
-                            }
                         }
                     }
                 }
@@ -922,6 +843,161 @@
                 &:first-child {
                     td {
                         padding-top: .9em !important;
+                    }
+                }
+            }
+        }
+
+        td {
+            &.aggregate-chart-col {
+                padding-top: 0;
+                padding-bottom: 0;
+
+                .column {
+                    height: auto;
+
+                    .arrow {
+                        height: 20px;
+                        margin: 10px 0;
+
+                        .value {
+                            font-size: 12px;
+                        }
+                    }
+
+                    &.up {
+                        padding-right: 10px;
+
+                        .arrow {
+                            &:after {
+                                @include triangle(10px, right, #00a651);
+
+                                right: -10px;
+                            }
+                        }
+                    }
+
+                    &.down {
+                        padding-left: 10px;
+
+                        .arrow {
+                            &:after {
+                                @include triangle(10px, left, #cc0000);
+
+                                left: -10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.aggregate-chart {
+    width: 100%;
+
+    .column {
+        width: 50%;
+        float: left;
+        height: 70px;
+        overflow: hidden;
+
+        .arrow {
+            height: 40px;
+            margin: 16px 0;
+            position: relative;
+            max-width: 100% !important;
+            -webkit-animation: w70 1s ease forwards;
+
+            &:after {
+                border-left-width: 15px;
+                border-top-width: 20px;
+                border-bottom-width: 20px;
+                border-right-width: 15px;
+                border-style: solid;
+                border-top-color: #fff;
+                border-bottom-color: #fff;
+                position: absolute;
+                top: 0px;
+            }
+
+            &.no-change {
+                &:after {
+                    display: none;
+                }
+            }
+
+            .value {
+                position: absolute;
+                color: #fff;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                display: inline-block;
+                height: 19px;
+                font-weight: 900;
+                font-size: 20px;
+            }
+        }
+
+        &.up {
+            float: right;
+            border-left: 1px solid rgba(34, 36, 38, 0.15);
+            padding-right: 24px;
+
+            .arrow {
+                background: #00a651;
+
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0px;
+                    border-left-color: #00a651;
+                    border-right: 0;
+                    right: -14.8px;
+                }
+
+                .value {
+                    right: 0;
+                }
+
+                &.small-value {
+                    .value {
+                        right: -75px;
+                        color: #00a651;
+                    }
+                }
+            }
+        }
+
+        &.down {
+            border-right: 1px solid $borderColor;
+            position: relative;
+            right: -1px;
+            padding-left: 24px;
+
+            .arrow {
+                background: #cc0000;
+                float: right;
+
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0px;
+                    border-right-color: #cc0000;
+                    border-left: 0;
+                    left: -14.8px;
+                }
+
+                .value {
+                    left: 0;
+                }
+
+                &.small-value {
+                    .value {
+                        left: -75px;
+                        color: #c00;
                     }
                 }
             }
