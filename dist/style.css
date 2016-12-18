@@ -186,7 +186,9 @@
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column:first-child {
   border-right: 1px solid rgba(34, 36, 38, 0.15);
-  padding: 26px 0 0 0;
+  padding: 26px 0 0 22px;
+  text-align: left;
+  font-size: 15px;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column:nth-child(2) {
   border-left: 1px solid rgba(34, 36, 38, 0.15);
@@ -201,10 +203,8 @@
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column span {
   display: inline-block;
-  font-size: 16px;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column span + span {
-  font-size: 18px;
   font-weight: 700;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .donut-holder {
@@ -228,8 +228,9 @@
   font-weight: normal;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column.company.name {
-  padding: 0 15px;
+  padding: 0 15px 0 22px;
   font-size: 24px;
+  text-align: left;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column.company.name h2 {
   line-height: 55px;
