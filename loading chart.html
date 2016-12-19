@@ -55,40 +55,25 @@
                     </select>
                     
                     <input type="text" placeholder="" class="field center aligned" value="5" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
-                    days before and <input type="text" placeholder="" class="field center aligned" value="5" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
-                    days after
-                    <!-- <select id="" class="">
-                        <option value="1">OPEC Meetings</option>
-                        <option value="3">2007</option>
-                        <option value="2">2008</option>
-                    </select> -->
-                    <div class="ui dropdown multilevel">
-  <span class="text">OPEC Meetings</span>
-  <i class="dropdown icon"></i>
-  <div class="menu">
-    <div class="item">
-      <span class="text">Category 1</span>
-    </div>
-    <div class="item">
-      <i class="dropdown icon"></i>
-      <span class="text">Category 2</span>
-      <div class="menu">
-        <div class="item">Item 2A</div>
-        <div class="item">Item 2B</div>
-        <div class="item">Item 2C</div>
-      </div>
-    </div>
-    <div class="item">
-      <i class="dropdown icon"></i>
-      <span class="text">Category 3</span>
-      <div class="menu">
-        <div class="item">Item 3A</div>
-        <div class="item">Item 3B</div>
-        <div class="item">Item 3C</div>
-      </div>
-    </div>
-  </div>
-</div>
+                    days after, when the price of 
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">Gold</option>
+                        <option value="3">Silver</option>
+                        <option value="2">Oil</option>
+                    </select>
+                    was up by 
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">2016</option>
+                        <option value="3">2015</option>
+                        <option value="2">2014</option>
+                    </select>
+                    to
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">2016</option>
+                        <option value="3">2015</option>
+                        <option value="2">2014</option>
+                    </select>
+                    
                     <a class="ui button yellow">Discover</a>
                     </h1>
             </form>
@@ -184,89 +169,14 @@
                     </div>
                     <div class="ui one column grid">
                         <div class="column">
-                            <div class="content event-aggregate-chart">
-                                <div class="row head clearfix">
-                                    <div class="column left floated no-border company name"><h2>SABIC</h2></div>
-                                    <div class="column right floated ">
-                                        <div class="title">Probability</div>
-                                    </div>
-
-                                    <div class="column">
-                                        <div class="title">Aggregate Performance</div>
-                                    </div>
+                            <div class="content loading">
+                                <div class="loader">
+                                    <img src="dist/themes/default/assets/images/chart-loader.gif" alt="">
                                 </div>
-                                <div class="row clearfix">
-                                    <div class="column left floated">
-                                        <span>Before</span>
-                                        <span>3 days</span>
-                                    </div>
-                                    <div class="column right floated">
-                                        <div class="donut-holder"></div>
-                                        <div class="donut-value">71.75%</div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="aggregate-chart">
-                                            <div class="up column">
-                                                <div class="arrow" style="width:58.6%">
-                                                    <span class="value">+ 58.6%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="column left floated">
-                                        <span>Before</span>
-                                        <span>3 days</span>
-                                    </div>
-                                    <div class="column right floated">
-                                        <div class="donut-holder"></div>
-                                        <div class="donut-value">71.75%</div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="aggregate-chart">
-                                            <div class="down column">
-                                                <div class="arrow" style="width: 28.6%">
-                                                    <span class="value">- 28.6%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               <a href="#"class="row clearfix view-more">
-                                    Detailed View</a>
                             </div>
                         </div>
                         <div class="column">
-                            <table class="ui table">
-                                <thead>
-                                    <tr>
-                                        <th>Date</th>
-                                        <th>Before 3 days</th>
-                                        <th>After 3 days</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>14-03-2002</td>
-                                        <td class="value-arrow">
-<span class="m-value-bg bg red-5">-1.53</span>
-
-                                        </td>
-                                        <td class="value-arrow"><span class="m-value-bg bg green-10">0.66 %</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>26-06-2002</td>
-                                        <td class="value-arrow"><span class="m-value-bg bg green-30">3.10 %</span></td>
-                                        <td class="value-arrow"><span class="m-value-bg bg green-20">2.58 %</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>19-09-2002</td>
-                                        <td class="value-arrow"><span class="m-value-bg bg green-10">1.26 %</span></td>
-                                        <td class="value-arrow"><span class="m-value-bg bg red-5">-0.62 %</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            
                             <!-- <div class="content">
                                                 
                                             </div> -->
