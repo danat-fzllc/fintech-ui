@@ -6,12 +6,11 @@ $white: #fff;
 $heatRed: #ee0101;
 $heatGreen: #26a046;
 
-/* Breakpoints */
-$mobileBreakpoint: 320px;
-$tabletBreakpoint: 768px;
-$computerBreakpoint: 992px;
-$largeMonitorBreakpoint: 1200px;
-$widescreenMonitorBreakpoint: 1920px;
+/*Breakpoints*/
+$desktops-width: 1200px;
+$laptops-width: 992px;
+$tablets-width: 768px;
+$mobiles-width: 768px;
 
 /*element values*/
 $left: left;

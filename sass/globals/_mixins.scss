@@ -1,27 +1,21 @@
-/* mixins */
 @mixin breakpoint($point) {
-    @if $point == widescreenMonitor {
-        @media (min-width: $widescreenMonitorBreakpoint) {
+    @if $point == desktops {
+        @media (min-width: $desktops-width) {
             @content;
         }
     }
-    @else if $point == largeMonitor {
-        @media (min-width: $largeMonitorBreakpoint) {
+    @else if $point == laptops {
+        @media (min-width: $laptops-width) {
             @content;
         }
     }
-    @else if $point == computer {
-        @media (max-width: $computerBreakpoint) {
+    @else if $point == tablets {
+        @media (min-width: $tablets-width) {
             @content;
         }
     }
-    @else if $point == tablet {
-        @media (max-width: $tabletBreakpoint) {
-            @content;
-        }
-    }
-    @else if $point == mobile {
-        @media (max-width: $mobileBreakpoint) {
+    @else if $point == mobiles {
+        @media (max-width: $mobiles-width) {
             @content;
         }
     }
