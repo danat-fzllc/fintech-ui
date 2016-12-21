@@ -107,6 +107,22 @@ Version: 0.0.1;
   height: 35px;
 }
 
+.m-top-5rem {
+  margin-top: .5rem;
+}
+
+.m-right-5rem {
+  margin-right: .5rem;
+}
+
+.m-bottom-5rem {
+  margin-bottom: .5rem;
+}
+
+.m-left-5rem {
+  margin-left: .5rem;
+}
+
 .fintech .ui-resizable {
   position: relative;
 }
@@ -168,6 +184,9 @@ Version: 0.0.1;
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
+.fintech .column > .content svg {
+  max-width: 100%;
+}
 .fintech .column > .content.event-aggregate-chart {
   padding: 0;
   border: 1px solid #fff;
@@ -211,14 +230,14 @@ Version: 0.0.1;
   height: 40px;
   margin: 0 auto;
   float: left;
-  margin: 16px 0 0 15px;
+  margin: 14px 0 0 45px;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .donut-value {
   font-size: 18px;
   font-weight: 700;
   display: inline-block;
   float: left;
-  margin: 27px 0 0 20px;
+  margin: 27px 0 0 15px;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .title {
   display: inline-block;
