@@ -826,7 +826,7 @@ Version: 0.0.1;
   right: 0;
 }
 .aggregate-chart .column.up .arrow.small-value .value {
-  right: -75px;
+  right: -90px;
   color: #00a651;
 }
 .aggregate-chart .column.down {
@@ -851,7 +851,7 @@ Version: 0.0.1;
   left: 0;
 }
 .aggregate-chart .column.down .arrow.small-value .value {
-  left: -75px;
+  left: -90px;
   color: #c00;
 }
 
