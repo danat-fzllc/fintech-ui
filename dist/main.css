@@ -184,9 +184,6 @@ Version: 0.0.1;
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
-.fintech .column > .content svg {
-  max-width: 100%;
-}
 .fintech .column > .content.event-aggregate-chart {
   padding: 0;
   border: 1px solid #fff;

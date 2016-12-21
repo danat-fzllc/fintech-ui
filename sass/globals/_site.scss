@@ -74,10 +74,6 @@
 
         @include border-radius(6px);
 
-        svg {
-            max-width: 100%;
-        }
-
         &.event-aggregate-chart {
             padding: 0;
             border: 1px solid $white;
