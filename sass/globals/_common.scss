@@ -25,3 +25,7 @@
 .m-left-5rem {
     margin-left: .5rem;
 }
+
+.ui.checkbox input:focus ~ .box:after, .ui.checkbox input:focus ~ label, .ui.checkbox input:focus ~ label:after {
+    color: rgba(0, 0, 0, 0.87);
+}

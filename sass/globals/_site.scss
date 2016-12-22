@@ -228,6 +228,10 @@
                     background-color: rgba(30, 102, 119, 0.26);
                 }
             }
+
+            .ui.default.dropdown:not(.button) > .text, .ui.dropdown:not(.button) > .default.text, .ui.active.search.dropdown input.search:focus + .text {
+                color: $white !important;
+            }
         }
 
         .field {
@@ -347,20 +351,6 @@
 
         .field {
             padding: 6px 0;
-        }
-
-        .group-action {
-            margin: 0 0 5px 0;
-
-            button {
-                padding-top: 5px;
-                padding-bottom: 5px;
-
-                &.active {
-                    background-color: $secondaryColor !important;
-                    border-color: 1px solid $secondaryColor !important;
-                }
-            }
         }
     }
 

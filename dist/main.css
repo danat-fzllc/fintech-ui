@@ -123,6 +123,10 @@ Version: 0.0.1;
   margin-left: .5rem;
 }
 
+.ui.checkbox input:focus ~ .box:after, .ui.checkbox input:focus ~ label, .ui.checkbox input:focus ~ label:after {
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .fintech .ui-resizable {
   position: relative;
 }
@@ -312,6 +316,9 @@ Version: 0.0.1;
 .fintech .question[class*="page"] h1 .highlight .field {
   background-color: rgba(30, 102, 119, 0.26);
 }
+.fintech .question[class*="page"] h1 .ui.default.dropdown:not(.button) > .text, .fintech .question[class*="page"] h1 .ui.dropdown:not(.button) > .default.text, .fintech .question[class*="page"] h1 .ui.active.search.dropdown input.search:focus + .text {
+  color: #fff !important;
+}
 .fintech .question[class*="page"] .field {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: transparent;
@@ -415,17 +422,6 @@ Version: 0.0.1;
 }
 .fintech .page.filters .field {
   padding: 6px 0;
-}
-.fintech .page.filters .group-action {
-  margin: 0 0 5px 0;
-}
-.fintech .page.filters .group-action button {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.fintech .page.filters .group-action button.active {
-  background-color: #f0ac09 !important;
-  border-color: 1px solid #f0ac09 !important;
 }
 .fintech .ui[class*="content container"] .content-holder {
   padding-left: 275px;

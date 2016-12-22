@@ -6,8 +6,8 @@
 @checkboxFocusCheckColor:@yellow;
 @checkboxHoverBorderColor:@yellow;
 @checkboxPressedBorderColor:@yellow;
-@checkboxActiveBorderColor:@yellow;
-@checkboxFocusBorderColor:@yellow;
+@checkboxActiveBorderColor:#D4D4D5;
+@checkboxFocusBorderColor:#D4D4D5;
 @checkboxIndeterminateBorderColor: @yellow;
 @checkboxActiveFocusBorderColor: @yellow;
 @checkboxColor: @yellow;

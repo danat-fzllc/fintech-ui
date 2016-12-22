@@ -1,16 +1,16 @@
 @import "../globals/variables.scss";
 @import "compass/css3";
 
+.ui.checkbox input:checked:focus ~ .box:after, .ui.checkbox input:checked:focus ~ label:after, .ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:after, .ui.checkbox input:not([type=radio]):indeterminate:focus ~ label:after {
+    color: $secondaryColor;
+}
+
 .fintech {
     > .top .country-selection {
         .ui.selection.dropdown {
             color: $white;
 
             @include transition(width, ease 0.5s);
-        }
-
-        .ui.default.dropdown:not(.button) > .text, .ui.dropdown:not(.button) > .default.text {
-            color: $white;
         }
     }
 
