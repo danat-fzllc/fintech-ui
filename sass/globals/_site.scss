@@ -793,12 +793,6 @@
                 top: 0px;
             }
 
-            &.no-change {
-                &:after {
-                    display: none;
-                }
-            }
-
             .value {
                 position: absolute;
                 color: #fff;
@@ -809,10 +803,27 @@
                 height: 19px;
                 font-weight: 900;
                 font-size: 20px;
+                white-space: nowrap;
+            }
+        }
+
+        .no-change {
+            background: transparent !important;
+
+            &:after {
+                display: none;
             }
         }
 
         &.up {
+            .no-change {
+                .value {
+                    left: 18px;
+                    right: auto !important;
+                    color: #000 !important;
+                }
+            }
+
             float: right;
             border-left: 1px solid rgba(34, 36, 38, 0.15);
             padding-right: 24px;
@@ -826,7 +837,7 @@
                     height: 0px;
                     border-left-color: #00a651;
                     border-right: 0;
-                    right: -14.8px;
+                    right: -14.7px;
                 }
 
                 .value {
@@ -843,6 +854,14 @@
         }
 
         &.down {
+            .no-change {
+                .value {
+                    right: 18px;
+                    left: auto !important;
+                    color: #000 !important;
+                }
+            }
+
             border-right: 1px solid $borderColor;
             position: relative;
             right: -1px;
@@ -858,7 +877,7 @@
                     height: 0px;
                     border-right-color: #cc0000;
                     border-left: 0;
-                    left: -14.8px;
+                    left: -14.7px;
                 }
 
                 .value {

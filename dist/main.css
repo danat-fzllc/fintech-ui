@@ -804,9 +804,6 @@ Version: 0.0.1;
   position: absolute;
   top: 0px;
 }
-.aggregate-chart .column .arrow.no-change:after {
-  display: none;
-}
 .aggregate-chart .column .arrow .value {
   position: absolute;
   color: #fff;
@@ -817,11 +814,23 @@ Version: 0.0.1;
   height: 19px;
   font-weight: 900;
   font-size: 20px;
+  white-space: nowrap;
+}
+.aggregate-chart .column .no-change {
+  background: transparent !important;
+}
+.aggregate-chart .column .no-change:after {
+  display: none;
 }
 .aggregate-chart .column.up {
   float: right;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
   padding-right: 24px;
+}
+.aggregate-chart .column.up .no-change .value {
+  left: 18px;
+  right: auto !important;
+  color: #000 !important;
 }
 .aggregate-chart .column.up .arrow {
   background: #00a651;
@@ -832,7 +841,7 @@ Version: 0.0.1;
   height: 0px;
   border-left-color: #00a651;
   border-right: 0;
-  right: -14.8px;
+  right: -14.7px;
 }
 .aggregate-chart .column.up .arrow .value {
   right: 0;
@@ -847,6 +856,11 @@ Version: 0.0.1;
   right: -1px;
   padding-left: 24px;
 }
+.aggregate-chart .column.down .no-change .value {
+  right: 18px;
+  left: auto !important;
+  color: #000 !important;
+}
 .aggregate-chart .column.down .arrow {
   background: #cc0000;
   float: right;
@@ -857,7 +871,7 @@ Version: 0.0.1;
   height: 0px;
   border-right-color: #cc0000;
   border-left: 0;
-  left: -14.8px;
+  left: -14.7px;
 }
 .aggregate-chart .column.down .arrow .value {
   left: 0;
