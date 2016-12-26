@@ -722,7 +722,6 @@ Version: 0.0.1;
 .fintech .ui.table.heat tr td.donut-holder .donut {
   width: 48px;
   height: 48px;
-  border: 1px solid #eee;
   margin: 10px auto 10px auto;
 }
 .fintech .ui.table.heat tr td.donut-holder span {
