@@ -1058,6 +1058,7 @@ Version: 0.0.1;
   line-height: 36px;
   text-align: center;
   display: inline-block;
+  min-width: 68px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;

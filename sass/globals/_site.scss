@@ -1114,6 +1114,7 @@
     line-height: 36px;
     text-align: center;
     display: inline-block;
+    min-width: 68px;
 
     @include border-radius(3px);
 }
