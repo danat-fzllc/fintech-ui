@@ -1207,4 +1207,5 @@ Version: 0.0.1;
 footer {
   color: #999999;
   padding-top: 8px;
+  clear: both;
 }
