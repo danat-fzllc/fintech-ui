@@ -770,6 +770,9 @@ Version: 0.0.1;
 .fintech .ui.table td.aggregate-chart-col .column.up {
   padding-right: 10px;
 }
+.fintech .ui.table td.aggregate-chart-col .column.up .arrow .value {
+  margin-left: 13px;
+}
 .fintech .ui.table td.aggregate-chart-col .column.up .arrow:after {
   border-top: 10px solid #fff;
   border-bottom: 10px solid #fff;
@@ -778,6 +781,9 @@ Version: 0.0.1;
 }
 .fintech .ui.table td.aggregate-chart-col .column.down {
   padding-left: 10px;
+}
+.fintech .ui.table td.aggregate-chart-col .column.down .arrow .value {
+  margin-right: 13px;
 }
 .fintech .ui.table td.aggregate-chart-col .column.down .arrow:after {
   border-top: 11px solid #fff;
@@ -837,7 +843,7 @@ Version: 0.0.1;
   padding-right: 24px;
 }
 .aggregate-chart .column.up .no-change .value {
-  left: 18px;
+  left: 12px;
   right: auto !important;
   color: #000 !important;
 }
@@ -856,7 +862,8 @@ Version: 0.0.1;
   right: 0;
 }
 .aggregate-chart .column.up .arrow.small-value .value {
-  right: -90px;
+  left: 100%;
+  margin-left: 20px;
   color: #00a651;
 }
 .aggregate-chart .column.down {
@@ -866,7 +873,7 @@ Version: 0.0.1;
   padding-left: 24px;
 }
 .aggregate-chart .column.down .no-change .value {
-  right: 18px;
+  right: 12px;
   left: auto !important;
   color: #000 !important;
 }
@@ -886,7 +893,9 @@ Version: 0.0.1;
   left: 0;
 }
 .aggregate-chart .column.down .arrow.small-value .value {
-  left: -90px;
+  right: 100%;
+  left: auto;
+  margin-right: 20px;
   color: #c00;
 }
 

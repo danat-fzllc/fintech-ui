@@ -745,6 +745,10 @@
                         padding-right: 10px;
 
                         .arrow {
+                            .value {
+                                margin-left: 13px;
+                            }
+
                             &:after {
                                 border-top: 10px solid #fff;
                                 border-bottom: 10px solid #fff;
@@ -758,6 +762,10 @@
                         padding-left: 10px;
 
                         .arrow {
+                            .value {
+                                margin-right: 13px;
+                            }
+
                             &:after {
                                 border-top: 11px solid #fff;
                                 border-bottom: 10px solid #fff;
@@ -825,7 +833,7 @@
         &.up {
             .no-change {
                 .value {
-                    left: 18px;
+                    left: 12px;
                     right: auto !important;
                     color: #000 !important;
                 }
@@ -853,7 +861,8 @@
 
                 &.small-value {
                     .value {
-                        right: -90px;
+                        left: 100%;
+                        margin-left: 20px;
                         color: #00a651;
                     }
                 }
@@ -863,7 +872,7 @@
         &.down {
             .no-change {
                 .value {
-                    right: 18px;
+                    right: 12px;
                     left: auto !important;
                     color: #000 !important;
                 }
@@ -893,7 +902,9 @@
 
                 &.small-value {
                     .value {
-                        left: -90px;
+                        right: 100%;
+                        left: auto;
+                        margin-right: 20px;
                         color: #c00;
                     }
                 }
