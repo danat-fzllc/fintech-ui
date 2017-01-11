@@ -7,15 +7,21 @@ Version: 0.0.1;
 @import "compass/css3";
 
 /*BASE - Base styles, variables, mixins, etc*/
-@import "globals/_variables.scss";
-@import "globals/_mixins.scss";
-@import "globals/_base.scss";
-@import "globals/_common.scss";
-@import "globals/_site.scss";
+@import "globals/variables.scss";
+@import "globals/mixins.scss";
+@import "globals/base.scss";
+@import "globals/common.scss";
+@import "globals/site.scss";
 
-/*Elements - Indivisual site elements*/
-@import "elements/_buttons.scss";
+/*Elements - Individual site elements*/
+@import "elements/buttons.scss";
+@import "elements/table.scss";
+
+/*Modules - Individual site modules*/
+@import "modules/dropdown.overrides.scss";
+@import "modules/checkbox.scss";
 
 /*Layout - Page layout styles*/
-@import "layout/_header.scss";
-@import "layout/_footer.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+@import "layout/grid.scss";

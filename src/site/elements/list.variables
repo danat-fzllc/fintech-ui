@@ -2,4 +2,4 @@
     User Variable Overrides
 *******************************/
 @itemLinkColor: #000;
-@itemLinkHoverColor: @primaryColor;
+@itemLinkHoverColor: #4faec5;

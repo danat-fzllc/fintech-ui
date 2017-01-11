@@ -1,10 +1,4 @@
 /*******************************
          Site Overrides
 *******************************/
-.fintech {
-	.filters {
-		.ui.checkbox .box:after, .ui.checkbox label:after {
-			font-size: 12px;
-		}
-	}
-}
+

@@ -8,7 +8,7 @@
  * http://opensource.org/licenses/MIT
  *
  */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400, 400i, 500, 500i, 700, 700i, 900&subset=latin');
+@import url('https://fonts.googleapis.com/css?family=Maven Pro:400,500,700,900&subset=latin');
 /*!
  * # Semantic UI 2.2.6 - Reset
  * http://github.com/semantic-org/semantic-ui/
@@ -524,7 +524,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #f6f6f6;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 13px;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
@@ -540,7 +540,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   font-weight: bold;
@@ -686,7 +686,7 @@ input::selection {
   vertical-align: baseline;
   background: #E0E1E2 none;
   color: rgba(0, 0, 0, 0.6);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   margin: 0em 0.25em 0em 0em;
   padding: 0.84615385em 1.5em 0.84615385em;
   text-transform: none;
@@ -4730,7 +4730,7 @@ input::selection {
 /* Text Container */
 
 .ui.text.container {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   max-width: 700px !important;
   line-height: 1.5;
 }
@@ -6339,7 +6339,7 @@ i.flag.ksa:before {
   border: none;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: bold;
   line-height: 1.2857em;
   text-transform: none;
@@ -11545,7 +11545,7 @@ img.ui.bordered.image {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   text-align: left;
   line-height: 1.2142em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   padding: 0.73905385em 1.07692308em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -13509,34 +13509,6 @@ a.ui.basic.label:hover {
             List
 *******************************/
 
-/*******************************
-    User Variable Overrides
-*******************************/
-
-/* Colors */
-
-/*Breakpoints*/
-
-/*element values*/
-
-/*fonts*/
-
-.fintech .filters .ui.styled.accordion,
-.fintech .filters .ui.styled.accordion .accordion {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-.fintech .filters .ui.container {
-  -moz-border-radius: 0 0 6px 6px;
-  -webkit-border-radius: 0;
-  border-radius: 0 0 6px 6px;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-}
-
 ul.ui.list,
 ol.ui.list,
 .ui.list {
@@ -13700,7 +13672,7 @@ ol.ui.list ol li,
 .ui.list > .item .header {
   display: block;
   margin: 0em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -13730,7 +13702,7 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #227a4f;
+  color: #4faec5;
 }
 
 /* Linked Item Icons */
@@ -13750,7 +13722,7 @@ ol.ui.list ol li,
 
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #227a4f !important;
+  color: #4faec5 !important;
 }
 
 /* Floated Content */
@@ -14600,63 +14572,6 @@ ol.ui.horizontal.list li:before,
 /*******************************
     User Variable Overrides
 *******************************/
-
-.fintech .filters .ui.container {
-  background-color: #fff;
-  position: relative;
-}
-
-.fintech .filters .ui.styled.accordion {
-  background: transparent;
-}
-
-.fintech .filters .ui.styled.accordion > .item > .title .dropdown {
-  float: right;
-  margin: 3px 0;
-  width: 4px;
-}
-
-.fintech .filters .ui.styled.accordion .accordion .content,
-.fintech .filters .ui.styled.accordion .content {
-  padding: 0 10px 0 20px;
-}
-
-.fintech .filters .ui.styled.accordion,
-.fintech .filters .ui.styled.accordion .accordion {
-  box-shadow: none;
-  border-top: 1px solid #e8e8e8;
-  padding: 6px 0 7px;
-}
-
-.fintech .filters .ui.styled.accordion .accordion .title,
-.fintech .filters .ui.styled.accordion .title {
-  border: 0;
-  padding: 6px 1em;
-}
-
-.fintech .filters .ui.styled.accordion .content .title {
-  padding: 6px 0;
-}
-
-.fintech .filters .ui.accordion .accordion {
-  margin: 0;
-}
-
-.fintech .filters .ui.list .list > a.item,
-.fintech .filters .ui.list > a.item {
-  padding: 6px 0;
-}
-
-.fintech .filters .ui.list,
-.fintech .filters ol.ui.list,
-.fintech .filters ul.ui.list {
-  margin: 0;
-}
-
-.fintech .filters .ui.accordion .accordion .title .dropdown.icon,
-.fintech .filters .ui.accordion .title .dropdown.icon {
-  width: 1em;
-}
 /*!
  * # Semantic UI 2.2.6 - Loader
  * http://github.com/semantic-org/semantic-ui/
@@ -16510,7 +16425,7 @@ ol.ui.horizontal.list li:before,
 /* Title */
 
 .ui.steps .step .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 1.15384615em;
   font-weight: bold;
 }
@@ -17296,7 +17211,7 @@ ol.ui.horizontal.list li:before,
 .ui.form input[type="text"],
 .ui.form input[type="file"],
 .ui.form input[type="url"] {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
@@ -18410,10 +18325,10 @@ ol.ui.horizontal.list li:before,
 -----------------------*/
 
 .ui.grid {
-  margin-top: -0.5rem;
-  margin-bottom: -0.5rem;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  margin-top: -0.3845em;
+  margin-bottom: -0.3845em;
+  margin-left: -0.3845em;
+  margin-right: -0.3845em;
 }
 
 .ui.relaxed.grid {
@@ -18429,7 +18344,7 @@ ol.ui.horizontal.list li:before,
 /* Preserve Rows Spacing on Consecutive Grids */
 
 .ui.grid + .grid {
-  margin-top: 0.5rem;
+  margin-top: 0.3845em;
 }
 
 /*-------------------
@@ -18443,14 +18358,14 @@ ol.ui.horizontal.list li:before,
   position: relative;
   display: inline-block;
   width: 6.25%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0.3845em;
+  padding-right: 0.3845em;
   vertical-align: top;
 }
 
 .ui.grid > * {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0.3845em;
+  padding-right: 0.3845em;
 }
 
 /*-------------------
@@ -18476,8 +18391,8 @@ ol.ui.horizontal.list li:before,
   align-items: stretch;
   width: 100% !important;
   padding: 0rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.3845em;
+  padding-bottom: 0.3845em;
 }
 
 /*-------------------
@@ -18487,8 +18402,8 @@ ol.ui.horizontal.list li:before,
 /* Vertical padding when no rows */
 
 .ui.grid > .column:not(.row) {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.3845em;
+  padding-bottom: 0.3845em;
 }
 
 .ui.grid > .row > .column {
@@ -18532,11 +18447,11 @@ ol.ui.horizontal.list li:before,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin: 0.5rem 0.5rem;
+  margin: 0.3845em 0.3845em;
 }
 
 .ui.grid .column + .ui.vertical.divider {
-  height: calc(50% -  0.5rem );
+  height: calc(50% -  0.3845em );
 }
 
 /* Remove Border on Last Horizontal Segment */
@@ -19572,8 +19487,8 @@ ol.ui.horizontal.list li:before,
 
 .ui[class*="vertically divided"].grid > .column:not(.row),
 .ui[class*="vertically divided"].grid > .row > .column {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.3845em;
+  margin-bottom: 0.3845em;
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
@@ -19617,9 +19532,9 @@ ol.ui.horizontal.list li:before,
   content: "";
   top: 0em;
   left: 0px;
-  width: calc(100% -  1rem );
+  width: calc(100% -  0.769em );
   height: 1px;
-  margin: 0% 0.5rem;
+  margin: 0% 0.3845em;
   box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
 }
 
@@ -19883,10 +19798,10 @@ ol.ui.horizontal.list li:before,
 .ui.grid > .row > .brown.column,
 .ui.grid > .row > .grey.column,
 .ui.grid > .row > .black.column {
-  margin-top: -0.5rem;
-  margin-bottom: -0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin-top: -0.3845em;
+  margin-bottom: -0.3845em;
+  padding-top: 0.3845em;
+  padding-bottom: 0.3845em;
 }
 
 /* Red */
@@ -20208,8 +20123,8 @@ ol.ui.horizontal.list li:before,
   .ui.grid > .doubling.row > .column,
   .ui.doubling.grid > .row > .column {
     display: inline-block !important;
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
+    padding-top: 0.3845em !important;
+    padding-bottom: 0.3845em !important;
     box-shadow: none !important;
     margin: 0em;
   }
@@ -20316,8 +20231,8 @@ ol.ui.horizontal.list li:before,
 
   .ui.grid > .doubling.row > .column,
   .ui.doubling.grid > .row > .column {
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
+    padding-top: 0.3845em !important;
+    padding-bottom: 0.3845em !important;
     margin: 0em !important;
     box-shadow: none !important;
   }
@@ -20434,7 +20349,7 @@ ol.ui.horizontal.list li:before,
     width: 100% !important;
     margin: 0em 0em !important;
     box-shadow: none !important;
-    padding: 0.5rem 0.5rem !important;
+    padding: 0.3845em 0.3845em !important;
   }
 
   .ui.stackable.grid:not(.vertically) > .row {
@@ -20454,8 +20369,8 @@ ol.ui.horizontal.list li:before,
 
   .ui.grid .ui.stackable.grid,
   .ui.segment:not(.vertical) .ui.stackable.page.grid {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-left: -0.3845em !important;
+    margin-right: -0.3845em !important;
   }
 
   /* Divided Stackable */
@@ -20480,8 +20395,8 @@ ol.ui.horizontal.list li:before,
   .ui.stackable.divided:not(.vertically).grid > .row > .column {
     border-top: 1px solid rgba(34, 36, 38, 0.15);
     box-shadow: none !important;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    padding-top: 0.769em !important;
+    padding-bottom: 0.769em !important;
   }
 
   .ui.stackable.celled.grid > .row {
@@ -20671,7 +20586,7 @@ ol.ui.horizontal.list li:before,
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   background: #FFFFFF;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -22934,7 +22849,7 @@ Floated Menu / Item
 
 .ui.message .header {
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: bold;
   margin: -0.14285em 0em 0rem 0em;
 }
@@ -24695,30 +24610,6 @@ Floated Menu / Item
 /*******************************
          Site Overrides
 *******************************/
-
-.fintech .ui.table {
-  border: 0;
-}
-
-.fintech .ui.table thead th {
-  background-color: #e4e4e4;
-}
-
-.fintech .ui.table .value-arrow {
-  font-size: 18px;
-}
-
-.fintech .ui.table .value-arrow.red {
-  color: #DB2828;
-}
-
-.fintech .ui.table .value-arrow.green {
-  color: #21BA45;
-}
-
-.fintech .ui.table .value-arrow .icon {
-  font-size: 24px;
-}
 /*!
  * # Semantic UI 2.2.6 - Ad
  * http://github.com/semantic-org/semantic-ui/
@@ -25188,7 +25079,7 @@ Floated Menu / Item
 .ui.card > .content > .header {
   display: block;
   margin: '';
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   color: rgba(0, 0, 0, 0.85);
 }
 
@@ -26829,7 +26720,7 @@ a.ui.card:hover,
 .ui.items > .item > .content > .header {
   display: inline-block;
   margin: -0.21425em 0em 0em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);
 }
@@ -27298,7 +27189,7 @@ a.ui.card:hover,
 
 .ui.statistics .statistic > .value,
 .ui.statistic > .value {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 4rem;
   font-weight: normal;
   line-height: 1em;
@@ -27313,7 +27204,7 @@ a.ui.card:hover,
 
 .ui.statistics .statistic > .label,
 .ui.statistic > .label {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 1em;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
@@ -27861,7 +27752,7 @@ a.ui.card:hover,
 
 .ui.accordion .title:not(.ui) {
   padding: 0.5em 0em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -28756,11 +28647,6 @@ a.ui.card:hover,
 /*******************************
          Site Overrides
 *******************************/
-
-.fintech .filters .ui.checkbox .box:after,
-.fintech .filters .ui.checkbox label:after {
-  font-size: 12px;
-}
 /*!
  * # Semantic UI 2.2.6 - Dimmer
  * http://github.com/semantic-org/semantic-ui/
@@ -28983,57 +28869,6 @@ body.dimmable > .dimmer {
             Dropdown
 *******************************/
 
-/* Colors */
-
-/*Breakpoints*/
-
-/*element values*/
-
-/*fonts*/
-
-.ui.checkbox input:checked:focus ~ .box:after,
-.ui.checkbox input:checked:focus ~ label:after,
-.ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:after,
-.ui.checkbox input:not([type=radio]):indeterminate:focus ~ label:after {
-  color: #f0ac09;
-}
-
-.fintech {
-  /* Hover */
-}
-
-.fintech > .top .country-selection .ui.selection.dropdown {
-  color: #fff;
-  -moz-transition: width, ease 0.5s;
-  -o-transition: width, ease 0.5s;
-  -webkit-transition: width, ease 0.5s;
-  transition: width, ease 0.5s;
-}
-
-.fintech .ui.dropdown.multilevel {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  border: 1px solid transparent;
-}
-
-.fintech .ui.dropdown.multilevel .menu {
-  width: 100%;
-}
-
-.fintech .ui.dropdown.multilevel > .dropdown.icon {
-  right: 8px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 4px;
-  font-size: 1rem;
-}
-
-.fintech .ui.dropdown:hover {
-  border-color: #f0ac09;
-}
-
 .ui.dropdown {
   cursor: pointer;
   position: relative;
@@ -29069,7 +28904,7 @@ body.dimmable > .dimmer {
   text-shadow: none;
   text-align: left;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
-  border: 1px solid #e9af03;
+  border: 1px solid transparent;
   border-radius: 0.30769231rem;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
@@ -29505,31 +29340,31 @@ select.ui.dropdown {
 /* Hover */
 
 .ui.selection.dropdown:hover {
-  border-color: #e9af03;
+  border-color: transparent;
   box-shadow: none;
 }
 
 /* Active */
 
 .ui.selection.active.dropdown {
-  border-color: #e9af03;
+  border-color: transparent;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
 .ui.selection.active.dropdown .menu {
-  border-color: #e9af03;
+  border-color: transparent;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
 /* Focus */
 
 .ui.selection.dropdown:focus {
-  border-color: #e9af03;
+  border-color: transparent;
   box-shadow: none;
 }
 
 .ui.selection.dropdown:focus .menu {
-  border-color: #e9af03;
+  border-color: transparent;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
@@ -29543,12 +29378,12 @@ select.ui.dropdown {
 /* Visible Hover */
 
 .ui.selection.active.dropdown:hover {
-  border-color: #e9af03;
+  border-color: transparent;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
 .ui.selection.active.dropdown:hover .menu {
-  border-color: #e9af03;
+  border-color: transparent;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
@@ -30172,7 +30007,7 @@ select.ui.dropdown {
   margin: 0 !important;
   min-width: 100% !important;
   width: auto !important;
-  border-top: 1px solid #e9af03;
+  border-top: 1px solid transparent;
 }
 
 .ui.scrolling.dropdown .menu .item.item.item,
@@ -30339,7 +30174,7 @@ select.ui.dropdown {
   transform: rotate(45deg);
   width: 0.53846154em;
   height: 0.53846154em;
-  box-shadow: -1px -1px 0px 1px #e9af03;
+  box-shadow: -1px -1px 0px 1px transparent;
   background: #FFFFFF;
   z-index: 2;
 }
@@ -30495,7 +30330,7 @@ select.ui.dropdown {
 .ui.upward.top.pointing.dropdown > .menu:after {
   top: 100%;
   bottom: auto;
-  box-shadow: 1px 1px 0px 1px #e9af03;
+  box-shadow: 1px 1px 0px 1px transparent;
   margin: -0.26923077em 0em 0em;
 }
 
@@ -30567,71 +30402,6 @@ select.ui.dropdown {
 /*******************************
         User Overrides
 *******************************/
-
-.fintech .question[class*="page"] .question > .dropdown {
-  min-width: 0;
-  min-height: 0;
-  padding: 2px 26px 2px 8px;
-  background-color: rgba(255, 255, 255, 0.1);
-  line-height: normal;
-  color: #fff;
-}
-
-.fintech .question[class*="page"] .question > .dropdown > .text:not(.default) {
-  color: #fff;
-}
-
-.fintech .question[class*="page"] .ui.search.selection.dropdown > input.search {
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  cursor: text;
-  top: 0;
-  left: 1px;
-  width: 100%;
-  outline: 0;
-  position: absolute;
-  z-index: 2;
-  font-size: inherit;
-  padding: 5px 26px 5px 8px;
-}
-
-.fintech .ui.dropdown .menu > .item {
-  font-size: inherit;
-}
-
-.fintech .ui.form .selection.dropdown > .dropdown.icon {
-  float: right;
-  line-height: 1rem;
-  right: 8px;
-  font-size: 1rem;
-}
-
-.fintech .ui.multiple.dropdown > .label {
-  box-shadow: none;
-  background-color: #e4e4e4;
-}
-
-.fintech > .top .country-selection {
-  margin: 8px 0 0 0;
-}
-
-.fintech > .top .country-selection .ui.selection.dropdown {
-  background-color: #dfdfdf;
-  color: #000;
-}
-
-.fintech > .top .country-selection .ui.selection.dropdown.active {
-  min-width: 185px;
-}
-
-.fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .text {
-  color: #000;
-}
-
-.fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .default.text {
-  color: #000;
-}
 /*!
  * # Semantic UI 2.2.6 - Video
  * http://github.com/semantic-org/semantic-ui/
@@ -30874,7 +30644,7 @@ select.ui.dropdown {
 
 .ui.modal > .header {
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   background: #FFFFFF;
   margin: 0em;
   padding: 1.25rem 1.5rem;
@@ -31531,7 +31301,7 @@ a.ui.nag {
 
 .ui.popup > .header {
   padding: 0em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 1.15384615em;
   line-height: 1.2;
   font-weight: bold;
@@ -33286,7 +33056,7 @@ a.ui.nag {
 
 .ui.search > .results .result .title {
   margin: -0.14285em 0em 0em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: bold;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.85);
@@ -33312,7 +33082,7 @@ a.ui.nag {
 }
 
 .ui.search > .results > .message .header {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
@@ -33522,7 +33292,7 @@ a.ui.nag {
 .ui.category.search > .results .category > .name {
   width: 100px;
   background: transparent;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 1em;
   float: 1em;
   float: left;

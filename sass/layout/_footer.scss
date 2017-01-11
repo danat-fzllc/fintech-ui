@@ -1,5 +1,11 @@
 footer {
-    color: lighten($black, 60%);
     padding-top: 8px;
     clear: both;
+    background: #fff;
+    padding: 15px;
+
+    .outer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }

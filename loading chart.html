@@ -7,20 +7,17 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
     <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    
+    <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
    
 </head>
 
 <body>
     <div class="ui container fluid fintech">
-        <div class="top fluid">
-            
-            <a class="logo"></a>
-            <div class="right floated">
-                <div class="theme-changer right floated"></div>
-               
-                <form class="right floated country-selection">
+        <div class="top">
+            <div class="outer clearfix">
+            <a class="logo left floated"></a>
+            <form class="left floated country-selection">
                     <div class="field">
                         <div class="ui fluid search selection dropdown">
                             <input type="hidden" name="country">
@@ -34,6 +31,8 @@
                         </div>
                     </div>
                 </form>
+           
+                
                 <div class="user-nav right floated">
                     <a href="" class="active">Home</a>
                     <a href="">About Us</a>
@@ -44,6 +43,7 @@
             </div>
         </div>
         <div class="fluid clearfix question page center aligned relative">
+        <div class="outer">
             <form class="ui form">
                 <h1 class="question ui center">
                     What was the effect on <select id="" class="ui selection dropdown">
@@ -72,17 +72,20 @@
                         <option value="2">2014</option>
                     </select>
                     
-                    <a class="ui button yellow">Discover</a>
+                    <a class="ui button yellow"><i class="fa fa-search" aria-hidden="true"></i>
+ Discover</a>
                     </h1>
             </form>
             <div class="button gray share right floated">
                 
             </div>
+            </div>
         </div>
         <div class="fluid ui content container clearfix" id="container">
             <section class="page filters left floated resize-left-column">
-                <div class="header">Filters <i class="hide icon right floated"></i></div>
+                
                 <div class="ui container">
+                <div class="header">Filters</div>
                     <div class="ui styled accordion">
                         <div class="item">
                             <div class="title active">
@@ -94,7 +97,7 @@
                                     <a class="item">International</a>
                                 </div>
                                 <div class="title active">
-                                    <i class="dropdown icon"></i> Company
+                                    <i class="dropdown icon"></i>Company
                                 </div>
                                 <div class="content active">
                                     <div class="ui list">
@@ -135,63 +138,24 @@
                 </div>
             </section>
             <section class="fluid content-holder resize-right-column">
-            <div class="show filter-button">
-                Filters
-            </div>
+            <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
                 <div class="fluid left floated">
-                    <div class="ui grid">
-                        <div class="title chart page clearfix column">
-                            <div class="left floated ui">
-                                <h2>Sabic</h2>
-                                <span class="vs">v/s</span>
-                                <select name="companies" multiple="" class="ui multiple search dropdown compare-company">
-                                    <option value="">Compare to</option>
-                                    <option value="ribl">RIBL</option>
-                                    <option value="bjaz">BJAZ</option>
-                                    <option value="saudi-investment">Saudi Investment</option>
-                                    <option value="saudi-holland">Saudi Holland</option>
-                                    <option value="bsfr">BSFR</option>
-                                    <option value="saab">SAAB</option>
-                                    <option value="arab-national">Arab National</option>
-                                </select>
-                            </div>
-                            <div class="right floated toolbar">
-                                <a href="" class="rotate"></a>
-                                <a href="" class="a-z"></a>
-                                <div class="sorting">
-                                    <label class="left floated">Show top </label>
-                                    <select class="ui search dropdown left floated">
-                                        <option>10</option>
-                                        <option>20</option>
-                                        <option>40</option>
-                                        <option>100</option>
-                                    </select>
-                                    <div class="count">/10</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="ui one column grid">
                         <div class="column">
                             <div class="content loading">
                                 <div class="loader">
-                                    <img src="dist/themes/default/assets/images/chart-loader.gif" alt="">
+                                    <img src="dist/themes/default/assets/images/loader-01.gif" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="column">
-                            
-                            <!-- <div class="content">
-                                                
-                                            </div> -->
-                        </div>
+                        
                     </div>
-                    <footer>
-                        &copy; 2016 Argaam Fintech FZ.LLC
-                    </footer>
+                    
                 </div>
             </section>
         </div>
+        <footer><div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div></footer>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="dist/semantic.min.js"></script>

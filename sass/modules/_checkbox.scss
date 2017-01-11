@@ -1,0 +1,65 @@
+.fintech {
+    .filters {
+        .ui.checkbox {
+            label {
+                &:before {
+                    @include border-radius(rem(3));
+                }
+
+                &:after {
+                    font-size: 12px;
+                }
+
+                + label:hover {
+                    color: #000;
+                }
+
+                &:hover {
+                    color: #000;
+
+                    &:before {
+                        border-color: #d8d8d8;
+                    }
+                }
+            }
+
+            input {
+                &:checked {
+                    ~ .box:after {
+                        color: #000;
+                    }
+
+                    ~ label:after {
+                        color: #000;
+                    }
+
+                    &:focus {
+                        ~ .box {
+                            &:before {
+                                border-color: #d8d8d8;
+                            }
+                        }
+
+                        ~ label {
+                            &:before {
+                                border-color: #d8d8d8;
+                            }
+                        }
+                    }
+                }
+
+                &:not([type=radio]):indeterminate:focus ~ .box:before, &:not([type=radio]):indeterminate:focus ~ label:before {
+                    border-color: #d8d8d8;
+                }
+            }
+
+            .box {
+                &:hover {
+                    &:before {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

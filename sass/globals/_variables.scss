@@ -5,6 +5,9 @@ $black: #000;
 $white: #fff;
 $heatRed: #ee0101;
 $heatGreen: #26a046;
+$red: #ff333a;
+$green: #00a651;
+$borderColor: #ededed;
 
 /*Breakpoints*/
 $desktops-width: 1200px;
@@ -12,13 +15,15 @@ $laptops-width: 992px;
 $tablets-width: 768px;
 $mobiles-width: 768px;
 
+/*Font weight*/
+$font-weight-light: 400;
+$font-weight-regular: 500;
+$font-weight-medium: 700;
+$font-weight-bold: 900;
+
 /*element values*/
 $left: left;
 $right: right;
 
 /*fonts*/
 $fontAwesome: "Icons";
-$primaryFontRegular: "Roboto", sans-serif;
-$pageFont: $primaryFontRegular, sans-serif;
-$fontSize: 13px;
-$borderColor: rgba(34, 36, 38, 0.15);

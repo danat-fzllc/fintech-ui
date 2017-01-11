@@ -1,566 +1,396 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Fintech</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-        <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
-        <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        
-    </head>
-    <body>
-        <div class="ui container fluid fintech">
-            <div class="top fluid">
-                
-                <a class="logo"></a>
-                <div class="right floated">
-                    <div class="theme-changer right floated"></div>
-                    
-                    <form class="right floated country-selection">
-                        <div class="field">
-                            <div class="ui fluid search selection dropdown">
-                                <input type="hidden" name="country">
-                                <i class="dropdown icon"></i>
-                                <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
-                                <div class="menu">
-                                    <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
-                                    <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
-                                    <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
-                                </div>
+
+<head>
+    <title>Fintech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   
+</head>
+
+<body>
+    <div class="ui container fluid fintech">
+        <div class="top">
+            <div class="outer clearfix">
+            <a class="logo left floated"></a>
+            <form class="left floated country-selection">
+                    <div class="field">
+                        <div class="ui fluid search selection dropdown">
+                            <input type="hidden" name="country">
+                            <i class="dropdown icon"></i>
+                            <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
+                            <div class="menu">
+                                <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
+                                <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
+                                <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
                             </div>
                         </div>
-                    </form>
-                    <div class="user-nav right floated">
-                        <a href="" class="active">Home</a>
-                        <a href="">About Us</a>
-                        <a href="">FAQ</a>
-                        <a href="">Contact Us</a>
-                        <a href="" class="sign-in">Sign In</a>
                     </div>
+                </form>
+           
+                
+                <div class="user-nav right floated">
+                    <a href="" class="active">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">FAQ</a>
+                    <a href="">Contact Us</a>
+                    <a href="" class="sign-in">Sign In</a>
                 </div>
             </div>
-            <div class="fluid clearfix question page center aligned relative">
-                <form class="ui form">
-                    <h1 class="question ui center">
-                    How many times <select id="" class="ui selection dropdown">
+        </div>
+        <div class="fluid clearfix question page center aligned relative">
+        <div class="outer">
+            <form class="ui form">
+                <h1 class="question ui center">
+                    What was the effect on <select id="" class="ui selection dropdown">
                         <option value="1">Sabic</option>
                         <option value="3">Markets</option>
                         <option value="2">Commodities</option>
                     </select>
+                    
+                    <input type="text" placeholder="" class="field center aligned" value="5" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
+                    days after, when the price of 
                     <select id="" class="ui selection dropdown">
-                        <option value="1">Rally</option>
-                        <option value="3">decline</option>
-                        
+                        <option value="1">Gold</option>
+                        <option value="3">Silver</option>
+                        <option value="2">Oil</option>
                     </select>
-                    for
-                    <input type="text" placeholder="" class="field center aligned" value="6" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
-                    days
-                    consecutive since <select id="" class="ui selection dropdown">
-                        <option value="1">2005</option>
-                        <option value="3">2006</option>
-                        
-                    </select> ,
+                    was up by 
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">2016</option>
+                        <option value="3">2015</option>
+                        <option value="2">2014</option>
+                    </select>
+                    to
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">2016</option>
+                        <option value="3">2015</option>
+                        <option value="2">2014</option>
+                    </select>
                     
-                    <span class="highlight">What happened in next
-                        <input type="text" placeholder="" class="field center aligned" value="3" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
-                    days</span>
-                    
-                    
-                    <a class="ui button yellow">Discover</a>
+                    <a class="ui button yellow"><i class="fa fa-search" aria-hidden="true"></i>
+ Discover</a>
                     </h1>
-                </form>
-                <div class="button gray share right floated">
-                    
+            </form>
+            <div class="button share right floated">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                <div class="list">
+                    <div class="head">Share</div>
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+                        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linked In</a></li>
+                        <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google Plus</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="fluid ui content container clearfix" id="container">
-                <section class="page filters left floated resize-left-column">
-                    <div class="header">Filters <i class="hide icon right floated"></i></div>
-                    <div class="ui container">
-                        <div class="ui styled accordion">
-                            <div class="item">
+            </div>
+        </div>
+        <div class="fluid ui content container clearfix" id="container">
+            <section class="page filters left floated resize-left-column">
+                
+                <div class="ui container">
+                <div class="header">Filters</div>
+                    <div class="ui styled accordion">
+                        <div class="item">
+                            <div class="title active">
+                                <i class="dropdown icon"></i> Events
+                            </div>
+                            <div class="content active">
+                                <div class="ui list">
+                                    <a class="item">Seasons</a>
+                                    <a class="item">International</a>
+                                </div>
                                 <div class="title active">
-                                    <i class="dropdown icon"></i> Events
+                                    <i class="dropdown icon"></i>Company
                                 </div>
                                 <div class="content active">
                                     <div class="ui list">
                                         <a class="item">Seasons</a>
                                         <a class="item">International</a>
                                     </div>
-                                    <div class="title active">
-                                        <i class="dropdown icon"></i> Company
-                                    </div>
-                                    <div class="content active">
-                                        <div class="ui list">
-                                            <a class="item">Seasons</a>
-                                            <a class="item">International</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="ui styled accordion">
-                            <div class="item">
-                                <div class="title">
-                                    <i class="dropdown icon"></i> Sectors
-                                </div>
-                                <div class="content">
+                    </div>
+                    <div class="ui styled accordion">
+                        <div class="item">
+                            <div class="title">
+                                <i class="dropdown icon"></i> Sectors
+                            </div>
+                            <div class="content">
                                 <div class="inline field">
                                     <div class="ui checkbox">
                                         <input type="checkbox" tabindex="0" class="hidden">
                                         <label><strong>Select All</strong></label>
                                     </div>
                                 </div>
-                                    <div class="inline field">
-                                        <div class="ui checkbox">
-                                            <input type="checkbox" tabindex="0" class="hidden">
-                                            <label>Insurance</label>
-                                        </div>
+                                <div class="inline field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <label>Insurance</label>
                                     </div>
-                                    <div class="inline field">
-                                        <div class="ui checkbox">
-                                            <input type="checkbox" tabindex="0" class="hidden">
-                                            <label>Insurance</label>
-                                        </div>
+                                </div>
+                                <div class="inline field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <label>Insurance</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="fluid content-holder resize-right-column">
-                    <div class="show filter-button">
-                        Filters
-                    </div>
-                    <div class="fluid left floated">
-                        <div class="ui grid">
-                            <div class="title chart page clearfix column">
-                                <div class="left floated ui">
-                                    <h2>Sabic</h2>
-                                    <span class="vs">v/s</span>
-                                    <select name="companies" multiple="" class="ui multiple search dropdown compare-company">
-                                        <option value="">Compare to</option>
-                                        <option value="ribl">RIBL</option>
-                                        <option value="bjaz">BJAZ</option>
-                                        <option value="saudi-investment">Saudi Investment</option>
-                                        <option value="saudi-holland">Saudi Holland</option>
-                                        <option value="bsfr">BSFR</option>
-                                        <option value="saab">SAAB</option>
-                                        <option value="arab-national">Arab National</option>
-                                    </select>
-                                </div>
-                                <div class="right floated toolbar">
-                                    <a href="" class="rotate"></a>
-                                    <a href="" class="a-z"></a>
-                                    <div class="sorting">
-                                        <label class="left floated">Show top </label>
-                                        <select class="ui search dropdown left floated">
-                                            <option>10</option>
-                                            <option selected="selected">20</option>
-                                            <option>40</option>
-                                            <option>100</option>
-                                        </select>
-                                        <div class="count">/10</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui one column grid">
-                            <div class="column">
-                                
-                                <table class="ui table">
-                                    <thead>
-                                        <tr>
-                                            <th>Year</th>
-                                            <th>No. Days</th>
-                                            <th class="center aligned">Ocrurrance</th>
-                                            <th class="left aligned">When </th>
-                                            <th class="center aligned">Performance/Year</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2016</td>
-                                            <td></td>
-                                            <td class="center aligned">1</td>
-                                            <td class="left aligned">
-                                                
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">1000%</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                            <td class="center aligned">2016</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2015</td>
-                                            <td></td>
-                                            <td class="center aligned">2</td>
-                                            <td class="left aligned">
-                                                
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="center aligned">2016</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2014</td>
-                                            <td></td>
-                                            <td class="center aligned">3</td>
-                                            <td class="left aligned">
-                                                
-                                                
-                                               <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="center aligned">2016</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013</td>
-                                            <td></td>
-                                            <td class="center aligned">3</td>
-                                            <td class="left aligned">
-                                                
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="center aligned">2016</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2012</td>
-                                            <td></td>
-                                            <td class="center aligned">2</td>
-                                            <td class="left aligned">
-                                                
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                            <td class="center aligned">2016</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2014</td>
-                                            <td></td>
-                                            <td class="center aligned">1</td>
-                                            <td class="left aligned">
-                                                
-                                               <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                            <td class="center aligned">2016</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013</td>
-                                            <td></td>
-                                            <td class="center aligned">2</td>
-                                            <td class="left aligned">
-                                                
-                                              <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ui button date-period label">
-                                                    <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                    <div class="second bg red-30">6<sup>th</sup> Jun</div>
-                                                <svg id="" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 11.81">
-                                                    <line class="cls-1" y1="5.91" x2="19" y2="5.91"/>
-                                                    <line class="cls-1" x1="13.23" y1="0.35" x2="18.65" y2="5.77"/>
-                                                    <line class="cls-1" x1="13.23" y1="11.45" x2="18.65" y2="6.04"/>    
-                                                </svg>
-                                                </div>
-                                                <div class="ui flowing performance popup transition hidden">
-                                                    <div class="ui two column divided center aligned grid">
-                                                        <div class="column performance">
-                                                            <h4 class="ui header">Performance</h4>
-                                                            <div class="down arrow">21 %</div>
-                                                        </div>
-                                                        <div class="column next-days">
-                                                            <h4 class="ui header">Next 3 days</h4>
-                                                            <div class="up arrow">-11 %</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                            <td class="center aligned">2016</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- <div class="content">
+                </div>
+            </section>
+            <section class="fluid content-holder resize-right-column">
+            <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
+                <div class="fluid left floated">
+                    <div class="ui one column grid">
+                        <div class="column">
+                        <div class="content">
+                            <table class="ui table">
+                                <thead>
+                                    <tr>
+                                        <th class="center aligned"><i class="ico up-chart"></i> Consective Up (No.Days)</th>
+                                        <th class="center aligned">Occurrence (No.Times)</th>
+                                        <th class="center aligned">Avg.Performance for the Decline</th>
+                                        <th class="center aligned">Avg.Perfermonace in next 10 Days</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned">1</td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                    </tr>
                                     
-                                </div> -->
+                                </tbody>
+                            </table>
                             </div>
                         </div>
-                        <footer>
-                            &copy; 2016 Argaam Fintech FZ.LLC
-                        </footer>
                     </div>
-                </section>
-            </div>
+                    <div class="ui one column grid">
+                        
+                        <div class="column">
+                        <div class="content">
+                            <table class="ui table">
+                                <thead>
+                                    <tr>
+                                        <th>Year</th>
+                                        <th class="center aligned">No. Days</th>
+                                        <th class="center aligned">Ocrurrance</th>
+                                        <th>When</th>
+                                        <th class="center aligned">Performance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2016</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned">6</td>
+                                        <td class="date-periods">
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="second bg red-30">6<sup>th</sup> Jun</div>
+                                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="second bg red-30">6<sup>th</sup> Jun</div>
+                                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="second bg red-30">6<sup>th</sup> Jun</div>
+                                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                    </tr>
+
+                                    <tr class="expanded">
+                                        <td>2016</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned">6</td>
+                                        <td class="date-periods">
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="second bg red-30">6<sup>th</sup> Jun</div>
+                                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="second bg red-30">6<sup>th</sup> Jun</div>
+                                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="second bg red-30">6<sup>th</sup> Jun</div>
+                                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2016</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned">6</td>
+                                        <td class="date-periods">
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="second bg red-30">6<sup>th</sup> Jun</div>
+                                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="second bg red-30">6<sup>th</sup> Jun</div>
+                                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="second bg red-30">6<sup>th</sup> Jun</div>
+                                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div></div>
+                    </div>
+                    
+                </div>
+            </section>
         </div>
-        
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-        <script src="dist/semantic.min.js"></script>
-        <script src="javascripts/fintech.js"></script>
-    </body>
+        <footer><div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div></footer>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="dist/semantic.min.js"></script>
+    <script src="javascripts/fintech.js"></script>
+</body>
+
 </html>

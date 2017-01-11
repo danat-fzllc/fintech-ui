@@ -1,3 +1,12 @@
+$(window).on('scroll',function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $(".ui.container.fintech").addClass("scroll");
+    } else {
+        $(".ui.container.fintech").removeClass("scroll");
+    }
+});
 //semantic modules
 //dropdown
 $('.ui.dropdown')
@@ -18,21 +27,22 @@ $('.button.date-period')
         position   : 'top left'
   })
 ;
+//Share 
+$('.button.share').click(function() {
+        $('.button.share .list').toggle(300);
+    });
+$(document).mouseup(function(e) {
+    var container = $(".button.share .list");
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        &&
+        container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.hide();
+    }
+});
 //fintech modules
-$(".filter .text").click(function() {
-    $(this).parent().toggleClass("opened");
-});
-$(".collapse-btn").click(function() {
-    $(".ui.content.container").toggleClass("expand-content");
-    $(".top .menu").toggleClass("expand");
-});
-$(".show.filter-button").click(function() {
-    $(".ui.content.container").toggleClass("expand-content");
-    $(".top .menu-nav").toggleClass("expand");
-});
-$(".filters .hide.icon").click(function() {
-    $(".ui.content.container").toggleClass("expand-content");
-    $(".top .menu-nav").toggleClass("expand");
+$(".sidebar-toggler-arrow").click(function() {
+    $(".ui.content.container").toggleClass("no-side-bar");
 });
 
 
@@ -43,29 +53,22 @@ $(window).load(function(){
 $(document).ready(function() {
 
 
-// var width = $('.aggregate-chart .arrow').width();
-// // var width = document.getElementsByClassName(".aggregate-chart .arrow").width();
-
-// if (width == 0){
-//     $('.aggregate-chart .arrow').addClass('no-change');
-// }
 
 
-// init
-var leftPanel = $("#left_slide_panel");
+
 var resize= $(".resize-left-column");
 var containerWidth = $("#container").width();
    
 $(resize).resizable({
      handles: 'e',
      maxWidth: 350,
-     minWidth: 230,
+     minWidth: 250,
      resize: function(event, ui){
          var currentWidth = ui.size.width;
          
          // this accounts for padding in the panels + 
          // borders, you could calculate this using jQuery
-         var padding = 12; 
+         var padding = 20; 
          
          // this accounts for some lag in the ui.size value, if you take this away 
          // you'll get some instable behaviour
@@ -78,4 +81,4 @@ $(resize).resizable({
 
 
 });
-});//]]> 
+});

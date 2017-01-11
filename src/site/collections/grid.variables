@@ -1,6 +1,7 @@
 /*******************************
     User Variable Overrides
 *******************************/
-
-@gutterWidth: 1rem;
-@rowSpacing: 1rem;
+@emSize   : 13px;
+@fontSize : 13px;
+@gutterWidth: 0.769em;
+@rowSpacing: 0.769em;

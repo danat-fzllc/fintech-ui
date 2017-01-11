@@ -1,13 +1,16 @@
 /*******************************
      User Global Variables
 *******************************/
-@fontPathCustom  : "../src/site/assets/fonts";
-@fontName: 'Roboto';
+
+@fontName: 'Maven Pro';
 @headerFont        : @fontName, sans-serif;
 @pageFont          : @fontName, sans-serif;
-@googleFontSizes:400,400i,500,500i,700,700i,900;
+@googleFontSizes   : '400,500,700,900';
 @pageBackground: #f6f6f6;
 @emSize: 13px;
 @fontSize : 13px;
 @primaryColor        : #227a4f;
 @secondaryColor      : #eaae00;
+
+
+

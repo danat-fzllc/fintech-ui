@@ -7,19 +7,17 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
     <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    
+   
 </head>
 
 <body>
     <div class="ui container fluid fintech">
-        <div class="top fluid">
-            
-            <a class="logo"></a>
-            <div class="right floated">
-                <div class="theme-changer right floated"></div>
-                
-                <form class="right floated country-selection">
+        <div class="top">
+            <div class="outer clearfix">
+            <a class="logo left floated"></a>
+            <form class="left floated country-selection">
                     <div class="field">
                         <div class="ui fluid search selection dropdown">
                             <input type="hidden" name="country">
@@ -33,6 +31,8 @@
                         </div>
                     </div>
                 </form>
+           
+                
                 <div class="user-nav right floated">
                     <a href="" class="active">Home</a>
                     <a href="">About Us</a>
@@ -43,44 +43,58 @@
             </div>
         </div>
         <div class="fluid clearfix question page center aligned relative">
+        <div class="outer">
             <form class="ui form">
                 <h1 class="question ui center">
-                    How many times <select id="" class="ui selection dropdown">
+                    What was the effect on <select id="" class="ui selection dropdown">
                         <option value="1">Sabic</option>
                         <option value="3">Markets</option>
                         <option value="2">Commodities</option>
                     </select>
-                    <select id="" class="ui selection dropdown">
-                        <option value="1">Rally</option>
-                        <option value="3">decline</option>
-                      
-                    </select>
-                    in consecutive since <select id="" class="ui selection dropdown">
-                        <option value="1">2005</option>
-                        <option value="3">2006</option>
-                      
-                    </select> ,
-                   
-                     <span class="highlight">What happened in next
-                    <input type="text" placeholder="" class="field center aligned" value="3" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
-                   days</span>
-                    <!-- <select id="" class="">
-                        <option value="1">OPEC Meetings</option>
-                        <option value="3">2007</option>
-                        <option value="2">2008</option>
-                    </select> -->
                     
-                    <a class="ui button yellow">Discover</a>
+                    <input type="text" placeholder="" class="field center aligned" value="5" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
+                    days after, when the price of 
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">Gold</option>
+                        <option value="3">Silver</option>
+                        <option value="2">Oil</option>
+                    </select>
+                    was up by 
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">2016</option>
+                        <option value="3">2015</option>
+                        <option value="2">2014</option>
+                    </select>
+                    to
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">2016</option>
+                        <option value="3">2015</option>
+                        <option value="2">2014</option>
+                    </select>
+                    
+                    <a class="ui button yellow"><i class="fa fa-search" aria-hidden="true"></i>
+ Discover</a>
                     </h1>
             </form>
-            <div class="button gray share right floated">
-                
+            <div class="button share right floated">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                <div class="list">
+                    <div class="head">Share</div>
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+                        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linked In</a></li>
+                        <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google Plus</a></li>
+                    </ul>
+                </div>
+            </div>
             </div>
         </div>
         <div class="fluid ui content container clearfix" id="container">
             <section class="page filters left floated resize-left-column">
-                <div class="header">Filters <i class="hide icon right floated"></i></div>
+                
                 <div class="ui container">
+                <div class="header">Filters</div>
                     <div class="ui styled accordion">
                         <div class="item">
                             <div class="title active">
@@ -92,7 +106,7 @@
                                     <a class="item">International</a>
                                 </div>
                                 <div class="title active">
-                                    <i class="dropdown icon"></i> Company
+                                    <i class="dropdown icon"></i>Company
                                 </div>
                                 <div class="content active">
                                     <div class="ui list">
@@ -133,129 +147,64 @@
                 </div>
             </section>
             <section class="fluid content-holder resize-right-column">
-            <div class="show filter-button">
-                Filters
-            </div>
+            <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
                 <div class="fluid left floated">
-                    <div class="ui grid">
-                        <div class="title chart page clearfix column">
-                            <div class="left floated ui">
-                                <h2>Sabic</h2>
-                                <span class="vs">v/s</span>
-                                <select name="companies" multiple="" class="ui multiple search dropdown compare-company">
-                                    <option value="">Compare to</option>
-                                    <option value="ribl">RIBL</option>
-                                    <option value="bjaz">BJAZ</option>
-                                    <option value="saudi-investment">Saudi Investment</option>
-                                    <option value="saudi-holland">Saudi Holland</option>
-                                    <option value="bsfr">BSFR</option>
-                                    <option value="saab">SAAB</option>
-                                    <option value="arab-national">Arab National</option>
-                                </select>
-                            </div>
-                            <div class="right floated toolbar">
-                                <a href="" class="rotate"></a>
-                                <a href="" class="a-z"></a>
-                                <div class="sorting">
-                                    <label class="left floated">Show top </label>
-                                    <select class="ui search dropdown left floated">
-                                        <option>10</option>
-                                        <option>20</option>
-                                        <option>40</option>
-                                        <option>100</option>
-                                    </select>
-                                    <div class="count">/10</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="ui one column grid">
                         
                         <div class="column">
+                        <div class="content">
                             <table class="ui table">
                                 <thead>
                                     <tr>
-                                        <th>Consective Rally</th>
-                                        <th class="center aligned">Ocrurrance</th>
-                                        <th class="center aligned">Avg. Performance for the Rally</th>
-                                        <th class="center aligned">Avg. Perfermonace in next 3 Days (%)  </th>
+                                        <th class="center aligned"><i class="ico up-chart"></i> Consective Up (No.Days)</th>
+                                        <th class="center aligned">Occurrence (No.Times)</th>
+                                        <th class="center aligned">Avg.Performance for the Decline</th>
+                                        <th class="center aligned">Avg.Perfermonace in next 10 Days</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>12 Days</td>
-                                        <td class="center aligned"><a href="">1 time</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>17 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-4 %</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned"><a href="" class="anchor-canvas">1</a></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
                                     </tr>
                                     <tr>
-                                        <td>11 Days</td>
-                                        <td class="center aligned"><a href="">2 times</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>17 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-4 %</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned"><a href="" class="anchor-canvas">1</a></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
                                     </tr>
                                     <tr>
-                                        <td>10 Days</td>
-                                        <td class="center aligned"><a href="">5 times</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>15 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-3 %</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned"><a href="" class="anchor-canvas">1</a></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
                                     </tr>
                                     <tr>
-                                        <td>9 Days</td>
-                                        <td class="center aligned"><a href="">7 times</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>23 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-3 %</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned"><a href="" class="anchor-canvas">1</a></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
                                     </tr>
                                     <tr>
-                                        <td>8 Days</td>
-                                        <td class="center aligned"><a href="">6 times</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>3 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-3 %</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned"><a href="" class="anchor-canvas">1</a></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
                                     </tr>
-                                    <tr>
-                                        <td>7 Days</td>
-                                        <td class="center aligned"><a href="">2 times</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>17 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-4 %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6 Days</td>
-                                        <td class="center aligned"><a href="">7 times</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>11 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-3 %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5 Days</td>
-                                        <td class="center aligned"><a href="">20 times</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>33 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-5 %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4 Days</td>
-                                        <td class="center aligned"><a href="">30 times</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>12 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-4 %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 Days</td>
-                                        <td class="center aligned"><a href="">56 times</a></td>
-                                        <td class="value-arrow green center aligned"><i class="caret green up icon"></i>11 %</td>
-                                         <td class="value-arrow red center aligned"><i class="caret red down icon"></i>-5 %</td>
-                                    </tr>
-                                   
+                                    
                                 </tbody>
                             </table>
-                            <!-- <div class="content">
-                                                
-                                            </div> -->
-                        </div>
+                            
+                        </div></div>
                     </div>
-                    <footer>
-                        &copy; 2016 Argaam Fintech FZ.LLC
-                    </footer>
+                    
                 </div>
             </section>
         </div>
+        <footer><div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div></footer>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="dist/semantic.min.js"></script>

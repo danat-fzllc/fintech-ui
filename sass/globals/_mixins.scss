@@ -21,6 +21,12 @@
     }
 }
 
+$browser-context: 13;
+
+@function rem($pixels, $context: $browser-context) {
+    @return #{$pixels / $context}rem;
+}
+
 @mixin font-size($fs-map) {
     @each $fs-breakpoint, $fs-font-size in $fs-map {
         @if $fs-breakpoint == null {
@@ -87,7 +93,7 @@ $icons-2x: sprite-map("icons-2x/*.png", $layout: smart);
     background-position: sprite-position($icons, $sprite);
     background-repeat: no-repeat;
     overflow: hidden;
-    display: block;
+    display: inline-block;
     height: image-height(sprite-file($icons, $sprite));
     width: image-width(sprite-file($icons, $sprite));
 
