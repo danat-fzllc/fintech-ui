@@ -1,0 +1,11 @@
+.ico {
+    display: inline-block;
+
+    &.up-chart {
+        @include use-sprite(ico-up-chart);
+    }
+
+    &.down-chart {
+        @include use-sprite(ico-down-chart);
+    }
+}

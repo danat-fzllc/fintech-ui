@@ -1,15 +1,3 @@
-.ico {
-    display: inline-block;
-
-    &.up-chart {
-        @include use-sprite(ico-up-chart);
-    }
-
-    &.down-chart {
-        @include use-sprite(ico-down-chart);
-    }
-}
-
 .fa {
     &.active {
         color: #00a651;
@@ -22,6 +10,10 @@
 
 .anchor-canvas {
     padding: 6px 15px;
+}
+
+.indent-6 {
+    text-indent: rem(6);
 }
 
 .loading {

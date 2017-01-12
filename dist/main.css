@@ -75,46 +75,6 @@ a:hover {
   clear: both;
 }
 
-.ico {
-  display: inline-block;
-}
-.ico.up-chart {
-  background-image: url('themes/default/assets/images/icons-s1c05826d5c.png');
-  background-position: -35px 0;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .ico.up-chart {
-    background-image: url('themes/default/assets/images/icons-2x-s81d2da5859.png');
-    background-size: 118.5px 45px;
-    background-position: 0 0;
-    height: 9px;
-    width: 9px;
-  }
-}
-.ico.down-chart {
-  background-image: url('themes/default/assets/images/icons-s1c05826d5c.png');
-  background-position: -23px 0;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .ico.down-chart {
-    background-image: url('themes/default/assets/images/icons-2x-s81d2da5859.png');
-    background-size: 118.5px 45px;
-    background-position: -9px 0;
-    height: 9px;
-    width: 9px;
-  }
-}
-
 .fa.active {
   color: #00a651;
 }
@@ -124,6 +84,10 @@ a:hover {
 
 .anchor-canvas {
   padding: 6px 15px;
+}
+
+.indent-6 {
+  text-indent: 0.46154rem;
 }
 
 .loading {
@@ -319,6 +283,46 @@ a:hover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+}
+
+.ico {
+  display: inline-block;
+}
+.ico.up-chart {
+  background-image: url('themes/default/assets/images/icons-s1c05826d5c.png');
+  background-position: -35px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .ico.up-chart {
+    background-image: url('themes/default/assets/images/icons-2x-s81d2da5859.png');
+    background-size: 118.5px 45px;
+    background-position: 0 0;
+    height: 9px;
+    width: 9px;
+  }
+}
+.ico.down-chart {
+  background-image: url('themes/default/assets/images/icons-s1c05826d5c.png');
+  background-position: -23px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .ico.down-chart {
+    background-image: url('themes/default/assets/images/icons-2x-s81d2da5859.png');
+    background-size: 118.5px 45px;
+    background-position: -9px 0;
+    height: 9px;
+    width: 9px;
+  }
 }
 
 .fintech .ui-resizable {
@@ -1107,14 +1111,21 @@ a:hover {
 /*Elements - Individual site elements*/
 .fintech .ui.table {
   border: 0;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  /*@include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));*/
 }
 .fintech .ui.table thead th {
   background: transparent;
   padding: 0 0.46154rem 0.46154rem 0.46154rem;
   border-bottom-color: #cdcdcd;
+}
+.fintech .ui.table thead.sub {
+  background-color: #f7f7f7;
+}
+.fintech .ui.table thead.sub th {
+  padding: 0.46154rem;
+}
+.fintech .ui.table thead + thead ~ thead th {
+  border-top: 1px solid #cdcdcd;
 }
 .fintech .ui.table tr td {
   padding: 0.61538rem;
