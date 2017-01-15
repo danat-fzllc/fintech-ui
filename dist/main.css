@@ -75,6 +75,89 @@ a:hover {
   clear: both;
 }
 
+.color-scale {
+  height: 5px;
+  position: relative;
+  margin: 8px 12px 26px;
+  text-align: center;
+}
+.color-scale .value {
+  position: absolute;
+  padding: 12px 0 0;
+  font-size: 0.84615rem;
+  font-weight: 500;
+}
+.color-scale .value:before {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  top: -5px;
+}
+.color-scale .value.left {
+  left: -11px;
+}
+.color-scale .value.left:before {
+  left: 11px;
+}
+.color-scale .value.right {
+  right: -11px;
+}
+.color-scale .value.right:before {
+  right: 11px;
+}
+.color-scale .value.no-change {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  pointer-events: none;
+  /*&:before {
+      background-color: #c5c5c5;
+      width: 1px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 8px;
+      top: -2px;
+  }*/
+}
+.color-scale .value.red:before {
+  background-color: #b60101;
+}
+.color-scale .value.green:before {
+  background-color: #1b7332;
+}
+.color-scale .bg {
+  display: inline-block;
+  width: 2.439024390243902%;
+  height: 5px;
+  float: left;
+  padding: 0;
+  margin: 0;
+  min-height: 5px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.color-scale .bg:first-child {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 0 0 5px;
+}
+.color-scale .bg:last-child {
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.column > h2 {
+  padding-left: 20px;
+  font-weight: 500;
+  color: #000000;
+  font-size: 1.69231rem;
+}
+
 .fa.active {
   color: #00a651;
 }
@@ -379,7 +462,7 @@ a:hover {
   border-color: #aeaeae;
 }
 .fintech > .ui.content.container {
-  padding: 20px 0;
+  padding: 16px 0 20px 0;
   max-width: 1200px !important;
   position: relative;
 }
@@ -510,6 +593,9 @@ a:hover {
 }
 .fintech .column > .content.event-aggregate-chart.clickable:hover .view-more:hover {
   background-color: #fef7e6;
+}
+.fintech.scroll {
+  padding-top: 108px;
 }
 .fintech.scroll .question.page {
   padding: 10px 0;
@@ -797,9 +883,9 @@ a:hover {
   top: 25px;
   width: 22px;
   background-color: #fff;
-  -moz-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
   -moz-box-shadow: 3px 3px 6px -5px #000;
   -webkit-box-shadow: 3px 3px 6px -5px #000;
   box-shadow: 3px 3px 6px -5px #000;
