@@ -1,7 +1,7 @@
 .color-scale {
     height: 5px;
     position: relative;
-    margin: 8px 12px 26px;
+    margin: 8px 30px 20px 36px;
     text-align: center;
 
     .value {
@@ -9,6 +9,7 @@
         padding: 12px 0 0;
         font-size: rem(11);
         font-weight: $font-weight-regular;
+        top: -19px;
 
         &:before {
             content: '';
@@ -20,18 +21,20 @@
         }
 
         &.left {
-            left: -11px;
+            left: -33px;
 
             &:before {
-                left: 11px;
+                left: 33px;
+                top: 14px;
             }
         }
 
         &.right {
-            right: -11px;
+            right: -30px;
 
             &:before {
-                right: 11px;
+                right: 30px;
+                top: 14px;
             }
         }
 
@@ -40,16 +43,6 @@
             right: 0;
             margin: 0 auto;
             pointer-events: none;
-
-            /*&:before {
-                background-color: #c5c5c5;
-                width: 1px;
-                left: 0;
-                right: 0;
-                margin: 0 auto;
-                height: 8px;
-                top: -2px;
-            }*/
         }
 
         &.red:before {

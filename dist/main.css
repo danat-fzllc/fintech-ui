@@ -78,7 +78,7 @@ a:hover {
 .color-scale {
   height: 5px;
   position: relative;
-  margin: 8px 12px 26px;
+  margin: 8px 30px 20px 36px;
   text-align: center;
 }
 .color-scale .value {
@@ -86,6 +86,7 @@ a:hover {
   padding: 12px 0 0;
   font-size: 0.84615rem;
   font-weight: 500;
+  top: -19px;
 }
 .color-scale .value:before {
   content: '';
@@ -96,31 +97,24 @@ a:hover {
   top: -5px;
 }
 .color-scale .value.left {
-  left: -11px;
+  left: -33px;
 }
 .color-scale .value.left:before {
-  left: 11px;
+  left: 33px;
+  top: 14px;
 }
 .color-scale .value.right {
-  right: -11px;
+  right: -30px;
 }
 .color-scale .value.right:before {
-  right: 11px;
+  right: 30px;
+  top: 14px;
 }
 .color-scale .value.no-change {
   left: 0;
   right: 0;
   margin: 0 auto;
   pointer-events: none;
-  /*&:before {
-      background-color: #c5c5c5;
-      width: 1px;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      height: 8px;
-      top: -2px;
-  }*/
 }
 .color-scale .value.red:before {
   background-color: #b60101;
