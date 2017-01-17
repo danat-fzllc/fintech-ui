@@ -167,6 +167,10 @@ a:hover {
   text-indent: 0.46154rem;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 .loading {
   text-align: center;
 }
@@ -875,7 +879,7 @@ a:hover {
 .fintech .ui[class*="content container"].no-side-bar .sidebar-toggler-arrow {
   left: -17px;
   top: 25px;
-  width: 22px;
+  width: 20px;
   background-color: #fff;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1210,6 +1214,51 @@ a:hover {
 .fintech .ui.table tr td {
   padding: 0.61538rem;
   border-top-color: #ededed;
+}
+.fintech .ui.table tr.highlight.today {
+  background-color: #f5ffff;
+}
+.fintech .ui.table tr.highlight.today td {
+  border-top: 1px solid #00b5ad;
+  border-bottom: 1px solid #00b5ad;
+  position: relative;
+}
+.fintech .ui.table tr.highlight.today td:first-child:before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: -1px;
+  background: #00b5ad;
+  width: 14px;
+  height: 42px;
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 0 0 3px;
+}
+.fintech .ui.table tr.highlight.today td:first-child:after {
+  content: 'Today';
+  position: absolute;
+  left: 1px;
+  top: 27px;
+  color: #fff;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -webkit-transform-origin: left 50%;
+  transform-origin: left 50%;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: arial;
+  letter-spacing: 0.5px;
+}
+.fintech .ui.table tr.highlight.today td:last-child {
+  border-right: 1px solid #00b5ad;
+  -moz-border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 4px 4px 0;
 }
 .fintech .ui.table tr.expanded td {
   border-bottom: 1px solid #ccc;

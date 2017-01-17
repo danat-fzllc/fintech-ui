@@ -102,6 +102,10 @@
     text-indent: rem(6);
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 .loading {
     text-align: center;
 
