@@ -33,49 +33,46 @@
             }
 
             &.highlight {
-                &.today {
-                    background-color: #f5ffff;
+                .today {
+                    position: relative;
 
-                    td {
-                        border-top: 1px solid #00b5ad;
-                        border-bottom: 1px solid #00b5ad;
-                        position: relative;
+                    &:first-child {
+                        span {
+                            display: inline-block;
 
-                        &:first-child {
+                            @include border-radius(100px);
+
+                            background-color: #0aada6;
+                            padding: 2px 5px;
+                            color: #fff;
+                            position: relative;
+                            font-weight: $font-weight-medium;
+                            cursor: default;
+
                             &:before {
                                 content: '';
                                 position: absolute;
-                                left: -7px;
-                                top: -1px;
-                                background: #00b5ad;
-                                width: 14px;
-                                height: 42px;
+                                left: -16px;
+                                top: 6px;
+                                display: inline-block;
 
-                                @include border-radius(3px 0 0 3px);
+                                @include triangle(5px, right, #0aada6);
+
+                                border-left-width: 10px;
                             }
 
                             &:after {
-                                content: 'Today';
+                                content: '';
                                 position: absolute;
-                                left: 1px;
-                                top: 27px;
-                                color: #fff;
+                                left: -26px;
+                                top: 10px;
+                                display: inline-block;
+                                width: 10px;
+                                height: 2px;
+                                background-color: #0aada6;
 
-                                @include rotate(-90deg);
-
-                                @include transform-origin(left);
-
-                                font-size: 9px;
-                                text-transform: uppercase;
-                                font-family: arial;
-                                letter-spacing: 0.5px;
+                                @include border-radius(2px);
                             }
-                        }
-
-                        &:last-child {
-                            border-right: 1px solid #00b5ad;
-
-                            @include border-radius(0 4px 4px 0);
                         }
                     }
                 }
