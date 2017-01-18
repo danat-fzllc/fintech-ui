@@ -84,13 +84,17 @@
     }
 }
 
-.fa {
-    &.active {
-        color: #00a651;
+.color {
+    &.red {
+        color: $red;
     }
 
-    &.inactive {
-        color: #f3f3f3;
+    &.green {
+        color: $green;
+    }
+
+    &.light-gray {
+        color: $light-gray;
     }
 }
 

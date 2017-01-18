@@ -152,10 +152,13 @@ a:hover {
   font-size: 1.69231rem;
 }
 
-.fa.active {
+.color.red {
+  color: #ff333a;
+}
+.color.green {
   color: #00a651;
 }
-.fa.inactive {
+.color.light-gray {
   color: #f3f3f3;
 }
 
