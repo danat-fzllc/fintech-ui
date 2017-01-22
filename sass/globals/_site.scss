@@ -692,10 +692,29 @@
         }
 
         &.heat {
+            .probability {
+                background-color: #f7f7f7;
+            }
+
+            .avg-perfomance {
+                td {
+                    border: 0;
+
+                    @include box-shadow(0px 5px 18px -13px #000 inset);
+
+                    background-color: #f7f7f7;
+                }
+            }
+
+            .year-performance {
+                /*background: url(themes/default/assets/images/arrow-shadow.png) no-repeat -32px -4px;*/
+
+                @include box-shadow(5px 0px 18px -13px #000 inset);
+            }
+
             tr {
                 td {
-                    border-top: none;
-                    padding: 0.6%;
+                    padding: 6px;
 
                     &.block-holder {
                         .block {
@@ -712,7 +731,6 @@
                     }
 
                     .perfrom-title {
-                        max-width: 60px;
                         display: block;
                         margin: 0 auto;
                     }
@@ -725,32 +743,24 @@
                         }
 
                         span {
-                            font-size: 16px;
                             margin: 0px 0 5px 0;
                             display: block;
                             text-align: center;
+                            font-weight: $font-weight-medium;
                         }
                     }
 
                     &.value-arrow {
-                        font-weight: 900;
-                        font-size: 16px;
+                        font-weight: 700;
                     }
 
-                    .prob-title {
-                        -webkit-transform: rotate(-90deg);
-                        -moz-transform: rotate(-90deg);
-                        -ms-transform: rotate(-90deg);
-                        -o-transform: rotate(-90deg);
-                        transform: rotate(-90deg);
+                    /*.prob-title {
+                        @include rotate(-90deg);
+
                         position: absolute;
                         top: 48px;
                         left: 9px;
-                        right: 0;
-                        bottom: 0;
-                        width: 62px;
-                        height: 19px;
-                    }
+                    }*/
                 }
 
                 &:first-child {

@@ -354,19 +354,42 @@ a:hover {
   background-color: #efeeee !important;
   color: #000;
 }
+.bg.light-gray {
+  background-color: #f7f7f7;
+}
 
 .m-value-bg {
   background-color: #eee;
   display: block;
   padding: 0.30769rem;
-  font-size: 1.07692rem;
+  /*font-size: rem(14);*/
   text-align: center;
   display: inline-block;
   min-width: 68px;
-  font-weight: 700;
+  font-weight: 500;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+}
+
+.border.gray {
+  border-color: #cdcdcd !important;
+}
+.border.top {
+  border-top-width: 1px !important;
+  border-top-style: solid !important;
+}
+.border.right {
+  border-right-width: 1px !important;
+  border-right-style: solid !important;
+}
+.border.bottom {
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important;
+}
+.border.left {
+  border-left-width: 1px !important;
+  border-left-style: solid !important;
 }
 
 .ico {
@@ -1000,9 +1023,31 @@ a:hover {
 .fintech .ui.table .performance.popup .grid > .column .none:before {
   display: none !important;
 }
+.fintech .ui.table.heat .probability {
+  background-color: #f7f7f7;
+}
+.fintech .ui.table.heat .avg-perfomance td {
+  border: 0;
+  -moz-box-shadow: 0px 5px 18px -13px #000 inset;
+  -webkit-box-shadow: 0px 5px 18px -13px #000 inset;
+  box-shadow: 0px 5px 18px -13px #000 inset;
+  background-color: #f7f7f7;
+}
+.fintech .ui.table.heat .year-performance {
+  /*background: url(themes/default/assets/images/arrow-shadow.png) no-repeat -32px -4px;*/
+  -moz-box-shadow: 5px 0px 18px -13px #000 inset;
+  -webkit-box-shadow: 5px 0px 18px -13px #000 inset;
+  box-shadow: 5px 0px 18px -13px #000 inset;
+}
 .fintech .ui.table.heat tr td {
-  border-top: none;
-  padding: 0.6%;
+  padding: 6px;
+                    /*.prob-title {
+                        @include rotate(-90deg);
+
+                        position: absolute;
+                        top: 48px;
+                        left: 9px;
+                    }*/
 }
 .fintech .ui.table.heat tr td.block-holder .block {
   background-color: #eee;
@@ -1017,7 +1062,6 @@ a:hover {
   border-radius: 3px;
 }
 .fintech .ui.table.heat tr td .perfrom-title {
-  max-width: 60px;
   display: block;
   margin: 0 auto;
 }
@@ -1027,28 +1071,13 @@ a:hover {
   margin: 10px auto 10px auto;
 }
 .fintech .ui.table.heat tr td.donut-holder span {
-  font-size: 16px;
   margin: 0px 0 5px 0;
   display: block;
   text-align: center;
+  font-weight: 700;
 }
 .fintech .ui.table.heat tr td.value-arrow {
-  font-weight: 900;
-  font-size: 16px;
-}
-.fintech .ui.table.heat tr td .prob-title {
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  position: absolute;
-  top: 48px;
-  left: 9px;
-  right: 0;
-  bottom: 0;
-  width: 62px;
-  height: 19px;
+  font-weight: 700;
 }
 .fintech .ui.table.heat tr:first-child td {
   padding-top: .9em !important;
@@ -1260,18 +1289,6 @@ a:hover {
 .fintech .ui.table tr.expanded td {
   border-bottom: 1px solid #ccc;
   background-color: #f7f7f7;
-}
-.fintech .ui.table .value-arrow {
-  font-size: 1.38462rem;
-}
-.fintech .ui.table .value-arrow.red {
-  color: #DB2828;
-}
-.fintech .ui.table .value-arrow.green {
-  color: #21BA45;
-}
-.fintech .ui.table .value-arrow .icon {
-  font-size: 1.84615rem;
 }
 
 /*Modules - Individual site modules*/

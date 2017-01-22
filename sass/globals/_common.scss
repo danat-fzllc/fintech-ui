@@ -334,17 +334,48 @@
         background-color: #efeeee !important;
         color: #000;
     }
+
+    &.light-gray {
+        background-color: #f7f7f7;
+    }
 }
 
 .m-value-bg {
     background-color: #eee;
     display: block;
     padding: rem(4);
-    font-size: rem(14);
+
+    /*font-size: rem(14);*/
     text-align: center;
     display: inline-block;
     min-width: 68px;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-regular;
 
     @include border-radius(3px);
+}
+
+.border {
+    &.gray {
+        border-color: #cdcdcd !important;
+    }
+
+    &.top {
+        border-top-width: 1px !important;
+        border-top-style: solid !important;
+    }
+
+    &.right {
+        border-right-width: 1px !important;
+        border-right-style: solid !important;
+    }
+
+    &.bottom {
+        border-bottom-width: 1px !important;
+        border-bottom-style: solid !important;
+    }
+
+    &.left {
+        border-left-width: 1px !important;
+        border-left-style: solid !important;
+    }
 }
