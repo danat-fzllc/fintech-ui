@@ -709,7 +709,7 @@
             .year-performance {
                 /*background: url(themes/default/assets/images/arrow-shadow.png) no-repeat -32px -4px;*/
 
-                @include box-shadow(5px 0px 18px -13px #000 inset);
+                border-left: 1px solid #ededed;
             }
 
             tr {

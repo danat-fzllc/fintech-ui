@@ -1035,9 +1035,7 @@ a:hover {
 }
 .fintech .ui.table.heat .year-performance {
   /*background: url(themes/default/assets/images/arrow-shadow.png) no-repeat -32px -4px;*/
-  -moz-box-shadow: 5px 0px 18px -13px #000 inset;
-  -webkit-box-shadow: 5px 0px 18px -13px #000 inset;
-  box-shadow: 5px 0px 18px -13px #000 inset;
+  border-left: 1px solid #ededed;
 }
 .fintech .ui.table.heat tr td {
   padding: 6px;
