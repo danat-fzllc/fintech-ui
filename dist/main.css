@@ -372,26 +372,6 @@ a:hover {
   border-radius: 3px;
 }
 
-.border.gray {
-  border-color: #cdcdcd !important;
-}
-.border.top {
-  border-top-width: 1px !important;
-  border-top-style: solid !important;
-}
-.border.right {
-  border-right-width: 1px !important;
-  border-right-style: solid !important;
-}
-.border.bottom {
-  border-bottom-width: 1px !important;
-  border-bottom-style: solid !important;
-}
-.border.left {
-  border-left-width: 1px !important;
-  border-left-style: solid !important;
-}
-
 .ico {
   display: inline-block;
 }
@@ -1027,8 +1007,7 @@ a:hover {
   background-color: #f7f7f7;
 }
 .fintech .ui.table.heat .avg-perfomance td {
-  border: 0;
-  background-color: #f7f7f7;
+  border-color: #ddd;
 }
 .fintech .ui.table.heat .year-performance {
   /*background: url(themes/default/assets/images/arrow-shadow.png) no-repeat -32px -4px;*/
