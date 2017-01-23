@@ -699,9 +699,6 @@
             .avg-perfomance {
                 td {
                     border: 0;
-
-                    @include box-shadow(0px 5px 18px -13px #000 inset);
-
                     background-color: #f7f7f7;
                 }
             }
