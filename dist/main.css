@@ -1303,6 +1303,18 @@ a:hover {
 .fintech .question[class*="page"] .question > .dropdown > .text:not(.default) {
   color: #fff;
 }
+.fintech .ui.dropdown .menu > .header {
+  margin: 0;
+  padding: 1rem 0.76923rem 0.75rem;
+  cursor: default;
+  border: 0;
+}
+.fintech .ui.dropdown .menu > .header:before {
+  display: none;
+}
+.fintech .ui.dropdown .menu > .header:after {
+  width: 100%;
+}
 .fintech .ui.dropdown .menu > .item {
   font-size: inherit;
 }

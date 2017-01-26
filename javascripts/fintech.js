@@ -12,8 +12,28 @@ $(window).on('scroll',function() {
 $('.ui.dropdown')
   .dropdown({
     allowCategorySelection: true
-  })
-;
+  });
+
+
+// clear the generated semantic-ui menu
+var $menu = $('<div/>').addClass('menu');
+$('.optgroups').each(function(){
+   debugger
+   var parentthis=$(this);
+   $(this).find('optgroup').each(function (index, element) {
+      $menu.append('<div class="header ui horizontal divider">' + element.label + '</div>')
+      $(element).children().each(function(i, e){
+          $menu.append('<div class="item" data-value="' + e.value + '">' + e.innerHTML + '</div>');
+      })
+   })
+   $(this).find('.menu').html($menu.html());
+   $menu="";
+   $menu = $('<div/>').addClass('menu');
+});
+
+
+
+
 $('.ui.checkbox')
   .checkbox()
 ;

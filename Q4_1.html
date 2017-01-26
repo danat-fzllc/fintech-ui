@@ -46,11 +46,27 @@
         <div class="outer">
             <form class="ui form">
                 <h1 class="question ui center">
-                    What was the effect on <select id="" class="ui selection dropdown">
+                    What was the effect on <select class="ui selection dropdown">
                         <option value="1">Sabic</option>
                         <option value="3">Markets</option>
                         <option value="2">Commodities</option>
                     </select>
+
+                    <select class="ui dropdown optgroups">
+                        <optgroup label="Energy">
+                            <option value="1">SARCO</option>
+                            <option value="2">Petro Rabigh</option>
+                            <option value="3">Bahri</option>
+                            <option value="4">Aldrees</option>
+                        </optgroup>
+                        <optgroup label="Materials">
+                            <option value="1">Takween</option>
+                            <option value="2">Mepco</option>
+                            <option value="3">BCI</option>
+                            <option value="4">MAADEN</option>
+                        </optgroup>
+                    </select>
+
                     
                     <input type="text" placeholder="" class="field center aligned" value="5" style="width:50px;" onkeypress="this.style.width = ((this.value.length + 3) * 15) + 'px';" name="">
                     days after, when the price of 

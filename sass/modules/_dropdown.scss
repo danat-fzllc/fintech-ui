@@ -41,8 +41,25 @@
         }
     }
 
-    .ui.dropdown .menu > .item {
-        font-size: inherit;
+    .ui.dropdown .menu {
+        > .header {
+            margin: 0;
+            padding: 1rem rem(10) 0.75rem;
+            cursor: default;
+            border: 0;
+
+            &:before {
+                display: none;
+            }
+
+            &:after {
+                width: 100%;
+            }
+        }
+
+        > .item {
+            font-size: inherit;
+        }
     }
 
     .ui.multiple.dropdown > .label {
