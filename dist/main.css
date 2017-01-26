@@ -957,7 +957,7 @@ a:hover {
   width: 50%;
 }
 .fintech .ui.table .ui.label.date-period.three > div {
-  width: 75px;
+  width: 56px;
 }
 .fintech .ui.table .ui.label.date-period > div {
   float: left;
@@ -982,7 +982,7 @@ a:hover {
 }
 .fintech .ui.table .ui.label.date-period i {
   position: relative;
-  right: -12px;
+  right: -5px;
   width: 8px;
   display: inline-block;
 }
