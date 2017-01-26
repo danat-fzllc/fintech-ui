@@ -632,22 +632,11 @@
             float: left;
             margin: rem(2);
 
-            &.two {
-                > div {
-                    width: 50%;
-                }
-            }
-
-            &.three {
-                > div {
-                    width: 65px;
-                }
-            }
-
             > div {
                 float: left;
                 padding: 6px;
                 white-space: nowrap;
+                width: 70px;
             }
 
             .first {

@@ -953,16 +953,11 @@ a:hover {
   float: left;
   margin: 0.15385rem;
 }
-.fintech .ui.table .ui.label.date-period.two > div {
-  width: 50%;
-}
-.fintech .ui.table .ui.label.date-period.three > div {
-  width: 65px;
-}
 .fintech .ui.table .ui.label.date-period > div {
   float: left;
   padding: 6px;
   white-space: nowrap;
+  width: 70px;
 }
 .fintech .ui.table .ui.label.date-period .first {
   -moz-border-radius: 3px 0 0 3px;
