@@ -632,8 +632,19 @@
             float: left;
             margin: rem(2);
 
+            &.two {
+                > div {
+                    width: 50%;
+                }
+            }
+
+            &.three {
+                > div {
+                    width: 33.3%;
+                }
+            }
+
             > div {
-                width: 50%;
                 float: left;
                 padding: 6px;
                 white-space: nowrap;
@@ -641,25 +652,15 @@
 
             .first {
                 @include border-radius(3px 0 0 3px);
-
-                padding-right: 12px;
             }
 
-            .second {
+            .last {
                 @include border-radius(0 3px 3px 0);
-
-                padding-left: 10px;
             }
 
-            .fa {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                display: inline-block;
-                height: 10px;
-                margin: auto;
+            i {
+                position: relative;
+                right: -3px;
             }
         }
 

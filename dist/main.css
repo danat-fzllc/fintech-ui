@@ -953,8 +953,13 @@ a:hover {
   float: left;
   margin: 0.15385rem;
 }
-.fintech .ui.table .ui.label.date-period > div {
+.fintech .ui.table .ui.label.date-period.two > div {
   width: 50%;
+}
+.fintech .ui.table .ui.label.date-period.three > div {
+  width: 33.3%;
+}
+.fintech .ui.table .ui.label.date-period > div {
   float: left;
   padding: 6px;
   white-space: nowrap;
@@ -963,23 +968,15 @@ a:hover {
   -moz-border-radius: 3px 0 0 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px 0 0 3px;
-  padding-right: 12px;
 }
-.fintech .ui.table .ui.label.date-period .second {
+.fintech .ui.table .ui.label.date-period .last {
   -moz-border-radius: 0 3px 3px 0;
   -webkit-border-radius: 0;
   border-radius: 0 3px 3px 0;
-  padding-left: 10px;
 }
-.fintech .ui.table .ui.label.date-period .fa {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: inline-block;
-  height: 10px;
-  margin: auto;
+.fintech .ui.table .ui.label.date-period i {
+  position: relative;
+  right: -3px;
 }
 .fintech .ui.table .performance.popup {
   background-color: #fff;
