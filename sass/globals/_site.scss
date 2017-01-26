@@ -640,7 +640,7 @@
 
             &.three {
                 > div {
-                    width: 33.3%;
+                    width: 75px;
                 }
             }
 
@@ -652,15 +652,26 @@
 
             .first {
                 @include border-radius(3px 0 0 3px);
+
+                padding-right: 12px;
             }
 
             .last {
                 @include border-radius(0 3px 3px 0);
+
+                padding-left: 12px;
+            }
+
+            .fa-arrow-circle-right {
+                font-size: rem(12) !important;
+                right: -8px !important;
             }
 
             i {
                 position: relative;
-                right: -3px;
+                right: -12px;
+                width: 8px;
+                display: inline-block;
             }
         }
 
