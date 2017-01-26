@@ -958,26 +958,21 @@ a:hover {
   padding: 6px;
   white-space: nowrap;
   width: 70px;
+  position: relative;
 }
 .fintech .ui.table .ui.label.date-period .first {
   -moz-border-radius: 3px 0 0 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px 0 0 3px;
-  padding-right: 12px;
 }
 .fintech .ui.table .ui.label.date-period .last {
   -moz-border-radius: 0 3px 3px 0;
   -webkit-border-radius: 0;
   border-radius: 0 3px 3px 0;
-  padding-left: 12px;
-}
-.fintech .ui.table .ui.label.date-period .fa-arrow-circle-right {
-  font-size: 0.92308rem !important;
-  right: -8px !important;
 }
 .fintech .ui.table .ui.label.date-period i {
-  position: relative;
-  right: -5px;
+  position: absolute;
+  left: -5px;
   width: 8px;
   display: inline-block;
 }
