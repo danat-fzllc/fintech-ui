@@ -564,6 +564,10 @@ a:hover {
   line-height: 26px;
   white-space: nowrap;
   font-size: 2rem;
+  padding-left: 0;
+  width: 320px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .fintech .column > .content.event-aggregate-chart > .row ~ .row {
   border-bottom: 0;
@@ -665,6 +669,7 @@ a:hover {
   padding: 0;
   margin: 5px 0 0 0;
   height: 34px;
+  width: auto;
   color: #fff;
   border-color: #288aa1 !important;
 }
@@ -686,6 +691,18 @@ a:hover {
   -moz-border-radius: 7.69231rem;
   -webkit-border-radius: 7.69231rem;
   border-radius: 7.69231rem;
+  background-color: #dadada;
+  cursor: default;
+  color: #a7a5a5;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.fintech .question[class*="page"] .ui.button.active {
+  background-color: #f0ac09;
+  cursor: pointer;
+  color: #000;
 }
 .fintech .question[class*="page"] .share {
   position: absolute;
