@@ -76,6 +76,8 @@
 
             @include transition(width, ease 0.5s);
 
+            z-index: 101;
+
             &.active {
                 min-width: 185px;
             }

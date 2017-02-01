@@ -21,9 +21,7 @@
     }
 }
 
-$browser-context: 13;
-
-@function rem($pixels, $context: $browser-context) {
+@function rem($pixels, $context: $base-font-size) {
     @return #{$pixels / $context}rem;
 }
 

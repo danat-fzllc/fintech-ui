@@ -19,6 +19,20 @@
                 }
             }
 
+            &.group-head {
+                th {
+                    padding: 0 rem(10) rem(10) rem(10);
+                    text-align: center;
+                }
+
+                + thead {
+                    th {
+                        border-bottom: 0;
+                        padding: rem(6);
+                    }
+                }
+            }
+
             + thead ~ thead {
                 th {
                     border-top: 1px solid #cdcdcd;

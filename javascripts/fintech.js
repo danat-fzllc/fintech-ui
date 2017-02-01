@@ -2,11 +2,11 @@ function Expand(obj){
       if (!obj.savesize) obj.savesize=obj.size;
       obj.size=Math.max(obj.savesize,obj.value.length);
      }
-     
+
 $(window).on('scroll',function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 100) {
+    if (scroll >= 200) {
         $(".ui.container.fintech").addClass("scroll");
     } else {
         $(".ui.container.fintech").removeClass("scroll");

@@ -143,7 +143,15 @@
                         font-size: 18px;
                         font-weight: $font-weight-medium;
 
+                        small {
+                            font-weight: $font-weight-regular;
+                            color: #757575;
+                            font-size: 13px;
+                        }
+
                         &.aggregate-performance {
+                            margin-top: -6px;
+
                             &:before {
                                 content: '';
                                 display: inline-block;
@@ -165,7 +173,7 @@
                                 white-space: nowrap;
                                 font-size: rem(26);
                                 padding-left: 0;
-                                width: 320px;
+                                width: 300px;
                                 text-overflow: ellipsis;
                                 overflow: hidden;
                             }
@@ -188,30 +196,6 @@
                     display: block;
                     border: 0 !important;
                     padding: 15px 0 0;
-                }
-            }
-
-            &.clickable {
-                &:hover {
-                    border: 1px solid $secondaryColor;
-
-                    .view-more {
-                        background-color: lighten($secondaryColor, 42%);
-
-                        @include border-radius(0 0 6px 6px);
-
-                        color: #000;
-                        height: auto;
-                        font-size: 14px;
-                        padding: 10px 0;
-                        line-height: 18px;
-                        font-size: 14px;
-                        width: 100%;
-
-                        &:hover {
-                            background-color: lighten($secondaryColor, 46%);
-                        }
-                    }
                 }
             }
         }
@@ -351,6 +335,7 @@
             .list {
                 display: none;
                 position: absolute;
+                z-index: 100;
                 top: 26px;
                 background-color: #fff;
                 text-align: left;
@@ -455,10 +440,6 @@
             }
 
             > .item {
-                /*> .content {
-                    padding-bottom: 12px;
-                }*/
-
                 > .title .dropdown {
                     float: left;
                     margin: 1px 7px 0 0;
@@ -524,6 +505,7 @@
             height: 100%;
             width: 930px;
             float: $right;
+            position: relative;
 
             .sidebar-toggler-arrow {
                 font-size: rem(16);
@@ -533,10 +515,10 @@
                 @include border-radius(0 4px 4px 0);
 
                 position: absolute;
-                top: 25px;
+                top: 10px;
                 height: 25px;
                 width: 15px;
-                left: 250px;
+                left: -20px;
 
                 &:before {
                     color: #000;
@@ -556,6 +538,12 @@
                 display: none;
             }
 
+            .column {
+                > h2 {
+                    padding-left: 0;
+                }
+            }
+
             .content-holder {
                 width: 100% !important;
 
@@ -564,11 +552,11 @@
 
             .sidebar-toggler-arrow {
                 left: -17px;
-                top: 25px;
+                top: 46px;
                 width: 20px;
                 background-color: #fff;
 
-                @include border-radius(5px);
+                @include border-radius(5px 0 0 5px);
 
                 @include box-shadow(3px 3px 6px -5px #000);
 
@@ -713,8 +701,6 @@
             }
 
             .year-performance {
-                /*background: url(themes/default/assets/images/arrow-shadow.png) no-repeat -32px -4px;*/
-
                 border-left: 1px solid #ededed;
             }
 
@@ -759,14 +745,6 @@
                     &.value-arrow {
                         font-weight: 700;
                     }
-
-                    /*.prob-title {
-                        @include rotate(-90deg);
-
-                        position: absolute;
-                        top: 48px;
-                        left: 9px;
-                    }*/
                 }
 
                 &:first-child {
@@ -779,11 +757,38 @@
 
         td {
             &.aggregate-chart-col {
-                padding-top: 0;
-                padding-bottom: 0;
+                padding: 0;
 
                 .column {
                     height: auto;
+
+                    &.down:before {
+                        left: 0;
+                        top: 10px;
+                        bottom: 10px;
+                    }
+
+                    &.down:after {
+                        border-width: 10px;
+                        border-left-width: 0;
+                        border-right-width: 7px;
+                        left: 0;
+                        top: 10px;
+                    }
+
+                    &.up:before {
+                        right: 0;
+                        top: 10px;
+                        bottom: 10px;
+                    }
+
+                    &.up:after {
+                        border-width: 10px;
+                        border-right-width: 0;
+                        border-left-width: 7px;
+                        right: 0;
+                        top: 10px;
+                    }
 
                     .arrow {
                         height: 20px;
@@ -804,8 +809,8 @@
                             }
 
                             &:after {
-                                border-top: 10px solid #fff;
-                                border-bottom: 10px solid #fff;
+                                border-top-width: 10px;
+                                border-bottom-width: 10px;
                                 border-left: 7px solid $green;
                                 right: -6px;
                             }
@@ -821,8 +826,8 @@
                             }
 
                             &:after {
-                                border-top: 11px solid #fff;
-                                border-bottom: 10px solid #fff;
+                                border-top-width: 10px;
+                                border-bottom-width: 10px;
                                 border-right: 7px solid $red;
                                 left: -6px;
                             }
@@ -837,118 +842,5 @@
 .consecutive-rally {
     .fa-check-circle {
         font-size: rem(16);
-    }
-}
-
-.aggregate-chart {
-    width: 100%;
-
-    .column {
-        width: 50%;
-        float: left;
-        height: 80px;
-
-        .arrow {
-            height: 50px;
-            margin: 16px 0;
-            position: relative;
-            max-width: 100% !important;
-            -webkit-animation: w70 1s ease forwards;
-
-            &:after {
-                border-left-width: 15px;
-                border-top-width: 25px;
-                border-bottom-width: 25px;
-                border-right-width: 15px;
-                border-style: solid;
-                border-top-color: #fff;
-                border-bottom-color: #fff;
-                position: absolute;
-                top: 0px;
-            }
-
-            .value {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                top: 0;
-                margin: auto;
-                display: inline-block;
-                height: 19px;
-                font-size: rem(26);
-                white-space: nowrap;
-                fomt-weight: $font-weight-light;
-            }
-        }
-
-        &.no-change {
-            color: #000;
-            border-right: 4px solid #ccc;
-            right: -4px;
-            position: relative;
-
-            .arrow {
-                width: 100% !important;
-
-                .value {
-                    right: auto;
-                    left: 100%;
-                    padding-left: 10px;
-                }
-            }
-        }
-
-        &.up {
-            float: right;
-            border-left: 4px solid $green;
-            left: -3px;
-
-            .arrow {
-                background: $green;
-
-                &:after {
-                    content: "";
-                    width: 0;
-                    height: 0px;
-                    border-left-color: $green;
-                    border-right: 0;
-                    right: -13.5px;
-                }
-
-                .value {
-                    color: $green;
-                    right: 100%;
-                    left: auto;
-                    padding-right: 10px;
-                }
-            }
-        }
-
-        &.down {
-            border-right: 4px solid $red;
-            position: relative;
-            right: -4px;
-
-            .arrow {
-                background: $red;
-                float: right;
-
-                &:after {
-                    content: "";
-                    width: 0;
-                    height: 0px;
-                    border-right-color: $red;
-                    border-left: 0;
-                    left: -13.5px;
-                }
-
-                .value {
-                    color: $red;
-                    left: 100%;
-                    right: auto;
-                    padding-left: 10px;
-                }
-            }
-        }
     }
 }

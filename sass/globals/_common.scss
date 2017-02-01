@@ -1,3 +1,21 @@
+.column {
+    > h2 {
+        padding-left: 20px;
+        font-weight: $font-weight-regular;
+        color: #000000;
+        font-size: rem(22);
+    }
+}
+
+.anchor-canvas {
+    padding: 6px 15px;
+}
+
+.indent-6 {
+    text-indent: rem(6);
+}
+
+/*color scale*/
 .color-scale {
     height: 5px;
     position: relative;
@@ -56,7 +74,7 @@
 
     .bg {
         display: inline-block;
-        width: 2.439024390243902%;
+        width: (100% / 41);
         height: 5px;
         float: left;
         padding: 0;
@@ -75,15 +93,7 @@
     }
 }
 
-.column {
-    > h2 {
-        padding-left: 20px;
-        font-weight: $font-weight-regular;
-        color: #000000;
-        font-size: rem(22);
-    }
-}
-
+/*text colors*/
 .color {
     &.red {
         color: $red;
@@ -98,18 +108,7 @@
     }
 }
 
-.anchor-canvas {
-    padding: 6px 15px;
-}
-
-.indent-6 {
-    text-indent: rem(6);
-}
-
-.no-wrap {
-    white-space: nowrap;
-}
-
+/*loader*/
 .loading {
     text-align: center;
 
@@ -122,28 +121,17 @@
     }
 }
 
-.pointer {
-    cursor: pointer;
-}
+/*market value bg styles*/
+.m-value-bg {
+    background-color: #efeeee;
+    display: block;
+    padding: rem(4);
+    text-align: center;
+    display: inline-block;
+    min-width: 68px;
+    font-weight: $font-weight-regular;
 
-.m-top-5rem {
-    margin-top: .5rem;
-}
-
-.m-right-5rem {
-    margin-right: .5rem;
-}
-
-.m-bottom-5rem {
-    margin-bottom: .5rem;
-}
-
-.m-left-5rem {
-    margin-left: .5rem;
-}
-
-.ui.checkbox input:focus ~ .box:after, .ui.checkbox input:focus ~ label, .ui.checkbox input:focus ~ label:after {
-    color: rgba(0, 0, 0, 0.87);
+    @include border-radius(3px);
 }
 
 .bg {
@@ -340,16 +328,166 @@
     }
 }
 
-.m-value-bg {
-    background-color: #eee;
-    display: block;
-    padding: rem(4);
+/*aggregate cahrt left right arrows*/
+.aggregate-chart {
+    width: 100%;
 
-    /*font-size: rem(14);*/
-    text-align: center;
-    display: inline-block;
-    min-width: 68px;
-    font-weight: $font-weight-regular;
+    .column {
+        width: 50%;
+        float: left;
+        height: 80px;
+        position: relative;
 
-    @include border-radius(3px);
+        .arrow {
+            height: 50px;
+            margin: 16px 0;
+            position: relative;
+            z-index: 1;
+            max-width: 100% !important;
+            -webkit-animation: w70 1s ease forwards;
+
+            &:after {
+                border-left-width: 15px;
+                border-top-width: 25px;
+                border-bottom-width: 25px;
+                border-right-width: 15px;
+                border-style: solid;
+                border-top-color: transparent;
+                border-bottom-color: transparent;
+                position: absolute;
+                top: 0px;
+            }
+
+            .value {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                display: inline-block;
+                height: 19px;
+                font-size: rem(26);
+                white-space: nowrap;
+                fomt-weight: $font-weight-light;
+            }
+        }
+
+        &.no-change {
+            color: #000;
+            border-right: 4px solid #ccc;
+            right: -2px;
+            position: relative;
+
+            .arrow {
+                width: 100% !important;
+
+                .value {
+                    right: auto;
+                    left: 100%;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        &.up {
+            float: right;
+            border-left: 4px solid $green;
+            left: -2px;
+            padding-right: 12px;
+
+            &:before {
+                right: 0;
+                top: 16px;
+                bottom: 14px;
+            }
+
+            .arrow {
+                background: $green;
+
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0px;
+                    border-left-color: $green;
+                    border-right: 0;
+                    right: -15px;
+                }
+
+                .value {
+                    color: $green;
+                    right: 100%;
+                    left: auto;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        &.down:before, &.up:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            background-color: $light-gray;
+        }
+
+        &.down:after, &.up:after {
+            border-left-width: 15px;
+            border-top-width: 25px;
+            border-bottom-width: 25px;
+            border-right-width: 15px;
+            border-style: solid;
+            border-top-color: #fff;
+            border-bottom-color: #fff;
+            position: absolute;
+            top: 0px;
+            content: '';
+            color: $light-gray;
+        }
+
+        &.up:after {
+            border-right-width: 0;
+            right: -1px;
+            top: 16px;
+        }
+
+        &.down:after {
+            border-left-width: 0;
+            left: -1px;
+            top: 16px;
+        }
+
+        &.down {
+            border-right: 4px solid $red;
+            position: relative;
+            right: -2px;
+            padding-left: 12px;
+
+            &:before {
+                left: 0;
+                top: 16px;
+                bottom: 14px;
+            }
+
+            .arrow {
+                background: $red;
+                float: right;
+
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0px;
+                    border-right-color: $red;
+                    border-left: 0;
+                    left: -15px;
+                }
+
+                .value {
+                    color: $red;
+                    left: 100%;
+                    right: auto;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
 }
