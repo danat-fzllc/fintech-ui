@@ -35,7 +35,7 @@
 
             + thead ~ thead {
                 th {
-                    border-top: 1px solid #cdcdcd;
+                    border-top: 1px solid $dark-gray;
                 }
             }
         }
@@ -43,7 +43,7 @@
         tr {
             td {
                 padding: rem(8);
-                border-top-color: $borderColor;
+                border-top-color: $border-color;
             }
 
             &.highlight {
@@ -56,7 +56,7 @@
 
                             @include border-radius(100px);
 
-                            background-color: #0aada6;
+                            background-color: $primary-color;
                             padding: 2px 5px;
                             color: #fff;
                             position: relative;
@@ -70,7 +70,7 @@
                                 top: 6px;
                                 display: inline-block;
 
-                                @include triangle(5px, right, #0aada6);
+                                @include triangle(5px, right, $primary-color);
 
                                 border-left-width: 10px;
                             }
@@ -94,8 +94,8 @@
 
             &.expanded {
                 td {
-                    border-bottom: 1px solid #ccc;
-                    background-color: $lightGray;
+                    border-bottom: 1px solid $gray;
+                    background-color: $light-gray;
                 }
             }
         }

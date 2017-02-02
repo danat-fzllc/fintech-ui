@@ -18325,10 +18325,10 @@ ol.ui.horizontal.list li:before,
 -----------------------*/
 
 .ui.grid {
-  margin-top: -0.3845em;
-  margin-bottom: -0.3845em;
-  margin-left: -0.3845em;
-  margin-right: -0.3845em;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .ui.relaxed.grid {
@@ -18344,7 +18344,7 @@ ol.ui.horizontal.list li:before,
 /* Preserve Rows Spacing on Consecutive Grids */
 
 .ui.grid + .grid {
-  margin-top: 0.3845em;
+  margin-top: 10px;
 }
 
 /*-------------------
@@ -18358,14 +18358,14 @@ ol.ui.horizontal.list li:before,
   position: relative;
   display: inline-block;
   width: 6.25%;
-  padding-left: 0.3845em;
-  padding-right: 0.3845em;
+  padding-left: 10px;
+  padding-right: 10px;
   vertical-align: top;
 }
 
 .ui.grid > * {
-  padding-left: 0.3845em;
-  padding-right: 0.3845em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*-------------------
@@ -18391,8 +18391,8 @@ ol.ui.horizontal.list li:before,
   align-items: stretch;
   width: 100% !important;
   padding: 0rem;
-  padding-top: 0.3845em;
-  padding-bottom: 0.3845em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*-------------------
@@ -18402,8 +18402,8 @@ ol.ui.horizontal.list li:before,
 /* Vertical padding when no rows */
 
 .ui.grid > .column:not(.row) {
-  padding-top: 0.3845em;
-  padding-bottom: 0.3845em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .ui.grid > .row > .column {
@@ -18447,11 +18447,11 @@ ol.ui.horizontal.list li:before,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin: 0.3845em 0.3845em;
+  margin: 10px 10px;
 }
 
 .ui.grid .column + .ui.vertical.divider {
-  height: calc(50% -  0.3845em );
+  height: calc(50% -  10px );
 }
 
 /* Remove Border on Last Horizontal Segment */
@@ -19487,8 +19487,8 @@ ol.ui.horizontal.list li:before,
 
 .ui[class*="vertically divided"].grid > .column:not(.row),
 .ui[class*="vertically divided"].grid > .row > .column {
-  margin-top: 0.3845em;
-  margin-bottom: 0.3845em;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
@@ -19532,9 +19532,9 @@ ol.ui.horizontal.list li:before,
   content: "";
   top: 0em;
   left: 0px;
-  width: calc(100% -  0.769em );
+  width: calc(100% -  20px );
   height: 1px;
-  margin: 0% 0.3845em;
+  margin: 0% 10px;
   box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
 }
 
@@ -19798,10 +19798,10 @@ ol.ui.horizontal.list li:before,
 .ui.grid > .row > .brown.column,
 .ui.grid > .row > .grey.column,
 .ui.grid > .row > .black.column {
-  margin-top: -0.3845em;
-  margin-bottom: -0.3845em;
-  padding-top: 0.3845em;
-  padding-bottom: 0.3845em;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Red */
@@ -20123,8 +20123,8 @@ ol.ui.horizontal.list li:before,
   .ui.grid > .doubling.row > .column,
   .ui.doubling.grid > .row > .column {
     display: inline-block !important;
-    padding-top: 0.3845em !important;
-    padding-bottom: 0.3845em !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     box-shadow: none !important;
     margin: 0em;
   }
@@ -20231,8 +20231,8 @@ ol.ui.horizontal.list li:before,
 
   .ui.grid > .doubling.row > .column,
   .ui.doubling.grid > .row > .column {
-    padding-top: 0.3845em !important;
-    padding-bottom: 0.3845em !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     margin: 0em !important;
     box-shadow: none !important;
   }
@@ -20349,7 +20349,7 @@ ol.ui.horizontal.list li:before,
     width: 100% !important;
     margin: 0em 0em !important;
     box-shadow: none !important;
-    padding: 0.3845em 0.3845em !important;
+    padding: 10px 10px !important;
   }
 
   .ui.stackable.grid:not(.vertically) > .row {
@@ -20369,8 +20369,8 @@ ol.ui.horizontal.list li:before,
 
   .ui.grid .ui.stackable.grid,
   .ui.segment:not(.vertical) .ui.stackable.page.grid {
-    margin-left: -0.3845em !important;
-    margin-right: -0.3845em !important;
+    margin-left: -10px !important;
+    margin-right: -10px !important;
   }
 
   /* Divided Stackable */
@@ -20395,8 +20395,8 @@ ol.ui.horizontal.list li:before,
   .ui.stackable.divided:not(.vertically).grid > .row > .column {
     border-top: 1px solid rgba(34, 36, 38, 0.15);
     box-shadow: none !important;
-    padding-top: 0.769em !important;
-    padding-bottom: 0.769em !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
 
   .ui.stackable.celled.grid > .row {

@@ -177,7 +177,7 @@ a:hover {
   color: #00a651;
 }
 .color.light-gray {
-  color: #f3f3f3;
+  color: #f7f7f7;
 }
 
 /*loader*/
@@ -443,7 +443,7 @@ a:hover {
   display: inline-block;
   position: absolute;
   width: 100%;
-  background-color: #f3f3f3;
+  background-color: #f7f7f7;
 }
 .aggregate-chart .column.down:after, .aggregate-chart .column.up:after {
   border-left-width: 15px;
@@ -456,7 +456,7 @@ a:hover {
   position: absolute;
   top: 0px;
   content: '';
-  color: #f3f3f3;
+  color: #f7f7f7;
 }
 .aggregate-chart .column.up:after {
   border-right-width: 0;
@@ -592,13 +592,13 @@ a:hover {
   border-color: #aeaeae;
 }
 .fintech > .ui.content.container {
-  padding: 16px 0 20px 0;
+  padding: 20px 0;
   max-width: 1200px !important;
   position: relative;
 }
 .fintech .column > .content {
   background-color: #fff;
-  padding: 22px;
+  padding: 20px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
@@ -891,7 +891,6 @@ a:hover {
 }
 .fintech .page.filters {
   width: 250px;
-  padding-top: 4px;
 }
 .fintech .page.filters .ui.container {
   background-color: #fff;
@@ -981,7 +980,7 @@ a:hover {
 .fintech .ui[class*="content container"] .content-holder .sidebar-toggler-arrow {
   font-size: 1.23077rem;
   cursor: pointer;
-  background: #d4d2d2;
+  background: #cdcdcd;
   -moz-border-radius: 0 4px 4px 0;
   -webkit-border-radius: 0;
   border-radius: 0 4px 4px 0;
@@ -1237,6 +1236,22 @@ a:hover {
   border-right: 7px solid #ff333a;
   left: -6px;
 }
+.fintech .grid.home .watchlist .header {
+  margin: -20px -20px 0;
+  padding: 14px 20px 12px 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.fintech .grid.home .watchlist .row {
+  border-top: 1px solid #ededed;
+  padding: 10px 0;
+}
+.fintech .grid.home .watchlist .row .sector {
+  padding: 2px 0 0;
+}
+.fintech .grid.home .watchlist .row .value {
+  padding: 4px 0 0;
+}
 
 .consecutive-rally .fa-check-circle {
   font-size: 1.23077rem;
@@ -1281,7 +1296,7 @@ a:hover {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  background-color: #0aada6;
+  background-color: #4faec5;
   padding: 2px 5px;
   color: #fff;
   position: relative;
@@ -1296,7 +1311,7 @@ a:hover {
   display: inline-block;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid #0aada6;
+  border-left: 5px solid #4faec5;
   border-left-width: 10px;
 }
 .fintech .ui.table tr.highlight .today:first-child span:after {
@@ -1313,7 +1328,7 @@ a:hover {
   border-radius: 2px;
 }
 .fintech .ui.table tr.expanded td {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
   background-color: #f7f7f7;
 }
 
@@ -1601,9 +1616,4 @@ footer {
 footer .outer {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.ui.grid > .column:not(.row) {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }

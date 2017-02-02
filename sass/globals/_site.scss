@@ -66,14 +66,14 @@
     }
 
     > .ui.content.container {
-        padding: 16px 0 20px 0;
+        padding: 20px 0;
         max-width: 1200px !important;
         position: relative;
     }
 
     .column > .content {
         background-color: #fff;
-        padding: 22px;
+        padding: 20px;
 
         @include border-radius(6px);
 
@@ -81,7 +81,7 @@
 
         &.event-aggregate-chart {
             > .row {
-                border: 1px solid $borderColor;
+                border: 1px solid $border-color;
 
                 &.head {
                     height: 40px;
@@ -185,7 +185,7 @@
                     border-bottom: 0;
 
                     + .row {
-                        border-bottom: 1px solid $borderColor;
+                        border-bottom: 1px solid $border-color;
                     }
                 }
 
@@ -234,7 +234,7 @@
 
     .question[class*="page"] {
         padding: 15px 0;
-        background-color: $primaryColor;
+        background-color: $primary-color;
 
         @include box-shadow(0 0 20px -10px #000);
 
@@ -310,7 +310,7 @@
             @include transition(all 0.5s ease-in-out);
 
             &.active {
-                background-color: $secondaryColor;
+                background-color: $secondary-color;
                 cursor: pointer;
                 color: #000;
             }
@@ -400,7 +400,6 @@
 
     .page.filters {
         width: 250px;
-        padding-top: 4px;
 
         .ui.container {
             background-color: #fff;
@@ -510,7 +509,7 @@
             .sidebar-toggler-arrow {
                 font-size: rem(16);
                 cursor: pointer;
-                background: #d4d2d2;
+                background: $dark-gray;
 
                 @include border-radius(0 4px 4px 0);
 
@@ -833,6 +832,30 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .grid.home {
+        .watchlist {
+            .header {
+                margin: -20px -20px 0;
+                padding: 14px 20px 12px 20px;
+                font-size: 15px;
+                font-weight: $font-weight-medium;
+            }
+
+            .row {
+                border-top: 1px solid $border-color;
+                padding: 10px 0;
+
+                .sector {
+                    padding: 2px 0 0;
+                }
+
+                .value {
+                    padding: 4px 0 0;
                 }
             }
         }

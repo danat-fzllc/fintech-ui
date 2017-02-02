@@ -1,5 +1,5 @@
 .ui.checkbox input:checked:focus ~ .box:after, .ui.checkbox input:checked:focus ~ label:after, .ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:after, .ui.checkbox input:not([type=radio]):indeterminate:focus ~ label:after {
-    color: $secondaryColor;
+    color: $secondary-color;
 }
 
 .ui.search.selection.dropdown > input.search {

@@ -3,5 +3,5 @@
 *******************************/
 @emSize   : 13px;
 @fontSize : 13px;
-@gutterWidth: 0.769em;
-@rowSpacing: 0.769em;
+@gutterWidth: 20px;
+@rowSpacing: 20px;
