@@ -82,6 +82,16 @@
     to {}
 }
 
+@keyframes move-up {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
 $icons: sprite-map("icons/*.png", $layout: smart);
 $icons-2x: sprite-map("icons-2x/*.png", $layout: smart);
 
