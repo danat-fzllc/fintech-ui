@@ -958,6 +958,9 @@
                         }
 
                         .chart {
+                            -webkit-animation: move-up 2s linear;
+                            animation: move-up 2s linear;
+
                             span {
                                 background-color: $heatGreen;
                             }
@@ -980,6 +983,8 @@
                         .chart {
                             bottom: 5px;
                             top: auto;
+                            -webkit-animation: move-down 2s linear;
+                            animation: move-down 2s linear;
 
                             span {
                                 background-color: $heatRed;
