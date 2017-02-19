@@ -118,6 +118,19 @@ h1, h2, h3, h4, h5 {
   text-indent: 0.46154rem;
 }
 
+.ui.breadcrumb {
+  background-color: #fff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  padding: 12px;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
 /*color scale*/
 .color-scale {
   height: 5px;
@@ -1030,7 +1043,7 @@ h1, h2, h3, h4, h5 {
   display: none;
 }
 .fintech .ui[class*="content container"].no-side-bar .column > h2 {
-  padding-left: 0;
+  padding-left: 20px;
 }
 .fintech .ui[class*="content container"].no-side-bar .content-holder {
   width: 100% !important;

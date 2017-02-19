@@ -15,6 +15,18 @@
     text-indent: rem(6);
 }
 
+.ui.breadcrumb {
+    background-color: #fff;
+
+    @include border-radius(6px);
+
+    @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));
+
+    padding: 12px;
+    width: 100%;
+    margin: 0 0 20px;
+}
+
 /*color scale*/
 .color-scale {
     height: 5px;
