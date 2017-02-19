@@ -106,6 +106,14 @@
     &.light-gray {
         color: $light-gray;
     }
+
+    &.primary {
+        color: $primary-color;
+    }
+
+    &.secondary {
+        color: $secondary-color;
+    }
 }
 
 /*loader*/
@@ -410,7 +418,7 @@
                     height: 0px;
                     border-left-color: $green;
                     border-right: 0;
-                    right: -15px;
+                    left: 100%;
                 }
 
                 .value {
@@ -478,7 +486,7 @@
                     height: 0px;
                     border-right-color: $red;
                     border-left: 0;
-                    left: -15px;
+                    right: 100%;
                 }
 
                 .value {
