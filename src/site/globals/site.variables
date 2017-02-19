@@ -11,6 +11,7 @@
 @fontSize : 13px;
 @primaryColor        : #227a4f;
 @secondaryColor      : #eaae00;
+@linkColor           : #4faec5;
 
 
 

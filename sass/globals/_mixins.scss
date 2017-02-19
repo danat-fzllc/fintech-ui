@@ -82,23 +82,33 @@
     to {}
 }
 
-@keyframes move-up {
+@-webkit-keyframes animate-height {
     0% {
-        top: 80%;
+        height: 0;
     }
 
     100% {
-        top: 3px;
+        visibility: visible;
+    }
+}
+
+@keyframes move-up {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: 0px;
     }
 }
 
 @keyframes move-down {
     0% {
-        bottom: 80%;
+        bottom: 100%;
     }
 
     100% {
-        bottom: 5px;
+        bottom: 0px;
     }
 }
 

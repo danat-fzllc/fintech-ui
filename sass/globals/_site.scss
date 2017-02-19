@@ -958,11 +958,10 @@
                         }
 
                         .chart {
-                            -webkit-animation: move-up 2s linear;
-                            animation: move-up 2s linear;
-
                             span {
                                 background-color: $heatGreen;
+                                -webkit-animation: animate-height 0.5s linear;
+                                animation: animate-height 0.5s linear;
                             }
                         }
                     }
@@ -983,12 +982,12 @@
                         .chart {
                             bottom: 5px;
                             top: auto;
-                            -webkit-animation: move-down 2s linear;
-                            animation: move-down 2s linear;
 
                             span {
                                 background-color: $heatRed;
                                 height: 9px;
+                                -webkit-animation: animate-height 0.5s linear;
+                                animation: animate-height 0.5s linear;
 
                                 + span {
                                     height: 6px;
