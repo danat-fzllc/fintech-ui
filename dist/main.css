@@ -883,6 +883,7 @@ h1, h2, h3, h4, h5 {
 }
 .fintech .question[class*="page"] .menu {
   font-size: 12px;
+  width: auto;
 }
 .fintech .question[class*="page"] .ui.button {
   display: inline-block;
@@ -1599,6 +1600,7 @@ h1, h2, h3, h4, h5 {
 }
 .fintech .ui.dropdown .menu > .item {
   font-size: inherit;
+  white-space: nowrap;
 }
 .fintech .ui.multiple.dropdown > .label {
   box-shadow: none;
