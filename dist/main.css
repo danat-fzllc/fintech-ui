@@ -52,6 +52,10 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+form {
+  margin: 0;
+}
+
 *[class*="left aligned"] {
   text-align: left;
 }
@@ -116,6 +120,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
   color: #000000;
   font-size: 1.69231rem;
+  /*padding-top: 3px;*/
 }
 
 .anchor-canvas {
@@ -127,16 +132,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .ui.breadcrumb {
-  background-color: #fff;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  padding: 12px;
   width: 100%;
-  margin: 0 0 20px;
+  max-width: 1200px;
+  text-align: left;
+  padding: 7px 0 0 0;
+  position: relative;
+  bottom: -6px;
+  z-index: 100;
 }
 
 /*color scale*/
@@ -589,6 +591,10 @@ h1, h2, h3, h4, h5 {
 + .fa-circle {
   margin: 0 0 0 4px;
 }
+.fintech .consecutive-calendar .column > h2 {
+  width: 100%;
+  padding-top: 3px;
+}
 .fintech .calendar-table-view-btns {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -597,8 +603,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 3px;
   font-size: 1.15385rem;
   display: inline-block;
-  position: relative;
-  top: 9px;
+  float: right;
 }
 .fintech .calendar-table-view-btns a {
   display: inline-block;
@@ -832,7 +837,7 @@ h1, h2, h3, h4, h5 {
   top: 34%;
 }
 .fintech .question[class*="page"] {
-  padding: 15px 0;
+  padding: 12px 0;
   background-color: #4faec5;
   -moz-box-shadow: 0 0 20px -10px #000;
   -webkit-box-shadow: 0 0 20px -10px #000;
@@ -846,7 +851,7 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 .fintech .question[class*="page"] h1 {
-  font-size: 1.84615rem;
+  font-size: 1.46154rem;
   line-height: 3.38462rem;
   font-weight: normal;
   color: #fff;
@@ -871,8 +876,8 @@ h1, h2, h3, h4, h5 {
   background-color: #288aa1;
   border-color: transparent;
   padding: 0;
-  margin: 5px 0 0 0;
-  height: 34px;
+  margin: 8px 0 0 0;
+  height: 28px;
   width: auto;
   color: #fff;
   border-color: #288aa1 !important;
@@ -889,13 +894,14 @@ h1, h2, h3, h4, h5 {
   display: inline-block;
   margin: 0 0 0 2px;
   position: relative;
-  top: -4px;
+  top: -2px;
   color: #000;
-  padding: 12px 18px;
-  font-size: 1.23077rem;
-  -moz-border-radius: 7.69231rem;
-  -webkit-border-radius: 7.69231rem;
-  border-radius: 7.69231rem;
+  padding: 7px 14px 0 12px;
+  height: 28px;
+  font-size: 1.07692rem;
+  -moz-border-radius: 0.46154rem;
+  -webkit-border-radius: 0.46154rem;
+  border-radius: 0.46154rem;
   background-color: #dadada;
   cursor: default;
   color: #a7a5a5;
@@ -911,7 +917,7 @@ h1, h2, h3, h4, h5 {
 }
 .fintech .question[class*="page"] .share {
   position: absolute;
-  top: 45%;
+  top: 39%;
   right: 25px;
   color: #fff;
   cursor: pointer;
@@ -1092,9 +1098,6 @@ h1, h2, h3, h4, h5 {
 }
 .fintech .ui[class*="content container"].no-side-bar .filters {
   display: none;
-}
-.fintech .ui[class*="content container"].no-side-bar .column > h2 {
-  padding-left: 20px;
 }
 .fintech .ui[class*="content container"].no-side-bar .content-holder {
   width: 100% !important;
