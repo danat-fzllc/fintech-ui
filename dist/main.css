@@ -609,12 +609,15 @@ form {
 }
 .fintech .calendar-table-view-btns a {
   display: inline-block;
-  width: 40px;
-  height: 30px;
-  line-height: 30px;
+  width: 35px;
+  height: 28px;
+  line-height: 28px;
   float: left;
   text-align: center;
   position: relative;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
 }
 .fintech .calendar-table-view-btns a:hover {
   color: #4faec5;
@@ -644,7 +647,7 @@ form {
   display: inline-block;
   height: 14px;
   width: 15px;
-  left: 6px;
+  left: 4px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar i {
@@ -688,8 +691,8 @@ form {
   display: inline-block;
   height: 14px;
   width: 15px;
-  top: 2px;
-  right: 6px;
+  top: 1px;
+  right: 4px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table i {

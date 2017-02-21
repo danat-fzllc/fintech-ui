@@ -26,12 +26,14 @@
 
         a {
             display: inline-block;
-            width: 40px;
-            height: 30px;
-            line-height: 30px;
+            width: 35px;
+            height: 28px;
+            line-height: 28px;
             float: left;
             text-align: center;
             position: relative;
+
+            @include border-radius(30px);
 
             &:hover {
                 color: $primary-color;
@@ -57,7 +59,7 @@
             i {
                 @include use-sprite(calendar_blue);
 
-                left: 6px;
+                left: 4px;
             }
 
             &.active {
@@ -76,8 +78,8 @@
             i {
                 @include use-sprite(table_blue);
 
-                top: 2px;
-                right: 6px;
+                top: 1px;
+                right: 4px;
             }
 
             &.active {
