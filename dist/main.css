@@ -131,6 +131,10 @@ form {
   text-indent: 0.46154rem;
 }
 
+.ui.segment {
+  border: 0;
+}
+
 .ui.breadcrumb {
   width: 100%;
   max-width: 1200px;
@@ -1438,36 +1442,11 @@ form {
 .fintech .grid.home .watchlist .row .value {
   padding: 4px 0 0;
 }
-.fintech .grid.home .notification-feeds .feed .content {
+.fintech .grid.home .notification-feeds .feed .segment {
   position: relative;
   padding: 14px 20px 16px 20px;
 }
-.fintech .grid.home .notification-feeds .feed .content .chart {
-  position: absolute;
-  left: 6px;
-  top: 3px;
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-}
-.fintech .grid.home .notification-feeds .feed .content .chart span {
-  width: 2px;
-  display: inline-block;
-  height: 3px;
-  float: left;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.fintech .grid.home .notification-feeds .feed .content .chart span + span {
-  left: 4px;
-  height: 6px;
-}
-.fintech .grid.home .notification-feeds .feed .content .chart span + span + span {
-  left: 8px;
-  height: 9px;
-}
-.fintech .grid.home .notification-feeds .feed .content .time {
+.fintech .grid.home .notification-feeds .feed .segment .time {
   position: absolute;
   right: 12px;
   top: 8px;
@@ -1500,47 +1479,9 @@ form {
 .fintech .grid.home .notification-feeds .feed.bold h2 {
   font-size: 26px;
 }
-.fintech .grid.home .notification-feeds .feed.up .content:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2px;
-  bottom: 0;
-  background-color: #26a046;
-  content: '';
-}
-.fintech .grid.home .notification-feeds .feed.up .content .chart span {
-  background-color: #26a046;
-  -webkit-animation: animate-height 0.5s linear;
-  animation: animate-height 0.5s linear;
-}
-.fintech .grid.home .notification-feeds .feed.down .content:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2px;
-  bottom: 0;
-  background-color: #ee0101;
-  content: '';
-}
-.fintech .grid.home .notification-feeds .feed.down .content .chart {
-  bottom: 5px;
-  top: auto;
-}
-.fintech .grid.home .notification-feeds .feed.down .content .chart span {
-  background-color: #ee0101;
-  height: 9px;
-  -webkit-animation: animate-height 0.5s linear;
-  animation: animate-height 0.5s linear;
-}
-.fintech .grid.home .notification-feeds .feed.down .content .chart span + span {
-  height: 6px;
-}
-.fintech .grid.home .notification-feeds .feed.down .content .chart span + span + span {
-  height: 3px;
-}
-.fintech .grid.home .notification-feeds .feed .feed-image img {
+.fintech .grid.home .notification-feeds .feed .image {
   max-width: 100%;
+  display: block;
 }
 .fintech .grid.home .questions .row {
   margin: -20px -20px 0 -20px;

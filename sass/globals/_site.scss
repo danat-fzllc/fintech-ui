@@ -956,38 +956,9 @@
 
         .notification-feeds {
             .feed {
-                .content {
+                .segment {
                     position: relative;
                     padding: 14px 20px 16px 20px;
-
-                    .chart {
-                        position: absolute;
-                        left: 6px;
-                        top: 3px;
-                        display: inline-block;
-                        width: 12px;
-                        height: 12px;
-
-                        span {
-                            width: 2px;
-                            display: inline-block;
-                            height: 3px;
-                            float: left;
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-
-                            + span {
-                                left: 4px;
-                                height: 6px;
-
-                                + span {
-                                    left: 8px;
-                                    height: 9px;
-                                }
-                            }
-                        }
-                    }
 
                     .time {
                         position: absolute;
@@ -1039,66 +1010,9 @@
                     }
                 }
 
-                &.up {
-                    .content {
-                        &:after {
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                            width: 2px;
-                            bottom: 0;
-                            background-color: $heatGreen;
-                            content: '';
-                        }
-
-                        .chart {
-                            span {
-                                background-color: $heatGreen;
-                                -webkit-animation: animate-height 0.5s linear;
-                                animation: animate-height 0.5s linear;
-                            }
-                        }
-                    }
-                }
-
-                &.down {
-                    .content {
-                        &:after {
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                            width: 2px;
-                            bottom: 0;
-                            background-color: $heatRed;
-                            content: '';
-                        }
-
-                        .chart {
-                            bottom: 5px;
-                            top: auto;
-
-                            span {
-                                background-color: $heatRed;
-                                height: 9px;
-                                -webkit-animation: animate-height 0.5s linear;
-                                animation: animate-height 0.5s linear;
-
-                                + span {
-                                    height: 6px;
-
-                                    + span {
-                                        height: 3px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .feed-image {
-                    img {
-                        max-width: 100%;
-                    }
+                .image {
+                    max-width: 100%;
+                    display: block;
                 }
             }
         }
