@@ -944,6 +944,26 @@
                 border-top: 1px solid $border-color;
                 padding: 10px 0;
 
+                .name {
+                    strong {
+                        position: relative;
+
+                        .count {
+                            position: absolute;
+                            background-color: #4fadc5;
+                            color: #fff;
+                            border-radius: 30px;
+                            padding: 3px 6px 3px 4px;
+                            line-height: 12px;
+                            font-size: 12px;
+                            left: 100%;
+                            margin: 0 0 0 5px;
+                            font-weight: normal;
+                            text-align: center;
+                        }
+                    }
+                }
+
                 .sector {
                     padding: 2px 0 0;
                 }
@@ -971,10 +991,13 @@
                     }
                 }
 
-                h2 {
+                .feed-head {
                     font-size: 18px;
                     padding-right: 60px;
                     position: relative;
+                    color: #000;
+                    line-height: normal;
+                    cursor: default;
 
                     a {
                         color: #000;
@@ -986,27 +1009,26 @@
                 }
 
                 &.regular {
-                    h2 {
-                        font-weight: normal;
-                    }
+                    .feed-head {}
                 }
 
                 &.semi-bold {
-                    h2 {
+                    .feed-head {
                         font-size: 22px;
+                        font-weight: bold;
                     }
                 }
 
                 &.light {
-                    h2 {
-                        font-weight: normal;
+                    .feed-head {
                         font-size: 22px;
                     }
                 }
 
                 &.bold {
-                    h2 {
+                    .feed-head {
                         font-size: 26px;
+                        font-weight: bold;
                     }
                 }
 
