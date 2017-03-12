@@ -93,7 +93,7 @@ $(resize).resizable({
          
          // this accounts for padding in the panels + 
          // borders, you could calculate this using jQuery
-         var padding = 20; 
+         var padding = 12; 
          
          // this accounts for some lag in the ui.size value, if you take this away 
          // you'll get some instable behaviour

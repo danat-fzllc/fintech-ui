@@ -1166,7 +1166,7 @@ form {
 }
 .fintech .ui[class*="content container"] .content-holder {
   height: 100%;
-  width: 930px;
+  width: 938px;
   float: right;
   position: relative;
 }
@@ -1181,7 +1181,8 @@ form {
   top: 10px;
   height: 25px;
   width: 15px;
-  left: -20px;
+  left: -11px;
+  z-index: 3;
 }
 .fintech .ui[class*="content container"] .content-holder .sidebar-toggler-arrow:before {
   color: #000;
