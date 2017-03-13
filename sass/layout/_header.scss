@@ -7,6 +7,10 @@
         .outer {
             max-width: 1200px;
             margin: 0 auto;
+
+            @include breakpoint(laptops) {
+                width: 96%;
+            }
         }
 
         .menu-nav {

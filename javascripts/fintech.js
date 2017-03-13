@@ -23,7 +23,7 @@ $('.ui.dropdown')
 // clear the generated semantic-ui menu
 var $menu = $('<div/>').addClass('menu');
 $('.optgroups').each(function(){
-   debugger
+   //debugger
    var parentthis=$(this);
    $(this).find('optgroup').each(function (index, element) {
       $menu.append('<div class="header ui horizontal divider">' + element.label + '</div>')
