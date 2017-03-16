@@ -787,6 +787,11 @@ form {
   max-width: 1200px !important;
   position: relative;
 }
+@media (max-width: 1024px) {
+  .fintech > .ui.content.container {
+    width: 97%;
+  }
+}
 .fintech .column > .content {
   background-color: #fff;
   padding: 20px;
@@ -812,6 +817,11 @@ form {
   height: 70px;
   width: 200px;
 }
+@media (max-width: 1024px) {
+  .fintech .column > .content.event-aggregate-chart > .row > .column {
+    width: 30%;
+  }
+}
 .fintech .column > .content.event-aggregate-chart > .row > .column:first-child {
   padding: 35px 0 0 22px;
   text-align: left;
@@ -821,6 +831,11 @@ form {
   width: auto;
   border: none;
   padding: 0 200px;
+}
+@media (max-width: 1024px) {
+  .fintech .column > .content.event-aggregate-chart > .row > .column:last-child {
+    padding: 0 30%;
+  }
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column.no-border {
   border: none;
@@ -1085,6 +1100,11 @@ form {
 .fintech .page.filters {
   width: 250px;
 }
+@media (max-width: 1024px) {
+  .fintech .page.filters {
+    width: 21%;
+  }
+}
 .fintech .page.filters .ui.container {
   background-color: #fff;
   position: relative;
@@ -1166,7 +1186,7 @@ form {
 }
 .fintech .ui[class*="content container"] .content-holder {
   height: 100%;
-  width: 930px;
+  width: 938px;
   float: right;
   position: relative;
 }
@@ -1181,7 +1201,8 @@ form {
   top: 10px;
   height: 25px;
   width: 15px;
-  left: -20px;
+  left: -11px;
+  z-index: 3;
 }
 .fintech .ui[class*="content container"] .content-holder .sidebar-toggler-arrow:before {
   color: #000;
@@ -1192,6 +1213,11 @@ form {
 .fintech .ui[class*="content container"] .content-holder .sidebar-toggler-arrow:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
+}
+@media (max-width: 1024px) {
+  .fintech .ui[class*="content container"] .content-holder {
+    width: 78%;
+  }
 }
 .fintech .ui[class*="content container"].no-side-bar .filters {
   display: none;
@@ -1749,6 +1775,11 @@ form {
 .fintech > .top .outer {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .fintech > .top .outer {
+    width: 96%;
+  }
 }
 .fintech > .top .menu-nav {
   padding: 0 20px;

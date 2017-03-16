@@ -167,6 +167,10 @@
         padding: 20px 0;
         max-width: 1200px !important;
         position: relative;
+
+        @include breakpoint(laptops) {
+            width: 97%;
+        }
     }
 
     .column > .content {
@@ -195,6 +199,11 @@
                     height: 70px;
                     width: 200px;
 
+                    @include breakpoint(laptops) {
+                        width: 30%;
+                    }
+
+
                     &:first-child {
                         padding: 35px 0 0 22px;
                         text-align: left;
@@ -205,6 +214,10 @@
                         width: auto;
                         border: none;
                         padding: 0 200px;
+
+                        @include breakpoint(laptops) {
+                            padding: 0 30%;
+                        }
                     }
 
                     &.no-border {
@@ -501,6 +514,11 @@
     .page.filters {
         width: 250px;
 
+        @include breakpoint(laptops) {
+            width: 21%;
+        }
+
+
         .ui.container {
             background-color: #fff;
             position: relative;
@@ -602,7 +620,7 @@
     .ui[class*="content container"] {
         .content-holder {
             height: 100%;
-            width: 930px;
+            width: 938px;
             float: $right;
             position: relative;
 
@@ -617,7 +635,8 @@
                 top: 10px;
                 height: 25px;
                 width: 15px;
-                left: -20px;
+                left: -11px;
+                z-index: 3;
 
                 &:before {
                     color: #000;
@@ -629,6 +648,10 @@
                 &:hover {
                     @include opacity(0.6);
                 }
+            }
+
+            @include breakpoint(laptops) {
+                width: 78%;
             }
         }
 
