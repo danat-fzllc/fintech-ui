@@ -42,6 +42,7 @@ Version: 0.0.1;
 body {
   font-size: inherit;
   color: #585858;
+  direction: rtl;
 }
 
 a:hover {

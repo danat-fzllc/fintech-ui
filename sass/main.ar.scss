@@ -1,0 +1,28 @@
+/*
+
+Fintech Sass Theme
+Authror: Rakesh - Danat FZ LLC
+Version: 0.0.1;
+*/
+@import "compass/css3";
+
+/*BASE - Base styles, variables, mixins, etc*/
+@import "globals/variables.scss";
+@import "globals/mixins.scss";
+@import "globals/base.ar.scss";
+@import "globals/common.scss";
+@import "globals/icons.scss";
+@import "globals/site.scss";
+
+/*Elements - Individual site elements*/
+@import "elements/buttons.scss";
+@import "elements/table.scss";
+
+/*Modules - Individual site modules*/
+@import "modules/dropdown.scss";
+@import "modules/checkbox.scss";
+
+/*Layout - Page layout styles*/
+@import "layout/header.scss";
+@import "layout/footer.scss";
+@import "layout/grid.scss";

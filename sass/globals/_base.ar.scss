@@ -1,0 +1,79 @@
+body {
+    font-size: inherit;
+    color: #585858;
+    direction: rtl;
+}
+
+a {
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+*[class*="left aligned"] {
+    text-align: left;
+}
+
+*[class*="center aligned"] {
+    text-align: center;
+}
+
+*[class*="right aligned"] {
+    text-align: right;
+}
+
+*[class*="fluid"] {
+    width: 100%;
+}
+
+*[class*="left floated"] {
+    float: $left;
+}
+
+*[class*="right floated"] {
+    float: $right;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.clearfix {
+    clear: both;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+}
