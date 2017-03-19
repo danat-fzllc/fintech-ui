@@ -79,13 +79,12 @@
             margin: 14px 18px 0 0;
         }
 
-        .sign-in {
-            display: inline-block;
-        }
+        .sign-in {}
 
         a {
             color: lighten($black, 50%);
             padding: 17px 15px 0;
+            display: inline-block;
 
             &:hover {
                 color: $black;

@@ -78,9 +78,7 @@ $(window).load(function(){
 $(document).ready(function() {
 
 
-
-
-
+if ($(window).width() > 1000) {   
 var resize= $(".resize-left-column");
 var containerWidth = $("#container").width();
    
@@ -103,7 +101,7 @@ $(resize).resizable({
          $(".resize-right-column").width(containerWidth - currentWidth - padding);            
      }
 });
-
+}
 
 });
 });

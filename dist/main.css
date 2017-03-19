@@ -795,7 +795,7 @@ form {
 }
 @media (max-width: 1024px) {
   .fintech > .ui.content.container {
-    width: 97%;
+    width: 94%;
   }
 }
 .fintech .column > .content {
@@ -954,6 +954,11 @@ form {
 .fintech.scroll .question.page .share {
   top: 34%;
 }
+@media (max-width: 1024px) {
+  .fintech.scroll .question.page .share {
+    top: 60%;
+  }
+}
 .fintech .question[class*="page"] {
   padding: 12px 0;
   background-color: #4faec5;
@@ -967,6 +972,11 @@ form {
 .fintech .question[class*="page"] .outer {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .fintech .question[class*="page"] .outer {
+    width: 94%;
+  }
 }
 .fintech .question[class*="page"] h1 {
   font-size: 1.46154rem;
@@ -1044,6 +1054,11 @@ form {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
+@media (max-width: 1024px) {
+  .fintech .question[class*="page"] .share {
+    top: 64%;
+  }
+}
 .fintech .question[class*="page"] .share:hover > i {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -1108,7 +1123,8 @@ form {
 }
 @media (max-width: 1024px) {
   .fintech .page.filters {
-    width: 21%;
+    width: 100%;
+    margin-bottom: 3%;
   }
 }
 .fintech .page.filters .ui.container {
@@ -1221,8 +1237,13 @@ form {
   opacity: 0.6;
 }
 @media (max-width: 1024px) {
+  .fintech .ui[class*="content container"] .content-holder .sidebar-toggler-arrow {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
   .fintech .ui[class*="content container"] .content-holder {
-    width: 78%;
+    width: 100%;
   }
 }
 .fintech .ui[class*="content container"].no-side-bar .filters {
@@ -1475,7 +1496,7 @@ form {
   position: absolute;
   background-color: #4fadc5;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 5px;
   padding: 3px 5px 3px 5px;
   line-height: 12px;
   font-size: 12px;
@@ -1511,10 +1532,12 @@ form {
   line-height: normal;
   cursor: default;
 }
-.fintech .grid.home .notification-feeds .feed .feed-head a {
-  color: #000;
+.fintech .grid.home .notification-feeds .feed .details {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-left: 6px;
 }
-.fintech .grid.home .notification-feeds .feed .feed-head a:hover {
+.fintech .grid.home .notification-feeds .feed .details:hover {
   color: #f0ac09;
 }
 .fintech .grid.home .notification-feeds .feed.semi-bold .feed-head {
@@ -1711,6 +1734,15 @@ form {
   color: #000;
   font-weight: 700;
 }
+@media (max-width: 1024px) {
+  .fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .text {
+    display: inline-block;
+    width: 70px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
 .fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .default.text {
   color: #000;
 }
@@ -1877,12 +1909,10 @@ form {
     width: 118.5px;
   }
 }
-.fintech > .top .sign-in {
-  display: inline-block;
-}
 .fintech > .top a {
   color: gray;
   padding: 17px 15px 0;
+  display: inline-block;
 }
 .fintech > .top a:hover {
   color: #000;

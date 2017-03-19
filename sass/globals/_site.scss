@@ -173,7 +173,7 @@
         position: relative;
 
         @include breakpoint(laptops) {
-            width: 97%;
+            width: 94%;
         }
     }
 
@@ -343,6 +343,10 @@
 
             .share {
                 top: 34%;
+
+                @include breakpoint(laptops) {
+                    top: 60%;
+                }
             }
         }
     }
@@ -360,6 +364,10 @@
         .outer {
             max-width: 1200px;
             margin: 0 auto;
+
+            @include breakpoint(laptops) {
+                width: 94%;
+            }
         }
 
         h1 {
@@ -441,6 +449,11 @@
             cursor: pointer;
             font-size: 17px;
 
+            @include breakpoint(laptops) {
+                top: 64%;
+            }
+
+
             @include border-radius(3px);
 
             &:hover {
@@ -519,7 +532,8 @@
         width: 250px;
 
         @include breakpoint(laptops) {
-            width: 21%;
+            width: 100%;
+            margin-bottom: 3%;
         }
 
 
@@ -652,10 +666,14 @@
                 &:hover {
                     @include opacity(0.6);
                 }
+
+                @include breakpoint(laptops) {
+                    display: none;
+                }
             }
 
             @include breakpoint(laptops) {
-                width: 78%;
+                width: 100%;
             }
         }
 
@@ -979,7 +997,7 @@
                             position: absolute;
                             background-color: #4fadc5;
                             color: #fff;
-                            border-radius: 30px;
+                            border-radius: 5px;
                             padding: 3px 5px 3px 5px;
                             line-height: 12px;
                             font-size: 12px;
@@ -1025,13 +1043,15 @@
                     color: #000;
                     line-height: normal;
                     cursor: default;
+                }
 
-                    a {
-                        color: #000;
+                .details {
+                    font-weight: normal;
+                    font-size: 1rem;
+                    margin-left: 6px;
 
-                        &:hover {
-                            color: $secondary-color;
-                        }
+                    &:hover {
+                        color: $secondary-color;
                     }
                 }
 
