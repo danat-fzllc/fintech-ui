@@ -1,7 +1,13 @@
+/*element values*/
+$left: right;
+$right: left;
+
 body {
+    font-family: $font-ar;
     font-size: inherit;
     color: #585858;
     direction: rtl;
+    line-height: 2rem;
 }
 
 a {
@@ -12,6 +18,8 @@ a {
 
 h1, h2, h3, h4, h5 {
     margin: 0;
+    font-family: $font-ar;
+    line-height: normal;
 }
 
 form {
@@ -19,7 +27,7 @@ form {
 }
 
 *[class*="left aligned"] {
-    text-align: left;
+    text-align: right;
 }
 
 *[class*="center aligned"] {
@@ -27,7 +35,7 @@ form {
 }
 
 *[class*="right aligned"] {
-    text-align: right;
+    text-align: left;
 }
 
 *[class*="fluid"] {

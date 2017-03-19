@@ -1,0 +1,117 @@
+.ui.checkbox input:checked:focus ~ .box:after, .ui.checkbox input:checked:focus ~ label:after, .ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:after, .ui.checkbox input:not([type=radio]):indeterminate:focus ~ label:after {
+    color: $secondary-color;
+}
+
+.ui.search.selection.dropdown > input.search {
+    padding: 6px 15px;
+}
+
+.ui.selection.dropdown {
+    > .delete.icon, .dropdown.icon, .search.icon {
+        top: 0;
+        bottom: 0;
+        line-height: normal;
+        display: inline-block;
+        height: 11px;
+        padding: 0;
+        margin: auto;
+        left: 10px;
+    }
+}
+
+.ui.dropdown {
+    > .dropdown.icon {
+        font-size: 1rem;
+    }
+}
+
+.fintech {
+    .question[class*="page"] {
+        .question > .dropdown {
+            min-width: 0;
+            min-height: 0;
+            padding: 2px 8px 2px 26px;
+            background-color: #288aa1;
+            line-height: 1.8rem;
+            color: #fff;
+
+            > .text:not(.default) {
+                color: #fff;
+            }
+        }
+    }
+
+    .ui.dropdown .menu {
+        > .header {
+            margin: 0;
+            padding: 1rem rem(10) 0.75rem;
+            cursor: default;
+            border: 0;
+
+            &:before {
+                display: none;
+            }
+
+            &:after {
+                width: 100%;
+            }
+        }
+
+        > .item {
+            font-size: inherit;
+            white-space: nowrap;
+        }
+    }
+
+    .ui.multiple.dropdown > .label {
+        box-shadow: none;
+        background-color: #e4e4e4;
+    }
+
+    > .top .country-selection {
+        margin: 8px 0 0 0;
+
+        .ui.selection.dropdown {
+            background-color: #f6f6f6;
+            color: #000;
+
+            @include transition(width, ease 0.5s);
+
+            z-index: 101;
+
+            &.active {
+                min-width: 185px;
+            }
+
+            &:not(.button) > .text {
+                color: #000;
+                font-weight: $font-weight-medium;
+            }
+
+            &:not(.button) > .default.text {
+                color: #000;
+            }
+        }
+    }
+
+    /* Hover */
+
+    .ui.dropdown.multilevel {
+        @include border-radius(6px);
+
+        border: 1px solid transparent;
+
+        .menu {
+            width: 100%;
+        }
+
+        > .dropdown.icon {
+            left: 8px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto 4px;
+            font-size: 1rem;
+        }
+    }
+}

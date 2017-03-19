@@ -119,13 +119,17 @@
         position: absolute;
         font-size: 0.1px;
         display: block;
+
+        @include breakpoint(laptops) {
+            display: none;
+        }
     }
 
     .ui-resizable-e {
         cursor: e-resize;
         width: 10px;
         right: -15px;
-        top: 40px;
+        top: 90px;
         height: 35px;
         width: 15px;
         background: #fff;
@@ -632,7 +636,7 @@
                 @include border-radius(0 4px 4px 0);
 
                 position: absolute;
-                top: 10px;
+                top: 36px;
                 height: 25px;
                 width: 15px;
                 left: -11px;
@@ -976,7 +980,7 @@
                             background-color: #4fadc5;
                             color: #fff;
                             border-radius: 30px;
-                            padding: 3px 6px 3px 4px;
+                            padding: 3px 5px 3px 5px;
                             line-height: 12px;
                             font-size: 12px;
                             left: 100%;

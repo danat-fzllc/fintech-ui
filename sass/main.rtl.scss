@@ -8,21 +8,24 @@ Version: 0.0.1;
 
 /*BASE - Base styles, variables, mixins, etc*/
 @import "globals/variables.scss";
+@import "globals/font.ar.scss";
 @import "globals/mixins.scss";
-@import "globals/base.ar.scss";
+@import "globals/base.rtl.scss";
 @import "globals/common.scss";
+@import "globals/common.rtl.scss";
 @import "globals/icons.scss";
-@import "globals/site.scss";
+@import "globals/site.rtl.scss";
 
 /*Elements - Individual site elements*/
 @import "elements/buttons.scss";
 @import "elements/table.scss";
 
 /*Modules - Individual site modules*/
-@import "modules/dropdown.scss";
+@import "modules/dropdown.rtl.scss";
 @import "modules/checkbox.scss";
 
 /*Layout - Page layout styles*/
 @import "layout/header.scss";
+@import "layout/header.rtl.scss";
 @import "layout/footer.scss";
 @import "layout/grid.scss";

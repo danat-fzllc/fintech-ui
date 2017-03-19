@@ -8,8 +8,36 @@ Version: 0.0.1;
 /* Colors */
 /*Breakpoints*/
 /*Font weight*/
-/*element values*/
 /*fonts*/
+/*Arabic fonts*/
+@font-face {
+  font-family: 'Greta_Arabic_Regular';
+  src: url("themes/default/assets/fonts/Greta_Arabic_Regular.eot");
+  src: url("themes/default/assets/fonts/Greta_Arabic_Regular.eot?#iefix") format("embedded-opentype"), url("themes/default/assets/fonts/Greta_Arabic_Regular.woff2") format("woff2"), url("themes/default/assets/fonts/Greta_Arabic_Regular.woff") format("woff"), url("themes/default/assets/fonts/Greta_Arabic_Regular.ttf") format("truetype"), url("themes/default/assets/fonts/Greta_Arabic_Regular.svg#Greta_Arabic_Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Greta_Arabic_Bold';
+  src: url("themes/default/assets/fonts/Greta_Arabic_Bold.eot");
+  src: url("themes/default/assets/fonts/Greta_Arabic_Bold.eot?#iefix") format("embedded-opentype"), url("themes/default/assets/fonts/Greta_Arabic_Bold.woff2") format("woff2"), url("themes/default/assets/fonts/Greta_Arabic_Bold.woff") format("woff"), url("themes/default/assets/fonts/Greta_Arabic_Bold.ttf") format("truetype"), url("themes/default/assets/fonts/Greta_Arabic_Bold.svg#Greta_Arabic_Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fintech_Arabic_Regular';
+  src: url("themes/default/assets/fonts/Fintech_Arabic_Regular.eot");
+  src: url("themes/default/assets/fonts/Fintech_Arabic_Regular.eot?#iefix") format("embedded-opentype"), url("themes/default/assets/fonts/Fintech_Arabic_Regular.woff2") format("woff2"), url("themes/default/assets/fonts/Fintech_Arabic_Regular.woff") format("woff"), url("themes/default/assets/fonts/Fintech_Arabic_Regular.ttf") format("truetype"), url("themes/default/assets/fonts/Fintech_Arabic_Regular.svg#Fintech_Arabic_Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fintech_Arabic_Bold';
+  src: url("themes/default/assets/fonts/Fintech_Arabic_Bold.eot");
+  src: url("themes/default/assets/fonts/Fintech_Arabic_Bold.eot?#iefix") format("embedded-opentype"), url("themes/default/assets/fonts/Fintech_Arabic_Bold.woff2") format("woff2"), url("themes/default/assets/fonts/Fintech_Arabic_Bold.woff") format("woff"), url("themes/default/assets/fonts/Fintech_Arabic_Bold.ttf") format("truetype"), url("themes/default/assets/fonts/Fintech_Arabic_Bold.svg#Fintech_Arabic_Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 @-webkit-keyframes w70 {
   from {
     width: 0%;
@@ -39,10 +67,13 @@ Version: 0.0.1;
     bottom: 0px;
   }
 }
+/*element values*/
 body {
+  font-family: Fintech_Arabic_Regular;
   font-size: inherit;
   color: #585858;
   direction: rtl;
+  line-height: 2rem;
 }
 
 a:hover {
@@ -51,6 +82,8 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   margin: 0;
+  font-family: Fintech_Arabic_Regular;
+  line-height: normal;
 }
 
 form {
@@ -58,7 +91,7 @@ form {
 }
 
 *[class*="left aligned"] {
-  text-align: left;
+  text-align: right;
 }
 
 *[class*="center aligned"] {
@@ -66,7 +99,7 @@ form {
 }
 
 *[class*="right aligned"] {
-  text-align: right;
+  text-align: left;
 }
 
 *[class*="fluid"] {
@@ -74,11 +107,11 @@ form {
 }
 
 *[class*="left floated"] {
-  float: left;
+  float: right;
 }
 
 *[class*="right floated"] {
-  float: right;
+  float: left;
 }
 
 .relative {
@@ -552,6 +585,443 @@ form {
   padding-left: 10px;
 }
 
+.column > h2 {
+  padding-left: 20px;
+  font-weight: 500;
+  color: #000000;
+  font-size: 1.69231rem;
+  /*padding-top: 3px;*/
+}
+
+.anchor-canvas {
+  padding: 6px 15px;
+}
+
+.indent-6 {
+  text-indent: 0.46154rem;
+}
+
+.ui.segment {
+  border: 0;
+}
+
+.ui.breadcrumb {
+  width: 100%;
+  max-width: 1200px;
+  text-align: right;
+  padding: 13px 0 0 0;
+  position: relative;
+  bottom: -3px;
+  z-index: 100;
+}
+
+/*color scale*/
+.color-scale {
+  height: 5px;
+  position: relative;
+  margin: 8px 36px 20px 30px;
+  text-align: center;
+}
+.color-scale .value {
+  position: absolute;
+  padding: 12px 0 0;
+  font-size: 0.84615rem;
+  font-weight: 500;
+  top: -19px;
+}
+.color-scale .value:before {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  top: -5px;
+}
+.color-scale .value.left {
+  right: -33px;
+}
+.color-scale .value.left:before {
+  right: 33px;
+  top: 14px;
+}
+.color-scale .value.right {
+  left: -30px;
+}
+.color-scale .value.right:before {
+  left: 30px;
+  top: 14px;
+}
+.color-scale .value.no-change {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.color-scale .value.red:before {
+  background-color: #b60101;
+}
+.color-scale .value.green:before {
+  background-color: #1b7332;
+}
+.color-scale .bg {
+  display: inline-block;
+  width: 2.43902%;
+  height: 5px;
+  float: right;
+  padding: 0;
+  margin: 0;
+  min-height: 5px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.color-scale .bg:first-child {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 0 0 5px;
+}
+.color-scale .bg:last-child {
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+/*text colors*/
+.color.red {
+  color: #ff333a;
+}
+.color.green {
+  color: #00a651;
+}
+.color.light-gray {
+  color: #f7f7f7;
+}
+.color.primary {
+  color: #4faec5;
+}
+.color.secondary {
+  color: #f0ac09;
+}
+
+/*loader*/
+.loading {
+  text-align: center;
+}
+.loading .loader {
+  padding: 50px 0;
+}
+.loading img {
+  height: 35px;
+}
+
+/*market value bg styles*/
+.m-value-bg {
+  background-color: #efeeee;
+  display: block;
+  padding: 0.30769rem;
+  text-align: center;
+  display: inline-block;
+  min-width: 68px;
+  font-weight: 500;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.bg.red-5 {
+  background-color: #ffefef !important;
+}
+.bg.red-10 {
+  background-color: #ffe0e0 !important;
+}
+.bg.red-15 {
+  background-color: #ffd1d1 !important;
+}
+.bg.red-20 {
+  background-color: #ffc1c1 !important;
+}
+.bg.red-25 {
+  background-color: #ffb2b2 !important;
+}
+.bg.red-30 {
+  background-color: #ffa3a3 !important;
+}
+.bg.red-35 {
+  background-color: #ff9494 !important;
+}
+.bg.red-40 {
+  background-color: #fe8484 !important;
+  color: #fff;
+}
+.bg.red-45 {
+  background-color: #fe7575 !important;
+  color: #fff;
+}
+.bg.red-50 {
+  background-color: #fe6666 !important;
+  color: #fff;
+}
+.bg.red-55 {
+  background-color: #fe5757 !important;
+  color: #fff;
+}
+.bg.red-60 {
+  background-color: #fe4747 !important;
+  color: #fff;
+}
+.bg.red-65 {
+  background-color: #fe3838 !important;
+  color: #fff;
+}
+.bg.red-70 {
+  background-color: #fe2929 !important;
+  color: #fff;
+}
+.bg.red-75 {
+  background-color: #fe1a1a !important;
+  color: #fff;
+}
+.bg.red-80 {
+  background-color: #fe0b0b !important;
+  color: #fff;
+}
+.bg.red-85 {
+  background-color: #e40101 !important;
+  color: #fff;
+}
+.bg.red-90 {
+  background-color: #d50101 !important;
+  color: #fff;
+}
+.bg.red-95 {
+  background-color: #c50101 !important;
+  color: #fff;
+}
+.bg.red-100 {
+  background-color: #b60101 !important;
+  color: #fff;
+}
+
+.bg.green-5 {
+  background-color: #d1f4da !important;
+}
+.bg.green-10 {
+  background-color: #c5f1d0 !important;
+}
+.bg.green-15 {
+  background-color: #b8eec6 !important;
+}
+.bg.green-20 {
+  background-color: #acebbc !important;
+}
+.bg.green-25 {
+  background-color: #9fe8b3 !important;
+}
+.bg.green-30 {
+  background-color: #93e5a9 !important;
+}
+.bg.green-35 {
+  background-color: #87e29f !important;
+}
+.bg.green-40 {
+  background-color: #7ae095 !important;
+}
+.bg.green-45 {
+  background-color: #6edd8b !important;
+}
+.bg.green-50 {
+  background-color: #62da81 !important;
+}
+.bg.green-55 {
+  background-color: #55d777 !important;
+}
+.bg.green-60 {
+  background-color: #49d46d !important;
+}
+.bg.green-65 {
+  background-color: #3dd163 !important;
+  color: #fff;
+}
+.bg.green-70 {
+  background-color: #31cd5a !important;
+  color: #fff;
+}
+.bg.green-75 {
+  background-color: #2ec154 !important;
+  color: #fff;
+}
+.bg.green-80 {
+  background-color: #2bb54f !important;
+  color: #fff;
+}
+.bg.green-85 {
+  background-color: #249842 !important;
+  color: #fff;
+}
+.bg.green-90 {
+  background-color: #218b3d !important;
+  color: #fff;
+}
+.bg.green-95 {
+  background-color: #1e7f38 !important;
+  color: #fff;
+}
+.bg.green-100 {
+  background-color: #1b7332 !important;
+  color: #fff;
+}
+.bg.no-change {
+  background-color: #efeeee !important;
+  color: #000;
+}
+.bg.light-gray {
+  background-color: #f7f7f7;
+}
+
+/*aggregate cahrt left right arrows*/
+.aggregate-chart {
+  width: 100%;
+  direction: ltr;
+}
+.aggregate-chart .column {
+  width: 50%;
+  float: left;
+  height: 80px;
+  position: relative;
+}
+.aggregate-chart .column .arrow {
+  height: 50px;
+  margin: 16px 0;
+  position: relative;
+  z-index: 1;
+  max-width: 100% !important;
+  -webkit-animation: w70 1s ease forwards;
+}
+.aggregate-chart .column .arrow:after {
+  border-left-width: 15px;
+  border-top-width: 25px;
+  border-bottom-width: 25px;
+  border-right-width: 15px;
+  border-style: solid;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  top: 0px;
+}
+.aggregate-chart .column .arrow .value {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  display: inline-block;
+  height: 19px;
+  font-size: 2rem;
+  white-space: nowrap;
+  fomt-weight: 400;
+}
+.aggregate-chart .column.no-change {
+  color: #000;
+  border-right: 4px solid #ccc;
+  right: -2px;
+  position: relative;
+}
+.aggregate-chart .column.no-change .arrow {
+  width: 100% !important;
+}
+.aggregate-chart .column.no-change .arrow .value {
+  right: auto;
+  left: 100%;
+  padding-left: 10px;
+}
+.aggregate-chart .column.up {
+  float: right;
+  border-left: 4px solid #00a651;
+  left: -2px;
+  padding-right: 12px;
+}
+.aggregate-chart .column.up:before {
+  right: 0;
+  top: 16px;
+  bottom: 14px;
+}
+.aggregate-chart .column.up .arrow {
+  background: #00a651;
+}
+.aggregate-chart .column.up .arrow:after {
+  content: "";
+  width: 0;
+  height: 0px;
+  border-left-color: #00a651;
+  border-right: 0;
+  left: 100%;
+}
+.aggregate-chart .column.up .arrow .value {
+  color: #00a651;
+  right: 100%;
+  left: auto;
+  padding-right: 10px;
+}
+.aggregate-chart .column.down:before, .aggregate-chart .column.up:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.aggregate-chart .column.down:after, .aggregate-chart .column.up:after {
+  border-left-width: 15px;
+  border-top-width: 25px;
+  border-bottom-width: 25px;
+  border-right-width: 15px;
+  border-style: solid;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  position: absolute;
+  top: 0px;
+  content: '';
+  color: #f7f7f7;
+}
+.aggregate-chart .column.up:after {
+  border-right-width: 0;
+  right: -1px;
+  top: 16px;
+}
+.aggregate-chart .column.down:after {
+  border-left-width: 0;
+  left: -1px;
+  top: 16px;
+}
+.aggregate-chart .column.down {
+  border-right: 4px solid #ff333a;
+  position: relative;
+  right: -2px;
+  padding-left: 12px;
+}
+.aggregate-chart .column.down:before {
+  left: 0;
+  top: 16px;
+  bottom: 14px;
+}
+.aggregate-chart .column.down .arrow {
+  background: #ff333a;
+  float: right;
+}
+.aggregate-chart .column.down .arrow:after {
+  content: "";
+  width: 0;
+  height: 0px;
+  border-right-color: #ff333a;
+  border-left: 0;
+  right: 100%;
+}
+.aggregate-chart .column.down .arrow .value {
+  color: #ff333a;
+  left: 100%;
+  right: auto;
+  padding-left: 10px;
+}
+
 .ico {
   display: inline-block;
 }
@@ -594,7 +1064,7 @@ form {
 
 .fintech .calendar-table .fa-circle
 + .fa-circle {
-  margin: 0 0 0 4px;
+  margin: 0 4px 0 0px;
 }
 .fintech .consecutive-calendar .column > h2 {
   width: 100%;
@@ -610,14 +1080,14 @@ form {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   font-size: 1.15385rem;
   display: inline-block;
-  float: right;
+  float: left;
 }
 .fintech .calendar-table-view-btns a {
   display: inline-block;
   width: 30px;
   height: 28px;
   line-height: 28px;
-  float: left;
+  float: right;
   text-align: center;
   position: relative;
 }
@@ -637,9 +1107,9 @@ form {
   margin: auto;
 }
 .fintech .calendar-table-view-btns .calendar {
-  -moz-border-radius: 5px 0 0 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px 0 0 5px;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 5px 5px 0;
 }
 .fintech .calendar-table-view-btns .calendar i {
   background-image: url('themes/default/assets/images/icons-sde7ae4d870.png');
@@ -649,7 +1119,7 @@ form {
   display: inline-block;
   height: 13px;
   width: 14px;
-  left: 1px;
+  right: 1px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar i {
@@ -734,27 +1204,32 @@ form {
   position: relative;
 }
 .fintech .q7 .row > .column:last-child {
-  padding: 0 200px 0 0 !important;
+  padding: 0  0 0 200px !important;
 }
 .fintech .q7 .row > .column:last-child .title {
-  margin-left: -200px !important;
+  margin-right: -200px !important;
 }
 .fintech .ui-resizable-handle {
   position: absolute;
   font-size: 0.1px;
   display: block;
 }
+@media (max-width: 1024px) {
+  .fintech .ui-resizable-handle {
+    display: none;
+  }
+}
 .fintech .ui-resizable-e {
   cursor: e-resize;
   width: 10px;
-  right: -15px;
-  top: 40px;
+  left: -15px;
+  top: 90px;
   height: 35px;
   width: 15px;
   background: #fff;
-  -moz-border-radius: 0 5px 5px 0;
-  -webkit-border-radius: 0;
-  border-radius: 0 5px 5px 0;
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 0 0 5px;
   -moz-box-shadow: 3px 5px 6px -5px #000;
   -webkit-box-shadow: 3px 5px 6px -5px #000;
   box-shadow: 3px 5px 6px -5px #000;
@@ -763,19 +1238,19 @@ form {
   position: absolute;
   content: '';
   height: 60%;
-  right: 5px;
+  left: 5px;
   margin-top: 7px;
-  border-left: 1px solid #cccccc;
-  padding-left: 1px;
   border-right: 1px solid #cccccc;
+  padding-right: 1px;
+  border-left: 1px solid #cccccc;
 }
 .fintech .ui-resizable-e:after {
   position: absolute;
   content: '';
   height: 60%;
-  right: 9px;
+  left: 9px;
   margin-top: 7px;
-  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
 }
 .fintech .ui-resizable-e:hover {
   background-color: #e6e6e6;
@@ -824,8 +1299,8 @@ form {
   }
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column:first-child {
-  padding: 35px 0 0 22px;
-  text-align: left;
+  padding: 35px 22px 0 0px;
+  text-align: right;
   font-size: 15px;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column:last-child {
@@ -851,20 +1326,20 @@ form {
   width: 40px;
   height: 40px;
   margin: 0 auto;
-  float: left;
-  margin: 14px 0 0 45px;
+  float: right;
+  margin: 14px 45px 0 0;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .donut-value {
   font-size: 18px;
   font-weight: 700;
   display: inline-block;
-  float: left;
-  margin: 34px 0 0 15px;
+  float: right;
+  margin: 34px 15px 0 0;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .title {
   display: inline-block;
   margin: 8px 0 0 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .title small {
@@ -873,13 +1348,13 @@ form {
   font-size: 13px;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .title.aggregate-performance {
-  margin-top: -6px;
+  margin-top: -12px;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .title.aggregate-performance:before {
   content: '';
   display: inline-block;
-  margin: 2px 10px 0 0;
-  float: left;
+  margin: 6px 0 0 8px;
+  float: right;
   background-image: url('themes/default/assets/images/icons-sde7ae4d870.png');
   background-position: -80px 0;
   background-repeat: no-repeat;
@@ -898,14 +1373,14 @@ form {
   }
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column.company.name {
-  padding: 0 15px 0 0;
-  text-align: left;
+  padding: 0  0 0 15px;
+  text-align: right;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column.company.name h2 {
   line-height: 26px;
   white-space: nowrap;
   font-size: 2rem;
-  padding-left: 0;
+  padding-right: 0;
   width: 300px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1005,11 +1480,11 @@ form {
 }
 .fintech .question[class*="page"] .ui.button {
   display: inline-block;
-  margin: 0 0 0 2px;
+  margin: 0 2px 0 0;
   position: relative;
   top: -2px;
   color: #000;
-  padding: 7px 14px 0 12px;
+  padding: 7px 12px 0 14px;
   height: 28px;
   font-size: 1.07692rem;
   -moz-border-radius: 0.46154rem;
@@ -1031,7 +1506,7 @@ form {
 .fintech .question[class*="page"] .share {
   position: absolute;
   top: 39%;
-  right: 25px;
+  left: 25px;
   color: #fff;
   cursor: pointer;
   font-size: 17px;
@@ -1049,8 +1524,8 @@ form {
   z-index: 100;
   top: 26px;
   background-color: #fff;
-  text-align: left;
-  right: 0;
+  text-align: right;
+  left: 0;
   padding: 10px 0;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1073,7 +1548,7 @@ form {
   display: block;
 }
 .fintech .question[class*="page"] .share .list li .fa {
-  margin-right: 6px;
+  margin-left: 6px;
 }
 .fintech .question[class*="page"] .share .list li a {
   display: block;
@@ -1122,6 +1597,8 @@ form {
 }
 .fintech .page.filters .ui.accordion .active.title .dropdown.icon {
   font-size: 1.15385rem;
+  float: right;
+  margin: 4px 0px 0 7px;
 }
 .fintech .page.filters .ui.styled.accordion {
   -moz-border-radius: 0;
@@ -1136,10 +1613,9 @@ form {
 .fintech .page.filters .ui.styled.accordion .title {
   border: 0;
   padding: 6px;
+  font-family: Fintech_Arabic_Regular;
 }
 .fintech .page.filters .ui.styled.accordion > .item > .title .dropdown {
-  float: left;
-  margin: 1px 7px 0 0;
   width: 4px;
   font-size: 1.15385rem;
 }
@@ -1152,10 +1628,10 @@ form {
 }
 .fintech .page.filters .button.basic {
   padding: 5px 10px;
-  margin: 0 0 3px 1px;
+  margin: 0 1px 3px 0px;
 }
 .fintech .page.filters.resize-left-column {
-  float: left;
+  float: right;
   box-sizing: border-box;
   z-index: 3;
   height: auto !important;
@@ -1188,28 +1664,29 @@ form {
 .fintech .ui[class*="content container"] .content-holder {
   height: 100%;
   width: 938px;
-  float: right;
+  float: left;
   position: relative;
 }
 .fintech .ui[class*="content container"] .content-holder .sidebar-toggler-arrow {
   font-size: 1.23077rem;
   cursor: pointer;
   background: #cdcdcd;
-  -moz-border-radius: 0 4px 4px 0;
-  -webkit-border-radius: 0;
-  border-radius: 0 4px 4px 0;
+  -moz-border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 0 0 4px;
   position: absolute;
-  top: 10px;
+  top: 36px;
   height: 25px;
   width: 15px;
-  left: -11px;
+  right: -11px;
   z-index: 3;
 }
 .fintech .ui[class*="content container"] .content-holder .sidebar-toggler-arrow:before {
   color: #000;
   position: relative;
   top: 4px;
-  left: 4px;
+  right: 4px;
+  content: '\f0da';
 }
 .fintech .ui[class*="content container"] .content-holder .sidebar-toggler-arrow:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
@@ -1231,7 +1708,7 @@ form {
   transition: all 0.2s ease;
 }
 .fintech .ui[class*="content container"].no-side-bar .sidebar-toggler-arrow {
-  left: -30px;
+  right: -30px;
   top: 46px;
   width: 20px;
   background-color: #fff;
@@ -1243,21 +1720,21 @@ form {
   box-shadow: 3px 3px 6px -5px #000;
 }
 .fintech .ui[class*="content container"].no-side-bar .sidebar-toggler-arrow:before {
-  content: '\f0da';
-  left: 8px;
+  content: '\f0d9';
+  right: 8px;
 }
 .fintech .chart-toolbar a {
   color: #666;
   font-size: 1.15385rem;
-  float: right;
-  margin: 7px 0 0 15px;
+  float: left;
+  margin: 7px 15px 0 0px;
 }
 .fintech .chart-toolbar a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
 .fintech .chart-toolbar .sorting {
-  float: right;
+  float: left;
   background: #f7f7f7;
   padding: 2px;
   -moz-border-radius: 3px;
@@ -1265,7 +1742,7 @@ form {
   border-radius: 3px;
 }
 .fintech .chart-toolbar .sorting label {
-  margin: 2px 0 0 -65px;
+  margin: 2px -65px 0 0px;
   background-color: #fff;
 }
 .fintech .chart-toolbar .sorting .ui.dropdown {
@@ -1274,7 +1751,7 @@ form {
   min-height: 15px;
 }
 .fintech .chart-toolbar .sorting .count {
-  float: left;
+  float: right;
   margin: 4px 8px 0 8px;
 }
 .fintech .ui.table .ui.tag.labels .label {
@@ -1290,7 +1767,7 @@ form {
   background-color: #21BA45;
 }
 .fintech .ui.table .date-periods .more {
-  padding: 4px 0 0 6px;
+  padding: 4px 6px 0 0px;
   display: inline-block;
 }
 .fintech .ui.table .ui.label.date-period {
@@ -1298,29 +1775,29 @@ form {
   cursor: default;
   position: relative;
   padding: 0;
-  float: left;
+  float: right;
   margin: 0.15385rem;
 }
 .fintech .ui.table .ui.label.date-period > div {
-  float: left;
+  float: right;
   padding: 6px;
   white-space: nowrap;
   width: 70px;
   position: relative;
 }
 .fintech .ui.table .ui.label.date-period .first {
-  -moz-border-radius: 3px 0 0 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px 0 0 3px;
-}
-.fintech .ui.table .ui.label.date-period .last {
   -moz-border-radius: 0 3px 3px 0;
   -webkit-border-radius: 0;
   border-radius: 0 3px 3px 0;
 }
+.fintech .ui.table .ui.label.date-period .last {
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 0 0 3px;
+}
 .fintech .ui.table .ui.label.date-period i {
   position: absolute;
-  left: -5px;
+  right: -5px;
   width: 8px;
   display: inline-block;
 }
@@ -1353,7 +1830,7 @@ form {
   border-color: #ddd;
 }
 .fintech .ui.table.heat .year-performance {
-  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
 }
 .fintech .ui.table.heat tr td {
   padding: 6px;
@@ -1471,11 +1948,11 @@ form {
   background-color: #4fadc5;
   color: #fff;
   border-radius: 30px;
-  padding: 3px 6px 3px 4px;
+  padding: 3px 4px 3px 6px;
   line-height: 12px;
   font-size: 12px;
-  left: 100%;
-  margin: 0 0 0 5px;
+  right: 100%;
+  margin: 0 5px 0 0px;
   font-weight: normal;
   text-align: center;
 }
@@ -1491,7 +1968,7 @@ form {
 }
 .fintech .grid.home .notification-feeds .feed .segment .time {
   position: absolute;
-  right: 12px;
+  left: 12px;
   top: 8px;
   color: gray;
   display: inline-block;
@@ -1500,10 +1977,9 @@ form {
 }
 .fintech .grid.home .notification-feeds .feed .feed-head {
   font-size: 18px;
-  padding-right: 60px;
+  padding-left: 60px;
   position: relative;
   color: #000;
-  line-height: normal;
   cursor: default;
 }
 .fintech .grid.home .notification-feeds .feed .feed-head a {
@@ -1515,13 +1991,16 @@ form {
 .fintech .grid.home .notification-feeds .feed.semi-bold .feed-head {
   font-size: 22px;
   font-weight: bold;
+  line-height: 2.5rem;
 }
 .fintech .grid.home .notification-feeds .feed.light .feed-head {
   font-size: 22px;
+  line-height: 2.5rem;
 }
 .fintech .grid.home .notification-feeds .feed.bold .feed-head {
   font-size: 26px;
   font-weight: bold;
+  line-height: 2.5rem;
 }
 .fintech .grid.home .notification-feeds .feed .image {
   max-width: 100%;
@@ -1646,7 +2125,7 @@ form {
   height: 11px;
   padding: 0;
   margin: auto;
-  right: 10px;
+  left: 10px;
 }
 
 .ui.dropdown > .dropdown.icon {
@@ -1659,9 +2138,9 @@ form {
 .fintech .question[class*="page"] .question > .dropdown {
   min-width: 0;
   min-height: 0;
-  padding: 2px 26px 2px 8px;
+  padding: 2px 8px 2px 26px;
   background-color: #288aa1;
-  line-height: normal;
+  line-height: 1.8rem;
   color: #fff;
 }
 .fintech .question[class*="page"] .question > .dropdown > .text:not(.default) {
@@ -1719,7 +2198,7 @@ form {
   width: 100%;
 }
 .fintech .ui.dropdown.multilevel > .dropdown.icon {
-  right: 8px;
+  left: 8px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1888,6 +2367,10 @@ form {
 .fintech > .top .active:hover {
   color: #4faec5;
   cursor: default;
+}
+
+.fintech > .top .logo {
+  margin: 14px 0px 0 18px;
 }
 
 footer {
