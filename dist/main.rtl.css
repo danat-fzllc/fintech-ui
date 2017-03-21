@@ -82,8 +82,8 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   margin: 0;
-  font-family: Fintech_Arabic_Regular;
-  line-height: normal;
+  font-family: Fintech_Arabic_Bold;
+  /*line-height: normal;*/
 }
 
 form {
@@ -287,6 +287,7 @@ form {
   display: inline-block;
   min-width: 68px;
   font-weight: 500;
+  white-space: nowrap;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -723,6 +724,7 @@ form {
   display: inline-block;
   min-width: 68px;
   font-weight: 500;
+  white-space: nowrap;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;

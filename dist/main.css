@@ -254,6 +254,7 @@ form {
   display: inline-block;
   min-width: 68px;
   font-weight: 500;
+  white-space: nowrap;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
