@@ -9,15 +9,14 @@
     <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   
 </head>
 
 <body>
     <div class="ui container fluid fintech">
         <div class="top">
             <div class="outer clearfix">
-            <a class="logo left floated"></a>
-            <form class="left floated country-selection">
+                <a class="logo left floated"></a>
+                <form class="left floated country-selection">
                     <div class="field">
                         <div class="ui fluid search selection dropdown">
                             <input type="hidden" name="country">
@@ -31,8 +30,6 @@
                         </div>
                     </div>
                 </form>
-           
-                
                 <div class="user-nav right floated">
                     <a href="" class="active">Home</a>
                     <a href="">About Us</a>
@@ -43,9 +40,9 @@
             </div>
         </div>
         <div class="fluid clearfix question page center aligned relative">
-        <div class="outer">
-            <form class="ui form">
-                <h1 class="question ui center">
+            <div class="outer">
+                <form class="ui form">
+                    <h1 class="question ui center">
                     What was the effect on <select id="" class="ui selection dropdown">
                         <option value="1">Sabic</option>
                         <option value="3">Markets</option>
@@ -75,26 +72,25 @@
                     <a class="ui button"><i class="fa fa-search" aria-hidden="true"></i>
  Discover</a>
                     </h1>
-            </form>
-            <div class="button share right floated">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-                <div class="list">
-                    <div class="head">Share</div>
-                    <ul>
-                        <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
-                        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
-                        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linked In</a></li>
-                        <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google Plus</a></li>
-                    </ul>
+                </form>
+                <div class="button share right floated">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <div class="list">
+                        <div class="head">Share</div>
+                        <ul>
+                            <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+                            <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
+                            <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linked In</a></li>
+                            <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google Plus</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
         <div class="fluid ui content container clearfix" id="container">
             <section class="page filters left floated resize-left-column">
-                
                 <div class="ui container">
-                <div class="header">Filters</div>
+                    <div class="header">Filters</div>
                     <div class="ui styled accordion">
                         <div class="item">
                             <div class="title active">
@@ -147,20 +143,22 @@
                 </div>
             </section>
             <section class="fluid content-holder resize-right-column">
-            <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
+                <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
                 <div class="fluid left floated">
-                    
                     <div class="ui one column grid">
                         <div class="column">
                             <div class="content event-aggregate-chart">
                                 <div class="row head clearfix">
-                                    <div class="column left floated no-border company name"><h2>SABIC</h2></div>
+                                    <div class="column left floated no-border company name">
+                                        <h2>SABIC</h2></div>
                                     <div class="column right floated ">
-                                        <div class="title">Probability</div>
+                                        <div class="title">Probability
+                                            <i class="caret green up icon"></i>
+                                        </div>
                                     </div>
-
                                     <div class="column">
-                                        <div class="title aggregate-performance">Aggregate Performance<br><small>(Over 22 Events)</small></div>
+                                        <div class="title aggregate-performance">Aggregate Performance
+                                            <br><small>(Over 22 Events)</small></div>
                                     </div>
                                 </div>
                                 <div class="row clearfix">
@@ -201,241 +199,238 @@
                                         </div>
                                     </div>
                                 </div>
-                              
                             </div>
                         </div>
                         <div class="column">
-                        <div class="content">
-                            <table class="ui table">
-                            <thead class="group-head">
-                                <tr>
-                                    <th colspan="2">Price of Nymex up by 7% in a day</th>
-                                    <th></th>
-                                    <th colspan="2">Effect on Sabic 3 days after</th>
-                                </tr>
-                            </thead>
-                                <thead>
-                                    <tr>
-                                        <th>Anchor Date</th>
-                                        <th class="center aligned">Anchor Change %</th>
-                                        <th class="center aligned">No.Days</th>
-                                        <th>Target Date</th>
-                                        <th class="center aligned">Target Change %</th>
-                                    </tr>
-                                </thead>
-                                <thead class="sub">
-                                    <tr>
-                                        <th colspan="5">2016</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="up column">
-                                                <div class="arrow" style="width:40%">
-                                                    <span class="value">+ 40%</span>
+                            <div class="content">
+                                <table class="ui table">
+                                    <thead class="group-head">
+                                        <tr>
+                                            <th colspan="2">Price of Nymex up by 7% in a day</th>
+                                            <th></th>
+                                            <th colspan="2">Effect on Sabic 3 days after</th>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr>
+                                            <th>Anchor Date</th>
+                                            <th class="center aligned">Anchor Change %</th>
+                                            <th class="center aligned">No.Days</th>
+                                            <th>Target Date</th>
+                                            <th class="center aligned">Target Change %</th>
+                                        </tr>
+                                    </thead>
+                                    <thead class="sub">
+                                        <tr>
+                                            <th colspan="5">2016</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="up column">
+                                                        <div class="arrow" style="width:40%">
+                                                            <span class="value">+ 40%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="down column">
-                                                <div class="arrow" style="width:40%">
-                                                    <span class="value">+ 40%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="down column">
+                                                        <div class="arrow" style="width:40%">
+                                                            <span class="value">+ 40%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-35">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="no-change column">
-                                                <div class="arrow" style="width:0%">
-                                                    <span class="value">0.00%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-35">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="no-change column">
+                                                        <div class="arrow" style="width:0%">
+                                                            <span class="value">0.00%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="up column">
-                                                <div class="arrow" style="width:40%">
-                                                    <span class="value">+ 40%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="up column">
+                                                        <div class="arrow" style="width:40%">
+                                                            <span class="value">+ 40%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-
-                                <thead class="sub">
-                                    <tr>
-                                        <th colspan="5">2015</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="up column">
-                                                <div class="arrow" style="width:40%">
-                                                    <span class="value">+ 40%</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <thead class="sub">
+                                        <tr>
+                                            <th colspan="5">2015</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="up column">
+                                                        <div class="arrow" style="width:40%">
+                                                            <span class="value">+ 40%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="down column">
-                                                <div class="arrow" style="width:40%">
-                                                    <span class="value">+ 40%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="down column">
+                                                        <div class="arrow" style="width:40%">
+                                                            <span class="value">+ 40%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-35">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="no-change column">
-                                                <div class="arrow" style="width:0%">
-                                                    <span class="value">0.00%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-35">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="no-change column">
+                                                        <div class="arrow" style="width:0%">
+                                                            <span class="value">0.00%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="up column">
-                                                <div class="arrow" style="width:40%">
-                                                    <span class="value">+ 40%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="up column">
+                                                        <div class="arrow" style="width:40%">
+                                                            <span class="value">+ 40%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-
-                                <thead class="sub">
-                                    <tr>
-                                        <th colspan="5">2014</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="up column">
-                                                <div class="arrow" style="width:40%">
-                                                    <span class="value">+ 40%</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <thead class="sub">
+                                        <tr>
+                                            <th colspan="5">2014</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="up column">
+                                                        <div class="arrow" style="width:40%">
+                                                            <span class="value">+ 40%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="down column">
-                                                <div class="arrow" style="width:40%">
-                                                    <span class="value">+ 40%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="down column">
+                                                        <div class="arrow" style="width:40%">
+                                                            <span class="value">+ 40%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-35">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="no-change column">
-                                                <div class="arrow" style="width:0%">
-                                                    <span class="value">0.00%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-35">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="no-change column">
+                                                        <div class="arrow" style="width:0%">
+                                                            <span class="value">0.00%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="indent-6">14<sup>th</sup> March 2002</td>
-                                        <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
-                                        <td class="center aligned">12</td>
-                                        <td>14<sup>th</sup> March 2002</td>
-                                        <td class="aggregate-chart-col">
-                                            <div class="aggregate-chart">
-                                            <div class="up column">
-                                                <div class="arrow" style="width:40%">
-                                                    <span class="value">+ 40%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="indent-6">14<sup>th</sup> March 2002</td>
+                                            <td class="center aligned"><span class="m-value-bg bg red-5">-1.53</span></td>
+                                            <td class="center aligned">12</td>
+                                            <td>14<sup>th</sup> March 2002</td>
+                                            <td class="aggregate-chart-col">
+                                                <div class="aggregate-chart">
+                                                    <div class="up column">
+                                                        <div class="arrow" style="width:40%">
+                                                            <span class="value">+ 40%</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-
-                            </table>
-                            
-                        </div></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
             </section>
         </div>
-        <footer><div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div></footer>
+        <footer>
+            <div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div>
+        </footer>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="dist/semantic.min.js"></script>
