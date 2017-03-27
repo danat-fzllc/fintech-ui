@@ -528,6 +528,33 @@
         }
     }
 
+    .page-head {
+        padding: 12px 0;
+        background-color: $primary-color;
+
+        @include box-shadow(0 0 20px -10px #000);
+
+        &.fixed {
+            z-index: 100;
+        }
+
+        .outer {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            @include breakpoint(laptops) {
+                width: 94%;
+            }
+        }
+
+        h1 {
+            font-size: rem(48);
+            line-height: rem(72);
+            font-weight: normal;
+            color: $white;
+        }
+    }
+
     .page.filters {
         width: 250px;
 
@@ -898,6 +925,7 @@
         td {
             &.aggregate-chart-col {
                 padding: 0;
+                width: 35%;
 
                 .column {
                     height: auto;
@@ -1018,6 +1046,14 @@
 
                 .value {
                     padding: 4px 0 0;
+
+                    .change {
+                        margin: 0 5px 0 0;
+
+                        &.no-change {
+                            color: #333;
+                        }
+                    }
                 }
             }
         }
@@ -1092,8 +1128,16 @@
         }
 
         .questions {
+            .header {
+                margin: -20px -20px 0;
+                padding: 14px 20px 12px 20px;
+                font-size: 15px;
+                font-weight: $font-weight-medium;
+            }
+
             .row {
-                margin: -20px -20px 0 -20px;
+                margin: 0px -20px 0 -20px;
+                border-top: 1px solid $border-color;
 
                 h2 {
                     font-size: 16px;
@@ -1102,13 +1146,8 @@
                     a {
                         color: #000;
                         display: block;
-                        padding: 20px;
+                        padding: 15px 20px;
                     }
-                }
-
-                + .row {
-                    border-top: 1px solid $border-color;
-                    margin-top: 0;
                 }
 
                 &:hover {
@@ -1127,4 +1166,20 @@
     .fa-check-circle {
         font-size: rem(16);
     }
+}
+
+.device-only {
+    display: none;
+
+    @include breakpoint(laptops) {
+        display: block;
+    }
+}
+
+.icon.device-only {
+    @extend .device-only;
+}
+
+.device-action-tab {
+    margin-bottom: 20px;
 }

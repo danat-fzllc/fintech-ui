@@ -224,8 +224,14 @@ form {
 .color.green {
   color: #00a651;
 }
+.color.gray {
+  color: #cccccc;
+}
 .color.light-gray {
   color: #f7f7f7;
+}
+.color.dark-gray {
+  color: #cdcdcd;
 }
 .color.primary {
   color: #4faec5;
@@ -1119,6 +1125,31 @@ form {
 .fintech .question[class*="page"] .share .list li a:hover > [class*="google"] {
   color: #DD4C3B;
 }
+.fintech .page-head {
+  padding: 12px 0;
+  background-color: #4faec5;
+  -moz-box-shadow: 0 0 20px -10px #000;
+  -webkit-box-shadow: 0 0 20px -10px #000;
+  box-shadow: 0 0 20px -10px #000;
+}
+.fintech .page-head.fixed {
+  z-index: 100;
+}
+.fintech .page-head .outer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .fintech .page-head .outer {
+    width: 94%;
+  }
+}
+.fintech .page-head h1 {
+  font-size: 3.69231rem;
+  line-height: 5.53846rem;
+  font-weight: normal;
+  color: #fff;
+}
 .fintech .page.filters {
   width: 250px;
 }
@@ -1420,6 +1451,7 @@ form {
 }
 .fintech .ui.table td.aggregate-chart-col {
   padding: 0;
+  width: 35%;
 }
 .fintech .ui.table td.aggregate-chart-col .column {
   height: auto;
@@ -1512,6 +1544,12 @@ form {
 .fintech .grid.home .watchlist .row .value {
   padding: 4px 0 0;
 }
+.fintech .grid.home .watchlist .row .value .change {
+  margin: 0 0 0 5px;
+}
+.fintech .grid.home .watchlist .row .value .change.no-change {
+  color: #333;
+}
 .fintech .grid.home .notification-feeds .feed .segment {
   position: relative;
   padding: 14px 20px 16px 20px;
@@ -1556,8 +1594,15 @@ form {
   max-width: 100%;
   display: block;
 }
+.fintech .grid.home .questions .header {
+  margin: -20px -20px 0;
+  padding: 14px 20px 12px 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
 .fintech .grid.home .questions .row {
-  margin: -20px -20px 0 -20px;
+  margin: 0px -20px 0 -20px;
+  border-top: 1px solid #ededed;
 }
 .fintech .grid.home .questions .row h2 {
   font-size: 16px;
@@ -1566,11 +1611,7 @@ form {
 .fintech .grid.home .questions .row h2 a {
   color: #000;
   display: block;
-  padding: 20px;
-}
-.fintech .grid.home .questions .row + .row {
-  border-top: 1px solid #ededed;
-  margin-top: 0;
+  padding: 15px 20px;
 }
 .fintech .grid.home .questions .row:hover {
   background-color: #fcfcfc;
@@ -1581,6 +1622,19 @@ form {
 
 .consecutive-rally .fa-check-circle {
   font-size: 1.23077rem;
+}
+
+.device-only, .icon.device-only {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .device-only, .icon.device-only {
+    display: block;
+  }
+}
+
+.device-action-tab {
+  margin-bottom: 20px;
 }
 
 /*Elements - Individual site elements*/

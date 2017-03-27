@@ -119,8 +119,16 @@
         color: $green;
     }
 
+    &.gray {
+        color: $gray;
+    }
+
     &.light-gray {
         color: $light-gray;
+    }
+
+    &.dark-gray {
+        color: $dark-gray;
     }
 
     &.primary {
@@ -351,6 +359,11 @@
     &.light-gray {
         background-color: #f7f7f7;
     }
+}
+
+b, optgroup, strong {
+    font-weight: normal;
+    font-family: $font-ar-bold;
 }
 
 /*aggregate cahrt left right arrows*/

@@ -119,8 +119,16 @@
         color: $green;
     }
 
+    &.gray {
+        color: $gray;
+    }
+
     &.light-gray {
         color: $light-gray;
+    }
+
+    &.dark-gray {
+        color: $dark-gray;
     }
 
     &.primary {
