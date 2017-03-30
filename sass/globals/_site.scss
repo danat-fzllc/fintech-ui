@@ -185,6 +185,14 @@
 
         @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));
 
+        .hint {
+            display: block;
+            text-align: right;
+            font-size: 12px;
+            position: relative;
+            top: 2px;
+        }
+
         &.event-aggregate-chart {
             > .row {
                 border: 1px solid $border-color;
@@ -258,15 +266,7 @@
                         font-size: 18px;
                         font-weight: $font-weight-medium;
 
-                        small {
-                            font-weight: $font-weight-regular;
-                            color: #757575;
-                            font-size: 13px;
-                        }
-
                         &.aggregate-performance {
-                            margin-top: -6px;
-
                             &:before {
                                 content: '';
                                 display: inline-block;
@@ -282,6 +282,12 @@
                         &.name {
                             padding: 0 15px 0 0;
                             text-align: left;
+
+                            span {
+                                font-size: 15px;
+                                top: -4px;
+                                position: relative;
+                            }
 
                             h2 {
                                 line-height: 26px;
@@ -310,7 +316,9 @@
                     width: 100%;
                     display: block;
                     border: 0 !important;
-                    padding: 15px 0 0;
+                    margin-top: -5px;
+
+                    /*padding: 15px 0 0;*/
                 }
             }
         }
@@ -1005,7 +1013,7 @@
     }
 
     .grid.home {
-        .watchlist {
+        .content {
             .header {
                 margin: -20px -20px 0;
                 padding: 14px 20px 12px 20px;
@@ -1016,7 +1024,11 @@
             .row {
                 border-top: 1px solid $border-color;
                 padding: 10px 0;
+            }
+        }
 
+        .watchlist {
+            .row {
                 .name {
                     strong {
                         position: relative;
@@ -1062,29 +1074,37 @@
                     padding: 14px 20px 16px 20px;
 
                     .time {
-                        position: absolute;
-                        right: 12px;
-                        top: 8px;
                         color: gray;
                         display: inline-block;
                         font-size: 12px;
                         font-weight: normal;
+                        border-right: 1px solid #bfbfbf;
+                        padding-right: 9px;
+                        height: 10px;
+                        line-height: 9px;
+                    }
+
+                    p {
+                        margin: 0;
                     }
                 }
 
                 .feed-head {
                     font-size: 18px;
-                    padding-right: 60px;
                     position: relative;
                     color: #000;
                     line-height: normal;
                     cursor: default;
                 }
 
+                .info {
+                    padding-top: 5px;
+                }
+
                 .details {
                     font-weight: normal;
                     font-size: 1rem;
-                    margin-left: 6px;
+                    margin-left: 8px;
 
                     &:hover {
                         color: $secondary-color;
@@ -1123,16 +1143,17 @@
         }
 
         .questions {
-            .header {
-                margin: -20px -20px 0;
-                padding: 14px 20px 12px 20px;
-                font-size: 15px;
-                font-weight: $font-weight-medium;
-            }
-
             .row {
-                margin: 0px -20px 0 -20px;
-                border-top: 1px solid $border-color;
+                margin: 0;
+                padding: 0;
+
+                .time {
+                    display: block;
+                    color: #666;
+                    font-weight: normal;
+                    font-size: 12px;
+                    padding: 2px 0 0 0;
+                }
 
                 h2 {
                     font-size: 16px;
@@ -1141,12 +1162,12 @@
                     a {
                         color: #000;
                         display: block;
-                        padding: 15px 20px;
-                    }
-                }
+                        padding: 15px 0;
 
-                &:hover {
-                    background-color: #fcfcfc;
+                        &:hover {
+                            color: $secondary-color;
+                        }
+                    }
                 }
 
                 &:last-child {

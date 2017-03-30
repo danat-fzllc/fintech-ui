@@ -91,6 +91,11 @@
             }
         }
 
+        .lang {
+            font-family: $font-ar-bold;
+            padding-right: 0;
+        }
+
         .active {
             color: $primary-color;
 
