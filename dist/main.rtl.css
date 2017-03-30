@@ -86,6 +86,10 @@ h1, h2, h3, h4, h5 {
   /*line-height: normal;*/
 }
 
+.bold, strong, b {
+  font-family: Fintech_Arabic_Bold;
+}
+
 form {
   margin: 0;
 }
@@ -1476,9 +1480,9 @@ b, optgroup, strong {
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-.fintech .question[class*="page"] h1 .bold {
-  font-weight: 700;
+  /*.bold {
+      font-weight: $font-weight-medium;
+  }*/
 }
 .fintech .question[class*="page"] h1 .highlight {
   color: #1b6273;
@@ -1637,8 +1641,11 @@ b, optgroup, strong {
 }
 @media (max-width: 1024px) {
   .fintech .page.filters {
-    width: 100%;
-    margin-bottom: 3%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    float: none !important;
   }
 }
 .fintech .page.filters .ui.container {
@@ -1685,6 +1692,11 @@ b, optgroup, strong {
 }
 .fintech .page.filters .ui.list .list a.item {
   padding: 6px 0;
+}
+@media (max-width: 1024px) {
+  .fintech .page.filters .ui.list .list a.item {
+    padding: 10px 0;
+  }
 }
 .fintech .page.filters .button.basic {
   padding: 5px 10px;
@@ -2065,7 +2077,7 @@ b, optgroup, strong {
 }
 .fintech .grid.home .notification-feeds .feed.semi-bold .feed-head {
   font-size: 22px;
-  font-weight: bold;
+  font-family: Fintech_Arabic_Bold;
   line-height: 2.5rem;
 }
 .fintech .grid.home .notification-feeds .feed.light .feed-head {
@@ -2085,7 +2097,6 @@ b, optgroup, strong {
   margin: -20px -20px 0;
   padding: 14px 20px 12px 20px;
   font-size: 15px;
-  font-weight: 700;
 }
 .fintech .grid.home .questions .row {
   margin: 0px -20px 0 -20px;

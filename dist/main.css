@@ -1155,8 +1155,11 @@ form {
 }
 @media (max-width: 1024px) {
   .fintech .page.filters {
-    width: 100%;
-    margin-bottom: 3%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    float: none !important;
   }
 }
 .fintech .page.filters .ui.container {
@@ -1202,6 +1205,11 @@ form {
 }
 .fintech .page.filters .ui.list .list a.item {
   padding: 6px 0;
+}
+@media (max-width: 1024px) {
+  .fintech .page.filters .ui.list .list a.item {
+    padding: 20px 0;
+  }
 }
 .fintech .page.filters .button.basic {
   padding: 5px 10px;

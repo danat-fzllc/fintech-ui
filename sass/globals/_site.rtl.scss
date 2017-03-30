@@ -378,9 +378,9 @@
 
             @include transition(all 0.5s ease-in-out);
 
-            .bold {
+            /*.bold {
                 font-weight: $font-weight-medium;
-            }
+            }*/
 
             .highlight {
                 color: #1b6273;
@@ -559,8 +559,11 @@
         width: 250px;
 
         @include breakpoint(laptops) {
-            width: 100%;
-            margin-bottom: 3%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 80%;
+            float: none !important;
         }
 
 
@@ -619,6 +622,10 @@
             .list {
                 a.item {
                     padding: 6px 0;
+
+                    @include breakpoint(laptops) {
+                        padding: 10px 0;
+                    }
                 }
             }
         }
@@ -1100,7 +1107,7 @@
                 &.semi-bold {
                     .feed-head {
                         font-size: 22px;
-                        font-weight: bold;
+                        font-family: $font-ar-bold;
                         line-height: 2.5rem;
                     }
                 }
@@ -1132,7 +1139,6 @@
                 margin: -20px -20px 0;
                 padding: 14px 20px 12px 20px;
                 font-size: 15px;
-                font-weight: $font-weight-medium;
             }
 
             .row {

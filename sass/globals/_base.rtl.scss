@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5 {
     /*line-height: normal;*/
 }
 
+.bold, strong, b {
+    font-family: $font-ar-bold;
+}
+
 form {
     margin: 0;
 }

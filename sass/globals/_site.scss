@@ -559,8 +559,11 @@
         width: 250px;
 
         @include breakpoint(laptops) {
-            width: 100%;
-            margin-bottom: 3%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 80%;
+            float: none !important;
         }
 
 
@@ -618,6 +621,10 @@
             .list {
                 a.item {
                     padding: 6px 0;
+
+                    @include breakpoint(laptops) {
+                        padding: 20px 0;
+                    }
                 }
             }
         }
