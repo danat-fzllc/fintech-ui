@@ -1029,7 +1029,7 @@ form {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.fintech .question[class*="page"] h1 .bold {
+.fintech .question[class*="page"] h1 .bold, .fintech .question[class*="page"] h1 .ui.table thead th, .fintech .ui.table thead .question[class*="page"] h1 th {
   font-weight: 700;
 }
 .fintech .question[class*="page"] h1 .highlight {
@@ -1634,7 +1634,7 @@ form {
 .fintech .grid.home .notification-feeds .feed.light .feed-head {
   font-size: 22px;
 }
-.fintech .grid.home .notification-feeds .feed.bold .feed-head {
+.fintech .grid.home .notification-feeds .feed.bold .feed-head, .fintech .grid.home .notification-feeds .ui.table thead th.feed .feed-head, .fintech .ui.table thead .grid.home .notification-feeds th.feed .feed-head {
   font-size: 26px;
   font-weight: bold;
 }

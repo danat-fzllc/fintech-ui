@@ -391,6 +391,7 @@
             font-size: rem(19);
             line-height: rem(44);
             font-weight: normal;
+            font-family: $font-ar;
             color: $white;
 
             @include transition(all 0.5s ease-in-out);

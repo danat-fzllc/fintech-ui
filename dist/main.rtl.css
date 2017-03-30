@@ -70,7 +70,7 @@ Version: 0.0.1;
 }
 /*element values*/
 html {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 body {
@@ -1488,6 +1488,7 @@ b, optgroup, strong {
   font-size: 1.46154rem;
   line-height: 3.38462rem;
   font-weight: normal;
+  font-family: Fintech_Arabic_Regular;
   color: #fff;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
