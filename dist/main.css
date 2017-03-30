@@ -1607,7 +1607,7 @@ form {
   line-height: 9px;
 }
 .fintech .grid.home .notification-feeds .feed .segment p {
-  margin: 0;
+  margin: 5px 0 0;
 }
 .fintech .grid.home .notification-feeds .feed .feed-head {
   font-size: 18px;
