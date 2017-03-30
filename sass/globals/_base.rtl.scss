@@ -2,12 +2,15 @@
 $left: right;
 $right: left;
 
+html {
+    font-size: 15px;
+}
+
 body {
     font-family: $font-ar;
-    font-size: inherit;
     color: #585858;
     direction: rtl;
-    line-height: 2rem;
+    line-height: 1.5rem;
 }
 
 a {

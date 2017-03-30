@@ -186,7 +186,11 @@
         @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));
 
         .hint {
+            display: block;
+            text-align: left;
+            font-size: 12px;
             position: relative;
+            top: 2px;
 
             span {
                 position: absolute;
@@ -257,17 +261,19 @@
 
                     .donut-value {
                         font-size: 18px;
-                        font-weight: 700;
                         display: inline-block;
                         float: right;
                         margin: 34px 15px 0 0;
+
+                        @extend .bold;
                     }
 
                     .title {
                         display: inline-block;
                         margin: 8px 0 0 0;
                         font-size: 16px;
-                        font-weight: $font-weight-medium;
+
+                        @extend .bold;
 
                         &.aggregate-performance {
                             &:before {
@@ -1030,7 +1036,8 @@
                 margin: -20px -20px 0;
                 padding: 14px 20px 12px 20px;
                 font-size: 15px;
-                font-weight: $font-weight-medium;
+
+                @extend .bold;
             }
 
             .row {
@@ -1114,7 +1121,7 @@
                 }
 
                 .details {
-                    font-weight: normal;
+                    font-family: $font-ar;
                     font-size: 1rem;
                     margin-right: 8px;
 
@@ -1131,14 +1138,14 @@
                     .feed-head {
                         font-size: 22px;
                         font-family: $font-ar-bold;
-                        line-height: 2.5rem;
+                        line-height: 2rem;
                     }
                 }
 
                 &.light {
                     .feed-head {
                         font-size: 22px;
-                        line-height: 2.5rem;
+                        line-height: 2rem;
                     }
                 }
 
@@ -1146,7 +1153,7 @@
                     .feed-head {
                         font-size: 26px;
                         font-weight: bold;
-                        line-height: 2.5rem;
+                        line-height: 2.2rem;
                     }
                 }
 
