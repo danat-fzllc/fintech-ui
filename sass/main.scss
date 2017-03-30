@@ -8,6 +8,7 @@ Version: 0.0.1;
 
 /*BASE - Base styles, variables, mixins, etc*/
 @import "globals/variables.scss";
+@import "globals/font.ar.scss";
 @import "globals/mixins.scss";
 @import "globals/base.scss";
 @import "globals/common.scss";

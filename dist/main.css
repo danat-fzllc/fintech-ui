@@ -9,7 +9,36 @@ Version: 0.0.1;
 /*Breakpoints*/
 /*Font weight*/
 /*fonts*/
+/*English Fonts*/
 /*Arabic fonts*/
+@font-face {
+  font-family: 'Greta_Arabic_Regular';
+  src: url("themes/default/assets/fonts/Greta_Arabic_Regular.eot");
+  src: url("themes/default/assets/fonts/Greta_Arabic_Regular.eot?#iefix") format("embedded-opentype"), url("themes/default/assets/fonts/Greta_Arabic_Regular.woff2") format("woff2"), url("themes/default/assets/fonts/Greta_Arabic_Regular.woff") format("woff"), url("themes/default/assets/fonts/Greta_Arabic_Regular.ttf") format("truetype"), url("themes/default/assets/fonts/Greta_Arabic_Regular.svg#Greta_Arabic_Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Greta_Arabic_Bold';
+  src: url("themes/default/assets/fonts/Greta_Arabic_Bold.eot");
+  src: url("themes/default/assets/fonts/Greta_Arabic_Bold.eot?#iefix") format("embedded-opentype"), url("themes/default/assets/fonts/Greta_Arabic_Bold.woff2") format("woff2"), url("themes/default/assets/fonts/Greta_Arabic_Bold.woff") format("woff"), url("themes/default/assets/fonts/Greta_Arabic_Bold.ttf") format("truetype"), url("themes/default/assets/fonts/Greta_Arabic_Bold.svg#Greta_Arabic_Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fintech_Arabic_Regular';
+  src: url("themes/default/assets/fonts/Fintech_Arabic_Regular.eot");
+  src: url("themes/default/assets/fonts/Fintech_Arabic_Regular.eot?#iefix") format("embedded-opentype"), url("themes/default/assets/fonts/Fintech_Arabic_Regular.woff2") format("woff2"), url("themes/default/assets/fonts/Fintech_Arabic_Regular.woff") format("woff"), url("themes/default/assets/fonts/Fintech_Arabic_Regular.ttf") format("truetype"), url("themes/default/assets/fonts/Fintech_Arabic_Regular.svg#Fintech_Arabic_Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fintech_Arabic_Bold';
+  src: url("themes/default/assets/fonts/Fintech_Arabic_Bold.eot");
+  src: url("themes/default/assets/fonts/Fintech_Arabic_Bold.eot?#iefix") format("embedded-opentype"), url("themes/default/assets/fonts/Fintech_Arabic_Bold.woff2") format("woff2"), url("themes/default/assets/fonts/Fintech_Arabic_Bold.woff") format("woff"), url("themes/default/assets/fonts/Fintech_Arabic_Bold.ttf") format("truetype"), url("themes/default/assets/fonts/Fintech_Arabic_Bold.svg#Fintech_Arabic_Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 @-webkit-keyframes w70 {
   from {
     width: 0%;
@@ -662,7 +691,7 @@ form {
   .fintech .calendar-table-view-btns .calendar i {
     background-image: url('themes/default/assets/images/icons-2x-s87b0f7232f.png');
     background-size: 118.5px 39px;
-    background-position: -31px 0;
+    background-position: -32px 0;
     height: 13px;
     width: 13.5px;
   }
@@ -724,7 +753,7 @@ form {
   .fintech .calendar-table-view-btns .table.active i {
     background-image: url('themes/default/assets/images/icons-2x-s87b0f7232f.png');
     background-size: 118.5px 39px;
-    background-position: -58px 0;
+    background-position: -59px 0;
     height: 13px;
     width: 13.5px;
   }
@@ -815,6 +844,13 @@ form {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
+.fintech .column > .content .hint {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  position: relative;
+  top: 2px;
+}
 .fintech .column > .content.event-aggregate-chart > .row {
   border: 1px solid #ededed;
 }
@@ -879,14 +915,6 @@ form {
   font-size: 18px;
   font-weight: 700;
 }
-.fintech .column > .content.event-aggregate-chart > .row > .column .title small {
-  font-weight: 500;
-  color: #757575;
-  font-size: 13px;
-}
-.fintech .column > .content.event-aggregate-chart > .row > .column .title.aggregate-performance {
-  margin-top: -6px;
-}
 .fintech .column > .content.event-aggregate-chart > .row > .column .title.aggregate-performance:before {
   content: '';
   display: inline-block;
@@ -913,6 +941,11 @@ form {
   padding: 0 15px 0 0;
   text-align: left;
 }
+.fintech .column > .content.event-aggregate-chart > .row > .column.company.name span {
+  font-size: 15px;
+  top: -4px;
+  position: relative;
+}
 .fintech .column > .content.event-aggregate-chart > .row > .column.company.name h2 {
   line-height: 26px;
   white-space: nowrap;
@@ -934,7 +967,8 @@ form {
   width: 100%;
   display: block;
   border: 0 !important;
-  padding: 15px 0 0;
+  margin-top: -5px;
+  /*padding: 15px 0 0;*/
 }
 .fintech.scroll {
   padding-top: 108px;
@@ -1520,13 +1554,13 @@ form {
   border-right: 7px solid #ff333a;
   right: 100%;
 }
-.fintech .grid.home .watchlist .header {
+.fintech .grid.home .content .header {
   margin: -20px -20px 0;
   padding: 14px 20px 12px 20px;
   font-size: 15px;
   font-weight: 700;
 }
-.fintech .grid.home .watchlist .row {
+.fintech .grid.home .content .row {
   border-top: 1px solid #ededed;
   padding: 10px 0;
 }
@@ -1563,26 +1597,32 @@ form {
   padding: 14px 20px 16px 20px;
 }
 .fintech .grid.home .notification-feeds .feed .segment .time {
-  position: absolute;
-  right: 12px;
-  top: 8px;
   color: gray;
   display: inline-block;
   font-size: 12px;
   font-weight: normal;
+  border-right: 1px solid #bfbfbf;
+  padding-right: 9px;
+  height: 10px;
+  line-height: 9px;
+}
+.fintech .grid.home .notification-feeds .feed .segment p {
+  margin: 0;
 }
 .fintech .grid.home .notification-feeds .feed .feed-head {
   font-size: 18px;
-  padding-right: 60px;
   position: relative;
   color: #000;
   line-height: normal;
   cursor: default;
 }
+.fintech .grid.home .notification-feeds .feed .info {
+  padding-top: 5px;
+}
 .fintech .grid.home .notification-feeds .feed .details {
   font-weight: normal;
   font-size: 1rem;
-  margin-left: 6px;
+  margin-left: 8px;
 }
 .fintech .grid.home .notification-feeds .feed .details:hover {
   color: #f0ac09;
@@ -1602,15 +1642,16 @@ form {
   max-width: 100%;
   display: block;
 }
-.fintech .grid.home .questions .header {
-  margin: -20px -20px 0;
-  padding: 14px 20px 12px 20px;
-  font-size: 15px;
-  font-weight: 700;
-}
 .fintech .grid.home .questions .row {
-  margin: 0px -20px 0 -20px;
-  border-top: 1px solid #ededed;
+  margin: 0;
+  padding: 0;
+}
+.fintech .grid.home .questions .row .time {
+  display: block;
+  color: #666;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 2px 0 0 0;
 }
 .fintech .grid.home .questions .row h2 {
   font-size: 16px;
@@ -1619,10 +1660,10 @@ form {
 .fintech .grid.home .questions .row h2 a {
   color: #000;
   display: block;
-  padding: 15px 20px;
+  padding: 15px 0;
 }
-.fintech .grid.home .questions .row:hover {
-  background-color: #fcfcfc;
+.fintech .grid.home .questions .row h2 a:hover {
+  color: #f0ac09;
 }
 .fintech .grid.home .questions .row:last-child {
   margin-bottom: -20px;
@@ -1979,6 +2020,10 @@ form {
 }
 .fintech > .top a:hover {
   color: #000;
+}
+.fintech > .top .lang {
+  font-family: Fintech_Arabic_Bold;
+  padding-right: 0;
 }
 .fintech > .top .active {
   color: #4faec5;
