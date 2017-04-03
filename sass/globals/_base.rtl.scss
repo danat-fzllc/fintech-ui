@@ -3,14 +3,15 @@ $left: right;
 $right: left;
 
 html {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 body {
-    font-family: $font-ar;
+    font-family: Arial;
     color: #585858;
     direction: rtl;
-    line-height: 1.5rem;
+    font-size: 12px;
+    line-height: normal;
 }
 
 a {
@@ -21,13 +22,27 @@ a {
 
 h1, h2, h3, h4, h5 {
     margin: 0;
-    font-family: $font-ar-bold;
+
+    /* font-family: $font-ar-bold;*/
 
     /*line-height: normal;*/
 }
 
 .bold, strong, b {
+    /*font-family: $font-ar-bold;*/
+}
+
+.header {
     font-family: $font-ar-bold;
+}
+
+.custom-font {
+    font-family: $font-ar;
+}
+
+th {
+    font-weight: bold;
+    font-size: 14px;
 }
 
 form {

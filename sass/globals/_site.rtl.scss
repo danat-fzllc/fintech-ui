@@ -272,6 +272,7 @@
                         display: inline-block;
                         margin: 8px 0 0 0;
                         font-size: 16px;
+                        font-family: $font-ar-bold;
 
                         @extend .bold;
 
@@ -391,7 +392,6 @@
             font-size: rem(19);
             line-height: rem(44);
             font-weight: normal;
-            font-family: $font-ar;
             color: $white;
 
             @include transition(all 0.5s ease-in-out);
@@ -417,11 +417,12 @@
             background-color: #288aa1;
             border-color: transparent;
             padding: 0;
-            margin: 8px 0 0 0;
+            margin: 6px 0 0 0;
             height: 28px;
             width: auto;
             color: $white;
             border-color: #288aa1 !important;
+            font-family: inherit;
 
             &:focus {
                 background-color: #288aa1;
@@ -443,6 +444,7 @@
             padding: 7px 12px 0 14px;
             height: 28px;
             font-size: rem(14);
+            font-family: inherit;
 
             @include border-radius(rem(6));
 
@@ -605,7 +607,7 @@
                 .dropdown.icon {
                     font-size: rem(15);
                     float: right;
-                    margin: 4px 0px 0 7px;
+                    margin: 0px 0px 0 7px;
                 }
             }
         }
@@ -622,7 +624,7 @@
             .title {
                 border: 0;
                 padding: 6px;
-                font-family: $font-ar;
+                font-size: 14px;
             }
 
             > .item {
@@ -1052,20 +1054,22 @@
                 .name {
                     strong {
                         position: relative;
+                        font-size: 16px;
 
                         .count {
                             position: absolute;
                             background-color: #4fadc5;
                             color: #fff;
                             border-radius: 5px;
-                            padding: 3px 4px 3px 6px;
+                            padding: 3px 5px;
                             line-height: 12px;
                             font-size: 12px;
                             right: 100%;
-                            top: 2px;
+                            top: 0px;
                             margin: 0 5px 0 0px;
                             font-weight: normal;
                             text-align: center;
+                            font-family: Arial;
                         }
                     }
                 }
@@ -1111,7 +1115,7 @@
                 }
 
                 .feed-head {
-                    font-size: 18px;
+                    font-size: 17px;
                     position: relative;
                     color: #000;
                     cursor: default;
@@ -1122,7 +1126,6 @@
                 }
 
                 .details {
-                    font-family: $font-ar;
                     font-size: 1rem;
                     margin-right: 8px;
 
@@ -1166,12 +1169,6 @@
         }
 
         .questions {
-            .header {
-                margin: -20px -20px 0;
-                padding: 14px 20px 12px 20px;
-                font-size: 15px;
-            }
-
             .row {
                 margin: 0;
                 padding: 0;
@@ -1185,7 +1182,7 @@
                 }
 
                 h2 {
-                    font-size: 16px;
+                    font-size: 17px;
                     font-weight: bold;
 
                     a {
