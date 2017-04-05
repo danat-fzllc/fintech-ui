@@ -1,21 +1,21 @@
 @mixin breakpoint($point) {
     @if $point == desktops {
-        @media (max-width: $desktops-width) {
+        @media (min-width: $desktops-width) {
             @content;
         }
     }
     @else if $point == laptops {
-        @media (max-width: $laptops-width) {
+        @media (min-width: $laptops-width) {
             @content;
         }
     }
     @else if $point == tablets {
-        @media (max-width: $tablets-width) {
+        @media (min-width: $tablets-width) {
             @content;
         }
     }
     @else if $point == mobiles {
-        @media (max-width: $mobiles-width) {
+        @media (min-width: $mobiles-width) {
             @content;
         }
     }
