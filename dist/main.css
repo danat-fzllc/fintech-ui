@@ -838,6 +838,9 @@ form {
     width: 94%;
   }
 }
+.fintech .column .selected-tags .ui.label {
+  margin-top: 8px;
+}
 .fintech .column > .content {
   background-color: #fff;
   padding: 20px;

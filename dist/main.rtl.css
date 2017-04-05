@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5 {
   /*line-height: normal;*/
 }
 
-.bold, .fintech .column > .content.event-aggregate-chart > .row > .column .donut-value, .fintech .column > .content.event-aggregate-chart > .row > .column .title, .fintech .grid.home .content .header, .fintech .ui.table thead th, strong, b {
+.bold, .fintech .column > .content.event-aggregate-chart > .row > .column .title, .fintech .grid.home .content .header, .fintech .ui.table thead th, strong, b {
   /*font-family: $font-ar-bold;*/
 }
 
@@ -171,7 +171,7 @@ form {
   clear: both;
 }
 
-.bold, .fintech .column > .content.event-aggregate-chart > .row > .column .donut-value, .fintech .column > .content.event-aggregate-chart > .row > .column .title, .fintech .grid.home .content .header, .fintech .ui.table thead th {
+.bold, .fintech .column > .content.event-aggregate-chart > .row > .column .title, .fintech .grid.home .content .header, .fintech .ui.table thead th {
   font-weight: bold;
 }
 
@@ -1165,7 +1165,7 @@ form {
   .fintech .calendar-table-view-btns .calendar i {
     background-image: url('themes/default/assets/images/icons-2x-s4672043660.png');
     background-size: 118.5px 39px;
-    background-position: -31px 0;
+    background-position: -32px 0;
     height: 13px;
     width: 13.5px;
   }
@@ -1227,7 +1227,7 @@ form {
   .fintech .calendar-table-view-btns .table.active i {
     background-image: url('themes/default/assets/images/icons-2x-s4672043660.png');
     background-size: 118.5px 39px;
-    background-position: -58px 0;
+    background-position: -59px 0;
     height: 13px;
     width: 13.5px;
   }
@@ -1308,15 +1308,15 @@ form {
     width: 94%;
   }
 }
+.fintech .column .selected-tags .ui.label {
+  margin-top: 8px;
+}
 .fintech .column > .content {
   background-color: #fff;
   padding: 20px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 .fintech .column > .content .hint {
   display: block;
@@ -1324,12 +1324,6 @@ form {
   font-size: 12px;
   position: relative;
   top: 2px;
-}
-.fintech .column > .content .hint span {
-  position: absolute;
-  right: 0;
-  top: 4px;
-  font-size: 14px;
 }
 .fintech .column > .content.event-aggregate-chart > .row {
   border: 1px solid #ededed;
@@ -1384,6 +1378,7 @@ form {
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .donut-value {
   font-size: 18px;
+  font-weight: 700;
   display: inline-block;
   float: right;
   margin: 34px 15px 0 0;
@@ -2120,7 +2115,7 @@ form {
   font-size: 22px;
   line-height: 2rem;
 }
-.fintech .grid.home .notification-feeds .feed.bold .feed-head, .fintech .grid.home .notification-feeds .column > .content.event-aggregate-chart > .row > .column .feed.donut-value .feed-head, .fintech .column > .content.event-aggregate-chart > .row > .column .grid.home .notification-feeds .feed.donut-value .feed-head, .fintech .grid.home .notification-feeds .column > .content.event-aggregate-chart > .row > .column .feed.title .feed-head, .fintech .column > .content.event-aggregate-chart > .row > .column .grid.home .notification-feeds .feed.title .feed-head, .fintech .grid.home .notification-feeds .content .feed.header .feed-head, .fintech .grid.home .content .notification-feeds .feed.header .feed-head, .fintech .grid.home .notification-feeds .ui.table thead th.feed .feed-head, .fintech .ui.table thead .grid.home .notification-feeds th.feed .feed-head {
+.fintech .grid.home .notification-feeds .feed.bold .feed-head, .fintech .grid.home .notification-feeds .column > .content.event-aggregate-chart > .row > .column .feed.title .feed-head, .fintech .column > .content.event-aggregate-chart > .row > .column .grid.home .notification-feeds .feed.title .feed-head, .fintech .grid.home .notification-feeds .content .feed.header .feed-head, .fintech .grid.home .content .notification-feeds .feed.header .feed-head, .fintech .grid.home .notification-feeds .ui.table thead th.feed .feed-head, .fintech .ui.table thead .grid.home .notification-feeds th.feed .feed-head {
   font-size: 26px;
   font-weight: bold;
   line-height: 2.2rem;
