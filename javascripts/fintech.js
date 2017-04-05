@@ -18,7 +18,9 @@ $('.ui.dropdown')
   .dropdown({
     allowCategorySelection: true
   });
-
+$('.ui.progress').progress({
+ showActivity:false
+});
 
 // clear the generated semantic-ui menu
 var $menu = $('<div/>').addClass('menu');
