@@ -145,6 +145,10 @@ form {
   clear: both;
 }
 
+.bold, .fintech .ui.table thead th {
+  font-weight: bold;
+}
+
 .column > h2 {
   padding-left: 20px;
   font-weight: 500;
@@ -691,7 +695,7 @@ form {
   .fintech .calendar-table-view-btns .calendar i {
     background-image: url('themes/default/assets/images/icons-2x-s4672043660.png');
     background-size: 118.5px 39px;
-    background-position: -32px 0;
+    background-position: -31px 0;
     height: 13px;
     width: 13.5px;
   }
@@ -753,7 +757,7 @@ form {
   .fintech .calendar-table-view-btns .table.active i {
     background-image: url('themes/default/assets/images/icons-2x-s4672043660.png');
     background-size: 118.5px 39px;
-    background-position: -59px 0;
+    background-position: -58px 0;
     height: 13px;
     width: 13.5px;
   }
@@ -1032,7 +1036,7 @@ form {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.fintech .question[class*="page"] h1 .bold {
+.fintech .question[class*="page"] h1 .bold, .fintech .question[class*="page"] h1 .ui.table thead th, .fintech .ui.table thead .question[class*="page"] h1 th {
   font-weight: 700;
 }
 .fintech .question[class*="page"] h1 .highlight {
@@ -1613,7 +1617,7 @@ form {
   margin: 5px 0 0;
 }
 .fintech .grid.home .notification-feeds .feed .feed-head {
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   color: #000;
   line-height: normal;
@@ -1637,7 +1641,7 @@ form {
 .fintech .grid.home .notification-feeds .feed.light .feed-head {
   font-size: 22px;
 }
-.fintech .grid.home .notification-feeds .feed.bold .feed-head {
+.fintech .grid.home .notification-feeds .feed.bold .feed-head, .fintech .grid.home .notification-feeds .ui.table thead th.feed .feed-head, .fintech .ui.table thead .grid.home .notification-feeds th.feed .feed-head {
   font-size: 26px;
   font-weight: bold;
 }
@@ -1675,6 +1679,12 @@ form {
 .consecutive-rally .fa-check-circle {
   font-size: 1.23077rem;
 }
+.consecutive-rally .fa-circle {
+  font-size: 0.84615rem;
+}
+.consecutive-rally .fa-circle.green {
+  font-size: 1.23077rem;
+}
 
 .device-only, .icon.device-only {
   display: none;
@@ -1689,6 +1699,27 @@ form {
   margin-bottom: 20px;
 }
 
+.prog-wrapper {
+  padding-right: 25px;
+  height: 12px;
+}
+.prog-wrapper .prog-bar {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  height: 12px;
+  position: relative;
+  background-color: #4faec5;
+}
+.prog-wrapper .prog-bar .prog-text {
+  position: absolute;
+  left: 101%;
+  top: -4px;
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 3px;
+}
+
 /*Elements - Individual site elements*/
 .fintech .ui.table {
   border: 0;
@@ -1698,6 +1729,12 @@ form {
   background: transparent;
   padding: 0 0.46154rem 0.46154rem 0.46154rem;
   border-bottom-color: #cdcdcd;
+}
+.fintech .ui.table thead th i.caret:before {
+  font-size: 20px;
+  line-height: 11px;
+  top: 3px;
+  position: relative;
 }
 .fintech .ui.table thead.sub {
   background-color: #f7f7f7;
@@ -1762,6 +1799,15 @@ form {
 .fintech .ui.table tr.expanded td {
   border-bottom: 1px solid #cccccc;
   background-color: #f7f7f7;
+}
+.fintech .ui.table tfoot th {
+  background: none;
+  font-weight: bold;
+  border-top: 2px solid #cdcdcd;
+  font-size: 14px;
+}
+.fintech .ui.table .company-name {
+  font-weight: 500;
 }
 
 /*Modules - Individual site modules*/

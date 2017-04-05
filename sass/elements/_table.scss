@@ -9,6 +9,15 @@
                 background: transparent;
                 padding: 0 rem(6) rem(6) rem(6);
                 border-bottom-color: #cdcdcd;
+
+                @extend .bold;
+
+                i.caret:before {
+                    font-size: 20px;
+                    line-height: 11px;
+                    top: 3px;
+                    position: relative;
+                }
             }
 
             &.sub {
@@ -98,6 +107,19 @@
                     background-color: $light-gray;
                 }
             }
+        }
+
+        tfoot {
+            th {
+                background: none;
+                font-weight: bold;
+                border-top: 2px solid $dark-gray;
+                font-size: 14px;
+            }
+        }
+
+        .company-name {
+            font-weight: 500;
         }
     }
 }
