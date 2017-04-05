@@ -146,7 +146,7 @@ form {
 }
 
 .bold, .fintech .ui.table thead th {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .column > h2 {
@@ -1799,7 +1799,7 @@ form {
 }
 .fintech .ui.table tfoot th {
   background: none;
-  font-weight: bold;
+  font-weight: 700;
   border-top: 2px solid #cdcdcd;
   font-size: 14px;
 }

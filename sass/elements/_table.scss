@@ -112,14 +112,14 @@
         tfoot {
             th {
                 background: none;
-                font-weight: bold;
+                font-weight: $font-weight-medium;
                 border-top: 2px solid $dark-gray;
                 font-size: 14px;
             }
         }
 
         .company-name {
-            font-weight: 500;
+            font-weight: $font-weight-regular;
         }
     }
 }
