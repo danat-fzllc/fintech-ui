@@ -119,10 +119,6 @@
         position: absolute;
         font-size: 0.1px;
         display: block;
-
-        @include breakpoint(laptops) {
-            display: none;
-        }
     }
 
     .ui-resizable-e {
@@ -171,10 +167,6 @@
         padding: 20px 0;
         max-width: 1200px !important;
         position: relative;
-
-        @include breakpoint(laptops) {
-            width: 94%;
-        }
     }
 
     .column {
@@ -218,11 +210,6 @@
                         height: 70px;
                         width: 200px;
 
-                        @include breakpoint(laptops) {
-                            width: 30%;
-                        }
-
-
                         &:first-child {
                             padding: 35px 0 0 22px;
                             text-align: left;
@@ -233,10 +220,6 @@
                             width: auto;
                             border: none;
                             padding: 0 200px;
-
-                            @include breakpoint(laptops) {
-                                padding: 0 30%;
-                            }
                         }
 
                         &.no-border {
@@ -359,10 +342,6 @@
 
             .share {
                 top: 34%;
-
-                @include breakpoint(laptops) {
-                    top: 60%;
-                }
             }
         }
     }
@@ -380,10 +359,6 @@
         .outer {
             max-width: 1200px;
             margin: 0 auto;
-
-            @include breakpoint(laptops) {
-                width: 94%;
-            }
         }
 
         h1 {
@@ -464,11 +439,6 @@
             color: $white;
             cursor: pointer;
             font-size: 17px;
-
-            @include breakpoint(laptops) {
-                top: 64%;
-            }
-
 
             @include border-radius(3px);
 
@@ -557,10 +527,6 @@
         .outer {
             max-width: 1200px;
             margin: 0 auto;
-
-            @include breakpoint(laptops) {
-                width: 94%;
-            }
         }
 
         h1 {
@@ -573,15 +539,6 @@
 
     .page.filters {
         width: 250px;
-
-        @include breakpoint(laptops) {
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 80%;
-            float: none !important;
-        }
-
 
         .ui.container {
             background-color: #fff;
@@ -637,10 +594,6 @@
             .list {
                 a.item {
                     padding: 6px 0;
-
-                    @include breakpoint(laptops) {
-                        padding: 20px 0;
-                    }
                 }
             }
         }
@@ -716,14 +669,6 @@
                 &:hover {
                     @include opacity(0.6);
                 }
-
-                @include breakpoint(laptops) {
-                    display: none;
-                }
-            }
-
-            @include breakpoint(laptops) {
-                width: 100%;
             }
         }
 
@@ -1209,10 +1154,6 @@
 
 .device-only {
     display: none;
-
-    @include breakpoint(laptops) {
-        display: block;
-    }
 }
 
 .icon.device-only {

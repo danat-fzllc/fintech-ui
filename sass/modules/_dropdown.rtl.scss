@@ -86,14 +86,6 @@
             &:not(.button) > .text {
                 color: #000;
                 font-weight: $font-weight-medium;
-
-                @include breakpoint(laptops) {
-                    display: inline-block;
-                    width: 70px;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                }
             }
 
             &:not(.button) > .default.text {
