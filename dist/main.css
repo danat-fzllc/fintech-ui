@@ -695,7 +695,7 @@ form {
   .fintech .calendar-table-view-btns .calendar i {
     background-image: url('themes/default/assets/images/icons-2x-s4672043660.png');
     background-size: 118.5px 39px;
-    background-position: -31px 0;
+    background-position: -32px 0;
     height: 13px;
     width: 13.5px;
   }
@@ -757,7 +757,7 @@ form {
   .fintech .calendar-table-view-btns .table.active i {
     background-image: url('themes/default/assets/images/icons-2x-s4672043660.png');
     background-size: 118.5px 39px;
-    background-position: -58px 0;
+    background-position: -59px 0;
     height: 13px;
     width: 13.5px;
   }
