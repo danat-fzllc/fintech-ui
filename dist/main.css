@@ -632,6 +632,76 @@ form {
   }
 }
 
+.fintech .coming-soon-page {
+  background: url(themes/default/assets/images/coming-soon-bg.jpg) no-repeat 0 0;
+  background-size: cover;
+  min-height: 800px;
+  position: relative;
+}
+.fintech .coming-soon-page .clock-holder {
+  position: absolute;
+  margin: auto;
+  width: 460px;
+  height: 460px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.fintech .coming-soon-page .clock-holder #clock {
+  position: relative;
+  width: 460px;
+  height: 460px;
+  margin: auto;
+  background: url(themes/default/assets/images/clock.png) no-repeat center center;
+  list-style: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: 100%;
+}
+.fintech .coming-soon-page .clock-holder #sec, .fintech .coming-soon-page .clock-holder #min, .fintech .coming-soon-page .clock-holder #hour {
+  position: absolute;
+  width: 30px;
+  height: 600px;
+  top: -71px;
+  left: 215px;
+}
+.fintech .coming-soon-page .clock-holder #sec {
+  background: url(themes/default/assets/images/sechand.png);
+  z-index: 3;
+}
+.fintech .coming-soon-page .clock-holder #min {
+  background: url(themes/default/assets/images/minhand.png);
+  z-index: 2;
+}
+.fintech .coming-soon-page .clock-holder #hour {
+  background: url(themes/default/assets/images/hourhand.png);
+  z-index: 1;
+}
+.fintech .coming-soon-page .holder {
+  margin: auto;
+  width: 400px;
+  height: 232px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 1.38462rem;
+  z-index: 100;
+}
+.fintech .coming-soon-page .holder p {
+  margin: 0;
+}
+.fintech .coming-soon-page .holder h3 {
+  font-size: 6.92308rem;
+  line-height: 84px;
+  padding-bottom: 10px;
+}
 .fintech .calendar-table .fa-circle
 + .fa-circle {
   margin: 0 0 0 4px;
