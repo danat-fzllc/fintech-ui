@@ -1612,13 +1612,10 @@ form {
   margin-bottom: -20px;
 }
 
-.consecutive-rally .fa-check-circle {
-  font-size: 1.23077rem;
-}
 .consecutive-rally .fa-circle {
   font-size: 0.84615rem;
 }
-.consecutive-rally .fa-circle.green {
+.consecutive-rally .fa-circle.green, .consecutive-rally .fa-circle.red {
   font-size: 1.23077rem;
 }
 

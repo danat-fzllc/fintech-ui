@@ -1139,14 +1139,10 @@
 }
 
 .consecutive-rally {
-    .fa-check-circle {
-        font-size: rem(16);
-    }
-
     .fa-circle {
         font-size: rem(11);
 
-        &.green {
+        &.green, &.red {
             font-size: rem(16);
         }
     }
