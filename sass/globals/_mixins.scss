@@ -113,8 +113,9 @@
     }
 }
 
-$icons: sprite-map("icons/*.png", $layout: smart);
-$icons-2x: sprite-map("icons-2x/*.png", $layout: smart);
+/*$layout: smart*/
+$icons: sprite-map("icons/*.png", $spacing: 5px);
+$icons-2x: sprite-map("icons-2x/*.png", $spacing: 10px);
 
 //Sprite mixin, works perfectly with standard defines
 @mixin use-sprite($sprite) {
