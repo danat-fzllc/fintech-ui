@@ -1,3 +1,4 @@
+/*Max width (Mobiles) is using to override semantic style in mobile*/
 @mixin breakpoint($point) {
     @if $point == desktops {
         @media (min-width: $desktops-width) {
@@ -15,7 +16,7 @@
         }
     }
     @else if $point == mobiles {
-        @media (min-width: $mobiles-width) {
+        @media (max-width: $tablets-width) {
             @content;
         }
     }

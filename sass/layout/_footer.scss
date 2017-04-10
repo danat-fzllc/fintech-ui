@@ -3,6 +3,15 @@ footer {
     clear: both;
     background: #fff;
     padding: 15px;
+    border-top: 1px solid $gray;
+    text-align: center;
+    position: relative;
+
+    @include breakpoint(tablets) {
+        text-align: initial;
+        border-top: none;
+    }
+
 
     .outer {
         max-width: 1200px;

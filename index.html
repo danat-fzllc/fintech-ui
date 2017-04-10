@@ -4,7 +4,7 @@
 <head>
     <title>Fintech</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
     <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -12,179 +12,194 @@
 </head>
 
 <body>
-    <div class="ui container fluid fintech">
+    <div class="fintech">
         <div class="top">
             <div class="outer clearfix">
+                <button class="main-nav-button left floated"></button>
                 <a class="logo left floated"></a>
                 <form class="left floated country-selection">
                     <div class="field">
                         <div class="ui fluid search selection dropdown">
                             <input type="hidden" name="country">
                             <i class="dropdown icon"></i>
-                            <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
+                            <div class="default text"><i class="ae flag"></i><span>United Arab Emirates</span></div>
                             <div class="menu">
-                                <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
-                                <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
-                                <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                                <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
+                                <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                                <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
                             </div>
                         </div>
                     </div>
                 </form>
-                <div class="user-nav right floated">
-                    <a href="" class="active">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">FAQ</a>
-                    <a href="">Contact Us</a>
-                    <a href="" class="my-account"><strong>Patrick Carlson <i class="fa fa-cog" aria-hidden="true"></i></strong></a>
-                    <a href="" class="lang">عربى</a>
+                <button class="language right floated">عربى</button>
+                <div class="main-nav right floated">
+                    <div class="main-nav-header">
+                        <span class="left floated menu-title">Menu</span>
+                        <button class="right floated main-nav-close">&#10006;</button>
+                    </div>
+                    <div class="holder">
+                        <a href="" class="active">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contact Us</a>
+                        <a href="" class="my-account"><strong>Patrick Carlson <i class="fa fa-cog" aria-hidden="true"></i></strong></a>
+                        <a href="" class="lang">عربى</a>
+                    </div>
+                    <div class="share-options"></div>
                 </div>
             </div>
+            <div class="ui pointing secondary menu tabs-home">
+                <a class="active item notifications" data-tab="first"><i class="ico notifications"></i>Notifications</a>
+                <a class="item questions" data-tab="second"><i class="ico questions"></i>Questions</a>
+                <a class="item watchlist" data-tab="third"><i class="ico watchlist"></i>Watchlist</a>
+            </div>
         </div>
-        <div class="fluid ui content container clearfix" id="container">
-            <div class="ui grid home">
-                <div class="four wide column">
-                    <div class="content watchlist">
-                        <div class="header">My Watchlist</div>
-                        <div class="row">
-                            <div class="name"><strong>Petrochem<span class="count">3</span></strong></div>
-                            <div class="sector">Petrochemical Industries</div>
-                            <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
-                        </div>
-                        <div class="row">
-                            <div class="name"><strong>Petrochem<span class="count">13</span></strong></div>
-                            <div class="sector">Petrochemical Industries</div>
-                            <div class="value"><strong>21.15 <span class="change color red">0.07 (0.33 %)</span></strong></div>
-                        </div>
-                        <div class="row">
-                            <div class="name"><strong>Petrochem<span class="count">33</span></strong></div>
-                            <div class="sector">Petrochemical Industries</div>
-                            <div class="value"><strong>21.15 <span class="change color no-change">0.07 (0.33 %)</span></strong></div>
-                        </div>
-                        <div class="row">
-                            <div class="name"><strong>Petrochem</strong></div>
-                            <div class="sector">Petrochemical Industries</div>
-                            <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
-                        </div>
-                        <div class="row">
-                            <div class="name"><strong>Petrochem</strong></div>
-                            <div class="sector">Petrochemical Industries</div>
-                            <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
-                        </div>
-                        <div class="row">
-                            <div class="name"><strong>Petrochem</strong></div>
-                            <div class="sector">Petrochemical Industries</div>
-                            <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
-                        </div>
-                        <div class="row">
-                            <div class="name"><strong>Petrochem</strong></div>
-                            <div class="sector">Petrochemical Industries</div>
-                            <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
-                        </div>
-                        <div class="row">
-                            <div class="name"><strong>Petrochem</strong></div>
-                            <div class="sector">Petrochemical Industries</div>
-                            <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eight wide column">
-                    <div class="ui one column grid notification-feeds">
-                        <div class="column center aligned color primary">
-                            <div class="ui segment"><a href="#">View <strong>170</strong> New Notifications</a></div>
-                        </div>
-                        <div class="column feed">
-                            <div class="ui segment">
-                                <div class="feed-head">Checkout the <strong>monthly performance </strong>of Almarai from 2015 to 2016</div>
-                                <div class="info clearfix">
-                                    <span class="time">2 Min</span>
-                                    <a href="#" class="details">Details</a>
-                                </div>
+        <div class="ui container fluid fintech main-container">
+            <div class="fluid ui content container clearfix " id="container">
+                <div class="ui grid home">
+                    <div class="four wide  ui  tab segment " data-tab="third">
+                        <div class="content watchlist">
+                            <div class="header">My Watchlist</div>
+                            <div class="row">
+                                <div class="name"><strong>Petrochem<span class="count">3</span></strong></div>
+                                <div class="sector">Petrochemical Industries</div>
+                                <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
                             </div>
-                        </div>
-                        <div class="column feed">
-                            <div class="ui red segment">
-                                <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
-                                <div class="info clearfix">
-                                    <span class="time">2 Min</span>
-                                    <a href="#" class="details">Details</a>
-                                </div>
+                            <div class="row">
+                                <div class="name"><strong>Petrochem<span class="count">13</span></strong></div>
+                                <div class="sector">Petrochemical Industries</div>
+                                <div class="value"><strong>21.15 <span class="change color red">0.07 (0.33 %)</span></strong></div>
                             </div>
-                        </div>
-                        <div class="column feed">
-                            <div class="ui green segment">
-                                <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
-                                <div class="info clearfix">
-                                    <span class="time">2 Min</span>
-                                    <a href="#" class="details">Details</a>
-                                </div>
+                            <div class="row">
+                                <div class="name"><strong>Petrochem<span class="count">33</span></strong></div>
+                                <div class="sector">Petrochemical Industries</div>
+                                <div class="value"><strong>21.15 <span class="change color no-change">0.07 (0.33 %)</span></strong></div>
                             </div>
-                        </div>
-                        <div class="column feed">
-                            <div class="ui segment">
-                                <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <div class="info clearfix">
-                                    <span class="time">2 Min</span>
-                                    <a href="#" class="details">Details</a>
-                                </div>
+                            <div class="row">
+                                <div class="name"><strong>Petrochem</strong></div>
+                                <div class="sector">Petrochemical Industries</div>
+                                <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
                             </div>
-                        </div>
-                        <div class="column feed">
-                            <div class="ui segment">
-                                <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
-                                <img class="image" src="dist/themes/default/assets/images/feed-test-img.jpg" />
-                                <div class="info clearfix">
-                                    <span class="time">2 Min</span>
-                                    <a href="#" class="details">Details</a>
-                                </div>
+                            <div class="row">
+                                <div class="name"><strong>Petrochem</strong></div>
+                                <div class="sector">Petrochemical Industries</div>
+                                <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
                             </div>
-                        </div>
-                        <div class="column center aligned">
-                            Yesterday
-                        </div>
-                        <div class="column feed down">
-                            <div class="ui segment">
-                                <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
-                                <div class="info clearfix">
-                                    <span class="time">2 Min</span>
-                                    <a href="#" class="details">Details</a>
-                                </div>
+                            <div class="row">
+                                <div class="name"><strong>Petrochem</strong></div>
+                                <div class="sector">Petrochemical Industries</div>
+                                <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
                             </div>
-                        </div>
-                        <div class="column feed">
-                            <div class="ui segment">
-                                <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
-                                <div class="info clearfix">
-                                    <span class="time">2 Min</span>
-                                    <a href="#" class="details">Details</a>
-                                </div>
+                            <div class="row">
+                                <div class="name"><strong>Petrochem</strong></div>
+                                <div class="sector">Petrochemical Industries</div>
+                                <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
                             </div>
-                        </div>
-                        <div class="column feed">
-                            <div class="ui segment">
-                                <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
-                                <div class="info clearfix">
-                                    <span class="time">2 Min</span>
-                                    <a href="#" class="details">Details</a>
-                                </div>
+                            <div class="row">
+                                <div class="name"><strong>Petrochem</strong></div>
+                                <div class="sector">Petrochemical Industries</div>
+                                <div class="value"><strong>21.15 <span class="change color green">0.07 (0.33 %)</span></strong></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="four wide column questions">
-                    <div class="content">
-                        <div class="header">Title</div>
-                        <div class="row">
-                            <h2><a href="#">What was the monthly performance of Agriculture and Food Industries Index from 2010 to 2015? <span class="time">2 Min</span></a></h2>
+                    <div class="eight wide  ui  tab segment active" data-tab="first">
+                        <div class="ui one column grid notification-feeds">
+                            <div class="column center aligned color primary">
+                                <div class="ui segment total-number "><a href="#">View <strong>170</strong> New Notifications</a></div>
+                            </div>
+                            <div class="column feed">
+                                <div class="ui segment">
+                                    <div class="feed-head">Checkout the <strong>monthly performance </strong>of Almarai from 2015 to 2016</div>
+                                    <div class="info clearfix">
+                                        <span class="time">2 Min</span>
+                                        <a href="#" class="details">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column feed">
+                                <div class="ui red segment">
+                                    <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
+                                    <div class="info clearfix">
+                                        <span class="time">2 Min</span>
+                                        <a href="#" class="details">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column feed">
+                                <div class="ui green segment">
+                                    <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
+                                    <div class="info clearfix">
+                                        <span class="time">2 Min</span>
+                                        <a href="#" class="details">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column feed">
+                                <div class="ui segment">
+                                    <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
+                                    <div class="info clearfix">
+                                        <span class="time">2 Min</span>
+                                        <a href="#" class="details">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column feed">
+                                <div class="ui segment">
+                                    <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
+                                    <img class="image" src="dist/themes/default/assets/images/feed-test-img.jpg" />
+                                    <div class="info clearfix">
+                                        <span class="time">2 Min</span>
+                                        <a href="#" class="details">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column center aligned">
+                                Yesterday
+                            </div>
+                            <div class="column feed down">
+                                <div class="ui segment">
+                                    <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
+                                    <div class="info clearfix">
+                                        <span class="time">2 Min</span>
+                                        <a href="#" class="details">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column feed">
+                                <div class="ui segment">
+                                    <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
+                                    <div class="info clearfix">
+                                        <span class="time">2 Min</span>
+                                        <a href="#" class="details">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column feed">
+                                <div class="ui segment">
+                                    <div class="feed-head">Checkout the monthly performance of Almarai from 2015 to 2016</div>
+                                    <div class="info clearfix">
+                                        <span class="time">2 Min</span>
+                                        <a href="#" class="details">Details</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <h2><a href="#">What was the monthly performance of Agriculture and Food Industries Index from 2010 to 2015? <span class="time">2 Min</span></a></h2>
-                        </div>
-                        <div class="row">
-                            <h2><a href="#">What was the monthly performance of Agriculture and Food Industries Index from 2010 to 2015? <span class="time">2 Min</span></a></h2>
-                        </div>
-                        <div class="row">
-                            <h2><a href="#">What was the monthly performance of Agriculture and Food Industries Index from 2010 to 2015? <span class="time">2 Min</span></a></h2>
+                    </div>
+                    <div class="four wide  questions ui  tab segment" data-tab="second">
+                        <div class="content">
+                            <div class="header">Title</div>
+                            <div class="row">
+                                <h2><a href="#">What was the monthly performance of Agriculture and Food Industries Index from 2010 to 2015? <span class="time">2 Min</span></a></h2>
+                            </div>
+                            <div class="row">
+                                <h2><a href="#">What was the monthly performance of Agriculture and Food Industries Index from 2010 to 2015? <span class="time">2 Min</span></a></h2>
+                            </div>
+                            <div class="row">
+                                <h2><a href="#">What was the monthly performance of Agriculture and Food Industries Index from 2010 to 2015? <span class="time">2 Min</span></a></h2>
+                            </div>
+                            <div class="row">
+                                <h2><a href="#">What was the monthly performance of Agriculture and Food Industries Index from 2010 to 2015? <span class="time">2 Min</span></a></h2>
+                            </div>
                         </div>
                     </div>
                 </div>

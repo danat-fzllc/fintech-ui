@@ -22,7 +22,7 @@
 
         font-size: rem(15);
         display: inline-block;
-        float: right;
+        float: ri ght;
 
         a {
             display: inline-block;
@@ -164,9 +164,14 @@
     }
 
     > .ui.content.container {
-        padding: 20px 0;
         max-width: 1200px !important;
         position: relative;
+        padding: 20px 0;
+
+        @include breakpoint(mobiles) {
+            padding: 0;
+            margin: 0 !important;
+        }
     }
 
     .column {
@@ -975,10 +980,16 @@
     .grid.home {
         .content {
             .header {
-                margin: -20px -20px 0;
-                padding: 14px 20px 12px 20px;
-                font-size: 15px;
+                margin: -15px 0px 0;
+                padding: 14px 0px 12px 0px;
+                font-size: rem(20);
                 font-weight: $font-weight-medium;
+
+                @include breakpoint(tablets) {
+                    font-size: rem(16);
+                    margin: -20px -20px 0;
+                    padding: 14px 20px 12px 20px;
+                }
             }
 
             .row {
@@ -987,11 +998,30 @@
             }
         }
 
+        .segment {
+            box-shadow: none;
+            width: 100%;
+            margin: 0;
+        }
+
         .watchlist {
             .row {
                 .name {
+                    font-size: rem(18);
+
+                    @include breakpoint(tablets) {
+                        font-size: rem(14);
+                    }
+
+
                     strong {
                         position: relative;
+                        display: block;
+
+                        @include breakpoint(tablets) {
+                            display: inline-block;
+                        }
+
 
                         .count {
                             position: absolute;
@@ -1001,10 +1031,15 @@
                             padding: 3px 5px 3px 5px;
                             line-height: 12px;
                             font-size: 12px;
-                            left: 100%;
+                            right: 0;
                             margin: 0 0 0 5px;
                             font-weight: normal;
                             text-align: center;
+
+                            @include breakpoint(tablets) {
+                                left: 100%;
+                                right: auto;
+                            }
                         }
                     }
                 }
@@ -1028,76 +1063,132 @@
         }
 
         .notification-feeds {
-            .feed {
-                .segment {
-                    position: relative;
-                    padding: 14px 20px 16px 20px;
+            .column {
+                @include breakpoint(mobiles) {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
 
-                    .time {
-                        color: gray;
-                        display: inline-block;
-                        font-size: 12px;
+
+                .total-number {
+                    font-size: rem(16);
+                    font-weight: $font-weight-medium;
+
+                    @include breakpoint(tablets) {
+                        font-size: 1rem;
+                        font-weight: initial;
+                    }
+                }
+
+                &.feed {
+                    .segment {
+                        position: relative;
+                        padding: 14px 20px 16px 20px;
+
+                        @include breakpoint(mobiles) {
+                            border-radius: 0;
+                            padding: 15px 0;
+                            border-top: 1px solid $gray;
+                        }
+
+
+                        .time {
+                            color: gray;
+                            display: inline-block;
+                            font-size: 12px;
+                            font-weight: normal;
+                            padding-right: 9px;
+                            height: 10px;
+                            line-height: 9px;
+
+                            @include breakpoint(tablets) {
+                                border-right: 1px solid #bfbfbf;
+                            }
+                        }
+
+                        p {
+                            margin: 5px 0 0;
+                        }
+
+                        &.red {
+                            &:not(.inverted) {
+                                position: relative;
+
+                                &:after {
+                                    width: 4px;
+                                    position: absolute;
+                                    left: -13px;
+                                    top: -1px;
+                                    bottom: -1px;
+                                    content: '';
+                                    background: $red;
+                                    margin: 0px 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .feed-head {
+                        font-size: rem(18);
+                        position: relative;
+                        color: #000;
+                        line-height: normal;
+                        cursor: default;
+                        font-weight: $font-weight-medium;
+
+                        @include breakpoint(tablets) {
+                            font-weight: normal;
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .info {
+                        padding-top: 5px;
+                    }
+
+                    .details {
                         font-weight: normal;
-                        border-right: 1px solid #bfbfbf;
-                        padding-right: 9px;
-                        height: 10px;
-                        line-height: 9px;
+                        font-size: 1rem;
+                        margin-left: 8px;
+                        display: none;
+
+                        &:hover {
+                            color: $secondary-color;
+                        }
+
+                        @include breakpoint(tablets) {
+                            display: inline-block;
+                        }
                     }
 
-                    p {
-                        margin: 5px 0 0;
+                    &.regular {
+                        .feed-head {}
                     }
-                }
 
-                .feed-head {
-                    font-size: 16px;
-                    position: relative;
-                    color: #000;
-                    line-height: normal;
-                    cursor: default;
-                }
-
-                .info {
-                    padding-top: 5px;
-                }
-
-                .details {
-                    font-weight: normal;
-                    font-size: 1rem;
-                    margin-left: 8px;
-
-                    &:hover {
-                        color: $secondary-color;
+                    &.semi-bold {
+                        .feed-head {
+                            font-size: 22px;
+                            font-weight: bold;
+                        }
                     }
-                }
 
-                &.regular {
-                    .feed-head {}
-                }
-
-                &.semi-bold {
-                    .feed-head {
-                        font-size: 22px;
-                        font-weight: bold;
+                    &.light {
+                        .feed-head {
+                            font-size: 22px;
+                        }
                     }
-                }
 
-                &.light {
-                    .feed-head {
-                        font-size: 22px;
+                    &.bold {
+                        .feed-head {
+                            font-size: 26px;
+                            font-weight: bold;
+                        }
                     }
-                }
 
-                &.bold {
-                    .feed-head {
-                        font-size: 26px;
-                        font-weight: bold;
+                    .image {
+                        max-width: 100%;
+                        display: block;
                     }
-                }
-
-                .image {
-                    max-width: 100%;
-                    display: block;
                 }
             }
         }
@@ -1116,8 +1207,13 @@
                 }
 
                 h2 {
-                    font-size: 16px;
+                    font-size: rem(18);
                     font-weight: bold;
+
+                    @include breakpoint(tablets) {
+                        font-size: 1.2rem;
+                    }
+
 
                     a {
                         color: #000;

@@ -5,6 +5,11 @@ $right: right;
 body {
     font-size: inherit;
     color: #585858;
+    background: #fff;
+
+    @include breakpoint(tablets) {
+        background: #f6f6f6;
+    }
 }
 
 a {
