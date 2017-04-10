@@ -1109,6 +1109,17 @@ form {
   min-height: 800px;
   position: relative;
 }
+.fintech .coming-soon-page:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #4fadc5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
 .fintech .coming-soon-page .clock-holder {
   position: absolute;
   margin: auto;
@@ -1131,6 +1142,8 @@ form {
   bottom: 0;
   left: 0;
   background-size: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
 }
 .fintech .coming-soon-page .clock-holder #sec, .fintech .coming-soon-page .clock-holder #min, .fintech .coming-soon-page .clock-holder #hour {
   position: absolute;
@@ -1164,6 +1177,8 @@ form {
   left: 0;
   font-size: 1.38462rem;
   z-index: 100;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
 }
 .fintech .coming-soon-page .holder p {
   margin: 0;
