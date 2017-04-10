@@ -672,8 +672,8 @@ form {
   bottom: 0;
   left: 0;
   background-size: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
 }
 .fintech .coming-soon-page .clock-holder #sec, .fintech .coming-soon-page .clock-holder #min, .fintech .coming-soon-page .clock-holder #hour {
   position: absolute;
