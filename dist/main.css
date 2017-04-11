@@ -2072,7 +2072,16 @@ form {
 }
 .fintech > .top .lang {
   font-family: Fintech_Arabic_Bold;
-  padding-right: 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  color: #4faec5;
+  padding: 0 12px;
+  line-height: 19px;
+  height: 26px;
+  position: relative;
+  top: -2px;
 }
 .fintech > .top .active {
   color: #4faec5;
