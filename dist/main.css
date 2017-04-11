@@ -1652,6 +1652,7 @@ form {
   font-weight: normal;
   font-size: 1rem;
   margin-left: 8px;
+  font-weight: 500;
 }
 .fintech .grid.home .notification-feeds .feed .details:hover {
   color: #f0ac09;
@@ -1851,7 +1852,7 @@ form {
 .fintech {
   /* Hover */
 }
-.fintech .question[class*="page"] .question > .dropdown {
+.fintech .question[class*="page"] .question .ui.dropdown {
   min-width: 0;
   min-height: 0;
   padding: 2px 26px 2px 8px;
@@ -1859,7 +1860,7 @@ form {
   line-height: normal;
   color: #fff;
 }
-.fintech .question[class*="page"] .question > .dropdown > .text:not(.default) {
+.fintech .question[class*="page"] .question .ui.dropdown > .text:not(.default) {
   color: #fff;
 }
 .fintech .ui.dropdown .menu > .header {
