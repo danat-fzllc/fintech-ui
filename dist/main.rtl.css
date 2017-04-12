@@ -2545,22 +2545,15 @@ form {
   cursor: default;
 }
 
+.fintech > .top a {
+  padding-top: 20px;
+}
 .fintech > .top .logo {
   margin: 14px 0px 0 18px;
 }
 .fintech > .top .lang {
-  font-family: "Maven Pro", sans-serif;
-  font-weight: 500;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #f2f2f2;
-  color: #4faec5;
-  padding: 0 12px;
-  line-height: 19px;
-  height: 26px;
-  position: relative;
-  top: -2px;
+  line-height: 23px;
+  top: -1px;
 }
 
 footer {

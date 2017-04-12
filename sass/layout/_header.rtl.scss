@@ -1,22 +1,16 @@
 .fintech {
     > .top {
+        a {
+            padding-top: 20px;
+        }
+
         .logo {
             margin: 14px 0px 0 18px;
         }
 
         .lang {
-            font-family: $base-font;
-            font-weight: 500;
-
-            @include border-radius(3px);
-
-            background-color: #f2f2f2;
-            color: #4faec5;
-            padding: 0 12px;
-            line-height: 19px;
-            height: 26px;
-            position: relative;
-            top: -2px;
+            line-height: 23px;
+            top: -1px;
         }
     }
 }
