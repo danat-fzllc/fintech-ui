@@ -356,7 +356,7 @@
                                 &:before {
                                     content: '';
                                     display: inline-block;
-                                    margin: 2px 10px 0 0;
+                                    margin: -2px 10px 0 0;
                                     float: left;
 
                                     @include use-sprite(aggregate_icon);
@@ -1161,6 +1161,7 @@
                     font-weight: normal;
                     font-size: 1rem;
                     margin-left: 8px;
+                    font-weight: $font-weight-regular;
 
                     &:hover {
                         color: $secondary-color;
