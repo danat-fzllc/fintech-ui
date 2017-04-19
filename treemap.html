@@ -9,43 +9,51 @@
     <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   
 </head>
 
 <body>
-    <div class="ui container fluid fintech">
-        <div class="top">
+    <div class="fintech">
+        <header class="top">
             <div class="outer clearfix">
-            <a class="logo left floated"></a>
-            <form class="left floated country-selection">
+                <button class="main-nav-button left floated"></button>
+                <a class="logo left floated"></a>
+                <form class="left floated country-selection">
                     <div class="field">
                         <div class="ui fluid search selection dropdown">
                             <input type="hidden" name="country">
                             <i class="dropdown icon"></i>
-                            <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
+                            <div class="default text"><i class="ae flag"></i><span>United Arab Emirates</span></div>
                             <div class="menu">
-                                <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
-                                <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
-                                <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                                <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
+                                <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                                <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
                             </div>
                         </div>
                     </div>
                 </form>
-           
-                
-                <div class="user-nav right floated">
-                    <a href="" class="active">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">FAQ</a>
-                    <a href="">Contact Us</a>
-                    <a href="" class="sign-in">Sign In</a>
+                <button class="language right floated">عربى</button>
+               <div class="main-nav right floated overlay-container">
+                    <div class="overlay-header clearfix">
+                        <span class="left floated overlay-title">Menu</span>
+                        <button class="right floated close"><i class="remove icon"></i></button>
+                    </div>
+                    <div class="holder">
+                        <a href="" class="active">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contact Us</a>
+                        <a href="" class="my-account"><strong>Patrick Carlson <i class="fa fa-cog" aria-hidden="true"></i></strong></a>
+                        <a href="" class="lang">عربى</a>
+                    </div>
+                    <div class="share-options"></div>
                 </div>
             </div>
-        </div>
-        <div class="fluid clearfix question page center aligned relative">
-        <div class="outer">
-            <form class="ui form">
-                <h1 class="question ui center">
+        </header>
+        <div class="ui container fluid  content-container">
+            <div class="fluid clearfix question page center aligned relative">
+                <div class="outer">
+                    <form class="ui form">
+                        <h1 class="question ui center">
                     What was the effect on <select id="" class="ui selection dropdown">
                         <option value="1">Sabic</option>
                         <option value="3">Markets</option>
@@ -75,120 +83,127 @@
                     <a class="ui button"><i class="fa fa-search" aria-hidden="true"></i>
  Discover</a>
                     </h1>
-            </form>
-            <div class="button gray share right floated">
-                
+                    </form>
+                    <div class="button gray share right floated">
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
-        <div class="fluid ui content container clearfix" id="container">
-            <section class="page filters left floated resize-left-column">
-                
-                <div class="ui container">
-                <div class="header">Filters</div>
-                    <div class="ui styled accordion">
-                        <div class="item">
-                            <div class="title active">
-                                <i class="dropdown icon"></i> Events
+            <div class="fluid ui content container clearfix" id="container">
+                <div class="ui icon button fixed secondary floating right bottom filter mobile-only big circular" tabindex="0">
+                    <i class="filter icon large"></i>
+                </div>
+                <section class="page filters left floated resize-left-column overlay-container">
+                    <div class="ui container">
+                        <div class="overlay-header">
+                            <div class="header overlay-title">Filters
+                                <button class="right floated close"><i class="remove icon"></i></button>
                             </div>
-                            <div class="content active">
-                                <div class="ui list">
-                                    <a class="item">Seasons</a>
-                                    <a class="item">International</a>
-                                </div>
+                        </div>
+                        <div class="ui styled accordion">
+                            <div class="item">
                                 <div class="title active">
-                                    <i class="dropdown icon"></i>Company
+                                    <i class="dropdown icon"></i> Events
                                 </div>
                                 <div class="content active">
                                     <div class="ui list">
                                         <a class="item">Seasons</a>
                                         <a class="item">International</a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui styled accordion">
-                        <div class="item">
-                            <div class="title">
-                                <i class="dropdown icon"></i> Sectors
-                            </div>
-                            <div class="content">
-                                <div class="inline field">
-                                    <div class="ui checkbox">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label><strong>Select All</strong></label>
+                                    <div class="title active">
+                                        <i class="dropdown icon"></i>Company
                                     </div>
-                                </div>
-                                <div class="inline field">
-                                    <div class="ui checkbox">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label>Insurance</label>
-                                    </div>
-                                </div>
-                                <div class="inline field">
-                                    <div class="ui checkbox">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label>Insurance</label>
+                                    <div class="content active">
+                                        <div class="ui list">
+                                            <a class="item">Seasons</a>
+                                            <a class="item">International</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="ui styled accordion">
+                            <div class="item">
+                                <div class="title">
+                                    <i class="dropdown icon"></i> Sectors
+                                </div>
+                                <div class="content">
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label><strong>Select All</strong></label>
+                                        </div>
+                                    </div>
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label>Insurance</label>
+                                        </div>
+                                    </div>
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label>Insurance</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fixed filter-button">
+                            <button class="ui button">Filter</button>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="fluid content-holder resize-right-column">
-            <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
-                <div class="fluid left floated">
-                    
-                    <div class="ui one column grid">
-                        <div class="column">
-                            <div class="content">
-                                <div class="color-scale">
-                                    <span class="value red left">-100</span>
-                                    <span class="bg red-100 ui button" data-tooltip="-100%" data-position="top center"></span>
-                                    <span class="bg red-95 ui button" data-tooltip="-95%" data-position="top center"></span>
-                                    <span class="bg red-90 ui button" data-tooltip="-90%" data-position="top center"></span>
-                                    <span class="bg red-85 ui button" data-tooltip="-85%" data-position="top center"></span>
-                                    <span class="bg red-80 ui button" data-tooltip="-80%" data-position="top center"></span>
-                                    <span class="bg red-75 ui button" data-tooltip="-75%" data-position="top center"></span>
-                                    <span class="bg red-70 ui button" data-tooltip="-70%" data-position="top center"></span>
-                                    <span class="bg red-65 ui button" data-tooltip="-65%" data-position="top center""></span>
-                                    <span class="bg red-60 ui button" data-tooltip="-60%" data-position="top center"></span>
-                                    <span class="bg red-55 ui button" data-tooltip="-55%" data-position="top center"></span>
-                                    <span class="bg red-50 ui button" data-tooltip="-50%" data-position="top center"></span>
-                                    <span class="bg red-45 ui button" data-tooltip="-45%" data-position="top center"></span>
-                                    <span class="bg red-40 ui button" data-tooltip="-40%" data-position="top center"></span>
-                                    <span class="bg red-35 ui button" data-tooltip="-35%" data-position="top center"></span>
-                                    <span class="bg red-30 ui button" data-tooltip="-30%" data-position="top center"></span>
-                                    <span class="bg red-25 ui button" data-tooltip="-25%" data-position="top center"></span>
-                                    <span class="bg red-20 ui button" data-tooltip="-20%" data-position="top center"></span>
-                                    <span class="bg red-15 ui button" data-tooltip="-15%" data-position="top center"></span>
-                                    <span class="bg red-10 ui button" data-tooltip="-10%" data-position="top center"></span>
-                                    <span class="bg red-5 ui button" data-tooltip="-5%" data-position="top center"></span>
-                                    <span class="bg no-change ui button" data-tooltip="0%" data-position="top center""></span>
-                                    <span class="value no-change center">0</span>
-                                    <span class="bg green-5 ui button" data-tooltip="5%" data-position="top center"></span>
-                                    <span class="bg green-10 ui button" data-tooltip="10%" data-position="top center"></span>
-                                    <span class="bg green-15 ui button" data-tooltip="15%" data-position="top center"></span>
-                                    <span class="bg green-20 ui button" data-tooltip="20%" data-position="top center"></span>
-                                    <span class="bg green-25 ui button" data-tooltip="25%" data-position="top center"></span>
-                                    <span class="bg green-30 ui button" data-tooltip="30%" data-position="top center"></span>
-                                    <span class="bg green-35 ui button" data-tooltip="35%" data-position="top center"></span>
-                                    <span class="bg green-40 ui button" data-tooltip="40%" data-position="top center"></span>
-                                    <span class="bg green-45 ui button" data-tooltip="45%" data-position="top center"></span>
-                                    <span class="bg green-50 ui button" data-tooltip="50%" data-position="top center"></span>
-                                    <span class="bg green-55 ui button" data-tooltip="55%" data-position="top center"></span>
-                                    <span class="bg green-60 ui button" data-tooltip="60%" data-position="top center"></span>
-                                    <span class="bg green-65 ui button" data-tooltip="65%" data-position="top center"></span>
-                                    <span class="bg green-70 ui button" data-tooltip="70%" data-position="top center"></span>
-                                    <span class="bg green-75 ui button" data-tooltip="75%" data-position="top center"></span>
-                                    <span class="bg green-80 ui button" data-tooltip="80%" data-position="top center"></span>
-                                    <span class="bg green-85 ui button" data-tooltip="85%" data-position="top center"></span>
-                                    <span class="bg green-90 ui button" data-tooltip="90%" data-position="top center"></span>
-                                    <span class="bg green-95 ui button" data-tooltip="95%" data-position="top center"></span>
-                                    <span class="bg green-100 ui button" data-tooltip="100%" data-position="top center""></span>
-                                    <span class="value green right">100</span>
+                </section>
+                <section class="fluid content-holder resize-right-column">
+                    <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
+                    <div class="fluid left floated">
+                        <div class="ui one column grid">
+                            <div class="column">
+                                <div class="content">
+                                    <div class="color-scale">
+                                        <span class="value red left">-100</span>
+                                        <span class="bg red-100 ui button" data-tooltip="-100%" data-position="top center"></span>
+                                        <span class="bg red-95 ui button" data-tooltip="-95%" data-position="top center"></span>
+                                        <span class="bg red-90 ui button" data-tooltip="-90%" data-position="top center"></span>
+                                        <span class="bg red-85 ui button" data-tooltip="-85%" data-position="top center"></span>
+                                        <span class="bg red-80 ui button" data-tooltip="-80%" data-position="top center"></span>
+                                        <span class="bg red-75 ui button" data-tooltip="-75%" data-position="top center"></span>
+                                        <span class="bg red-70 ui button" data-tooltip="-70%" data-position="top center"></span>
+                                        <span class="bg red-65 ui button" data-tooltip="-65%" data-position="top center" "></span>
+                                    <span class="bg red-60 ui button " data-tooltip="-60% " data-position="top center "></span>
+                                    <span class="bg red-55 ui button " data-tooltip="-55% " data-position="top center "></span>
+                                    <span class="bg red-50 ui button " data-tooltip="-50% " data-position="top center "></span>
+                                    <span class="bg red-45 ui button " data-tooltip="-45% " data-position="top center "></span>
+                                    <span class="bg red-40 ui button " data-tooltip="-40% " data-position="top center "></span>
+                                    <span class="bg red-35 ui button " data-tooltip="-35% " data-position="top center "></span>
+                                    <span class="bg red-30 ui button " data-tooltip="-30% " data-position="top center "></span>
+                                    <span class="bg red-25 ui button " data-tooltip="-25% " data-position="top center "></span>
+                                    <span class="bg red-20 ui button " data-tooltip="-20% " data-position="top center "></span>
+                                    <span class="bg red-15 ui button " data-tooltip="-15% " data-position="top center "></span>
+                                    <span class="bg red-10 ui button " data-tooltip="-10% " data-position="top center "></span>
+                                    <span class="bg red-5 ui button " data-tooltip="-5% " data-position="top center "></span>
+                                    <span class="bg no-change ui button " data-tooltip="0% " data-position="top center ""></span>
+                                        <span class="value no-change center">0</span>
+                                        <span class="bg green-5 ui button" data-tooltip="5%" data-position="top center"></span>
+                                        <span class="bg green-10 ui button" data-tooltip="10%" data-position="top center"></span>
+                                        <span class="bg green-15 ui button" data-tooltip="15%" data-position="top center"></span>
+                                        <span class="bg green-20 ui button" data-tooltip="20%" data-position="top center"></span>
+                                        <span class="bg green-25 ui button" data-tooltip="25%" data-position="top center"></span>
+                                        <span class="bg green-30 ui button" data-tooltip="30%" data-position="top center"></span>
+                                        <span class="bg green-35 ui button" data-tooltip="35%" data-position="top center"></span>
+                                        <span class="bg green-40 ui button" data-tooltip="40%" data-position="top center"></span>
+                                        <span class="bg green-45 ui button" data-tooltip="45%" data-position="top center"></span>
+                                        <span class="bg green-50 ui button" data-tooltip="50%" data-position="top center"></span>
+                                        <span class="bg green-55 ui button" data-tooltip="55%" data-position="top center"></span>
+                                        <span class="bg green-60 ui button" data-tooltip="60%" data-position="top center"></span>
+                                        <span class="bg green-65 ui button" data-tooltip="65%" data-position="top center"></span>
+                                        <span class="bg green-70 ui button" data-tooltip="70%" data-position="top center"></span>
+                                        <span class="bg green-75 ui button" data-tooltip="75%" data-position="top center"></span>
+                                        <span class="bg green-80 ui button" data-tooltip="80%" data-position="top center"></span>
+                                        <span class="bg green-85 ui button" data-tooltip="85%" data-position="top center"></span>
+                                        <span class="bg green-90 ui button" data-tooltip="90%" data-position="top center"></span>
+                                        <span class="bg green-95 ui button" data-tooltip="95%" data-position="top center"></span>
+                                        <span class="bg green-100 ui button" data-tooltip="100%" data-position="top center" "></span>
+                                    <span class="value green right ">100</span>
                                 </div>
                             </div>
                         </div>
@@ -198,11 +213,13 @@
                 </div>
             </section>
         </div>
-        <footer><div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div></footer>
+        
     </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-    <script src="dist/semantic.min.js"></script>
-    <script src="javascripts/fintech.js"></script>
+    <footer><div class="outer ">&copy; 2017 Argaam Fintech FZ.LLC</div></footer>
+    </div>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js "></script>
+    <script src="dist/semantic.min.js "></script>
+    <script src="javascripts/fintech.js "></script>
 </body>
 
 </html>

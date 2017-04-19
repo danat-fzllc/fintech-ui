@@ -7,7 +7,7 @@ body {
     color: #585858;
     background: #fff;
 
-    @include breakpoint(tablets) {
+    @include breakpoint(desktops) {
         background: #f6f6f6;
     }
 }

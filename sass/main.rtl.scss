@@ -11,7 +11,6 @@ Version: 0.0.1;
 @import "globals/font.ar.scss";
 @import "globals/mixins.scss";
 @import "globals/base.rtl.scss";
-@import "globals/common.scss";
 @import "globals/common.rtl.scss";
 @import "globals/icons.scss";
 @import "globals/site.rtl.scss";
@@ -19,6 +18,7 @@ Version: 0.0.1;
 /*Elements - Individual site elements*/
 @import "elements/buttons.scss";
 @import "elements/table.scss";
+@import "elements/table.rtl.scss";
 
 /*Modules - Individual site modules*/
 @import "modules/dropdown.rtl.scss";

@@ -1,0 +1,13 @@
+.fintech {
+    .ui.table {
+        thead {
+            &.group-head {
+                + thead {
+                    th {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

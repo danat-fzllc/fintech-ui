@@ -3,15 +3,7 @@ function Expand(obj) {
     obj.size = Math.max(obj.savesize, obj.value.length);
 }
 
-$(window).on('scroll', function() {
-    var scroll = $(window).scrollTop();
 
-    if (scroll >= 200) {
-        $(".ui.container.fintech").addClass("scroll");
-    } else {
-        $(".ui.container.fintech").removeClass("scroll");
-    }
-});
 //semantic modules
 //dropdown
 $('.ui.dropdown')
@@ -78,22 +70,17 @@ $('.tabs-home .item').tab({
 $(window).load(function() {
     $(document).ready(function() {
 
-        $(".main-nav-button").click(function() {
-            $("body").addClass("menu-open");
-
-            var height = $(".main-nav .holder").height();
-            $(".main-nav .holder").css({
-                height: height
-            });
-            $(".main-nav .holder").addClass("menu-holder");
-        });
-        $(".main-nav-close").click(function() {
-            $("body").removeClass("menu-open");
-        });
-
-
 
         if ($(window).width() > 1000) {
+            $(window).on('scroll', function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 200) {
+                    $(".ui.container.fintech").addClass("scroll");
+                } else {
+                    $(".ui.container.fintech").removeClass("scroll");
+                }
+            });
             var resize = $(".resize-left-column");
             var containerWidth = $("#container").width();
 
@@ -117,45 +104,90 @@ $(window).load(function() {
                 }
             });
             $(".grid.home .ui.tab").addClass("column").removeClass("segment ui tab");
+
         } else {
-            var TopHeight = $(".fintech .top").height() + 8;
-            $(".main-container").css({
+            //script for mobile menu and fitler
+            var TopHeight = $(".fintech .top").height() + 0;
+            $(".content-container").css({
                 'padding-top': TopHeight
             });
+
+            $(".main-nav-button").click(function() {
+                $("body").addClass("menu-open no-scroll");
+                $('.main-nav').addClass("overlay-container");
+
+                var height = $(".main-nav .holder").height();
+                $(".main-nav .holder").css({
+                    height: height
+                });
+                $(".main-nav .holder").addClass("menu-holder");
+            });
+            $(".main-nav .close").click(function() {
+
+                $("body").removeClass("menu-open no-scroll");
+            });
+
+            $(".filter").click(function() {
+                $(".page.filters").addClass("show");
+                $("body").addClass("no-scroll");
+            });
+            $(".page.filters .header .close").click(function() {
+                $(".page.filters").removeClass("show");
+                $("body").removeClass("no-scroll");
+
+            });
+
+            $(".country-selection input.search").prop('readonly', true);
+
+            //script for mobile menu and fitler end
         }
     });
 });
 //clock
 $(document).ready(function() {
-         
-              setInterval( function() {
-              var seconds = new Date().getSeconds();
-              var sdegree = seconds * 6;
-              var srotate = "rotate(" + sdegree + "deg)";
-              
-              $("#sec").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
-                  
-              }, 1000 );
-              
-         
-              setInterval( function() {
-              var hours = new Date().getHours();
-              var mins = new Date().getMinutes();
-              var hdegree = hours * 30 + (mins / 2);
-              var hrotate = "rotate(" + hdegree + "deg)";
-              
-              $("#hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
-                  
-              }, 1000 );
-        
-        
-              setInterval( function() {
-              var mins = new Date().getMinutes();
-              var mdegree = mins * 6;
-              var mrotate = "rotate(" + mdegree + "deg)";
-              
-              $("#min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
-                  
-              }, 1000 );
-         
-        });  
+
+    setInterval(function() {
+        var seconds = new Date().getSeconds();
+        var sdegree = seconds * 6;
+        var srotate = "rotate(" + sdegree + "deg)";
+
+        $("#sec").css({
+            "-moz-transform": srotate,
+            "-webkit-transform": srotate
+        });
+
+    }, 1000);
+
+
+    setInterval(function() {
+        var hours = new Date().getHours();
+        var mins = new Date().getMinutes();
+        var hdegree = hours * 30 + (mins / 2);
+        var hrotate = "rotate(" + hdegree + "deg)";
+
+        $("#hour").css({
+            "-moz-transform": hrotate,
+            "-webkit-transform": hrotate
+        });
+
+    }, 1000);
+
+
+    setInterval(function() {
+        var mins = new Date().getMinutes();
+        var mdegree = mins * 6;
+        var mrotate = "rotate(" + mdegree + "deg)";
+
+        $("#min").css({
+            "-moz-transform": mrotate,
+            "-webkit-transform": mrotate
+        });
+
+    }, 1000);
+    var WindowHeight = $(window).height();
+
+    $(".coming-soon-page").css({
+        'height': WindowHeight - 100
+    });
+
+});

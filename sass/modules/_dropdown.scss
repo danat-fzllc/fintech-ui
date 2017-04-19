@@ -16,6 +16,7 @@
         padding: 0;
         margin: auto;
         right: 10px;
+        color: $secondary-color;
     }
 }
 
@@ -31,12 +32,31 @@
             min-width: 0;
             min-height: 0;
             padding: 2px 26px 2px 8px;
-            background-color: #288aa1;
-            line-height: normal;
-            color: #fff;
+            line-hight: normal;
+            border: 1px solid $secondary-color;
+
+            @include breakpoint(desktops) {
+                border: none;
+                background-color: #288aa1;
+                line-height: normal;
+                color: #fff;
+            }
+
+
+            > .delete.icon, .dropdown.icon, .search.icon {
+                @include breakpoint(desktops) {
+                    color: #fff;
+                }
+            }
 
             > .text:not(.default) {
-                color: #fff;
+                color: #000;
+                font-weight: $font-weight-medium;
+
+                @include breakpoint(desktops) {
+                    color: #fff;
+                    font-weight: initial;
+                }
             }
         }
     }
@@ -69,16 +89,16 @@
     }
 
     > .top .country-selection {
-        margin: 18px 0 0 0;
+        margin: 10px 10px 0 0;
         float: right;
 
-        @include breakpoint(laptops) {
+        @include breakpoint(desktops) {
             margin: 8px 0 0 0;
             float: left;
         }
 
 
-        @include breakpoint(mobiles) {
+        @include breakpoint(upto-tablets) {
             width: 22px;
         }
 
@@ -87,7 +107,7 @@
             background-color: #f6f6f6;
             color: #000;
 
-            @include breakpoint(mobiles) {
+            @include breakpoint(upto-tablets) {
                 padding: 0;
                 background: none;
                 min-height: 1rem;
@@ -99,41 +119,74 @@
             z-index: 101;
 
             &.active {
-                @include breakpoint(tablets) {
+                @include breakpoint(desktops) {
                     min-width: 185px;
                 }
 
 
-                @include breakpoint(mobiles) {
+                @include breakpoint(upto-tablets) {
                     min-height: 0;
                     line-height: 0;
                     position: absolute;
                     right: 0;
                     top: 12px;
-                    height: 0px;
+                    height: 30px;
+                    box-shadow: none;
+                    transition: initial;
                 }
 
 
-                &:not(.button) > .text {
-                    @include breakpoint(mobiles) {
+                .text {
+                    @include breakpoint(upto-tablets) {
                         float: right;
-                        top: 5px;
+                        top: 0px;
+                        left: initial;
+                        right: 0px;
                     }
                 }
 
                 &:hover {
-                    @include breakpoint(mobiles) {
+                    @include breakpoint(upto-tablets) {
                         width: 94%;
                         margin: 0 auto;
                         left: 0;
                         right: 0;
                     }
                 }
+
+                .menu {
+                    &.visible {
+                        @include breakpoint(upto-tablets) {
+                            top: 24px;
+                            max-height: 400px !important;
+                            border-top: 1px solid #f2f2f3 !important;
+                            border-radius: 3px;
+                            overflow: hidden;
+                        }
+                    }
+
+                    > .item {
+                        @include breakpoint(upto-tablets) {
+                            padding-top: 15px !important;
+                            padding-bottom: 15px !important;
+                        }
+                    }
+                }
+
+                input.search {
+                    @include breakpoint(upto-tablets) {
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+                }
             }
 
-            &:not(.active) .text i {
-                @include breakpoint(mobiles) {
+            .text i {
+                @include breakpoint(upto-tablets) {
                     margin-right: 0;
+                    zoom: 1.8;
                 }
             }
 
@@ -142,30 +195,30 @@
                 font-weight: $font-weight-medium;
 
                 span {
-                    @include breakpoint(mobiles) {
+                    @include breakpoint(upto-tablets) {
                         display: none;
                     }
                 }
             }
 
-            &:not(.button) > .default.text {
+            .default.text {
                 color: #000;
-                width: 18px;
+                width: 30px;
 
-                @include breakpoint(laptops) {
+                @include breakpoint(desktops) {
                     width: auto;
                 }
 
 
                 span {
-                    @include breakpoint(mobiles) {
+                    @include breakpoint(upto-tablets) {
                         display: none;
                     }
                 }
             }
 
             input {
-                @include breakpoint(mobiles) {
+                @include breakpoint(upto-tablets) {
                     padding: 0;
                     opacity: 0;
                     right: 0;
@@ -175,7 +228,7 @@
             }
 
             .icon {
-                @include breakpoint(mobiles) {
+                @include breakpoint(upto-tablets) {
                     display: none;
                 }
             }

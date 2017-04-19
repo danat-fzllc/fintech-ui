@@ -2,23 +2,37 @@
     .coming-soon-page {
         background: url(themes/default/assets/images/coming-soon-bg.jpg) no-repeat 0 0;
         background-size: cover;
-        min-height: 800px;
+
+        /*min-height: 800px;*/
         position: relative;
+        margin: -1em;
+
+        @include breakpoint(desktops) {
+            margin: initial;
+        }
+
 
         .clock-holder {
             position: absolute;
             margin: auto;
-            width: 460px;
-            height: 460px;
+            width: 300px;
+            height: 300px;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
+            overflow: hidden;
+
+            @include breakpoint(desktops) {
+                width: 460px;
+                height: 460px;
+            }
+
 
             #clock {
                 position: relative;
-                width: 460px;
-                height: 460px;
+                width: 300px;
+                height: 300px;
                 margin: auto;
                 background: url(themes/default/assets/images/clock.png) no-repeat center center;
                 list-style: none;
@@ -27,14 +41,26 @@
                 bottom: 0;
                 left: 0;
                 background-size: 100%;
+
+                @include breakpoint(desktops) {
+                    width: 460px;
+                    height: 460px;
+                }
             }
 
             #sec, #min, #hour {
                 position: absolute;
                 width: 30px;
                 height: 600px;
-                top: -71px;
-                left: 215px;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+
+                @include breakpoint(desktops) {
+                    height: 600px;
+                }
             }
 
             #sec {
@@ -55,8 +81,8 @@
 
         .holder {
             margin: auto;
-            width: 400px;
-            height: 232px;
+            width: 80%;
+            height: 185px;
             text-align: center;
             color: #fff;
             position: absolute;
@@ -65,16 +91,27 @@
             bottom: 0;
             left: 0;
             font-size: rem(18);
-            z-index: 100;
+            z-index: 90;
+
+            @include breakpoint(desktops) {
+                width: 400px;
+                height: 232px;
+            }
+
 
             p {
                 margin: 0;
             }
 
             h3 {
-                font-size: rem(90);
-                line-height: 84px;
+                font-size: rem(60);
+                line-height: 60px;
                 padding-bottom: 10px;
+
+                @include breakpoint(desktops) {
+                    font-size: rem(90);
+                    line-height: 84px;
+                }
             }
         }
     }
@@ -132,7 +169,7 @@
         }
 
         .calendar {
-            @include border-radius(0 5px 5px 0);
+            @include border-radius(5px 0 0 5px);
 
             i {
                 @include use-sprite(calendar_blue);
@@ -185,7 +222,7 @@
         .row > {
             .column {
                 &:last-child {
-                    padding: 0  0 0 200px !important;
+                    padding: 0 0 0 200px !important;
 
                     .title {
                         margin-right: -200px !important;
@@ -210,7 +247,7 @@
         width: 15px;
         background: #fff;
 
-        @include border-radius(5px 0 0 5px);
+        @include border-radius(0 5px 5px 0);
 
         @include box-shadow(3px 5px 6px -5px #000);
 
@@ -220,16 +257,16 @@
             height: 60%;
             left: 5px;
             margin-top: 7px;
-            border-right: 1px solid #cccccc;
-            padding-right: 1px;
             border-left: 1px solid #cccccc;
+            padding-right: 1px;
+            border-right: 1px solid #cccccc;
         }
 
         &:after {
             position: absolute;
             content: '';
             height: 60%;
-            left: 9px;
+            right: 9px;
             margin-top: 7px;
             border-right: 1px solid #cccccc;
         }
@@ -243,29 +280,43 @@
         }
     }
 
-    > .ui.content.container {
-        padding: 20px 0;
-        max-width: 1200px !important;
-        position: relative;
-    }
+    .content-container {
+        > .ui.content.container {
+            max-width: 1200px !important;
+            position: relative;
+            padding: 20px 0;
 
-    .column {
-        .selected-tags {
-            .ui.label {
-                margin-top: 8px;
+            @include breakpoint(upto-tablets) {
+                padding: 0;
+                margin: 0 !important;
             }
         }
 
+        @include breakpoint(upto-tablets) {
+            padding: 0;
+            margin-left: 1em !important;
+            margin-right: 1em !important;
+            width: auto !important;
+        }
+    }
+
+    .column {
         > .content {
             background-color: #fff;
-            padding: 20px;
 
-            @include border-radius(6px);
+            @include breakpoint(desktops) {
+                padding: 20px;
+
+                @include border-radius(6px);
+
+                @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));
+            }
+
 
             .hint {
                 display: block;
                 text-align: left;
-                font-size: 12px;
+                font-size: rem(12);
                 position: relative;
                 top: 2px;
             }
@@ -275,8 +326,11 @@
                     border: 1px solid $border-color;
 
                     &.head {
-                        height: 40px;
-                        border: 0;
+                        @include breakpoint(desktops) {
+                            height: 40px;
+                            border: 0;
+                        }
+
 
                         > .column {
                             height: inherit;
@@ -284,20 +338,41 @@
                     }
 
                     > .column {
-                        text-align: center;
-                        height: 70px;
-                        width: 200px;
+                        height: 50px;
+
+                        @include breakpoint(desktops) {
+                            text-align: center;
+                            height: 70px;
+                            width: 200px;
+                        }
+
 
                         &:first-child {
-                            padding: 35px 22px 0 0px;
+                            padding: 10px 10px 0 0px;
                             text-align: right;
-                            font-size: 15px;
+                            font-size: rem(15);
+
+                            @include breakpoint(small-mobiles) {
+                                font-size: rem(12);
+                            }
+
+
+                            @include breakpoint(desktops) {
+                                padding: 20px 22px 0 0px;
+                            }
                         }
 
                         &:last-child {
                             width: auto;
                             border: none;
-                            padding: 0 200px;
+                            padding: 0;
+                            padding: 0 20% 0 35%;
+
+                            @include breakpoint(desktops) {
+                                padding: 0 200px;
+                                float: none;
+                                margin-left: auto;
+                            }
                         }
 
                         &.no-border {
@@ -305,56 +380,100 @@
                         }
 
                         span {
-                            display: inline-block;
+                            display: block;
+
+                            @include breakpoint(desktops) {
+                                display: inline-block;
+                            }
+
 
                             + span {
-                                font-weight: 700;
+                                font-weight: $font-weight-medium;
                             }
                         }
 
                         .donut-holder {
-                            width: 40px;
-                            height: 40px;
+                            width: 20px;
+                            height: 20px;
                             margin: 0 auto;
                             float: right;
-                            margin: 14px 45px 0 0;
+                            margin: 10px 15px 0 0px;
+
+                            @include breakpoint(desktops) {
+                                margin: 14px 45px 0 0px;
+                                width: 40px;
+                                height: 40px;
+                            }
                         }
 
                         .donut-value {
-                            font-size: 18px;
-                            font-weight: 700;
+                            font-size: rem(14);
+                            font-weight: $font-weight-medium;
                             display: inline-block;
-                            float: right;
-                            margin: 34px 15px 0 0;
+                            float: lright;
+                            margin: 10px 15px 0 10px;
+
+                            @include breakpoint(desktops) {
+                                margin: 34px 15 0 0px;
+                                font-size: rem(18);
+                            }
                         }
 
                         .title {
                             display: inline-block;
-                            margin: 8px 0 0 0;
-                            font-size: 16px;
-                            font-family: $font-ar-bold;
+                            margin: 8px 0 8px 0;
+                            font-size: rem(14);
+                            padding-left: 12px;
 
-                            @extend .bold;
+                            @include breakpoint(desktops) {
+                                font-weight: $font-weight-medium;
+                                font-size: rem(18);
+                                margin: 8px 0 0px 0;
+                                padding-left: 0;
+                            }
+
 
                             &.aggregate-performance {
                                 &:before {
-                                    content: '';
-                                    display: inline-block;
-                                    margin: 6px 0 0 8px;
-                                    float: right;
+                                    @include breakpoint(desktops) {
+                                        content: '';
+                                        display: inline-block;
+                                        margin: 2px 0px 0 10px;
+                                        float: right;
 
-                                    @include use-sprite(aggregate_icon);
+                                        @include use-sprite(aggregate_icon);
+                                    }
+                                }
+                            }
+
+                            i {
+                                display: none;
+
+                                @include breakpoint(desktops) {
+                                    display: initial;
                                 }
                             }
                         }
 
                         &.company {
                             &.name {
-                                padding: 0  0 0 15px;
-                                text-align: right;
+                                background: #eee;
+                                padding: 6px 12px;
+                                clear: both;
+                                float: none;
+                                position: relative;
+
+                                @include breakpoint(desktops) {
+                                    padding: 0 15px 0 0;
+                                    text-align: right;
+                                    clear: initial;
+                                    float: right;
+                                    background: none;
+                                }
+
 
                                 span {
-                                    font-size: 15px;
+                                    font-size: rem(15);
                                     top: -4px;
                                     position: relative;
                                 }
@@ -362,11 +481,21 @@
                                 h2 {
                                     line-height: 26px;
                                     white-space: nowrap;
-                                    font-size: rem(26);
+                                    font-size: rem(20);
                                     padding-right: 0;
-                                    width: 300px;
                                     text-overflow: ellipsis;
                                     overflow: hidden;
+
+                                    @include breakpoint(desktops) {
+                                        width: 300px;
+                                        font-size: rem(26);
+                                    }
+                                }
+
+                                .view-more {
+                                    position: absolute;
+                                    top: 9px;
+                                    left: 12px;
                                 }
                             }
                         }
@@ -387,8 +516,12 @@
                         display: block;
                         border: 0 !important;
                         margin-top: -5px;
+                        display: none;
 
                         /*padding: 15px 0 0;*/
+                        @include breakpoint(desktops) {
+                            display: initial;
+                        }
                     }
                 }
             }
@@ -428,9 +561,13 @@
 
     .question[class*="page"] {
         padding: 12px 0;
-        background-color: $primary-color;
 
-        @include box-shadow(0 0 20px -10px #000);
+        @include breakpoint(desktops) {
+            background-color: $primary-color;
+
+            @include box-shadow(0 0 20px -10px #000);
+        }
+
 
         &.fixed {
             z-index: 100;
@@ -443,15 +580,21 @@
 
         h1 {
             font-size: rem(19);
-            line-height: rem(44);
+            line-height: rem(36);
             font-weight: normal;
-            color: $white;
+            color: #000;
+
+            @include breakpoint(desktops) {
+                color: $white;
+                line-height: rem(44);
+            }
+
 
             @include transition(all 0.5s ease-in-out);
 
-            /*.bold {
+            .bold {
                 font-weight: $font-weight-medium;
-            }*/
+            }
 
             .highlight {
                 color: #1b6273;
@@ -467,39 +610,50 @@
         }
 
         .field {
-            background-color: #288aa1;
             border-color: transparent;
             padding: 0;
-            margin: 6px 0 0 0;
+            margin: 3px 0 0 0;
             height: 28px;
             width: auto;
-            color: $white;
-            border-color: #288aa1 !important;
-            font-family: inherit;
+            border-color: $secondary-color !important;
+            font-weight: $font-weight-medium;
+
+            @include breakpoint(desktops) {
+                background-color: #288aa1;
+                border: none;
+                border-color: #288aa1 !important;
+                color: $white;
+                font-weight: initial;
+                margin: 8px 0 0 0;
+            }
+
 
             &:focus {
-                background-color: #288aa1;
-                color: $white;
+                @include breakpoint(desktops) {
+                    background-color: #288aa1;
+                    color: $white;
+                }
             }
         }
 
         .menu {
-            font-size: 12px;
+            font-size: rem(12);
             width: auto;
         }
 
         .ui.button {
-            display: inline-block;
-            margin: 0 2px 0 0;
+            display: block;
+            width: 110px;
+            clear: both;
+            margin: 10px auto 0;
             position: relative;
             top: -2px;
             color: #000;
             padding: 7px 12px 0 14px;
             height: 28px;
             font-size: rem(14);
-            font-family: inherit;
 
-            @include border-radius(rem(6));
+            @include border-radius(rem(20));
 
             background-color: #dadada;
             cursor: default;
@@ -512,6 +666,15 @@
                 cursor: pointer;
                 color: #000;
             }
+
+            @include breakpoint(desktops) {
+                display: inline-block;
+                width: auto;
+                clear: none;
+                margin: 0 2px 0 0px;
+
+                @include border-radius(rem(6));
+            }
         }
 
         .share {
@@ -520,9 +683,15 @@
             left: 25px;
             color: $white;
             cursor: pointer;
-            font-size: 17px;
+            font-size: rem(17);
+            display: none;
 
             @include border-radius(3px);
+
+            @include breakpoint(desktops) {
+                display: initial;
+            }
+
 
             &:hover {
                 > i {
@@ -620,20 +789,67 @@
     }
 
     .page.filters {
-        width: 250px;
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: initial;
+        z-index: 98;
+        background: #fff;
+        padding: 1em;
+
+        @include breakpoint(desktops) {
+            width: 250px;
+            display: initial;
+            position: relative;
+            z-index: initial;
+            padding: 0;
+        }
+
+
+        &.show {
+            display: block;
+        }
 
         .ui.container {
             background-color: #fff;
             position: relative;
 
-            @include border-radius(5px);
+            @include breakpoint(desktops) {
+                @include border-radius(5px);
 
-            @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));
+                @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));
 
-            padding-bottom: rem(8);
+                padding-bottom: rem(8);
+            }
+
 
             .content {
                 padding: 0 0 0 rem(14);
+            }
+
+            .filter-button {
+                bottom: 0px;
+                left: 0;
+                right: 0;
+                display: block;
+                text-align: center;
+                background: #fff;
+                padding: 20px;
+
+                .button {
+                    float: none;
+                    width: 100%;
+                    background: $secondary-color;
+                    font-size: rem(20);
+                    border-radius: 100px;
+                }
+
+                @include breakpoint(desktops) {
+                    display: none;
+                }
             }
         }
 
@@ -641,8 +857,6 @@
             .active.title {
                 .dropdown.icon {
                     font-size: rem(15);
-                    float: right;
-                    margin: 0px 0px 0 7px;
                 }
             }
         }
@@ -650,20 +864,30 @@
         .ui.styled.accordion {
             @include border-radius(0);
 
-            margin: 0 20px;
             width: auto;
             box-shadow: none;
             border-top: 1px solid #e8e8e8;
             padding: 6px 0;
 
+            @include breakpoint(desktops) {
+                margin: 0 20px;
+            }
+
+
             .title {
                 border: 0;
                 padding: 6px;
-                font-size: 14px;
             }
 
             > .item {
+                @include breakpoint(upto-tablets) {
+                    font-size: rem(16);
+                }
+
+
                 > .title .dropdown {
+                    float: left;
+                    margin: 1px 0px 0 7px;
                     width: 4px;
                     font-size: rem(15);
                 }
@@ -673,6 +897,12 @@
         .ui.list {
             margin: 0;
             padding: 0 0 rem(12) rem(14);
+
+            a.item {
+                @include breakpoint(upto-tablets) {
+                    padding: rem(10) 0;
+                }
+            }
 
             .list {
                 a.item {
@@ -687,10 +917,12 @@
         }
 
         &.resize-left-column {
-            float: $left;
-            box-sizing: border-box;
-            z-index: 3;
-            height: auto !important;
+            @include breakpoint(desktops) {
+                float: $left;
+                box-sizing: border-box;
+                z-index: 3;
+                height: auto !important;
+            }
         }
 
         .scroll {
@@ -706,27 +938,39 @@
 
         .header {
             color: $black;
-            font-weight: 700;
+            font-weight: $font-weight-medium;
             letter-spacing: 0.5px;
             font-size: rem(18);
             line-height: rem(35);
-            padding: 5px 20px 2px;
             position: relative;
 
             @include border-radius(6px 6px 0 0);
+
+            @include breakpoint(desktops) {
+                padding: 5px 20px 2px;
+            }
         }
 
         .field {
             padding: 3px 0;
+
+            @include breakpoint(upto-tablets) {
+                padding: rem(10) 0;
+                font-size: rem(16);
+            }
         }
     }
 
     .ui[class*="content container"] {
         .content-holder {
             height: 100%;
-            width: 938px;
             float: $right;
             position: relative;
+
+            @include breakpoint(desktops) {
+                width: 938px;
+            }
+
 
             .sidebar-toggler-arrow {
                 font-size: rem(16);
@@ -741,13 +985,18 @@
                 width: 15px;
                 right: -11px;
                 z-index: 3;
+                display: none;
+
+                @include breakpoint(desktops) {
+                    display: initial;
+                }
+
 
                 &:before {
                     color: #000;
                     position: relative;
                     top: 4px;
                     right: 4px;
-                    content: '\f0da';
                 }
 
                 &:hover {
@@ -778,7 +1027,7 @@
                 @include box-shadow(3px 3px 6px -5px #000);
 
                 &:before {
-                    content: '\f0d9';
+                    content: '\f0da';
                     right: 8px;
                 }
             }
@@ -863,11 +1112,11 @@
             }
 
             .first {
-                @include border-radius(0 3px 3px 0);
+                @include border-radius(3px 0 0 3px);
             }
 
             .last {
-                @include border-radius(3px 0 0 3px);
+                @include border-radius(0 3px 3px 0);
             }
 
             i {
@@ -891,11 +1140,11 @@
                     .header {
                         margin-bottom: 8px;
                         padding: 0;
-                        font-size: 12px;
+                        font-size: rem(12);
                     }
 
                     .none {
-                        font-size: 18px;
+                        font-size: rem(18);
                         color: #000 !important;
 
                         &:before {
@@ -930,7 +1179,7 @@
                             background-color: #eee;
                             display: block;
                             padding: 0 12%;
-                            font-size: 14px;
+                            font-size: rem(14);
                             min-height: 36px;
                             line-height: 36px;
                             text-align: center;
@@ -960,7 +1209,7 @@
                     }
 
                     &.value-arrow {
-                        font-weight: 700;
+                        font-weight: $font-weight-medium;
                     }
                 }
 
@@ -1013,7 +1262,7 @@
                         margin: 10px 0;
 
                         .value {
-                            font-size: 12px;
+                            font-size: rem(12);
                             top: 3px;
                         }
                     }
@@ -1059,54 +1308,104 @@
     .grid.home {
         .content {
             .header {
-                margin: -20px -20px 0;
-                padding: 14px 20px 12px 20px;
-                font-size: 15px;
+                margin: -6px 0px 0;
+                padding: 14px 0px 12px 0px;
+                font-size: rem(20);
+                font-weight: $font-weight-medium;
 
-                @extend .bold;
+                @include breakpoint(desktops) {
+                    font-size: rem(16);
+                    margin: -20px -20px 0;
+                    padding: 14px 20px 12px 20px;
+                }
             }
 
             .row {
                 border-top: 1px solid $border-color;
                 padding: 10px 0;
+                border-top: none;
+
+                @include breakpoint(desktops) {
+                    border-top: 1px solid $border-color;
+                }
+
+
+                + .row {
+                    border-top: 1px solid $border-color;
+                }
             }
+        }
+
+        .segment {
+            box-shadow: none;
+            width: 100%;
+            margin: 0;
         }
 
         .watchlist {
             .row {
                 .name {
+                    font-size: rem(18);
+
+                    @include breakpoint(desktops) {
+                        font-size: rem(16);
+                    }
+
+
+                    @include breakpoint(small-mobiles) {
+                        font-size: rem(16);
+                    }
+
+
+                    @include breakpoint(upto-tablets) {
+                        color: #000;
+                    }
+
+
                     strong {
                         position: relative;
-                        font-size: 17px;
+                        display: block;
+
+                        @include breakpoint(desktops) {
+                            display: inline-block;
+                        }
+
 
                         .count {
                             position: absolute;
                             background-color: #4fadc5;
                             color: #fff;
                             border-radius: 5px;
-                            padding: 3px 5px;
+                            padding: 3px 5px 3px 5px;
                             line-height: 12px;
-                            font-size: 12px;
-                            right: 100%;
-                            top: 0px;
+                            font-size: rem(12);
+                            left: 0;
                             margin: 0 5px 0 0px;
                             font-weight: normal;
                             text-align: center;
-                            font-family: Arial;
+
+                            @include breakpoint(desktops) {
+                                right: 100%;
+                                left: auto;
+                            }
                         }
                     }
                 }
 
                 .sector {
                     padding: 2px 0 0;
-                    font-size: 14px;
+                    display: none;
+
+                    @include breakpoint(desktops) {
+                        display: block;
+                    }
                 }
 
                 .value {
                     padding: 4px 0 0;
 
                     .change {
-                        margin: 0 5px 0 0;
+                        margin: 0 5px 0 0px;
 
                         &.no-change {
                             color: #333;
@@ -1117,77 +1416,142 @@
         }
 
         .notification-feeds {
-            .feed {
-                .segment {
-                    position: relative;
-                    padding: 14px 20px 16px 20px;
+            .column {
+                @include breakpoint(upto-tablets) {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
 
-                    .time {
-                        color: gray;
-                        display: inline-block;
-                        font-size: 12px;
+
+                &.date-divider {
+                    span {
+                        @include breakpoint(upto-tablets) {
+                            background: #f2f2f2;
+                            display: block;
+                            padding: 5px;
+                            color: #666;
+                            margin: 0 -1em -1px;
+                            border-bottom: 1px solid $gray;
+                        }
+                    }
+                }
+
+                .total-number {
+                    font-size: rem(16);
+                    font-weight: $font-weight-medium;
+
+                    @include breakpoint(desktops) {
+                        font-weight: initial;
+                    }
+
+
+                    @include breakpoint(small-mobiles) {
+                        font-size: rem(14);
+                    }
+                }
+
+                &.feed {
+                    .segment {
+                        position: relative;
+                        padding: 14px 20px 16px 20px;
+
+                        @include breakpoint(upto-tablets) {
+                            border-radius: 0;
+                            padding: 10px 0;
+                            border-top: 1px solid $gray;
+                        }
+
+
+                        .time {
+                            color: gray;
+                            display: inline-block;
+                            font-size: rem(12);
+                            font-weight: normal;
+                            padding-left: 9px;
+                            height: 10px;
+                            line-height: 9px;
+
+                            @include breakpoint(desktops) {
+                                border-left: 1px solid #bfbfbf;
+                            }
+                        }
+
+                        p {
+                            margin: 5px 0 0;
+                        }
+
+                        &.red {
+                            &:not(.inverted) {
+                                position: relative;
+
+                                &:after {
+                                    width: 4px;
+                                    position: absolute;
+                                    right: -13px;
+                                    top: -1px;
+                                    bottom: -1px;
+                                    content: '';
+                                    background: $red;
+                                    margin: 0px 0;
+
+                                    @include breakpoint(desktops) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .feed-head {
+                        font-size: rem(18);
+                        position: relative;
+                        color: #000;
+                        line-height: normal;
+                        cursor: default;
+                        font-weight: $font-weight-medium;
+
+                        @include breakpoint(desktops) {
+                            font-weight: normal;
+                            font-size: rem(17);
+                        }
+
+
+                        @include breakpoint(small-mobiles) {
+                            font-size: rem(16);
+                            line-height: rem(22);
+                        }
+
+
+                        .label {
+                            margin-left: 8px;
+                            position: relative;
+                            top: -2px;
+                        }
+                    }
+
+                    .info {
+                        padding-top: 5px;
+                    }
+
+                    .details {
                         font-weight: normal;
-                        border-left: 1px solid #bfbfbf;
-                        padding-left: 9px;
-                        height: 10px;
-                        line-height: 9px;
+                        font-size: 1rem;
+                        margin-right: 8px;
+                        display: none;
+
+                        &:hover {
+                            color: $secondary-color;
+                        }
+
+                        @include breakpoint(desktops) {
+                            display: inline-block;
+                        }
                     }
 
-                    p {
-                        margin: 5px 0 0;
+                    .image {
+                        max-width: 100%;
+                        display: block;
                     }
-                }
-
-                .feed-head {
-                    font-size: 17px;
-                    position: relative;
-                    color: #000;
-                    cursor: default;
-                }
-
-                .info {
-                    padding-top: 5px;
-                }
-
-                .details {
-                    font-size: 1rem;
-                    margin-right: 8px;
-
-                    &:hover {
-                        color: $secondary-color;
-                    }
-                }
-
-                &.regular {
-                    .feed-head {}
-                }
-
-                &.semi-bold {
-                    .feed-head {
-                        font-size: 22px;
-                        font-family: $font-ar-bold;
-                        line-height: 2rem;
-                    }
-                }
-
-                &.light {
-                    .feed-head {
-                        font-size: 22px;
-                        line-height: 2rem;
-                    }
-                }
-
-                &.bold {
-                    .feed-head {
-                        font-size: 26px;
-                        font-weight: bold;
-                        line-height: 2.2rem;
-                    }
-                }
-
-                .image {
-                    max-width: 100%;
-                    display: block;
                 }
             }
         }
@@ -1201,18 +1565,34 @@
                     display: block;
                     color: #666;
                     font-weight: normal;
-                    font-size: 12px;
+                    font-size: rem(12);
                     padding: 2px 0 0 0;
                 }
 
                 h2 {
-                    font-size: 17px;
-                    font-weight: bold;
+                    font-size: rem(18);
+                    font-weight: $font-weight-medium;
+
+                    @include breakpoint(desktops) {
+                        font-size: 1.2rem;
+                    }
+
+
+                    @include breakpoint(small-mobiles) {
+                        font-size: rem(16);
+                        line-height: rem(22);
+                    }
+
 
                     a {
                         color: #000;
                         display: block;
-                        padding: 15px 0;
+                        padding: 10px 0;
+
+                        @include breakpoint(desktops) {
+                            padding: 15px 0;
+                        }
+
 
                         &:hover {
                             color: $secondary-color;
@@ -1226,26 +1606,96 @@
             }
         }
     }
-}
 
-.consecutive-rally {
-    .fa-circle {
-        font-size: rem(11);
+    .consecutive-rally {
+        .fa-circle {
+            font-size: rem(11);
 
-        &.green, &.red {
-            font-size: rem(16);
+            &.green, &.red {
+                font-size: rem(16);
+            }
         }
     }
-}
 
-.device-only {
-    display: none;
-}
+    .prog-wrapper {
+        padding-left: 25px;
+        height: 12px;
 
-.icon.device-only {
-    @extend .device-only;
-}
+        .prog-bar {
+            width: 100%;
+            display: block;
+            border-radius: 3px;
+            height: 12px;
+            position: relative;
+            background-color: $primary-color;
 
-.device-action-tab {
-    margin-bottom: 20px;
+            .prog-text {
+                position: absolute;
+                right: 101%;
+                top: -4px;
+                display: inline-block;
+                white-space: nowrap;
+                padding-right: 3px;
+            }
+        }
+    }
+
+    .ui {
+        &.grid {
+            .column {
+                &.selected-tags {
+                    display: none;
+
+                    @include breakpoint(desktops) {
+                        display: initial;
+                    }
+
+
+                    .ui.label {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .overlay-container {
+        .overlay-header {
+            @include breakpoint(upto-tablets) {
+                border-bottom: 1px solid #eee;
+                margin-bottom: -1px;
+                padding-bottom: 10px;
+            }
+
+
+            .overlay-title {
+                color: $black;
+                font-weight: $font-weight-medium;
+                letter-spacing: 0.5px;
+                font-size: rem(18);
+                line-height: rem(35);
+
+                @include breakpoint(upto-tablets) {
+                    font-size: rem(16);
+                    font-weight: $font-weight-medium;
+                }
+            }
+
+            .close {
+                background: none;
+                border: none;
+                margin: 3px 0px 0 0;
+                font-size: rem(22);
+                padding: 0;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                color: #000;
+
+                @include breakpoint(desktops) {
+                    display: none;
+                }
+            }
+        }
+    }
 }

@@ -1,13 +1,51 @@
 .fintech {
     > .top {
-        .logo {
-            margin: 14px 0px 0 18px;
+        .outer {
+            .logo {}
+
+            .lang {
+                padding-left: 0;
+                font-family: $base-font;
+                font-weight: 500;
+            }
+
+            .language {
+                padding: 5px 10px;
+                margin: 10px 0px 0 15px;
+            }
+
+            .main-nav-button {
+                margin: 14px 0px 0 14px;
+                transform: rotateY(180deg);
+            }
         }
 
-        .lang {
-            padding-left: 0;
-            font-family: $base-font;
-            font-weight: 500;
+        .tabs-home {
+            .item {
+                padding: 0 0 0.8em 0em !important;
+                padding-right: 25px !important;
+                font-family: $font-ar-bold;
+                font-size: rem(14);
+                font-weight: $font-weight-medium;
+
+                &.questions {
+                    padding-right: 30px !important;
+                    padding-left: 0px !important;
+                }
+
+                i {
+                    right: 0px;
+                }
+            }
         }
+    }
+}
+
+.menu-open {
+    .main-nav {}
+
+    .language {
+        left: 1em;
+        right: auto;
     }
 }

@@ -5,18 +5,13 @@
             @content;
         }
     }
-    @else if $point == laptops {
-        @media (min-width: $laptops-width) {
-            @content;
-        }
-    }
-    @else if $point == tablets {
-        @media (min-width: $tablets-width) {
-            @content;
-        }
-    }
-    @else if $point == mobiles {
+    @else if $point == upto-tablets {
         @media (max-width: $tablets-width) {
+            @content;
+        }
+    }
+    @else if $point == small-mobiles {
+        @media (max-width: $small-mobiles-width) {
             @content;
         }
     }

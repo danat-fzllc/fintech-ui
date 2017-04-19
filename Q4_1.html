@@ -13,7 +13,7 @@
 
 <body>
     <div class="fintech">
-        <div class="top">
+        <header class="top">
             <div class="outer clearfix">
                 <button class="main-nav-button left floated"></button>
                 <a class="logo left floated"></a>
@@ -32,10 +32,10 @@
                     </div>
                 </form>
                 <button class="language right floated">عربى</button>
-                <div class="main-nav right floated">
-                    <div class="main-nav-header">
-                        <span class="left floated menu-title">Menu</span>
-                        <button class="right floated main-nav-close">&#10006;</button>
+               <div class="main-nav right floated overlay-container">
+                    <div class="overlay-header clearfix">
+                        <span class="left floated overlay-title">Menu</span>
+                        <button class="right floated close"><i class="remove icon"></i></button>
                     </div>
                     <div class="holder">
                         <a href="" class="active">Home</a>
@@ -48,9 +48,8 @@
                     <div class="share-options"></div>
                 </div>
             </div>
-           
-        </div>
-        <div class="ui container fluid fintech main-container">
+        </header>
+        <div class="ui container fluid fintech content-container">
             <div class="fluid clearfix question page center aligned relative">
                 <div class="outer">
                     <form class="ui form">
@@ -114,9 +113,16 @@
                 </div>
             </div>
             <div class="fluid ui content container clearfix" id="container">
-                <section class="page filters left floated resize-left-column">
+                <div class="ui icon button fixed secondary floating right bottom filter mobile-only big circular" tabindex="0">
+                    <i class="filter icon large"></i>
+                </div>
+                <section class="page filters left floated resize-left-column overlay-container">
                     <div class="ui container">
-                        <div class="header">Filters</div>
+                        <div class="overlay-header">
+                            <div class="header overlay-title">Filters
+                                <button class="right floated close"><i class="remove icon"></i></button>
+                            </div>
+                        </div>
                         <div class="ui styled accordion">
                             <div class="item">
                                 <div class="title active">
@@ -166,14 +172,17 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="fixed filter-button">
+                            <button class="ui button">Filter</button>
+                        </div>
                     </div>
                 </section>
                 <section class="fluid content-holder resize-right-column">
                     <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
                     <div class="fluid left floated">
                         <div class="ui one column grid">
-                            <div class="column">
-                                <div class="selected-tags">
+                            <div class="column selected-tags">
+                                <div class="">
                                     <a class="ui label">Opec Meetings 171st - Nov 2016<i class="delete icon"></i></a>
                                     <a class="ui label">Opec Meetings 170th (Extraordinary) - Sep 2016<i class="delete icon"></i></a>
                                     <a class="ui label">Opec Meetings 169th - June 2016<i class="delete icon"></i></a>
@@ -183,7 +192,7 @@
                                 <div class="content event-aggregate-chart">
                                     <div class="row head clearfix">
                                         <div class="column left floated no-border company name">
-                                            <h2>SABIC</h2></div>
+                                            <h2>SABIC</h2> <a href="#" class="view-more right floated device-only">Details</a></div>
                                         <div class="column right floated ">
                                             <div class="title">Probability</div>
                                         </div>
