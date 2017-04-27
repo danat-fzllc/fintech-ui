@@ -9,58 +9,50 @@
     <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   
 </head>
 
 <body>
-    <div class="fintech">
-        <header class="top">
+    <div class="ui container fluid fintech">
+        <div class="top">
             <div class="outer clearfix">
-                <button class="main-nav-button left floated"></button>
-                <a class="logo left floated"></a>
-                <form class="left floated country-selection">
+            <a class="logo left floated"></a>
+            <form class="left floated country-selection">
                     <div class="field">
                         <div class="ui fluid search selection dropdown">
                             <input type="hidden" name="country">
                             <i class="dropdown icon"></i>
-                            <div class="default text"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                            <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
                             <div class="menu">
-                                <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
-                                <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
-                                <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
+                                <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
+                                <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
+                                <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
                             </div>
                         </div>
                     </div>
                 </form>
-                <button class="language right floated">عربى</button>
-               <div class="main-nav right floated overlay-container">
-                    <div class="overlay-header clearfix">
-                        <span class="left floated overlay-title">Menu</span>
-                        <button class="right floated close"><i class="remove icon"></i></button>
-                    </div>
-                    <div class="holder">
-                        <a href="" class="active">Home</a>
-                        <a href="">About Us</a>
-                        <a href="">FAQ</a>
-                        <a href="">Contact Us</a>
-                        <a href="" class="my-account"><strong>Patrick Carlson <i class="fa fa-cog" aria-hidden="true"></i></strong></a>
-                        <a href="" class="lang">عربى</a>
-                    </div>
-                    <div class="share-options"></div>
+           
+                
+                <div class="user-nav right floated">
+                    <a href="" class="active">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">FAQ</a>
+                    <a href="">Contact Us</a>
+                    <a href="" class="sign-in">Sign In</a>
                 </div>
             </div>
-        </header>
-        <div class="ui container fluid  content-container">
-            <div class="fluid clearfix question page center aligned relative">
-                <div class="outer">
-                    <form class="ui form">
-                        <h1 class="question ui center">
+        </div>
+        <div class="fluid clearfix question page center aligned relative">
+        <div class="outer">
+            <form class="ui form">
+                <h1 class="question ui center">
                     What was the effect on <select id="" class="ui selection dropdown">
                         <option value="1">Sabic</option>
                         <option value="3">Markets</option>
                         <option value="2">Commodities</option>
                     </select>
                     
-                    <input type="text" placeholder="" class="field center aligned" value="5" size="1" onkeyup="Expand(this);">
+                    <input type="number" value="0" class="field center aligned auto-resize">
                     days after, when the price of 
                     <select id="" class="ui selection dropdown">
                         <option value="1">Gold</option>
@@ -83,321 +75,324 @@
                     <a class="ui button"><i class="fa fa-search" aria-hidden="true"></i>
  Discover</a>
                     </h1>
-                    </form>
-                    <div class="button share right floated">
-                        <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        <div class="list">
-                            <div class="head">Share</div>
-                            <ul>
-                                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
-                                <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
-                                <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linked In</a></li>
-                                <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google Plus</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            </form>
+            <div class="button share right floated">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                <div class="list">
+                    <div class="head">Share</div>
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+                        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linked In</a></li>
+                        <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google Plus</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="center aligned">
-                <div class="ui small breadcrumb">
-                    <a class="section">Home</a>
-                    <i class="right chevron icon divider"></i>
-                    <a class="section">Registration</a>
-                    <i class="right chevron icon divider"></i>
-                    <div class="active section">Personal Information</div>
-                </div>
             </div>
-            <div class="fluid ui content container clearfix" id="container">
-                <div class="ui icon button fixed secondary floating right bottom filter mobile-only big circular" tabindex="0">
-                    <i class="filter icon large"></i>
-                </div>
-                <section class="page filters left floated resize-left-column overlay-container">
-                    <div class="ui container">
-                        <div class="overlay-header header">
-                            <div class="header overlay-title">Filters
-                                <button class="right floated close"><i class="remove icon"></i></button>
+        </div>
+        <div class="center aligned">
+<div class="ui small breadcrumb">
+  <a class="section">Home</a>
+  <i class="right chevron icon divider"></i>
+  <a class="section">Registration</a>
+  <i class="right chevron icon divider"></i>
+  <div class="active section">Personal Information</div>
+</div>
+</div>
+        <div class="fluid ui content container clearfix" id="container">
+            <section class="page filters left floated resize-left-column">
+                
+                <div class="ui container">
+                <div class="header">Filters</div>
+                    <div class="ui styled accordion">
+                        <div class="item">
+                            <div class="title active">
+                                <i class="dropdown icon"></i> Events
                             </div>
-                        </div>
-                        <div class="ui styled accordion">
-                            <div class="item">
+                            <div class="content active">
+                                <div class="ui list">
+                                    <a class="item">Seasons</a>
+                                    <a class="item">International</a>
+                                </div>
                                 <div class="title active">
-                                    <i class="dropdown icon"></i> Events
+                                    <i class="dropdown icon"></i>Company
                                 </div>
                                 <div class="content active">
                                     <div class="ui list">
                                         <a class="item">Seasons</a>
                                         <a class="item">International</a>
                                     </div>
-                                    <div class="title active">
-                                        <i class="dropdown icon"></i>Company
-                                    </div>
-                                    <div class="content active">
-                                        <div class="ui list">
-                                            <a class="item">Seasons</a>
-                                            <a class="item">International</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui styled accordion">
-                            <div class="item">
-                                <div class="title">
-                                    <i class="dropdown icon"></i> Sectors
-                                </div>
-                                <div class="content">
-                                    <div class="inline field">
-                                        <div class="ui checkbox">
-                                            <input type="checkbox" tabindex="0" class="hidden">
-                                            <label><strong>Select All</strong></label>
-                                        </div>
-                                    </div>
-                                    <div class="inline field">
-                                        <div class="ui checkbox">
-                                            <input type="checkbox" tabindex="0" class="hidden">
-                                            <label>Insurance</label>
-                                        </div>
-                                    </div>
-                                    <div class="inline field">
-                                        <div class="ui checkbox">
-                                            <input type="checkbox" tabindex="0" class="hidden">
-                                            <label>Insurance</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fixed filter-button">
-                            <button class="ui button">Filter</button>
-                        </div>
-                    </div>
-                </section>
-                <section class="fluid content-holder resize-right-column">
-                    <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
-                    <div class="fluid left floated">
-                        <div class="ui one column grid">
-                            <h2 class="main">Al Mazaya Holding Company</h2>
-                            <div class="column">
-                                <div class="content">
-                                    <table class="ui table unstackable">
-                                        <thead>
-                                            <tr>
-                                                <th class="center aligned"><i class="ico up-chart"></i> Consective Up (No.Days)</th>
-                                                <th class="center aligned">Occurrence (No.Times)</th>
-                                                <th class="center aligned">Avg.Performance for the Decline</th>
-                                                <th class="center aligned">Avg.Perfermonace in next 10 Days</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="center aligned">12</td>
-                                                <td class="center aligned">1</td>
-                                                <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
-                                                <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui one column grid">
-                            <div class="column">
-                                <div class="content">
-                                    <table class="ui table unstackable">
-                                        <thead>
-                                            <tr>
-                                                <th>Year</th>
-                                                <th class="center aligned">No. Days</th>
-                                                <th class="center aligned">Ocrurrance</th>
-                                                <th>When</th>
-                                                <th class="center aligned">Performance</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>2016</td>
-                                                <td class="center aligned">12</td>
-                                                <td class="center aligned">6</td>
-                                                <td class="date-periods">
-                                                    <div class="ui button date-period label">
-                                                        <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                        <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
-                                                    </div>
-                                                    <div class="ui flowing performance popup transition hidden">
-                                                        <div class="ui two column divided center aligned grid">
-                                                            <div class="column performance">
-                                                                <h4 class="ui header">Performance</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                            <div class="column next-days">
-                                                                <h4 class="ui header">Next 3 days</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ui button date-period label">
-                                                        <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                        <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
-                                                    </div>
-                                                    <div class="ui flowing performance popup transition hidden">
-                                                        <div class="ui two column divided center aligned grid">
-                                                            <div class="column performance">
-                                                                <h4 class="ui header">Performance</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                            <div class="column next-days">
-                                                                <h4 class="ui header">Next 3 days</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ui button date-period label">
-                                                        <div class="first bg red-10">30<sup>st</sup> May</div>
-                                                        <div class="bg red-10"><i>-</i>30<sup>st</sup> May</div>
-                                                        <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>30<sup>th</sup> May</div>
-                                                    </div>
-                                                    <div class="ui flowing performance popup transition hidden">
-                                                        <div class="ui two column divided center aligned grid">
-                                                            <div class="column performance">
-                                                                <h4 class="ui header">Performance</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                            <div class="column next-days">
-                                                                <h4 class="ui header">Next 3 days</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <a href="" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
-                                                </td>
-                                                <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
-                                            </tr>
-                                            <tr class="expanded">
-                                                <td>2016</td>
-                                                <td class="center aligned">12</td>
-                                                <td class="center aligned">6</td>
-                                                <td class="date-periods">
-                                                    <div class="ui button date-period label">
-                                                        <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                        <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
-                                                    </div>
-                                                    <div class="ui flowing performance popup transition hidden">
-                                                        <div class="ui two column divided center aligned grid">
-                                                            <div class="column performance">
-                                                                <h4 class="ui header">Performance</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                            <div class="column next-days">
-                                                                <h4 class="ui header">Next 3 days</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ui button date-period label">
-                                                        <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                        <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
-                                                    </div>
-                                                    <div class="ui flowing performance popup transition hidden">
-                                                        <div class="ui two column divided center aligned grid">
-                                                            <div class="column performance">
-                                                                <h4 class="ui header">Performance</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                            <div class="column next-days">
-                                                                <h4 class="ui header">Next 3 days</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ui button date-period label">
-                                                        <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                        <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
-                                                    </div>
-                                                    <div class="ui flowing performance popup transition hidden">
-                                                        <div class="ui two column divided center aligned grid">
-                                                            <div class="column performance">
-                                                                <h4 class="ui header">Performance</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                            <div class="column next-days">
-                                                                <h4 class="ui header">Next 3 days</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <a href="" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
-                                                </td>
-                                                <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2016</td>
-                                                <td class="center aligned">12</td>
-                                                <td class="center aligned">6</td>
-                                                <td class="date-periods">
-                                                    <div class="ui button date-period label">
-                                                        <div class="first bg red-10">1<sup>st</sup></div>
-                                                        <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
-                                                    </div>
-                                                    <div class="ui flowing performance popup transition hidden">
-                                                        <div class="ui two column divided center aligned grid">
-                                                            <div class="column performance">
-                                                                <h4 class="ui header">Performance</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                            <div class="column next-days">
-                                                                <h4 class="ui header">Next 3 days</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ui button date-period label">
-                                                        <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                        <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
-                                                    </div>
-                                                    <div class="ui flowing performance popup transition hidden">
-                                                        <div class="ui two column divided center aligned grid">
-                                                            <div class="column performance">
-                                                                <h4 class="ui header">Performance</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                            <div class="column next-days">
-                                                                <h4 class="ui header">Next 3 days</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ui button date-period label">
-                                                        <div class="first bg red-10">1<sup>st</sup> June</div>
-                                                        <div class="last bg red-30">6<sup>th</sup> Jun</div>
-                                                    </div>
-                                                    <div class="ui flowing performance popup transition hidden">
-                                                        <div class="ui two column divided center aligned grid">
-                                                            <div class="column performance">
-                                                                <h4 class="ui header">Performance</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                            <div class="column next-days">
-                                                                <h4 class="ui header">Next 3 days</h4>
-                                                                <div class="m-value-bg bg red-15">-1.53</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <a href="" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
-                                                </td>
-                                                <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                    <div class="ui styled accordion">
+                        <div class="item">
+                            <div class="title">
+                                <i class="dropdown icon"></i> Sectors
+                            </div>
+                            <div class="content">
+                                <div class="inline field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <label><strong>Select All</strong></label>
+                                    </div>
+                                </div>
+                                <div class="inline field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <label>Insurance</label>
+                                    </div>
+                                </div>
+                                <div class="inline field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <label>Insurance</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fluid content-holder resize-right-column">
+            <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
+                <div class="fluid left floated">
+                    <div class="ui one column grid">
+                    <h2 class="main">Al Mazaya Holding Company</h1>
+                        <div class="column">
+                        
+
+                        
+                        <div class="content">
+                            <table class="ui table">
+                                <thead>
+                                    <tr>
+                                        <th class="center aligned"><i class="ico up-chart"></i> Consective Up (No.Days)</th>
+                                        <th class="center aligned">Occurrence (No.Times)</th>
+                                        <th class="center aligned">Avg.Performance for the Decline</th>
+                                        <th class="center aligned">Avg.Perfermonace in next 10 Days</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned">1</td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui one column grid">
+                        
+                        <div class="column">
+                        <div class="content">
+                            <table class="ui table">
+                                <thead>
+                                    <tr>
+                                        <th>Year</th>
+                                        <th class="center aligned">No. Days</th>
+                                        <th class="center aligned">Ocrurrance</th>
+                                        <th>When</th>
+                                        <th class="center aligned">Performance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2016</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned">6</td>
+                                        <td class="date-periods">
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">30<sup>st</sup> May</div>
+                                                <div class="bg red-10"><i>-</i>30<sup>st</sup> May</div>
+                                                <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>30<sup>th</sup> May</div>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                    </tr>
+
+                                    <tr class="expanded">
+                                        <td>2016</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned">6</td>
+                                        <td class="date-periods">
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2016</td>
+                                        <td class="center aligned">12</td>
+                                        <td class="center aligned">6</td>
+                                        <td class="date-periods">
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup></div>
+                                                <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="last bg red-30"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>6<sup>th</sup> Jun</div>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ui button date-period label">
+                                                <div class="first bg red-10">1<sup>st</sup> June</div>
+                                                <div class="last bg red-30">6<sup>th</sup> Jun</div>
+                                            </div>
+                                            <div class="ui flowing performance popup transition hidden">
+                                                <div class="ui two column divided center aligned grid">
+                                                    <div class="column performance">
+                                                        <h4 class="ui header">Performance</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                    <div class="column next-days">
+                                                        <h4 class="ui header">Next 3 days</h4>
+                                                        <div class="m-value-bg bg red-15">-1.53</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td class="center aligned"><span class="m-value-bg bg red-15">-1.53</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div></div>
+                    </div>
+                    
+                </div>
+            </section>
         </div>
-        <footer>
-            <div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div>
-        </footer>
+        <footer><div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div></footer>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="dist/semantic.min.js"></script>

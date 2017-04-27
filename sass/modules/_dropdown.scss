@@ -28,7 +28,7 @@
 
 .fintech {
     .question[class*="page"] {
-        .question > .dropdown {
+        .question .ui.dropdown {
             min-width: 0;
             min-height: 0;
             padding: 2px 26px 2px 8px;

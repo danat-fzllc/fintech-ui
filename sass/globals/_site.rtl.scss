@@ -12,6 +12,18 @@
         }
 
 
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #4fadc5;
+
+            @include opacity(0.8);
+        }
+
         .clock-holder {
             position: absolute;
             margin: auto;
@@ -46,6 +58,8 @@
                     width: 460px;
                     height: 460px;
                 }
+
+                @include opacity(0.9);
             }
 
             #sec, #min, #hour {
@@ -98,6 +112,8 @@
                 height: 232px;
             }
 
+
+            @include opacity(0.7);
 
             p {
                 margin: 0;

@@ -604,3 +604,48 @@
         display: none !important;
     }
 }
+
+.clickable-digit {
+    position: relative;
+    border-bottom: 1px solid #caeef6;
+    display: inline-block;
+    min-width: 24px;
+    border-radius: 3px;
+    padding: 0px 1px 0px 1px;
+    font-weight: $font-weight-regular;
+}
+
+.clickable-digit:before {
+    content: "";
+    position: absolute;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#caeef6), to(transparent));
+    background-image: -webkit-linear-gradient(transparent, #caeef6);
+    background-image: -moz-linear-gradient(transparent, #caeef6);
+    background-image: -o-linear-gradient(transparent, #caeef6);
+    background-image: linear-gradient(transparent, #caeef6);
+    top: 0px;
+    bottom: 0px;
+    width: 24px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+}
+
+.clickable-digit span {
+    z-index: 2;
+    display: block;
+    background: #fff;
+    position: relative;
+    border-radius: 3px;
+    padding-bottom: 2px;
+}
+
+.clickable-digit:hover span {
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(transparent));
+    background-image: -webkit-linear-gradient(transparent, #f8f8f8);
+    background-image: -moz-linear-gradient(transparent, #f8f8f8);
+    background-image: -o-linear-gradient(transparent, #f8f8f8);
+    background-image: linear-gradient(transparent, #f8f8f8);
+    color: $primary-color;
+}

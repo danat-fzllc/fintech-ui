@@ -91,11 +91,11 @@ $(window).load(function() {
                 resize: function(event, ui) {
                     var currentWidth = ui.size.width;
 
-                    // this accounts for padding in the panels + 
+                    // this accounts for padding in the panels +
                     // borders, you could calculate this using jQuery
                     var padding = 12;
 
-                    // this accounts for some lag in the ui.size value, if you take this away 
+                    // this accounts for some lag in the ui.size value, if you take this away
                     // you'll get some instable behaviour
                     $(this).width(currentWidth);
 
@@ -190,4 +190,31 @@ $(document).ready(function() {
         'height': WindowHeight - 100
     });
 
+});
+
+//input number auto resize
+$.fn.textWidth = function(_text, _font) { //get width of text with font.  usage: $("div").textWidth();
+   var fakeEl = $('<span>').hide().appendTo(document.body).text(_text || this.val() || this.text()).css('font', _font || this.css('font')),
+       width = fakeEl.width();
+   fakeEl.remove();
+   return width;
+};
+
+$.fn.autoresize = function(options) { //resizes elements based on content size.  usage: $('input').autoresize({padding:10,minWidth:0,maxWidth:100});
+   options = $.extend({
+       padding: 10,
+       minWidth: 0,
+       maxWidth: 10000
+   }, options || {});
+   $(this).on('input', function() {
+       $(this).css('width', Math.min(options.maxWidth, Math.max(options.minWidth, $(this).textWidth() + options.padding)));
+   }).trigger('input');
+   return this;
+}
+
+
+$(".auto-resize").autoresize({
+   padding: 25,
+   minWidth: 20,
+   maxWidth: 300
 });
