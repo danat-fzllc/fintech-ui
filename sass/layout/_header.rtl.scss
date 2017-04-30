@@ -1,7 +1,11 @@
 .fintech {
     > .top {
         .outer {
-            .logo {}
+            .logo {
+                @include breakpoint(desktops) {
+                    margin: 14px  0 0 18px;
+                }
+            }
 
             .lang {
                 padding-left: 0;
@@ -17,6 +21,13 @@
             .main-nav-button {
                 margin: 14px 0px 0 14px;
                 transform: rotateY(180deg);
+            }
+
+            .main-nav {
+                .lang {
+                    padding: 2px 12px;
+                    top: 0;
+                }
             }
         }
 
