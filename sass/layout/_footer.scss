@@ -3,6 +3,17 @@ footer {
     clear: both;
     background: #fff;
     padding: 15px;
+    border-top: 1px solid $gray;
+    text-align: center;
+    position: relative;
+    margin-top: 1em;
+
+    @include breakpoint(desktops) {
+        text-align: initial;
+        border-top: none;
+        margin-top: 0;
+    }
+
 
     .outer {
         max-width: 1200px;

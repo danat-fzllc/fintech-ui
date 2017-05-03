@@ -21608,16 +21608,16 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .active.item {
   background-color: transparent;
   box-shadow: none;
-  border-color: #1B1C1D;
+  border-color: #4faec5;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #4faec5;
 }
 
 /* Active Hover */
 
 .ui.secondary.pointing.menu .active.item:hover {
-  border-color: #1B1C1D;
-  color: rgba(0, 0, 0, 0.95);
+  border-color: #4faec5;
+  color: #4faec5;
 }
 
 /* Active Dropdown */
@@ -21647,7 +21647,7 @@ Floated Menu / Item
 /* Vertical Active */
 
 .ui.secondary.vertical.pointing.menu .active.item {
-  border-color: #1B1C1D;
+  border-color: #4faec5;
 }
 
 /* Inverted */

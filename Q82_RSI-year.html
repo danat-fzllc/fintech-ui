@@ -12,33 +12,45 @@
 </head>
 
 <body>
-    <div class="ui container fluid fintech">
-        <div class="top">
+<div class="fintech">
+<header class="top">
             <div class="outer clearfix">
+                <button class="main-nav-button left floated"></button>
                 <a class="logo left floated"></a>
                 <form class="left floated country-selection">
                     <div class="field">
                         <div class="ui fluid search selection dropdown">
                             <input type="hidden" name="country">
                             <i class="dropdown icon"></i>
-                            <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
+                            <div class="default text"><i class="ae flag"></i><span>United Arab Emirates</span></div>
                             <div class="menu">
-                                <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
-                                <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
-                                <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                                <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
+                                <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                                <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
                             </div>
                         </div>
                     </div>
                 </form>
-                <div class="user-nav right floated">
-                    <a href="" class="active">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">FAQ</a>
-                    <a href="">Contact Us</a>
-                    <a href="" class="sign-in">Sign In</a>
+                <button class="language right floated">عربى</button>
+                <div class="main-nav right floated overlay-container">
+                    <div class="overlay-header clearfix">
+                        <span class="left floated overlay-title">Menu</span>
+                        <button class="right floated close"><i class="remove icon"></i></button>
+                    </div>
+                    <div class="holder">
+                        <a href="" class="active">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contact Us</a>
+                        <a href="" class="my-account"><strong>Patrick Carlson <i class="fa fa-cog" aria-hidden="true"></i></strong></a>
+                        <a href="" class="lang">عربى</a>
+                    </div>
+                    <div class="share-options"></div>
                 </div>
             </div>
-        </div>
+        </header>
+    <div class="ui container fluid  content-container">
+        
         <div class="fluid clearfix question page center aligned relative">
             <div class="outer">
                 <form class="ui form">
@@ -98,7 +110,7 @@
                         <h2 class="main">SABIC</h2>
                         <div class="column">
                             <div class="content">
-                                <table class="ui table">
+                                <table class="ui table unstackable">
                                     <thead>
                                         <tr>
                                             <th colspan="5">2016 - RSI
@@ -123,6 +135,7 @@
                                                     <span style="width: 50%;" class="prog-bar">
                                                        <span class="prog-text">25</span>
                                                     </span>
+                                                    </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -134,6 +147,7 @@
                                                     <span style="width: 80%;" class="prog-bar">
                                                        <span class="prog-text">40</span>
                                                     </span>
+                                                    </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -145,6 +159,7 @@
                                                     <span style="width: 60%;" class="prog-bar">
                                                        <span class="prog-text">30</span>
                                                     </span>
+                                                    </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -156,6 +171,7 @@
                                                     <span style="width: 100%;" class="prog-bar">
                                                        <span class="prog-text">50</span>
                                                     </span>
+                                                    </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -167,6 +183,7 @@
                                                     <span style="width: 20%;" class="prog-bar">
                                                        <span class="prog-text">10</span>
                                                     </span>
+                                                    </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -178,6 +195,7 @@
                                                     <span style="width: 70%;" class="prog-bar">
                                                        <span class="prog-text">35</span>
                                                     </span>
+                                                    </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -189,6 +207,7 @@
                                                     <span style="width: 30%;" class="prog-bar">
                                                        <span class="prog-text">15</span>
                                                     </span>
+                                                    </div>
                                             </td>
                                         </tr>
                                         <tfoot>
@@ -208,6 +227,8 @@
                                 </div>
                                 </div>
             </section>
+            </div>
+            
             </div>
             <footer>
                 <div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div>

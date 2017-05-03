@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Fintech</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-        <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
-        <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        
-    </head>
-    <body>
-        <div class="ui container fluid fintech">
-            <div class="top">
-                <div class="outer clearfix">
-                    <a class="logo left floated"></a>
-                    <form class="left floated country-selection">
-                        <div class="field">
-                            <div class="ui fluid search selection dropdown">
-                                <input type="hidden" name="country">
-                                <i class="dropdown icon"></i>
-                                <div class="default text"><i class="ae flag"></i>United Arab Emirates</div>
-                                <div class="menu">
-                                    <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
-                                    <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
-                                    <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
-                                </div>
+
+<head>
+    <title>Fintech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div class="fintech">
+        <header class="top">
+            <div class="outer clearfix">
+                <button class="main-nav-button left floated"></button>
+                <a class="logo left floated"></a>
+                <form class="left floated country-selection">
+                    <div class="field">
+                        <div class="ui fluid search selection dropdown">
+                            <input type="hidden" name="country">
+                            <i class="dropdown icon"></i>
+                            <div class="default text"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                            <div class="menu">
+                                <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
+                                <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                                <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
                             </div>
                         </div>
-                    </form>
-                    
-                    
-                    <div class="user-nav right floated">
+                    </div>
+                </form>
+                <button class="language right floated">عربى</button>
+               <div class="main-nav right floated overlay-container">
+                    <div class="overlay-header clearfix">
+                        <span class="left floated overlay-title">Menu</span>
+                        <button class="right floated close"><i class="remove icon"></i></button>
+                    </div>
+                    <div class="holder">
                         <a href="" class="active">Home</a>
                         <a href="">About Us</a>
                         <a href="">FAQ</a>
                         <a href="">Contact Us</a>
-                        <a href="" class="sign-in">Sign In</a>
+                        <a href="" class="my-account"><strong>Patrick Carlson <i class="fa fa-cog" aria-hidden="true"></i></strong></a>
+                        <a href="" class="lang">عربى</a>
                     </div>
+                    <div class="share-options"></div>
                 </div>
             </div>
+        </header>
+        <div class="ui container fluid fintech content-container">
             <div class="fluid clearfix question page center aligned relative">
                 <div class="outer">
                     <form class="ui form">
@@ -103,10 +113,16 @@
                 </div>
             </div>
             <div class="fluid ui content container clearfix" id="container">
-                <section class="page filters left floated resize-left-column">
-                    
+                <div class="ui icon button fixed secondary floating right bottom filter mobile-only big circular" tabindex="0">
+                    <i class="filter icon large"></i>
+                </div>
+                <section class="page filters left floated resize-left-column overlay-container">
                     <div class="ui container">
-                        <div class="header">Filters</div>
+                        <div class="overlay-header">
+                            <div class="header overlay-title">Filters
+                                <button class="right floated close"><i class="remove icon"></i></button>
+                            </div>
+                        </div>
                         <div class="ui styled accordion">
                             <div class="item">
                                 <div class="title active">
@@ -156,15 +172,17 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="fixed filter-button">
+                            <button class="ui button">Filter</button>
+                        </div>
                     </div>
                 </section>
                 <section class="fluid content-holder resize-right-column">
                     <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
                     <div class="fluid left floated">
-                        
                         <div class="ui one column grid">
-                            <div class="column">
-                                <div class="selected-tags">
+                            <div class="column selected-tags">
+                                <div class="">
                                     <a class="ui label">Opec Meetings 171st - Nov 2016<i class="delete icon"></i></a>
                                     <a class="ui label">Opec Meetings 170th (Extraordinary) - Sep 2016<i class="delete icon"></i></a>
                                     <a class="ui label">Opec Meetings 169th - June 2016<i class="delete icon"></i></a>
@@ -173,7 +191,8 @@
                             <div class="column">
                                 <div class="content event-aggregate-chart">
                                     <div class="row head clearfix">
-                                        <div class="column left floated no-border company name"><h2>SABIC</h2></div>
+                                        <div class="column left floated no-border company name">
+                                            <h2>SABIC</h2> <a href="#" class="view-more right floated device-only">Details</a></div>
                                         <div class="column right floated ">
                                             <div class="title">Probability</div>
                                         </div>
@@ -226,7 +245,8 @@
                             <div class="column">
                                 <div class="content event-aggregate-chart">
                                     <div class="row head clearfix">
-                                        <div class="column left floated no-border company name"><h2>SABIC</h2></div>
+                                        <div class="column left floated no-border company name">
+                                            <h2>SABIC</h2></div>
                                         <div class="column right floated ">
                                             <div class="title">Probability</div>
                                         </div>
@@ -279,7 +299,8 @@
                             <div class="column">
                                 <div class="content event-aggregate-chart">
                                     <div class="row head clearfix">
-                                        <div class="column left floated no-border company name"><h2>SABIC</h2></div>
+                                        <div class="column left floated no-border company name">
+                                            <h2>SABIC</h2></div>
                                         <div class="column right floated ">
                                             <div class="title">Probability</div>
                                         </div>
@@ -332,7 +353,8 @@
                             <div class="column">
                                 <div class="content event-aggregate-chart">
                                     <div class="row head clearfix">
-                                        <div class="column left floated no-border company name"><h2>SABIC</h2></div>
+                                        <div class="column left floated no-border company name">
+                                            <h2>SABIC</h2></div>
                                         <div class="column right floated ">
                                             <div class="title">Probability</div>
                                         </div>
@@ -385,7 +407,8 @@
                             <div class="column">
                                 <div class="content event-aggregate-chart">
                                     <div class="row head clearfix">
-                                        <div class="column left floated no-border company name"><h2>SABIC</h2></div>
+                                        <div class="column left floated no-border company name">
+                                            <h2>SABIC</h2></div>
                                         <div class="column right floated ">
                                             <div class="title">Probability</div>
                                         </div>
@@ -435,16 +458,18 @@
                                     <a href="#" class="row clearfix view-more">Detailed View</a>
                                 </div>
                             </div>
-                            
                         </div>
-                        
                     </div>
                 </section>
             </div>
-            <footer><div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div></footer>
+            <footer>
+                <div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div>
+            </footer>
         </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-        <script src="dist/semantic.min.js"></script>
-        <script src="javascripts/fintech.js"></script>
-    </body>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="dist/semantic.min.js"></script>
+    <script src="javascripts/fintech.js"></script>
+</body>
+
 </html>

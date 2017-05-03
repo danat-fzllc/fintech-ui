@@ -8,4 +8,22 @@
     &.down-chart {
         @include use-sprite(ico-down-chart);
     }
+
+    &.notifications {
+        @include use-sprite(notification);
+    }
+
+    &.questions {
+        @include use-sprite(questions);
+    }
+
+    &.watchlist {
+        @include use-sprite(watchlist);
+    }
+}
+
+.icon {
+    display: inline-block;
+
+    &:before {}
 }

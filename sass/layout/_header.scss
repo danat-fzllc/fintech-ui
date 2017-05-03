@@ -1,69 +1,58 @@
 .fintech {
     > .top {
-        height: 52px;
         position: relative;
         background-color: #fff;
+        box-shadow: 0px -1px 6px #999;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 98;
+        min-height: 45px;
+
+        @include breakpoint(desktops) {
+            height: 52px;
+            box-shadow: none;
+            position: static;
+        }
+
 
         .outer {
             max-width: 1200px;
             margin: 0 auto;
-        }
+            padding: 0 1rem;
 
-        .menu-nav {
-            padding: 0 20px;
-            height: 55px;
-            line-height: 55px;
-            position: relative;
-
-            &:before {
-                content: '';
-                background-color: darken($primary-color, 5%);
-
-                @include transition-property(transform);
-
-                @include transition-timing-function(ease-out);
-
-                @include transition-duration(0.2s);
-
-                @include transform-origin(0, 50%);
-
-                @include transform(scaleX(0));
-
-                position: absolute;
-                z-index: -1;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
+            @include breakpoint(desktops) {
+                padding: 0 0;
             }
 
-            &:hover {
-                &:before {
-                    @include transform(scaleX(1));
+
+            .main-nav-button {
+                @include use-sprite(menu-icon);
+
+                display: inline-block;
+                margin: 14px 14px 0 0;
+                background-color: initial;
+                border: none;
+
+                @include breakpoint(desktops) {
+                    display: none;
                 }
             }
 
-            &:after {
-                content: '\f177';
-                font-family: $fontAwesome;
-                font-size: 17px;
-                display: inline-block;
-                color: $white;
-                cursor: pointer;
+            .language {
+                height: 24px;
+                border: 1px solid $gray;
+                background: #f8f8f8;
+                padding: 3px 10px 7px;
+                margin: 10px 15px 0 0;
+                line-height: 10px;
 
-                @include transform(rotate(0deg));
+                @extend .bold;
 
-                @include transition(all ease-out 0.2s);
-            }
+                @include border-radius(3px);
 
-            &.expand {
-                &:after {
-                    content: '\f0b0';
-                    font-size: 20px;
-
-                    @include transform(rotate(-360deg));
-
-                    @include transition(all ease-out 0.2s);
+                @include breakpoint(desktops) {
+                    display: none;
                 }
             }
         }
@@ -72,20 +61,54 @@
             @include use-sprite(logo);
 
             display: inline-block;
-            margin: 14px 18px 0 0;
+            margin: 14px 0px 0 0;
+
+            @include breakpoint(desktops) {
+                margin: 14px 18px 0 0;
+            }
         }
 
         .sign-in {}
 
-        a {
-            color: lighten($black, 50%);
-            padding: 17px 15px 0;
-            display: inline-block;
+        .main-nav {
+            position: fixed;
+            background: #fff;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 101;
+            display: none;
+            padding: 1em 2em;
 
-            &:hover {
-                color: $black;
+            @include breakpoint(desktops) {
+                position: static;
+                padding: 0;
+                display: block;
             }
-        }
+
+
+            a {
+                color: $black;
+                padding: 17px 15px 0;
+                display: block;
+                text-align: center;
+                font-size: rem(18);
+                line-height: 30px;
+
+                @include breakpoint(desktops) {
+                    display: inline-block;
+                    text-align: initial;
+                    font-size: inherit;
+                    line-height: inherit;
+                    color: lighten($black, 50%);
+                }
+
+
+                &:hover {
+                    color: $black;
+                }
+            }
 
         .lang {
             font-family: $font-ar-bold;
@@ -101,13 +124,105 @@
             top: -2px;
         }
 
-        .active {
-            color: $primary-color;
+            .active {
+                font-weight: $font-weight-medium;
 
-            &:hover {
-                color: $primary-color;
-                cursor: default;
+                @include breakpoint(desktops) {
+                    color: $primary-color;
+                    font-weight: initial;
+                }
+
+
+                &:hover {
+                    color: $primary-color;
+                    cursor: default;
+                }
+            }
+
+            .share-options {
+                @include breakpoint(desktops) {
+                    display: none;
+                }
+            }
+
+            .menu-holder {
+                /*position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;*/
+                margin-top: 20%;
+            }
+
+            .overlay-title {
+                @include breakpoint(desktops) {
+                    display: none;
+                }
             }
         }
+
+        .tabs-home {
+            border-bottom-color: #fff !important;
+            padding: 0 1em;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+
+            .item {
+                position: relative;
+                padding: 0 0em 0.8em  !important;
+                padding-left: 25px !important;
+                font-size: rem(16);
+                font-weight: $font-weight-medium;
+
+                &.questions {
+                    padding-left: 30px !important;
+                }
+
+                i {
+                    content: '';
+                    position: absolute;
+                    left: 0px;
+                    top: -2px;
+                }
+
+                &:not(.active) {
+                    @extend .grayscale;
+                }
+
+                @include breakpoint(small-mobiles) {
+                    font-size: rem(13);
+                }
+            }
+
+            @include breakpoint(desktops) {
+                display: none;
+            }
+
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+body.no-scroll {
+    overflow: hidden;
+    position: fixed;
+}
+
+.menu-open {
+    .main-nav {
+        display: block !important;
+    }
+
+    .language {
+        position: relative;
+        z-index: 102;
+        top: 6px;
+        right: 1em;
     }
 }

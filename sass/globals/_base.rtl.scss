@@ -9,9 +9,14 @@ html {
 body {
     font-family: Arial;
     color: #585858;
+    background: #fff;
     direction: rtl;
-    font-size: 12px;
+    font-size: rem(12);
     line-height: normal;
+
+    @include breakpoint(desktops) {
+        background: #f6f6f6;
+    }
 }
 
 a {
@@ -42,7 +47,7 @@ h1, h2, h3, h4, h5 {
 
 th {
     font-weight: bold;
-    font-size: 14px;
+    font-size: rem(14);
 }
 
 form {

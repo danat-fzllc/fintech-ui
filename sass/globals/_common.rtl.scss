@@ -1,6 +1,6 @@
 .column {
     > h2 {
-        padding-left: 20px;
+        padding-right: 20px;
         font-weight: $font-weight-regular;
         color: #000000;
         font-size: rem(22);
@@ -25,10 +25,14 @@
     width: 100%;
     max-width: 1200px;
     text-align: right;
-    padding: 13px 0 0 0;
+    padding: 0px 0 20px 0;
     position: relative;
     bottom: -3px;
-    z-index: 100;
+    z-index: 95;
+
+    @include breakpoint(desktops) {
+        padding: 13px 0 0 0;
+    }
 }
 
 /*color scale*/
@@ -138,6 +142,11 @@
     &.secondary {
         color: $secondary-color;
     }
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 /*loader*/
@@ -361,8 +370,6 @@
     }
 }
 
-b, optgroup, strong {}
-
 /*aggregate cahrt left right arrows*/
 .aggregate-chart {
     width: 100%;
@@ -371,27 +378,45 @@ b, optgroup, strong {}
     .column {
         width: 50%;
         float: left;
-        height: 80px;
+        height: 50px;
         position: relative;
 
+        @include breakpoint(desktops) {
+            height: 80px;
+        }
+
+
         .arrow {
-            height: 50px;
-            margin: 16px 0;
+            height: 20px;
+            margin: 15px 0;
             position: relative;
             z-index: 1;
             max-width: 100% !important;
             -webkit-animation: w70 1s ease forwards;
 
+            @include breakpoint(desktops) {
+                height: 50px;
+                margin: 16px 0;
+            }
+
+
             &:after {
-                border-left-width: 15px;
-                border-top-width: 25px;
-                border-bottom-width: 25px;
-                border-right-width: 15px;
+                border-left-width: 8px;
+                border-top-width: 10px;
+                border-bottom-width: 10px;
+                border-right-width: 8px;
                 border-style: solid;
                 border-top-color: transparent;
                 border-bottom-color: transparent;
                 position: absolute;
                 top: 0px;
+
+                @include breakpoint(desktops) {
+                    border-left-width: 15px;
+                    border-top-width: 25px;
+                    border-bottom-width: 25px;
+                    border-right-width: 15px;
+                }
             }
 
             .value {
@@ -402,9 +427,13 @@ b, optgroup, strong {}
                 margin: auto;
                 display: inline-block;
                 height: 19px;
-                font-size: rem(26);
+                font-size: rem(16);
                 white-space: nowrap;
                 fomt-weight: $font-weight-light;
+
+                @include breakpoint(desktops) {
+                    font-size: rem(26);
+                }
             }
         }
 
@@ -467,10 +496,10 @@ b, optgroup, strong {}
         }
 
         &.down:after, &.up:after {
-            border-left-width: 15px;
-            border-top-width: 25px;
-            border-bottom-width: 25px;
-            border-right-width: 15px;
+            border-left-width: 8px;
+            border-top-width: 10px;
+            border-bottom-width: 10px;
+            border-right-width: 8px;
             border-style: solid;
             border-top-color: #fff;
             border-bottom-color: #fff;
@@ -478,6 +507,13 @@ b, optgroup, strong {}
             top: 0px;
             content: '';
             color: $light-gray;
+
+            @include breakpoint(desktops) {
+                border-left-width: 15px;
+                border-top-width: 25px;
+                border-bottom-width: 25px;
+                border-right-width: 15px;
+            }
         }
 
         &.up:after {
@@ -525,6 +561,47 @@ b, optgroup, strong {}
                 }
             }
         }
+    }
+}
+
+.floating {
+    position: fixed;
+    z-index: 96;
+
+    &.button {
+        @include box-shadow(1px 1px 4px rgba(101, 119, 134, 0.75));
+
+        &.secondary {
+            @include box-shadow(1px 1px 4px rgba(101, 119, 134, 0.75));
+        }
+
+        &.right {
+            right: 15px;
+        }
+
+        &.top {
+            top: 20px;
+        }
+
+        &.bottom {
+            bottom: 20px;
+        }
+
+        &.left {
+            left: 15px;
+        }
+    }
+}
+
+.mobile-only {
+    @include breakpoint(desktops) {
+        display: none !important;
+    }
+}
+
+.desktop-only {
+    @include breakpoint(upto-tablets) {
+        display: none !important;
     }
 }
 

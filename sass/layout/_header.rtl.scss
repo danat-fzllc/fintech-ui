@@ -1,16 +1,62 @@
 .fintech {
     > .top {
-        a {
-            padding-top: 20px;
+        .outer {
+            .logo {
+                @include breakpoint(desktops) {
+                    margin: 14px  0 0 18px;
+                }
+            }
+
+            .lang {
+                padding-left: 0;
+                font-family: $base-font;
+                font-weight: 500;
+            }
+
+            .language {
+                padding: 5px 10px;
+                margin: 10px 0px 0 15px;
+            }
+
+            .main-nav-button {
+                margin: 14px 0px 0 14px;
+                transform: rotateY(180deg);
+            }
+
+            .main-nav {
+                .lang {
+                    padding: 2px 12px;
+                    top: 0;
+                }
+            }
         }
 
-        .logo {
-            margin: 14px 0px 0 18px;
-        }
+        .tabs-home {
+            .item {
+                padding: 0 0 0.8em 0em !important;
+                padding-right: 25px !important;
+                font-family: $font-ar-bold;
+                font-size: rem(14);
+                font-weight: $font-weight-medium;
 
-        .lang {
-            line-height: 23px;
-            top: -1px;
+                &.questions {
+                    padding-right: 30px !important;
+                    padding-left: 0px !important;
+                }
+
+                i {
+                    right: 0px;
+                }
+            }
         }
+    }
+}
+
+.menu-open {
+    .main-nav {}
+
+    .language {
+        left: 1em;
+        right: auto;
     }
 }
