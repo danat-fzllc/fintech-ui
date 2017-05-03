@@ -757,8 +757,8 @@ form {
   display: inline-block;
 }
 .ico.up-chart {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -73px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -75px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -767,16 +767,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.up-chart {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -70px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -72px;
     height: 9px;
     width: 9px;
   }
 }
 .ico.down-chart {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -56px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -58px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -785,16 +785,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.down-chart {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -56px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -58px;
     height: 9px;
     width: 9px;
   }
 }
 .ico.notifications {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -141px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -143px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -803,16 +803,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.notifications {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -129px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -131px;
     height: 21.5px;
     width: 17.5px;
   }
 }
 .ico.questions {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -168px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -170px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -821,16 +821,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.questions {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -156px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -158px;
     height: 21.5px;
     width: 21.5px;
   }
 }
 .ico.watchlist {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -231px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -233px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -839,9 +839,9 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.watchlist {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -218px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -220px;
     height: 21.5px;
     width: 16.5px;
   }
@@ -1025,8 +1025,8 @@ form {
   border-radius: 5px 0 0 5px;
 }
 .fintech .calendar-table-view-btns .calendar i {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -20px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -22px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1036,16 +1036,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar i {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -20px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -22px;
     height: 13px;
     width: 13.5px;
   }
 }
 .fintech .calendar-table-view-btns .calendar.active i {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -38px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -40px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1054,9 +1054,9 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar.active i {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -38px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -40px;
     height: 13px;
     width: 13.5px;
   }
@@ -1069,8 +1069,8 @@ form {
   border-radius: 0 5px 5px 0;
 }
 .fintech .calendar-table-view-btns .table i {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -195px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -197px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1080,16 +1080,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table i {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -182px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -184px;
     height: 13px;
     width: 13.5px;
   }
 }
 .fintech .calendar-table-view-btns .table.active i {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -213px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -215px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1098,9 +1098,9 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table.active i {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -200px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -202px;
     height: 13px;
     width: 13.5px;
   }
@@ -1317,22 +1317,22 @@ form {
     display: inline-block;
     margin: 2px 0px 0 10px;
     float: right;
-    background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
+    background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     overflow: hidden;
     display: inline-block;
-    height: 15px;
-    width: 20px;
+    height: 17px;
+    width: 23px;
   }
 }
 @media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .title.aggregate-performance:before {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
     background-position: 0 0;
-    height: 15px;
-    width: 20px;
+    height: 17px;
+    width: 23px;
   }
 }
 
@@ -2807,8 +2807,8 @@ form {
   }
 }
 .fintech > .top .outer .main-nav-button {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -119px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -121px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -2821,9 +2821,9 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .outer .main-nav-button {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -107px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -109px;
     height: 17.5px;
     width: 19px;
   }
@@ -2850,8 +2850,8 @@ form {
   }
 }
 .fintech > .top .logo {
-  background-image: url('themes/default/assets/images/icons-s71a2b02713.png');
-  background-position: 0 -90px;
+  background-image: url('themes/default/assets/images/icons-s00338c0adc.png');
+  background-position: 0 -92px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -2862,9 +2862,9 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .logo {
-    background-image: url('themes/default/assets/images/icons-2x-sba4244a9be.png');
-    background-size: 92.5px 240px;
-    background-position: 0 -84px;
+    background-image: url('themes/default/assets/images/icons-2x-sa717ed2d36.png');
+    background-size: 92.5px 242px;
+    background-position: 0 -86px;
     height: 18px;
     width: 92.5px;
   }
