@@ -2355,6 +2355,10 @@ form {
 }
 
 /*Elements - Individual site elements*/
+.fintech .ui.sortable.table thead th {
+  border-left: none;
+  border-right: none;
+}
 .fintech .ui.table {
   border: 0;
   /*@include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));*/

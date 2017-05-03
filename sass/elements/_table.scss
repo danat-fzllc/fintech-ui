@@ -1,169 +1,182 @@
 .fintech {
-    .ui.table {
-        border: 0;
-
-        /*@include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));*/
-
-        thead {
-            background-color: #f7f7f7;
-
-            @include breakpoint(desktops) {
-                background-color: initial;
-            }
-
-
-            th {
-                background: transparent;
-                padding: 0 rem(6) rem(6) rem(6);
-                border-bottom-color: #cdcdcd;
-
-                @extend .bold;
-
-                i.caret:before {
-                    font-size: 20px;
-                    line-height: 11px;
-                    top: 3px;
-                    position: relative;
-                }
-            }
-
-            &.sub {
-                background-color: #ebebeb;
-
-                @include breakpoint(desktops) {
-                    background-color: #f7f7f7;
-                }
-
-
-                th {
-                    padding: rem(6);
-
-                    @include breakpoint(upto-tablets) {
-                        border: none;
-                        border-radius: 0 !important;
+    .ui {
+        &.sortable {
+            &.table {
+                thead {
+                    th {
+                        border-left: none;
+                        border-right: none;
                     }
                 }
             }
+        }
 
-            &.group-head {
-                th {
-                    padding: 0 rem(10) rem(10) rem(10);
-                    text-align: center;
+        &.table {
+            border: 0;
+
+            /*@include box-shadow(0 1px 2px rgba(0, 0, 0, 0.07));*/
+
+            thead {
+                background-color: #f7f7f7;
+
+                @include breakpoint(desktops) {
+                    background-color: initial;
                 }
 
-                + thead {
-                    background: $light-gray;
+
+                th {
+                    background: transparent;
+                    padding: 0 rem(6) rem(6) rem(6);
+                    border-bottom-color: #cdcdcd;
+
+                    @extend .bold;
+
+                    i.caret:before {
+                        font-size: 20px;
+                        line-height: 11px;
+                        top: 3px;
+                        position: relative;
+                    }
+                }
+
+                &.sub {
+                    background-color: #ebebeb;
 
                     @include breakpoint(desktops) {
-                        background: none;
+                        background-color: #f7f7f7;
                     }
 
 
                     th {
-                        border-bottom: 0;
                         padding: rem(6);
-                        text-align: left;
+
+                        @include breakpoint(upto-tablets) {
+                            border: none;
+                            border-radius: 0 !important;
+                        }
+                    }
+                }
+
+                &.group-head {
+                    th {
+                        padding: 0 rem(10) rem(10) rem(10);
+                        text-align: center;
+                    }
+
+                    + thead {
+                        background: $light-gray;
 
                         @include breakpoint(desktops) {
-                            text-align: initial;
+                            background: none;
                         }
 
 
-                        .small {
-                            @include breakpoint(upto-tablets) {
-                                display: block;
-                                font-size: rem(12);
-                                font-weight: normal;
+                        th {
+                            border-bottom: 0;
+                            padding: rem(6);
+                            text-align: left;
+
+                            @include breakpoint(desktops) {
+                                text-align: initial;
+                            }
+
+
+                            .small {
+                                @include breakpoint(upto-tablets) {
+                                    display: block;
+                                    font-size: rem(12);
+                                    font-weight: normal;
+                                }
                             }
                         }
                     }
                 }
-            }
 
-            + thead ~ thead {
-                th {
-                    border-top: 1px solid $dark-gray;
-                }
-            }
-        }
-
-        tr {
-            td {
-                padding: rem(8);
-                border-top-color: $border-color;
-
-                &.progress-bar-holder {
-                    @include breakpoint(upto-tablets) {
-                        width: 30%;
+                + thead ~ thead {
+                    th {
+                        border-top: 1px solid $dark-gray;
                     }
                 }
             }
 
-            &.highlight {
-                .today {
-                    position: relative;
-
-                    &:first-child {
-                        span {
-                            display: inline-block;
-
-                            @include border-radius(100px);
-
-                            background-color: $primary-color;
-                            padding: 2px 5px;
-                            color: #fff;
-                            position: relative;
-                            font-weight: $font-weight-medium;
-                            cursor: default;
-
-                            &:before {
-                                content: '';
-                                position: absolute;
-                                left: -16px;
-                                top: 6px;
-                                display: inline-block;
-
-                                @include triangle(5px, right, $primary-color);
-
-                                border-left-width: 10px;
-                            }
-
-                            &:after {
-                                content: '';
-                                position: absolute;
-                                left: -26px;
-                                top: 10px;
-                                display: inline-block;
-                                width: 10px;
-                                height: 2px;
-                                background-color: #0aada6;
-
-                                @include border-radius(2px);
-                            }
-                        }
-                    }
-                }
-            }
-
-            &.expanded {
+            tr {
                 td {
-                    border-bottom: 1px solid $gray;
-                    background-color: $light-gray;
+                    padding: rem(8);
+                    border-top-color: $border-color;
+
+                    &.progress-bar-holder {
+                        @include breakpoint(upto-tablets) {
+                            width: 30%;
+                        }
+                    }
+                }
+
+                &.highlight {
+                    .today {
+                        position: relative;
+
+                        &:first-child {
+                            span {
+                                display: inline-block;
+
+                                @include border-radius(100px);
+
+                                background-color: $primary-color;
+                                padding: 2px 5px;
+                                color: #fff;
+                                position: relative;
+                                font-weight: $font-weight-medium;
+                                cursor: default;
+
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    left: -16px;
+                                    top: 6px;
+                                    display: inline-block;
+
+                                    @include triangle(5px, right, $primary-color);
+
+                                    border-left-width: 10px;
+                                }
+
+                                &:after {
+                                    content: '';
+                                    position: absolute;
+                                    left: -26px;
+                                    top: 10px;
+                                    display: inline-block;
+                                    width: 10px;
+                                    height: 2px;
+                                    background-color: #0aada6;
+
+                                    @include border-radius(2px);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.expanded {
+                    td {
+                        border-bottom: 1px solid $gray;
+                        background-color: $light-gray;
+                    }
                 }
             }
-        }
 
-        tfoot {
-            th {
-                background: none;
-                font-weight: $font-weight-medium;
-                border-top: 2px solid $dark-gray;
-                font-size: 14px;
+            tfoot {
+                th {
+                    background: none;
+                    font-weight: $font-weight-medium;
+                    border-top: 2px solid $dark-gray;
+                    font-size: 14px;
+                }
             }
-        }
 
-        .company-name {
-            font-weight: $font-weight-regular;
+            .company-name {
+                font-weight: $font-weight-regular;
+            }
         }
     }
 }
