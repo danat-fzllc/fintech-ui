@@ -2399,6 +2399,18 @@ form {
     display: none;
   }
 }
+.fintech .rsi-today {
+  margin: 4px 0 0 0;
+}
+.fintech .rsi-today i {
+  top: 1px;
+  position: relative;
+}
+.fintech .rsi-today span {
+  color: #f0ac09;
+  margin: 0 5px 0 0px;
+  font-size: 14px;
+}
 
 /*Elements - Individual site elements*/
 .fintech .ui.sortable.table thead th {

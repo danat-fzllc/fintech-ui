@@ -59,6 +59,7 @@
                     height: 460px;
                 }
 
+
                 @include opacity(0.9);
             }
 
@@ -1712,6 +1713,21 @@
                     display: none;
                 }
             }
+        }
+    }
+
+    .rsi-today {
+        margin: 4px 0 0 0;
+
+        i {
+            top: 1px;
+            position: relative;
+        }
+
+        span {
+            color: $secondary-color;
+            margin: 0 5px 0 0px;
+            font-size: 14px;
         }
     }
 }
