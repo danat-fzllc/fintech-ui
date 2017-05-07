@@ -532,7 +532,7 @@
 
                         /*padding: 15px 0 0;*/
                         @include breakpoint(desktops) {
-                            display: initial;
+                            display: block;
                         }
                     }
                 }

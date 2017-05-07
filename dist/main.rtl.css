@@ -1528,7 +1528,7 @@ form {
 }
 @media (min-width: 769px) {
   .fintech .column > .content.event-aggregate-chart > .row.view-more {
-    display: initial;
+    display: block;
   }
 }
 .fintech.scroll {
