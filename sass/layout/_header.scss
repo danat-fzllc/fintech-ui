@@ -30,7 +30,7 @@
                 @include use-sprite(menu-icon);
 
                 display: inline-block;
-                margin: 14px 14px 0 0;
+                margin: 14px 10px 0 0;
                 background-color: initial;
                 border: none;
 
@@ -44,7 +44,7 @@
                 border: 1px solid $gray;
                 background: #f8f8f8;
                 padding: 3px 10px 7px;
-                margin: 10px 15px 0 0;
+                margin: 11px 10px 0 0;
                 line-height: 10px;
 
                 @extend .bold;
@@ -79,7 +79,7 @@
             bottom: 0;
             z-index: 101;
             display: none;
-            padding: 1em 2em;
+            padding: 0em 1em;
 
             @include breakpoint(desktops) {
                 position: static;
@@ -110,19 +110,24 @@
                 }
             }
 
-        .lang {
-            font-family: $font-ar-bold;
+            .lang {
+                display: none;
 
-            @include border-radius(3px);
+                @include breakpoint(desktops) {
+                    display: inline-block;
+                    font-family: $font-ar-bold;
 
-            background-color: #f2f2f2;
-            color: #4faec5;
-            padding: 0 12px;
-            line-height: 19px;
-            height: 26px;
-            position: relative;
-            top: -2px;
-        }
+                    @include border-radius(3px);
+
+                    background-color: #f2f2f2;
+                    color: #4faec5;
+                    padding: 0 12px;
+                    line-height: 19px;
+                    height: 26px;
+                    position: relative;
+                    top: -2px;
+                }
+            }
 
             .active {
                 font-weight: $font-weight-medium;
@@ -222,7 +227,8 @@ body.no-scroll {
     .language {
         position: relative;
         z-index: 102;
-        top: 6px;
-        right: 1em;
+
+        /*top: 6px;
+        right: 1em;*/
     }
 }

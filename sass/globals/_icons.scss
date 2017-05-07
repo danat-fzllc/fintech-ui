@@ -24,6 +24,30 @@
 
 .icon {
     display: inline-block;
+}
 
-    &:before {}
+@include breakpoint(upto-tablets) {
+    i.flag.ae:before, i.flag.uae:before, i.flag.united.arab.emirates:before {
+        @include use-sprite(ae);
+    }
+
+    i.flag.ksa:before, i.flag.sa:before, i.flag.saudi.arabia:before {
+        @include use-sprite(sa);
+    }
+
+    i.flag.bahrain:before, i.flag.bh:before {
+        @include use-sprite(bh);
+    }
+
+    i.flag.kuwait:before, i.flag.kw:before {
+        @include use-sprite(kw);
+    }
+
+    i.flag.qa:before, i.flag.qatar:before {
+        @include use-sprite(qa);
+    }
+
+    i.flag.om:before, i.flag.oman:before {
+        @include use-sprite(om);
+    }
 }

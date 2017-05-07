@@ -810,7 +810,8 @@
         width: initial;
         z-index: 98;
         background: #fff;
-        padding: 1em;
+
+        /*padding:1em;*/
 
         @include breakpoint(desktops) {
             width: 250px;
@@ -1662,7 +1663,7 @@
             @include breakpoint(upto-tablets) {
                 border-bottom: 1px solid #eee;
                 margin-bottom: -1px;
-                padding-bottom: 10px;
+                padding: 5px 0;
             }
 
 
@@ -1682,7 +1683,7 @@
             .close {
                 background: none;
                 border: none;
-                margin: 3px 0px 0 0;
+                margin: 6px 9px 0 0;
                 font-size: rem(22);
                 padding: 0;
                 width: 20px;
