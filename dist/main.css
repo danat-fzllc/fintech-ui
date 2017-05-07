@@ -2530,8 +2530,13 @@ form {
   }
 }
 .fintech .ui.table thead.group-head th {
-  padding: 0 0.76923rem 0.76923rem 0.76923rem;
   text-align: center;
+  padding: 0.46154rem;
+}
+@media (min-width: 769px) {
+  .fintech .ui.table thead.group-head th {
+    padding: 0 0.76923rem 0.76923rem 0.76923rem;
+  }
 }
 .fintech .ui.table thead.group-head + thead {
   background: #f7f7f7;
@@ -2544,12 +2549,6 @@ form {
 .fintech .ui.table thead.group-head + thead th {
   border-bottom: 0;
   padding: 0.46154rem;
-  text-align: left;
-}
-@media (min-width: 769px) {
-  .fintech .ui.table thead.group-head + thead th {
-    text-align: initial;
-  }
 }
 @media (max-width: 768px) {
   .fintech .ui.table thead.group-head + thead th .small {
