@@ -1474,10 +1474,7 @@
                             padding-right: 9px;
                             height: 10px;
                             line-height: 9px;
-
-                            @include breakpoint(desktops) {
-                                border-right: 1px solid #bfbfbf;
-                            }
+                            border-right: 1px solid #bfbfbf;
                         }
 
                         p {
@@ -1537,13 +1534,10 @@
                         margin-left: 8px;
                         display: none;
                         font-weight: $font-weight-regular;
+                        display: inline-block;
 
                         &:hover {
                             color: $secondary-color;
-                        }
-
-                        @include breakpoint(desktops) {
-                            display: inline-block;
                         }
                     }
 

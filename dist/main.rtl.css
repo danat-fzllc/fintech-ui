@@ -2337,11 +2337,7 @@ form {
   padding-left: 9px;
   height: 10px;
   line-height: 9px;
-}
-@media (min-width: 769px) {
-  .fintech .grid.home .notification-feeds .column.feed .segment .time {
-    border-left: 1px solid #bfbfbf;
-  }
+  border-left: 1px solid #bfbfbf;
 }
 .fintech .grid.home .notification-feeds .column.feed .segment p {
   margin: 5px 0 0;
@@ -2396,15 +2392,10 @@ form {
   font-weight: normal;
   font-size: 1rem;
   margin-right: 8px;
-  display: none;
+  display: inline-block;
 }
 .fintech .grid.home .notification-feeds .column.feed .details:hover {
   color: #f0ac09;
-}
-@media (min-width: 769px) {
-  .fintech .grid.home .notification-feeds .column.feed .details {
-    display: inline-block;
-  }
 }
 .fintech .grid.home .notification-feeds .column.feed .image {
   max-width: 100%;
