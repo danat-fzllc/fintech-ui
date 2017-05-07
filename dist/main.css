@@ -1353,23 +1353,23 @@ form {
 .fintech .column > .content.event-aggregate-chart > .row > .column.no-border {
   border: none;
 }
-.fintech .column > .content.event-aggregate-chart > .row > .column span {
+.fintech .column > .content.event-aggregate-chart > .row > .column > span {
   display: block;
 }
 @media (min-width: 769px) {
-  .fintech .column > .content.event-aggregate-chart > .row > .column span {
+  .fintech .column > .content.event-aggregate-chart > .row > .column > span {
     display: inline-block;
   }
 }
-.fintech .column > .content.event-aggregate-chart > .row > .column span + span {
+.fintech .column > .content.event-aggregate-chart > .row > .column > span + span {
   font-weight: 700;
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .donut-holder {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin: 0 auto;
   float: left;
-  margin: 10px 0 0 15px;
+  margin: 10px 0 0 10px;
 }
 @media (min-width: 769px) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .donut-holder {
@@ -1383,7 +1383,7 @@ form {
   font-weight: 700;
   display: inline-block;
   float: left;
-  margin: 10px 10px 0 15px;
+  margin: 15px 5px 0 10px;
 }
 @media (min-width: 769px) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .donut-value {

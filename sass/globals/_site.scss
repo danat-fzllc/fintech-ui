@@ -391,7 +391,7 @@
                             border: none;
                         }
 
-                        span {
+                        > span {
                             display: block;
 
                             @include breakpoint(desktops) {
@@ -405,11 +405,11 @@
                         }
 
                         .donut-holder {
-                            width: 20px;
-                            height: 20px;
+                            width: 30px;
+                            height: 30px;
                             margin: 0 auto;
                             float: left;
-                            margin: 10px 0 0 15px;
+                            margin: 10px 0 0 10px;
 
                             @include breakpoint(desktops) {
                                 margin: 14px 0 0 45px;
@@ -423,7 +423,7 @@
                             font-weight: $font-weight-medium;
                             display: inline-block;
                             float: left;
-                            margin: 10px 10px 0 15px;
+                            margin: 15px 5px 0 10px;
 
                             @include breakpoint(desktops) {
                                 margin: 34px 0 0 15px;
