@@ -20,6 +20,10 @@
     &.watchlist {
         @include use-sprite(watchlist);
     }
+
+    &.no-result {
+        @include use-sprite(no-result);
+    }
 }
 
 .icon {

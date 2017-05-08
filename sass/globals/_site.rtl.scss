@@ -978,6 +978,25 @@
         }
     }
 
+    .ui.selection.list {
+        > .item {
+            padding: 0.7em;
+
+            i.icon {
+                padding-left: 0;
+                font-size: 18px;
+                font-weight: $font-weight-regular;
+                width: 10px;
+            }
+
+            .content {
+                color: $primary-color;
+                font-weight: $font-weight-regular;
+                font-size: 13px;
+            }
+        }
+    }
+
     .ui[class*="content container"] {
         .content-holder {
             height: 100%;

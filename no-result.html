@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fintech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div class="fintech">
+        <header class="top">
+            <div class="outer clearfix">
+                <button class="main-nav-button left floated"></button>
+                <a class="logo left floated"></a>
+                <form class="left floated country-selection">
+                    <div class="field">
+                        <div class="ui fluid search selection dropdown">
+                            <input type="hidden" name="country">
+                            <i class="dropdown icon"></i>
+                            <div class="default text"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                            <div class="menu">
+                                <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
+                                <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                                <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <button class="language right floated">عربى</button>
+                <div class="main-nav right floated overlay-container">
+                    <div class="overlay-header clearfix">
+                        <span class="left floated overlay-title">Menu</span>
+                        <button class="right floated close"><i class="remove icon"></i></button>
+                    </div>
+                    <div class="holder">
+                        <a href="" class="active">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contact Us</a>
+                        <a href="" class="my-account"><strong>Patrick Carlson <i class="fa fa-cog" aria-hidden="true"></i></strong></a>
+                        <a href="" class="lang">عربى</a>
+                    </div>
+                    <div class="share-options"></div>
+                </div>
+            </div>
+        </header>
+        <div class="ui container fluid  content-container">
+            <div class="fluid clearfix question page center aligned relative">
+                <div class="outer">
+                    <form class="ui form">
+                        <h1 class="question ui center">
+                    What will happen to <select id="" class="ui selection dropdown">
+                        <option value="1">Sabic</option>
+                        <option value="2">Emaar</option>
+                        <option value="3">Company 3</option>
+                    </select>
+                    
+                    
+                    when RSI is  
+                    <select id="" class="ui selection dropdown">
+                     <option value="1">Below 30</option>
+                     <option value="2">Above 70</option>
+                    </select>
+                    
+                    <!-- since -->
+               
+
+                    <select id="" class="ui selection dropdown">
+                    <option value="1">From</option>
+                        <option value="2">Since All Years</option>
+                        <option value="2">&nbsp; &nbsp;Since 1 year</option>
+                        <option value="9">&nbsp; &nbsp;Since 2 years</option>
+                        <option value="9">&nbsp; &nbsp;Since 3 years</option>
+                        <option value="9">&nbsp; &nbsp;Since 5 years</option>
+                        <option value="9">&nbsp; &nbsp;Since 10 years</option>
+                        
+                        
+                    </select>
+                    <select id="" class="ui selection dropdown">
+                    <option value="1">2009</option>
+                        <option value="2">2010</option>
+                        <option value="2">2011</option>
+                        <option value="9">2012</option>
+                        <option value="9">2013</option>
+                        <option value="9">2014</option>
+                        <option value="9">2015</option>
+                        
+                        
+                    </select>
+                    to
+                     <select id="" class="ui selection dropdown">
+                    <option value="1">2009</option>
+                        <option value="2">2010</option>
+                        <option value="2">2011</option>
+                        <option value="9">2012</option>
+                        <option value="9">2013</option>
+                        <option value="9">2014</option>
+                        <option value="9">2015</option>
+                        
+                        
+                    </select>
+                    
+                    <a class="ui button"><i class="fa fa-search" aria-hidden="true"></i>
+ Discover</a>
+                    </h1>
+                    </form>
+                    <div class="button share right floated">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <div class="list">
+                            <div class="head">Share</div>
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+                                <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
+                                <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linked In</a></li>
+                                <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google Plus</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fluid ui content container clearfix no-results-container" id="container">
+                <section class="ui centered grid">
+                    <div class="eleven wide column">
+                        <div class="content">
+                            <div class="no-results center aligned">
+                                <div class="ico no-result"></div>
+                                <div class="info">
+                                    <h4>No result were found for given criteria</h4>
+                                    <p>Please try again later</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="dist/semantic.min.js"></script>
+    <script src="javascripts/fintech.js"></script>
+</body>
+
+</html>

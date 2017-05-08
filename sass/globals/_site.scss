@@ -315,6 +315,38 @@
             margin-right: 1em !important;
             width: auto !important;
         }
+
+
+        &.scroll {
+            padding-top: 108px;
+
+            .question.page {
+                padding: 10px 0;
+                position: fixed;
+                z-index: 100;
+                top: 0;
+
+                h1 {
+                    font-size: rem(18);
+                }
+
+                .field {
+                    margin-top: 8px;
+                    line-height: 25px;
+                    padding: 0;
+                    height: 27px;
+                }
+
+                .ui.button {
+                    top: 0;
+                    padding: 8px 18px;
+                }
+
+                .share {
+                    top: 34%;
+                }
+            }
+        }
     }
 
     .column {
@@ -336,6 +368,11 @@
                 font-size: rem(12);
                 position: relative;
                 top: 2px;
+            }
+
+            h3.title {
+                padding-bottom: rem(12);
+                border-bottom: 2px solid $border-color;
             }
 
             &.event-aggregate-chart {
@@ -536,37 +573,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-
-    &.scroll {
-        padding-top: 108px;
-
-        .question.page {
-            padding: 10px 0;
-            position: fixed;
-            z-index: 100;
-            top: 0;
-
-            h1 {
-                font-size: rem(18);
-            }
-
-            .field {
-                margin-top: 8px;
-                line-height: 25px;
-                padding: 0;
-                height: 27px;
-            }
-
-            .ui.button {
-                top: 0;
-                padding: 8px 18px;
-            }
-
-            .share {
-                top: 34%;
             }
         }
     }
@@ -970,6 +976,30 @@
             @include breakpoint(upto-tablets) {
                 padding: rem(10) 0;
                 font-size: rem(16);
+            }
+        }
+    }
+
+    .ui.selection.list {
+        > .item {
+            padding: 0.8em;
+            border-top: 1px solid $light-gray;
+
+            &:first-child {
+                border-top: none;
+            }
+
+            i.icon {
+                padding-right: 0;
+                font-size: 18px;
+                font-weight: $font-weight-regular;
+                width: 10px;
+            }
+
+            .content {
+                color: $primary-color;
+                font-weight: $font-weight-regular;
+                font-size: 13px;
             }
         }
     }
