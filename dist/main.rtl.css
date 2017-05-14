@@ -1469,11 +1469,13 @@ form {
   display: inline-block;
   float: lright;
   margin: 15px 10px 0 5px;
+  width: 68px;
 }
 @media (min-width: 769px) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .donut-value {
     margin: 34px 15 0 0px;
     font-size: 1.38462rem;
+    width: auto;
   }
 }
 .fintech .column > .content.event-aggregate-chart > .row > .column .title {
@@ -1551,6 +1553,7 @@ form {
   padding-right: 0;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: calc(100% - 60px);
 }
 @media (min-width: 769px) {
   .fintech .column > .content.event-aggregate-chart > .row > .column.company.name h2 {
@@ -2433,12 +2436,14 @@ form {
   color: #000;
   line-height: normal;
   cursor: default;
-  font-weight: 700;
+  font-weight: 500;
+  color: #414141;
 }
 @media (min-width: 769px) {
   .fintech .grid.home .notification-feeds .column.feed .feed-head {
     font-weight: normal;
     font-size: 1.30769rem;
+    color: #000;
   }
 }
 @media (max-width: 400px) {
@@ -2451,6 +2456,9 @@ form {
   margin-left: 8px;
   position: relative;
   top: -2px;
+}
+.fintech .grid.home .notification-feeds .column.feed .feed-head strong {
+  color: #000;
 }
 .fintech .grid.home .notification-feeds .column.feed .info {
   padding-top: 5px;

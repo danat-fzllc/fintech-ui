@@ -461,10 +461,12 @@
                             display: inline-block;
                             float: left;
                             margin: 15px 5px 0 10px;
+                            width: 68px;
 
                             @include breakpoint(desktops) {
                                 margin: 34px 0 0 15px;
                                 font-size: rem(18);
+                                width: auto;
                             }
                         }
 
@@ -534,6 +536,7 @@
                                     padding-left: 0;
                                     text-overflow: ellipsis;
                                     overflow: hidden;
+                                    width: calc(100% - 60px);
 
                                     @include breakpoint(desktops) {
                                         width: 300px;
@@ -1536,14 +1539,15 @@
                     .feed-head {
                         font-size: rem(18);
                         position: relative;
-                        color: #000;
                         line-height: normal;
                         cursor: default;
-                        font-weight: $font-weight-medium;
+                        font-weight: $font-weight-regular;
+                        color: #414141;
 
                         @include breakpoint(desktops) {
                             font-weight: normal;
                             font-size: rem(16);
+                            color: #000;
                         }
 
 
@@ -1551,6 +1555,10 @@
                             margin-right: 8px;
                             position: relative;
                             top: -2px;
+                        }
+
+                        strong {
+                            color: #000;
                         }
                     }
 
