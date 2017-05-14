@@ -755,6 +755,7 @@ form {
 
 .hr-scroll-container {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .no-results {
@@ -792,8 +793,8 @@ form {
   display: inline-block;
 }
 .ico.up-chart {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -129px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -149px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -802,16 +803,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.up-chart {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -126px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -142px;
     height: 9px;
     width: 9px;
   }
 }
 .ico.down-chart {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -112px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -132px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -820,16 +821,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.down-chart {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -112px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -128px;
     height: 9px;
     width: 9px;
   }
 }
 .ico.notifications {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -419px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -439px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -838,16 +839,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.notifications {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -299px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -315px;
     height: 21.5px;
     width: 17.5px;
   }
 }
 .ico.questions {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -500px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -549px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -856,16 +857,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.questions {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -379px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -425px;
     height: 21.5px;
     width: 21.5px;
   }
 }
 .ico.watchlist {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -590px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -639px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -874,16 +875,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.watchlist {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -469px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -514px;
     height: 21.5px;
     width: 16.5px;
   }
 }
 .ico.no-result {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -251px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -271px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -892,11 +893,47 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.no-result {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -212px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -229px;
     height: 81.5px;
     width: 86.5px;
+  }
+}
+.ico.gold {
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -112px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 15px;
+  width: 38px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .ico.gold {
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -112px;
+    height: 11.5px;
+    width: 28.5px;
+  }
+}
+.ico.oil {
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -466px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 24px;
+  width: 19px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .ico.oil {
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -342px;
+    height: 24px;
+    width: 19px;
   }
 }
 
@@ -906,7 +943,7 @@ form {
 
 @media (max-width: 768px) {
   i.flag.ae:before, i.flag.uae:before, i.flag.united.arab.emirates:before {
-    background-image: url('themes/default/assets/images/icons-s72371f275f.png');
+    background-image: url('themes/default/assets/images/icons-sad52718039.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -917,8 +954,8 @@ form {
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
   i.flag.ae:before, i.flag.uae:before, i.flag.united.arab.emirates:before {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
     background-position: 0 0;
     height: 22px;
     width: 32px;
@@ -927,8 +964,8 @@ form {
 
 @media (max-width: 768px) {
   i.flag.ksa:before, i.flag.sa:before, i.flag.saudi.arabia:before {
-    background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-    background-position: 0 -527px;
+    background-image: url('themes/default/assets/images/icons-sad52718039.png');
+    background-position: 0 -576px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: inline-block;
@@ -938,9 +975,9 @@ form {
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
   i.flag.ksa:before, i.flag.sa:before, i.flag.saudi.arabia:before {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -406px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -451px;
     height: 22px;
     width: 32px;
   }
@@ -948,7 +985,7 @@ form {
 
 @media (max-width: 768px) {
   i.flag.bahrain:before, i.flag.bh:before {
-    background-image: url('themes/default/assets/images/icons-s72371f275f.png');
+    background-image: url('themes/default/assets/images/icons-sad52718039.png');
     background-position: 0 -49px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -959,8 +996,8 @@ form {
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
   i.flag.bahrain:before, i.flag.bh:before {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
     background-position: 0 -49px;
     height: 22px;
     width: 32px;
@@ -969,8 +1006,8 @@ form {
 
 @media (max-width: 768px) {
   i.flag.kuwait:before, i.flag.kw:before {
-    background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-    background-position: 0 -146px;
+    background-image: url('themes/default/assets/images/icons-sad52718039.png');
+    background-position: 0 -166px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: inline-block;
@@ -980,9 +1017,9 @@ form {
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
   i.flag.kuwait:before, i.flag.kw:before {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -140px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -156px;
     height: 22px;
     width: 32px;
   }
@@ -990,8 +1027,8 @@ form {
 
 @media (max-width: 768px) {
   i.flag.qa:before, i.flag.qatar:before {
-    background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-    background-position: 0 -473px;
+    background-image: url('themes/default/assets/images/icons-sad52718039.png');
+    background-position: 0 -522px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: inline-block;
@@ -1001,9 +1038,9 @@ form {
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
   i.flag.qa:before, i.flag.qatar:before {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -352px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -398px;
     height: 22px;
     width: 32px;
   }
@@ -1011,8 +1048,8 @@ form {
 
 @media (max-width: 768px) {
   i.flag.om:before, i.flag.oman:before {
-    background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-    background-position: 0 -446px;
+    background-image: url('themes/default/assets/images/icons-sad52718039.png');
+    background-position: 0 -495px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: inline-block;
@@ -1022,9 +1059,9 @@ form {
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
   i.flag.om:before, i.flag.oman:before {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -325px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -371px;
     height: 22px;
     width: 32px;
   }
@@ -1204,7 +1241,7 @@ form {
   border-radius: 5px 0 0 5px;
 }
 .fintech .calendar-table-view-btns .calendar i {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
   background-position: 0 -76px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1215,15 +1252,15 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar i {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
     background-position: 0 -76px;
     height: 13px;
     width: 13.5px;
   }
 }
 .fintech .calendar-table-view-btns .calendar.active i {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
   background-position: 0 -94px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1233,8 +1270,8 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar.active i {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
     background-position: 0 -94px;
     height: 13px;
     width: 13.5px;
@@ -1248,8 +1285,8 @@ form {
   border-radius: 0 5px 5px 0;
 }
 .fintech .calendar-table-view-btns .table i {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -554px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -603px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1259,16 +1296,16 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table i {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -433px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -478px;
     height: 13px;
     width: 13.5px;
   }
 }
 .fintech .calendar-table-view-btns .table.active i {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -572px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -621px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1277,9 +1314,9 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table.active i {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -451px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -496px;
     height: 13px;
     width: 13.5px;
   }
@@ -1426,7 +1463,7 @@ form {
   width: auto;
   border: none;
   padding: 0;
-  padding: 0 20% 0 35%;
+  padding: 0 20% 0 36%;
 }
 @media (min-width: 769px) {
   .fintech .column > .content.event-aggregate-chart > .row > .column:last-child {
@@ -1498,7 +1535,7 @@ form {
     display: inline-block;
     margin: 2px 0px 0 10px;
     float: right;
-    background-image: url('themes/default/assets/images/icons-s72371f275f.png');
+    background-image: url('themes/default/assets/images/icons-sad52718039.png');
     background-position: 0 -27px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1509,8 +1546,8 @@ form {
 }
 @media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .title.aggregate-performance:before {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
     background-position: 0 -27px;
     height: 17px;
     width: 22px;
@@ -2460,6 +2497,9 @@ form {
 .fintech .grid.home .notification-feeds .column.feed .feed-head strong {
   color: #000;
 }
+.fintech .grid.home .notification-feeds .column.feed .feed-head i {
+  margin-left: 6px;
+}
 .fintech .grid.home .notification-feeds .column.feed .info {
   padding-top: 5px;
 }
@@ -3066,8 +3106,8 @@ form {
   }
 }
 .fintech > .top .outer .main-nav-button {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -229px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -249px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -3080,9 +3120,9 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .outer .main-nav-button {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -190px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -206px;
     height: 17.5px;
     width: 19px;
   }
@@ -3109,8 +3149,8 @@ form {
   }
 }
 .fintech > .top .logo {
-  background-image: url('themes/default/assets/images/icons-s72371f275f.png');
-  background-position: 0 -200px;
+  background-image: url('themes/default/assets/images/icons-sad52718039.png');
+  background-position: 0 -220px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -3121,9 +3161,9 @@ form {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .logo {
-    background-image: url('themes/default/assets/images/icons-2x-sfbda23102f.png');
-    background-size: 92.5px 490.5px;
-    background-position: 0 -167px;
+    background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
+    background-size: 92.5px 536px;
+    background-position: 0 -183px;
     height: 18px;
     width: 92.5px;
   }

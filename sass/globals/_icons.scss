@@ -24,6 +24,14 @@
     &.no-result {
         @include use-sprite(no-result);
     }
+
+    &.gold {
+        @include use-sprite(gold);
+    }
+
+    &.oil {
+        @include use-sprite(oil-barrel);
+    }
 }
 
 .icon {

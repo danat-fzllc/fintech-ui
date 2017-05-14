@@ -415,7 +415,7 @@
                             width: auto;
                             border: none;
                             padding: 0;
-                            padding: 0 35% 0 20%;
+                            padding: 0 36% 0 20%;
 
                             @include breakpoint(desktops) {
                                 padding: 0 200px;
@@ -1559,6 +1559,10 @@
 
                         strong {
                             color: #000;
+                        }
+
+                        i {
+                            margin-right: 6px;
                         }
                     }
 

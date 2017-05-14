@@ -652,6 +652,7 @@
 
 .hr-scroll-container {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .no-results {
