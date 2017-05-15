@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fintech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div class="fintech">
+        <header class="top">
+            <div class="outer clearfix">
+                <button class="main-nav-button left floated"></button>
+                <a class="logo left floated"></a>
+                <form class="left floated country-selection">
+                    <div class="field">
+                        <div class="ui fluid search selection dropdown">
+                            <input type="hidden" name="country">
+                            <i class="dropdown icon"></i>
+                            <div class="default text"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                            <div class="menu">
+                                <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
+                                <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                                <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <button class="language right floated">عربى</button>
+               <div class="main-nav right floated overlay-container">
+                    <div class="overlay-header clearfix">
+                        <span class="left floated overlay-title">Menu</span>
+                        <button class="right floated close"><i class="remove icon"></i></button>
+                    </div>
+                    <div class="holder">
+                        <a href="" class="active">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contact Us</a>
+                        <a href="" class="my-account"><strong>Patrick Carlson <i class="fa fa-cog" aria-hidden="true"></i></strong></a>
+                        <a href="" class="lang">عربى</a>
+                    </div>
+                    <div class="share-options"></div>
+                </div>
+            </div>
+        </header>
+        <div class="ui container fluid  content-container">
+            <div class="fluid clearfix question page center aligned relative">
+                <div class="outer">
+                    <form class="ui form">
+                        <h1 class="question ui center">
+                    What was the effect on <select id="" class="ui selection dropdown">
+                        <option value="1">Sabic</option>
+                        <option value="3">Markets</option>
+                        <option value="2">Commodities</option>
+                    </select>
+                    
+                    <input type="number" value="0" class="field center aligned auto-resize">
+                    days after, when the price of 
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">Gold</option>
+                        <option value="3">Silver</option>
+                        <option value="2">Oil</option>
+                    </select>
+                    was up by 
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">2016</option>
+                        <option value="3">2015</option>
+                        <option value="2">2014</option>
+                    </select>
+                    to
+                    <select id="" class="ui selection dropdown">
+                        <option value="1">2016</option>
+                        <option value="3">2015</option>
+                        <option value="2">2014</option>
+                    </select>
+                    
+                    <a class="ui button"><i class="fa fa-search" aria-hidden="true"></i>
+ Discover</a>
+                    </h1>
+                    </form>
+                    <div class="button gray share right floated">
+                    </div>
+                </div>
+            </div>
+            <div class="fluid ui content container clearfix" id="container">
+                <div class="ui icon button fixed secondary floating right bottom filter mobile-only big circular" tabindex="0">
+                    <i class="filter icon large"></i>
+                </div>
+                <section class="page filters left floated resize-left-column overlay-container">
+                    <div class="ui container">
+                        <div class="overlay-header">
+                            <div class="header overlay-title">Filters
+                                <button class="right floated close"><i class="remove icon"></i></button>
+                            </div>
+                        </div>
+                        <div class="ui styled accordion">
+                            <div class="item">
+                                <div class="title active">
+                                    <i class="dropdown icon"></i> Events
+                                </div>
+                                <div class="content active">
+                                    <div class="ui list">
+                                        <a class="item">Seasons</a>
+                                        <a class="item">International</a>
+                                    </div>
+                                    <div class="title active">
+                                        <i class="dropdown icon"></i>Company
+                                    </div>
+                                    <div class="content active">
+                                        <div class="ui list">
+                                            <a class="item">Seasons</a>
+                                            <a class="item">International</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui styled accordion">
+                            <div class="item">
+                                <div class="title">
+                                    <i class="dropdown icon"></i> Sectors
+                                </div>
+                                <div class="content">
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label><strong>Select All</strong></label>
+                                        </div>
+                                    </div>
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label>Insurance</label>
+                                        </div>
+                                    </div>
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label>Insurance</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fixed filter-button">
+                            <button class="ui button">Filter</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="fluid content-holder resize-right-column">
+                    <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
+                    <div class="fluid left floated">
+                        <div class="ui one column grid">
+                            <div class="column">
+                                <div class="content">
+                                    <div class="no-results center aligned">
+                                <div class="ico no-result"></div>
+                                <div class="info">
+                                    <h4>No result were found for given criteria</h4>
+                                    <p>Please try again later</p>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+        
+    </div>
+    <footer><div class="outer ">&copy; 2017 Argaam Fintech FZ.LLC</div></footer>
+    </div>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js "></script>
+    <script src="dist/semantic.min.js "></script>
+    <script src="javascripts/fintech.js "></script>
+</body>
+
+</html>
