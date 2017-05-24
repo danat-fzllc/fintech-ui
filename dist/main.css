@@ -1172,6 +1172,14 @@ form {
   width: 100%;
   padding-top: 3px;
 }
+.fintech .consecutive-calendar .column > h2 span {
+  width: calc(100% - 65px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  float: left;
+}
 .fintech .calendar-table-view-btns {
   background-color: #fff;
   -moz-border-radius: 5px;
@@ -1182,7 +1190,7 @@ form {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   font-size: 1.15385rem;
   display: inline-block;
-  float: ri ght;
+  float: right;
 }
 .fintech .calendar-table-view-btns a {
   display: inline-block;
@@ -1502,12 +1510,12 @@ form {
   font-weight: 700;
   display: inline-block;
   float: left;
-  margin: 15px 5px 0 10px;
+  margin: 18px 5px 0 10px;
   width: 68px;
 }
 @media (min-width: 769px) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .donut-value {
-    margin: 34px 0 0 15px;
+    margin: 24px 0 0 15px;
     font-size: 1.38462rem;
     width: auto;
   }
@@ -2122,6 +2130,7 @@ form {
   padding: 0;
   float: left;
   margin: 0.15385rem;
+  display: flex;
 }
 .fintech .ui.table .ui.label.date-period > div {
   float: left;
@@ -2309,6 +2318,19 @@ form {
 }
 .fintech .grid.home .watchlist .row .name {
   font-size: 1.38462rem;
+  position: relative;
+}
+.fintech .grid.home .watchlist .row .name i.filter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  color: #cccccc;
+  display: none;
+}
+.fintech .grid.home .watchlist .row .name:hover i.filter {
+  display: block;
 }
 @media (min-width: 769px) {
   .fintech .grid.home .watchlist .row .name {
@@ -2408,10 +2430,9 @@ form {
   display: inline-block;
   font-size: 0.92308rem;
   font-weight: normal;
-  padding-right: 9px;
+  padding-right: 6px;
   height: 10px;
   line-height: 9px;
-  border-right: 1px solid #bfbfbf;
 }
 .fintech .grid.home .notification-feeds .column.feed .segment p {
   margin: 5px 0 0;
@@ -2466,10 +2487,12 @@ form {
 .fintech .grid.home .notification-feeds .column.feed .details {
   font-weight: normal;
   font-size: 1rem;
-  margin-left: 8px;
+  padding-left: 8px;
   display: none;
   font-weight: 500;
   display: inline-block;
+  border-left: 1px solid #bfbfbf;
+  line-height: 12px;
 }
 .fintech .grid.home .notification-feeds .column.feed .details:hover {
   color: #f0ac09;
@@ -2540,16 +2563,31 @@ form {
   white-space: nowrap;
   padding-left: 3px;
 }
-.fintech .ui.grid .column.selected-tags {
-  display: none;
-}
 @media (min-width: 769px) {
   .fintech .ui.grid .column.selected-tags {
-    display: initial;
+    margin-bottom: -8px;
   }
 }
 .fintech .ui.grid .column.selected-tags .ui.label {
-  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.fintech .ui.grid .column.selected-tags .ui.label:first-child {
+  margin-left: .15384615em;
+}
+.fintech .ui.grid .column.selected-tags .ui.holder {
+  padding: 12px 10px 4px 10px;
+  position: relative;
+  bottom: -1px;
+  z-index: 1;
+  background: #f7f7f7;
+}
+@media (min-width: 769px) {
+  .fintech .ui.grid .column.selected-tags .ui.holder {
+    border: none;
+    padding: 0px;
+    position: static;
+    background: none;
+  }
 }
 @media (max-width: 768px) {
   .fintech .overlay-container {
@@ -2625,14 +2663,27 @@ form {
 }
 .fintech .ui.table thead th {
   background: transparent;
-  padding: 0 0.46154rem 0.46154rem 0.46154rem;
+  padding: 0.30769rem 0.46154rem 0.46154rem 0.46154rem;
   border-bottom-color: #cdcdcd;
+}
+@media (min-width: 769px) {
+  .fintech .ui.table thead th {
+    padding: 0 0.46154rem 0.46154rem 0.46154rem;
+  }
 }
 .fintech .ui.table thead th i.caret:before {
   font-size: 20px;
   line-height: 11px;
   top: 3px;
   position: relative;
+}
+.fintech .ui.table thead th i.up-chart {
+  display: none;
+}
+@media (min-width: 769px) {
+  .fintech .ui.table thead th i.up-chart {
+    display: inline-block;
+  }
 }
 .fintech .ui.table thead.sub {
   background-color: #ebebeb;

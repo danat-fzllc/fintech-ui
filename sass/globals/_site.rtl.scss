@@ -144,6 +144,15 @@
         .column > h2 {
             width: 100%;
             padding-top: 3px;
+
+            span {
+                width: calc(100% - 65px);
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                display: block;
+                float: right;
+            }
         }
     }
 
@@ -186,7 +195,7 @@
         }
 
         .calendar {
-            @include border-radius(5px 0 0 5px);
+            @include border-radius(0 5px 5px 0);
 
             i {
                 @include use-sprite(calendar_blue);
@@ -205,7 +214,7 @@
             font-size: rem(16);
             line-height: 32px;
 
-            @include border-radius(0 5px 5px 0);
+            @include border-radius(5px 0 0 5px);
 
             i {
                 @include use-sprite(table_blue);
@@ -427,12 +436,12 @@
                             font-size: rem(14);
                             font-weight: $font-weight-medium;
                             display: inline-block;
-                            float: lright;
-                            margin: 15px 10px 0 5px;
+                            float: right;
+                            margin: 18px 10px 0 5px;
                             width: 68px;
 
                             @include breakpoint(desktops) {
-                                margin: 34px 15 0 0px;
+                                margin: 24px 15 0 0px;
                                 font-size: rem(18);
                                 width: auto;
                             }
@@ -1105,7 +1114,7 @@
 
             .count {
                 float: right;
-                margin: 4px 8px 0 8px;
+                margin: 5px 8px 0 8px;
             }
         }
     }
@@ -1141,6 +1150,7 @@
             padding: 0;
             float: right;
             margin: rem(2);
+            display: flex;
 
             > div {
                 float: right;
@@ -1385,6 +1395,23 @@
             .row {
                 .name {
                     font-size: rem(18);
+                    position: relative;
+
+                    i.filter {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 12px;
+                        height: 12px;
+                        color: $gray;
+                        display: none;
+                    }
+
+                    &:hover {
+                        i.filter {
+                            display: block;
+                        }
+                    }
 
                     @include breakpoint(desktops) {
                         font-size: rem(16);
@@ -1506,10 +1533,9 @@
                             display: inline-block;
                             font-size: rem(12);
                             font-weight: normal;
-                            padding-left: 9px;
+                            padding-left: 7px;
                             height: 10px;
                             line-height: 9px;
-                            border-left: 1px solid #bfbfbf;
                         }
 
                         p {
@@ -1582,8 +1608,10 @@
                     .details {
                         font-weight: normal;
                         font-size: 1rem;
-                        margin-right: 8px;
+                        padding-right: 8px;
                         display: inline-block;
+                        border-right: 1px solid #bfbfbf;
+                        line-height: 12px;
 
                         &:hover {
                             color: $secondary-color;
@@ -1674,7 +1702,7 @@
             .prog-text {
                 position: absolute;
                 right: 101%;
-                top: -4px;
+                top: -3px;
                 display: inline-block;
                 white-space: nowrap;
                 padding-right: 3px;
@@ -1686,15 +1714,34 @@
         &.grid {
             .column {
                 &.selected-tags {
-                    display: none;
-
                     @include breakpoint(desktops) {
-                        display: initial;
+                        margin-bottom: -8px;
                     }
 
 
-                    .ui.label {
-                        margin-top: 8px;
+                    .ui {
+                        &.label {
+                            margin-bottom: 8px;
+
+                            &:first-child {
+                                margin-right: .15384615em;
+                            }
+                        }
+
+                        &.holder {
+                            padding: 12px 10px 4px 10px;
+                            position: relative;
+                            bottom: -1px;
+                            z-index: 1;
+                            background: $light-gray;
+
+                            @include breakpoint(desktops) {
+                                border: none;
+                                padding: 0px;
+                                position: static;
+                                background: none;
+                            }
+                        }
                     }
                 }
             }

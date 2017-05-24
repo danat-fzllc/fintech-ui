@@ -3,7 +3,7 @@ $left: right;
 $right: left;
 
 html {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 body {
@@ -12,7 +12,9 @@ body {
     background: #fff;
     direction: rtl;
     font-size: rem(12);
-    line-height: normal;
+    line-height: rem(18);
+
+    /*line-height: normal;*/
 
     @include breakpoint(desktops) {
         background: #f6f6f6;

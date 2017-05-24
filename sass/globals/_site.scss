@@ -144,6 +144,15 @@
         .column > h2 {
             width: 100%;
             padding-top: 3px;
+
+            span {
+                width: calc(100% - 65px);
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                display: block;
+                float: left;
+            }
         }
     }
 
@@ -156,7 +165,7 @@
 
         font-size: rem(15);
         display: inline-block;
-        float: ri ght;
+        float: right;
 
         a {
             display: inline-block;
@@ -460,11 +469,11 @@
                             font-weight: $font-weight-medium;
                             display: inline-block;
                             float: left;
-                            margin: 15px 5px 0 10px;
+                            margin: 18px 5px 0 10px;
                             width: 68px;
 
                             @include breakpoint(desktops) {
-                                margin: 34px 0 0 15px;
+                                margin: 24px 0 0 15px;
                                 font-size: rem(18);
                                 width: auto;
                             }
@@ -1148,6 +1157,7 @@
             padding: 0;
             float: left;
             margin: rem(2);
+            display: flex;
 
             > div {
                 float: left;
@@ -1392,6 +1402,23 @@
             .row {
                 .name {
                     font-size: rem(18);
+                    position: relative;
+
+                    i.filter {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 12px;
+                        height: 12px;
+                        color: $gray;
+                        display: none;
+                    }
+
+                    &:hover {
+                        i.filter {
+                            display: block;
+                        }
+                    }
 
                     @include breakpoint(desktops) {
                         font-size: rem(14);
@@ -1504,10 +1531,9 @@
                             display: inline-block;
                             font-size: rem(12);
                             font-weight: normal;
-                            padding-right: 9px;
+                            padding-right: 6px;
                             height: 10px;
                             line-height: 9px;
-                            border-right: 1px solid #bfbfbf;
                         }
 
                         p {
@@ -1573,10 +1599,12 @@
                     .details {
                         font-weight: normal;
                         font-size: 1rem;
-                        margin-left: 8px;
+                        padding-left: 8px;
                         display: none;
                         font-weight: $font-weight-regular;
                         display: inline-block;
+                        border-left: 1px solid #bfbfbf;
+                        line-height: 12px;
 
                         &:hover {
                             color: $secondary-color;
@@ -1673,15 +1701,34 @@
         &.grid {
             .column {
                 &.selected-tags {
-                    display: none;
-
                     @include breakpoint(desktops) {
-                        display: initial;
+                        margin-bottom: -8px;
                     }
 
 
-                    .ui.label {
-                        margin-top: 8px;
+                    .ui {
+                        &.label {
+                            margin-bottom: 8px;
+
+                            &:first-child {
+                                margin-left: .15384615em;
+                            }
+                        }
+
+                        &.holder {
+                            padding: 12px 10px 4px 10px;
+                            position: relative;
+                            bottom: -1px;
+                            z-index: 1;
+                            background: $light-gray;
+
+                            @include breakpoint(desktops) {
+                                border: none;
+                                padding: 0px;
+                                position: static;
+                                background: none;
+                            }
+                        }
                     }
                 }
             }

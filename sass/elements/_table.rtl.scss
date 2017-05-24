@@ -3,10 +3,38 @@
         thead {
             &.group-head {
                 + thead {
-                    th {
-                        text-align: right;
+                    th {}
+                }
+            }
+        }
+
+        tr {
+            &.highlight {
+                .today {
+                    &:first-child {
+                        span {
+                            &:before {
+                                right: -16px;
+
+                                @include triangle(5px, left, $primary-color);
+
+                                border-right-width: 10px;
+                                border-left-width: 0;
+                                left: auto;
+                            }
+
+                            &:after {
+                                right: -26px;
+
+                                @include border-radius(2px);
+                            }
+                        }
                     }
                 }
+            }
+
+            &.expanded {
+                td {}
             }
         }
     }
