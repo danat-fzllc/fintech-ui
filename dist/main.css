@@ -726,9 +726,11 @@ form {
   color: #4faec5;
 }
 
-.hr-scroll-container {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+@media (max-width: 768px) {
+  .hr-scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .no-results {
@@ -760,6 +762,10 @@ form {
   left: 0;
   margin: auto !important;
   height: 445px;
+}
+
+.box-shadow-bottom {
+  box-shadow: 0 4px 4px 0 rgba(34, 36, 38, 0.12), 0 6px 10px 0 rgba(34, 36, 38, 0.15);
 }
 
 .ico {
@@ -2500,6 +2506,61 @@ form {
 .fintech .grid.home .notification-feeds .column.feed .image {
   max-width: 100%;
   display: block;
+}
+.fintech .grid.home .notification-title-holder {
+  position: relative;
+}
+.fintech .grid.home .notification-title-holder .header {
+  font-size: 1.23077rem;
+  font-weight: 700;
+  display: inline-block;
+}
+.fintech .grid.home .notification-title-holder .notification-filter-button {
+  float: right;
+  font-weight: 500;
+}
+.fintech .grid.home .notification-title-holder .notification-filter-button i {
+  color: #f0ac09;
+  font-weight: 700;
+}
+.fintech .grid.home .notification-title-holder .notification-filter-popup {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  z-index: 80;
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+}
+.fintech .grid.home .notification-title-holder .notification-filter-popup .holder {
+  border-top: 1px solid #ededed;
+  padding: 0.61538rem 0;
+}
+.fintech .grid.home .notification-title-holder .notification-filter-popup .label {
+  background: #fafafa;
+  border: 1px solid #f3f3f3;
+  font-weight: 500;
+  color: #b3b3b3;
+  margin: 5px 2px;
+}
+.fintech .grid.home .notification-title-holder .notification-filter-popup .label:hover {
+  background: #f3f3f3;
+}
+.fintech .grid.home .notification-title-holder .notification-filter-popup .label.selected {
+  background: #4faec5;
+  color: #fff;
+  border-color: #fff;
+}
+.fintech .grid.home .notification-title-holder .notification-filter-popup .label.done {
+  background: #f0ac09;
+  float: right;
+  color: #fff;
+}
+.fintech .grid.home .notification-title-holder .notification-filter-popup .bottom {
+  border-top: 1px solid #ededed;
+  padding: 0.61538rem 0 0 0;
 }
 .fintech .grid.home .questions .row {
   margin: 0;
