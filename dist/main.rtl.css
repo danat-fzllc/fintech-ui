@@ -2546,7 +2546,7 @@ form {
 .fintech .grid.home .notification-feeds .column.feed .details:hover {
   color: #f0ac09;
 }
-.fintech .grid.home .notification-feeds .column.feed .image {
+.fintech .grid.home .notification-feeds .column.feed img, .fintech .grid.home .notification-feeds .column.feed .image {
   max-width: 100%;
   display: block;
 }

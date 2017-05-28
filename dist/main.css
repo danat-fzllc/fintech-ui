@@ -2503,7 +2503,7 @@ form {
 .fintech .grid.home .notification-feeds .column.feed .details:hover {
   color: #f0ac09;
 }
-.fintech .grid.home .notification-feeds .column.feed .image {
+.fintech .grid.home .notification-feeds .column.feed img, .fintech .grid.home .notification-feeds .column.feed .image {
   max-width: 100%;
   display: block;
 }
@@ -2533,6 +2533,7 @@ form {
   padding: 0 1rem 1rem 1rem;
   background: #fff;
   border-radius: 0 0 5px 5px;
+  display: none;
 }
 .fintech .grid.home .notification-title-holder .notification-filter-popup .holder {
   border-top: 1px solid #ededed;
