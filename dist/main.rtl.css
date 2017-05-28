@@ -1529,7 +1529,7 @@ form {
 }
 @media (min-width: 769px) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .donut-value {
-    margin: 24px 15 0 0px;
+    margin: 24px 15px 0 0px;
     font-size: 1.38462rem;
     width: auto;
   }
