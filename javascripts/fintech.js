@@ -36,7 +36,12 @@ $('.optgroups').each(function() {
 $('.ui.checkbox')
     .checkbox();
 $('.ui.accordion')
-    .accordion();
+    .accordion()
+
+
+$('.notification-filter-popup.modal')
+    .modal('setting', 'transition', 'fade')
+    .modal('attach events', '.notification-filter-button', 'show');
 
 $('.button.date-period')
     .popup({
@@ -206,6 +211,9 @@ $(document).ready(function() {
             'min-height': ContainerHeight - BreadcrumbHeight
         });
     }
+    $(".notification-filter-popup").parent().addClass('inverted notification-filter-popup-container');
+
+
 });
 
 //input number auto resize

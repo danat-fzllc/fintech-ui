@@ -111,12 +111,11 @@
                 padding: 0;
                 background: none;
                 min-height: 1rem;
+                z-index: 80;
             }
 
 
             @include transition(width, ease 0.5s);
-
-            z-index: 101;
 
             .menu {
                 @include breakpoint(upto-tablets) {

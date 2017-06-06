@@ -1,6 +1,14 @@
 .fintech {
     .ui.table {
         thead {
+            th{i.up-chart {
+                        
+
+                        @include breakpoint(desktops) {
+                            
+                            margin: 0 0px 0 3px;
+                        }
+                    }}
             &.group-head {
                 + thead {
                     th {}
@@ -15,9 +23,7 @@
                         span {
                             &:before {
                                 right: -16px;
-
                                 @include triangle(5px, left, $primary-color);
-
                                 border-right-width: 10px;
                                 border-left-width: 0;
                                 left: auto;
