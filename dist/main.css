@@ -1403,6 +1403,11 @@ form {
   }
 }
 @media (max-width: 768px) {
+  .fintech .content-container > .ui.content.container > .ui.grid:first-child {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
   .fintech .content-container {
     padding: 0;
     margin-left: 1em !important;
@@ -2529,23 +2534,38 @@ form {
   max-width: 100%;
   display: block;
 }
-.fintech .grid.home .notification-title-holder {
+.fintech .grid.home .notification-feeds .notification-title-holder {
   position: relative;
 }
-.fintech .grid.home .notification-title-holder .header {
+.fintech .grid.home .notification-feeds .notification-title-holder .header {
   font-size: 1.23077rem;
   font-weight: 700;
   display: inline-block;
   margin-right: 6px;
 }
-.fintech .grid.home .notification-title-holder .notification-filter-button {
+.fintech .grid.home .notification-feeds .notification-title-holder .notification-filter-button {
   float: right;
   font-weight: 500;
-  margin-top: 6px;
 }
-.fintech .grid.home .notification-title-holder .notification-filter-button i {
+.fintech .grid.home .notification-feeds .notification-title-holder .notification-filter-button i {
   color: #f0ac09;
   font-weight: 700;
+}
+.fintech .grid.home .notification-feeds .notification-title-holder .ui.segment .filter-by-company + .notification-filter-button {
+  margin-top: 6px;
+}
+@media (max-width: 768px) {
+  .fintech .grid.home .notification-feeds .notification-title-holder .ui.segment {
+    padding-bottom: 0;
+    border-top: 0;
+  }
+  .fintech .grid.home .notification-feeds .notification-title-holder .ui.segment .filter-by-company {
+    width: 100%;
+    background-color: #fffbf0 !important;
+  }
+  .fintech .grid.home .notification-feeds .notification-title-holder .ui.segment .filter-by-company i {
+    float: right;
+  }
 }
 .fintech .grid.home .questions .row {
   margin: 0;
@@ -2701,6 +2721,11 @@ form {
 .notification-filter-popup-container .notification-filter-popup.modal {
   background: transparent;
 }
+@media (max-width: 768px) {
+  .notification-filter-popup-container .notification-filter-popup.modal {
+    width: 90%;
+  }
+}
 .notification-filter-popup-container .notification-filter-popup .search {
   position: relative;
 }
@@ -2708,7 +2733,7 @@ form {
   width: 100%;
   border: none;
   border-bottom: 1px solid #ededed;
-  padding: 15px 50px 5px 0px;
+  padding: 15px 0px 5px 30px;
   height: 65px;
   font-size: 18px;
   margin-bottom: 15px;
@@ -2716,14 +2741,25 @@ form {
 .notification-filter-popup-container .notification-filter-popup .search input[type="text"]:focus {
   outline: none;
 }
+@media (min-width: 769px) {
+  .notification-filter-popup-container .notification-filter-popup .search input[type="text"] {
+    padding: 15px 50px 5px 0px;
+  }
+}
 .notification-filter-popup-container .notification-filter-popup .search i {
-  right: 0px;
+  left: 0px;
   top: 26px;
   padding: 0;
   margin: 0;
   position: absolute;
   font-size: 18px;
   color: #cccccc;
+}
+@media (min-width: 769px) {
+  .notification-filter-popup-container .notification-filter-popup .search i {
+    left: auto;
+    right: 0px;
+  }
 }
 .notification-filter-popup-container .notification-filter-popup .holder {
   padding: 0.61538rem 0 90px;
@@ -2818,21 +2854,29 @@ form {
   line-height: 15px;
 }
 .notification-filter-popup-container .notification-filter-popup .close {
-  right: 6rem;
-  top: 4rem;
   border-radius: 100%;
-  border: 2px solid #fba8ab;
-  color: #fba8ab;
+  top: 5px;
+  right: 5px;
+  color: #000;
   width: 45px;
   height: 45px;
+  margin: 0;
   font-size: 1.38462rem;
   line-height: 42px;
   padding: 0;
   position: fixed;
 }
-.notification-filter-popup-container .notification-filter-popup .close:hover {
-  border: 2px solid #ff333a;
-  color: #ff333a;
+@media (min-width: 769px) {
+  .notification-filter-popup-container .notification-filter-popup .close {
+    border: 2px solid #fba8ab;
+    color: #fba8ab;
+    right: 6rem;
+    top: 4rem;
+  }
+  .notification-filter-popup-container .notification-filter-popup .close:hover {
+    border: 2px solid #ff333a;
+    color: #ff333a;
+  }
 }
 
 /*Elements - Individual site elements*/

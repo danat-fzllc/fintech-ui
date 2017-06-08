@@ -41,7 +41,7 @@ $('.ui.accordion')
 
 $('.notification-filter-popup.modal')
     .modal('setting', 'transition', 'fade')
-    .modal('attach events', '.notification-filter-button', 'show');
+    .modal('attach events', '.ID-NotificationFilterTrigger', 'show');
 
 $('.button.date-period')
     .popup({
@@ -132,7 +132,7 @@ $(window).load(function() {
                 $("body").removeClass("menu-open no-scroll");
             });
 
-            $(".filter").click(function() {
+            $(".filter.button").click(function() {
                 $(".page.filters").addClass("show");
                 $("body").addClass("no-scroll");
             });

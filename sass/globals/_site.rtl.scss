@@ -316,6 +316,13 @@
                 padding: 0;
                 margin: 0 !important;
             }
+
+
+            > .ui.grid:first-child {
+                @include breakpoint(upto-tablets) {
+                    margin-top: 0;
+                }
+            }
         }
 
         @include breakpoint(upto-tablets) {
@@ -345,6 +352,11 @@
                 font-size: rem(12);
                 position: relative;
                 top: 2px;
+            }
+
+            h3.title {
+                padding-bottom: rem(12);
+                border-bottom: 2px solid $border-color;
             }
 
             &.event-aggregate-chart {
@@ -1624,26 +1636,48 @@
                     }
                 }
             }
-        }
 
-        .notification-title-holder {
-            position: relative;
+            .notification-title-holder {
+                position: relative;
 
-            .header {
-                font-size: rem(16);
-                font-weight: $font-weight-medium;
-                display: inline-block;
-                margin-left: 6px;
-            }
-
-            .notification-filter-button {
-                float: left;
-                font-weight: $font-weight-regular;
-                margin-top: 6px;
-
-                i {
-                    color: $secondary-color;
+                .header {
+                    font-size: rem(16);
                     font-weight: $font-weight-medium;
+                    display: inline-block;
+                    margin-left: 6px;
+                }
+
+                .notification-filter-button {
+                    float: left;
+                    font-weight: $font-weight-regular;
+                    margin-top: 6px;
+
+                    i {
+                        color: $secondary-color;
+                        font-weight: $font-weight-medium;
+                    }
+                }
+
+                .ui.segment {
+                    .filter-by-company {
+                        + .notification-filter-button {
+                            margin-top: 6px;
+                        }
+                    }
+
+                    @include breakpoint(upto-tablets) {
+                        padding-bottom: 0;
+                        border-top: 0;
+
+                        .filter-by-company {
+                            width: 100%;
+                            background-color: #fffbf0 !important;
+
+                            i {
+                                float: left;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1841,6 +1875,10 @@
 
         &.modal {
             background: transparent;
+
+            @include breakpoint(upto-tablets) {
+                width: 90%;
+            }
         }
 
         .search {
@@ -1850,7 +1888,7 @@
                 width: 100%;
                 border: none;
                 border-bottom: 1px solid $border-color;
-                padding: 15px 0px 5px 50px;
+                padding: 15px 30px 5px 0px;
                 height: 65px;
                 font-size: 18px;
                 margin-bottom: 15px;
@@ -1858,16 +1896,25 @@
                 &:focus {
                     outline: none;
                 }
+
+                @include breakpoint(desktops) {
+                    padding: 15px 0px 5px 50px;
+                }
             }
 
             i {
-                left: 0px;
+                right: 0px;
                 top: 26px;
                 padding: 0;
                 margin: 0;
                 position: absolute;
                 font-size: 18px;
                 color: $gray;
+
+                @include breakpoint(desktops) {
+                    right: auto;
+                    left: 0;
+                }
             }
         }
 
@@ -1984,10 +2031,9 @@
         }
 
         .close {
-            right: 6rem;
-            top: 4rem;
             border-radius: 100%;
-            border: 2px solid #fba8ab;
+            top: 5;
+            left: 5;
             color: #fba8ab;
             width: 45px;
             height: 45px;
@@ -1996,9 +2042,17 @@
             padding: 0;
             position: fixed;
 
-            &:hover {
-                border: 2px solid $red;
-                color: $red;
+            @include breakpoint(desktops) {
+                border: 2px solid #fba8ab;
+                color: #fba8ab;
+                right: 6rem;
+                top: 4rem;
+                left: auto;
+
+                &:hover {
+                    border: 2px solid $red;
+                    color: $red;
+                }
             }
         }
     }
