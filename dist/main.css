@@ -2900,10 +2900,13 @@ form {
   background: transparent;
   padding: 0.30769rem 0.46154rem 0.46154rem 0.46154rem;
   border-bottom-color: #cdcdcd;
+  white-space: nowrap;
+  /*vertical-align: top;*/
 }
 @media (min-width: 769px) {
   .fintech .ui.table thead th {
     padding: 0 0.46154rem 0.46154rem 0.46154rem;
+    white-space: normal;
   }
 }
 .fintech .ui.table thead th i.caret:before {
@@ -2920,6 +2923,9 @@ form {
     display: inline-block;
     margin: 0 3px 0 0;
   }
+}
+.fintech .ui.table thead th.highlight {
+  padding-top: 7px;
 }
 .fintech .ui.table thead.sub {
   background-color: #ebebeb;
@@ -2968,6 +2974,12 @@ form {
 }
 .fintech .ui.table thead + thead ~ thead th {
   border-top: 1px solid #cdcdcd;
+}
+.fintech .ui.table .highlight {
+  background-color: #f7f7f7;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 0 !important;
 }
 .fintech .ui.table tr td {
   padding: 0.61538rem;

@@ -28,11 +28,15 @@
                     background: transparent;
                     padding: rem(4) rem(6) rem(6) rem(6);
                     border-bottom-color: #cdcdcd;
+                    white-space: nowrap;
+
+                    /*vertical-align: top;*/
 
                     @extend .bold;
 
                     @include breakpoint(desktops) {
                         padding: 0 rem(6) rem(6) rem(6);
+                        white-space: normal;
                     }
 
 
@@ -50,6 +54,10 @@
                             display: inline-block;
                             margin: 0 3px 0 0;
                         }
+                    }
+
+                    &.highlight {
+                        padding-top: 7px;
                     }
                 }
 
@@ -112,6 +120,13 @@
                         border-top: 1px solid $dark-gray;
                     }
                 }
+            }
+
+            .highlight {
+                background-color: #f7f7f7;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 0 !important;
             }
 
             tr {

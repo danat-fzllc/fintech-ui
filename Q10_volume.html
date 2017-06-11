@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fintech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div class="fintech">
+        <header class="top">
+            <div class="outer clearfix">
+                <button class="main-nav-button left floated"></button>
+                <a class="logo left floated"></a>
+                <form class="left floated country-selection">
+                    <div class="field">
+                        <div class="ui fluid search selection dropdown">
+                            <input type="hidden" name="country">
+                            <i class="dropdown icon"></i>
+                            <div class="default text"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                            <div class="menu">
+                                <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
+                                <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                                <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <button class="language right floated">عربى</button>
+                <div class="main-nav right floated overlay-container">
+                    <div class="overlay-header clearfix">
+                        <span class="left floated overlay-title">Menu</span>
+                        <button class="right floated close"><i class="remove icon"></i></button>
+                    </div>
+                    <div class="holder">
+                        <a href="" class="active">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contact Us</a>
+                        <a href="" class="my-account"><strong>Patrick Carlson <i class="fa fa-cog" aria-hidden="true"></i></strong></a>
+                        <a href="" class="lang">عربى</a>
+                    </div>
+                    <div class="share-options"></div>
+                </div>
+            </div>
+        </header>
+        <div class="ui container fluid  content-container">
+            <div class="fluid clearfix question page center aligned relative">
+                <div class="outer">
+                    <form class="ui form">
+                        <h1 class="question ui center">
+                    What will happen to All Companies when RSI is Above 70 and Below 30 <select id="" class="ui selection dropdown">
+                    <option value="1">From</option>
+                        <option value="2">Since All Years</option>
+                        <option value="2">&nbsp; &nbsp;Since 1 year</option>
+                        <option value="9">&nbsp; &nbsp;Since 2 years</option>
+                        <option value="9">&nbsp; &nbsp;Since 3 years</option>
+                        <option value="9">&nbsp; &nbsp;Since 5 years</option>
+                        <option value="9">&nbsp; &nbsp;Since 10 years</option>
+                        
+                        
+                    </select>
+                    <select id="" class="ui selection dropdown">
+                    <option value="1">2009</option>
+                        <option value="2">2010</option>
+                        <option value="2">2011</option>
+                        <option value="9">2012</option>
+                        <option value="9">2013</option>
+                        <option value="9">2014</option>
+                        <option value="9">2015</option>
+                        
+                        
+                    </select>
+                    to
+                     <select id="" class="ui selection dropdown">
+                    <option value="1">2009</option>
+                        <option value="2">2010</option>
+                        <option value="2">2011</option>
+                        <option value="9">2012</option>
+                        <option value="9">2013</option>
+                        <option value="9">2014</option>
+                        <option value="9">2015</option>
+                        
+                        
+                    </select>
+                     
+                    
+                    <a class="ui button"><i class="fa fa-search" aria-hidden="true"></i>
+ Discover</a>
+                    </h1>
+                    </form>
+                    <div class="button share right floated">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <div class="list">
+                            <div class="head">Share</div>
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+                                <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
+                                <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linked In</a></li>
+                                <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google Plus</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center aligned">
+                <div class="ui small breadcrumb">
+                    <a class="section">Home</a>
+                    <i class="right chevron icon divider"></i>
+                    <div class="active section">Volume All Companies</div>
+                </div>
+            </div>
+            <div class="fluid ui content container clearfix" id="container">
+                <div class="ui icon button fixed secondary floating right bottom filter mobile-only big circular" tabindex="0">
+                    <i class="filter icon large"></i>
+                </div>
+                <section class="page filters left floated resize-left-column overlay-container">
+                    <div class="ui container">
+                        <div class="overlay-header">
+                            <div class="header overlay-title">Filters
+                                <button class="right floated close"><i class="remove icon"></i></button>
+                            </div>
+                        </div>
+                        <div class="ui styled accordion">
+                            <div class="item">
+                                <div class="title active">
+                                    <i class="dropdown icon"></i> Events
+                                </div>
+                                <div class="content active">
+                                    <div class="ui list">
+                                        <a class="item">Seasons</a>
+                                        <a class="item">International</a>
+                                    </div>
+                                    <div class="title active">
+                                        <i class="dropdown icon"></i>Company
+                                    </div>
+                                    <div class="content active">
+                                        <div class="ui list">
+                                            <a class="item">Seasons</a>
+                                            <a class="item">International</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui styled accordion">
+                            <div class="item">
+                                <div class="title">
+                                    <i class="dropdown icon"></i> Sectors
+                                </div>
+                                <div class="content">
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label><strong>Select All</strong></label>
+                                        </div>
+                                    </div>
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label>Insurance</label>
+                                        </div>
+                                    </div>
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label>Insurance</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fixed filter-button">
+                            <button class="ui button">Filter</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="fluid content-holder resize-right-column">
+                    <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
+                    <div class="fluid left floated">
+                        <div class="ui one column grid">
+                            <h2 class="main">All Companies</h2>
+                            <div class="column">
+                                <div class="content">
+                                    <div class="hr-scroll-container">
+                                        <table class="ui table unstackable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Company</th>
+                                                    <th class="center aligned">Price</th>
+                                                    <th class="center aligned">Change</th>
+                                                    <th class="center aligned">Avg. Vol.
+                                                        <br/>3M</th>
+                                                    <th class="center aligned">Volume</th>
+                                                    <th class="center aligned">Vol. Change
+                                                        <br/>3M</th>
+                                                    <th class="center aligned highlight">Session Above Avg.
+                                                        <br/>3M</th>
+                                                    <th class="center aligned highlight">Performance</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="company-name"><a href="#">Company 1</a></td>
+                                                    <td class="center aligned">0.246</td>
+                                                    <td class="center aligned"><span class="m-value-bg bg red-10">22 %</span></td>
+                                                    <td class="center aligned">6,020,242</td>
+                                                    <td class="center aligned">1,703,142</td>
+                                                    <td class="center aligned">63%</td>
+                                                    <td class="highlight">
+                                                        <div class="prog-wrapper">
+                                                            <span style="width: 50%;" class="prog-bar">
+                                                       <span class="prog-text">25</span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="center aligned highlight">0.36%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="company-name"><a href="#">Company 1</a></td>
+                                                    <td class="center aligned">0.246</td>
+                                                    <td class="center aligned"><span class="m-value-bg bg red-10">22 %</span></td>
+                                                    <td class="center aligned">6,020,242</td>
+                                                    <td class="center aligned">1,703,142</td>
+                                                    <td class="center aligned">63%</td>
+                                                    <td class="highlight">
+                                                        <div class="prog-wrapper">
+                                                            <span style="width: 80%;" class="prog-bar">
+                                                       <span class="prog-text">40</span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="center aligned highlight">0.36%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="company-name"><a href="#">Company 2</a></td>
+                                                    <td class="center aligned">0.246</td>
+                                                    <td class="center aligned"><span class="m-value-bg bg red-10">22 %</span></td>
+                                                    <td class="center aligned">6,020,242</td>
+                                                    <td class="center aligned">1,703,142</td>
+                                                    <td class="center aligned">63%</td>
+                                                    <td class="highlight">
+                                                        <div class="prog-wrapper">
+                                                            <span style="width: 100%;" class="prog-bar">
+                                                       <span class="prog-text">50</span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="center aligned highlight">0.36%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="company-name"><a href="#">Company 3</a></td>
+                                                    <td class="center aligned">0.246</td>
+                                                    <td class="center aligned"><span class="m-value-bg bg red-10">22 %</span></td>
+                                                    <td class="center aligned">6,020,242</td>
+                                                    <td class="center aligned">1,703,142</td>
+                                                    <td class="center aligned">63%</td>
+                                                    <td class="highlight">
+                                                        <div class="prog-wrapper">
+                                                            <span style="width: 70%;" class="prog-bar">
+                                                       <span class="prog-text">35</span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="center aligned highlight">0.36%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="company-name"><a href="#">Company 4</a></td>
+                                                    <td class="center aligned">0.246</td>
+                                                    <td class="center aligned"><span class="m-value-bg bg red-10">22 %</span></td>
+                                                    <td class="center aligned">6,020,242</td>
+                                                    <td class="center aligned">1,703,142</td>
+                                                    <td class="center aligned">63%</td>
+                                                    <td class="highlight">
+                                                        <div class="prog-wrapper">
+                                                            <span style="width: 60%;" class="prog-bar">
+                                                       <span class="prog-text">30</span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="center aligned highlight">0.36%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="company-name"><a href="#">Company 5</a></td>
+                                                    <td class="center aligned">0.246</td>
+                                                    <td class="center aligned"><span class="m-value-bg bg red-10">22 %</span></td>
+                                                    <td class="center aligned">6,020,242</td>
+                                                    <td class="center aligned">1,703,142</td>
+                                                    <td class="center aligned">63%</td>
+                                                    <td class="highlight">
+                                                        <div class="prog-wrapper">
+                                                            <span style="width: 20%;" class="prog-bar">
+                                                       <span class="prog-text">10</span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="center aligned highlight">0.36%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="company-name"><a href="#">Company 6</a></td>
+                                                    <td class="center aligned">0.246</td>
+                                                    <td class="center aligned"><span class="m-value-bg bg red-10">22 %</span></td>
+                                                    <td class="center aligned">6,020,242</td>
+                                                    <td class="center aligned">1,703,142</td>
+                                                    <td class="center aligned">63%</td>
+                                                    <td class="highlight">
+                                                        <div class="prog-wrapper">
+                                                            <span style="width: 30%;" class="prog-bar">
+                                                       <span class="prog-text">15</span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="center aligned highlight">0.36%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="company-name"><a href="#">Company 7</a></td>
+                                                    <td class="center aligned">0.246</td>
+                                                    <td class="center aligned"><span class="m-value-bg bg red-10">22 %</span></td>
+                                                    <td class="center aligned">6,020,242</td>
+                                                    <td class="center aligned">1,703,142</td>
+                                                    <td class="center aligned">63%</td>
+                                                    <td class="highlight">
+                                                        <div class="prog-wrapper">
+                                                            <span style="width: 50%;" class="prog-bar">
+                                                       <span class="prog-text">25</span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="center aligned highlight">0.36%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="dist/semantic.min.js"></script>
+    <script src="javascripts/fintech.js"></script>
+</body>
+
+</html>
