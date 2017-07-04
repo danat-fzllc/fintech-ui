@@ -204,15 +204,6 @@ form {
   border: 0;
 }
 
-.ui.popup {
-  padding: 15px;
-}
-.ui.popup > .header {
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 5px;
-  font-size: 1.23077rem;
-}
-
 .ui.breadcrumb {
   width: 100%;
   max-width: 1200px;
@@ -226,6 +217,23 @@ form {
   .ui.breadcrumb {
     padding: 13px 0 0 0;
   }
+}
+
+.ui.popup {
+  padding: 15px;
+}
+.ui.popup > .header {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+  font-size: 1.23077rem;
+}
+
+.graph-title {
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 24px !important;
 }
 
 /*color scale*/

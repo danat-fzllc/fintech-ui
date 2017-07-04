@@ -21,16 +21,6 @@
     border: 0;
 }
 
-.ui.popup {
-    padding: 15px;
-
-    > .header {
-        border-bottom: 1px solid $border-color;
-        padding-bottom: 5px;
-        font-size: rem(16);
-    }
-}
-
 .ui.breadcrumb {
     width: 100%;
     max-width: 1200px;
@@ -43,6 +33,24 @@
     @include breakpoint(desktops) {
         padding: 13px 0 0 0;
     }
+}
+
+.ui.popup {
+    padding: 15px;
+
+    > .header {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 5px;
+        font-size: rem(16);
+    }
+}
+
+.graph-title {
+    color: #000;
+    text-align: center;
+    font-weight: $font-weight-regular;
+    font-size: 20px;
+    margin-top: 24px !important;
 }
 
 /*color scale*/

@@ -201,6 +201,14 @@ form {
   font-size: 1.23077rem;
 }
 
+.graph-title {
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 24px !important;
+}
+
 /*color scale*/
 .color-scale {
   height: 5px;

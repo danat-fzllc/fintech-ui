@@ -45,6 +45,14 @@
     }
 }
 
+.graph-title {
+    color: #000;
+    text-align: center;
+    font-weight: $font-weight-regular;
+    font-size: 20px;
+    margin-top: 24px !important;
+}
+
 /*color scale*/
 .color-scale {
     height: 5px;
