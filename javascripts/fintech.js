@@ -69,7 +69,8 @@ $(".sidebar-toggler-arrow").click(function() {
 $('.tabs-home .item').tab({
     history: false
 });
-
+$('.button')
+    .popup();
 //resizing pannel script
 //<![CDATA[
 $(window).load(function() {

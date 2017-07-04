@@ -21,6 +21,16 @@
     border: 0;
 }
 
+.ui.popup {
+    padding: 15px;
+
+    > .header {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 5px;
+        font-size: rem(16);
+    }
+}
+
 .ui.breadcrumb {
     width: 100%;
     max-width: 1200px;

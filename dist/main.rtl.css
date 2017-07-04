@@ -204,6 +204,15 @@ form {
   border: 0;
 }
 
+.ui.popup {
+  padding: 15px;
+}
+.ui.popup > .header {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+  font-size: 1.23077rem;
+}
+
 .ui.breadcrumb {
   width: 100%;
   max-width: 1200px;
@@ -1820,28 +1829,33 @@ i.icon.angle.right:before {
     border-radius: 0.46154rem;
   }
 }
-.fintech .question[class*="page"] .share {
+.fintech .question[class*="page"] .actions {
   position: absolute;
   top: 39%;
   left: 25px;
   color: #fff;
   cursor: pointer;
   font-size: 1.30769rem;
+}
+.fintech .question[class*="page"] .actions .button + .button {
+  margin-left: 15px;
+}
+.fintech .question[class*="page"] .actions .share {
   display: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 @media (min-width: 769px) {
-  .fintech .question[class*="page"] .share {
+  .fintech .question[class*="page"] .actions .share {
     display: initial;
   }
 }
-.fintech .question[class*="page"] .share:hover > i {
+.fintech .question[class*="page"] .actions .share:hover > i {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-.fintech .question[class*="page"] .share .list {
+.fintech .question[class*="page"] .actions .share .list {
   display: none;
   position: absolute;
   z-index: 100;
@@ -1857,23 +1871,23 @@ i.icon.angle.right:before {
   -webkit-box-shadow: 1px 2px 6px -4px #000;
   box-shadow: 1px 2px 6px -4px #000;
 }
-.fintech .question[class*="page"] .share .list .head {
+.fintech .question[class*="page"] .actions .share .list .head {
   color: #000;
   font-weight: 700;
   font-size: 1.38462rem;
   padding: 5px 20px 10px;
 }
-.fintech .question[class*="page"] .share .list ul {
+.fintech .question[class*="page"] .actions .share .list ul {
   margin: 0;
   padding: 0;
 }
-.fintech .question[class*="page"] .share .list li {
+.fintech .question[class*="page"] .actions .share .list li {
   display: block;
 }
-.fintech .question[class*="page"] .share .list li .fa {
+.fintech .question[class*="page"] .actions .share .list li .fa {
   margin-left: 6px;
 }
-.fintech .question[class*="page"] .share .list li a {
+.fintech .question[class*="page"] .actions .share .list li a {
   display: block;
   white-space: nowrap;
   padding: 8px 20px;
@@ -1881,19 +1895,19 @@ i.icon.angle.right:before {
   font-weight: 500;
   color: #000;
 }
-.fintech .question[class*="page"] .share .list li a:hover {
+.fintech .question[class*="page"] .actions .share .list li a:hover {
   background-color: #fafafa;
 }
-.fintech .question[class*="page"] .share .list li a:hover > [class*="facebook"] {
+.fintech .question[class*="page"] .actions .share .list li a:hover > [class*="facebook"] {
   color: #3F589B;
 }
-.fintech .question[class*="page"] .share .list li a:hover > [class*="twitter"] {
+.fintech .question[class*="page"] .actions .share .list li a:hover > [class*="twitter"] {
   color: #42C0FB;
 }
-.fintech .question[class*="page"] .share .list li a:hover > [class*="linkedin"] {
+.fintech .question[class*="page"] .actions .share .list li a:hover > [class*="linkedin"] {
   color: #007AB9;
 }
-.fintech .question[class*="page"] .share .list li a:hover > [class*="google"] {
+.fintech .question[class*="page"] .actions .share .list li a:hover > [class*="google"] {
   color: #DD4C3B;
 }
 .fintech .page-head {

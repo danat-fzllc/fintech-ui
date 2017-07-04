@@ -714,86 +714,95 @@
             }
         }
 
-        .share {
+        .actions {
             position: absolute;
             top: 39%;
             right: 25px;
             color: $white;
             cursor: pointer;
             font-size: rem(17);
-            display: none;
 
-            @include border-radius(3px);
-
-            @include breakpoint(desktops) {
-                display: initial;
-            }
-
-
-            &:hover {
-                > i {
-                    @include opacity(0.6);
+            .button {
+                + .button {
+                    margin-right: 15px;
                 }
             }
 
-            .list {
+            .share {
                 display: none;
-                position: absolute;
-                z-index: 100;
-                top: 26px;
-                background-color: #fff;
-                text-align: left;
-                right: 0;
-                padding: 10px 0;
 
                 @include border-radius(3px);
 
-                @include box-shadow(1px 2px 6px -4px #000);
-
-                .head {
-                    color: #000;
-                    font-weight: $font-weight-medium;
-                    font-size: rem(18);
-                    padding: 5px 20px 10px;
+                @include breakpoint(desktops) {
+                    display: initial;
                 }
 
-                ul {
-                    margin: 0;
-                    padding: 0;
+
+                &:hover {
+                    > i {
+                        @include opacity(0.6);
+                    }
                 }
 
-                li {
-                    display: block;
+                .list {
+                    display: none;
+                    position: absolute;
+                    z-index: 100;
+                    top: 26px;
+                    background-color: #fff;
+                    text-align: left;
+                    right: 0;
+                    padding: 10px 0;
 
-                    .fa {
-                        margin-right: 6px;
+                    @include border-radius(3px);
+
+                    @include box-shadow(1px 2px 6px -4px #000);
+
+                    .head {
+                        color: #000;
+                        font-weight: $font-weight-medium;
+                        font-size: rem(18);
+                        padding: 5px 20px 10px;
                     }
 
-                    a {
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    li {
                         display: block;
-                        white-space: nowrap;
-                        padding: 8px 20px;
-                        font-size: rem(14);
-                        font-weight: $font-weight-regular;
-                        color: #000;
 
-                        &:hover {
-                            background-color: #fafafa;
+                        .fa {
+                            margin-right: 6px;
+                        }
 
-                            > [class*="facebook"] {
-                                color: #3F589B;
-                            }
+                        a {
+                            display: block;
+                            white-space: nowrap;
+                            padding: 8px 20px;
+                            font-size: rem(14);
+                            font-weight: $font-weight-regular;
+                            color: #000;
 
-                            > [class*="twitter"] {
-                                color: #42C0FB;
-                            }
+                            &:hover {
+                                background-color: #fafafa;
 
-                            > [class*="linkedin"] {
-                                color: #007AB9;
-                            }
+                                > [class*="facebook"] {
+                                    color: #3F589B;
+                                }
 
-                            > [class*="google"] {
-                                color: #DD4C3B;
+                                > [class*="twitter"] {
+                                    color: #42C0FB;
+                                }
+
+                                > [class*="linkedin"] {
+                                    color: #007AB9;
+                                }
+
+                                > [class*="google"] {
+                                    color: #DD4C3B;
+                                }
                             }
                         }
                     }

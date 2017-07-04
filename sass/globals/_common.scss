@@ -35,6 +35,16 @@
     }
 }
 
+.ui.popup {
+    padding: 15px;
+
+    > .header {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 5px;
+        font-size: rem(16);
+    }
+}
+
 /*color scale*/
 .color-scale {
     height: 5px;
