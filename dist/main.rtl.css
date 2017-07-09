@@ -1735,6 +1735,11 @@ i.icon.angle.right:before {
     box-shadow: 0 0 20px -10px #000;
   }
 }
+@media (max-width: 768px) {
+  .fintech .question[class*="page"] {
+    text-align: right;
+  }
+}
 .fintech .question[class*="page"].fixed {
   z-index: 100;
 }
@@ -1803,7 +1808,7 @@ i.icon.angle.right:before {
   display: block;
   width: 110px;
   clear: both;
-  margin: 10px auto 0;
+  margin: 10px 0 0;
   position: relative;
   top: -2px;
   color: #000;
@@ -1842,8 +1847,10 @@ i.icon.angle.right:before {
   top: 39%;
   left: 25px;
   color: #fff;
-  cursor: pointer;
   font-size: 1.30769rem;
+}
+.fintech .question[class*="page"] .actions .button {
+  cursor: pointer;
 }
 .fintech .question[class*="page"] .actions .button + .button {
   margin-left: 15px;

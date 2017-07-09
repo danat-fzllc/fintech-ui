@@ -610,6 +610,11 @@
         }
 
 
+        @include breakpoint(upto-tablets) {
+            text-align: right;
+        }
+
+
         &.fixed {
             z-index: 100;
         }
@@ -686,7 +691,7 @@
             display: block;
             width: 110px;
             clear: both;
-            margin: 10px auto 0;
+            margin: 10px 0 0;
             position: relative;
             top: -2px;
             color: #000;
@@ -723,10 +728,11 @@
             top: 39%;
             left: 25px;
             color: $white;
-            cursor: pointer;
             font-size: rem(17);
 
             .button {
+                cursor: pointer;
+
                 + .button {
                     margin-left: 15px;
                 }
