@@ -1844,27 +1844,65 @@ i.icon.angle.right:before {
 }
 .fintech .question[class*="page"] .actions {
   position: absolute;
-  top: 39%;
-  left: 25px;
+  bottom: 14px;
+  left: 0px;
   color: #fff;
   font-size: 1.30769rem;
 }
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions {
+    top: 37%;
+    bottom: initial;
+    left: 25px;
+  }
+}
 .fintech .question[class*="page"] .actions .button {
+  background: #f0ac09;
+  border-radius: 100%;
+  height: 28px;
+  width: 28px;
+  position: relative;
   cursor: pointer;
+}
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions .button {
+    background: none;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+  }
+}
+.fintech .question[class*="page"] .actions .button > i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 12px;
+  height: 12px;
+  font-size: 0.92308rem;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions .button > i {
+    font-size: 1.23077rem;
+  }
+}
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions .button.info {
+    background: #fff;
+    color: #4faec5;
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions .button.info i {
+    font-size: 13px;
+  }
 }
 .fintech .question[class*="page"] .actions .button + .button {
   margin-left: 15px;
-}
-.fintech .question[class*="page"] .actions .share {
-  display: none;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-@media (min-width: 769px) {
-  .fintech .question[class*="page"] .actions .share {
-    display: initial;
-  }
 }
 .fintech .question[class*="page"] .actions .share:hover > i {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
@@ -1872,43 +1910,91 @@ i.icon.angle.right:before {
 }
 .fintech .question[class*="page"] .actions .share .list {
   display: none;
-  position: absolute;
-  z-index: 100;
-  top: 26px;
-  background-color: #fff;
-  text-align: right;
+  position: fixed;
+  right: 0;
   left: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #fff;
+  text-align: left;
   padding: 10px 0;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -moz-box-shadow: 1px 2px 6px -4px #000;
-  -webkit-box-shadow: 1px 2px 6px -4px #000;
-  box-shadow: 1px 2px 6px -4px #000;
+  -moz-box-shadow: 1px 2px 15px 4px #717171;
+  -webkit-box-shadow: 1px 2px 15px 4px #717171;
+  box-shadow: 1px 2px 15px 4px #717171;
+}
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions .share .list {
+    position: absolute;
+    right: auto;
+    top: 26px;
+    bottom: auto;
+    left: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 1px 2px 6px -4px #000;
+    -webkit-box-shadow: 1px 2px 6px -4px #000;
+    box-shadow: 1px 2px 6px -4px #000;
+  }
 }
 .fintech .question[class*="page"] .actions .share .list .head {
   color: #000;
   font-weight: 700;
   font-size: 1.38462rem;
   padding: 5px 20px 10px;
+  display: none;
+}
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions .share .list .head {
+    display: initial;
+  }
 }
 .fintech .question[class*="page"] .actions .share .list ul {
   margin: 0;
   padding: 0;
+  direction: ltr;
 }
 .fintech .question[class*="page"] .actions .share .list li {
   display: block;
+  width: 100%;
+  float: left;
+  margin: 2% 0;
+}
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions .share .list li {
+    width: auto;
+    float: none;
+    margin: 0;
+  }
 }
 .fintech .question[class*="page"] .actions .share .list li .fa {
-  margin-left: 6px;
+  margin-right: 6px;
+  display: none;
+}
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions .share .list li .fa {
+    display: initial;
+  }
 }
 .fintech .question[class*="page"] .actions .share .list li a {
+  padding: 10px 10px;
+  text-align: center;
   display: block;
   white-space: nowrap;
-  padding: 8px 20px;
-  font-size: 1.07692rem;
+  font-size: 1.23077rem;
   font-weight: 500;
   color: #000;
+}
+@media (min-width: 769px) {
+  .fintech .question[class*="page"] .actions .share .list li a {
+    padding: 8px 20px;
+    display: block;
+    white-space: nowrap;
+    font-size: 1.07692rem;
+    font-weight: 500;
+    color: #000;
+    text-align: initial;
+  }
 }
 .fintech .question[class*="page"] .actions .share .list li a:hover {
   background-color: #fafafa;
