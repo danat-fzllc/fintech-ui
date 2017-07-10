@@ -747,3 +747,9 @@
 i.icon.angle.right:before {
     content: "\f104";
 }
+
+.indented-list {
+    .item {
+        margin-right: 10px;
+    }
+}

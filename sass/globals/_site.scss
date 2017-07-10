@@ -1773,8 +1773,8 @@
 
         .questions {
             .row {
-                margin: 0;
-                padding: 0;
+                /*margin: 0;
+                padding: 0;*/
 
                 .time {
                     display: block;
@@ -1796,10 +1796,10 @@
                     a {
                         color: #000;
                         display: block;
-                        padding: 10px 0;
+                        padding: 0px 0;
 
                         @include breakpoint(desktops) {
-                            padding: 15px 0;
+                            padding: 5px 0;
                         }
 
 
@@ -1809,8 +1809,27 @@
                     }
                 }
 
+                h3 {
+                    font-size: rem(14);
+                }
+
                 &:last-child {
-                    margin-bottom: -20px;
+                    /* margin-bottom: -20px;*/
+                    margin-bottom: -15px;
+                }
+            }
+        }
+
+        .quick-links {
+            .row {
+                padding: 15px 0;
+
+                .ui.list {
+                    .item {
+                        a {
+                            display: block;
+                        }
+                    }
                 }
             }
         }

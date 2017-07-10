@@ -734,3 +734,9 @@
     color: $gray;
     opacity: 1;
 }
+
+.indented-list {
+    .item {
+        margin-left: 10px;
+    }
+}

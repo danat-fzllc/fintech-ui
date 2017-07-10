@@ -847,6 +847,10 @@ i.icon.angle.right:before {
   content: "\f104";
 }
 
+.indented-list .item {
+  margin-right: 10px;
+}
+
 .ico {
   display: inline-block;
 }
@@ -2739,8 +2743,8 @@ i.icon.angle.right:before {
   }
 }
 .fintech .grid.home .questions .row {
-  margin: 0;
-  padding: 0;
+  /*margin: 0;
+  padding: 0;*/
 }
 .fintech .grid.home .questions .row .time {
   display: block;
@@ -2767,18 +2771,28 @@ i.icon.angle.right:before {
 .fintech .grid.home .questions .row h2 a {
   color: #000;
   display: block;
-  padding: 10px 0;
+  padding: 0px 0;
 }
 @media (min-width: 769px) {
   .fintech .grid.home .questions .row h2 a {
-    padding: 15px 0;
+    padding: 5px 0;
   }
 }
 .fintech .grid.home .questions .row h2 a:hover {
   color: #f0ac09;
 }
+.fintech .grid.home .questions .row h3 {
+  font-size: 1.07692rem;
+}
 .fintech .grid.home .questions .row:last-child {
-  margin-bottom: -20px;
+  /*margin-bottom: -20px;*/
+  margin-bottom: -15px;
+}
+.fintech .grid.home .quick-links .row {
+  padding: 15px 0;
+}
+.fintech .grid.home .quick-links .row .ui.list .item a {
+  display: block;
 }
 .fintech .consecutive-rally .fa-circle {
   font-size: 0.84615rem;
