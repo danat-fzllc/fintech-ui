@@ -1769,7 +1769,7 @@
                     }
 
                     @include breakpoint(upto-tablets) {
-                        padding-bottom: 0;
+                        padding-bottom: 3px;
                         border-top: 0;
 
                         .filter-by-company {
@@ -1841,13 +1841,31 @@
         }
 
         .quick-links {
+            .header {
+                @include breakpoint(upto-tablets) {
+                    font-size: rem(22);
+                }
+            }
+
             .row {
                 padding: 15px 0;
+
+                h3 {
+                    @include breakpoint(upto-tablets) {
+                        font-size: rem(18);
+                    }
+                }
 
                 .ui.list {
                     .item {
                         a {
                             display: block;
+                            font-weight: $font-weight-regular;
+
+                            @include breakpoint(upto-tablets) {
+                                padding: 8px 0;
+                                font-size: rem(15);
+                            }
                         }
                     }
                 }

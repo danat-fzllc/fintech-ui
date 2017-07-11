@@ -811,6 +811,61 @@ form {
   margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+  .pop-up-slide {
+    position: fixed !important;
+    top: 90px;
+    right: -105%;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    overflow: auto;
+    padding: 12px !important;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.19);
+  }
+}
+
+.ease {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+body.pop-up-slide-opened {
+  overflow: hidden;
+  position: fixed;
+}
+
+.pop-up-slide-opened .pop-up-slide {
+  right: 0;
+}
+
+.pop-up-slide-tirgger {
+  z-index: 101;
+  position: fixed;
+  top: 55%;
+  right: 0;
+  background: #f0ac09;
+  width: 30px;
+  height: 104px;
+  text-align: center;
+  font-weight: 500;
+}
+.pop-up-slide-tirgger .text {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  color: #fff;
+  top: 44px;
+  right: -27px;
+  position: absolute;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
 .ico {
   display: inline-block;
 }
@@ -2674,7 +2729,7 @@ form {
 }
 @media (max-width: 768px) {
   .fintech .grid.home .notification-feeds .notification-title-holder .ui.segment {
-    padding-bottom: 0;
+    padding-bottom: 3px;
     border-top: 0;
   }
   .fintech .grid.home .notification-feeds .notification-title-holder .ui.segment .filter-by-company {
@@ -2725,11 +2780,28 @@ form {
   /* margin-bottom: -20px;*/
   margin-bottom: -15px;
 }
+@media (max-width: 768px) {
+  .fintech .grid.home .quick-links .header {
+    font-size: 1.69231rem;
+  }
+}
 .fintech .grid.home .quick-links .row {
   padding: 15px 0;
 }
+@media (max-width: 768px) {
+  .fintech .grid.home .quick-links .row h3 {
+    font-size: 1.38462rem;
+  }
+}
 .fintech .grid.home .quick-links .row .ui.list .item a {
   display: block;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .fintech .grid.home .quick-links .row .ui.list .item a {
+    padding: 8px 0;
+    font-size: 1.15385rem;
+  }
 }
 .fintech .consecutive-rally .fa-circle {
   font-size: 0.84615rem;

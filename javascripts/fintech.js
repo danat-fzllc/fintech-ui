@@ -243,3 +243,6 @@ $(".auto-resize").autoresize({
     minWidth: 20,
     maxWidth: 300
 });
+$(".pop-up-slide-tirgger").click(function() {
+    $("body").toggleClass("pop-up-slide-opened");
+});
