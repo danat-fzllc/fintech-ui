@@ -866,6 +866,11 @@ body.pop-up-slide-opened {
   white-space: nowrap;
 }
 
+#question-info {
+  text-align: left;
+  width: 350px;
+}
+
 .ico {
   display: inline-block;
 }
@@ -882,7 +887,7 @@ body.pop-up-slide-opened {
   .ico.up-chart {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -142px;
+    background-position: 0 -143px;
     height: 9px;
     width: 9px;
   }
@@ -900,7 +905,7 @@ body.pop-up-slide-opened {
   .ico.down-chart {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -128px;
+    background-position: 0 -129px;
     height: 9px;
     width: 9px;
   }
@@ -918,7 +923,7 @@ body.pop-up-slide-opened {
   .ico.notifications {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -315px;
+    background-position: 0 -316px;
     height: 21.5px;
     width: 17.5px;
   }
@@ -954,7 +959,7 @@ body.pop-up-slide-opened {
   .ico.watchlist {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -514px;
+    background-position: 0 -515px;
     height: 21.5px;
     width: 16.5px;
   }
@@ -1054,7 +1059,7 @@ body.pop-up-slide-opened {
   i.flag.ksa:before, i.flag.sa:before, i.flag.saudi.arabia:before {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -451px;
+    background-position: 0 -452px;
     height: 22px;
     width: 32px;
   }
@@ -1096,7 +1101,7 @@ body.pop-up-slide-opened {
   i.flag.kuwait:before, i.flag.kw:before {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -156px;
+    background-position: 0 -157px;
     height: 22px;
     width: 32px;
   }
@@ -1383,7 +1388,7 @@ body.pop-up-slide-opened {
   .fintech .calendar-table-view-btns .table i {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -478px;
+    background-position: 0 -479px;
     height: 13px;
     width: 13.5px;
   }
@@ -1401,7 +1406,7 @@ body.pop-up-slide-opened {
   .fintech .calendar-table-view-btns .table.active i {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -496px;
+    background-position: 0 -497px;
     height: 13px;
     width: 13.5px;
   }
@@ -3580,7 +3585,7 @@ body.pop-up-slide-opened {
   .fintech > .top .outer .main-nav-button {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -206px;
+    background-position: 0 -207px;
     height: 17.5px;
     width: 19px;
   }
@@ -3621,7 +3626,7 @@ body.pop-up-slide-opened {
   .fintech > .top .logo {
     background-image: url('themes/default/assets/images/icons-2x-s6eb13e459c.png');
     background-size: 92.5px 536px;
-    background-position: 0 -183px;
+    background-position: 0 -184px;
     height: 18px;
     width: 92.5px;
   }

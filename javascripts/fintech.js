@@ -71,6 +71,9 @@ $('.tabs-home .item').tab({
 });
 $('.button')
     .popup();
+    $('#question-info-btutton').popup({
+  position    : 'bottom right'
+});
 //resizing pannel script
 //<![CDATA[
 $(window).load(function() {
