@@ -1870,42 +1870,16 @@ body.pop-up-slide-opened {
   width: auto;
 }
 .fintech .question[class*="page"] .ui.button {
-  display: block;
-  width: 110px;
-  clear: both;
-  margin: 10px 0 0;
   position: relative;
   top: -2px;
-  color: #000;
-  padding: 7px 12px 0 14px;
-  height: 28px;
+  padding: 6px 12px 0 14px;
+  height: 26px;
   font-size: 1.07692rem;
-  -moz-border-radius: 1.53846rem;
-  -webkit-border-radius: 1.53846rem;
-  border-radius: 1.53846rem;
-  background-color: #dadada;
-  cursor: default;
-  color: #a7a5a5;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 .fintech .question[class*="page"] .ui.button.active {
   background-color: #f0ac09;
   cursor: pointer;
   color: #000;
-}
-@media (min-width: 769px) {
-  .fintech .question[class*="page"] .ui.button {
-    display: inline-block;
-    width: auto;
-    clear: none;
-    margin: 0 2px 0 0px;
-    -moz-border-radius: 0.46154rem;
-    -webkit-border-radius: 0.46154rem;
-    border-radius: 0.46154rem;
-  }
 }
 .fintech .question[class*="page"] .actions {
   position: absolute;
