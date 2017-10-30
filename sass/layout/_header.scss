@@ -88,59 +88,171 @@
             }
 
 
-            a {
-                color: $black;
-                padding: 17px 15px 0;
-                display: block;
-                text-align: center;
-                font-size: rem(18);
-                line-height: 30px;
+            .user-actions {
+                width: 100%;
 
-                @include breakpoint(desktops) {
-                    display: inline-block;
-                    text-align: initial;
-                    font-size: inherit;
-                    line-height: inherit;
-                    color: lighten($black, 50%);
-                }
-
-
-                &:hover {
+                a {
                     color: $black;
+                    padding: 17px 15px 0;
+                    display: block;
+                    text-align: center;
+                    font-size: rem(18);
+                    line-height: 30px;
+
+                    @include breakpoint(desktops) {
+                        display: inline-block;
+                        text-align: initial;
+                        font-size: inherit;
+                        line-height: inherit;
+                        color: lighten($black, 50%);
+                    }
+
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+
+                .lang {
+                    display: none;
+
+                    @include breakpoint(desktops) {
+                        display: inline-block;
+                        font-family: $font-ar-bold;
+
+                        @include border-radius(3px);
+
+                        background-color: #f2f2f2;
+                        color: #4faec5;
+                        padding: 0 12px;
+                        line-height: 19px;
+                        height: 26px;
+                        position: relative;
+                        top: -2px;
+                    }
+                }
+
+                @include breakpoint(desktops) {
+                    width: auto;
                 }
             }
 
-            .lang {
-                display: none;
+            .holder {
+                ul {
+                    padding: 0;
+                    margin: 0;
 
-                @include breakpoint(desktops) {
-                    display: inline-block;
-                    font-family: $font-ar-bold;
+                    li {
+                        display: block;
+                        margin: 9px 0px 0;
 
-                    @include border-radius(3px);
-
-                    background-color: #f2f2f2;
-                    color: #4faec5;
-                    padding: 0 12px;
-                    line-height: 19px;
-                    height: 26px;
-                    position: relative;
-                    top: -2px;
-                }
-            }
-
-            .active {
-                font-weight: $font-weight-medium;
-
-                @include breakpoint(desktops) {
-                    color: $primary-color;
-                    font-weight: initial;
-                }
+                        @include breakpoint(desktops) {
+                            display: inline-block;
+                        }
 
 
-                &:hover {
-                    color: $primary-color;
-                    cursor: default;
+                        &:hover {
+                            a {
+                                background: #fafafa;
+                            }
+                        }
+
+                        i.icon {
+                            margin: 0 0 0 4px;
+                        }
+
+                        a {
+                            color: $black;
+                            padding: 8px 15px;
+                            text-align: center;
+                            font-size: rem(18);
+                            line-height: 30px;
+                            cursor: pointer;
+                            display: block;
+                            border-radius: 3px;
+
+                            @include breakpoint(desktops) {
+                                text-align: initial;
+                                font-size: inherit;
+                                line-height: inherit;
+                                color: lighten($black, 50%);
+                            }
+
+
+                            &:hover {
+                                color: $black;
+                            }
+                        }
+
+                        .active {
+                            font-weight: $font-weight-medium;
+
+                            @include breakpoint(desktops) {
+                                color: $primary-color;
+                                font-weight: initial;
+                            }
+
+
+                            &:hover {
+                                color: $primary-color;
+                                cursor: default;
+                            }
+                        }
+
+                        &.sub {
+                            position: relative;
+
+                            ul {}
+                        }
+
+                        &:hover {
+                            ul {
+                                max-height: 600px;
+                                transition: max-height 0.5s ease-in;
+                            }
+                        }
+
+                        ul {
+                            position: absolute;
+                            width: 100%;
+                            left: 0;
+                            top: 46px;
+                            background: #fff;
+                            z-index: 95;
+                            box-shadow: 0 4px 3px 0 rgba(34, 36, 38, 0.15);
+                            max-height: 0;
+                            transition: max-height 0.2s ease-out;
+                            overflow: hidden;
+
+                            @include border-radius(3px);
+                            @include breakpoint(desktops) {
+                                top: 34px;
+                            }
+
+
+                            li {
+                                display: block;
+                                margin: 0;
+
+                                a {
+                                    padding: 8px 12px;
+                                    display: block;
+                                    border-radius: 0;
+                                }
+
+                                + li {
+                                    border-top: 1px solid #FAFAFA;
+                                }
+
+                                &:hover {
+                                    a {
+                                        background: #f2f2f2;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -158,6 +270,10 @@
                 bottom: 0;
                 margin: auto;*/
                 margin-top: 20%;
+
+                @include breakpoint(upto-tablets) {
+                    width: 100%;
+                }
             }
 
             .overlay-title {
