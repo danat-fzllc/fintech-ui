@@ -28,6 +28,20 @@
                     padding: 2px 12px;
                     top: 0;
                 }
+
+                .holder {
+                    ul {
+                        li {
+                            i.icon {
+                                margin: 0 4px 0 0px;
+                            }
+
+                            ul {
+                                right: 0;
+                            }
+                        }
+                    }
+                }
             }
         }
 

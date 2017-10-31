@@ -3953,6 +3953,12 @@ body.no-scroll {
   padding: 2px 12px;
   top: 0;
 }
+.fintech > .top .outer .main-nav .holder ul li i.icon {
+  margin: 0 4px 0 0px;
+}
+.fintech > .top .outer .main-nav .holder ul li ul {
+  right: 0;
+}
 .fintech > .top .tabs-home .item {
   padding: 0 0 0.8em 0em !important;
   padding-right: 25px !important;
