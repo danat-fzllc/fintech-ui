@@ -185,7 +185,7 @@ ol.ui.list ol li,
 }
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #4faec5;
+  color: #1d7dff;
 }
 
 /* Linked Item Icons */
@@ -202,7 +202,7 @@ ol.ui.list ol li,
 }
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #4faec5 !important;
+  color: #1d7dff !important;
 }
 
 /* Floated Content */

@@ -803,12 +803,20 @@ body.pop-up-slide-opened {
 }
 
 .column.form-container {
-    width: 600px !important;
     float: none;
     margin: 0 auto;
 
+    @include breakpoint(desktops) {
+        width: 600px !important;
+    }
+
+
     .ui.segment {
-        padding: 40px !important;
+        padding: 20px !important;
+
+        @include breakpoint(desktops) {
+            padding: 40px !important;
+        }
     }
 
     > .content {
@@ -836,6 +844,15 @@ body.pop-up-slide-opened {
 
 .packages {
     text-align: center;
+    margin-top: 1em !important;
+
+    > .column {
+        + .column {
+            .content {
+                margin-top: 2em;
+            }
+        }
+    }
 
     .header {
         background: $gray;

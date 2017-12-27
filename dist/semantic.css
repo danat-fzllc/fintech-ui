@@ -13702,7 +13702,7 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #4faec5;
+  color: #1d7dff;
 }
 
 /* Linked Item Icons */
@@ -13722,7 +13722,7 @@ ol.ui.list ol li,
 
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #4faec5 !important;
+  color: #1d7dff !important;
 }
 
 /* Floated Content */
@@ -21608,16 +21608,16 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .active.item {
   background-color: transparent;
   box-shadow: none;
-  border-color: #4faec5;
+  border-color: #1d7dff;
   font-weight: bold;
-  color: #4faec5;
+  color: #1d7dff;
 }
 
 /* Active Hover */
 
 .ui.secondary.pointing.menu .active.item:hover {
-  border-color: #4faec5;
-  color: #4faec5;
+  border-color: #1d7dff;
+  color: #1d7dff;
 }
 
 /* Active Dropdown */
@@ -21647,7 +21647,7 @@ Floated Menu / Item
 /* Vertical Active */
 
 .ui.secondary.vertical.pointing.menu .active.item {
-  border-color: #4faec5;
+  border-color: #1d7dff;
 }
 
 /* Inverted */

@@ -224,6 +224,10 @@
                 }
             }
 
+            &:hover {
+                border: 1px solid transparent;
+            }
+
             .text i {
                 @include breakpoint(upto-tablets) {
                     margin-right: 0px;

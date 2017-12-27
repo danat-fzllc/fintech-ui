@@ -1,5 +1,5 @@
 /*******************************
     User Variable Overrides
 *******************************/
-@secondaryPointingActiveBorderColor: #4faec5;
-@secondaryPointingActiveTextColor: #4faec5;
+@secondaryPointingActiveBorderColor: #1d7dff;
+@secondaryPointingActiveTextColor: #1d7dff;
