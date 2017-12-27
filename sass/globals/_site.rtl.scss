@@ -646,7 +646,7 @@
                 color: #1b6273;
 
                 .field {
-                    background-color: rgba(30, 102, 119, 0.26);
+                    background-color: $white;
                 }
             }
 
@@ -665,10 +665,10 @@
             font-weight: $font-weight-medium;
 
             @include breakpoint(desktops) {
-                background-color: #288aa1;
+                background-color: $white;
                 border: none;
-                border-color: #288aa1 !important;
-                color: $white;
+                border-color: $white !important;
+                color: $primary-color;
                 font-weight: initial;
                 margin: 8px 0 0 0;
             }
@@ -676,8 +676,8 @@
 
             &:focus {
                 @include breakpoint(desktops) {
-                    background-color: #288aa1;
-                    color: $white;
+                    background-color: $white;
+                    color: $primary-color;
                 }
             }
         }
@@ -1772,6 +1772,14 @@
                         i.icon {
                             float: left;
                             margin-left: 0;
+                        }
+
+                        &.active {
+                            i.icon {
+                                &:before {
+                                    content: "\f106";
+                                }
+                            }
                         }
                     }
 
