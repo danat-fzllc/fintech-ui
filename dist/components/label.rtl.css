@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.7 - Label
+ * # Semantic UI 2.2.10 - Label
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -1052,7 +1052,7 @@ a.ui.basic.black.label:hover {
 a.ui.basic.label:hover {
   text-decoration: none;
   background: none #FFFFFF;
-  color: #23a8c8;
+  color: #0067f1;
   box-shadow: -1px solid rgba(34, 36, 38, 0.15);
   box-shadow: none;
 }

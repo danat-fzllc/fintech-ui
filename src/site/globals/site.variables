@@ -9,9 +9,9 @@
 @pageBackground: #f6f6f6;
 @emSize: 13px;
 @fontSize : 13px;
-@primaryColor        : #227a4f;
-@secondaryColor      : #eaae00;
-@linkColor           : #4faec5;
+@primaryColor        : #1d7dff;
+@secondaryColor      : #ffc000;
+@linkColor           : #1d7dff;
 
 
 

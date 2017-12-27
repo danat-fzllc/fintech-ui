@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.7 - Item
+ * # Semantic UI 2.2.10 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -305,7 +305,7 @@
 }
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #23a8c8;
+  color: #0067f1;
 }
 
 /* Meta */
@@ -417,7 +417,7 @@
 }
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #23a8c8;
+  color: #0067f1;
 }
 
 

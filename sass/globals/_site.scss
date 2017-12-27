@@ -1500,6 +1500,11 @@
                         height: 12px;
                         color: $gray;
                         display: none;
+
+                        @include breakpoint(desktops) {
+                            left: 105%;
+                            right: auto;
+                        }
                     }
 
                     &:hover {
@@ -1525,26 +1530,20 @@
                         @include breakpoint(desktops) {
                             display: inline-block;
                         }
+                    }
 
-
-                        .count {
-                            position: absolute;
-                            background-color: #4fadc5;
-                            color: #fff;
-                            border-radius: 5px;
-                            padding: 3px 5px 3px 5px;
-                            line-height: 12px;
-                            font-size: rem(12);
-                            right: 0;
-                            margin: 0 0 0 5px;
-                            font-weight: normal;
-                            text-align: center;
-
-                            @include breakpoint(desktops) {
-                                left: 100%;
-                                right: auto;
-                            }
-                        }
+                    .count {
+                        position: absolute;
+                        border: 1px solid $primary-color;
+                        color: $primary-color;
+                        border-radius: 5px;
+                        padding: 2px 4px 1px 4px;
+                        line-height: 12px;
+                        font-size: rem(12);
+                        right: 0;
+                        margin: 0 0 0 5px;
+                        font-weight: $font-weight-medium;
+                        text-align: center;
                     }
                 }
 
@@ -1727,6 +1726,8 @@
                 }
 
                 .ui.segment {
+                    padding-bottom: 5px;
+
                     .filter-by-company {
                         + .notification-filter-button {
                             margin-top: 6px;
@@ -1744,6 +1745,29 @@
                             i {
                                 float: right;
                             }
+                        }
+                    }
+                }
+
+                .ui.styled.accordion {
+                    .title {
+                        border: none;
+                        padding: 0 0 12px 0;
+                        font-size: 16px;
+                        color: #585858;
+
+                        i.icon {
+                            float: right;
+                        }
+                    }
+
+                    .content {
+                        padding: 0;
+                        padding-top: 5px;
+                        border-top: 1px solid #ededed;
+
+                        .label {
+                            margin: 5px;
                         }
                     }
                 }

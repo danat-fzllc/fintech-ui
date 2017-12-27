@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.7 - Site
+ * # Semantic UI 2.2.10 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -102,11 +102,11 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #4faec5;
+  color: #1d7dff;
   text-decoration: none;
 }
 a:hover {
-  color: #23a8c8;
+  color: #0067f1;
   text-decoration: none;
 }
 

@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.7 - List
+ * # Semantic UI 2.2.10 - List
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -366,7 +366,7 @@ ol.ui.list ol li,
 }
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: #23a8c8;
+  color: #0067f1;
 }
 
 /* Linking Content */
@@ -374,7 +374,7 @@ ol.ui.list ol li,
   color: rgba(255, 255, 255, 0.9) !important;
 }
 .ui.inverted.list .item a:not(.ui):hover {
-  color: #23a8c8 !important;
+  color: #0067f1 !important;
 }
 
 /*-------------------
