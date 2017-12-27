@@ -1525,7 +1525,7 @@
 
                     strong {
                         position: relative;
-                        display: block;
+                        display: inline-block;
 
                         @include breakpoint(desktops) {
                             display: inline-block;
@@ -1726,8 +1726,6 @@
                 }
 
                 .ui.segment {
-                    padding-bottom: 5px;
-
                     .filter-by-company {
                         + .notification-filter-button {
                             margin-top: 6px;
@@ -1752,22 +1750,36 @@
                 .ui.styled.accordion {
                     .title {
                         border: none;
-                        padding: 0 0 12px 0;
+                        padding: 0 0 0px 0;
                         font-size: 16px;
                         color: #585858;
 
                         i.icon {
                             float: right;
+                            margin-right: 0;
                         }
                     }
 
                     .content {
                         padding: 0;
                         padding-top: 5px;
-                        border-top: 1px solid #ededed;
 
-                        .label {
-                            margin: 5px;
+                        .label {}
+                    }
+
+                    .ui.multiple.search.dropdown {
+                        border: none;
+                        min-height: auto;
+
+                        .text {
+                            padding: 0;
+                            padding-left: 5px;
+                            margin-left: 0;
+                            font-style: italic;
+                        }
+
+                        input.search {
+                            margin: 0;
                         }
                     }
                 }

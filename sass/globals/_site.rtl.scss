@@ -1500,6 +1500,11 @@
                         height: 12px;
                         color: $gray;
                         display: none;
+
+                        @include breakpoint(desktops) {
+                            right: 105%;
+                            left: auto;
+                        }
                     }
 
                     &:hover {
@@ -1525,31 +1530,25 @@
 
                     strong {
                         position: relative;
-                        display: block;
+                        display: inline-block;
 
                         @include breakpoint(desktops) {
                             display: inline-block;
                         }
+                    }
 
-
-                        .count {
-                            position: absolute;
-                            background-color: #4fadc5;
-                            color: #fff;
-                            border-radius: 5px;
-                            padding: 3px 5px 3px 5px;
-                            line-height: 12px;
-                            font-size: rem(12);
-                            left: 0;
-                            margin: 0 5px 0 0px;
-                            font-weight: normal;
-                            text-align: center;
-
-                            @include breakpoint(desktops) {
-                                right: 100%;
-                                left: auto;
-                            }
-                        }
+                    .count {
+                        position: absolute;
+                        border: 1px solid $primary-color;
+                        color: $primary-color;
+                        border-radius: 5px;
+                        padding: 2px 4px 1px 4px;
+                        line-height: 12px;
+                        font-size: rem(12);
+                        left: 0;
+                        margin: 0 0 0 5px;
+                        font-weight: $font-weight-medium;
+                        text-align: center;
                     }
                 }
 
@@ -1759,6 +1758,43 @@
                             i {
                                 float: left;
                             }
+                        }
+                    }
+                }
+
+                .ui.styled.accordion {
+                    .title {
+                        border: none;
+                        padding: 0 0 0px 0;
+                        font-size: 16px;
+                        color: #585858;
+
+                        i.icon {
+                            float: left;
+                            margin-left: 0;
+                        }
+                    }
+
+                    .content {
+                        padding: 0;
+                        padding-top: 5px;
+
+                        .label {}
+                    }
+
+                    .ui.multiple.search.dropdown {
+                        border: none;
+                        min-height: auto;
+
+                        .text {
+                            padding: 0;
+                            padding-right: 5px;
+                            margin-right: 0;
+                            font-style: italic;
+                        }
+
+                        input.search {
+                            margin: 0;
                         }
                     }
                 }

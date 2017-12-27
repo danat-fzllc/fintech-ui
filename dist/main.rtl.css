@@ -912,6 +912,62 @@ body.pop-up-slide-opened {
   width: 350px;
 }
 
+.column.form-container {
+  float: none;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .column.form-container {
+    width: 600px !important;
+  }
+}
+.column.form-container .ui.segment {
+  padding: 20px !important;
+}
+@media (min-width: 769px) {
+  .column.form-container .ui.segment {
+    padding: 40px !important;
+  }
+}
+.column.form-container > .content {
+  padding: 40px !important;
+}
+.column.form-container form h1 {
+  padding-bottom: 10px !important;
+}
+.column.form-container .form-action {
+  margin-top: 20px;
+}
+.column.form-container .form-action a {
+  float: left;
+}
+.column.form-container .form-action a + a {
+  float: right;
+}
+
+.packages {
+  text-align: center;
+  margin-top: 1em !important;
+}
+.packages > .column + .column .content {
+  margin-top: 2em;
+}
+.packages .header {
+  background: #cccccc;
+  font-weight: 700;
+  padding: 20px 0;
+}
+.packages .header .title {
+  font-size: 16px;
+}
+.packages .header .price {
+  font-size: 22px;
+  margin: 20px 0;
+}
+.packages .divided.list .item {
+  padding: 20px 0 !important;
+}
+
 .ico {
   display: inline-block;
 }
@@ -2557,6 +2613,12 @@ body.pop-up-slide-opened {
   color: #cccccc;
   display: none;
 }
+@media (min-width: 769px) {
+  .fintech .grid.home .watchlist .row .name i.filter {
+    right: 105%;
+    left: auto;
+  }
+}
 .fintech .grid.home .watchlist .row .name:hover i.filter {
   display: block;
 }
@@ -2577,31 +2639,25 @@ body.pop-up-slide-opened {
 }
 .fintech .grid.home .watchlist .row .name strong {
   position: relative;
-  display: block;
+  display: inline-block;
 }
 @media (min-width: 769px) {
   .fintech .grid.home .watchlist .row .name strong {
     display: inline-block;
   }
 }
-.fintech .grid.home .watchlist .row .name strong .count {
+.fintech .grid.home .watchlist .row .name .count {
   position: absolute;
-  background-color: #4fadc5;
-  color: #fff;
+  border: 1px solid #1d7dff;
+  color: #1d7dff;
   border-radius: 5px;
-  padding: 3px 5px 3px 5px;
+  padding: 2px 4px 1px 4px;
   line-height: 12px;
   font-size: 0.92308rem;
   left: 0;
-  margin: 0 5px 0 0px;
-  font-weight: normal;
+  margin: 0 0 0 5px;
+  font-weight: 700;
   text-align: center;
-}
-@media (min-width: 769px) {
-  .fintech .grid.home .watchlist .row .name strong .count {
-    right: 100%;
-    left: auto;
-  }
 }
 .fintech .grid.home .watchlist .row .sector {
   padding: 2px 0 0;
@@ -2776,6 +2832,33 @@ body.pop-up-slide-opened {
   .fintech .grid.home .notification-feeds .notification-title-holder .ui.segment .filter-by-company i {
     float: left;
   }
+}
+.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .title {
+  border: none;
+  padding: 0 0 0px 0;
+  font-size: 16px;
+  color: #585858;
+}
+.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .title i.icon {
+  float: left;
+  margin-left: 0;
+}
+.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .content {
+  padding: 0;
+  padding-top: 5px;
+}
+.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .ui.multiple.search.dropdown {
+  border: none;
+  min-height: auto;
+}
+.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .ui.multiple.search.dropdown .text {
+  padding: 0;
+  padding-right: 5px;
+  margin-right: 0;
+  font-style: italic;
+}
+.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .ui.multiple.search.dropdown input.search {
+  margin: 0;
 }
 .fintech .grid.home .questions .row {
   /*margin: 0;
@@ -3310,10 +3393,9 @@ body.pop-up-slide-opened {
   color: #ffc000;
 }
 
-.ui.search.selection.dropdown > input.search {
-  padding: 6px 15px;
+.ui.selection.dropdown {
+  border: 1px solid rgba(34, 36, 38, 0.15);
 }
-
 .ui.selection.dropdown > .delete.icon, .ui.selection.dropdown .dropdown.icon, .ui.selection.dropdown .search.icon {
   top: 0;
   bottom: 0;
@@ -3381,7 +3463,10 @@ body.pop-up-slide-opened {
 }
 .fintech .ui.multiple.dropdown > .label {
   box-shadow: none;
-  background-color: #e4e4e4;
+  background-color: #fff !important;
+  color: #fbbd08 !important;
+  border: 1px solid #fbbd08 !important;
+  font-weight: 500;
 }
 .fintech > .top .country-selection {
   margin: 11px 0 0 0px;
@@ -3399,19 +3484,20 @@ body.pop-up-slide-opened {
   }
 }
 .fintech > .top .country-selection .ui.selection.dropdown {
-  background-color: #f6f6f6;
+  background: none;
   color: #000;
+  padding-right: 0;
   -moz-transition: width, ease 0.5s;
   -o-transition: width, ease 0.5s;
   -webkit-transition: width, ease 0.5s;
   transition: width, ease 0.5s;
-  z-index: 101;
 }
 @media (max-width: 768px) {
   .fintech > .top .country-selection .ui.selection.dropdown {
     padding: 0;
     background: none;
     min-height: 1rem;
+    z-index: 80;
   }
 }
 @media (max-width: 768px) {
@@ -3485,6 +3571,11 @@ body.pop-up-slide-opened {
     font-size: 16px;
   }
 }
+.fintech > .top .country-selection .ui.selection.dropdown.active input.search {
+  color: #fff;
+  padding-right: 0;
+  padding: 6px 15px;
+}
 @media (max-width: 768px) {
   .fintech > .top .country-selection .ui.selection.dropdown.active input.search {
     -webkit-user-select: none;
@@ -3492,6 +3583,9 @@ body.pop-up-slide-opened {
     -ms-user-select: none;
     user-select: none;
   }
+}
+.fintech > .top .country-selection .ui.selection.dropdown:hover {
+  border: 1px solid transparent;
 }
 @media (max-width: 768px) {
   .fintech > .top .country-selection .ui.selection.dropdown .text i {
@@ -3503,11 +3597,10 @@ body.pop-up-slide-opened {
 .fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .text {
   color: #000;
   font-weight: 700;
+  left: 0;
 }
-@media (max-width: 768px) {
-  .fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .text span {
-    display: none;
-  }
+.fintech > .top .country-selection .ui.selection.dropdown:not(.button) > .text span {
+  display: none;
 }
 .fintech > .top .country-selection .ui.selection.dropdown .default.text {
   color: #000;
@@ -3533,10 +3626,8 @@ body.pop-up-slide-opened {
     height: 22px;
   }
 }
-@media (max-width: 768px) {
-  .fintech > .top .country-selection .ui.selection.dropdown .icon {
-    display: none;
-  }
+.fintech > .top .country-selection .ui.selection.dropdown .dropdown.icon {
+  display: none;
 }
 .fintech .ui.dropdown.multilevel {
   -moz-border-radius: 6px;

@@ -2,11 +2,11 @@
     color: $secondary-color;
 }
 
-.ui.search.selection.dropdown > input.search {
-    padding: 6px 15px;
-}
+.ui.search.selection.dropdown > input.search {}
 
 .ui.selection.dropdown {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+
     > .delete.icon, .dropdown.icon, .search.icon {
         top: 0;
         bottom: 0;
@@ -85,7 +85,10 @@
 
     .ui.multiple.dropdown > .label {
         box-shadow: none;
-        background-color: #e4e4e4;
+        background-color: #fff !important;
+        color: #fbbd08 !important;
+        border: 1px solid #fbbd08 !important;
+        font-weight: $font-weight-regular;
     }
 
     > .top .country-selection {
@@ -104,19 +107,19 @@
 
 
         .ui.selection.dropdown {
-            background-color: #f6f6f6;
+            background: none;
             color: #000;
+            padding-right: 0;
 
             @include breakpoint(upto-tablets) {
                 padding: 0;
                 background: none;
                 min-height: 1rem;
+                z-index: 80;
             }
 
 
             @include transition(width, ease 0.5s);
-
-            z-index: 101;
 
             .menu {
                 @include breakpoint(upto-tablets) {
@@ -200,6 +203,10 @@
                 }
 
                 input.search {
+                    color: $white;
+                    padding-right: 0;
+                    padding: 6px 15px;
+
                     @include breakpoint(upto-tablets) {
                         -webkit-user-select: none;
                         -moz-user-select: none;
@@ -207,6 +214,10 @@
                         user-select: none;
                     }
                 }
+            }
+
+            &:hover {
+                border: 1px solid transparent;
             }
 
             .text i {
@@ -220,11 +231,10 @@
             &:not(.button) > .text {
                 color: #000;
                 font-weight: $font-weight-medium;
+                left: 0;
 
                 span {
-                    @include breakpoint(upto-tablets) {
-                        display: none;
-                    }
+                    display: none;
                 }
             }
 
@@ -255,10 +265,8 @@
                 }
             }
 
-            .icon {
-                @include breakpoint(upto-tablets) {
-                    display: none;
-                }
+            .dropdown.icon {
+                display: none;
             }
         }
     }
