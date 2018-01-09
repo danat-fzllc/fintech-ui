@@ -2887,6 +2887,22 @@ body.pop-up-slide-opened {
 .fintech .packages .column > .content {
   padding: 0;
 }
+.fintech .login-page {
+  max-width: 500px;
+}
+.fintech .login-page .header {
+  font-size: 3.07692rem;
+  font-weight: 400;
+}
+.fintech .login-page .field input[type=text], .fintech .login-page .field input[type=password] {
+  background: #ebebeb;
+  border: 0;
+}
+.fintech .login-page .social {
+  border-top: 1px solid #cccccc;
+  margin-top: 25px;
+  padding-top: 25px;
+}
 
 .notification-filter-popup-container.inverted.modals {
   background-color: rgba(255, 255, 255, 0.98);

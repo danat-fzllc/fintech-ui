@@ -12,6 +12,5 @@
 @primaryColor        : #1d7dff;
 @secondaryColor      : #ffc000;
 @linkColor           : #1d7dff;
-
-
+@blue: #1d7dff;
 

@@ -2030,6 +2030,28 @@
             }
         }
     }
+
+    .login-page {
+        max-width: 500px;
+
+        .header {
+            font-size: rem(40);
+            font-weight: $font-weight-light;
+        }
+
+        .field {
+            input[type=text], input[type=password] {
+                background: $ui-input-bg;
+                border: 0;
+            }
+        }
+
+        .social {
+            border-top: 1px solid $gray;
+            margin-top: 25px;
+            padding-top: 25px;
+        }
+    }
 }
 
 .notification-filter-popup-container {
