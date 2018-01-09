@@ -2896,7 +2896,7 @@ body.pop-up-slide-opened {
 }
 .fintech .login-page .field input[type=text], .fintech .login-page .field input[type=password] {
   background: #ebebeb;
-  border: 0;
+  border-color: #ebebeb;
 }
 .fintech .login-page .social {
   border-top: 1px solid #cccccc;

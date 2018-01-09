@@ -2042,7 +2042,7 @@
         .field {
             input[type=text], input[type=password] {
                 background: $ui-input-bg;
-                border: 0;
+                border-color: $ui-input-bg;
             }
         }
 
