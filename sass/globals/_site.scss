@@ -2007,6 +2007,29 @@
             font-size: 14px;
         }
     }
+
+    .packages-container {
+        text-align: center;
+
+        h1 {
+            font-weight: $font-weight-light;
+            padding: 40px 0 15px;
+            font-size: rem(35);
+            line-height: rem(48);
+        }
+    }
+
+    .packages {
+        .column:not(.row) {
+            padding: 0 12px;
+        }
+
+        .column {
+            > .content {
+                padding: 0;
+            }
+        }
+    }
 }
 
 .notification-filter-popup-container {

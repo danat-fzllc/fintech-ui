@@ -21,24 +21,24 @@
         @include use-sprite(watchlist);
     }
 
-    &.no-result {
-        @include use-sprite(no-result);
-    }
-
-    &.gold {
-        @include use-sprite(gold);
-    }
-
-    &.oil {
-        @include use-sprite(oil-barrel);
-    }
+    /*    &.no-result {
+            @include use-sprite(no-result);
+        }
+    
+        &.gold {
+            @include use-sprite(gold);
+        }
+    
+        &.oil {
+            @include use-sprite(oil-barrel);
+        }*/
 }
 
 .icon {
     display: inline-block;
 }
 
-@include breakpoint(upto-tablets) {
+/*@include breakpoint(upto-tablets) {
     i.flag.ae:before, i.flag.uae:before, i.flag.united.arab.emirates:before {
         @include use-sprite(ae);
     }
@@ -62,4 +62,4 @@
     i.flag.om:before, i.flag.oman:before {
         @include use-sprite(om);
     }
-}
+}*/
