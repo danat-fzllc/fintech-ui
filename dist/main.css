@@ -157,6 +157,10 @@ form {
   font-weight: 700;
 }
 
+footer {
+  margin-top: 24px !important;
+}
+
 .column > h2 {
   padding-left: 20px;
   font-weight: 500;
@@ -2894,7 +2898,7 @@ body.pop-up-slide-opened {
   font-size: 3.07692rem;
   font-weight: 400;
 }
-.fintech .login-page .field input[type=text], .fintech .login-page .field input[type=password] {
+.fintech .login-page .field input[type=text], .fintech .login-page .field input[type=email], .fintech .login-page .field input[type=password] {
   background: #ebebeb;
   border-color: #ebebeb;
 }
@@ -2902,6 +2906,40 @@ body.pop-up-slide-opened {
   border-top: 1px solid #cccccc;
   margin-top: 25px;
   padding-top: 25px;
+}
+.fintech .login-page .social .abcRioButton {
+  background-color: #DD4B39;
+  color: #FFF !important;
+  text-shadow: none;
+  background-image: none;
+  min-height: 1em;
+  width: 100% !important;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  height: 40.5px !important;
+  line-height: 40.5px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+}
+.fintech .login-page .social .abcRioButton:hover {
+  background-color: #e0321c;
+}
+.fintech .login-page .social .abcRioButton:active {
+  background-color: #c23321;
+}
+.fintech .login-page .social .abcRioButton .abcRioButtonContents {
+  font-size: 1.15385rem !important;
+}
+.fintech .login-page .social .abcRioButton .abcRioButtonIcon {
+  display: none;
+}
+.fintech .login-page .social .abcRioButton .abcRioButtonIconImage {
+  display: none;
 }
 
 .notification-filter-popup-container.inverted.modals {
