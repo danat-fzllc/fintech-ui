@@ -2078,6 +2078,13 @@
 
                 .abcRioButtonContents {
                     font-size: rem(15) !important;
+
+                    &:before {
+                        content: '\f0d5';
+                        font-family: $fontAwesome;
+                        font-weight: $font-weight-light;
+                        margin-right: 15px;
+                    }
                 }
 
                 .abcRioButtonIcon {

@@ -2935,6 +2935,12 @@ body.pop-up-slide-opened {
 .fintech .login-page .social .abcRioButton .abcRioButtonContents {
   font-size: 1.15385rem !important;
 }
+.fintech .login-page .social .abcRioButton .abcRioButtonContents:before {
+  content: '\f0d5';
+  font-family: "Icons";
+  font-weight: 400;
+  margin-right: 15px;
+}
 .fintech .login-page .social .abcRioButton .abcRioButtonIcon {
   display: none;
 }
