@@ -1664,18 +1664,22 @@
                         }
 
 
-                        .label {
-                            margin-right: 8px;
-                            position: relative;
-                            top: -2px;
-                        }
-
                         strong {
                             color: #000;
                         }
 
                         i {
                             margin-right: 6px;
+                        }
+
+                        .ui.label {
+                            font-size: 13px;
+                            margin-right: 5px;
+
+                            @include border-radius(2px);
+
+                            padding: 2px 4px 2px;
+                            font-weight: normal;
                         }
                     }
 
@@ -1757,6 +1761,8 @@
                         i.icon {
                             float: right;
                             margin-right: 0;
+                            font-size: rem(22);
+                            margin-right: -10px;
                         }
 
                         &.active {
@@ -1766,13 +1772,37 @@
                                 }
                             }
                         }
+
+                        .button.clear {
+                            background: #9E9E9E;
+                            color: #fff;
+                            font-weight: normal;
+                            padding: 0px 5px 2px;
+                            line-height: 15px;
+
+                            @include border-radius(3px);
+
+                            i {
+                                font-size: rem(20);
+                                font-style: normal;
+                                height: 0;
+                                width: 0;
+                                padding: 0;
+                                line-height: inherit;
+                                font-family: arial;
+                                position: relative;
+                                top: 3px;
+                            }
+
+                            &:hover {
+                                background-color: #f00;
+                            }
+                        }
                     }
 
                     .content {
                         padding: 0;
                         padding-top: 5px;
-
-                        .label {}
                     }
 
                     .ui.multiple.search.dropdown {
@@ -2083,7 +2113,7 @@
                         content: '\f0d5';
                         font-family: $fontAwesome;
                         font-weight: $font-weight-light;
-                        margin-right: 15px;
+                        margin-right: 8px;
                     }
                 }
 

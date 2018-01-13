@@ -130,3 +130,25 @@ $icons-2x: sprite-map("icons-2x/*.png", $spacing: 10px);
         width: image-width(sprite-file($icons-2x, $sprite)) / 2;
     }
 }
+
+$flags: sprite-map("flags/*.png", $spacing: 5px);
+$flags-2x: sprite-map("flags-2x/*.png", $spacing: 10px);
+
+//Sprite mixin, works perfectly with standard defines
+@mixin use-flag($sprite) {
+    background-image: sprite-url($flags);
+    background-position: sprite-position($flags, $sprite);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    height: image-height(sprite-file($flags, $sprite));
+    width: image-width(sprite-file($flags, $sprite));
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+        background-image: sprite-url($flags-2x);
+        background-size: (image-width(sprite-path($flags-2x)) / 2) (image-height(sprite-path($flags-2x)) / 2);
+        background-position: round(nth(sprite-position($flags-2x, $sprite), 1) / 2) round(nth(sprite-position($flags-2x, $sprite), 2) / 2);
+        height: image-height(sprite-file($flags-2x, $sprite)) / 2;
+        width: image-width(sprite-file($flags-2x, $sprite)) / 2;
+    }
+}

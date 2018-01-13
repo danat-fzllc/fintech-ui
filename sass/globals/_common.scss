@@ -926,3 +926,48 @@ body.pop-up-slide-opened {
         @include border-radius(0);
     }
 }
+
+.ui.message {
+    &.top {
+        @include box-shadow(none);
+
+        @include border-radius(0);
+
+        margin: 0;
+        text-align: center;
+        height: auto;
+    }
+}
+
+i.flag {
+    &:not(.icon):before {
+        display: none;
+    }
+
+    position: relative;
+    top: 4px;
+
+    &.ae {
+        @include use-flag(AE);
+    }
+
+    &.bh {
+        @include use-flag(BH);
+    }
+
+    &.kw {
+        @include use-flag(KW);
+    }
+
+    &.om {
+        @include use-flag(OM);
+    }
+
+    &.qa {
+        @include use-flag(QA);
+    }
+
+    &.sa {
+        @include use-flag(SA);
+    }
+}

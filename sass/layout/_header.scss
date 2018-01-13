@@ -16,6 +16,21 @@
         }
 
 
+        .lang {
+            display: none;
+
+            @include breakpoint(desktops) {
+                display: inline-block;
+                font-family: $font-ar-bold;
+                color: #fff;
+                margin: 15px 0 0 0;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
         .outer {
             max-width: 1200px;
             margin: 0 auto;
@@ -61,14 +76,12 @@
             @include use-sprite(logo);
 
             display: inline-block;
-            margin: 14px 0px 0 0;
+            margin: 18px 0px 0 0;
 
             @include breakpoint(desktops) {
-                margin: 14px 12px 0 0;
+                margin: 18px 12px 0 0;
             }
         }
-
-        .sign-in {}
 
         .main-nav {
             position: fixed;
@@ -91,8 +104,9 @@
 
             .user-actions {
                 width: 100%;
+                position: relative;
 
-                a {
+                > a {
                     color: $white;
                     padding: 17px 15px 0;
                     display: block;
@@ -115,32 +129,50 @@
                     }
                 }
 
-                .lang {
-                    display: none;
-
-                    @include breakpoint(desktops) {
-                        display: inline-block;
-                        font-family: $font-ar-bold;
-
-                        @include border-radius(3px);
-
-                        background-color: $primary-color;
-                        color: #fff;
-                        padding: 0 12px;
-                        line-height: 19px;
-                        height: 26px;
-                        position: relative;
-                        top: -2px;
-
-                        &:hover {
-                            background-color: #4291fc;
-                            color: #fff;
-                        }
-                    }
-                }
-
                 @include breakpoint(desktops) {
                     width: auto;
+                }
+
+
+                .user-popup {
+                    background-color: #fff;
+
+                    @include border-radius(3px);
+
+                    @include box-shadow(0 3px 4px rgba(0, 0, 0, 0.2));
+
+                    border: 0;
+                    top: 46px;
+                    right: 0;
+
+                    /*  min-width: 160px;*/
+
+                    padding: 6px 0;
+                    margin-right: -10px;
+
+                    .item {
+                        color: #000;
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0 !important;
+                        display: block;
+
+                        .fa {
+                            margin-right: 12px;
+                        }
+
+                        a {
+                            padding: 8px 22px;
+                            display: block;
+                            color: #000;
+                            display: block;
+
+                            &:hover {
+                                background-color: $primary-color;
+                                color: #fff;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -231,6 +263,7 @@
                             overflow: hidden;
 
                             @include border-radius(3px);
+
                             @include breakpoint(desktops) {
                                 top: 34px;
                             }
@@ -270,12 +303,6 @@
             }
 
             .menu-holder {
-                /*position: absolute;
-                right: 0;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                margin: auto;*/
                 margin-top: 20%;
 
                 @include breakpoint(upto-tablets) {
@@ -355,8 +382,5 @@ body.no-scroll {
     .language {
         position: relative;
         z-index: 102;
-
-        /*top: 6px;
-        right: 1em;*/
     }
 }

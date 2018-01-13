@@ -2,8 +2,6 @@
     color: $secondary-color;
 }
 
-.ui.search.selection.dropdown > input.search {}
-
 .ui.selection.dropdown {
     border: 1px solid rgba(34, 36, 38, 0.15);
 
@@ -94,8 +92,8 @@
     .ui.multiple.dropdown > .label {
         box-shadow: none;
         background-color: #fff !important;
-        color: #fbbd08 !important;
-        border: 1px solid #fbbd08 !important;
+        color: #1d7dff !important;
+        border: 1px solid #1d7dff !important;
         font-weight: $font-weight-regular;
     }
 
@@ -118,6 +116,7 @@
             background: none;
             color: #000;
             padding-left: 0;
+            padding-top: 6px;
 
             @include breakpoint(upto-tablets) {
                 padding: 0;
@@ -237,17 +236,11 @@
             }
 
             &:not(.button) > .text {
-                color: #000;
-                font-weight: $font-weight-medium;
+                color: #FFF;
                 left: 0;
-
-                span {
-                    display: none;
-                }
             }
 
             .default.text {
-                color: #000;
                 width: 32px;
 
                 @include breakpoint(desktops) {
