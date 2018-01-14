@@ -1571,6 +1571,25 @@
         }
 
         .notification-feeds {
+            a.column {
+                .segment {
+                    background: #fff;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    .segment {
+                        .feed-head {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            div.column .segment {
+                cursor: default;
+            }
+
             .column {
                 @include breakpoint(upto-tablets) {
                     padding-top: 0;
@@ -1616,9 +1635,10 @@
                         .time {
                             color: gray;
                             display: inline-block;
-                            font-size: rem(12);
+                            font-size: rem(14);
                             font-weight: normal;
-                            padding-right: 6px;
+                            position: relative;
+                            top: -1px;
                             height: 10px;
                             line-height: 9px;
                         }
@@ -1653,7 +1673,8 @@
                         font-size: rem(18);
                         position: relative;
                         line-height: normal;
-                        cursor: default;
+
+                        /*cursor: default;*/
                         font-weight: $font-weight-regular;
                         color: #414141;
 
@@ -1663,10 +1684,6 @@
                             color: #000;
                         }
 
-
-                        strong {
-                            color: #000;
-                        }
 
                         i {
                             margin-right: 6px;
@@ -1730,6 +1747,8 @@
                 }
 
                 .ui.segment {
+                    background-color: #c9d7e0;
+
                     .filter-by-company {
                         + .notification-filter-button {
                             margin-top: 6px;
@@ -1756,11 +1775,9 @@
                         border: none;
                         padding: 0 0 0px 0;
                         font-size: 16px;
-                        color: #585858;
 
                         i.icon {
                             float: right;
-                            margin-right: 0;
                             font-size: rem(22);
                             margin-right: -10px;
                         }
@@ -1774,7 +1791,7 @@
                         }
 
                         .button.clear {
-                            background: #9E9E9E;
+                            background: rgba(0, 0, 0, 0.4);
                             color: #fff;
                             font-weight: normal;
                             padding: 0px 5px 2px;
@@ -1808,12 +1825,16 @@
                     .ui.multiple.search.dropdown {
                         border: none;
                         min-height: auto;
+                        background-color: transparent;
 
                         .text {
                             padding: 0;
                             padding-left: 5px;
                             margin-left: 0;
                             font-style: italic;
+                            color: #000;
+
+                            @include opacity(0.5);
                         }
 
                         input.search {

@@ -43,6 +43,18 @@
                     }
                 }
             }
+
+            .user-actions {
+                .user-popup {
+                    .item {
+                        text-align: right;
+
+                        .fa {
+                            margin: 0 0 0 12px;
+                        }
+                    }
+                }
+            }
         }
 
         .tabs-home {

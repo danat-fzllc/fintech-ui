@@ -848,10 +848,13 @@ body.pop-up-slide-opened {
     max-width: 700px;
 
     .column {
+        max-width: 350px;
+        margin: 0 auto;
+
         > .content {
             @include border-radius(6px);
 
-            border: 1px solid #e0e0e0;
+            border: 1px solid #d6d6d6;
             overflow: hidden;
         }
     }
@@ -867,9 +870,10 @@ body.pop-up-slide-opened {
     }
 
     .header {
-        background: #e0e0e0;
+        background: #d6d6d6;
         font-weight: $font-weight-bold;
         padding: 25px 0;
+        color: #333;
 
         .title {
             font-size: 16px;

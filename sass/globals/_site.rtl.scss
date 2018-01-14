@@ -331,6 +331,38 @@
             margin-right: 1em !important;
             width: auto !important;
         }
+
+
+        &.scroll {
+            padding-top: 108px;
+
+            .question.page {
+                padding: 10px 0;
+                position: fixed;
+                z-index: 100;
+                top: 0;
+
+                h1 {
+                    font-size: rem(18);
+                }
+
+                .field {
+                    margin-top: 8px;
+                    line-height: 25px;
+                    padding: 0;
+                    height: 27px;
+                }
+
+                .ui.button {
+                    top: 0;
+                    padding: 8px 18px;
+                }
+
+                .share {
+                    top: 34%;
+                }
+            }
+        }
     }
 
     .column {
@@ -565,37 +597,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-
-    &.scroll {
-        padding-top: 108px;
-
-        .question.page {
-            padding: 10px 0;
-            position: fixed;
-            z-index: 100;
-            top: 0;
-
-            h1 {
-                font-size: rem(18);
-            }
-
-            .field {
-                margin-top: 8px;
-                line-height: 25px;
-                padding: 0;
-                height: 27px;
-            }
-
-            .ui.button {
-                top: 0;
-                padding: 8px 18px;
-            }
-
-            .share {
-                top: 34%;
             }
         }
     }
@@ -1576,6 +1577,25 @@
         }
 
         .notification-feeds {
+            a.column {
+                .segment {
+                    background: #fff;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    .segment {
+                        .feed-head {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            div.column .segment {
+                cursor: default;
+            }
+
             .column {
                 @include breakpoint(upto-tablets) {
                     padding-top: 0;
@@ -1663,7 +1683,8 @@
                         position: relative;
                         color: #000;
                         line-height: normal;
-                        cursor: default;
+
+                        /*cursor: default;*/
                         font-weight: $font-weight-regular;
                         color: #414141;
 
@@ -1692,6 +1713,16 @@
 
                         i {
                             margin-left: 6px;
+                        }
+
+                        .ui.label {
+                            font-size: 13px;
+                            margin-right: 5px;
+
+                            @include border-radius(2px);
+
+                            padding: 2px 4px 2px;
+                            font-weight: normal;
                         }
                     }
 
@@ -1741,6 +1772,8 @@
                 }
 
                 .ui.segment {
+                    background-color: #c9d7e0;
+
                     .filter-by-company {
                         + .notification-filter-button {
                             margin-top: 6px;
@@ -1771,7 +1804,8 @@
 
                         i.icon {
                             float: left;
-                            margin-left: 0;
+                            font-size: rem(22);
+                            margin-left: -10px;
                         }
 
                         &.active {
@@ -1781,24 +1815,56 @@
                                 }
                             }
                         }
+
+                        .button.clear {
+                            background: rgba(0, 0, 0, 0.4);
+                            color: #fff;
+                            font-weight: normal;
+                            padding: 0px 5px 2px;
+                            line-height: 15px;
+
+                            @include border-radius(3px);
+
+                            i {
+                                font-size: rem(20);
+                                font-style: normal;
+                                height: 0;
+                                width: 0;
+                                padding: 0;
+                                line-height: inherit;
+                                font-family: arial;
+                                position: relative;
+                                top: 3px;
+                            }
+
+                            &:hover {
+                                background-color: #f00;
+                            }
+                        }
                     }
 
                     .content {
                         padding: 0;
                         padding-top: 5px;
-
-                        .label {}
                     }
 
                     .ui.multiple.search.dropdown {
                         border: none;
                         min-height: auto;
+                        background-color: transparent;
+                        padding: 6px 0;
+                        text-align: right;
 
                         .text {
                             padding: 0;
                             padding-right: 5px;
                             margin-right: 0;
                             font-style: italic;
+                            color: #000;
+                            text-align: right;
+                            width: 100%;
+
+                            @include opacity(0.5);
                         }
 
                         input.search {
@@ -1969,6 +2035,12 @@
     }
 
     .overlay-container {
+        @include breakpoint(upto-tablets) {
+            overflow-y: auto;
+            padding-bottom: 90px;
+        }
+
+
         .overlay-header {
             @include breakpoint(upto-tablets) {
                 border-bottom: 1px solid #eee;
@@ -2020,6 +2092,96 @@
             color: $secondary-color;
             margin: 0 5px 0 0px;
             font-size: 14px;
+        }
+    }
+
+    .packages-container {
+        text-align: center;
+
+        h1 {
+            font-weight: $font-weight-light;
+            padding: 40px 0 15px;
+            font-size: rem(35);
+            line-height: rem(48);
+        }
+    }
+
+    .packages {
+        .column:not(.row) {
+            padding: 0 12px;
+        }
+
+        .column {
+            > .content {
+                padding: 0;
+            }
+        }
+    }
+
+    .login-page {
+        max-width: 500px;
+
+        .header {
+            font-size: rem(40);
+            font-weight: $font-weight-light;
+        }
+
+        .field {
+            input[type=text], input[type=email], input[type=password] {
+                background: $ui-input-bg;
+                border-color: $ui-input-bg;
+            }
+        }
+
+        .social {
+            border-top: 1px solid $gray;
+            margin-top: 25px;
+            padding-top: 25px;
+
+            .abcRioButton {
+                background-color: #DD4B39;
+                color: #FFF !important;
+                text-shadow: none;
+                background-image: none;
+                min-height: 1em;
+                width: 100% !important;
+                text-align: center;
+                font-weight: $font-weight-medium;
+                cursor: pointer;
+                height: 40.5px !important;
+                line-height: 40.5px;
+
+                @include border-radius(3px);
+
+                @include box-shadow(0 0 0 0 rgba(34, 36, 38, 0.15) inset);
+
+                &:hover {
+                    background-color: #e0321c;
+                }
+
+                &:active {
+                    background-color: #c23321;
+                }
+
+                .abcRioButtonContents {
+                    font-size: rem(15) !important;
+
+                    &:before {
+                        content: '\f0d5';
+                        font-family: $fontAwesome;
+                        font-weight: $font-weight-light;
+                        margin-right: 8px;
+                    }
+                }
+
+                .abcRioButtonIcon {
+                    display: none;
+                }
+
+                .abcRioButtonIconImage {
+                    display: none;
+                }
+            }
         }
     }
 }
