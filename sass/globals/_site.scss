@@ -1746,7 +1746,7 @@
                     }
                 }
 
-                .ui.segment {
+                > .ui {
                     background-color: #c9d7e0;
 
                     .filter-by-company {
@@ -1768,13 +1768,13 @@
                             }
                         }
                     }
-                }
 
-                .ui.styled.accordion {
+
                     .title {
                         border: none;
                         padding: 0 0 0px 0;
                         font-size: 16px;
+                        font-weight: $font-weight-medium;
 
                         i.icon {
                             float: right;

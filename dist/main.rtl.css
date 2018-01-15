@@ -2869,40 +2869,40 @@ i.flag.sa {
   color: #f5990a;
   font-weight: 700;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.segment {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui {
   background-color: #c9d7e0;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.segment .filter-by-company + .notification-filter-button {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .filter-by-company + .notification-filter-button {
   margin-top: 6px;
 }
 @media (max-width: 768px) {
-  .fintech .grid.home .notification-feeds .notification-title-holder .ui.segment {
+  .fintech .grid.home .notification-feeds .notification-title-holder > .ui {
     padding-bottom: 3px;
     border-top: 0;
   }
-  .fintech .grid.home .notification-feeds .notification-title-holder .ui.segment .filter-by-company {
+  .fintech .grid.home .notification-feeds .notification-title-holder > .ui .filter-by-company {
     width: 100%;
     background-color: #fffbf0 !important;
   }
-  .fintech .grid.home .notification-feeds .notification-title-holder .ui.segment .filter-by-company i {
+  .fintech .grid.home .notification-feeds .notification-title-holder > .ui .filter-by-company i {
     float: left;
   }
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .title {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .title {
   border: none;
   padding: 0 0 0px 0;
   font-size: 16px;
   color: #585858;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .title i.icon {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .title i.icon {
   float: left;
   font-size: 1.69231rem;
   margin-left: -10px;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .title.active i.icon:before {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .title.active i.icon:before {
   content: "\f106";
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .title .button.clear {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .title .button.clear {
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   font-weight: normal;
@@ -2912,7 +2912,7 @@ i.flag.sa {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .title .button.clear i {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .title .button.clear i {
   font-size: 1.53846rem;
   font-style: normal;
   height: 0;
@@ -2923,21 +2923,21 @@ i.flag.sa {
   position: relative;
   top: 3px;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .title .button.clear:hover {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .title .button.clear:hover {
   background-color: #f00;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .content {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .content {
   padding: 0;
   padding-top: 5px;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .ui.multiple.search.dropdown {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .ui.multiple.search.dropdown {
   border: none;
   min-height: auto;
   background-color: transparent;
   padding: 6px 0;
   text-align: right;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .ui.multiple.search.dropdown .text {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .ui.multiple.search.dropdown .text {
   padding: 0;
   padding-right: 5px;
   margin-right: 0;
@@ -2948,7 +2948,7 @@ i.flag.sa {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-.fintech .grid.home .notification-feeds .notification-title-holder .ui.styled.accordion .ui.multiple.search.dropdown input.search {
+.fintech .grid.home .notification-feeds .notification-title-holder > .ui .ui.multiple.search.dropdown input.search {
   margin: 0;
 }
 .fintech .grid.home .questions .row {
