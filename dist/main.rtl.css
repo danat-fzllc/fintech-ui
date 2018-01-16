@@ -2750,6 +2750,9 @@ i.flag.sa {
     font-size: 1.07692rem;
   }
 }
+.fintech .grid.home .notification-feeds .column.custom .segment {
+  background-color: #fdffed;
+}
 .fintech .grid.home .notification-feeds .column.feed .segment {
   position: relative;
   padding: 14px 20px 16px 20px;

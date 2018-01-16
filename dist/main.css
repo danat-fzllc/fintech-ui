@@ -2701,6 +2701,9 @@ i.flag.sa {
     font-weight: initial;
   }
 }
+.fintech .grid.home .notification-feeds .column.custom .segment {
+  background-color: #fdffed;
+}
 .fintech .grid.home .notification-feeds .column.feed .segment {
   position: relative;
   padding: 14px 20px 16px 20px;

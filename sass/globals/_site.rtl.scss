@@ -1630,6 +1630,12 @@
                     }
                 }
 
+                &.custom {
+                    .segment {
+                        background-color: #fdffed;
+                    }
+                }
+
                 &.feed {
                     .segment {
                         position: relative;
