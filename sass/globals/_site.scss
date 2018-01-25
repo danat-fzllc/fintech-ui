@@ -2188,12 +2188,12 @@
                 padding: 20px;
 
                 .menu {
-                    position: relative;
+                    position: fixed;
                     width: 24px;
                     height: 14px;
                     cursor: pointer;
                     float: left;
-                    top: 7px;
+                    top: 28px;
 
                     &:hover {
                         @include opacity(0.5);
@@ -2223,7 +2223,7 @@
 
                     float: left;
                     display: inline-block;
-                    margin-left: 30px;
+                    margin-left: 54px;
                 }
 
                 .lang {
@@ -2241,7 +2241,6 @@
 
             .getinvite-form {
                 margin: 56px auto;
-                max-width: 543px;
             }
 
             .responsive-screens {
@@ -2460,6 +2459,14 @@
                     .getinvite-form {
                         .input {
                             background-color: #DDE1E4;
+
+                            @include border-radius(3px 0 0 3px);
+                        }
+
+                        .button {
+                            margin-left: 0;
+
+                            @include border-radius(0 3px 3px 0);
                         }
                     }
 
@@ -2474,6 +2481,132 @@
                     p {
                         padding: 28px 0 55px;
                         max-width: 685px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .packages {
+                    max-width: 100%;
+                    padding: 60px 0;
+                    margin: 0 auto;
+
+                    /*.column {
+                        > .content {
+                            background-color: #f7f7f7;
+                        }
+                    }*/
+                }
+            }
+
+            &.demo {
+                padding: 90px 0;
+                text-align: center;
+                background: #011B37 url(themes/default/assets/images/Landing-V05-header.jpg) no-repeat center top;
+                color: #fff;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+
+                    @include triangle(30px, up, $primary-color);
+
+                    content: '';
+                    left: 0;
+                    right: 0;
+                    top: -30px;
+                    margin: 0 auto;
+                }
+
+                h2 {
+                    font-size: 32px;
+                }
+
+                p {
+                    padding: 28px 0 21px;
+                }
+
+                .getinvite-form {
+                    .input {
+                        @include border-radius(5px 0 0 5px);
+
+                        position: relative;
+
+                        &:before {
+                            position: absolute;
+                            left: -80px;
+                            top: -16px;
+                            content: '';
+
+                            @include use-sprite(envelope);
+                        }
+                    }
+
+                    .button {
+                        margin: 0;
+
+                        @include border-radius(0 5px 5px 0);
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: #ffffff;
+            padding: 80px 0 40px;
+            margin: 0 !important;
+            font-size: 14px;
+
+            a {
+                color: #000;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                float: left;
+                margin: 0;
+                padding: 0;
+                width: 225px;
+
+                li {
+                    padding: 8px 0;
+                    display: block;
+                }
+
+                .head {
+                    text-transform: uppercase;
+                    font-weight: $font-weight-medium;
+                    padding: 0 0 15px;
+                }
+            }
+
+            .copy {
+                text-align: center;
+                font-size: 13px;
+                padding: 40px 0 0 0;
+                color: #7D8A99;
+
+                .social {
+                    font-size: 18px;
+                    padding: 15px 0 0;
+
+                    a {
+                        margin: 0 10px;
+                    }
+
+                    .facebook {
+                        color: #3b5998;
+                    }
+
+                    .linkedin {
+                        color: #0077b5;
+                    }
+
+                    .twitter {
+                        color: #1da1f2;
                     }
                 }
             }

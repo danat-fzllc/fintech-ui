@@ -1160,8 +1160,8 @@ i.flag.sa {
       }*/
 }
 .ico.up-chart {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -75px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -163px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1170,16 +1170,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.up-chart {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -72px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -141px;
     height: 9px;
     width: 9px;
   }
 }
 .ico.down-chart {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -58px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -146px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1188,16 +1188,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.down-chart {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -58px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -127px;
     height: 9px;
     width: 9px;
   }
 }
 .ico.notifications {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -143px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -231px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1206,16 +1206,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.notifications {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -132px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -206px;
     height: 21.5px;
     width: 17.5px;
   }
 }
 .ico.questions {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -170px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -258px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1224,16 +1224,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.questions {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -158px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -233px;
     height: 21.5px;
     width: 21.5px;
   }
 }
 .ico.watchlist {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -233px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -336px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1242,9 +1242,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.watchlist {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -221px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -308px;
     height: 21.5px;
     width: 16.5px;
   }
@@ -1461,7 +1461,7 @@ i.flag.sa {
   border-radius: 0 5px 5px 0;
 }
 .fintech .calendar-table-view-btns .calendar i {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
   background-position: 0 -22px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1472,15 +1472,15 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar i {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
     background-position: 0 -22px;
     height: 13px;
     width: 13.5px;
   }
 }
 .fintech .calendar-table-view-btns .calendar.active i {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
   background-position: 0 -40px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1490,8 +1490,8 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar.active i {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
     background-position: 0 -40px;
     height: 13px;
     width: 13.5px;
@@ -1505,8 +1505,8 @@ i.flag.sa {
   border-radius: 5px 0 0 5px;
 }
 .fintech .calendar-table-view-btns .table i {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -197px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -285px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1516,16 +1516,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table i {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -185px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -259px;
     height: 13px;
     width: 13.5px;
   }
 }
 .fintech .calendar-table-view-btns .table.active i {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -215px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -303px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1534,9 +1534,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table.active i {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -203px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -277px;
     height: 13px;
     width: 13.5px;
   }
@@ -1789,7 +1789,7 @@ i.flag.sa {
     display: inline-block;
     margin: 2px 0px 0 10px;
     float: right;
-    background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
+    background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1800,8 +1800,8 @@ i.flag.sa {
 }
 @media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .title.aggregate-performance:before {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
     background-position: 0 0;
     height: 17px;
     width: 22px;
@@ -3916,8 +3916,8 @@ i.flag.sa {
   }
 }
 .fintech > .top .outer .main-nav-button {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -121px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -209px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -3930,9 +3930,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .outer .main-nav-button {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -109px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -184px;
     height: 17.5px;
     width: 19px;
   }
@@ -3959,8 +3959,8 @@ i.flag.sa {
   }
 }
 .fintech > .top .logo {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -92px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -180px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -3971,11 +3971,11 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .logo {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -86px;
-    height: 18px;
-    width: 92.5px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -155px;
+    height: 24px;
+    width: 118.5px;
   }
 }
 @media (min-width: 769px) {

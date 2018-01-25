@@ -919,65 +919,134 @@ body.pop-up-slide-opened {
   margin: 0 auto;
 }
 .packages .column > .content {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  border: 1px solid #d6d6d6;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   overflow: hidden;
 }
-.packages .column.full > .content {
-  border-color: #f3ac13;
-}
 .packages .column.full .header {
-  background: #f3ac13;
+  color: #fff;
+  background: #1D7CFF;
+}
+.packages .column.full .header .ui.dropdown:not(.button) > .default.text {
+  color: white;
+}
+.packages .column.full .header .ui.dropdown.selection {
+  border-bottom: 1px solid white;
+  color: white;
+}
+.packages .column.full .header .ui.dropdown.selection .dropdown.icon {
+  color: white;
+}
+.packages .column.pro .header {
+  color: #fff;
+  background: #FCAF17;
+}
+.packages .column.pro .header .ui.dropdown:not(.button) > .default.text {
+  color: white;
+}
+.packages .column.pro .header .ui.dropdown.selection {
+  border-bottom: 1px solid white;
+  color: white;
+}
+.packages .column.pro .header .ui.dropdown.selection .dropdown.icon {
+  color: white;
 }
 .packages .header {
   background: #d6d6d6;
   font-weight: 900;
-  padding: 25px 0;
-  color: #333;
+  padding: 60px 0;
+  height: 275px;
+  color: black;
+}
+.packages .header .ui.dropdown:not(.button) > .default.text {
+  color: black;
+}
+.packages .header .ui.dropdown.selection {
+  border: 0;
+  min-width: 10em;
+  border-bottom: 1px solid black;
+  font-weight: 500;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: black;
+  background-color: transparent;
+}
+.packages .header .ui.dropdown.selection .dropdown.icon {
+  color: black;
 }
 .packages .header .title {
   font-size: 16px;
 }
 .packages .header .price {
-  font-size: 3.07692rem;
+  font-size: 5.53846rem;
   margin: 15px 0;
-  line-height: 34px;
+  line-height: 5.53846rem;
 }
 .packages .header .ui.form .field {
   margin: 0;
 }
 .packages .list {
-  padding: 2.30769rem !important;
+  padding: 1.38462rem 3.46154rem !important;
   margin: 0;
+  text-align: left;
 }
-.packages .list .item {
+.packages .list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.packages .list ul .item {
   padding: 1.23077rem 0;
   line-height: 1.69231rem;
 }
-.packages .list .item + .item {
+.packages .list ul .item + .item {
   border-top: 1px solid #e6e6e6;
 }
-.packages .list .item .fa {
-  float: left;
-  font-size: 1.38462rem;
-  position: relative;
-  top: 2px;
-  color: #cccccc;
+.packages .list ul .item.available:before {
+  content: '';
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -321px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 10px;
+  width: 13px;
+  margin-right: 15px;
 }
-.packages .list .item.available .fa {
-  color: #00a651;
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .packages .list ul .item.available:before {
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -295px;
+    height: 7.5px;
+    width: 10px;
+  }
+}
+.packages .list ul .item.not:before {
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -58px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .packages .list ul .item.not:before {
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -58px;
+    height: 9px;
+    width: 9px;
+  }
+}
+.packages .list .button-holder {
+  padding: 15px 0;
 }
 .packages .ui.button {
-  background: transparent;
-  color: #1D7CFF;
-  border-top: 1px solid #cccccc;
-  padding: 1.92308rem;
   font-size: 1.23077rem;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
 }
 
 .ui.message.top {
@@ -1111,6 +1180,7 @@ i.flag.sa {
 .getinvite-form {
   margin-left: auto;
   margin-right: auto;
+  display: inline-block;
 }
 .getinvite-form .input {
   background-color: #fff;
@@ -1130,6 +1200,7 @@ i.flag.sa {
   padding: 15px 25px;
   font-size: 16px;
   color: #000;
+  outline: none;
 }
 .getinvite-form .button {
   float: left;
@@ -1139,6 +1210,93 @@ i.flag.sa {
   font-size: 16px;
   text-transform: uppercase;
   padding: 0 30px;
+}
+
+#goToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 2;
+  border: none;
+  outline: none;
+  background-color: #011B37;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+#goToTop:hover {
+  background-color: #5D6D7F;
+}
+#goToTop .fa {
+  position: relative;
+  top: -2px;
+}
+
+.ui.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  width: 300px;
+  background-color: #eff1f3 !important;
+  text-align: left;
+  z-index: 2;
+  font-weight: 700;
+}
+.ui.sidebar a {
+  color: #011B37;
+}
+.ui.sidebar a:hover {
+  color: #1D7CFF;
+}
+.ui.sidebar .top {
+  padding: 24px 36px;
+  overflow: hidden;
+  width: 100%;
+}
+.ui.sidebar .top .lang {
+  float: left;
+}
+.ui.sidebar .top .close {
+  float: right;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.ui.sidebar .top .close .fa {
+  font-size: 16px;
+}
+.ui.sidebar ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.ui.sidebar li {
+  display: block;
+  list-style-type: none;
+  border-top: 1px solid #e3e7ea;
+}
+.ui.sidebar li a {
+  padding: 24px 36px;
+  display: block;
+  background-color: #eff1f3;
+  font-size: 17px;
+  font-weight: 700;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ui.sidebar li a:hover {
+  background-color: #fff;
 }
 
 .ico {
@@ -1156,8 +1314,8 @@ i.flag.sa {
       }*/
 }
 .ico.up-chart {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -75px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -163px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1166,16 +1324,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.up-chart {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -72px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -141px;
     height: 9px;
     width: 9px;
   }
 }
 .ico.down-chart {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -58px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -146px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1184,16 +1342,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.down-chart {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -58px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -127px;
     height: 9px;
     width: 9px;
   }
 }
 .ico.notifications {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -143px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -231px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1202,16 +1360,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.notifications {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -132px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -206px;
     height: 21.5px;
     width: 17.5px;
   }
 }
 .ico.questions {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -170px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -258px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1220,16 +1378,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.questions {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -158px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -233px;
     height: 21.5px;
     width: 21.5px;
   }
 }
 .ico.watchlist {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -233px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -336px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1238,9 +1396,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.watchlist {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -221px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -308px;
     height: 21.5px;
     width: 16.5px;
   }
@@ -1457,7 +1615,7 @@ i.flag.sa {
   border-radius: 5px 0 0 5px;
 }
 .fintech .calendar-table-view-btns .calendar i {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
   background-position: 0 -22px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1468,15 +1626,15 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar i {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
     background-position: 0 -22px;
     height: 13px;
     width: 13.5px;
   }
 }
 .fintech .calendar-table-view-btns .calendar.active i {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
   background-position: 0 -40px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1486,8 +1644,8 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar.active i {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
     background-position: 0 -40px;
     height: 13px;
     width: 13.5px;
@@ -1501,8 +1659,8 @@ i.flag.sa {
   border-radius: 0 5px 5px 0;
 }
 .fintech .calendar-table-view-btns .table i {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -197px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -285px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1512,16 +1670,16 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table i {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -185px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -259px;
     height: 13px;
     width: 13.5px;
   }
 }
 .fintech .calendar-table-view-btns .table.active i {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -215px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -303px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1530,9 +1688,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table.active i {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -203px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -277px;
     height: 13px;
     width: 13.5px;
   }
@@ -1780,7 +1938,7 @@ i.flag.sa {
     display: inline-block;
     margin: 2px 10px 0 0;
     float: left;
-    background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
+    background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1791,8 +1949,8 @@ i.flag.sa {
 }
 @media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .title.aggregate-performance:before {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
     background-position: 0 0;
     height: 17px;
     width: 22px;
@@ -3190,12 +3348,12 @@ i.flag.sa {
   padding: 20px;
 }
 .fintech.landing header nav .menu {
-  position: relative;
+  position: fixed;
   width: 24px;
   height: 14px;
   cursor: pointer;
   float: left;
-  top: 7px;
+  top: 28px;
 }
 .fintech.landing header nav .menu:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -3217,8 +3375,8 @@ i.flag.sa {
   top: 10px;
 }
 .fintech.landing header nav .logo {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -92px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -180px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -3226,15 +3384,15 @@ i.flag.sa {
   width: 119px;
   float: left;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 54px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech.landing header nav .logo {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -86px;
-    height: 18px;
-    width: 92.5px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -155px;
+    height: 24px;
+    width: 118.5px;
   }
 }
 .fintech.landing header nav .lang {
@@ -3249,7 +3407,6 @@ i.flag.sa {
 }
 .fintech.landing header .getinvite-form {
   margin: 56px auto;
-  max-width: 543px;
 }
 .fintech.landing header .responsive-screens {
   background: url(themes/default/assets/images/responsive-screen.png) no-repeat 10px 0;
@@ -3446,6 +3603,15 @@ i.flag.sa {
 }
 .fintech.landing section.packages-info > .container .getinvite-form .input {
   background-color: #DDE1E4;
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 0 0 3px;
+}
+.fintech.landing section.packages-info > .container .getinvite-form .button {
+  margin-left: 0;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 3px 3px 0;
 }
 .fintech.landing section.packages-info > .container h3 {
   font-size: 27px;
@@ -3456,6 +3622,127 @@ i.flag.sa {
 .fintech.landing section.packages-info > .container p {
   padding: 28px 0 55px;
   max-width: 685px;
+  margin: 0 auto;
+}
+.fintech.landing section.packages-info .packages {
+  max-width: 100%;
+  padding: 60px 0;
+  margin: 0 auto;
+  /*.column {
+      > .content {
+          background-color: #f7f7f7;
+      }
+  }*/
+}
+.fintech.landing section.demo {
+  padding: 90px 0;
+  text-align: center;
+  background: #011B37 url(themes/default/assets/images/Landing-V05-header.jpg) no-repeat center top;
+  color: #fff;
+  position: relative;
+}
+.fintech.landing section.demo:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #011B37;
+  content: '';
+  left: 0;
+  right: 0;
+  top: -30px;
+  margin: 0 auto;
+}
+.fintech.landing section.demo h2 {
+  font-size: 32px;
+}
+.fintech.landing section.demo p {
+  padding: 28px 0 21px;
+}
+.fintech.landing section.demo .getinvite-form .input {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 0 0 5px;
+  position: relative;
+}
+.fintech.landing section.demo .getinvite-form .input:before {
+  position: absolute;
+  left: -80px;
+  top: -16px;
+  content: '';
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -75px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 66px;
+  width: 61px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .fintech.landing section.demo .getinvite-form .input:before {
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -72px;
+    height: 49.5px;
+    width: 46px;
+  }
+}
+.fintech.landing section.demo .getinvite-form .button {
+  margin: 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 5px 5px 0;
+}
+.fintech.landing footer {
+  background-color: #ffffff;
+  padding: 80px 0 40px;
+  margin: 0 !important;
+  font-size: 14px;
+}
+.fintech.landing footer a {
+  color: #000;
+}
+.fintech.landing footer a:hover {
+  color: #1D7CFF;
+}
+.fintech.landing footer ul {
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 225px;
+}
+.fintech.landing footer ul li {
+  padding: 8px 0;
+  display: block;
+}
+.fintech.landing footer ul .head {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 0 15px;
+}
+.fintech.landing footer .copy {
+  text-align: center;
+  font-size: 13px;
+  padding: 40px 0 0 0;
+  color: #7D8A99;
+}
+.fintech.landing footer .copy .social {
+  font-size: 18px;
+  padding: 15px 0 0;
+}
+.fintech.landing footer .copy .social a {
+  margin: 0 10px;
+}
+.fintech.landing footer .copy .social .facebook {
+  color: #3b5998;
+}
+.fintech.landing footer .copy .social .linkedin {
+  color: #0077b5;
+}
+.fintech.landing footer .copy .social .twitter {
+  color: #1da1f2;
 }
 
 .notification-filter-popup-container.inverted.modals {
@@ -4136,8 +4423,8 @@ i.flag.sa {
   }
 }
 .fintech > .top .outer .main-nav-button {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -121px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -209px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -4150,9 +4437,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .outer .main-nav-button {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -109px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -184px;
     height: 17.5px;
     width: 19px;
   }
@@ -4179,8 +4466,8 @@ i.flag.sa {
   }
 }
 .fintech > .top .logo {
-  background-image: url('themes/default/assets/images/icons-s9f68a4df18.png');
-  background-position: 0 -92px;
+  background-image: url('themes/default/assets/images/icons-sa656f1a0af.png');
+  background-position: 0 -180px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -4191,11 +4478,11 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .logo {
-    background-image: url('themes/default/assets/images/icons-2x-s350433a856.png');
-    background-size: 92.5px 242px;
-    background-position: 0 -86px;
-    height: 18px;
-    width: 92.5px;
+    background-image: url('themes/default/assets/images/icons-2x-sf7f4113511.png');
+    background-size: 118.5px 329px;
+    background-position: 0 -155px;
+    height: 24px;
+    width: 118.5px;
   }
 }
 @media (min-width: 769px) {

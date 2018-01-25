@@ -852,37 +852,95 @@ body.pop-up-slide-opened {
         margin: 0 auto;
 
         > .content {
-            @include border-radius(6px);
+            @include border-radius(4px);
 
-            border: 1px solid #d6d6d6;
             overflow: hidden;
         }
     }
 
-    .column.full {
-        > .content {
-            border-color: #f3ac13;
+    .column {
+        &.full {
+            .header {
+                color: #fff;
+                background: $secondary-color;
+
+                .ui.dropdown {
+                    &:not(.button) > .default.text {
+                        color: white;
+                    }
+
+                    &.selection {
+                        border-bottom: 1px solid white;
+                        color: white;
+
+                        .dropdown.icon {
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
 
-        .header {
-            background: #f3ac13;
+        &.pro {
+            .header {
+                color: #fff;
+                background: $secondary-color-2;
+
+                .ui.dropdown {
+                    &:not(.button) > .default.text {
+                        color: white;
+                    }
+
+                    &.selection {
+                        border-bottom: 1px solid white;
+                        color: white;
+
+                        .dropdown.icon {
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
     }
 
     .header {
         background: #d6d6d6;
         font-weight: $font-weight-bold;
-        padding: 25px 0;
-        color: #333;
+        padding: 60px 0;
+        height: 275px;
+        color: black;
+
+        .ui.dropdown {
+            &:not(.button) > .default.text {
+                color: black;
+            }
+
+            &.selection {
+                border: 0;
+                min-width: 10em;
+                border-bottom: 1px solid black;
+                font-weight: $font-weight-regular;
+
+                @include border-radius(0);
+
+                color: black;
+                background-color: transparent;
+
+                .dropdown.icon {
+                    color: black;
+                }
+            }
+        }
 
         .title {
             font-size: 16px;
         }
 
         .price {
-            font-size: rem(40);
+            font-size: rem(72);
             margin: 15px 0;
-            line-height: 34px;
+            line-height: rem(72);
         }
 
         .ui.form {
@@ -893,41 +951,48 @@ body.pop-up-slide-opened {
     }
 
     .list {
-        padding: rem(30) !important;
+        padding: rem(18) rem(45) !important;
         margin: 0;
+        text-align: left;
 
-        .item {
-            padding: rem(16) 0;
-            line-height: rem(22);
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
 
-            + .item {
-                border-top: 1px solid lighten($gray, 10);
-            }
+            .item {
+                padding: rem(16) 0;
+                line-height: rem(22);
 
-            .fa {
-                float: left;
-                font-size: rem(18);
-                position: relative;
-                top: 2px;
-                color: $gray;
-            }
+                + .item {
+                    border-top: 1px solid lighten($gray, 10);
+                }
 
-            &.available {
-                .fa {
-                    color: $green;
+                &.available {
+                    &:before {
+                        content: '';
+
+                        @include use-sprite(tick-blue);
+
+                        margin-right: 15px;
+                    }
+                }
+
+                &.not {
+                    &:before {
+                        @include use-sprite(cross-gray);
+                    }
                 }
             }
+        }
+
+        .button-holder {
+            padding: 15px 0;
         }
     }
 
     .ui.button {
-        background: transparent;
-        color: $secondary-color;
-        border-top: 1px solid $gray;
-        padding: rem(25);
         font-size: rem(16);
-
-        @include border-radius(0);
     }
 }
 
@@ -979,6 +1044,7 @@ i.flag {
 .getinvite-form {
     margin-left: auto;
     margin-right: auto;
+    display: inline-block;
 
     .input {
         background-color: #fff;
@@ -998,6 +1064,7 @@ i.flag {
             padding: 15px 25px;
             font-size: 16px;
             color: #000;
+            outline: none;
         }
     }
 
@@ -1009,5 +1076,101 @@ i.flag {
         font-size: 16px;
         text-transform: uppercase;
         padding: 0 30px;
+    }
+}
+
+#goToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: $z-index-2;
+    border: none;
+    outline: none;
+    background-color: $primary-color;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+
+    @include border-radius(50px);
+
+    &:hover {
+        background-color: #5D6D7F;
+    }
+
+    .fa {
+        position: relative;
+        top: -2px;
+    }
+}
+
+.ui.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    color: #fff;
+    width: 300px;
+    background-color: #eff1f3 !important;
+    text-align: left;
+    z-index: $z-index-2;
+    font-weight: $font-weight-medium;
+
+    a {
+        color: $primary-color;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+    .top {
+        padding: 24px 36px;
+        overflow: hidden;
+        width: 100%;
+
+        .lang {
+            float: left;
+        }
+
+        .close {
+            float: right;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: $font-weight-regular;
+            cursor: pointer;
+
+            .fa {
+                font-size: 16px;
+            }
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    li {
+        display: block;
+        list-style-type: none;
+        border-top: 1px solid #e3e7ea;
+
+        a {
+            padding: 24px 36px;
+            display: block;
+            background-color: #eff1f3;
+            font-size: 17px;
+            font-weight: $font-weight-medium;
+
+            @include transition(all 0.2s ease-in-out);
+
+            &:hover {
+                background-color: #fff;
+            }
+        }
     }
 }
