@@ -154,11 +154,11 @@
     }
 
     &.primary {
-        color: $primary-color;
+        color: $secondary-color;
     }
 
     &.secondary {
-        color: $secondary-color;
+        color: $secondary-color-2;
     }
 }
 
@@ -665,7 +665,7 @@
     background-image: -moz-linear-gradient(transparent, #f8f8f8);
     background-image: -o-linear-gradient(transparent, #f8f8f8);
     background-image: linear-gradient(transparent, #f8f8f8);
-    color: $primary-color;
+    color: $secondary-color;
 }
 
 .hr-scroll-container {
@@ -685,7 +685,7 @@
 
     h4 {
         font-size: rem(28);
-        color: $primary-color;
+        color: $secondary-color;
         font-weight: $font-weight-regular;
         margin: 0px 0 10px 0;
     }
@@ -790,7 +790,7 @@ body.pop-up-slide-opened {
     position: fixed;
     top: 55%;
     left: 0;
-    background: $secondary-color;
+    background: $secondary-color-2;
     width: 30px;
     height: 104px;
     text-align: center;
@@ -936,7 +936,7 @@ body.pop-up-slide-opened {
 
     .ui.button {
         background: transparent;
-        color: $primary-color;
+        color: $secondary-color;
         border-top: 1px solid $gray;
         padding: rem(25);
         font-size: rem(16);

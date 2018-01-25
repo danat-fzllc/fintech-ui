@@ -18,7 +18,7 @@
                             &:before {
                                 right: -16px;
 
-                                @include triangle(5px, left, $primary-color);
+                                @include triangle(5px, left, $secondary-color);
 
                                 border-right-width: 10px;
                                 border-left-width: 0;

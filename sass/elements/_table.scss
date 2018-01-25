@@ -147,7 +147,7 @@
 
                                 @include border-radius(100px);
 
-                                background-color: $primary-color;
+                                background-color: $secondary-color;
                                 padding: 2px 5px;
                                 color: #fff;
                                 position: relative;
@@ -161,7 +161,7 @@
                                     top: 6px;
                                     display: inline-block;
 
-                                    @include triangle(5px, right, $primary-color);
+                                    @include triangle(5px, right, $secondary-color);
 
                                     border-left-width: 10px;
                                 }
