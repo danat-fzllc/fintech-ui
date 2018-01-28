@@ -3352,15 +3352,12 @@ i.flag.sa {
 }
 .fintech.landing header nav .menu {
   position: fixed;
-  width: 25px;
-  height: 23px;
+  width: 50px;
+  height: 40px;
   cursor: pointer;
   float: left;
-  top: 21px;
-  left: 14px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  top: 13px;
+  left: 0;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3374,15 +3371,15 @@ i.flag.sa {
   height: 3px;
   background-color: #fff;
   overflow: hidden;
-  left: 5px;
+  left: 18px;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .fintech.landing header nav .menu .bar:nth-child(1) {
-  top: 5px;
-  width: 9px;
+  top: 13px;
+  width: 10px;
 }
 .fintech.landing header nav .menu .bar:nth-child(1):after {
   -moz-transition-delay: 0.1s;
@@ -3391,7 +3388,7 @@ i.flag.sa {
   transition-delay: 0.1s;
 }
 .fintech.landing header nav .menu .bar:nth-child(2) {
-  top: 10px;
+  top: 18px;
   width: 15px;
 }
 .fintech.landing header nav .menu .bar:nth-child(2):after {
@@ -3401,7 +3398,7 @@ i.flag.sa {
   transition-delay: 0.2s;
 }
 .fintech.landing header nav .menu .bar:nth-child(3) {
-  top: 15px;
+  top: 23px;
   width: 12px;
 }
 .fintech.landing header nav .menu .bar:nth-child(3):after {

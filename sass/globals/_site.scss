@@ -2189,14 +2189,12 @@
 
                 .menu {
                     position: fixed;
-                    width: 25px;
-                    height: 23px;
+                    width: 50px;
+                    height: 40px;
                     cursor: pointer;
                     float: left;
-                    top: 21px;
-                    left: 14px;
-
-                    @include border-radius(2px);
+                    top: 13px;
+                    left: 0;
 
                     @include transition(all 0.2s ease-in-out);
 
@@ -2213,13 +2211,13 @@
                         height: 3px;
                         background-color: #fff;
                         overflow: hidden;
-                        left: 5px;
+                        left: 18px;
 
                         @include transition(all 0.2s ease-in-out);
 
                         &:nth-child(1) {
-                            top: 5px;
-                            width: 9px;
+                            top: 13px;
+                            width: 10px;
 
                             &:after {
                                 @include transition-delay(0.1s);
@@ -2227,7 +2225,7 @@
                         }
 
                         &:nth-child(2) {
-                            top: 10px;
+                            top: 18px;
                             width: 15px;
 
                             &:after {
@@ -2236,7 +2234,7 @@
                         }
 
                         &:nth-child(3) {
-                            top: 15px;
+                            top: 23px;
                             width: 12px;
 
                             &:after {
