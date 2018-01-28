@@ -2459,14 +2459,6 @@
                     .getinvite-form {
                         .input {
                             background-color: #DDE1E4;
-
-                            @include border-radius(3px 0 0 3px);
-                        }
-
-                        .button {
-                            margin-left: 0;
-
-                            @include border-radius(0 3px 3px 0);
                         }
                     }
 
@@ -2489,12 +2481,6 @@
                     max-width: 100%;
                     padding: 60px 0;
                     margin: 0 auto;
-
-                    /*.column {
-                        > .content {
-                            background-color: #f7f7f7;
-                        }
-                    }*/
                 }
             }
 
@@ -2527,8 +2513,6 @@
 
                 .getinvite-form {
                     .input {
-                        @include border-radius(5px 0 0 5px);
-
                         position: relative;
 
                         &:before {
@@ -2539,12 +2523,6 @@
 
                             @include use-sprite(envelope);
                         }
-                    }
-
-                    .button {
-                        margin: 0;
-
-                        @include border-radius(0 5px 5px 0);
                     }
                 }
             }

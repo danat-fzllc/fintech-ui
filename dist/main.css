@@ -1184,9 +1184,9 @@ i.flag.sa {
 }
 .getinvite-form .input {
   background-color: #fff;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 0 0 3px;
   height: 50px;
   width: 380px;
   line-height: 50px;
@@ -1204,12 +1204,14 @@ i.flag.sa {
 }
 .getinvite-form .button {
   float: left;
-  margin: 0 0 0 15px;
   height: 50px;
   line-height: 50px;
   font-size: 16px;
   text-transform: uppercase;
   padding: 0 30px;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 3px 3px 0;
 }
 
 #goToTop {
@@ -3603,15 +3605,6 @@ i.flag.sa {
 }
 .fintech.landing section.packages-info > .container .getinvite-form .input {
   background-color: #DDE1E4;
-  -moz-border-radius: 3px 0 0 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px 0 0 3px;
-}
-.fintech.landing section.packages-info > .container .getinvite-form .button {
-  margin-left: 0;
-  -moz-border-radius: 0 3px 3px 0;
-  -webkit-border-radius: 0;
-  border-radius: 0 3px 3px 0;
 }
 .fintech.landing section.packages-info > .container h3 {
   font-size: 27px;
@@ -3628,11 +3621,6 @@ i.flag.sa {
   max-width: 100%;
   padding: 60px 0;
   margin: 0 auto;
-  /*.column {
-      > .content {
-          background-color: #f7f7f7;
-      }
-  }*/
 }
 .fintech.landing section.demo {
   padding: 90px 0;
@@ -3661,9 +3649,6 @@ i.flag.sa {
   padding: 28px 0 21px;
 }
 .fintech.landing section.demo .getinvite-form .input {
-  -moz-border-radius: 5px 0 0 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px 0 0 5px;
   position: relative;
 }
 .fintech.landing section.demo .getinvite-form .input:before {
@@ -3687,12 +3672,6 @@ i.flag.sa {
     height: 49.5px;
     width: 46px;
   }
-}
-.fintech.landing section.demo .getinvite-form .button {
-  margin: 0;
-  -moz-border-radius: 0 5px 5px 0;
-  -webkit-border-radius: 0;
-  border-radius: 0 5px 5px 0;
 }
 .fintech.landing footer {
   background-color: #ffffff;
