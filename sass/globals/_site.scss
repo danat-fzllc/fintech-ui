@@ -1775,7 +1775,8 @@
                 }
 
                 > .ui {
-                    background-color: #c9d7e0;
+                    /*background-color: #c9d7e0;*/
+                    @include box-shadow(0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2));
 
                     .filter-by-company {
                         + .notification-filter-button {
