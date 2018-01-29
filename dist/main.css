@@ -1192,6 +1192,11 @@ i.flag.sa {
   line-height: 50px;
   float: left;
 }
+@media (max-width: 400px) {
+  .getinvite-form .input {
+    width: 150px;
+  }
+}
 .getinvite-form .input input {
   background: transparent;
   width: 100%;
@@ -3463,6 +3468,11 @@ i.flag.sa {
   height: 476px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .fintech.landing header .responsive-screens {
+    width: 90%;
+  }
+}
 .fintech.landing header .navigation {
   width: 150px;
   margin: 0 auto;
@@ -3506,7 +3516,7 @@ i.flag.sa {
   z-index: 0;
 }
 .fintech.landing section {
-  padding: 70px 0;
+  padding: 100px 0;
 }
 .fintech.landing section > h2 {
   text-transform: uppercase;
@@ -3547,13 +3557,42 @@ i.flag.sa {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
+  padding-bottom: 0;
 }
 .fintech.landing section.features .container {
   padding: 100px 0 200px;
 }
+@media (max-width: 768px) {
+  .fintech.landing section.features .container {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .fintech.landing section.features .container {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 768px) {
+  .fintech.landing section.features .row .line-draw {
+    display: none;
+  }
+  .fintech.landing section.features .row + .row {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .fintech.landing section.features .row + .row {
+    padding-top: 50px;
+  }
+}
 .fintech.landing section.features .row:nth-child(2n) aside {
   float: right;
   text-align: left;
+}
+@media (max-width: 400px) {
+  .fintech.landing section.features .row:nth-child(2n) aside {
+    text-align: center;
+  }
 }
 .fintech.landing section.features .row:nth-child(2n) figure {
   float: left;
@@ -3570,6 +3609,15 @@ i.flag.sa {
   text-align: right;
   margin-top: 35px;
 }
+@media (max-width: 400px) {
+  .fintech.landing section.features .row aside {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 35px;
+  }
+}
 .fintech.landing section.features .row aside h3 {
   font-size: 32px;
 }
@@ -3577,10 +3625,22 @@ i.flag.sa {
   padding: 34px 0;
   margin: 0;
 }
+@media (max-width: 400px) {
+  .fintech.landing section.features .row aside p {
+    padding: 20px 0;
+  }
+}
 .fintech.landing section.features .row figure {
   float: right;
   width: 47%;
   margin: 0;
+  position: relative;
+}
+@media (max-width: 400px) {
+  .fintech.landing section.features .row figure {
+    float: none;
+    width: 100%;
+  }
 }
 .fintech.landing section.features .row figure .browser {
   width: 100%;
@@ -3593,6 +3653,14 @@ i.flag.sa {
 }
 .fintech.landing section.features .row figure .browser .top {
   height: 34px;
+}
+@media (max-width: 400px) {
+  .fintech.landing section.features .row figure .browser .top {
+    height: 25px;
+  }
+  .fintech.landing section.features .row figure .browser .top .actions {
+    margin-top: 9px;
+  }
 }
 .fintech.landing section.features .row figure .browser .top .actions {
   margin: 13px 0 0 12px;
@@ -3617,14 +3685,11 @@ i.flag.sa {
 .fintech.landing section.features .row figure .browser .top .actions span:nth-child(3) {
   background-color: #4db848;
 }
-.fintech.landing section.features .row figure .browser .screenshot {
-  position: relative;
-}
 .fintech.landing section.features .row figure .browser .screenshot > img {
   width: 100%;
   display: block;
 }
-.fintech.landing section.features .row figure .browser .screenshot .magnifier {
+.fintech.landing section.features .row figure .magnifier {
   position: absolute;
   width: 235px;
   height: 235px;
@@ -3638,23 +3703,44 @@ i.flag.sa {
   -webkit-box-shadow: 3px 4px 32px -12px #000;
   box-shadow: 3px 4px 32px -12px #000;
   overflow: hidden;
-  top: 50%;
-  left: 10%;
+  bottom: -115px;
+  left: 14%;
   text-align: center;
 }
-.fintech.landing section.features .row figure .browser .screenshot .magnifier img {
+@media (max-width: 400px) {
+  .fintech.landing section.features .row figure .magnifier {
+    display: none;
+  }
+}
+.fintech.landing section.features .row figure .magnifier img {
   position: relative;
   left: -130px;
   top: -50px;
 }
+@media (max-width: 400px) {
+  .fintech.landing section.packages-info {
+    padding: 70px 0 40px;
+  }
+}
 .fintech.landing section.packages-info > .container {
   padding: 75px 0;
+}
+@media (max-width: 400px) {
+  .fintech.landing section.packages-info > .container {
+    padding: 45px 0 0;
+  }
 }
 .fintech.landing section.packages-info > .container .getinvite-form .input {
   background-color: #DDE1E4;
 }
 .fintech.landing section.packages-info > .container h3 {
   font-size: 27px;
+}
+@media (max-width: 768px) {
+  .fintech.landing section.packages-info > .container h3 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 .fintech.landing section.packages-info > .container h3 strong {
   color: #1D7CFF;
@@ -3664,10 +3750,29 @@ i.flag.sa {
   max-width: 685px;
   margin: 0 auto;
 }
+@media (max-width: 400px) {
+  .fintech.landing section.packages-info > .container p {
+    padding: 28px 0;
+  }
+}
 .fintech.landing section.packages-info .packages {
   max-width: 100%;
-  padding: 60px 0;
+  padding: 60px 0 0;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .fintech.landing section.packages-info .packages {
+    text-align: center;
+    display: block;
+  }
+  .fintech.landing section.packages-info .packages .column {
+    max-width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .fintech.landing section.packages-info .packages {
+    padding: 12px 0;
+  }
 }
 .fintech.landing section.demo {
   padding: 90px 0;
@@ -3726,6 +3831,11 @@ i.flag.sa {
   margin: 0 !important;
   font-size: 14px;
 }
+@media (max-width: 400px) {
+  .fintech.landing footer {
+    padding: 40px 0;
+  }
+}
 .fintech.landing footer a {
   color: #000;
 }
@@ -3738,6 +3848,13 @@ i.flag.sa {
   margin: 0;
   padding: 0;
   width: 225px;
+}
+@media (max-width: 400px) {
+  .fintech.landing footer ul {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 .fintech.landing footer ul li {
   padding: 8px 0;
