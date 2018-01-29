@@ -2910,7 +2910,16 @@ i.flag.sa {
   }
 }
 .fintech .grid.home .notification-feeds .column.custom .segment {
-  background-color: #fdffed;
+  background-color: #C4DDFF;
+                        /*.feed-head {
+                            color: #fff;
+                        }
+
+                        .time {
+                            color: #fff !important;
+
+                            @include opacity(0.5);
+                        }*/
 }
 .fintech .grid.home .notification-feeds .column.feed .segment {
   position: relative;

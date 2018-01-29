@@ -1634,7 +1634,17 @@
 
                 &.custom {
                     .segment {
-                        background-color: #fdffed;
+                        background-color: $custom-notification;
+
+                        /*.feed-head {
+                            color: #fff;
+                        }
+
+                        .time {
+                            color: #fff !important;
+
+                            @include opacity(0.5);
+                        }*/
                     }
                 }
 
