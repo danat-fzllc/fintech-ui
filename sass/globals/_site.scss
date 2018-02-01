@@ -638,6 +638,18 @@
                 font-weight: $font-weight-medium;
             }
 
+            .search.dropdown {
+                .dropdown.icon {
+                    color: $primary-color;
+                    cursor: default;
+                    pointer-events: none;
+                }
+
+                > input.search {
+                    padding: 2px 26px 2px 8px;
+                }
+            }
+
             .highlight {
                 color: $secondary-color-2;
 
@@ -1583,6 +1595,20 @@
         }
 
         .notification-feeds {
+            .login-page {
+                .header {
+                    text-align: left;
+                    font-weight: $font-weight-medium;
+                    font-size: rem(28);
+                }
+
+                &.form-container {
+                    .ui.segment {
+                        padding: 20px !important;
+                    }
+                }
+            }
+
             a.column {
                 .segment {
                     background: #fff;
@@ -1669,6 +1695,41 @@
                             top: -1px;
                             height: 10px;
                             line-height: 9px;
+                            padding-right: 12px;
+                        }
+
+                        .share {
+                            /*right: -5px;
+                            top: 5px;
+                            float: right;*/
+
+                            .options {
+                                border: 1px solid #ccc;
+                            }
+
+                            .fa-share {
+                                @include opacity(0.6);
+
+                                &:hover {
+                                    @include opacity(1);
+                                }
+                            }
+
+                            .facebook {
+                                color: $facebook;
+                            }
+
+                            .twitter {
+                                color: $twitter;
+                            }
+
+                            .linkedin {
+                                color: $linkedin;
+                            }
+
+                            .email {
+                                color: $envelope;
+                            }
                         }
 
                         p {
@@ -1729,18 +1790,18 @@
                     }
 
                     .info {
-                        padding-top: 5px;
+                        padding-top: 8px;
                     }
 
                     .details {
-                        font-weight: normal;
                         font-size: 1rem;
-                        padding-left: 8px;
-                        display: none;
+
+                        /*padding-left: 8px;*/
                         font-weight: $font-weight-regular;
                         display: inline-block;
-                        border-left: 1px solid #bfbfbf;
-                        line-height: 12px;
+
+                        /*border-left: 1px solid #bfbfbf;
+                        line-height: 12px;*/
 
                         &:hover {
                             color: $secondary-color-2;
@@ -1857,7 +1918,7 @@
                     @include border-radius(3px);
 
                     i {
-                        font-size: rem(20);
+                        font-size: rem(18);
                         font-style: normal;
                         height: 0;
                         width: 0;
@@ -1865,7 +1926,7 @@
                         line-height: inherit;
                         font-family: arial;
                         position: relative;
-                        top: 3px;
+                        top: 2px;
                     }
 
                     &:hover {
@@ -2299,10 +2360,67 @@
             }
 
             .responsive-screens {
-                background: url(themes/default/assets/images/responsive-screen.png) no-repeat 10px 0;
                 width: 1050px;
                 height: 476px;
                 margin: 0 auto;
+                position: relative;
+
+                .macbook {
+                    width: 863px;
+                    height: 481px;
+                    background: url(themes/default/assets/images/screens/macbook_pro.png) no-repeat 0 0;
+                    right: 90px;
+                    position: absolute;
+                    z-index: 1;
+                }
+
+                .ipad {
+                    width: 224px;
+                    height: 303px;
+                    background: url(themes/default/assets/images/screens/ipad.png) no-repeat 0 0;
+                    right: 752px;
+                    position: absolute;
+                    top: 137px;
+                    z-index: 2;
+                }
+
+                .iphone {
+                    width: 93px;
+                    height: 197px;
+                    background: url(themes/default/assets/images/screens/iphone.png) no-repeat 0 0;
+                    right: 947px;
+                    position: absolute;
+                    top: 246px;
+                    z-index: 3;
+                }
+
+                .desktop {
+                    /*clip: rect(0px, 567px, 355px, 0);*/
+                    height: 355px;
+                    width: 567px;
+                    position: absolute;
+                    right: 240px;
+                    top: 33px;
+                    z-index: 1;
+                }
+
+                .tablet {
+                    height: 248px;
+                    width: 186px;
+                    position: absolute;
+                    right: 770px;
+                    top: 160px;
+                    z-index: 2;
+                }
+
+                .mobile {
+                    height: 138px;
+                    width: 78px;
+                    position: absolute;
+                    right: 954px;
+                    top: 273px;
+                    z-index: 3;
+                }
 
                 @include breakpoint(upto-tablets) {
                     width: 90%;

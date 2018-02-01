@@ -1181,3 +1181,15 @@ i.flag {
         }
     }
 }
+
+.bx-wrapper {
+    background: transparent;
+    border: 0;
+    z-index: 1;
+
+    @include box-shadow(none);
+
+    .item {
+        height: 476px;
+    }
+}

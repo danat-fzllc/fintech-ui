@@ -283,3 +283,7 @@ $(window).scroll(function(){
        $('#mainMenu').removeClass('menu-bg');
     }
 });
+
+$(document).ready(function(){
+      $('.bx-slider').bxSlider();
+    });

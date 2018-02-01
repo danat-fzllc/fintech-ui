@@ -1307,6 +1307,18 @@ i.flag.sa {
   background-color: #fff;
 }
 
+.bx-wrapper {
+  background: transparent;
+  border: 0;
+  z-index: 1;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.bx-wrapper .item {
+  height: 476px;
+}
+
 .ico {
   display: inline-block;
   /*    &.no-result {
@@ -2076,6 +2088,14 @@ i.flag.sa {
 }
 .fintech .question[class*="page"] h1 .bold, .fintech .question[class*="page"] h1 .ui.table thead th, .fintech .ui.table thead .question[class*="page"] h1 th, .fintech > .top .question[class*="page"] h1 .outer .language, .fintech > .top .outer .question[class*="page"] h1 .language {
   font-weight: 700;
+}
+.fintech .question[class*="page"] h1 .search.dropdown .dropdown.icon {
+  color: #011B37;
+  cursor: default;
+  pointer-events: none;
+}
+.fintech .question[class*="page"] h1 .search.dropdown > input.search {
+  padding: 2px 26px 2px 8px;
 }
 .fintech .question[class*="page"] h1 .highlight {
   color: #FCAF17;
@@ -2873,6 +2893,14 @@ i.flag.sa {
 .fintech .grid.home .watchlist .row .value .change.no-change {
   color: #333;
 }
+.fintech .grid.home .notification-feeds .login-page .header {
+  text-align: left;
+  font-weight: 700;
+  font-size: 2.15385rem;
+}
+.fintech .grid.home .notification-feeds .login-page.form-container .ui.segment {
+  padding: 20px !important;
+}
 .fintech .grid.home .notification-feeds a.column .segment {
   background: #fff;
   cursor: pointer;
@@ -2941,6 +2969,35 @@ i.flag.sa {
   top: -1px;
   height: 10px;
   line-height: 9px;
+  padding-right: 12px;
+}
+.fintech .grid.home .notification-feeds .column.feed .segment .share {
+  /*right: -5px;
+  top: 5px;
+  float: right;*/
+}
+.fintech .grid.home .notification-feeds .column.feed .segment .share .options {
+  border: 1px solid #ccc;
+}
+.fintech .grid.home .notification-feeds .column.feed .segment .share .fa-share {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+.fintech .grid.home .notification-feeds .column.feed .segment .share .fa-share:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.fintech .grid.home .notification-feeds .column.feed .segment .share .facebook {
+  color: #3b5998;
+}
+.fintech .grid.home .notification-feeds .column.feed .segment .share .twitter {
+  color: #0084b4;
+}
+.fintech .grid.home .notification-feeds .column.feed .segment .share .linkedin {
+  color: #0e76a8;
+}
+.fintech .grid.home .notification-feeds .column.feed .segment .share .email {
+  color: #000;
 }
 .fintech .grid.home .notification-feeds .column.feed .segment p {
   margin: 5px 0 0;
@@ -2991,17 +3048,15 @@ i.flag.sa {
   font-weight: normal;
 }
 .fintech .grid.home .notification-feeds .column.feed .info {
-  padding-top: 5px;
+  padding-top: 8px;
 }
 .fintech .grid.home .notification-feeds .column.feed .details {
-  font-weight: normal;
   font-size: 1rem;
-  padding-left: 8px;
-  display: none;
+  /*padding-left: 8px;*/
   font-weight: 500;
   display: inline-block;
-  border-left: 1px solid #bfbfbf;
-  line-height: 12px;
+  /*border-left: 1px solid #bfbfbf;
+  line-height: 12px;*/
 }
 .fintech .grid.home .notification-feeds .column.feed .details:hover {
   color: #FCAF17;
@@ -3096,7 +3151,7 @@ i.flag.sa {
   border-radius: 3px;
 }
 .fintech .grid.home .notification-feeds .notification-title-holder .button.clear i {
-  font-size: 1.53846rem;
+  font-size: 1.38462rem;
   font-style: normal;
   height: 0;
   width: 0;
@@ -3104,7 +3159,7 @@ i.flag.sa {
   line-height: inherit;
   font-family: arial;
   position: relative;
-  top: 3px;
+  top: 2px;
 }
 .fintech .grid.home .notification-feeds .notification-title-holder .button.clear:hover {
   background-color: #f00;
@@ -3475,10 +3530,61 @@ i.flag.sa {
   margin: 56px auto;
 }
 .fintech.landing header .responsive-screens {
-  background: url(themes/default/assets/images/responsive-screen.png) no-repeat 10px 0;
   width: 1050px;
   height: 476px;
   margin: 0 auto;
+  position: relative;
+}
+.fintech.landing header .responsive-screens .macbook {
+  width: 863px;
+  height: 481px;
+  background: url(themes/default/assets/images/screens/macbook_pro.png) no-repeat 0 0;
+  right: 90px;
+  position: absolute;
+  z-index: 1;
+}
+.fintech.landing header .responsive-screens .ipad {
+  width: 224px;
+  height: 303px;
+  background: url(themes/default/assets/images/screens/ipad.png) no-repeat 0 0;
+  right: 752px;
+  position: absolute;
+  top: 137px;
+  z-index: 2;
+}
+.fintech.landing header .responsive-screens .iphone {
+  width: 93px;
+  height: 197px;
+  background: url(themes/default/assets/images/screens/iphone.png) no-repeat 0 0;
+  right: 947px;
+  position: absolute;
+  top: 246px;
+  z-index: 3;
+}
+.fintech.landing header .responsive-screens .desktop {
+  /*clip: rect(0px, 567px, 355px, 0);*/
+  height: 355px;
+  width: 567px;
+  position: absolute;
+  right: 240px;
+  top: 33px;
+  z-index: 1;
+}
+.fintech.landing header .responsive-screens .tablet {
+  height: 248px;
+  width: 186px;
+  position: absolute;
+  right: 770px;
+  top: 160px;
+  z-index: 2;
+}
+.fintech.landing header .responsive-screens .mobile {
+  height: 138px;
+  width: 78px;
+  position: absolute;
+  right: 954px;
+  top: 273px;
+  z-index: 3;
 }
 @media (max-width: 768px) {
   .fintech.landing header .responsive-screens {
