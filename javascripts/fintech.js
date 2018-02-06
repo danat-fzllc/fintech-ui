@@ -284,6 +284,66 @@ $(window).scroll(function(){
     }
 });
 
-$(document).ready(function(){
-      $('.bx-slider').bxSlider();
+
+// declare global
+var slider_array = new Array();
+
+
+ 
+    // launch bxslider
+    $('.bx-slider').each(function(i){
+        slider_array[i] = $(this).bxSlider({controls:false});
     });
+       $('.bx-slider').bxSlider({
+      pagerCustom: '.customconrols'
+    });
+    
+    // bind controls on custom controls, and run functions on every slider
+    $('.bxslider-controls a').bind('click', function(e) {
+      e.preventDefault();
+    
+      if($(this).hasClass('pull-left')) {
+        $.each(slider_array, function(i,elem){
+          elem.goToPrevSlide();  
+        });
+    
+      } else if($(this).hasClass('pull-right')) {
+        $.each(slider_array, function(i,elem){
+          elem.goToNextSlide();  
+        });
+      }
+    
+    });
+
+    
+// var mySlider1;
+// var mySlider2;
+// var mySlider3;
+
+
+//     mySlider1 = $('.mobile_left_mble').bxSlider({
+//         pager:false
+//     });
+    
+//     mySlider2 = $('.mobile_right_mble').bxSlider({
+//         pager:false
+//     });
+    
+//     mySlider3 = $('.text_btn').bxSlider({
+//         pager:false
+//     });
+
+//     $('.pager-item').click(function(){
+
+//         var toSlide = $(this).attr('data-slide');
+//         console.log(toSlide);
+//         mySlider1.goToSlide(toSlide);
+//         mySlider2.goToSlide(toSlide);
+//         mySlider3.goToSlide(toSlide);
+//     });
+
+
+
+
+
+

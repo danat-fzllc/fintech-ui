@@ -2365,13 +2365,21 @@
                 margin: 0 auto;
                 position: relative;
 
+                .bx-default-pager {
+                    display: none;
+                }
+
                 .macbook {
-                    width: 863px;
+                    width: 753px;
                     height: 481px;
-                    background: url(themes/default/assets/images/screens/macbook_pro.png) no-repeat 0 0;
+                    background: url(themes/default/assets/images/screens/macbook_pro.png) no-repeat center 0;
                     right: 90px;
                     position: absolute;
                     z-index: 1;
+
+                    .banner-holder {
+                        margin: 32px 92px;
+                    }
                 }
 
                 .ipad {
@@ -2382,6 +2390,10 @@
                     position: absolute;
                     top: 137px;
                     z-index: 2;
+
+                    .banner-holder {
+                        margin: 20px;
+                    }
                 }
 
                 .iphone {
@@ -2392,34 +2404,41 @@
                     position: absolute;
                     top: 246px;
                     z-index: 3;
+
+                    .banner-holder {
+                        margin: 15px 10px;
+                    }
                 }
 
                 .desktop {
                     /*clip: rect(0px, 567px, 355px, 0);*/
                     height: 355px;
                     width: 567px;
-                    position: absolute;
+
+                    /*position: absolute;
                     right: 240px;
                     top: 33px;
-                    z-index: 1;
+                    z-index: 1;*/
                 }
 
                 .tablet {
                     height: 248px;
                     width: 186px;
-                    position: absolute;
+
+                    /*position: absolute;
                     right: 770px;
                     top: 160px;
-                    z-index: 2;
+                    z-index: 2;*/
                 }
 
                 .mobile {
                     height: 138px;
                     width: 78px;
-                    position: absolute;
-                    right: 954px;
-                    top: 273px;
-                    z-index: 3;
+
+                    /* position: absolute;
+                     right: 954px;
+                     top: 273px;
+                     z-index: 3;*/
                 }
 
                 @include breakpoint(upto-tablets) {
@@ -2431,6 +2450,8 @@
                 width: 150px;
                 margin: 0 auto;
                 font-size: 26px;
+                position: relative;
+                z-index: 99;
 
                 > a {
                     color: $secondary-color;
