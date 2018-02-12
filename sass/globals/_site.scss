@@ -2373,7 +2373,7 @@
                     width: 753px;
                     height: 481px;
                     background: url(themes/default/assets/images/screens/macbook_pro.png) no-repeat center 0;
-                    right: 90px;
+                    right: 55px;
                     position: absolute;
                     z-index: 1;
 
@@ -2386,7 +2386,7 @@
                     width: 224px;
                     height: 303px;
                     background: url(themes/default/assets/images/screens/ipad.png) no-repeat 0 0;
-                    right: 752px;
+                    right: 700px;
                     position: absolute;
                     top: 137px;
                     z-index: 2;
@@ -2400,7 +2400,7 @@
                     width: 93px;
                     height: 197px;
                     background: url(themes/default/assets/images/screens/iphone.png) no-repeat 0 0;
-                    right: 947px;
+                    right: 900px;
                     position: absolute;
                     top: 246px;
                     z-index: 3;
@@ -2732,6 +2732,28 @@
                     .getinvite-form {
                         .input {
                             background-color: #DDE1E4;
+
+                            ::-webkit-input-placeholder {
+                                /* Chrome */
+                                color: lighten($black, 50%);
+                            }
+
+                            :-ms-input-placeholder {
+                                /* IE 10+ */
+                                color: lighten($black, 50%);
+                            }
+
+                            ::-moz-placeholder {
+                                /* Firefox 19+ */
+                                color: lighten($black, 50%);
+                                opacity: 1;
+                            }
+
+                            :-moz-placeholder {
+                                /* Firefox 4 - 18 */
+                                color: lighten($black, 50%);
+                                opacity: 1;
+                            }
                         }
                     }
 
@@ -3092,6 +3114,90 @@
                     color: $red;
                 }
             }
+        }
+    }
+}
+
+.chart-bg-wrapper {
+    width: 100%;
+    height: 1330px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.value-animation-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 400px;
+    z-index: -1;
+
+    .bar {
+        width: 2px;
+        background-color: #013568;
+        margin-top: 200px;
+        height: 0px;
+        position: absolute;
+        transform: rotatex(180deg);
+        transform-origin: top;
+
+        .value {
+            background-color: #013568;
+            border-radius: 3px;
+            color: #fff;
+            padding: 3px 5px;
+            position: absolute;
+            bottom: -30px;
+            left: -20px;
+            transform: rotatex(180deg);
+
+            &:after {
+                content: '';
+                border-width: 5px 5px 0px 5px;
+                border-style: solid;
+                border-color: #013568 transparent transparent transparent;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                width: 5px;
+                margin: 0 auto;
+            }
+        }
+
+        &.one {
+            left: 7.7%;
+            -webkit-animation: bar-height 5s infinite 1s;
+            animation: bar-height 5s infinite 1s;
+            -webkit-animation-delay: 5s infinite 1s;
+        }
+
+        &.two {
+            left: 27%;
+            -webkit-animation: bar-height 5s infinite 3s;
+            animation: bar-height 5s infinite 3s;
+            -webkit-animation-delay: 5s infinite 3s;
+        }
+
+        &.three {
+            left: 50%;
+            -webkit-animation: bar-height 5s infinite 5s;
+            animation: bar-height 5s infinite 5s;
+            -webkit-animation-delay: 5s infinite 5s;
+        }
+
+        &.four {
+            left: 77%;
+            -webkit-animation: bar-height 5s infinite 7s;
+            animation: bar-height 5s infinite 7s;
+            -webkit-animation-delay: 5s infinite 7s;
+        }
+
+        &.five {
+            left: 86%;
+            -webkit-animation: bar-height 5s infinite 9s;
+            animation: bar-height 5s infinite 9s;
+            -webkit-animation-delay: 5s infinite 9s;
         }
     }
 }

@@ -93,3 +93,34 @@ form {
 footer {
     margin-top: 24px !important;
 }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bar-height {
+    0% {
+        hieght: 0px;
+    }
+
+    70% {
+        height: 400px;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bar-height {
+    0% {
+        hieght: 0px;
+    }
+
+    70% {
+        height: 400px;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
