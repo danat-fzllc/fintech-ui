@@ -1089,7 +1089,7 @@ i.flag {
 #goToTop {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 8px;
     right: 25px;
     z-index: $z-index-2;
     border: none;
@@ -1186,10 +1186,9 @@ i.flag {
     background: transparent;
     border: 0;
     z-index: 1;
+    margin-bottom: 0px;
 
     @include box-shadow(none);
 
-    .item {
-        height: 476px;
-    }
+    .item {}
 }

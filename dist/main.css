@@ -187,6 +187,28 @@ footer {
     opacity: 0;
   }
 }
+@-webkit-keyframes bar-fade {
+  0% {
+    opacity: 0px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bar-fade {
+  0% {
+    opacity: 0px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .column > h2 {
   padding-left: 20px;
   font-weight: 500;
@@ -1248,7 +1270,7 @@ i.flag.sa {
 #goToTop {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 8px;
   right: 25px;
   z-index: 2;
   border: none;
@@ -1336,12 +1358,10 @@ i.flag.sa {
   background: transparent;
   border: 0;
   z-index: 1;
+  margin-bottom: 0px;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-.bx-wrapper .item {
-  height: 476px;
 }
 
 .ico {
@@ -3560,14 +3580,11 @@ i.flag.sa {
   margin: 0 auto;
   position: relative;
 }
-.fintech.landing header .responsive-screens .bx-default-pager {
-  display: none;
-}
 .fintech.landing header .responsive-screens .macbook {
   width: 753px;
   height: 481px;
   background: url(themes/default/assets/images/screens/macbook_pro.png) no-repeat center 0;
-  right: 55px;
+  right: 95px;
   position: absolute;
   z-index: 1;
 }
@@ -3578,7 +3595,7 @@ i.flag.sa {
   width: 224px;
   height: 303px;
   background: url(themes/default/assets/images/screens/ipad.png) no-repeat 0 0;
-  right: 700px;
+  right: 740px;
   position: absolute;
   top: 137px;
   z-index: 2;
@@ -3590,7 +3607,7 @@ i.flag.sa {
   width: 93px;
   height: 197px;
   background: url(themes/default/assets/images/screens/iphone.png) no-repeat 0 0;
-  right: 900px;
+  right: 90px;
   position: absolute;
   top: 246px;
   z-index: 3;
@@ -3874,6 +3891,9 @@ i.flag.sa {
   left: -130px;
   top: -50px;
 }
+.fintech.landing section.features .row .line-draw {
+  height: 100px;
+}
 @media (max-width: 400px) {
   .fintech.landing section.packages-info {
     padding: 70px 0 40px;
@@ -4002,7 +4022,7 @@ i.flag.sa {
 }
 .fintech.landing footer {
   background-color: #ffffff;
-  padding: 80px 0 40px;
+  padding: 0px 0 20px;
   margin: 0 !important;
   font-size: 14px;
 }
@@ -4043,7 +4063,7 @@ i.flag.sa {
 .fintech.landing footer .copy {
   text-align: center;
   font-size: 13px;
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
   color: #7D8A99;
 }
 .fintech.landing footer .copy .social {
@@ -4248,12 +4268,13 @@ i.flag.sa {
 }
 .value-animation-wrapper .bar {
   width: 2px;
+  height: 300px;
   background-color: #013568;
   margin-top: 200px;
-  height: 0px;
   position: absolute;
   transform: rotatex(180deg);
   transform-origin: top;
+  opacity: 0;
 }
 .value-animation-wrapper .bar .value {
   background-color: #013568;
@@ -4279,33 +4300,33 @@ i.flag.sa {
 }
 .value-animation-wrapper .bar.one {
   left: 7.7%;
-  -webkit-animation: bar-height 5s infinite 1s;
-  animation: bar-height 5s infinite 1s;
-  -webkit-animation-delay: 5s infinite 1s;
+  -webkit-animation: bar-fade 10s infinite 1s;
+  animation: bar-fade 10s infinite 1s;
+  -webkit-animation-delay: 10s infinite 1s;
 }
 .value-animation-wrapper .bar.two {
   left: 27%;
-  -webkit-animation: bar-height 5s infinite 3s;
-  animation: bar-height 5s infinite 3s;
-  -webkit-animation-delay: 5s infinite 3s;
+  -webkit-animation: bar-fade 10s infinite 3s;
+  animation: bar-fade 10s infinite 3s;
+  -webkit-animation-delay: 10s infinite 3s;
 }
 .value-animation-wrapper .bar.three {
   left: 50%;
-  -webkit-animation: bar-height 5s infinite 5s;
-  animation: bar-height 5s infinite 5s;
-  -webkit-animation-delay: 5s infinite 5s;
+  -webkit-animation: bar-fade 10s infinite 5s;
+  animation: bar-fade 10s infinite 5s;
+  -webkit-animation-delay: 10s infinite 5s;
 }
 .value-animation-wrapper .bar.four {
   left: 77%;
-  -webkit-animation: bar-height 5s infinite 7s;
-  animation: bar-height 5s infinite 7s;
-  -webkit-animation-delay: 5s infinite 7s;
+  -webkit-animation: bar-fade 10s infinite 7s;
+  animation: bar-fade 10s infinite 7s;
+  -webkit-animation-delay: 10s infinite 7s;
 }
 .value-animation-wrapper .bar.five {
   left: 86%;
-  -webkit-animation: bar-height 5s infinite 9s;
-  animation: bar-height 5s infinite 9s;
-  -webkit-animation-delay: 5s infinite 9s;
+  -webkit-animation: bar-fade 10s infinite 9s;
+  animation: bar-fade 10s infinite 9s;
+  -webkit-animation-delay: 10s infinite 9s;
 }
 
 /*Elements - Individual site elements*/

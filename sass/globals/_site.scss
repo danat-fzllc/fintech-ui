@@ -2365,15 +2365,11 @@
                 margin: 0 auto;
                 position: relative;
 
-                .bx-default-pager {
-                    display: none;
-                }
-
                 .macbook {
                     width: 753px;
                     height: 481px;
                     background: url(themes/default/assets/images/screens/macbook_pro.png) no-repeat center 0;
-                    right: 55px;
+                    right: 95px;
                     position: absolute;
                     z-index: 1;
 
@@ -2386,7 +2382,7 @@
                     width: 224px;
                     height: 303px;
                     background: url(themes/default/assets/images/screens/ipad.png) no-repeat 0 0;
-                    right: 700px;
+                    right: 740px;
                     position: absolute;
                     top: 137px;
                     z-index: 2;
@@ -2400,7 +2396,7 @@
                     width: 93px;
                     height: 197px;
                     background: url(themes/default/assets/images/screens/iphone.png) no-repeat 0 0;
-                    right: 900px;
+                    right: 90px;
                     position: absolute;
                     top: 246px;
                     z-index: 3;
@@ -2712,6 +2708,10 @@
                             }
                         }
                     }
+
+                    .line-draw {
+                        height: 100px;
+                    }
                 }
             }
 
@@ -2849,7 +2849,7 @@
 
         footer {
             background-color: #ffffff;
-            padding: 80px 0 40px;
+            padding: 0px 0 20px;
             margin: 0 !important;
             font-size: 14px;
 
@@ -2895,7 +2895,7 @@
             .copy {
                 text-align: center;
                 font-size: 13px;
-                padding: 40px 0 0 0;
+                padding: 20px 0 0 0;
                 color: #7D8A99;
 
                 .social {
@@ -3134,12 +3134,13 @@
 
     .bar {
         width: 2px;
+        height: 300px;
         background-color: #013568;
         margin-top: 200px;
-        height: 0px;
         position: absolute;
         transform: rotatex(180deg);
         transform-origin: top;
+        opacity: 0;
 
         .value {
             background-color: #013568;
@@ -3167,37 +3168,37 @@
 
         &.one {
             left: 7.7%;
-            -webkit-animation: bar-height 5s infinite 1s;
-            animation: bar-height 5s infinite 1s;
-            -webkit-animation-delay: 5s infinite 1s;
+            -webkit-animation: bar-fade 10s infinite 1s;
+            animation: bar-fade 10s infinite 1s;
+            -webkit-animation-delay: 10s infinite 1s;
         }
 
         &.two {
             left: 27%;
-            -webkit-animation: bar-height 5s infinite 3s;
-            animation: bar-height 5s infinite 3s;
-            -webkit-animation-delay: 5s infinite 3s;
+            -webkit-animation: bar-fade 10s infinite 3s;
+            animation: bar-fade 10s infinite 3s;
+            -webkit-animation-delay: 10s infinite 3s;
         }
 
         &.three {
             left: 50%;
-            -webkit-animation: bar-height 5s infinite 5s;
-            animation: bar-height 5s infinite 5s;
-            -webkit-animation-delay: 5s infinite 5s;
+            -webkit-animation: bar-fade 10s infinite 5s;
+            animation: bar-fade 10s infinite 5s;
+            -webkit-animation-delay: 10s infinite 5s;
         }
 
         &.four {
             left: 77%;
-            -webkit-animation: bar-height 5s infinite 7s;
-            animation: bar-height 5s infinite 7s;
-            -webkit-animation-delay: 5s infinite 7s;
+            -webkit-animation: bar-fade 10s infinite 7s;
+            animation: bar-fade 10s infinite 7s;
+            -webkit-animation-delay: 10s infinite 7s;
         }
 
         &.five {
             left: 86%;
-            -webkit-animation: bar-height 5s infinite 9s;
-            animation: bar-height 5s infinite 9s;
-            -webkit-animation-delay: 5s infinite 9s;
+            -webkit-animation: bar-fade 10s infinite 9s;
+            animation: bar-fade 10s infinite 9s;
+            -webkit-animation-delay: 10s infinite 9s;
         }
     }
 }

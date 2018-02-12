@@ -284,36 +284,42 @@ $(window).scroll(function(){
     }
 });
 
+$('.bx-slider').bxSlider({
+  auto: true,
+  pager: false,
+  controls:false
+});
+   
 
 // declare global
-var slider_array = new Array();
+// var slider_array = new Array();
 
 
  
-    // launch bxslider
-    $('.bx-slider').each(function(i){
-        slider_array[i] = $(this).bxSlider({controls:false});
-    });
-       $('.bx-slider').bxSlider({
-      pagerCustom: '.customconrols'
-    });
+//     // launch bxslider
+//     $('.bx-slider').each(function(i){
+//         slider_array[i] = $(this).bxSlider({controls:false});
+//     });
+//        $('.bx-slider').bxSlider({
+//       pagerCustom: '.customconrols'
+//     });
     
-    // bind controls on custom controls, and run functions on every slider
-    $('.bxslider-controls a').bind('click', function(e) {
-      e.preventDefault();
+//     // bind controls on custom controls, and run functions on every slider
+//     $('.bxslider-controls a').bind('click', function(e) {
+//       e.preventDefault();
     
-      if($(this).hasClass('pull-left')) {
-        $.each(slider_array, function(i,elem){
-          elem.goToPrevSlide();  
-        });
+//       if($(this).hasClass('pull-left')) {
+//         $.each(slider_array, function(i,elem){
+//           elem.goToPrevSlide();  
+//         });
     
-      } else if($(this).hasClass('pull-right')) {
-        $.each(slider_array, function(i,elem){
-          elem.goToNextSlide();  
-        });
-      }
+//       } else if($(this).hasClass('pull-right')) {
+//         $.each(slider_array, function(i,elem){
+//           elem.goToNextSlide();  
+//         });
+//       }
     
-    });
+//     });
 
     
 // var mySlider1;

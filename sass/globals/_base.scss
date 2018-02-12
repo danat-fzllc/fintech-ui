@@ -124,3 +124,31 @@ footer {
         opacity: 0;
     }
 }
+
+@-webkit-keyframes bar-fade {
+    0% {
+        opacity: 0px;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bar-fade {
+    0% {
+        opacity: 0px;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
