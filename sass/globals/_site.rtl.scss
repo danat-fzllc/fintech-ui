@@ -605,7 +605,7 @@
         padding: 12px 0;
 
         @include breakpoint(desktops) {
-            background-color: $secondary-color;
+            background-color: $question-head;
 
             @include box-shadow(0 0 20px -10px #000);
         }
@@ -1577,6 +1577,20 @@
         }
 
         .notification-feeds {
+            .login-page {
+                .header {
+                    text-align: right;
+                    font-weight: $font-weight-medium;
+                    font-size: rem(28);
+                }
+
+                &.form-container {
+                    .ui.segment {
+                        padding: 20px !important;
+                    }
+                }
+            }
+
             a.column {
                 .segment {
                     background: #fff;
@@ -1778,7 +1792,7 @@
                 }
 
                 > .ui {
-                    background-color: #c9d7e0;
+                    @include box-shadow(0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2));
 
                     .filter-by-company {
                         + .notification-filter-button {
@@ -1845,6 +1859,34 @@
 
                         input.search {
                             margin: 0;
+                        }
+                    }
+
+                    .button.clear {
+                        background: rgba(0, 0, 0, 0.4);
+                        color: #fff;
+                        font-weight: normal;
+                        padding: 0px 5px 2px;
+                        line-height: 15px;
+                        margin: 5px 0 0;
+                        display: none;
+
+                        @include border-radius(3px);
+
+                        i {
+                            font-size: rem(18);
+                            font-style: normal;
+                            height: 0;
+                            width: 0;
+                            padding: 0;
+                            line-height: inherit;
+                            font-family: arial;
+                            position: relative;
+                            top: 2px;
+                        }
+
+                        &:hover {
+                            background-color: #f00;
                         }
                     }
                 }
