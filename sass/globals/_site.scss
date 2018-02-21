@@ -2369,7 +2369,7 @@
                     width: 753px;
                     height: 481px;
                     background: url(themes/default/assets/images/screens/macbook_pro.png) no-repeat center 0;
-                    right: 95px;
+                    right: 175px;
                     position: absolute;
                     z-index: 1;
 
@@ -2386,6 +2386,7 @@
                     position: absolute;
                     top: 137px;
                     z-index: 2;
+                    display: none;
 
                     .banner-holder {
                         margin: 20px;
@@ -2396,7 +2397,7 @@
                     width: 93px;
                     height: 197px;
                     background: url(themes/default/assets/images/screens/iphone.png) no-repeat 0 0;
-                    right: 90px;
+                    right: 165px;
                     position: absolute;
                     top: 246px;
                     z-index: 3;
