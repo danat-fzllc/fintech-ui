@@ -2265,8 +2265,9 @@
                     height: 40px;
                     cursor: pointer;
                     float: left;
-                    top: 13px;
-                    left: 0;
+                    top: 40px;
+                    left: 20;
+                    z-index: 9;
 
                     @include transition(all 0.2s ease-in-out);
 
@@ -2340,6 +2341,15 @@
                     float: left;
                     display: inline-block;
                     margin-left: 38px;
+                }
+
+                .logo-landing {
+                    @include use-sprite(logo-landing);
+
+                    float: left;
+                    display: inline-block;
+                    margin-left: 50px;
+                    margin-top: 15px;
                 }
 
                 .lang {
