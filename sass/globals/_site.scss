@@ -2265,7 +2265,7 @@
                     height: 40px;
                     cursor: pointer;
                     float: left;
-                    top: 40px;
+                    top: 48px;
                     left: 20;
                     z-index: 9;
 
@@ -2348,13 +2348,16 @@
 
                     float: left;
                     display: inline-block;
-                    margin-left: 50px;
+                    margin-left: 70px;
                     margin-top: 15px;
                 }
 
                 .lang {
                     float: right;
                     color: white;
+                    position: relative;
+                    top: 38px;
+                    right: 20px;
                 }
             }
 
