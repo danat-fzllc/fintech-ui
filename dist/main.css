@@ -3424,7 +3424,7 @@ i.flag.sa {
   font-size: 17px;
 }
 .fintech.landing header {
-  height: 960px;
+  height: 1022px;
   text-align: center;
   background: #011B37 url(themes/default/assets/images/Landing-V05-header.jpg) no-repeat center top;
   color: #fff;
@@ -4290,7 +4290,7 @@ i.flag.sa {
 .value-animation-wrapper {
   width: 100%;
   position: absolute;
-  bottom: 535px;
+  bottom: 600px;
   z-index: -1;
 }
 .value-animation-wrapper .bar {
