@@ -2258,14 +2258,16 @@
 
             nav {
                 padding: 20px;
+                position: relative;
+                z-index: 2;
 
                 .menu {
                     position: fixed;
                     width: 50px;
-                    height: 40px;
+                    height: 44px;
                     cursor: pointer;
                     float: left;
-                    top: 48px;
+                    top: 42px;
                     left: 20;
                     z-index: 9;
 
@@ -2284,13 +2286,13 @@
                         height: 3px;
                         background-color: #fff;
                         overflow: hidden;
-                        left: 18px;
+                        left: 16px;
 
                         @include transition(all 0.2s ease-in-out);
 
                         &:nth-child(1) {
                             top: 13px;
-                            width: 10px;
+                            width: 14px;
 
                             &:after {
                                 @include transition-delay(0.1s);
@@ -2298,8 +2300,8 @@
                         }
 
                         &:nth-child(2) {
-                            top: 18px;
-                            width: 15px;
+                            top: 21px;
+                            width: 22px;
 
                             &:after {
                                 @include transition-delay(0.2s);
@@ -2307,8 +2309,8 @@
                         }
 
                         &:nth-child(3) {
-                            top: 23px;
-                            width: 12px;
+                            top: 29px;
+                            width: 18px;
 
                             &:after {
                                 @include transition-delay(0.3s);
@@ -2356,8 +2358,12 @@
                     float: right;
                     color: white;
                     position: relative;
-                    top: 38px;
+                    top: 22px;
                     right: 20px;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
                 }
             }
 
@@ -2578,8 +2584,8 @@
 
                     &:nth-child(2n) {
                         aside {
-                            float: right;
-                            text-align: left;
+                            float: left;
+                            text-align: right;
 
                             @include breakpoint(small-mobiles) {
                                 text-align: center;
@@ -2587,7 +2593,7 @@
                         }
 
                         figure {
-                            float: left;
+                            float: right;
                         }
 
                         .line-draw {
@@ -2596,9 +2602,9 @@
                     }
 
                     aside {
-                        float: left;
+                        float: right;
                         width: 47%;
-                        text-align: right;
+                        text-align: left;
                         margin-top: 35px;
 
                         @include breakpoint(small-mobiles) {
@@ -2625,7 +2631,7 @@
                     }
 
                     figure {
-                        float: right;
+                        float: left;
                         width: 47%;
                         margin: 0;
                         position: relative;
@@ -2643,6 +2649,24 @@
                             float: right;
 
                             @include border-radius(6px);
+
+                            .screenshot {
+                                @include box-shadow(6px 29px 54px -5px #999);
+
+                                @include transition(all 0.5s ease-in-out);
+
+                                overflow: hidden;
+
+                                img {
+                                    @include transition(all 0.5s ease-in-out);
+
+                                    @include transform-origin(0 0);
+                                }
+
+                                &:hover {
+                                    @include box-shadow((-20px) 29px 54px -5px #999);
+                                }
+                            }
 
                             .top {
                                 height: 34px;
@@ -3143,17 +3167,12 @@
 .value-animation-wrapper {
     width: 100%;
     position: absolute;
-    bottom: 400px;
+    bottom: 540px;
     z-index: -1;
 
     .bar {
-        width: 2px;
-        height: 300px;
-        background-color: #013568;
-        margin-top: 200px;
+        height: 540px;
         position: absolute;
-        transform: rotatex(180deg);
-        transform-origin: top;
         opacity: 0;
 
         .value {
@@ -3162,9 +3181,7 @@
             color: #fff;
             padding: 3px 5px;
             position: absolute;
-            bottom: -30px;
             left: -20px;
-            transform: rotatex(180deg);
 
             &:after {
                 content: '';
@@ -3176,6 +3193,18 @@
                 right: 0;
                 left: 0;
                 width: 5px;
+                margin: 0 auto;
+            }
+
+            &:before {
+                content: '';
+                background-color: #013568;
+                width: 2px;
+                height: 540px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 28px;
                 margin: 0 auto;
             }
         }
