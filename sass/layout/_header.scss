@@ -76,10 +76,10 @@
             @include use-sprite(logo);
 
             display: inline-block;
-            margin: 18px 0px 0 0;
+            margin: 16px 0px 0 0;
 
             @include breakpoint(desktops) {
-                margin: 14px 12px 0 0;
+                margin: 12px 12px 0 0;
             }
         }
 
