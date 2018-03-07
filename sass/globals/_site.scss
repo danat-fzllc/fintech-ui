@@ -3167,11 +3167,10 @@
 .value-animation-wrapper {
     width: 100%;
     position: absolute;
-    bottom: 540px;
+    bottom: 535px;
     z-index: -1;
 
     .bar {
-        height: 540px;
         position: absolute;
         opacity: 0;
 
@@ -3200,7 +3199,7 @@
                 content: '';
                 background-color: #013568;
                 width: 2px;
-                height: 540px;
+                height: 500px;
                 position: absolute;
                 left: 0;
                 right: 0;
