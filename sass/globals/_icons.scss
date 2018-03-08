@@ -1,14 +1,14 @@
 .ico {
     display: inline-block;
 
-    &.up-chart {
+  /*  &.up-chart {
         @include use-sprite(ico-up-chart);
     }
 
     &.down-chart {
         @include use-sprite(ico-down-chart);
     }
-
+*/
     &.notifications {
         @include use-sprite(notification);
     }

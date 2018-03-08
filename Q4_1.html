@@ -14,25 +14,32 @@
 <body>
     <div class="fintech">
         <header class="top">
-            <div class="outer clearfix">
-                <button class="main-nav-button left floated"></button>
-                <a class="logo left floated"></a>
-                <form class="left floated country-selection">
-                    <div class="field">
-                        <div class="ui fluid search selection dropdown">
-                            <input type="hidden" name="country">
-                            <i class="dropdown icon"></i>
-                            <div class="default text"><i class="ae flag"></i><span>United Arab Emirates</span></div>
-                            <div class="menu">
-                                <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
-                                <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
-                                <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
+                <div class="outer clearfix">
+                    <button class="main-nav-button left floated"></button>
+                    <a href="" title="Fintech" class="logo left floated"></a>
+                    <form class="left floated country-selection">
+                        <div class="field">
+                            <div class="ui fluid search selection dropdown">
+                                <input type="hidden" name="country">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">
+                                    <i class="ae flag"></i>
+                                    <span>United Arab Emirates</span>
+                                </div>
+                                <div class="menu">
+                                    <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
+                                    <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+                                    <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
+                                    <div class="item" data-value="bh"><i class="kw flag"></i><span>kuwait</span></div>
+                                    <div class="item" data-value="bh"><i class="qa flag"></i><span>qatar</span></div>
+                                    <div class="item" data-value="bh"><i class="om flag"></i><span>muscat</span></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
-                <button class="language right floated">عربى</button>
-               <div class="main-nav right floated overlay-container">
+                    </form>
+                    <button class="language right floated">عربى</button>
+                    <a href="" class="lang">عربى</a>
+                    <div class="main-nav right floated overlay-container">
                         <div class="overlay-header clearfix">
                             <span class="left floated overlay-title">Menu</span>
                             <button class="right floated close"><i class="remove icon"></i></button>
@@ -60,6 +67,8 @@
                             <ul class="main">
                                 <li><a href="" class="active">Home</a></li>
                                 <li><a href="">About Us</a></li>
+                                <li><a href="">FAQs</a></li>
+                                <li><a href="">Contact Us</a></li>
                                 <!--  <li class="sub"><a href="">
                                 Menu Item<i class="dropdown icon"></i></a>
                                 
@@ -70,10 +79,17 @@
                                 </ul>
                                 
                             </li>-->
-                            <li><a href="">FAQ</a></li>
+                            
                             
                         </ul>
                     </div>
+                    <!-- <div class="share-options"></div> -->
+                </div>
+            </div>
+            <div class="ui pointing secondary menu tabs-home">
+                <a class="active item notifications" data-tab="first"><i class="ico notifications"></i>Notifications</a>
+                <a class="item questions" data-tab="second"><i class="ico questions"></i>Questions</a>
+                <a class="item watchlist" data-tab="third"><i class="ico watchlist"></i>Watchlist</a>
             </div>
         </header>
         <div class="ui container fluid fintech content-container">
@@ -81,46 +97,11 @@
                 <div class="outer">
                     <form class="ui form">
                         <h1 class="question ui center">
-                        What was the effect on <select class="ui selection dropdown">
-                            <option value="1">Sabic</option>
-                            <option value="3">Markets</option>
-                            <option value="2">Commodities</option>
-                        </select>
-                        <select class="ui dropdown optgroups">
-                            <optgroup label="Energy">
-                                <option value="1">SARCO</option>
-                                <option value="2">Petro Rabigh</option>
-                                <option value="3">Bahri</option>
-                                <option value="4">Aldrees</option>
-                            </optgroup>
-                            <optgroup label="Materials">
-                                <option value="1">Takween</option>
-                                <option value="2">Mepco</option>
-                                <option value="3">BCI</option>
-                                <option value="4">MAADEN</option>
-                            </optgroup>
-                        </select>
-                        
-                        <input type="number" value="0" class="field center aligned auto-resize">
-                        days after, when the price of
-                        <select id="" class="ui selection dropdown">
-                            <option value="1">Gold</option>
-                            <option value="3">Silver</option>
-                            <option value="2">Oil</option>
-                        </select>
-                        was up by
-                        <select id="" class="ui selection dropdown">
-                            <option value="1">2016</option>
-                            <option value="3">2015</option>
-                            <option value="2">2014</option>
-                        </select>
-                        to
-                        <select id="" class="ui selection dropdown">
-                            <option value="1">2016</option>
-                            <option value="3">2015</option>
-                            <option value="2">2014</option>
-                        </select>
-                        
+                        <span>What was the performance of <span class="bold">"All Companies"</span> </span> 
+                        <input type="number" value="3" class="field center aligned auto-resize">
+            days before and
+            <input type="number" value="3" class="field center aligned auto-resize">
+            days after <span class="bold">"OPEC MEETINGS"</span> 
                         <a class="ui button"><i class="fa fa-search" aria-hidden="true"></i>
                         Discover</a>
                         </h1>
@@ -159,55 +140,317 @@
                                 <button class="right floated close"><i class="remove icon"></i></button>
                             </div>
                         </div>
+                        
                         <div class="ui styled accordion">
-                            <div class="item">
-                                <div class="title active">
-                                    <i class="dropdown icon"></i> Events
-                                </div>
-                                <div class="content active">
-                                    <div class="ui list">
-                                        <a class="item">Seasons</a>
-                                        <a class="item">International</a>
-                                    </div>
-                                    <div class="title active">
-                                        <i class="dropdown icon"></i>Company
-                                    </div>
-                                    <div class="content active">
-                                        <div class="ui list">
-                                            <a class="item">Seasons</a>
-                                            <a class="item">International</a>
-                                        </div>
-                                    </div>
-                                </div>
+            
+                <div class="item">
+                    <div class="title active">
+                        <i class="dropdown icon"></i>
+                        Sectors
+                    </div>
+                    <div class="content active" id="sectors_div">
+                        
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden">
+                                <label><strong>Select All</strong></label>
                             </div>
                         </div>
-                        <div class="ui styled accordion">
-                            <div class="item">
-                                <div class="title">
-                                    <i class="dropdown icon"></i> Sectors
-                                </div>
-                                <div class="content">
-                                    <div class="inline field">
-                                        <div class="ui checkbox">
-                                            <input type="checkbox" tabindex="0" class="hidden">
-                                            <label><strong>Select All</strong></label>
-                                        </div>
-                                    </div>
-                                    <div class="inline field">
-                                        <div class="ui checkbox">
-                                            <input type="checkbox" tabindex="0" class="hidden">
-                                            <label>Insurance</label>
-                                        </div>
-                                    </div>
-                                    <div class="inline field">
-                                        <div class="ui checkbox">
-                                            <input type="checkbox" tabindex="0" class="hidden">
-                                            <label>Insurance</label>
-                                        </div>
-                                    </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_66" value="66" type="checkbox" data-filter-type="sector" name="filter_item" data-id="66" tabindex="0" class="hidden">
+                                    <label>Utilities</label>
                                 </div>
                             </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_114" value="114" type="checkbox" data-filter-type="sector" name="filter_item" data-id="114" tabindex="0" class="hidden">
+                                    <label>Diversified Financials</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_65" value="65" type="checkbox" data-filter-type="sector" name="filter_item" data-id="65" tabindex="0" class="hidden">
+                                    <label>Transportation</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_111" value="111" type="checkbox" data-filter-type="sector" name="filter_item" data-id="111" tabindex="0" class="hidden">
+                                    <label>Commercial and Professional Svc</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_7" value="7" type="checkbox" data-filter-type="sector" name="filter_item" data-id="7" tabindex="0" class="hidden">
+                                    <label>General</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_6" value="6" type="checkbox" data-filter-type="sector" name="filter_item" data-id="6" tabindex="0" class="hidden">
+                                    <label>Exchange Traded Funds</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_123" value="123" type="checkbox" data-filter-type="sector" name="filter_item" data-id="123" tabindex="0" class="hidden">
+                                    <label>Retailing</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_110" value="110" type="checkbox" data-filter-type="sector" name="filter_item" data-id="110" tabindex="0" class="hidden">
+                                    <label>Capital Goods</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_121" value="121" type="checkbox" data-filter-type="sector" name="filter_item" data-id="121" tabindex="0" class="hidden">
+                                    <label>Real Estate Mgmt and Dev</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_116" value="116" type="checkbox" data-filter-type="sector" name="filter_item" data-id="116" tabindex="0" class="hidden">
+                                    <label>Food and Staples Retailing</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_55" value="55" type="checkbox" data-filter-type="sector" name="filter_item" data-id="55" tabindex="0" class="hidden">
+                                    <label>Energy</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_8" value="8" type="checkbox" data-filter-type="sector" name="filter_item" data-id="8" tabindex="0" class="hidden">
+                                    <label>General (old)</label>
+                                </div>
+                            </div>
+                        
+                            
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_117" value="117" type="checkbox" data-filter-type="sector" name="filter_item" data-id="117" tabindex="0" class="hidden">
+                                    <label>Health Care Equipment and Svc</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_124" value="124" type="checkbox" data-filter-type="sector" name="filter_item" data-id="124" tabindex="0" class="hidden">
+                                    <label>Telecommunication Services</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_113" value="113" type="checkbox" data-filter-type="sector" name="filter_item" data-id="113" tabindex="0" class="hidden">
+                                    <label>Consumer Services</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_61" value="61" type="checkbox" data-filter-type="sector" name="filter_item" data-id="61" tabindex="0" class="hidden">
+                                    <label>Banks</label>
+                                </div>
+                            </div>
+                        
+                            
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="sector_item">
+                                    <input id="sector_118" value="118" type="checkbox" data-filter-type="sector" name="filter_item" data-id="118" tabindex="0" class="hidden">
+                                    <label>Media</label>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+            
+                <div class="item">
+                    <div class="title active">
+                        <i class="dropdown icon"></i>
+                        Events
+                    </div>
+                    <div class="content active" id="events_div">
+                       
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden">
+                                <label><strong>Select All</strong></label>
+                            </div>
                         </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_545" value="545" type="checkbox" data-filter-type="event" name="filter_item" data-id="545" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 171st - Nov 2016   </label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_544" value="544" type="checkbox" data-filter-type="event" name="filter_item" data-id="544" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 170th (Extraordinary) - Sep 2016
+</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_51" value="51" type="checkbox" data-filter-type="event" name="filter_item" data-id="51" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 169th - June 2016</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_50" value="50" type="checkbox" data-filter-type="event" name="filter_item" data-id="50" tabindex="0" class="hidden">
+                                    <label>OPEC Meeting 168th - Dec 2015</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_49" value="49" type="checkbox" data-filter-type="event" name="filter_item" data-id="49" tabindex="0" class="hidden">
+                                    <label>OPEC Meeting 167th - June 2015</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_48" value="48" type="checkbox" data-filter-type="event" name="filter_item" data-id="48" tabindex="0" class="hidden">
+                                    <label>OPEC Meeting 166th - Nov 2014</label>
+                                </div>
+                            </div>
+                        
+                           
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_67" value="67" type="checkbox" data-filter-type="event" name="filter_item" data-id="67" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 146th (Extraordinary) - Dec 2007</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_68" value="68" type="checkbox" data-filter-type="event" name="filter_item" data-id="68" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 145th - Sep 2007   </label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_69" value="69" type="checkbox" data-filter-type="event" name="filter_item" data-id="69" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 144th - March 2007 </label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_70" value="70" type="checkbox" data-filter-type="event" name="filter_item" data-id="70" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 143rd (Extraordinary) - Dec 2006   </label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_71" value="71" type="checkbox" data-filter-type="event" name="filter_item" data-id="71" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 142nd - Sep 2006</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_72" value="72" type="checkbox" data-filter-type="event" name="filter_item" data-id="72" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 141st (Extraordinary) - June 2006  </label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_73" value="73" type="checkbox" data-filter-type="event" name="filter_item" data-id="73" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 140th - March 2006 </label>
+                                </div>
+                            </div>
+                        
+                            
+                        
+                         
+                         
+                        
+                           
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_88" value="88" type="checkbox" data-filter-type="event" name="filter_item" data-id="88" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 125th (Extraordinary) - June 2003  </label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_89" value="89" type="checkbox" data-filter-type="event" name="filter_item" data-id="89" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 124th - Mar 2003   </label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_90" value="90" type="checkbox" data-filter-type="event" name="filter_item" data-id="90" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 123th (Extraordinary) - Jan 2003   </label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_91" value="91" type="checkbox" data-filter-type="event" name="filter_item" data-id="91" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 122nd (Extraordinary) - Dec 2002</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_92" value="92" type="checkbox" data-filter-type="event" name="filter_item" data-id="92" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 121st - Sep 2002</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_93" value="93" type="checkbox" data-filter-type="event" name="filter_item" data-id="93" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 120th (Extraordinary) - June 2002</label>
+                                </div>
+                            </div>
+                        
+                            <div class="inline field">
+                                <div class="ui checkbox " id="item">
+                                    <input id="event_94" value="94" type="checkbox" data-filter-type="event" name="filter_item" data-id="94" tabindex="0" class="hidden">
+                                    <label>Opec Meetings 119th - Mar 2002   </label>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+        </div>
                         <div class="fixed filter-button">
                             <button class="ui button">Filter</button>
                         </div>
@@ -217,7 +460,7 @@
                     <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
                     <div class="fluid left floated">
                         <div class="ui one column grid">
-                            <div class="column selected-tags">
+                           <!--  <div class="column selected-tags">
                                 <div class="ui holder">
                                     <a class="ui label">Opec Meetings 171st - Nov 2016<i class="delete icon"></i></a>
                                     <a class="ui label">Opec Meetings 170th (Extraordinary) - Sep 2016<i class="delete icon"></i></a>
@@ -225,17 +468,17 @@
                                       <a class="ui label">Opec Meetings 169th - June 2016<i class="delete icon"></i></a>
                                         <a class="ui label">Opec Meetings 169th - June 2016<i class="delete icon"></i></a>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="column">
                                 <div class="content event-aggregate-chart">
                                     <div class="row head clearfix">
                                         <div class="column left floated no-border company name">
-                                            <h2>SABIC</h2> <a href="#" class="view-more right floated mobile-only">Details</a></div>
+                                            <h2>METLIFE AIG ALARABI</h2> <a href="#" class="view-more right floated mobile-only">Details</a></div>
                                         <div class="column right floated ">
                                             <div class="title">Probability</div>
                                         </div>
                                         <div class="column">
-                                            <div class="title aggregate-performance">Aggregate Performance</div>
+                                            <div class="title aggregate-performance">Average Performance</div>
                                         </div>
                                     </div>
                                     <div class="row clearfix">
@@ -244,7 +487,117 @@
                                             <span>3 days</span>
                                         </div>
                                         <div class="column right floated">
-                                            <div class="donut-holder"></div>
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
+                                            <div class="donut-value">71.75%</div>
+                                        </div>
+                                       <div class="column">
+                            
+    <div class="aggregate-chart">
+        <div class="up column" id="before_div_arrow_dir">
+            <div style="width:5.01349716881421%" class="arrow small-value" id="div_arrow_width">
+            <span class="value" id="before_span">+1.67%</span>
+            </div>
+        </div>
+    </div>
+
+                        </div>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="column left floated">
+                                            <span>Before</span>
+                                            <span>3 days</span>
+                                        </div>
+                                        <div class="column right floated">
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
+                                            <div class="donut-value">71.75%</div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="aggregate-chart">
+        <div class="up column" id="before_div_arrow_dir">
+            <div style="width:7.9321774227951%" class="arrow small-value" id="div_arrow_width">
+            <span class="value" id="before_span">+2.64%</span>
+            </div>
+        </div>
+    </div>
+                                        </div>
+                                    </div>
+                                    <span class="hint">Based on 24 events</span>
+                                    <a href="#" class="row clearfix view-more">Detailed View</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="content event-aggregate-chart">
+                                    <div class="row head clearfix">
+                                        <div class="column left floated no-border company name">
+                                            <h2>TRANSPORTATION IND ...</h2></div>
+                                        <div class="column right floated ">
+                                            <div class="title">Probability</div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="title aggregate-performance">Average Performance</div>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="column left floated">
+                                            <span>Before</span>
+                                            <span>3 days</span>
+                                        </div>
+                                        <div class="column right floated">
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
+                                            <div class="donut-value">71.75%</div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="aggregate-chart">
+        <div class="down column" id="before_div_arrow_dir">
+            <div style="width:0.327170556447147%" class="arrow small-value" id="div_arrow_width">
+            <span class="value" id="before_span">-0.11%</span>
+            </div>
+        </div>
+    </div>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="column left floated">
+                                            <span>Before</span>
+                                            <span>3 days</span>
+                                        </div>
+                                        <div class="column right floated">
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
+                                            <div class="donut-value">71.75%</div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="aggregate-chart">
+        <div class="up column" id="before_div_arrow_dir">
+            <div style="width:4.76940764764785%" class="arrow small-value" id="div_arrow_width">
+            <span class="value" id="before_span">+1.59%</span>
+            </div>
+        </div>
+    </div>
+                                        </div>
+                                    </div>
+                                    <span class="hint">Based on 24 events</span>
+                                    <a href="#" class="row clearfix view-more">Detailed View</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="content event-aggregate-chart">
+                                    <div class="row head clearfix">
+                                        <div class="column left floated no-border company name">
+                                            <h2>SFICO</h2> <a href="#" class="view-more right floated mobile-only">Details</a></div>
+                                        <div class="column right floated ">
+                                            <div class="title">Probability</div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="title aggregate-performance">Average Performance</div>
+                                        </div>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="column left floated">
+                                            <span>Before</span>
+                                            <span>3 days</span>
+                                        </div>
+                                        <div class="column right floated">
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
                                             <div class="donut-value">71.75%</div>
                                         </div>
                                         <div class="column">
@@ -263,7 +616,7 @@
                                             <span>3 days</span>
                                         </div>
                                         <div class="column right floated">
-                                            <div class="donut-holder"></div>
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
                                             <div class="donut-value">71.75%</div>
                                         </div>
                                         <div class="column">
@@ -284,12 +637,12 @@
                                 <div class="content event-aggregate-chart">
                                     <div class="row head clearfix">
                                         <div class="column left floated no-border company name">
-                                            <h2>SABIC</h2></div>
+                                            <h2>WATANIYA</h2></div>
                                         <div class="column right floated ">
                                             <div class="title">Probability</div>
                                         </div>
                                         <div class="column">
-                                            <div class="title aggregate-performance">Aggregate Performance</div>
+                                            <div class="title aggregate-performance">Average Performance</div>
                                         </div>
                                     </div>
                                     <div class="row clearfix">
@@ -298,7 +651,7 @@
                                             <span>3 days</span>
                                         </div>
                                         <div class="column right floated">
-                                            <div class="donut-holder"></div>
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
                                             <div class="donut-value">71.75%</div>
                                         </div>
                                         <div class="column">
@@ -317,7 +670,7 @@
                                             <span>3 days</span>
                                         </div>
                                         <div class="column right floated">
-                                            <div class="donut-holder"></div>
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
                                             <div class="donut-value">71.75%</div>
                                         </div>
                                         <div class="column">
@@ -338,12 +691,12 @@
                                 <div class="content event-aggregate-chart">
                                     <div class="row head clearfix">
                                         <div class="column left floated no-border company name">
-                                            <h2>SAUDI MARKET GENERAL INDEX OLD</h2> <a href="#" class="view-more right floated mobile-only">Details</a></div>
+                                            <h2>MATERIALS INDEX</h2></div>
                                         <div class="column right floated ">
                                             <div class="title">Probability</div>
                                         </div>
                                         <div class="column">
-                                            <div class="title aggregate-performance">Aggregate Performance</div>
+                                            <div class="title aggregate-performance">Average Performance</div>
                                         </div>
                                     </div>
                                     <div class="row clearfix">
@@ -352,7 +705,7 @@
                                             <span>3 days</span>
                                         </div>
                                         <div class="column right floated">
-                                            <div class="donut-holder"></div>
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
                                             <div class="donut-value">71.75%</div>
                                         </div>
                                         <div class="column">
@@ -371,115 +724,7 @@
                                             <span>3 days</span>
                                         </div>
                                         <div class="column right floated">
-                                            <div class="donut-holder"></div>
-                                            <div class="donut-value">71.75%</div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="aggregate-chart">
-                                                <div class="down column">
-                                                    <div class="arrow" style="width: 28.6%">
-                                                        <span class="value">- 28.6%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="hint">Based on 24 events</span>
-                                    <a href="#" class="row clearfix view-more">Detailed View</a>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="content event-aggregate-chart">
-                                    <div class="row head clearfix">
-                                        <div class="column left floated no-border company name">
-                                            <h2>SABIC</h2></div>
-                                        <div class="column right floated ">
-                                            <div class="title">Probability</div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="title aggregate-performance">Aggregate Performance</div>
-                                        </div>
-                                    </div>
-                                    <div class="row clearfix">
-                                        <div class="column left floated">
-                                            <span>Before</span>
-                                            <span>3 days</span>
-                                        </div>
-                                        <div class="column right floated">
-                                            <div class="donut-holder"></div>
-                                            <div class="donut-value">71.75%</div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="aggregate-chart">
-                                                <div class="up column">
-                                                    <div class="arrow" style="width:58.6%">
-                                                        <span class="value">+ 58.6%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row clearfix">
-                                        <div class="column left floated">
-                                            <span>Before</span>
-                                            <span>3 days</span>
-                                        </div>
-                                        <div class="column right floated">
-                                            <div class="donut-holder"></div>
-                                            <div class="donut-value">71.75%</div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="aggregate-chart">
-                                                <div class="down column">
-                                                    <div class="arrow" style="width: 28.6%">
-                                                        <span class="value">- 28.6%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="hint">Based on 24 events</span>
-                                    <a href="#" class="row clearfix view-more">Detailed View</a>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="content event-aggregate-chart">
-                                    <div class="row head clearfix">
-                                        <div class="column left floated no-border company name">
-                                            <h2>SABIC</h2></div>
-                                        <div class="column right floated ">
-                                            <div class="title">Probability</div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="title aggregate-performance">Aggregate Performance</div>
-                                        </div>
-                                    </div>
-                                    <div class="row clearfix">
-                                        <div class="column left floated">
-                                            <span>Before</span>
-                                            <span>3 days</span>
-                                        </div>
-                                        <div class="column right floated">
-                                            <div class="donut-holder"></div>
-                                            <div class="donut-value">71.75%</div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="aggregate-chart">
-                                                <div class="up column">
-                                                    <div class="arrow" style="width:58.6%">
-                                                        <span class="value">+ 58.6%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row clearfix">
-                                        <div class="column left floated">
-                                            <span>Before</span>
-                                            <span>3 days</span>
-                                        </div>
-                                        <div class="column right floated">
-                                            <div class="donut-holder"></div>
+                                            <div class="donut-holder" id="donut_chart_cp_up_prob_before_116" data-prob="57.14"><svg width="100%" height="100%" viewBox="0 0 45 45" preserveAspectRatio="xMinYMin"><g transform="translate(22.5,22.5)"><path fill="#05AE2E" d="M1.3471114790620886e-15,-22A22,22 0 1,1 -9.541883792628816,19.823028368237974L-5.204663886888445,10.812560928129805A12,12 0 1,0 7.347880794884119e-16,-12Z"></path><path fill="#D9E0DB" d="M-9.541883792628816,19.823028368237974A22,22 0 0,1 -4.0413344371862654e-15,-22L-2.204364238465236e-15,-12A12,12 0 0,0 -5.204663886888445,10.812560928129805Z"></path></g></svg></div>
                                             <div class="donut-value">71.75%</div>
                                         </div>
                                         <div class="column">
