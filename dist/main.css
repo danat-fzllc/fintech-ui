@@ -2820,12 +2820,6 @@ i.flag.sa {
     padding: 14px 20px 12px 20px;
   }
 }
-.fintech .grid.home .content .header .date {
-  display: inline;
-  font-size: 12px;
-  font-weight: 400;
-  margin-left: 6px;
-}
 .fintech .grid.home .content .row {
   border-top: 1px solid #ededed;
   padding: 10px 0;
@@ -2962,15 +2956,13 @@ i.flag.sa {
 }
 .fintech .grid.home .notification-feeds .column.custom .segment {
   background-color: #C4DDFF;
-                        /*.feed-head {
-                            color: #fff;
-                        }
-
-                        .time {
-                            color: #fff !important;
-
-                            @include opacity(0.5);
-                        }*/
+  /*.feed-head {
+      color: #fff;
+  }
+  .time {
+      color: #fff !important;
+      @include opacity(0.5);
+  }*/
 }
 .fintech .grid.home .notification-feeds .column.feed .segment {
   position: relative;
@@ -3432,7 +3424,7 @@ i.flag.sa {
   font-size: 17px;
 }
 .fintech.landing header {
-  height: 960px;
+  height: 1022px;
   text-align: center;
   background: #011B37 url(themes/default/assets/images/Landing-V05-header.jpg) no-repeat center top;
   color: #fff;
@@ -3444,14 +3436,16 @@ i.flag.sa {
 }
 .fintech.landing header nav {
   padding: 20px;
+  position: relative;
+  z-index: 2;
 }
 .fintech.landing header nav .menu {
   position: fixed;
   width: 50px;
-  height: 40px;
+  height: 44px;
   cursor: pointer;
   float: left;
-  top: 48px;
+  top: 42px;
   left: 20;
   z-index: 9;
   -moz-transition: all 0.2s ease-in-out;
@@ -3467,7 +3461,7 @@ i.flag.sa {
   height: 3px;
   background-color: #fff;
   overflow: hidden;
-  left: 18px;
+  left: 16px;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3475,7 +3469,7 @@ i.flag.sa {
 }
 .fintech.landing header nav .menu .bar:nth-child(1) {
   top: 13px;
-  width: 10px;
+  width: 14px;
 }
 .fintech.landing header nav .menu .bar:nth-child(1):after {
   -moz-transition-delay: 0.1s;
@@ -3484,8 +3478,8 @@ i.flag.sa {
   transition-delay: 0.1s;
 }
 .fintech.landing header nav .menu .bar:nth-child(2) {
-  top: 18px;
-  width: 15px;
+  top: 21px;
+  width: 22px;
 }
 .fintech.landing header nav .menu .bar:nth-child(2):after {
   -moz-transition-delay: 0.2s;
@@ -3494,8 +3488,8 @@ i.flag.sa {
   transition-delay: 0.2s;
 }
 .fintech.landing header nav .menu .bar:nth-child(3) {
-  top: 23px;
-  width: 12px;
+  top: 29px;
+  width: 18px;
 }
 .fintech.landing header nav .menu .bar:nth-child(3):after {
   -moz-transition-delay: 0.3s;
@@ -3566,8 +3560,11 @@ i.flag.sa {
   float: right;
   color: white;
   position: relative;
-  top: 38px;
+  top: 22px;
   right: 20px;
+}
+.fintech.landing header nav .lang:hover {
+  color: #1D7CFF;
 }
 .fintech.landing header h1 {
   font-size: 4.46154rem;
@@ -3765,8 +3762,8 @@ i.flag.sa {
   }
 }
 .fintech.landing section.features .row:nth-child(2n) aside {
-  float: right;
-  text-align: left;
+  float: left;
+  text-align: right;
 }
 @media (max-width: 400px) {
   .fintech.landing section.features .row:nth-child(2n) aside {
@@ -3774,7 +3771,7 @@ i.flag.sa {
   }
 }
 .fintech.landing section.features .row:nth-child(2n) figure {
-  float: left;
+  float: right;
 }
 .fintech.landing section.features .row:nth-child(2n) .line-draw {
   -moz-transform: scaleX(-1);
@@ -3783,9 +3780,9 @@ i.flag.sa {
   transform: scaleX(-1);
 }
 .fintech.landing section.features .row aside {
-  float: left;
+  float: right;
   width: 47%;
-  text-align: right;
+  text-align: left;
   margin-top: 35px;
 }
 @media (max-width: 400px) {
@@ -3810,7 +3807,7 @@ i.flag.sa {
   }
 }
 .fintech.landing section.features .row figure {
-  float: right;
+  float: left;
   width: 47%;
   margin: 0;
   position: relative;
@@ -3829,6 +3826,31 @@ i.flag.sa {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+}
+.fintech.landing section.features .row figure .browser .screenshot {
+  -moz-box-shadow: 6px 29px 54px -5px #999;
+  -webkit-box-shadow: 6px 29px 54px -5px #999;
+  box-shadow: 6px 29px 54px -5px #999;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.fintech.landing section.features .row figure .browser .screenshot img {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-transform-origin: 0 0 50%;
+  -ms-transform-origin: 0 0 50%;
+  -webkit-transform-origin: 0 0 50%;
+  transform-origin: 0 0 50%;
+}
+.fintech.landing section.features .row figure .browser .screenshot:hover {
+  -moz-box-shadow: -20px 29px 54px -5px #999;
+  -webkit-box-shadow: -20px 29px 54px -5px #999;
+  box-shadow: -20px 29px 54px -5px #999;
 }
 .fintech.landing section.features .row figure .browser .top {
   height: 34px;
@@ -4268,17 +4290,11 @@ i.flag.sa {
 .value-animation-wrapper {
   width: 100%;
   position: absolute;
-  bottom: 400px;
+  bottom: 600px;
   z-index: -1;
 }
 .value-animation-wrapper .bar {
-  width: 2px;
-  height: 300px;
-  background-color: #013568;
-  margin-top: 200px;
   position: absolute;
-  transform: rotatex(180deg);
-  transform-origin: top;
   opacity: 0;
 }
 .value-animation-wrapper .bar .value {
@@ -4287,9 +4303,7 @@ i.flag.sa {
   color: #fff;
   padding: 3px 5px;
   position: absolute;
-  bottom: -30px;
   left: -20px;
-  transform: rotatex(180deg);
 }
 .value-animation-wrapper .bar .value:after {
   content: '';
@@ -4301,6 +4315,17 @@ i.flag.sa {
   right: 0;
   left: 0;
   width: 5px;
+  margin: 0 auto;
+}
+.value-animation-wrapper .bar .value:before {
+  content: '';
+  background-color: #013568;
+  width: 2px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28px;
   margin: 0 auto;
 }
 .value-animation-wrapper .bar.one {
