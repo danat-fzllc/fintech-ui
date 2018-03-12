@@ -13,6 +13,22 @@ $('.ui.dropdown')
 $('.ui.progress').progress({
     showActivity: false
 });
+$('.ui.modal')
+    .modal();
+
+// $('.screenshot-trigger-1').click(function() {
+
+//     $('#screenshot-modal-1').modal('show');
+// });
+
+
+$('.screenshot-trigger').each(function( index, value ) {
+  $(this).click(function() {
+    $('.screenshot-modal').modal('show');
+    });
+});
+
+
 
 // clear the generated semantic-ui menu
 var $menu = $('<div/>').addClass('menu');
@@ -71,8 +87,8 @@ $('.tabs-home .item').tab({
 });
 $('.button')
     .popup();
-    $('#question-info-btutton').popup({
-  position    : 'bottom right'
+$('#question-info-btutton').popup({
+    position: 'bottom right'
 });
 //resizing pannel script
 //<![CDATA[
@@ -253,14 +269,16 @@ $(".pop-up-slide-tirgger").click(function() {
 
 // slidebar
 $('.ui.sidebar').toggle();
-$('.menu-toggle').click(function(){
+$('.menu-toggle').click(function() {
     $('.ui.sidebar').sidebar('toggle');
 });
 
 
 // go to top
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+    scrollFunction()
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -278,22 +296,14 @@ function topFunction() {
 
 $(window).scroll(function(){
     if ($(this).scrollTop() > 50) {
-       $('#mainMenu').addClass('menu-bg');
+        $('#mainMenu').addClass('menu-bg');
     } else {
-       $('#mainMenu').removeClass('menu-bg');
+        $('#mainMenu').removeClass('menu-bg');
     }
 });
 
 $('.bx-slider').bxSlider({
-  auto: true,
-  pager: false,
-  controls:false
+    auto: true,
+    pager: false,
+    controls: false
 });
-   
-
-
-
-
-
-
-
