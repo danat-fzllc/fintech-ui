@@ -4321,6 +4321,30 @@ i.flag.sa {
   -moz-box-shadow: -20px 29px 54px -5px #999;
   -webkit-box-shadow: -20px 29px 54px -5px #999;
   box-shadow: -20px 29px 54px -5px #999;
+  position: relative;
+  cursor: pointer;
+}
+.browser .screenshot:hover .dimmer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1;
+}
+.browser .screenshot:hover .dimmer span {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: inline-block;
+  height: 38px;
+  /*background: #1d7cff;*/
+  font-style: italic;
+  border-radius: 3px;
+  padding: 10px 0;
 }
 .browser .top {
   height: 34px;
