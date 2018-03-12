@@ -4317,20 +4317,10 @@ i.flag.sa {
   -webkit-transform-origin: 0 0 50%;
   transform-origin: 0 0 50%;
 }
-.browser .screenshot:hover {
-  -moz-box-shadow: -20px 29px 54px -5px #999;
-  -webkit-box-shadow: -20px 29px 54px -5px #999;
-  box-shadow: -20px 29px 54px -5px #999;
-  position: relative;
-  cursor: pointer;
+.browser .screenshot .dimmer {
+  transition: background-color 0.5s cubic-bezier(0, 0.95, 0.29, 1.27);
 }
-.browser .screenshot:hover .dimmer {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  z-index: 1;
-}
-.browser .screenshot:hover .dimmer span {
+.browser .screenshot .dimmer span {
   color: #fff;
   z-index: 2;
   position: absolute;
@@ -4341,10 +4331,31 @@ i.flag.sa {
   left: 0;
   display: inline-block;
   height: 38px;
-  /*background: #1d7cff;*/
+  width: 70px;
+  border-bottom: 2px solid #1D7CFF;
   font-style: italic;
-  border-radius: 3px;
   padding: 10px 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.8);
+}
+.browser .screenshot:hover {
+  -moz-box-shadow: -20px 29px 54px -5px #999;
+  -webkit-box-shadow: -20px 29px 54px -5px #999;
+  box-shadow: -20px 29px 54px -5px #999;
+  position: relative;
+  cursor: pointer;
+}
+.browser .screenshot:hover .dimmer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  z-index: 1;
+}
+.browser .screenshot:hover .dimmer span {
+  transform: scale(1);
 }
 .browser .top {
   height: 34px;
@@ -4391,22 +4402,29 @@ i.flag.sa {
   position: relative;
   text-align: center;
 }
-.ui.modal.screenshot-modal .close.browser-close {
+.ui.modal.screenshot-modal .actions span.browser-close .close {
   font-size: 8px;
   right: 0;
-  left: 0;
+  left: 0px;
   top: 0;
   bottom: 0;
-  color: #000;
+  color: #a50000;
   margin: auto;
   position: absolute;
   width: 8px;
   height: 8px;
+  text-align: center;
+  font-weight: normal;
+}
+.ui.modal.screenshot-modal .actions:hover .browser-close {
+  background-color: #ff2b30;
 }
 .ui.modal.screenshot-modal .close.hide {
   right: auto;
-  left: 1px;
-  top: 4px;
+  left: 12px;
+  top: 13px;
+  width: 11px;
+  height: 14px;
 }
 .ui.modal.screenshot-modal .close.hide:before {
   display: none;
