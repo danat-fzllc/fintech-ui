@@ -4388,13 +4388,28 @@ i.flag.sa {
 .ui.modal.screenshot-modal .actions span {
   width: 14px;
   height: 14px;
+  position: relative;
+  text-align: center;
 }
-.ui.modal.screenshot-modal .close {
+.ui.modal.screenshot-modal .close.browser-close {
   font-size: 8px;
-  top: 8px;
-  left: 5px;
-  right: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   color: #000;
+  margin: auto;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+}
+.ui.modal.screenshot-modal .close.hide {
+  right: auto;
+  left: 1px;
+  top: 4px;
+}
+.ui.modal.screenshot-modal .close.hide:before {
+  display: none;
 }
 @media (min-width: 769px) {
   .ui.modal.screenshot-modal {

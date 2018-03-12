@@ -3281,15 +3281,34 @@
             span {
                 width: 14px;
                 height: 14px;
+                position: relative;
+                text-align: center;
             }
         }
 
         .close {
-            font-size: 8px;
-            top: 8px;
-            left: 5px;
-            right: auto;
-            color: #000;
+            &.browser-close {
+                font-size: 8px;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                color: #000;
+                margin: auto;
+                position: absolute;
+                width: 8px;
+                height: 8px;
+            }
+
+            &.hide {
+                right: auto;
+                left: 1px;
+                top: 4px;
+
+                &:before {
+                    display: none;
+                }
+            }
         }
 
         @include breakpoint(desktops) {
