@@ -1178,9 +1178,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.notifications {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
-    background-position: 0 -218px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
+    background-position: 0 -246px;
     height: 21.5px;
     width: 17.5px;
   }
@@ -1196,9 +1196,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.questions {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
-    background-position: 0 -244px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
+    background-position: 0 -273px;
     height: 21.5px;
     width: 21.5px;
   }
@@ -1214,9 +1214,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .ico.watchlist {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
-    background-position: 0 -319px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
+    background-position: 0 -348px;
     height: 21.5px;
     width: 16.5px;
   }
@@ -1444,8 +1444,8 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar i {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
     background-position: 0 -22px;
     height: 13px;
     width: 13.5px;
@@ -1462,8 +1462,8 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .calendar.active i {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
     background-position: 0 -40px;
     height: 13px;
     width: 13.5px;
@@ -1488,9 +1488,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table i {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
-    background-position: 0 -271px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
+    background-position: 0 -299px;
     height: 13px;
     width: 13.5px;
   }
@@ -1506,9 +1506,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech .calendar-table-view-btns .table.active i {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
-    background-position: 0 -289px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
+    background-position: 0 -317px;
     height: 13px;
     width: 13.5px;
   }
@@ -1675,7 +1675,7 @@ i.flag.sa {
   text-align: right;
   font-size: 1.15385rem;
 }
-@media (max-width: 400px) {
+@media (max-width: 736px) {
   .fintech .column > .content.event-aggregate-chart > .row > .column:first-child {
     font-size: 0.92308rem;
   }
@@ -1772,8 +1772,8 @@ i.flag.sa {
 }
 @media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
   .fintech .column > .content.event-aggregate-chart > .row > .column .title.aggregate-performance:before {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
     background-position: 0 0;
     height: 17px;
     width: 22px;
@@ -2632,7 +2632,7 @@ i.flag.sa {
     font-size: 1.23077rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 736px) {
   .fintech .grid.home .watchlist .row .name {
     font-size: 1.23077rem;
   }
@@ -2725,7 +2725,7 @@ i.flag.sa {
     font-weight: initial;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 736px) {
   .fintech .grid.home .notification-feeds .column .total-number {
     font-size: 1.07692rem;
   }
@@ -2790,7 +2790,7 @@ i.flag.sa {
     color: #000;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 736px) {
   .fintech .grid.home .notification-feeds .column.feed .feed-head {
     font-size: 1.23077rem;
     line-height: 1.69231rem;
@@ -2979,7 +2979,7 @@ i.flag.sa {
     font-size: 1.2rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 736px) {
   .fintech .grid.home .questions .row h2 {
     font-size: 1.23077rem;
     line-height: 1.69231rem;
@@ -3938,9 +3938,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .outer .main-nav-button {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
-    background-position: 0 -195px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
+    background-position: 0 -224px;
     height: 17.5px;
     width: 19px;
   }
@@ -3979,9 +3979,9 @@ i.flag.sa {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .fintech > .top .logo {
-    background-image: url('themes/default/assets/images/icons-2x-s5e781c81eb.png');
-    background-size: 95px 340.5px;
-    background-position: 0 -160px;
+    background-image: url('themes/default/assets/images/icons-2x-se5c71c2812.png');
+    background-size: 178px 369px;
+    background-position: 0 -189px;
     height: 30px;
     width: 95px;
   }
@@ -4219,7 +4219,7 @@ i.flag.sa {
 .fintech > .top .tabs-home .item:not(.active) {
   opacity: 0.7;
 }
-@media (max-width: 400px) {
+@media (max-width: 736px) {
   .fintech > .top .tabs-home .item {
     font-size: 1rem;
   }
