@@ -3950,6 +3950,9 @@ i.flag.sa {
 .fintech.landing section.demo p {
   padding: 28px 0 21px;
 }
+.fintech.landing section.demo .getinvite-form form {
+  margin-right: -60px;
+}
 .fintech.landing section.demo .getinvite-form .input {
   position: relative;
 }

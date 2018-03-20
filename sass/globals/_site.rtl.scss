@@ -2255,9 +2255,9 @@
                     width: 50px;
                     height: 44px;
                     cursor: pointer;
-                    float: left;
+                    float: right;
                     top: 42px;
-                    left: 20;
+                    right: 20px;
                     z-index: 9;
 
                     @include transition(all 0.2s ease-in-out);
@@ -2265,7 +2265,7 @@
                     &:hover {
                         .bar {
                             &:after {
-                                left: 0;
+                                right: 0;
                             }
                         }
                     }
@@ -2275,7 +2275,7 @@
                         height: 3px;
                         background-color: #fff;
                         overflow: hidden;
-                        left: 16px;
+                        right: 16px;
 
                         @include transition(all 0.2s ease-in-out);
 
@@ -2314,7 +2314,7 @@
                             background: #A6ABAB;
                             position: absolute;
                             top: 0;
-                            left: 100%;
+                            right: 100%;
                             z-index: 1;
                             -webkit-transition: 0.3s;
                             transition: 0.3s;
@@ -2329,26 +2329,26 @@
                 .logo {
                     @include use-sprite(logo);
 
-                    float: left;
+                    float: right;
                     display: inline-block;
-                    margin-left: 38px;
+                    margin-right: 38px;
                 }
 
                 .logo-landing {
                     @include use-sprite(logo-landing);
 
-                    float: left;
+                    float: right;
                     display: inline-block;
-                    margin-left: 70px;
+                    margin-right: 70px;
                     margin-top: 15px;
                 }
 
                 .lang {
-                    float: right;
+                    float: left;
                     color: white;
                     position: relative;
                     top: 22px;
-                    right: 20px;
+                    left: 20px;
 
                     &:hover {
                         color: $secondary-color;
@@ -2377,7 +2377,7 @@
                     width: 753px;
                     height: 481px;
                     background: url(themes/default/assets/images/screens/macbook_pro.png) no-repeat center 0;
-                    right: 175px;
+                    left: 175px;
                     position: absolute;
                     z-index: 1;
 
@@ -2390,7 +2390,7 @@
                     width: 224px;
                     height: 303px;
                     background: url(themes/default/assets/images/screens/ipad.png) no-repeat 0 0;
-                    right: 740px;
+                    left: 740px;
                     position: absolute;
                     top: 137px;
                     z-index: 2;
@@ -2405,7 +2405,7 @@
                     width: 93px;
                     height: 197px;
                     background: url(themes/default/assets/images/screens/iphone.png) no-repeat 0 0;
-                    right: 165px;
+                    left: 165px;
                     position: absolute;
                     top: 246px;
                     z-index: 3;
@@ -2573,8 +2573,8 @@
 
                     &:nth-child(2n) {
                         aside {
-                            float: left;
-                            text-align: right;
+                            float: right;
+                            text-align: left;
 
                             @include breakpoint(small-mobiles) {
                                 text-align: center;
@@ -2582,7 +2582,7 @@
                         }
 
                         figure {
-                            float: right;
+                            float: left;
                         }
 
                         .line-draw {
@@ -2591,9 +2591,9 @@
                     }
 
                     aside {
-                        float: right;
+                        float: left;
                         width: 47%;
-                        text-align: left;
+                        text-align: right;
                         margin-top: 35px;
 
                         @include breakpoint(small-mobiles) {
@@ -2620,7 +2620,7 @@
                     }
 
                     figure {
-                        float: left;
+                        float: right;
                         width: 47%;
                         margin: 0;
                         position: relative;
@@ -2784,12 +2784,16 @@
                 }
 
                 .getinvite-form {
+                    form {
+                        margin-left: -60px;
+                    }
+
                     .input {
                         position: relative;
 
                         &:before {
                             position: absolute;
-                            left: -80px;
+                            right: -80px;
                             top: -16px;
                             content: '';
 
