@@ -1842,6 +1842,13 @@ i.flag.sa {
 .fintech .content-container.scroll .question.page .share {
   top: 34%;
 }
+.fintech .column .hint {
+  display: block;
+  text-align: right;
+  font-size: 0.92308rem;
+  position: relative;
+  top: 2px;
+}
 .fintech .column > .content {
   background-color: #fff;
 }
@@ -1855,13 +1862,6 @@ i.flag.sa {
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   }
-}
-.fintech .column > .content .hint {
-  display: block;
-  text-align: right;
-  font-size: 0.92308rem;
-  position: relative;
-  top: 2px;
 }
 .fintech .column > .content h3.title {
   padding-bottom: 0.92308rem;
@@ -4641,6 +4641,10 @@ i.flag.sa {
 .fintech .ui.table.table-01 .aggregate-chart-col {
   padding: 12px;
   text-align: center;
+}
+.fintech .ui.table.table-01 .hint {
+  text-align: center;
+  font-weight: normal;
 }
 
 /*Modules - Individual site modules*/
