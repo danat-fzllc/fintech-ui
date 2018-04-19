@@ -203,6 +203,61 @@
             .company-name {
                 font-weight: $font-weight-regular;
             }
+
+            &.table-01 {
+                background: none;
+
+                thead {
+                    th {
+                        padding: 10px;
+                        font-size: 14px;
+                        font-weight: $font-weight-medium;
+                    }
+                }
+
+                tr {
+                    th {
+                        background: #fff;
+
+                        &:first-child {
+                            padding-left: 20px;
+                            border-radius: 5px 0 0 5px;
+                        }
+
+                        &:last-child {
+                            padding-right: 20px;
+                            border-radius: 0 5px 5px 0;
+                        }
+                    }
+
+                    td {
+                        background: #fff;
+
+                        &:first-child {
+                            padding-left: 20px;
+                            border-radius: 5px 0 0 5px;
+                        }
+
+                        &:last-child {
+                            padding-right: 20px;
+                            border-radius: 0 5px 5px 0;
+                        }
+
+                        a {
+                            font-weight: $font-weight-regular;
+                        }
+                    }
+
+                    &:last-child {
+                        .aggregate-chart-col {}
+                    }
+                }
+
+                .aggregate-chart-col {
+                    padding: 12px;
+                    text-align: center;
+                }
+            }
         }
     }
 }

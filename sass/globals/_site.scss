@@ -1394,6 +1394,10 @@
                 padding: 0;
                 width: 35%;
 
+                &.long {
+                    width: 50%;
+                }
+
                 .column {
                     height: auto;
 
@@ -1432,6 +1436,10 @@
                         .value {
                             font-size: rem(12);
                             top: 3px;
+
+                            &.large {
+                                font-size: rem(16);
+                            }
                         }
                     }
 

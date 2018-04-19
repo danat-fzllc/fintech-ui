@@ -2748,6 +2748,9 @@ i.flag.sa {
   padding: 0;
   width: 35%;
 }
+.fintech .ui.table td.aggregate-chart-col.long {
+  width: 50%;
+}
 .fintech .ui.table td.aggregate-chart-col .column {
   height: auto;
 }
@@ -2782,6 +2785,9 @@ i.flag.sa {
 .fintech .ui.table td.aggregate-chart-col .column .arrow .value {
   font-size: 0.92308rem;
   top: 3px;
+}
+.fintech .ui.table td.aggregate-chart-col .column .arrow .value.large {
+  font-size: 1.23077rem;
 }
 .fintech .ui.table td.aggregate-chart-col .column.up {
   padding-right: 10px;
@@ -4598,6 +4604,43 @@ i.flag.sa {
 }
 .fintech .ui.table .company-name {
   font-weight: 500;
+}
+.fintech .ui.table.table-01 {
+  background: none;
+}
+.fintech .ui.table.table-01 thead th {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.fintech .ui.table.table-01 tr th {
+  background: #fff;
+}
+.fintech .ui.table.table-01 tr th:first-child {
+  padding-left: 20px;
+  border-radius: 5px 0 0 5px;
+}
+.fintech .ui.table.table-01 tr th:last-child {
+  padding-right: 20px;
+  border-radius: 0 5px 5px 0;
+}
+.fintech .ui.table.table-01 tr td {
+  background: #fff;
+}
+.fintech .ui.table.table-01 tr td:first-child {
+  padding-left: 20px;
+  border-radius: 5px 0 0 5px;
+}
+.fintech .ui.table.table-01 tr td:last-child {
+  padding-right: 20px;
+  border-radius: 0 5px 5px 0;
+}
+.fintech .ui.table.table-01 tr td a {
+  font-weight: 500;
+}
+.fintech .ui.table.table-01 .aggregate-chart-col {
+  padding: 12px;
+  text-align: center;
 }
 
 /*Modules - Individual site modules*/

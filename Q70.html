@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fintech</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+<link href="dist/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="dist/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div class="fintech">
+  <header class="top">
+    <div class="outer clearfix">
+      <button class="main-nav-button left floated"></button>
+      <a href="" title="Fintech" class="logo left floated"></a>
+      <form class="left floated country-selection">
+        <div class="field">
+          <div class="ui fluid search selection dropdown">
+            <input type="hidden" name="country">
+            <i class="dropdown icon"></i>
+            <div class="default text"> <i class="ae flag"></i> <span>United Arab Emirates</span> </div>
+            <div class="menu">
+              <div class="item" data-value="sa"><i class="sa flag"></i><span>Saudi Arabia</span></div>
+              <div class="item" data-value="ae"><i class="ae flag"></i><span>United Arab Emirates</span></div>
+              <div class="item" data-value="bh"><i class="bh flag"></i><span>Bahrain</span></div>
+              <div class="item" data-value="bh"><i class="kw flag"></i><span>kuwait</span></div>
+              <div class="item" data-value="bh"><i class="qa flag"></i><span>qatar</span></div>
+              <div class="item" data-value="bh"><i class="om flag"></i><span>muscat</span></div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <button class="language right floated">عربى</button>
+      <a href="" class="lang">عربى</a>
+      <div class="main-nav right floated overlay-container">
+        <div class="overlay-header clearfix"> <span class="left floated overlay-title">Menu</span>
+          <button class="right floated close"><i class="remove icon"></i></button>
+        </div>
+        <div class="ui dropdown user-actions right floated"> <a href="" class="my-account"><strong>Patrick Carlson <i class="angle down icon" aria-hidden="true"></i></strong></a>
+          <div class="user-popup menu">
+            <div class="item"> <a href=""><i class="fa fa-user" aria-hidden="true"></i>Profile</a> </div>
+            <div class="item"> <a href=""><i class="fa fa-cog" aria-hidden="true"></i>Settings</a> </div>
+            <div class="divider"></div>
+            <div class="item"><a href="">Logout</a></div>
+          </div>
+        </div>
+        <div class="holder right floated">
+          <ul class="main">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Contact Us</a></li>
+            <!--  <li class="sub"><a href="">
+                                Menu Item<i class="dropdown icon"></i></a>
+                                
+                                <ul class="">
+                                    <li><a class="item">sub menu 1</a></li>
+                                    <li><a class="item">sub menu 2</a></li>
+                                    <li><a class="item">sub menu 3</a></li>
+                                </ul>
+                                
+                            </li>-->
+            
+          </ul>
+        </div>
+        <!-- <div class="share-options"></div> --> 
+      </div>
+    </div>
+    <div class="ui pointing secondary menu tabs-home"> <a class="active item notifications" data-tab="first"><i class="ico notifications"></i>Notifications</a> <a class="item questions" data-tab="second"><i class="ico questions"></i>Questions</a> <a class="item watchlist" data-tab="third"><i class="ico watchlist"></i>Watchlist</a> </div>
+  </header>
+  <div class="ui container fluid fintech content-container">
+    <div class="fluid clearfix question page center aligned relative">
+      <div class="outer">
+        <form class="ui form">
+          <h1 class="question ui center"><span id="spnquestion" name="tstq"> What was the effect on Companies
+            <input type="number" min="0" onfocusout="input_limit(this)" id="days_after" placeholder="" value="3" onkeypress="validate_number_field(this)" class="field center aligned auto-resize" style="width: 36.1563px;">
+            days after, when the price of
+            <div class="ui compact search dropdown selection">
+              <select id="commodity">
+                <option value="1">Brent Crude Oil</option>
+                <option value="2" selected="selected">Nymex</option>
+                <option value="3">Natural Gas</option>
+                <option value="4">Gold</option>
+                <option value="5">Silver</option>
+                <option value="6">High Grade Copper</option>
+                <option value="7">Steel</option>
+                <option value="8">Wheat (CBOT)</option>
+                <option value="9">Corn (CBOT)</option>
+                <option value="10">Coffee (ICEUS)</option>
+                <option value="11">Iron Ore</option>
+              </select>
+              <i class="dropdown icon"></i>
+              <input class="search" autocomplete="off" tabindex="0">
+              <div class="text">Nymex</div>
+              <div class="menu" tabindex="-1">
+                <div class="item" data-value="1">Brent Crude Oil</div>
+                <div class="item active selected" data-value="2">Nymex</div>
+                <div class="item" data-value="3">Natural Gas</div>
+                <div class="item" data-value="4">Gold</div>
+                <div class="item" data-value="5">Silver</div>
+                <div class="item" data-value="6">High Grade Copper</div>
+                <div class="item" data-value="7">Steel</div>
+                <div class="item" data-value="8">Wheat (CBOT)</div>
+                <div class="item" data-value="9">Corn (CBOT)</div>
+                <div class="item" data-value="10">Coffee (ICEUS)</div>
+                <div class="item" data-value="11">Iron Ore</div>
+              </div>
+            </div>
+            was
+            <div class="ui search selection dropdown">
+              <select id="get_direction">
+                <option value="Up" selected="selected">up </option>
+                <option value="Down">down </option>
+              </select>
+              <i class="dropdown icon"></i>
+              <input class="search" autocomplete="off" tabindex="0">
+              <div class="text">up</div>
+              <div class="menu" tabindex="-1">
+                <div class="item active selected" data-value="Up">up </div>
+                <div class="item" data-value="Down">down </div>
+              </div>
+            </div>
+            by
+            <input type="number" min="0" onfocusout="input_limit(this)" id="percent" placeholder="" value="7" onkeypress="validate_number_field(this)" class="field center aligned auto-resize" style="width: 35.9063px;">
+            %
+            In a day since
+            <div class="ui selection dropdown" tabindex="0">
+              <select id="year_range" onchange="captureQuestionParameters()">
+                <option value="0" selected="selected">from</option>
+                <option value="-1">Since All Years</option>
+                <option value="1"> Since 1 Year</option>
+                <option value="2"> Since 2 Years</option>
+                <option value="3"> Since 3 Years</option>
+                <option value="5"> Since 5 Years</option>
+                <option value="10"> Since 10 Years</option>
+              </select>
+              <i class="dropdown icon"></i>
+              <div class="text">Since 3 Years</div>
+              <div class="menu" tabindex="-1">
+                <div class="item" data-value="0">from</div>
+                <div class="item" data-value="-1">Since All Years</div>
+                <div class="item" data-value="1"> Since 1 Year</div>
+                <div class="item" data-value="2"> Since 2 Years</div>
+                <div class="item active selected" data-value="3"> Since 3 Years</div>
+                <div class="item" data-value="5"> Since 5 Years</div>
+                <div class="item" data-value="10"> Since 10 Years</div>
+              </div>
+            </div>
+            <span id="rangeDiv" style="display: none;">
+            <div class="ui compact selection dropdown" tabindex="0">
+              <select id="from_year">
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015" selected="selected">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+              </select>
+              <i class="dropdown icon"></i>
+              <div class="text">2015</div>
+              <div class="menu" tabindex="-1">
+                <div class="item" data-value="1993">1993</div>
+                <div class="item" data-value="1994">1994</div>
+                <div class="item" data-value="1995">1995</div>
+                <div class="item" data-value="1996">1996</div>
+                <div class="item" data-value="1997">1997</div>
+                <div class="item" data-value="1998">1998</div>
+                <div class="item" data-value="1999">1999</div>
+                <div class="item" data-value="2000">2000</div>
+                <div class="item" data-value="2001">2001</div>
+                <div class="item" data-value="2002">2002</div>
+                <div class="item" data-value="2003">2003</div>
+                <div class="item" data-value="2004">2004</div>
+                <div class="item" data-value="2005">2005</div>
+                <div class="item" data-value="2006">2006</div>
+                <div class="item" data-value="2007">2007</div>
+                <div class="item" data-value="2008">2008</div>
+                <div class="item" data-value="2009">2009</div>
+                <div class="item" data-value="2010">2010</div>
+                <div class="item" data-value="2011">2011</div>
+                <div class="item" data-value="2012">2012</div>
+                <div class="item" data-value="2013">2013</div>
+                <div class="item" data-value="2014">2014</div>
+                <div class="item active selected" data-value="2015">2015</div>
+                <div class="item" data-value="2016">2016</div>
+                <div class="item" data-value="2017">2017</div>
+                <div class="item" data-value="2018">2018</div>
+              </div>
+            </div>
+            to
+            <div class="ui compact selection dropdown" tabindex="0">
+              <select id="to_year">
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018" selected="selected">2018</option>
+              </select>
+              <i class="dropdown icon"></i>
+              <div class="text">2018</div>
+              <div class="menu" tabindex="-1">
+                <div class="item" data-value="1993">1993</div>
+                <div class="item" data-value="1994">1994</div>
+                <div class="item" data-value="1995">1995</div>
+                <div class="item" data-value="1996">1996</div>
+                <div class="item" data-value="1997">1997</div>
+                <div class="item" data-value="1998">1998</div>
+                <div class="item" data-value="1999">1999</div>
+                <div class="item" data-value="2000">2000</div>
+                <div class="item" data-value="2001">2001</div>
+                <div class="item" data-value="2002">2002</div>
+                <div class="item" data-value="2003">2003</div>
+                <div class="item" data-value="2004">2004</div>
+                <div class="item" data-value="2005">2005</div>
+                <div class="item" data-value="2006">2006</div>
+                <div class="item" data-value="2007">2007</div>
+                <div class="item" data-value="2008">2008</div>
+                <div class="item" data-value="2009">2009</div>
+                <div class="item" data-value="2010">2010</div>
+                <div class="item" data-value="2011">2011</div>
+                <div class="item" data-value="2012">2012</div>
+                <div class="item" data-value="2013">2013</div>
+                <div class="item" data-value="2014">2014</div>
+                <div class="item" data-value="2015">2015</div>
+                <div class="item" data-value="2016">2016</div>
+                <div class="item" data-value="2017">2017</div>
+                <div class="item active selected" data-value="2018">2018</div>
+              </div>
+            </div>
+            </span> <a id="ask_question" class="ui button active"><i aria-hidden="true" class="fa fa-search"></i> discover</a></span></h1>
+        </form>
+        <div class="actions">
+          <div class="button share right floated"> <i class="fa fa-share-alt" aria-hidden="true"></i>
+            <div class="list">
+              <div class="head">Share</div>
+              <ul>
+                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+                <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
+                <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linked In</a></li>
+                <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i>Google Plus</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="question-info-btutton" class="button info right floated"> <i class="fa fa-info" aria-hidden="true"></i> </div>
+          <div id="question-info" class="ui wide popup" >
+            <div class="header">About the Question</div>
+            <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fluid ui content container clearfix" id="container">
+      <div class="ui icon button fixed secondary floating right bottom filter mobile-only big circular" tabindex="0"> <i class="filter icon large"></i> </div>
+      <section class="page filters left floated resize-left-column overlay-container">
+        <div class="ui container">
+          <div class="overlay-header">
+            <div class="header overlay-title">Filters
+              <button class="right floated close"><i class="remove icon"></i></button>
+            </div>
+          </div>
+          <div class="ui styled accordion">
+            <div class="item">
+              <div class="title active"> <i class="dropdown icon"></i> Sectors </div>
+              <div class="content active" id="sectors_div">
+                <div class="inline field">
+                  <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label><strong>Select All</strong></label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_66" value="66" type="checkbox" data-filter-type="sector" name="filter_item" data-id="66" tabindex="0" class="hidden">
+                    <label>Utilities</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_114" value="114" type="checkbox" data-filter-type="sector" name="filter_item" data-id="114" tabindex="0" class="hidden">
+                    <label>Diversified Financials</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_65" value="65" type="checkbox" data-filter-type="sector" name="filter_item" data-id="65" tabindex="0" class="hidden">
+                    <label>Transportation</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_111" value="111" type="checkbox" data-filter-type="sector" name="filter_item" data-id="111" tabindex="0" class="hidden">
+                    <label>Commercial and Professional Svc</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_7" value="7" type="checkbox" data-filter-type="sector" name="filter_item" data-id="7" tabindex="0" class="hidden">
+                    <label>General</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_6" value="6" type="checkbox" data-filter-type="sector" name="filter_item" data-id="6" tabindex="0" class="hidden">
+                    <label>Exchange Traded Funds</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_123" value="123" type="checkbox" data-filter-type="sector" name="filter_item" data-id="123" tabindex="0" class="hidden">
+                    <label>Retailing</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_110" value="110" type="checkbox" data-filter-type="sector" name="filter_item" data-id="110" tabindex="0" class="hidden">
+                    <label>Capital Goods</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_121" value="121" type="checkbox" data-filter-type="sector" name="filter_item" data-id="121" tabindex="0" class="hidden">
+                    <label>Real Estate Mgmt and Dev</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_116" value="116" type="checkbox" data-filter-type="sector" name="filter_item" data-id="116" tabindex="0" class="hidden">
+                    <label>Food and Staples Retailing</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_55" value="55" type="checkbox" data-filter-type="sector" name="filter_item" data-id="55" tabindex="0" class="hidden">
+                    <label>Energy</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_8" value="8" type="checkbox" data-filter-type="sector" name="filter_item" data-id="8" tabindex="0" class="hidden">
+                    <label>General (old)</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_117" value="117" type="checkbox" data-filter-type="sector" name="filter_item" data-id="117" tabindex="0" class="hidden">
+                    <label>Health Care Equipment and Svc</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_124" value="124" type="checkbox" data-filter-type="sector" name="filter_item" data-id="124" tabindex="0" class="hidden">
+                    <label>Telecommunication Services</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_113" value="113" type="checkbox" data-filter-type="sector" name="filter_item" data-id="113" tabindex="0" class="hidden">
+                    <label>Consumer Services</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_61" value="61" type="checkbox" data-filter-type="sector" name="filter_item" data-id="61" tabindex="0" class="hidden">
+                    <label>Banks</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="sector_item">
+                    <input id="sector_118" value="118" type="checkbox" data-filter-type="sector" name="filter_item" data-id="118" tabindex="0" class="hidden">
+                    <label>Media</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="title active"> <i class="dropdown icon"></i> Events </div>
+              <div class="content active" id="events_div">
+                <div class="inline field">
+                  <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label><strong>Select All</strong></label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_545" value="545" type="checkbox" data-filter-type="event" name="filter_item" data-id="545" tabindex="0" class="hidden">
+                    <label>Opec Meetings 171st - Nov 2016 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_544" value="544" type="checkbox" data-filter-type="event" name="filter_item" data-id="544" tabindex="0" class="hidden">
+                    <label>Opec Meetings 170th (Extraordinary) - Sep 2016 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_51" value="51" type="checkbox" data-filter-type="event" name="filter_item" data-id="51" tabindex="0" class="hidden">
+                    <label>Opec Meetings 169th - June 2016</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_50" value="50" type="checkbox" data-filter-type="event" name="filter_item" data-id="50" tabindex="0" class="hidden">
+                    <label>OPEC Meeting 168th - Dec 2015</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_49" value="49" type="checkbox" data-filter-type="event" name="filter_item" data-id="49" tabindex="0" class="hidden">
+                    <label>OPEC Meeting 167th - June 2015</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_48" value="48" type="checkbox" data-filter-type="event" name="filter_item" data-id="48" tabindex="0" class="hidden">
+                    <label>OPEC Meeting 166th - Nov 2014</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_67" value="67" type="checkbox" data-filter-type="event" name="filter_item" data-id="67" tabindex="0" class="hidden">
+                    <label>Opec Meetings 146th (Extraordinary) - Dec 2007</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_68" value="68" type="checkbox" data-filter-type="event" name="filter_item" data-id="68" tabindex="0" class="hidden">
+                    <label>Opec Meetings 145th - Sep 2007 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_69" value="69" type="checkbox" data-filter-type="event" name="filter_item" data-id="69" tabindex="0" class="hidden">
+                    <label>Opec Meetings 144th - March 2007 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_70" value="70" type="checkbox" data-filter-type="event" name="filter_item" data-id="70" tabindex="0" class="hidden">
+                    <label>Opec Meetings 143rd (Extraordinary) - Dec 2006 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_71" value="71" type="checkbox" data-filter-type="event" name="filter_item" data-id="71" tabindex="0" class="hidden">
+                    <label>Opec Meetings 142nd - Sep 2006</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_72" value="72" type="checkbox" data-filter-type="event" name="filter_item" data-id="72" tabindex="0" class="hidden">
+                    <label>Opec Meetings 141st (Extraordinary) - June 2006 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_73" value="73" type="checkbox" data-filter-type="event" name="filter_item" data-id="73" tabindex="0" class="hidden">
+                    <label>Opec Meetings 140th - March 2006 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_88" value="88" type="checkbox" data-filter-type="event" name="filter_item" data-id="88" tabindex="0" class="hidden">
+                    <label>Opec Meetings 125th (Extraordinary) - June 2003 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_89" value="89" type="checkbox" data-filter-type="event" name="filter_item" data-id="89" tabindex="0" class="hidden">
+                    <label>Opec Meetings 124th - Mar 2003 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_90" value="90" type="checkbox" data-filter-type="event" name="filter_item" data-id="90" tabindex="0" class="hidden">
+                    <label>Opec Meetings 123th (Extraordinary) - Jan 2003 </label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_91" value="91" type="checkbox" data-filter-type="event" name="filter_item" data-id="91" tabindex="0" class="hidden">
+                    <label>Opec Meetings 122nd (Extraordinary) - Dec 2002</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_92" value="92" type="checkbox" data-filter-type="event" name="filter_item" data-id="92" tabindex="0" class="hidden">
+                    <label>Opec Meetings 121st - Sep 2002</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_93" value="93" type="checkbox" data-filter-type="event" name="filter_item" data-id="93" tabindex="0" class="hidden">
+                    <label>Opec Meetings 120th (Extraordinary) - June 2002</label>
+                  </div>
+                </div>
+                <div class="inline field">
+                  <div class="ui checkbox " id="item">
+                    <input id="event_94" value="94" type="checkbox" data-filter-type="event" name="filter_item" data-id="94" tabindex="0" class="hidden">
+                    <label>Opec Meetings 119th - Mar 2002 </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fixed filter-button">
+            <button class="ui button">Filter</button>
+          </div>
+        </div>
+      </section>
+      <section class="fluid content-holder resize-right-column"> <i class="sidebar-toggler-arrow fa fa-caret-left" aria-hidden="true"></i>
+        <div class="fluid left floated">
+          <div class="ui one column grid">
+            <div class="column">
+              
+                <table class="ui table unstackable table-01">
+                  <thead>
+                    <tr>
+                      <th>Company Name</th>
+                      <th class="center aligned ">Average performance % after</th>
+                      <th class="">Based on</th>
+                      <th class="right aligned">Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="company-name">Real Estate Mgmt and Dev Index</td>
+                      <td class="aggregate-chart-col"><div class="aggregate-chart">
+                          <div class="up column" id="before_div_arrow_dir">
+                            <div style="width:80.121%" class="arrow small-value" id="div_arrow_width"> <span class="value large" id="before_span">+82.71%</span> </div>
+                          </div>
+                        </div></td>
+                      <td class="">Based on 13 events</td>
+                      <td class="right aligned"><a href="javascript:void(0)" onclick="gotoQ7(this)" symbol="TRMI">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td class="company-name">Arriyadh Development</td>
+                      <td class="aggregate-chart-col"><div class="aggregate-chart">
+                          <div class="up column" id="before_div_arrow_dir">
+                            <div style="width:65.35150000000001%" class="arrow small-value" id="div_arrow_width"> <span class="value large" id="before_span">+76.12%</span> </div>
+                          </div>
+                        </div></td>
+                      <td class="">Based on 13 events</td>
+                      <td class="right aligned"><a href="javascript:void(0)" onclick="gotoQ7(this)" symbol="TRMI">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td class="company-name">ALANDALUS</td>
+                      <td class="aggregate-chart-col long"><div class="aggregate-chart">
+                          <div class="up column" id="before_div_arrow_dir">
+                            <div style="width:40.2028000000000008%" class="arrow small-value" id="div_arrow_width"> <span class="value large" id="before_span">+55.73%</span> </div>
+                          </div>
+                        </div></td>
+                      <td class="">Based on 13 events</td>
+                      <td class="right aligned"><a href="javascript:void(0)" onclick="gotoQ7(this)" symbol="TRMI">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td class="company-name">Saudi German Hosptial</td>
+                      <td class="aggregate-chart-col long"><div class="aggregate-chart">
+                          <div class="no-change column" id="before_div_arrow_dir">
+                            <div style="width:0.0%" class="arrow small-value" id="div_arrow_width"> <span class="value" id="before_span">0.00%</span> </div>
+                          </div>
+                        </div></td>
+                        <td class="">Based on 13 events</td>
+                      <td class="right aligned"><a href="javascript:void(0)" onclick="gotoQ7(this)" symbol="TRMI">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td class="company-name">Gulf General</td>
+                      <td class="aggregate-chart-col long"><div class="aggregate-chart">
+                          <div class="down column" id="before_div_arrow_dir">
+                            <div style="width:0.1059999999999999%" class="arrow small-value" id="div_arrow_width"> <span class="value" id="before_span">-0.04%</span> </div>
+                          </div>
+                        </div></td>
+                        <td class="">Based on 13 events</td>
+                      <td class="right aligned"><a href="javascript:void(0)" onclick="gotoQ7(this)" symbol="TRMI">Details</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="outer">&copy; 2017 Argaam Fintech FZ.LLC</div>
+    </footer>
+  </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script> 
+<script src="dist/semantic.min.js"></script> 
+<script src="javascripts/fintech.js"></script>
+</body>
+</html>

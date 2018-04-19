@@ -4606,6 +4606,43 @@ i.flag.sa {
 .fintech .ui.table .company-name {
   font-weight: 500;
 }
+.fintech .ui.table.table-01 {
+  background: none;
+}
+.fintech .ui.table.table-01 thead th {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.fintech .ui.table.table-01 tr th {
+  background: #fff;
+}
+.fintech .ui.table.table-01 tr th:first-child {
+  padding-left: 20px;
+  border-radius: 5px 0 0 5px;
+}
+.fintech .ui.table.table-01 tr th:last-child {
+  padding-right: 20px;
+  border-radius: 0 5px 5px 0;
+}
+.fintech .ui.table.table-01 tr td {
+  background: #fff;
+}
+.fintech .ui.table.table-01 tr td:first-child {
+  padding-left: 20px;
+  border-radius: 5px 0 0 5px;
+}
+.fintech .ui.table.table-01 tr td:last-child {
+  padding-right: 20px;
+  border-radius: 0 5px 5px 0;
+}
+.fintech .ui.table.table-01 tr td a {
+  font-weight: 500;
+}
+.fintech .ui.table.table-01 .aggregate-chart-col {
+  padding: 12px;
+  text-align: center;
+}
 
 @media (min-width: 769px) {
   .fintech .ui.table thead th i.up-chart {
